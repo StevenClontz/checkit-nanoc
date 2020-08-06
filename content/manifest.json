@@ -1,6 +1,6 @@
 {
-  "name": "MasterIt",
-  "description": "Freely available exercises",
+  "name": "CheckIt",
+  "description": "☑️It: Free and open randomized exercises for practice and assessment.",
   "start_url": "/",
   "display": "standalone",
   "orientation": "any"

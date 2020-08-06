@@ -11,42 +11,32 @@
   <!-- custom css -->
   <link rel="stylesheet" href="/stylesheet.css">
   <link rel="manifest" href="/manifest.json">
-  <title>MasterIt - <%= @item[:title] %></title>
+  <title>☑️It - <%= @item[:title] %></title>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-primary">
     <div class="container">
-      <a class="navbar-brand" href="/">MasterIt</a>
-      <ul class="navbar-nav"><li class="nav-item"><a class="nav-link active" href="#"><%= @item[:title] %></a></li></ul>
+      <a class="navbar-brand" href="/" title="CheckIt">☑️It</a>
+<!--      <ul class="navbar-nav"><li class="nav-item"><a class="nav-link active" href="#"><%= @item[:title] %></a></li></ul>-->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
+          <% @items.find_all('/banks/*.html').sort_by{|i|i[:title]}.each do |i| %>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Differential Equations
+              <%= i[:title] %>
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <%= link_to "Diff Eq Home", @items['/diff-eq.html'], class:"dropdown-item" %>
+              <%= link_to "Bank Home", i, class:"dropdown-item" %>
               <div class="dropdown-divider"></div>
-              <% @items.find_all('/diff-eq/*').reject{|i|i.identifier=="/diff-eq/index.html"}.sort_by{|i|i[:title]}.each do |i| %>
-                <%= link_to i[:title], i, class:"dropdown-item" %>
+              <% @items.find_all("#{i.path}*.html").each do |j| %>
+                <%= link_to j[:short_title], j, class:"dropdown-item" %>
               <% end %>
             </div>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Linear Algebra
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <%= link_to "Lin Alg Home", @items['/lin-alg.html'], class:"dropdown-item" %>
-              <div class="dropdown-divider"></div>
-              <% @items.find_all('/lin-alg/*').reject{|i|i.identifier=="/lin-alg/index.html"}.sort_by{|i|i[:title]}.each do |i| %>
-                <%= link_to i[:title], i, class:"dropdown-item" %>
-              <% end %>
-            </div>
-          </li>
+          <% end %>
         </ul>
       </div>
     </div>
@@ -65,7 +55,7 @@
   </script>
   <!-- show/hide answers -->
   <script type="text/javascript">
-    $(".answer").each(function () {
+    $(".exercise-answer").each(function () {
       var answer = $(this);
 //      answer.children("h4").text("Partial Answer:");
       var button = $("<button></button>");

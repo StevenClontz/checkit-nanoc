@@ -1,41 +1,48 @@
+require 'nokogiri'
+
 class ExercisesDataSource < Nanoc::DataSource
-  identifier :exercises
+    identifier :exercises
+    BANK_ROOT = "../checkit/banks"
+    BANK_SLUGS = ["tbil-la", "clontz-diff-eq"]
 
-  def items
-    items = []
-    Dir.foreach("../tbil-la/exercises/build") do |standard|
-      next if standard[0]=="."
-      seeds = JSON.parse(File.read "../tbil-la/exercises/build/#{standard}/seeds.json")
-      content = "<h2>#{seeds["title"]}</h2>\n"
-      content << "<hr/>\n"
-      (1..50).each do |seed_int|
-        content << "<h4>Example #{seed_int}</h4>"
-        content << File.read("../tbil-la/exercises/build/#{standard}/#{seed_int.to_s.rjust(3, "0")}.html")
-        content << "<hr/>\n"
-      end 
-      items << new_item(
-        content,
-        {title: "#{standard} (Lin Alg)"},
-        Nanoc::Identifier.new("/lin-alg/#{standard}.html"),
-      )
-    end
-    Dir.foreach("../mastr-diff-eq/build") do |standard|
-      next if standard[0]=="."
-      seeds = JSON.parse(File.read "../mastr-diff-eq/build/#{standard}/seeds.json")
-      content = "<h2>#{seeds["title"]}</h2>\n"
-      content << "<hr/>\n"
-      (1..50).each do |seed_int|
-        content << "<h4>Example #{seed_int}</h4>"
-        content << File.read("../mastr-diff-eq/build/#{standard}/#{seed_int.to_s.rjust(3, "0")}.html")
-        content << "<hr/>\n"
-      end 
-      items << new_item(
-        content,
-        {title: "#{standard} (Diff EQ)"},
-        Nanoc::Identifier.new("/diff-eq/#{standard}.html"),
-      )
-    end
+    def items
+        items = []
+        BANK_SLUGS.each do |bank_slug|
+            bank_path = "#{BANK_ROOT}/#{bank_slug}"
+            bank_xml = Nokogiri::XML(
+                File.read("#{bank_path}/__bank__.xml")
+            )
+            bank_title = bank_xml.at_xpath("/bank/title").content
+            bank_content = "<h3>#{bank_title}</h3><p>Choose an objective below for example exercises.</p><ul>"
+            objectives = bank_xml.xpath("/bank/objectives/objective")
+            objectives.each do |objective|
+                title = objective.at_xpath("title").content
+                slug = objective.at_xpath("slug").content
+                content = "<h2>#{slug} - #{title}</h2>\n"
+                content << "<hr/>\n"
+                build_path = "#{bank_path}/build/#{slug}"
+                50.times do |seed_int|
+                    content << "<h4>Example #{seed_int+1}</h4>"
+                    content << File.read("#{build_path}/#{seed_int.to_s.rjust(4, "0")}.html")
+                    content << "<hr/>\n"
+                end
+                item = new_item(
+                    content,
+                    {title: "#{slug} - #{title} | #{bank_title}", short_title: "#{slug} - #{title}"},
+                    Nanoc::Identifier.new("/banks/#{bank_slug}/#{slug}.html"),
+                )
+                bank_content << "<li><a href='/banks/#{bank_slug}/#{slug}/'>#{slug} - #{title}</a></li>"
+                items << item
+            end
+            bank_content << "</ul>"
+            items << new_item(
+                bank_content,
+                {title: bank_title, short_title: bank_title},
+                Nanoc::Identifier.new("/banks/#{bank_slug}.html"),
+            )
+        end
 
-    return items
-  end
+        return items
+
+    end
 end

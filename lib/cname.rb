@@ -3,7 +3,7 @@ class CnameDataSource < Nanoc::DataSource
 
   def items
     [new_item(
-        "masterit.clontz.org",
+        "checkit.clontz.org",
         {},
         Nanoc::Identifier.new("/CNAME"),
     )]
