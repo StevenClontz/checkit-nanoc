@@ -1,0 +1,1727 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+  <!-- you don't need to keep this, but it's cool for stats -->
+  <meta name="generator" content="Nanoc 4.11.0">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- custom css -->
+  <link rel="stylesheet" href="/stylesheet.css">
+  <link rel="manifest" href="/manifest.json">
+  <title>☑️It - M1 - Multiplying matrices | Linear Algebra for Team-Based Inquiry Learning</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="/" title="CheckIt">☑️It</a>
+<!--      <ul class="navbar-nav"><li class="nav-item"><a class="nav-link active" href="#">M1 - Multiplying matrices | Linear Algebra for Team-Based Inquiry Learning</a></li></ul>-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Differential Equations (Clontz)
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/banks/clontz-diff-eq/">Bank Home</a>
+              <div class="dropdown-divider"></div>
+              
+                <a class="dropdown-item" href="/banks/clontz-diff-eq/C1/">C1 - Homogeneous first-order linear IVP</a>
+              
+                <a class="dropdown-item" href="/banks/clontz-diff-eq/C2/">C2 - Non-homogeneous first-order linear ODE</a>
+              
+                <a class="dropdown-item" href="/banks/clontz-diff-eq/C3/">C3 - Homogeneous second-order linear ODE</a>
+              
+                <a class="dropdown-item" href="/banks/clontz-diff-eq/C4/">C4 - Homogeneous second-order linear IVP</a>
+              
+                <a class="dropdown-item" href="/banks/clontz-diff-eq/C5/">C5 - Non-homogeneous second-order linear ODE</a>
+              
+                <a class="dropdown-item" href="/banks/clontz-diff-eq/D1/">D1 - Discontinuous functions and distributions</a>
+              
+                <a class="dropdown-item" href="/banks/clontz-diff-eq/D2/">D2 - Laplace transforms from formula and definition</a>
+              
+                <a class="dropdown-item" href="/banks/clontz-diff-eq/D3/">D3 - Inverse Laplace transforms</a>
+              
+                <a class="dropdown-item" href="/banks/clontz-diff-eq/D4/">D4 - Using Laplace transforms to solve IVPs</a>
+              
+                <a class="dropdown-item" href="/banks/clontz-diff-eq/F1/">F1 - Direction fields for first-order ODEs</a>
+              
+                <a class="dropdown-item" href="/banks/clontz-diff-eq/F2/">F2 - Separation of variables</a>
+              
+                <a class="dropdown-item" href="/banks/clontz-diff-eq/F3/">F3 - Techniques for linear IVPs</a>
+              
+                <a class="dropdown-item" href="/banks/clontz-diff-eq/F4/">F4 - Implicit solutions for exact IVPs</a>
+              
+                <a class="dropdown-item" href="/banks/clontz-diff-eq/F5/">F5 - Substitution strategies</a>
+              
+                <a class="dropdown-item" href="/banks/clontz-diff-eq/X1/">X1 - Linear ODE systems</a>
+              
+                <a class="dropdown-item" href="/banks/clontz-diff-eq/X2/">X2 - Existence/uniqueness theorem for linear IVPs</a>
+              
+                <a class="dropdown-item" href="/banks/clontz-diff-eq/X3/">X3 - Existence/uniqueness theorem for first-order IVPs</a>
+              
+            </div>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Linear Algebra for Team-Based Inquiry Learning
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/banks/tbil-la/">Bank Home</a>
+              <div class="dropdown-divider"></div>
+              
+                <a class="dropdown-item" href="/banks/tbil-la/E1/">E1 - Linear systems, vector equations, and augmented matrices</a>
+              
+                <a class="dropdown-item" href="/banks/tbil-la/E2/">E2 - Reduced row echelon form</a>
+              
+                <a class="dropdown-item" href="/banks/tbil-la/E3/">E3 - Solving linear systems</a>
+              
+                <a class="dropdown-item" href="/banks/tbil-la/V1/">V1 - Vector spaces</a>
+              
+                <a class="dropdown-item" href="/banks/tbil-la/V2/">V2 - Linear combinations</a>
+              
+                <a class="dropdown-item" href="/banks/tbil-la/V3/">V3 - Spanning sets</a>
+              
+                <a class="dropdown-item" href="/banks/tbil-la/V4/">V4 - Subspaces</a>
+              
+                <a class="dropdown-item" href="/banks/tbil-la/V5/">V5 - Linear independence</a>
+              
+                <a class="dropdown-item" href="/banks/tbil-la/V6/">V6 - Basis identification</a>
+              
+                <a class="dropdown-item" href="/banks/tbil-la/V7/">V7 - Basis of a subspace</a>
+              
+                <a class="dropdown-item" href="/banks/tbil-la/V8/">V8 - Polynomial and matrix spaces</a>
+              
+                <a class="dropdown-item" href="/banks/tbil-la/V9/">V9 - Homogeneous systems</a>
+              
+                <a class="dropdown-item" href="/banks/tbil-la/A1/">A1 - Linear maps</a>
+              
+                <a class="dropdown-item" href="/banks/tbil-la/A2/">A2 - Standard matrices</a>
+              
+                <a class="dropdown-item" href="/banks/tbil-la/A3/">A3 - Image and kernel</a>
+              
+                <a class="dropdown-item" href="/banks/tbil-la/A4/">A4 - Injectivity and surjectivity</a>
+              
+                <a class="dropdown-item" href="/banks/tbil-la/M1/">M1 - Multiplying matrices</a>
+              
+                <a class="dropdown-item" href="/banks/tbil-la/M2/">M2 - Row operations as matrix multiplication</a>
+              
+                <a class="dropdown-item" href="/banks/tbil-la/M3/">M3 - Invertible matrices</a>
+              
+                <a class="dropdown-item" href="/banks/tbil-la/M4/">M4 - Finding a matrix inverse</a>
+              
+                <a class="dropdown-item" href="/banks/tbil-la/G1/">G1 - Row operations and determinants</a>
+              
+                <a class="dropdown-item" href="/banks/tbil-la/G2/">G2 - Determinants</a>
+              
+                <a class="dropdown-item" href="/banks/tbil-la/G3/">G3 - Eigenvalues</a>
+              
+                <a class="dropdown-item" href="/banks/tbil-la/G4/">G4 - Eigenvectors</a>
+              
+            </div>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container mt-3">
+    <h2>M1 - Multiplying matrices</h2>
+<hr/>
+<h4>Example 1</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{cc}
+1 &amp; -3 \\
+-1 &amp; 4 \\
+1 &amp; -4
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{cccc}
+1 &amp; 6 &amp; -4 &amp; -4 \\
+0 &amp; 1 &amp; 0 &amp; -1
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{cccc}
+1 &amp; 1 &amp; 1 &amp; -4 \\
+0 &amp; 1 &amp; 2 &amp; -2 \\
+1 &amp; -2 &amp; -4 &amp; 2
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[AB= \left[\begin{array}{cccc}
+1 &amp; 3 &amp; -4 &amp; -1 \\
+-1 &amp; -2 &amp; 4 &amp; 0 \\
+1 &amp; 2 &amp; -4 &amp; 0
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 2</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{ccc}
+1 &amp; 0 &amp; -5 \\
+0 &amp; 1 &amp; 5 \\
+2 &amp; 1 &amp; -4 \\
+-1 &amp; -1 &amp; 2
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{cc}
+1 &amp; 0 \\
+-4 &amp; 1 \\
+1 &amp; -5 \\
+-1 &amp; -5
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{ccc}
+1 &amp; 5 &amp; 6 \\
+-1 &amp; -4 &amp; -5
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[BC= \left[\begin{array}{ccc}
+1 &amp; 5 &amp; 6 \\
+-5 &amp; -24 &amp; -29 \\
+6 &amp; 25 &amp; 31 \\
+4 &amp; 15 &amp; 19
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 3</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{cc}
+4 &amp; -6 \\
+-1 &amp; 4 \\
+1 &amp; -1 \\
+0 &amp; 0
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{cccc}
+1 &amp; -3 &amp; 0 &amp; 4 \\
+0 &amp; 1 &amp; 1 &amp; -1 \\
+-1 &amp; 5 &amp; 3 &amp; -6
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{cc}
+-4 &amp; -3 \\
+-5 &amp; -4 \\
+1 &amp; 6
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[BA= \left[\begin{array}{cc}
+7 &amp; -18 \\
+0 &amp; 3 \\
+-6 &amp; 23
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 4</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{ccc}
+-1 &amp; 1 &amp; -1 \\
+-1 &amp; 0 &amp; -2
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{cccc}
+0 &amp; -1 &amp; 2 &amp; 0 \\
+1 &amp; 3 &amp; -4 &amp; 2
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{ccc}
+-1 &amp; 4 &amp; 2 \\
+-1 &amp; 3 &amp; 2 \\
+0 &amp; -5 &amp; 1 \\
+2 &amp; 0 &amp; -6
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[BC= \left[\begin{array}{ccc}
+1 &amp; -13 &amp; 0 \\
+0 &amp; 33 &amp; -8
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 5</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{cc}
+1 &amp; -3 \\
+2 &amp; -5 \\
+-1 &amp; -2 \\
+1 &amp; 1
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{ccc}
+0 &amp; -1 &amp; -1 \\
+-1 &amp; -4 &amp; 2 \\
+0 &amp; 2 &amp; 1 \\
+1 &amp; 6 &amp; -1
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{ccc}
+-3 &amp; -4 &amp; -2 \\
+4 &amp; 5 &amp; 3
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[AC= \left[\begin{array}{ccc}
+-15 &amp; -19 &amp; -11 \\
+-26 &amp; -33 &amp; -19 \\
+-5 &amp; -6 &amp; -4 \\
+1 &amp; 1 &amp; 1
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 6</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; -3 &amp; 1 \\
+1 &amp; 1 &amp; -4 &amp; 0
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{cc}
+2 &amp; 6 \\
+-1 &amp; -4 \\
+-1 &amp; -1
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{cccc}
+-3 &amp; -1 &amp; 1 &amp; -4 \\
+0 &amp; 1 &amp; -2 &amp; 6 \\
+-2 &amp; -1 &amp; 1 &amp; -4
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[BA= \left[\begin{array}{cccc}
+8 &amp; 6 &amp; -30 &amp; 2 \\
+-5 &amp; -4 &amp; 19 &amp; -1 \\
+-2 &amp; -1 &amp; 7 &amp; -1
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 7</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{ccc}
+-1 &amp; 6 &amp; 0 \\
+0 &amp; 1 &amp; -1 \\
+-1 &amp; 2 &amp; 3 \\
+1 &amp; 0 &amp; 0
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{cc}
+1 &amp; 4 \\
+0 &amp; 1 \\
+1 &amp; 1 \\
+2 &amp; 5
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{ccc}
+1 &amp; -2 &amp; 0 \\
+-1 &amp; 3 &amp; 1
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[BC= \left[\begin{array}{ccc}
+-3 &amp; 10 &amp; 4 \\
+-1 &amp; 3 &amp; 1 \\
+0 &amp; 1 &amp; 1 \\
+-3 &amp; 11 &amp; 5
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 8</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{ccc}
+-3 &amp; 5 &amp; 5 \\
+-2 &amp; 3 &amp; 4 \\
+-1 &amp; 4 &amp; -2 \\
+1 &amp; -3 &amp; 2
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{cc}
+-3 &amp; -4 \\
+-2 &amp; -3 \\
+2 &amp; 6 \\
+0 &amp; 0
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{ccc}
+1 &amp; 1 &amp; 1 \\
+-2 &amp; -1 &amp; -3
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[BC= \left[\begin{array}{ccc}
+5 &amp; 1 &amp; 9 \\
+4 &amp; 1 &amp; 7 \\
+-10 &amp; -4 &amp; -16 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 9</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{cc}
+-1 &amp; -2 \\
+-2 &amp; -5 \\
+-2 &amp; -6
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{cccc}
+-1 &amp; 0 &amp; 0 &amp; 1 \\
+-2 &amp; -1 &amp; 1 &amp; 4
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{cccc}
+0 &amp; 1 &amp; -4 &amp; 5 \\
+-1 &amp; 1 &amp; -2 &amp; -1 \\
+0 &amp; 0 &amp; 1 &amp; -2
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[AB= \left[\begin{array}{cccc}
+5 &amp; 2 &amp; -2 &amp; -9 \\
+12 &amp; 5 &amp; -5 &amp; -22 \\
+14 &amp; 6 &amp; -6 &amp; -26
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 10</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{cc}
+4 &amp; -5 \\
+-1 &amp; 6 \\
+-1 &amp; 0
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{cc}
+-2 &amp; -1 \\
+0 &amp; 1 \\
+-5 &amp; 5 \\
+3 &amp; -1
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{cccc}
+1 &amp; 1 &amp; -1 &amp; -2 \\
+0 &amp; 1 &amp; 3 &amp; 4 \\
+1 &amp; 0 &amp; -3 &amp; -4
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[CB= \left[\begin{array}{cc}
+-3 &amp; -3 \\
+-3 &amp; 12 \\
+1 &amp; -12
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 11</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{ccc}
+1 &amp; -1 &amp; 4 \\
+0 &amp; 1 &amp; -5 \\
+0 &amp; 1 &amp; -4 \\
+0 &amp; 0 &amp; 0
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{ccc}
+-1 &amp; 5 &amp; 4 \\
+-1 &amp; 4 &amp; 3
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{cccc}
+2 &amp; 1 &amp; -2 &amp; 6 \\
+1 &amp; 1 &amp; -1 &amp; 4
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[CA= \left[\begin{array}{ccc}
+2 &amp; -3 &amp; 11 \\
+1 &amp; -1 &amp; 3
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 12</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{cccc}
+1 &amp; -1 &amp; -2 &amp; 5 \\
+5 &amp; -4 &amp; -4 &amp; 6 \\
+0 &amp; 0 &amp; 1 &amp; -3
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{cccc}
+0 &amp; 0 &amp; -1 &amp; 1 \\
+1 &amp; 3 &amp; 3 &amp; -4
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{ccc}
+1 &amp; 2 &amp; -2 \\
+0 &amp; 1 &amp; -2
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[CA= \left[\begin{array}{cccc}
+11 &amp; -9 &amp; -12 &amp; 23 \\
+5 &amp; -4 &amp; -6 &amp; 12
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 13</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{cc}
+1 &amp; 1 \\
+-1 &amp; 0 \\
+-4 &amp; 0
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{cccc}
+1 &amp; -2 &amp; -2 &amp; -5 \\
+0 &amp; 1 &amp; 2 &amp; 2 \\
+-1 &amp; 2 &amp; 3 &amp; 6
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{cc}
+3 &amp; -5 \\
+-1 &amp; 4 \\
+1 &amp; -6 \\
+-2 &amp; 2
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[BC= \left[\begin{array}{cc}
+13 &amp; -11 \\
+-3 &amp; -4 \\
+-14 &amp; 7
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 14</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{cccc}
+1 &amp; 5 &amp; 2 &amp; -5 \\
+-1 &amp; -5 &amp; -1 &amp; 3
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; -1 &amp; -1 \\
+-4 &amp; 1 &amp; 4 &amp; 5 \\
+3 &amp; -2 &amp; -2 &amp; -3
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{cc}
+1 &amp; 3 \\
+-2 &amp; -5 \\
+0 &amp; 4
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[CA= \left[\begin{array}{cccc}
+-2 &amp; -10 &amp; -1 &amp; 4 \\
+3 &amp; 15 &amp; 1 &amp; -5 \\
+-4 &amp; -20 &amp; -4 &amp; 12
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 15</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{ccc}
+1 &amp; 0 &amp; 5 \\
+0 &amp; 1 &amp; 4 \\
+-2 &amp; 1 &amp; -5 \\
+-1 &amp; 1 &amp; -2
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{cc}
+-3 &amp; 2 \\
+4 &amp; -3 \\
+-1 &amp; -4 \\
+-1 &amp; -2
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{cc}
+-1 &amp; 0 \\
+-1 &amp; -1 \\
+4 &amp; 3
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[AC= \left[\begin{array}{cc}
+19 &amp; 15 \\
+15 &amp; 11 \\
+-19 &amp; -16 \\
+-8 &amp; -7
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 16</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{ccc}
+1 &amp; -6 &amp; 2 \\
+0 &amp; 1 &amp; 0
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{cc}
+-1 &amp; 1 \\
+0 &amp; 1 \\
+-1 &amp; 2 \\
+-2 &amp; 4
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{ccc}
+1 &amp; -4 &amp; -3 \\
+0 &amp; 1 &amp; 2 \\
+0 &amp; -3 &amp; -5 \\
+1 &amp; -4 &amp; -1
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[BA= \left[\begin{array}{ccc}
+-1 &amp; 7 &amp; -2 \\
+0 &amp; 1 &amp; 0 \\
+-1 &amp; 8 &amp; -2 \\
+-2 &amp; 16 &amp; -4
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 17</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{cccc}
+1 &amp; 2 &amp; -1 &amp; 1 \\
+-3 &amp; -5 &amp; 4 &amp; -2
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{ccc}
+-1 &amp; -1 &amp; 4 \\
+1 &amp; 0 &amp; -4 \\
+-1 &amp; 0 &amp; 5 \\
+1 &amp; 1 &amp; 0
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{ccc}
+-1 &amp; -2 &amp; -3 \\
+2 &amp; 4 &amp; 5
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[AB= \left[\begin{array}{ccc}
+3 &amp; 0 &amp; -9 \\
+-8 &amp; 1 &amp; 28
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 18</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{ccc}
+1 &amp; -4 &amp; -5 \\
+-1 &amp; 5 &amp; 6
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{cccc}
+0 &amp; 0 &amp; -1 &amp; 1 \\
+1 &amp; -3 &amp; 6 &amp; -3
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{ccc}
+1 &amp; 2 &amp; -1 \\
+0 &amp; 1 &amp; -2 \\
+0 &amp; -2 &amp; 5 \\
+1 &amp; 3 &amp; 1
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[BC= \left[\begin{array}{ccc}
+1 &amp; 5 &amp; -4 \\
+-2 &amp; -22 &amp; 32
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 19</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{cc}
+-1 &amp; -2 \\
+-1 &amp; -3 \\
+-1 &amp; 1
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{ccc}
+1 &amp; 0 &amp; 5 \\
+0 &amp; 1 &amp; -3 \\
+-1 &amp; -1 &amp; -1 \\
+0 &amp; 0 &amp; 3
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{cc}
+1 &amp; 1 \\
+1 &amp; -4 \\
+0 &amp; 3 \\
+0 &amp; -5
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[BA= \left[\begin{array}{cc}
+-6 &amp; 3 \\
+2 &amp; -6 \\
+3 &amp; 4 \\
+-3 &amp; 3
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 20</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{cccc}
+1 &amp; 4 &amp; -6 &amp; -6 \\
+0 &amp; 1 &amp; -1 &amp; -2
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{ccc}
+1 &amp; -1 &amp; -3 \\
+0 &amp; 1 &amp; 1
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{ccc}
+-2 &amp; -1 &amp; -2 \\
+-1 &amp; -1 &amp; 0 \\
+1 &amp; 1 &amp; 1 \\
+2 &amp; 1 &amp; 1
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[AC= \left[\begin{array}{ccc}
+-24 &amp; -17 &amp; -14 \\
+-6 &amp; -4 &amp; -3
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 21</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{cc}
+1 &amp; -1 \\
+-4 &amp; 5 \\
+5 &amp; -3
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{ccc}
+1 &amp; -1 &amp; -4 \\
+0 &amp; 1 &amp; 1 \\
+0 &amp; -4 &amp; -3 \\
+2 &amp; -4 &amp; -5
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{cc}
+2 &amp; -3 \\
+3 &amp; 1 \\
+1 &amp; -3 \\
+-2 &amp; -2
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[BA= \left[\begin{array}{cc}
+-15 &amp; 6 \\
+1 &amp; 2 \\
+1 &amp; -11 \\
+-7 &amp; -7
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 22</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{cccc}
+0 &amp; -1 &amp; 2 &amp; 0 \\
+1 &amp; 0 &amp; 3 &amp; -3
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{ccc}
+-2 &amp; 0 &amp; -5 \\
+-1 &amp; 1 &amp; 0 \\
+-1 &amp; 0 &amp; -3 \\
+-1 &amp; -1 &amp; -3
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{ccc}
+1 &amp; -1 &amp; 1 \\
+0 &amp; 1 &amp; 2
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[AB= \left[\begin{array}{ccc}
+-1 &amp; -1 &amp; -6 \\
+-2 &amp; 3 &amp; -5
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 23</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{cc}
+0 &amp; 5 \\
+-1 &amp; -3 \\
+1 &amp; -1 \\
+-2 &amp; -5
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{cc}
+-2 &amp; -3 \\
+3 &amp; 4 \\
+-4 &amp; -4
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{ccc}
+-1 &amp; -1 &amp; -6 \\
+5 &amp; -4 &amp; 4 \\
+-1 &amp; 0 &amp; -3 \\
+4 &amp; -4 &amp; 4
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[CB= \left[\begin{array}{cc}
+23 &amp; 23 \\
+-38 &amp; -47 \\
+14 &amp; 15 \\
+-36 &amp; -44
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 24</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{cc}
+3 &amp; 2 \\
+1 &amp; 5 \\
+-1 &amp; 1 \\
+0 &amp; 1
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{cc}
+1 &amp; -6 \\
+-1 &amp; 4 \\
+0 &amp; -3
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{cccc}
+3 &amp; -1 &amp; -2 &amp; 6 \\
+4 &amp; 1 &amp; -4 &amp; 5 \\
+2 &amp; -1 &amp; -1 &amp; 4
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[CA= \left[\begin{array}{cc}
+10 &amp; 5 \\
+17 &amp; 14 \\
+6 &amp; 2
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 25</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{cccc}
+0 &amp; 0 &amp; 1 &amp; 0 \\
+-1 &amp; -2 &amp; -3 &amp; 4 \\
+-1 &amp; -3 &amp; -5 &amp; 6
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{cccc}
+-2 &amp; 1 &amp; 2 &amp; -2 \\
+-3 &amp; 1 &amp; 2 &amp; -3
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{ccc}
+1 &amp; 3 &amp; 4 \\
+1 &amp; 4 &amp; 5
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[CA= \left[\begin{array}{cccc}
+-7 &amp; -18 &amp; -28 &amp; 36 \\
+-9 &amp; -23 &amp; -36 &amp; 46
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 26</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{cc}
+1 &amp; -2 \\
+-3 &amp; -5 \\
+0 &amp; 2 \\
+-4 &amp; -4
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{ccc}
+-1 &amp; 6 &amp; 1 \\
+-1 &amp; 5 &amp; 1
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{ccc}
+-3 &amp; 2 &amp; 4 \\
+-2 &amp; 1 &amp; 1 \\
+-3 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 5
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[AB= \left[\begin{array}{ccc}
+1 &amp; -4 &amp; -1 \\
+8 &amp; -43 &amp; -8 \\
+-2 &amp; 10 &amp; 2 \\
+8 &amp; -44 &amp; -8
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 27</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{ccc}
+1 &amp; -3 &amp; 1 \\
+2 &amp; -5 &amp; 1
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{cccc}
+-1 &amp; -1 &amp; -4 &amp; -4 \\
+1 &amp; 0 &amp; 3 &amp; 2
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{ccc}
+1 &amp; 2 &amp; 0 \\
+2 &amp; 1 &amp; 4 \\
+0 &amp; 2 &amp; -3 \\
+-2 &amp; 1 &amp; -4
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[BC= \left[\begin{array}{ccc}
+5 &amp; -15 &amp; 24 \\
+-3 &amp; 10 &amp; -17
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 28</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{cc}
+0 &amp; -1 \\
+1 &amp; 2 \\
+-3 &amp; 2 \\
+-4 &amp; 1
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{cccc}
+1 &amp; 3 &amp; 1 &amp; -3 \\
+-1 &amp; -2 &amp; -1 &amp; 1 \\
+1 &amp; 5 &amp; 2 &amp; -4
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{cc}
+-1 &amp; 1 \\
+-1 &amp; 5 \\
+2 &amp; -5
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[BA= \left[\begin{array}{cc}
+12 &amp; 4 \\
+-3 &amp; -4 \\
+15 &amp; 9
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 29</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{cccc}
+1 &amp; 2 &amp; -4 &amp; 3 \\
+0 &amp; 1 &amp; -3 &amp; 2
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{cc}
+6 &amp; -1 \\
+-2 &amp; 3 \\
+-5 &amp; 0
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{cccc}
+1 &amp; -1 &amp; -1 &amp; 2 \\
+0 &amp; 1 &amp; 2 &amp; -4 \\
+0 &amp; -2 &amp; -3 &amp; 5
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[BA= \left[\begin{array}{cccc}
+6 &amp; 11 &amp; -21 &amp; 16 \\
+-2 &amp; -1 &amp; -1 &amp; 0 \\
+-5 &amp; -10 &amp; 20 &amp; -15
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 30</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{cccc}
+0 &amp; -1 &amp; 1 &amp; -2 \\
+-2 &amp; 1 &amp; 0 &amp; -3 \\
+-1 &amp; -1 &amp; 1 &amp; -4
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{cc}
+1 &amp; 1 \\
+0 &amp; 1 \\
+4 &amp; -3
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{cc}
+2 &amp; -5 \\
+1 &amp; -3 \\
+2 &amp; -4 \\
+-1 &amp; 1
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[AC= \left[\begin{array}{cc}
+3 &amp; -3 \\
+0 &amp; 4 \\
+3 &amp; 0
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 31</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{cc}
+1 &amp; 0 \\
+5 &amp; 1 \\
+5 &amp; 3 \\
+3 &amp; 2
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{cc}
+4 &amp; 0 \\
+0 &amp; 1 \\
+1 &amp; -1
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{cccc}
+-1 &amp; 1 &amp; 0 &amp; 0 \\
+1 &amp; -1 &amp; -1 &amp; 1 \\
+2 &amp; -3 &amp; -5 &amp; 3
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[CA= \left[\begin{array}{cc}
+4 &amp; 1 \\
+-6 &amp; -2 \\
+-29 &amp; -12
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 32</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{ccc}
+2 &amp; -3 &amp; 5 \\
+5 &amp; -4 &amp; 1 \\
+-5 &amp; 5 &amp; -4 \\
+-1 &amp; 2 &amp; -4
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{ccc}
+1 &amp; 1 &amp; -3 \\
+0 &amp; 1 &amp; -2
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{cc}
+1 &amp; -4 \\
+-1 &amp; 5 \\
+-1 &amp; 5 \\
+1 &amp; 1
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[CB= \left[\begin{array}{ccc}
+1 &amp; -3 &amp; 5 \\
+-1 &amp; 4 &amp; -7 \\
+-1 &amp; 4 &amp; -7 \\
+1 &amp; 2 &amp; -5
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 33</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{cccc}
+1 &amp; 3 &amp; 3 &amp; 0 \\
+1 &amp; 4 &amp; 5 &amp; 0 \\
+2 &amp; 5 &amp; 5 &amp; 0
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{ccc}
+-1 &amp; -5 &amp; 3 \\
+1 &amp; 5 &amp; -4
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{cccc}
+0 &amp; 0 &amp; 1 &amp; 2 \\
+-1 &amp; 4 &amp; -1 &amp; 0
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[BA= \left[\begin{array}{cccc}
+0 &amp; -8 &amp; -13 &amp; 0 \\
+-2 &amp; 3 &amp; 8 &amp; 0
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 34</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{ccc}
+1 &amp; 5 &amp; -6 \\
+0 &amp; 1 &amp; -1 \\
+0 &amp; 5 &amp; -4 \\
+-1 &amp; -3 &amp; 2
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{ccc}
+-4 &amp; -5 &amp; 1 \\
+5 &amp; 6 &amp; -1
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{cc}
+-3 &amp; -5 \\
+1 &amp; 4 \\
+-2 &amp; -4 \\
+0 &amp; 2
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[CB= \left[\begin{array}{ccc}
+-13 &amp; -15 &amp; 2 \\
+16 &amp; 19 &amp; -3 \\
+-12 &amp; -14 &amp; 2 \\
+10 &amp; 12 &amp; -2
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 35</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{ccc}
+-1 &amp; 1 &amp; 2 \\
+2 &amp; -3 &amp; -3
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{cccc}
+4 &amp; -5 &amp; -4 &amp; 6 \\
+-3 &amp; 4 &amp; 3 &amp; -5
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{ccc}
+1 &amp; -2 &amp; 0 \\
+1 &amp; -1 &amp; 0 \\
+-4 &amp; 3 &amp; 1 \\
+-4 &amp; 5 &amp; 4
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[BC= \left[\begin{array}{ccc}
+-9 &amp; 15 &amp; 20 \\
+9 &amp; -14 &amp; -17
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 36</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{cc}
+-1 &amp; -6 \\
+1 &amp; 5 \\
+0 &amp; 0 \\
+0 &amp; -5
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{ccc}
+6 &amp; -5 &amp; -4 \\
+5 &amp; -4 &amp; -3
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{ccc}
+4 &amp; 2 &amp; -3 \\
+-2 &amp; -3 &amp; -3 \\
+-1 &amp; -2 &amp; -2 \\
+1 &amp; 0 &amp; -2
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[AB= \left[\begin{array}{ccc}
+-36 &amp; 29 &amp; 22 \\
+31 &amp; -25 &amp; -19 \\
+0 &amp; 0 &amp; 0 \\
+-25 &amp; 20 &amp; 15
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 37</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{cc}
+1 &amp; 1 \\
+3 &amp; 4 \\
+-5 &amp; 0 \\
+-3 &amp; -3
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{cc}
+4 &amp; -4 \\
+-1 &amp; 2 \\
+-1 &amp; 1
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{cccc}
+-1 &amp; 3 &amp; -1 &amp; -2 \\
+1 &amp; -4 &amp; 2 &amp; 4 \\
+2 &amp; -6 &amp; 3 &amp; 6
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[CA= \left[\begin{array}{cc}
+19 &amp; 17 \\
+-33 &amp; -27 \\
+-49 &amp; -40
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 38</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{ccc}
+1 &amp; -2 &amp; 2 \\
+0 &amp; 1 &amp; 0 \\
+2 &amp; -6 &amp; 5 \\
+0 &amp; 5 &amp; 0
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{cc}
+-1 &amp; 1 \\
+1 &amp; -2 \\
+2 &amp; -5 \\
+1 &amp; -5
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{cc}
+-5 &amp; 3 \\
+0 &amp; 1 \\
+-3 &amp; 1
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[AC= \left[\begin{array}{cc}
+-11 &amp; 3 \\
+0 &amp; 1 \\
+-25 &amp; 5 \\
+0 &amp; 5
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 39</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{ccc}
+-2 &amp; -5 &amp; 6 \\
+-1 &amp; -3 &amp; 3
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{cc}
+1 &amp; 6 \\
+0 &amp; 1 \\
+0 &amp; -5 \\
+0 &amp; 1
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{ccc}
+0 &amp; 0 &amp; 1 \\
+-1 &amp; 0 &amp; -1 \\
+-1 &amp; -1 &amp; -5 \\
+0 &amp; 0 &amp; 2
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[BA= \left[\begin{array}{ccc}
+-8 &amp; -23 &amp; 24 \\
+-1 &amp; -3 &amp; 3 \\
+5 &amp; 15 &amp; -15 \\
+-1 &amp; -3 &amp; 3
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 40</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{cccc}
+-2 &amp; 3 &amp; 2 &amp; -1 \\
+1 &amp; -2 &amp; -2 &amp; 0
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 3 &amp; -6 \\
+0 &amp; 1 &amp; -1 &amp; 1 \\
+0 &amp; 2 &amp; -1 &amp; 0
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{ccc}
+0 &amp; 1 &amp; 0 \\
+-1 &amp; -4 &amp; -1
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[CB= \left[\begin{array}{cccc}
+0 &amp; 1 &amp; -1 &amp; 1 \\
+-1 &amp; -6 &amp; 2 &amp; 2
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 41</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{cccc}
+1 &amp; -1 &amp; 2 &amp; -2 \\
+2 &amp; -1 &amp; 5 &amp; -5 \\
+0 &amp; 0 &amp; 1 &amp; -1
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{cc}
+-3 &amp; -2 \\
+0 &amp; 1 \\
+-2 &amp; -3
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{cc}
+-5 &amp; 6 \\
+-5 &amp; 1 \\
+-1 &amp; -2 \\
+-2 &amp; 2
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[AC= \left[\begin{array}{cc}
+2 &amp; -3 \\
+0 &amp; -9 \\
+1 &amp; -4
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 42</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{ccc}
+-3 &amp; 4 &amp; 2 \\
+-5 &amp; 6 &amp; -1 \\
+-4 &amp; 5 &amp; 1 \\
+2 &amp; -4 &amp; -1
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{cc}
+1 &amp; -2 \\
+-1 &amp; 3 \\
+-1 &amp; 5
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{cc}
+0 &amp; -2 \\
+3 &amp; 4 \\
+1 &amp; 3 \\
+-2 &amp; -2
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[AB= \left[\begin{array}{cc}
+-9 &amp; 28 \\
+-10 &amp; 23 \\
+-10 &amp; 28 \\
+7 &amp; -21
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 43</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{ccc}
+0 &amp; -3 &amp; 3 \\
+1 &amp; -1 &amp; -4 \\
+0 &amp; 5 &amp; -4 \\
+-1 &amp; -1 &amp; 6
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{cc}
+5 &amp; 4 \\
+-4 &amp; -3 \\
+1 &amp; 1 \\
+5 &amp; 3
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{cc}
+1 &amp; 0 \\
+0 &amp; 1 \\
+-1 &amp; 2
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[AC= \left[\begin{array}{cc}
+-3 &amp; 3 \\
+5 &amp; -9 \\
+4 &amp; -3 \\
+-7 &amp; 11
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 44</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{ccc}
+1 &amp; -5 &amp; -5 \\
+0 &amp; 1 &amp; 2 \\
+0 &amp; -1 &amp; -1 \\
+-2 &amp; 6 &amp; 6
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{ccc}
+1 &amp; 2 &amp; 2 \\
+0 &amp; 1 &amp; 1
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{cccc}
+0 &amp; -1 &amp; 1 &amp; 0 \\
+1 &amp; 2 &amp; -4 &amp; 1
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[CA= \left[\begin{array}{ccc}
+0 &amp; -2 &amp; -3 \\
+-1 &amp; 7 &amp; 9
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 45</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{ccc}
+1 &amp; 2 &amp; 3 \\
+-2 &amp; -3 &amp; -5
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{cc}
+1 &amp; 2 \\
+-2 &amp; -3 \\
+0 &amp; -1 \\
+-2 &amp; -3
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{ccc}
+0 &amp; -1 &amp; 1 \\
+1 &amp; 1 &amp; 1 \\
+0 &amp; -5 &amp; 6 \\
+-1 &amp; 3 &amp; -2
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[BA= \left[\begin{array}{ccc}
+-3 &amp; -4 &amp; -7 \\
+4 &amp; 5 &amp; 9 \\
+2 &amp; 3 &amp; 5 \\
+4 &amp; 5 &amp; 9
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 46</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{cc}
+1 &amp; 1 \\
+0 &amp; 1 \\
+-4 &amp; 3
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{cccc}
+1 &amp; -1 &amp; 0 &amp; -2 \\
+0 &amp; 1 &amp; 1 &amp; 5 \\
+1 &amp; 0 &amp; 2 &amp; 5
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{cccc}
+0 &amp; 0 &amp; 1 &amp; -3 \\
+-1 &amp; -4 &amp; 2 &amp; -6
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[AC= \left[\begin{array}{cccc}
+-1 &amp; -4 &amp; 3 &amp; -9 \\
+-1 &amp; -4 &amp; 2 &amp; -6 \\
+-3 &amp; -12 &amp; 2 &amp; -6
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 47</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{ccc}
+-5 &amp; 3 &amp; 4 \\
+-2 &amp; 1 &amp; 2
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{ccc}
+-4 &amp; 3 &amp; 1 \\
+5 &amp; -4 &amp; -2 \\
+-5 &amp; 4 &amp; 3 \\
+4 &amp; -2 &amp; -1
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{cccc}
+5 &amp; -6 &amp; 4 &amp; 6 \\
+-4 &amp; 5 &amp; -3 &amp; -5
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[CB= \left[\begin{array}{ccc}
+-46 &amp; 43 &amp; 23 \\
+36 &amp; -34 &amp; -18
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 48</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{ccc}
+0 &amp; 1 &amp; -3 \\
+-1 &amp; 1 &amp; 0 \\
+-1 &amp; 0 &amp; 4 \\
+3 &amp; -3 &amp; -4
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{ccc}
+1 &amp; 4 &amp; -3 \\
+-1 &amp; -3 &amp; 2
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{cccc}
+1 &amp; 2 &amp; -4 &amp; 2 \\
+0 &amp; 1 &amp; -2 &amp; 2
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[CA= \left[\begin{array}{ccc}
+8 &amp; -3 &amp; -27 \\
+7 &amp; -5 &amp; -16
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 49</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{cccc}
+-2 &amp; 1 &amp; -4 &amp; -1 \\
+1 &amp; -1 &amp; 3 &amp; 0
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{ccc}
+1 &amp; 1 &amp; 4 \\
+1 &amp; 2 &amp; 6
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{ccc}
+3 &amp; -3 &amp; 4 \\
+-1 &amp; 2 &amp; -5 \\
+2 &amp; -2 &amp; 3 \\
+1 &amp; -2 &amp; 5
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[AC= \left[\begin{array}{ccc}
+-16 &amp; 18 &amp; -30 \\
+10 &amp; -11 &amp; 18
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 50</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Of the following three matrices, only two may be multiplied. 
+                \begin{align*} A= \left[\begin{array}{cccc}
+2 &amp; 1 &amp; -6 &amp; 0 \\
+1 &amp; 1 &amp; -5 &amp; -1 \\
+1 &amp; 1 &amp; -4 &amp; -1
+\end{array}\right]  &amp; &amp; B= \left[\begin{array}{cccc}
+1 &amp; 2 &amp; -1 &amp; 2 \\
+0 &amp; 1 &amp; -2 &amp; 1
+\end{array}\right]  &amp; &amp; C= \left[\begin{array}{ccc}
+-1 &amp; -1 &amp; 2 \\
+1 &amp; 0 &amp; 1
+\end{array}\right]  \\ \end{align*}
+             Explain which two can be multiplied and why. Then show how to find their product.</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[CA= \left[\begin{array}{cccc}
+-1 &amp; 0 &amp; 3 &amp; -1 \\
+3 &amp; 2 &amp; -10 &amp; -1
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- latest MathJax -->
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+  <!-- show/hide answers -->
+  <script type="text/javascript">
+    $(".exercise-answer").each(function () {
+      var answer = $(this);
+//      answer.children("h4").text("Partial Answer:");
+      var button = $("<button></button>");
+      button.addClass("btn btn-primary btn-sm");
+      button.text("Show/Hide Answer");
+      answer.collapse({"toggle":false});
+      var p = $("<p></p>");
+      p.append(button);
+      answer.before(p);
+      answer.addClass('alert alert-primary collapse hide');
+      button.click(function() {
+        answer.collapse("toggle");
+	button.toggleClass("btn-outline-primary");
+	button.toggleClass("btn-primary");
+      });
+    });
+  </script>
+</body>
+</html>
