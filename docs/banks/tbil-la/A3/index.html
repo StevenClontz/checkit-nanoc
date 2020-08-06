@@ -137,51 +137,64 @@
 <hr/>
 <h4>Example 1</h4><div class="exercise">
   <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by <p>\[T\left(  \left[\begin{array}{c}
-x_{1} \\
-x_{2} \\
-x_{3}
+x \\
+y \\
+z
 \end{array}\right]  \right) =  \left[\begin{array}{c}
-x_{1} - 2 \, x_{3} \\
-x_{1} + x_{2} - x_{3} \\
--3 \, x_{2} - 3 \, x_{3} \\
-4 \, x_{1} + 5 \, x_{2} - 3 \, x_{3}
+-x + 2 \, y - 3 \, z \\
+-x - y + 3 \, z \\
+-x + z \\
+-x - 3 \, y + 7 \, z
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+-1 &amp; 2 &amp; -3 \\
+-1 &amp; -1 &amp; 3 \\
+-1 &amp; 0 &amp; 1 \\
+-1 &amp; -3 &amp; 7
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; -1 \\
+0 &amp; 1 &amp; -2 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
-1 \\
-1 \\
-0 \\
-4
+-1 \\
+-1 \\
+-1 \\
+-1
 \end{array}\right] , \left[\begin{array}{c}
+2 \\
+-1 \\
 0 \\
-1 \\
--3 \\
-5
+-3
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
+a \\
 2 \, a \\
--a \\
 a
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
-1 \\
-1 \\
-0 \\
-4
+-1 \\
+-1 \\
+-1 \\
+-1
 \end{array}\right] , \left[\begin{array}{c}
-0 \\
-1 \\
--3 \\
-5
-\end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
 2 \\
 -1 \\
+0 \\
+-3
+\end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
+1 \\
+2 \\
 1
 \end{array}\right] \right\} \)</li>
       <li> The rank of \(T\) is \( 2 \), the nullity of \(T\) is \( 1 \), and the dimension of the domain of \(T\) is \( 3 \). The rank-nullity theorem asserts that \( 2 + 1 = 3 \), which we see to be true. </li>
@@ -192,50 +205,63 @@ a
 <hr/>
 <h4>Example 2</h4><div class="exercise">
   <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by <p>\[T\left(  \left[\begin{array}{c}
-x_{1} \\
-x_{2} \\
-x_{3}
+x \\
+y \\
+z
 \end{array}\right]  \right) =  \left[\begin{array}{c}
-x_{1} + x_{2} + x_{3} \\
-5 \, x_{1} + 6 \, x_{2} + 3 \, x_{3} \\
-3 \, x_{1} + 5 \, x_{2} - x_{3} \\
-x_{1} + 3 \, x_{2} - 3 \, x_{3}
+4 \, x + 3 \, y + 2 \, z \\
+x + y \\
+4 \, y - 8 \, z \\
+-2 \, x - y - 2 \, z
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+4 &amp; 3 &amp; 2 \\
+1 &amp; 1 &amp; 0 \\
+0 &amp; 4 &amp; -8 \\
+-2 &amp; -1 &amp; -2
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; 2 \\
+0 &amp; 1 &amp; -2 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
+4 \\
 1 \\
-5 \\
-3 \\
-1
+0 \\
+-2
 \end{array}\right] , \left[\begin{array}{c}
+3 \\
 1 \\
-6 \\
-5 \\
-3
+4 \\
+-1
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
--3 \, a \\
+-2 \, a \\
 2 \, a \\
 a
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
+4 \\
 1 \\
-5 \\
-3 \\
-1
+0 \\
+-2
 \end{array}\right] , \left[\begin{array}{c}
+3 \\
 1 \\
-6 \\
-5 \\
-3
+4 \\
+-1
 \end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
--3 \\
+-2 \\
 2 \\
 1
 \end{array}\right] \right\} \)</li>
@@ -247,51 +273,64 @@ a
 <hr/>
 <h4>Example 3</h4><div class="exercise">
   <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by <p>\[T\left(  \left[\begin{array}{c}
-x \\
-y \\
-z
+x_{1} \\
+x_{2} \\
+x_{3}
 \end{array}\right]  \right) =  \left[\begin{array}{c}
-0 \\
-2 \, x - 3 \, y + 7 \, z \\
--x + 2 \, y - 4 \, z \\
-3 \, x - y + 7 \, z
+2 \, x_{1} - x_{2} - 2 \, x_{3} \\
+-3 \, x_{1} + 4 \, x_{2} + 8 \, x_{3} \\
+-x_{1} \\
+4 \, x_{2} + 8 \, x_{3}
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+2 &amp; -1 &amp; -2 \\
+-3 &amp; 4 &amp; 8 \\
+-1 &amp; 0 &amp; 0 \\
+0 &amp; 4 &amp; 8
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 2 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
-0 \\
 2 \\
--1 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
-0 \\
 -3 \\
-2 \\
--1
+-1 \\
+0
+\end{array}\right] , \left[\begin{array}{c}
+-1 \\
+4 \\
+0 \\
+4
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
+0 \\
 -2 \, a \\
-a \\
 a
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
-0 \\
 2 \\
--1 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
-0 \\
 -3 \\
-2 \\
--1
+-1 \\
+0
+\end{array}\right] , \left[\begin{array}{c}
+-1 \\
+4 \\
+0 \\
+4
 \end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
+0 \\
 -2 \\
-1 \\
 1
 \end{array}\right] \right\} \)</li>
       <li> The rank of \(T\) is \( 2 \), the nullity of \(T\) is \( 1 \), and the dimension of the domain of \(T\) is \( 3 \). The rank-nullity theorem asserts that \( 2 + 1 = 3 \), which we see to be true. </li>
@@ -306,47 +345,60 @@ x_{1} \\
 x_{2} \\
 x_{3}
 \end{array}\right]  \right) =  \left[\begin{array}{c}
-2 \, x_{1} - x_{2} + x_{3} \\
-x_{1} + x_{3} \\
--5 \, x_{2} - 5 \, x_{3} \\
-4 \, x_{1} - 8 \, x_{2} - 4 \, x_{3}
+-x_{1} - 4 \, x_{2} + 2 \, x_{3} \\
+x_{1} + 3 \, x_{2} - x_{3} \\
+-x_{1} - 6 \, x_{2} + 4 \, x_{3} \\
+5 \, x_{1} + 7 \, x_{2} + 3 \, x_{3}
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+-1 &amp; -4 &amp; 2 \\
+1 &amp; 3 &amp; -1 \\
+-1 &amp; -6 &amp; 4 \\
+5 &amp; 7 &amp; 3
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; 2 \\
+0 &amp; 1 &amp; -1 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
-2 \\
-1 \\
-0 \\
-4
-\end{array}\right] , \left[\begin{array}{c}
 -1 \\
-0 \\
--5 \\
--8
+1 \\
+-1 \\
+5
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
+3 \\
+-6 \\
+7
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
--a \\
--a \\
+-2 \, a \\
+a \\
 a
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
-2 \\
+-1 \\
 1 \\
-0 \\
-4
+-1 \\
+5
 \end{array}\right] , \left[\begin{array}{c}
--1 \\
-0 \\
--5 \\
--8
+-4 \\
+3 \\
+-6 \\
+7
 \end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
--1 \\
--1 \\
+-2 \\
+1 \\
 1
 \end{array}\right] \right\} \)</li>
       <li> The rank of \(T\) is \( 2 \), the nullity of \(T\) is \( 1 \), and the dimension of the domain of \(T\) is \( 3 \). The rank-nullity theorem asserts that \( 2 + 1 = 3 \), which we see to be true. </li>
@@ -357,52 +409,65 @@ a
 <hr/>
 <h4>Example 5</h4><div class="exercise">
   <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by <p>\[T\left(  \left[\begin{array}{c}
-x_{1} \\
-x_{2} \\
-x_{3}
+x \\
+y \\
+z
 \end{array}\right]  \right) =  \left[\begin{array}{c}
-5 \, x_{1} + x_{2} - 7 \, x_{3} \\
-2 \, x_{1} + 3 \, x_{2} - 8 \, x_{3} \\
--4 \, x_{1} + 4 \, x_{3} \\
-2 \, x_{1} + 2 \, x_{2} - 6 \, x_{3}
+x - 2 \, y - 4 \, z \\
+2 \, x - 4 \, y - 7 \, z \\
+-x + 2 \, y + 8 \, z \\
+-3 \, x + 6 \, y + 8 \, z
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+1 &amp; -2 &amp; -4 \\
+2 &amp; -4 &amp; -7 \\
+-1 &amp; 2 &amp; 8 \\
+-3 &amp; 6 &amp; 8
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; -2 &amp; 0 \\
+0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
-5 \\
-2 \\
--4 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
 1 \\
-3 \\
-0 \\
-2
+2 \\
+-1 \\
+-3
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
+-7 \\
+8 \\
+8
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
-a \\
 2 \, a \\
-a
+a \\
+0
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
-5 \\
+1 \\
 2 \\
--4 \\
-2
+-1 \\
+-3
 \end{array}\right] , \left[\begin{array}{c}
-1 \\
-3 \\
-0 \\
-2
+-4 \\
+-7 \\
+8 \\
+8
 \end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
-1 \\
 2 \\
-1
+1 \\
+0
 \end{array}\right] \right\} \)</li>
       <li> The rank of \(T\) is \( 2 \), the nullity of \(T\) is \( 1 \), and the dimension of the domain of \(T\) is \( 3 \). The rank-nullity theorem asserts that \( 2 + 1 = 3 \), which we see to be true. </li>
     </ol>
@@ -412,51 +477,64 @@ a
 <hr/>
 <h4>Example 6</h4><div class="exercise">
   <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by <p>\[T\left(  \left[\begin{array}{c}
-x \\
-y \\
-z
+x_{1} \\
+x_{2} \\
+x_{3}
 \end{array}\right]  \right) =  \left[\begin{array}{c}
-x - 2 \, y \\
-2 \, x + 7 \, y \\
-5 \, y \\
-3 \, x + 7 \, y
+2 \, x_{1} + 5 \, x_{2} - x_{3} \\
+-x_{1} - 4 \, x_{2} + 2 \, x_{3} \\
+-x_{1} - x_{2} - x_{3} \\
+-x_{1} - 2 \, x_{3}
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+2 &amp; 5 &amp; -1 \\
+-1 &amp; -4 &amp; 2 \\
+-1 &amp; -1 &amp; -1 \\
+-1 &amp; 0 &amp; -2
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; 2 \\
+0 &amp; 1 &amp; -1 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
-1 \\
 2 \\
-0 \\
-3
+-1 \\
+-1 \\
+-1
 \end{array}\right] , \left[\begin{array}{c}
--2 \\
-7 \\
 5 \\
-7
+-4 \\
+-1 \\
+0
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
-0 \\
-0 \\
+-2 \, a \\
+a \\
 a
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
-1 \\
 2 \\
-0 \\
-3
+-1 \\
+-1 \\
+-1
 \end{array}\right] , \left[\begin{array}{c}
--2 \\
-7 \\
 5 \\
-7
+-4 \\
+-1 \\
+0
 \end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
-0 \\
-0 \\
+-2 \\
+1 \\
 1
 \end{array}\right] \right\} \)</li>
       <li> The rank of \(T\) is \( 2 \), the nullity of \(T\) is \( 1 \), and the dimension of the domain of \(T\) is \( 3 \). The rank-nullity theorem asserts that \( 2 + 1 = 3 \), which we see to be true. </li>
@@ -467,51 +545,64 @@ a
 <hr/>
 <h4>Example 7</h4><div class="exercise">
   <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by <p>\[T\left(  \left[\begin{array}{c}
-x \\
-y \\
-z
+x_{1} \\
+x_{2} \\
+x_{3}
 \end{array}\right]  \right) =  \left[\begin{array}{c}
--y - 3 \, z \\
-5 \, x + y - 2 \, z \\
-3 \, x + y \\
-x + y + 2 \, z
+3 \, x_{1} - 3 \, x_{2} - 3 \, x_{3} \\
+3 \, x_{1} - 8 \, x_{2} + 2 \, x_{3} \\
+-x_{1} + 2 \, x_{3} \\
+5 \, x_{2} - 5 \, x_{3}
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+3 &amp; -3 &amp; -3 \\
+3 &amp; -8 &amp; 2 \\
+-1 &amp; 0 &amp; 2 \\
+0 &amp; 5 &amp; -5
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; -2 \\
+0 &amp; 1 &amp; -1 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
-0 \\
-5 \\
 3 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
+3 \\
 -1 \\
-1 \\
-1 \\
-1
+0
+\end{array}\right] , \left[\begin{array}{c}
+-3 \\
+-8 \\
+0 \\
+5
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
+2 \, a \\
 a \\
--3 \, a \\
 a
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
-0 \\
-5 \\
 3 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
+3 \\
 -1 \\
-1 \\
-1 \\
-1
-\end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
-1 \\
+0
+\end{array}\right] , \left[\begin{array}{c}
 -3 \\
+-8 \\
+0 \\
+5
+\end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
+2 \\
+1 \\
 1
 \end{array}\right] \right\} \)</li>
       <li> The rank of \(T\) is \( 2 \), the nullity of \(T\) is \( 1 \), and the dimension of the domain of \(T\) is \( 3 \). The rank-nullity theorem asserts that \( 2 + 1 = 3 \), which we see to be true. </li>
@@ -526,27 +617,40 @@ x_{1} \\
 x_{2} \\
 x_{3}
 \end{array}\right]  \right) =  \left[\begin{array}{c}
-x_{1} + 3 \, x_{2} + 6 \, x_{3} \\
--x_{1} - 3 \, x_{3} \\
--2 \, x_{2} - 2 \, x_{3} \\
--x_{1} - 4 \, x_{2} - 7 \, x_{3}
+x_{1} + 2 \, x_{2} + 5 \, x_{3} \\
+x_{2} + x_{3} \\
+-x_{1} - 4 \, x_{2} - 7 \, x_{3} \\
+x_{1} + 3 \, x_{3}
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+1 &amp; 2 &amp; 5 \\
+0 &amp; 1 &amp; 1 \\
+-1 &amp; -4 &amp; -7 \\
+1 &amp; 0 &amp; 3
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; 3 \\
+0 &amp; 1 &amp; 1 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
 1 \\
+0 \\
 -1 \\
-0 \\
--1
+1
 \end{array}\right] , \left[\begin{array}{c}
-3 \\
-0 \\
--2 \\
--4
+2 \\
+1 \\
+-4 \\
+0
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
 -3 \, a \\
@@ -556,14 +660,14 @@ a
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
 1 \\
+0 \\
 -1 \\
-0 \\
--1
+1
 \end{array}\right] , \left[\begin{array}{c}
-3 \\
-0 \\
--2 \\
--4
+2 \\
+1 \\
+-4 \\
+0
 \end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
 -3 \\
 -1 \\
@@ -577,51 +681,64 @@ a
 <hr/>
 <h4>Example 9</h4><div class="exercise">
   <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by <p>\[T\left(  \left[\begin{array}{c}
-x_{1} \\
-x_{2} \\
-x_{3}
+x \\
+y \\
+z
 \end{array}\right]  \right) =  \left[\begin{array}{c}
-x_{1} + x_{2} + 2 \, x_{3} \\
-x_{2} + 3 \, x_{3} \\
-x_{1} + x_{2} + 2 \, x_{3} \\
--2 \, x_{2} - 6 \, x_{3}
+x \\
+y + z \\
+3 \, x \\
+-3 \, x - 5 \, y - 5 \, z
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 1 \\
+3 &amp; 0 &amp; 0 \\
+-3 &amp; -5 &amp; -5
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 1 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
     </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
 1 \\
 0 \\
-1 \\
-0
+3 \\
+-3
 \end{array}\right] , \left[\begin{array}{c}
+0 \\
 1 \\
-1 \\
-1 \\
--2
+0 \\
+-5
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
-a \\
--3 \, a \\
+0 \\
+-a \\
 a
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
 1 \\
 0 \\
-1 \\
-0
+3 \\
+-3
 \end{array}\right] , \left[\begin{array}{c}
+0 \\
 1 \\
-1 \\
-1 \\
--2
+0 \\
+-5
 \end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
-1 \\
--3 \\
+0 \\
+-1 \\
 1
 \end{array}\right] \right\} \)</li>
       <li> The rank of \(T\) is \( 2 \), the nullity of \(T\) is \( 1 \), and the dimension of the domain of \(T\) is \( 3 \). The rank-nullity theorem asserts that \( 2 + 1 = 3 \), which we see to be true. </li>
@@ -636,47 +753,60 @@ x_{1} \\
 x_{2} \\
 x_{3}
 \end{array}\right]  \right) =  \left[\begin{array}{c}
-x_{1} - x_{2} - 2 \, x_{3} \\
--3 \, x_{1} + 4 \, x_{2} + 8 \, x_{3} \\
-2 \, x_{2} + 4 \, x_{3} \\
-5 \, x_{1} - 4 \, x_{2} - 8 \, x_{3}
+2 \, x_{1} - 4 \, x_{2} + 4 \, x_{3} \\
+-5 \, x_{1} + x_{2} + 8 \, x_{3} \\
+-x_{1} - x_{2} + 4 \, x_{3} \\
+x_{1} - 4 \, x_{2} + 6 \, x_{3}
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+2 &amp; -4 &amp; 4 \\
+-5 &amp; 1 &amp; 8 \\
+-1 &amp; -1 &amp; 4 \\
+1 &amp; -4 &amp; 6
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; -2 \\
+0 &amp; 1 &amp; -2 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
-1 \\
--3 \\
-0 \\
-5
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
-4 \\
 2 \\
+-5 \\
+-1 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
+1 \\
+-1 \\
 -4
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
-0 \\
--2 \, a \\
+2 \, a \\
+2 \, a \\
 a
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
-1 \\
--3 \\
-0 \\
-5
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
-4 \\
 2 \\
+-5 \\
+-1 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
+1 \\
+-1 \\
 -4
 \end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
-0 \\
--2 \\
+2 \\
+2 \\
 1
 \end{array}\right] \right\} \)</li>
       <li> The rank of \(T\) is \( 2 \), the nullity of \(T\) is \( 1 \), and the dimension of the domain of \(T\) is \( 3 \). The rank-nullity theorem asserts that \( 2 + 1 = 3 \), which we see to be true. </li>
@@ -691,47 +821,60 @@ x \\
 y \\
 z
 \end{array}\right]  \right) =  \left[\begin{array}{c}
-x + 7 \, y + 4 \, z \\
--x - 2 \, y + z \\
-2 \, x + 8 \, y + 2 \, z \\
--4 \, y - 4 \, z
+-5 \, x - 2 \, y - 4 \, z \\
+-2 \, x - y - 2 \, z \\
+-4 \, x \\
+4 \, x + y + 2 \, z
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+-5 &amp; -2 &amp; -4 \\
+-2 &amp; -1 &amp; -2 \\
+-4 &amp; 0 &amp; 0 \\
+4 &amp; 1 &amp; 2
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 2 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
-1 \\
--1 \\
-2 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
-7 \\
+-5 \\
 -2 \\
-8 \\
--4
+-4 \\
+4
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+-1 \\
+0 \\
+1
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
-3 \, a \\
--a \\
+0 \\
+-2 \, a \\
 a
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
-1 \\
--1 \\
-2 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
-7 \\
+-5 \\
 -2 \\
-8 \\
--4
-\end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
-3 \\
+-4 \\
+4
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
 -1 \\
+0 \\
+1
+\end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
+0 \\
+-2 \\
 1
 \end{array}\right] \right\} \)</li>
       <li> The rank of \(T\) is \( 2 \), the nullity of \(T\) is \( 1 \), and the dimension of the domain of \(T\) is \( 3 \). The rank-nullity theorem asserts that \( 2 + 1 = 3 \), which we see to be true. </li>
@@ -746,47 +889,60 @@ x \\
 y \\
 z
 \end{array}\right]  \right) =  \left[\begin{array}{c}
--2 \, x + 4 \, y - 6 \, z \\
--5 \, x + y + 3 \, z \\
--x + z \\
--3 \, x + 4 \, y - 5 \, z
+x + y - 3 \, z \\
+x + 2 \, y - 4 \, z \\
+-x + 2 \, z \\
+x - y - z
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+1 &amp; 1 &amp; -3 \\
+1 &amp; 2 &amp; -4 \\
+-1 &amp; 0 &amp; 2 \\
+1 &amp; -1 &amp; -1
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; -2 \\
+0 &amp; 1 &amp; -1 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
--2 \\
--5 \\
--1 \\
--3
-\end{array}\right] , \left[\begin{array}{c}
-4 \\
 1 \\
+1 \\
+-1 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
+1 \\
+2 \\
 0 \\
-4
+-1
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
-a \\
 2 \, a \\
+a \\
 a
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
--2 \\
--5 \\
--1 \\
--3
-\end{array}\right] , \left[\begin{array}{c}
-4 \\
 1 \\
-0 \\
-4
-\end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
+1 \\
+-1 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
 1 \\
 2 \\
+0 \\
+-1
+\end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
+2 \\
+1 \\
 1
 \end{array}\right] \right\} \)</li>
       <li> The rank of \(T\) is \( 2 \), the nullity of \(T\) is \( 1 \), and the dimension of the domain of \(T\) is \( 3 \). The rank-nullity theorem asserts that \( 2 + 1 = 3 \), which we see to be true. </li>
@@ -801,47 +957,60 @@ x \\
 y \\
 z
 \end{array}\right]  \right) =  \left[\begin{array}{c}
-x - 4 \, y - 6 \, z \\
--x + 5 \, y + 8 \, z \\
--2 \, x + 6 \, y + 8 \, z \\
-2 \, x - 6 \, y - 8 \, z
+x + 2 \, y - 5 \, z \\
+y - z \\
+x + 2 \, y - 5 \, z \\
+-x + 3 \, z
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+1 &amp; 2 &amp; -5 \\
+0 &amp; 1 &amp; -1 \\
+1 &amp; 2 &amp; -5 \\
+-1 &amp; 0 &amp; 3
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; -3 \\
+0 &amp; 1 &amp; -1 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
 1 \\
--1 \\
--2 \\
-2
+0 \\
+1 \\
+-1
 \end{array}\right] , \left[\begin{array}{c}
--4 \\
-5 \\
-6 \\
--6
+2 \\
+1 \\
+2 \\
+0
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
--2 \, a \\
--2 \, a \\
+3 \, a \\
+a \\
 a
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
 1 \\
--1 \\
--2 \\
-2
+0 \\
+1 \\
+-1
 \end{array}\right] , \left[\begin{array}{c}
--4 \\
-5 \\
-6 \\
--6
+2 \\
+1 \\
+2 \\
+0
 \end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
--2 \\
--2 \\
+3 \\
+1 \\
 1
 \end{array}\right] \right\} \)</li>
       <li> The rank of \(T\) is \( 2 \), the nullity of \(T\) is \( 1 \), and the dimension of the domain of \(T\) is \( 3 \). The rank-nullity theorem asserts that \( 2 + 1 = 3 \), which we see to be true. </li>
@@ -856,47 +1025,60 @@ x_{1} \\
 x_{2} \\
 x_{3}
 \end{array}\right]  \right) =  \left[\begin{array}{c}
-x_{1} - 2 \, x_{2} - 3 \, x_{3} \\
-x_{1} - 3 \, x_{2} - 5 \, x_{3} \\
--x_{2} - 2 \, x_{3} \\
-x_{1} - 4 \, x_{2} - 7 \, x_{3}
+x_{1} - 5 \, x_{2} - 8 \, x_{3} \\
+x_{2} + x_{3} \\
+4 \, x_{2} + 4 \, x_{3} \\
+-x_{1} + 2 \, x_{2} + 5 \, x_{3}
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+1 &amp; -5 &amp; -8 \\
+0 &amp; 1 &amp; 1 \\
+0 &amp; 4 &amp; 4 \\
+-1 &amp; 2 &amp; 5
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; -3 \\
+0 &amp; 1 &amp; 1 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
 1 \\
-1 \\
 0 \\
-1
+0 \\
+-1
 \end{array}\right] , \left[\begin{array}{c}
--2 \\
--3 \\
--1 \\
--4
+-5 \\
+1 \\
+4 \\
+2
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
+3 \, a \\
 -a \\
--2 \, a \\
 a
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
 1 \\
-1 \\
 0 \\
-1
+0 \\
+-1
 \end{array}\right] , \left[\begin{array}{c}
--2 \\
--3 \\
--1 \\
--4
+-5 \\
+1 \\
+4 \\
+2
 \end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
+3 \\
 -1 \\
--2 \\
 1
 \end{array}\right] \right\} \)</li>
       <li> The rank of \(T\) is \( 2 \), the nullity of \(T\) is \( 1 \), and the dimension of the domain of \(T\) is \( 3 \). The rank-nullity theorem asserts that \( 2 + 1 = 3 \), which we see to be true. </li>
@@ -911,47 +1093,60 @@ x_{1} \\
 x_{2} \\
 x_{3}
 \end{array}\right]  \right) =  \left[\begin{array}{c}
-3 \, x_{1} - 5 \, x_{2} - 5 \, x_{3} \\
-x_{1} - 4 \, x_{2} - 4 \, x_{3} \\
--x_{1} \\
--x_{1} + 3 \, x_{2} + 3 \, x_{3}
+-x_{2} + 2 \, x_{3} \\
+x_{1} - x_{2} + 3 \, x_{3} \\
+3 \, x_{2} - 6 \, x_{3} \\
+-x_{1} - x_{2} + x_{3}
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+0 &amp; -1 &amp; 2 \\
+1 &amp; -1 &amp; 3 \\
+0 &amp; 3 &amp; -6 \\
+-1 &amp; -1 &amp; 1
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; 1 \\
+0 &amp; 1 &amp; -2 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
-3 \\
+0 \\
 1 \\
--1 \\
+0 \\
 -1
 \end{array}\right] , \left[\begin{array}{c}
--5 \\
--4 \\
-0 \\
-3
+-1 \\
+-1 \\
+3 \\
+-1
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
-0 \\
 -a \\
+2 \, a \\
 a
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
-3 \\
+0 \\
 1 \\
--1 \\
+0 \\
 -1
 \end{array}\right] , \left[\begin{array}{c}
--5 \\
--4 \\
-0 \\
-3
-\end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
-0 \\
 -1 \\
+-1 \\
+3 \\
+-1
+\end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
+-1 \\
+2 \\
 1
 \end{array}\right] \right\} \)</li>
       <li> The rank of \(T\) is \( 2 \), the nullity of \(T\) is \( 1 \), and the dimension of the domain of \(T\) is \( 3 \). The rank-nullity theorem asserts that \( 2 + 1 = 3 \), which we see to be true. </li>
@@ -966,47 +1161,60 @@ x \\
 y \\
 z
 \end{array}\right]  \right) =  \left[\begin{array}{c}
-x - 3 \, y + 2 \, z \\
-y \\
--x + 8 \, y - 2 \, z \\
-5 \, y
+x + 2 \, y + 3 \, z \\
+2 \, x + 5 \, y + 7 \, z \\
+-2 \, x - 5 \, y - 7 \, z \\
+-3 \, x - 4 \, y - 7 \, z
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+1 &amp; 2 &amp; 3 \\
+2 &amp; 5 &amp; 7 \\
+-2 &amp; -5 &amp; -7 \\
+-3 &amp; -4 &amp; -7
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; 1 \\
+0 &amp; 1 &amp; 1 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
 1 \\
-0 \\
--1 \\
-0
+2 \\
+-2 \\
+-3
 \end{array}\right] , \left[\begin{array}{c}
--3 \\
-1 \\
-8 \\
-5
+2 \\
+5 \\
+-5 \\
+-4
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
--2 \, a \\
-0 \\
+-a \\
+-a \\
 a
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
 1 \\
-0 \\
--1 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
--3 \\
-1 \\
-8 \\
-5
-\end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
+2 \\
 -2 \\
-0 \\
+-3
+\end{array}\right] , \left[\begin{array}{c}
+2 \\
+5 \\
+-5 \\
+-4
+\end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
+-1 \\
+-1 \\
 1
 \end{array}\right] \right\} \)</li>
       <li> The rank of \(T\) is \( 2 \), the nullity of \(T\) is \( 1 \), and the dimension of the domain of \(T\) is \( 3 \). The rank-nullity theorem asserts that \( 2 + 1 = 3 \), which we see to be true. </li>
@@ -1017,51 +1225,64 @@ a
 <hr/>
 <h4>Example 17</h4><div class="exercise">
   <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by <p>\[T\left(  \left[\begin{array}{c}
-x_{1} \\
-x_{2} \\
-x_{3}
+x \\
+y \\
+z
 \end{array}\right]  \right) =  \left[\begin{array}{c}
--x_{2} - x_{3} \\
-4 \, x_{1} + x_{2} + x_{3} \\
-x_{1} + x_{2} + x_{3} \\
-2 \, x_{1}
+-x - 3 \, y + 7 \, z \\
+y - 2 \, z \\
+-x + z \\
+-2 \, x + 5 \, y - 8 \, z
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+-1 &amp; -3 &amp; 7 \\
+0 &amp; 1 &amp; -2 \\
+-1 &amp; 0 &amp; 1 \\
+-2 &amp; 5 &amp; -8
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; -1 \\
+0 &amp; 1 &amp; -2 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
-0 \\
-4 \\
-1 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
 -1 \\
+0 \\
+-1 \\
+-2
+\end{array}\right] , \left[\begin{array}{c}
+-3 \\
 1 \\
-1 \\
-0
+0 \\
+5
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
-0 \\
--a \\
+a \\
+2 \, a \\
 a
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
+-1 \\
 0 \\
-4 \\
-1 \\
-2
+-1 \\
+-2
 \end{array}\right] , \left[\begin{array}{c}
--1 \\
+-3 \\
 1 \\
-1 \\
-0
-\end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
 0 \\
--1 \\
+5
+\end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
+1 \\
+2 \\
 1
 \end{array}\right] \right\} \)</li>
       <li> The rank of \(T\) is \( 2 \), the nullity of \(T\) is \( 1 \), and the dimension of the domain of \(T\) is \( 3 \). The rank-nullity theorem asserts that \( 2 + 1 = 3 \), which we see to be true. </li>
@@ -1072,51 +1293,64 @@ a
 <hr/>
 <h4>Example 18</h4><div class="exercise">
   <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by <p>\[T\left(  \left[\begin{array}{c}
-x \\
-y \\
-z
+x_{1} \\
+x_{2} \\
+x_{3}
 \end{array}\right]  \right) =  \left[\begin{array}{c}
-x + 3 \, z \\
-x + y + 6 \, z \\
--2 \, y - 6 \, z \\
-2 \, x - 2 \, y
+-5 \, x_{1} + 8 \, x_{2} - 6 \, x_{3} \\
+3 \, x_{1} - 5 \, x_{2} + 4 \, x_{3} \\
+-5 \, x_{1} + 6 \, x_{2} - 2 \, x_{3} \\
+-5 \, x_{1} + 8 \, x_{2} - 6 \, x_{3}
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+-5 &amp; 8 &amp; -6 \\
+3 &amp; -5 &amp; 4 \\
+-5 &amp; 6 &amp; -2 \\
+-5 &amp; 8 &amp; -6
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; -2 \\
+0 &amp; 1 &amp; -2 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
-1 \\
-1 \\
-0 \\
-2
+-5 \\
+3 \\
+-5 \\
+-5
 \end{array}\right] , \left[\begin{array}{c}
-0 \\
-1 \\
--2 \\
--2
+8 \\
+-5 \\
+6 \\
+8
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
--3 \, a \\
--3 \, a \\
+2 \, a \\
+2 \, a \\
 a
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
-1 \\
-1 \\
-0 \\
-2
+-5 \\
+3 \\
+-5 \\
+-5
 \end{array}\right] , \left[\begin{array}{c}
-0 \\
-1 \\
--2 \\
--2
+8 \\
+-5 \\
+6 \\
+8
 \end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
--3 \\
--3 \\
+2 \\
+2 \\
 1
 \end{array}\right] \right\} \)</li>
       <li> The rank of \(T\) is \( 2 \), the nullity of \(T\) is \( 1 \), and the dimension of the domain of \(T\) is \( 3 \). The rank-nullity theorem asserts that \( 2 + 1 = 3 \), which we see to be true. </li>
@@ -1127,51 +1361,64 @@ a
 <hr/>
 <h4>Example 19</h4><div class="exercise">
   <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by <p>\[T\left(  \left[\begin{array}{c}
-x_{1} \\
-x_{2} \\
-x_{3}
+x \\
+y \\
+z
 \end{array}\right]  \right) =  \left[\begin{array}{c}
--3 \, x_{1} - 5 \, x_{2} - 2 \, x_{3} \\
-x_{1} + 6 \, x_{2} + 5 \, x_{3} \\
-3 \, x_{2} + 3 \, x_{3} \\
--2 \, x_{1} - 5 \, x_{2} - 3 \, x_{3}
+3 \, x + 4 \, y - 7 \, z \\
+-x - y + 2 \, z \\
+x + y - 2 \, z \\
+-x - 2 \, y + 3 \, z
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+3 &amp; 4 &amp; -7 \\
+-1 &amp; -1 &amp; 2 \\
+1 &amp; 1 &amp; -2 \\
+-1 &amp; -2 &amp; 3
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; -1 \\
+0 &amp; 1 &amp; -1 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
--3 \\
-1 \\
-0 \\
--2
-\end{array}\right] , \left[\begin{array}{c}
--5 \\
-6 \\
 3 \\
--5
+-1 \\
+1 \\
+-1
+\end{array}\right] , \left[\begin{array}{c}
+4 \\
+-1 \\
+1 \\
+-2
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
 a \\
--a \\
+a \\
 a
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
--3 \\
-1 \\
-0 \\
--2
-\end{array}\right] , \left[\begin{array}{c}
--5 \\
-6 \\
 3 \\
--5
+-1 \\
+1 \\
+-1
+\end{array}\right] , \left[\begin{array}{c}
+4 \\
+-1 \\
+1 \\
+-2
 \end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
 1 \\
--1 \\
+1 \\
 1
 \end{array}\right] \right\} \)</li>
       <li> The rank of \(T\) is \( 2 \), the nullity of \(T\) is \( 1 \), and the dimension of the domain of \(T\) is \( 3 \). The rank-nullity theorem asserts that \( 2 + 1 = 3 \), which we see to be true. </li>
@@ -1186,47 +1433,60 @@ x_{1} \\
 x_{2} \\
 x_{3}
 \end{array}\right]  \right) =  \left[\begin{array}{c}
--2 \, x_{1} + 2 \, x_{3} \\
-x_{1} - 2 \, x_{2} + 5 \, x_{3} \\
-2 \, x_{2} - 6 \, x_{3} \\
-x_{1} - x_{2} + 2 \, x_{3}
+-x_{1} + 2 \, x_{2} + x_{3} \\
+-5 \, x_{1} + 6 \, x_{2} + x_{3} \\
+-3 \, x_{1} + 7 \, x_{2} + 4 \, x_{3} \\
+2 \, x_{1} - 3 \, x_{2} - x_{3}
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+-1 &amp; 2 &amp; 1 \\
+-5 &amp; 6 &amp; 1 \\
+-3 &amp; 7 &amp; 4 \\
+2 &amp; -3 &amp; -1
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; 1 \\
+0 &amp; 1 &amp; 1 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
--2 \\
-1 \\
-0 \\
-1
+-1 \\
+-5 \\
+-3 \\
+2
 \end{array}\right] , \left[\begin{array}{c}
-0 \\
--2 \\
 2 \\
--1
+6 \\
+7 \\
+-3
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
-a \\
-3 \, a \\
+-a \\
+-a \\
 a
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
--2 \\
-1 \\
-0 \\
-1
+-1 \\
+-5 \\
+-3 \\
+2
 \end{array}\right] , \left[\begin{array}{c}
-0 \\
--2 \\
 2 \\
--1
+6 \\
+7 \\
+-3
 \end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
-1 \\
-3 \\
+-1 \\
+-1 \\
 1
 \end{array}\right] \right\} \)</li>
       <li> The rank of \(T\) is \( 2 \), the nullity of \(T\) is \( 1 \), and the dimension of the domain of \(T\) is \( 3 \). The rank-nullity theorem asserts that \( 2 + 1 = 3 \), which we see to be true. </li>
@@ -1237,51 +1497,64 @@ a
 <hr/>
 <h4>Example 21</h4><div class="exercise">
   <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by <p>\[T\left(  \left[\begin{array}{c}
-x_{1} \\
-x_{2} \\
-x_{3}
+x \\
+y \\
+z
 \end{array}\right]  \right) =  \left[\begin{array}{c}
-5 \, x_{1} - 8 \, x_{2} + 8 \, x_{3} \\
-2 \, x_{1} - 3 \, x_{2} + 3 \, x_{3} \\
--4 \, x_{1} + 8 \, x_{2} - 8 \, x_{3} \\
--4 \, x_{1} + 8 \, x_{2} - 8 \, x_{3}
+3 \, x + y - 2 \, z \\
+x + 2 \, y - 4 \, z \\
+-2 \, x \\
+4 \, y - 8 \, z
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+3 &amp; 1 &amp; -2 \\
+1 &amp; 2 &amp; -4 \\
+-2 &amp; 0 &amp; 0 \\
+0 &amp; 4 &amp; -8
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; -2 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
-5 \\
-2 \\
--4 \\
--4
+3 \\
+1 \\
+-2 \\
+0
 \end{array}\right] , \left[\begin{array}{c}
--8 \\
--3 \\
-8 \\
-8
+1 \\
+2 \\
+0 \\
+4
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
 0 \\
-a \\
+2 \, a \\
 a
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
-5 \\
-2 \\
--4 \\
--4
+3 \\
+1 \\
+-2 \\
+0
 \end{array}\right] , \left[\begin{array}{c}
--8 \\
--3 \\
-8 \\
-8
+1 \\
+2 \\
+0 \\
+4
 \end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
 0 \\
-1 \\
+2 \\
 1
 \end{array}\right] \right\} \)</li>
       <li> The rank of \(T\) is \( 2 \), the nullity of \(T\) is \( 1 \), and the dimension of the domain of \(T\) is \( 3 \). The rank-nullity theorem asserts that \( 2 + 1 = 3 \), which we see to be true. </li>
@@ -1296,47 +1569,60 @@ x_{1} \\
 x_{2} \\
 x_{3}
 \end{array}\right]  \right) =  \left[\begin{array}{c}
-7 \, x_{1} - 4 \, x_{2} - 2 \, x_{3} \\
-4 \, x_{1} - 3 \, x_{2} - 4 \, x_{3} \\
-2 \, x_{1} - x_{2} \\
-x_{1} + x_{2} + 6 \, x_{3}
+x_{1} + 4 \, x_{2} + x_{3} \\
+-2 \, x_{1} - 7 \, x_{2} - 2 \, x_{3} \\
+-x_{1} - x_{3} \\
+-x_{1} - 8 \, x_{2} - x_{3}
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+1 &amp; 4 &amp; 1 \\
+-2 &amp; -7 &amp; -2 \\
+-1 &amp; 0 &amp; -1 \\
+-1 &amp; -8 &amp; -1
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; 1 \\
+0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
-7 \\
-4 \\
-2 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
--4 \\
--3 \\
+1 \\
+-2 \\
 -1 \\
-1
+-1
+\end{array}\right] , \left[\begin{array}{c}
+4 \\
+-7 \\
+0 \\
+-8
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
--2 \, a \\
--4 \, a \\
+-a \\
+0 \\
 a
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
-7 \\
-4 \\
-2 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
--4 \\
--3 \\
--1 \\
-1
-\end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
+1 \\
 -2 \\
--4 \\
+-1 \\
+-1
+\end{array}\right] , \left[\begin{array}{c}
+4 \\
+-7 \\
+0 \\
+-8
+\end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
+-1 \\
+0 \\
 1
 \end{array}\right] \right\} \)</li>
       <li> The rank of \(T\) is \( 2 \), the nullity of \(T\) is \( 1 \), and the dimension of the domain of \(T\) is \( 3 \). The rank-nullity theorem asserts that \( 2 + 1 = 3 \), which we see to be true. </li>
@@ -1351,47 +1637,60 @@ x_{1} \\
 x_{2} \\
 x_{3}
 \end{array}\right]  \right) =  \left[\begin{array}{c}
-x_{1} + 2 \, x_{2} + 4 \, x_{3} \\
--2 \, x_{1} - 3 \, x_{2} - 7 \, x_{3} \\
--x_{1} - x_{2} - 3 \, x_{3} \\
-2 \, x_{1} + 3 \, x_{2} + 7 \, x_{3}
+-4 \, x_{1} - 5 \, x_{2} - 2 \, x_{3} \\
+5 \, x_{1} + 6 \, x_{2} + 2 \, x_{3} \\
+4 \, x_{1} - 8 \, x_{3} \\
+2 \, x_{1} + x_{2} - 2 \, x_{3}
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+-4 &amp; -5 &amp; -2 \\
+5 &amp; 6 &amp; 2 \\
+4 &amp; 0 &amp; -8 \\
+2 &amp; 1 &amp; -2
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; -2 \\
+0 &amp; 1 &amp; 2 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
-1 \\
--2 \\
--1 \\
+-4 \\
+5 \\
+4 \\
 2
 \end{array}\right] , \left[\begin{array}{c}
-2 \\
--3 \\
--1 \\
-3
+-5 \\
+6 \\
+0 \\
+1
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
+2 \, a \\
 -2 \, a \\
--a \\
 a
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
-1 \\
--2 \\
--1 \\
+-4 \\
+5 \\
+4 \\
 2
 \end{array}\right] , \left[\begin{array}{c}
-2 \\
--3 \\
--1 \\
-3
+-5 \\
+6 \\
+0 \\
+1
 \end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
+2 \\
 -2 \\
--1 \\
 1
 \end{array}\right] \right\} \)</li>
       <li> The rank of \(T\) is \( 2 \), the nullity of \(T\) is \( 1 \), and the dimension of the domain of \(T\) is \( 3 \). The rank-nullity theorem asserts that \( 2 + 1 = 3 \), which we see to be true. </li>
@@ -1402,52 +1701,65 @@ a
 <hr/>
 <h4>Example 24</h4><div class="exercise">
   <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by <p>\[T\left(  \left[\begin{array}{c}
-x_{1} \\
-x_{2} \\
-x_{3}
+x \\
+y \\
+z
 \end{array}\right]  \right) =  \left[\begin{array}{c}
--x_{1} - 2 \, x_{2} - 8 \, x_{3} \\
-2 \, x_{1} + 4 \, x_{2} + 5 \, x_{3} \\
-x_{1} + 2 \, x_{2} + 5 \, x_{3} \\
--4 \, x_{1} - 8 \, x_{2} - 3 \, x_{3}
+3 \, x + y - 3 \, z \\
+3 \, x - 2 \, y + 6 \, z \\
+-x - y + 3 \, z \\
+4 \, x - 2 \, y + 6 \, z
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+3 &amp; 1 &amp; -3 \\
+3 &amp; -2 &amp; 6 \\
+-1 &amp; -1 &amp; 3 \\
+4 &amp; -2 &amp; 6
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; -3 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
+3 \\
+3 \\
 -1 \\
-2 \\
-1 \\
--4
+4
 \end{array}\right] , \left[\begin{array}{c}
--8 \\
-5 \\
-5 \\
--3
+1 \\
+-2 \\
+-1 \\
+-2
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
--2 \, a \\
-a \\
-0
+0 \\
+3 \, a \\
+a
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
+3 \\
+3 \\
 -1 \\
-2 \\
-1 \\
--4
+4
 \end{array}\right] , \left[\begin{array}{c}
--8 \\
-5 \\
-5 \\
--3
-\end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
--2 \\
 1 \\
-0
+-2 \\
+-1 \\
+-2
+\end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
+0 \\
+3 \\
+1
 \end{array}\right] \right\} \)</li>
       <li> The rank of \(T\) is \( 2 \), the nullity of \(T\) is \( 1 \), and the dimension of the domain of \(T\) is \( 3 \). The rank-nullity theorem asserts that \( 2 + 1 = 3 \), which we see to be true. </li>
     </ol>
@@ -1461,46 +1773,59 @@ x \\
 y \\
 z
 \end{array}\right]  \right) =  \left[\begin{array}{c}
-4 \, x - y + 6 \, z \\
--3 \, x + y - 5 \, z \\
-2 \, x + 3 \, y - 4 \, z \\
-0
+3 \, x \\
+3 \, x + y - 2 \, z \\
+x \\
+-2 \, y + 4 \, z
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+3 &amp; 0 &amp; 0 \\
+3 &amp; 1 &amp; -2 \\
+1 &amp; 0 &amp; 0 \\
+0 &amp; -2 &amp; 4
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; -2 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
-4 \\
--3 \\
-2 \\
+3 \\
+3 \\
+1 \\
 0
 \end{array}\right] , \left[\begin{array}{c}
--1 \\
+0 \\
 1 \\
-3 \\
-0
+0 \\
+-2
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
--a \\
+0 \\
 2 \, a \\
 a
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
-4 \\
--3 \\
-2 \\
+3 \\
+3 \\
+1 \\
 0
 \end{array}\right] , \left[\begin{array}{c}
--1 \\
+0 \\
 1 \\
-3 \\
-0
+0 \\
+-2
 \end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
--1 \\
+0 \\
 2 \\
 1
 \end{array}\right] \right\} \)</li>
@@ -1512,51 +1837,64 @@ a
 <hr/>
 <h4>Example 26</h4><div class="exercise">
   <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by <p>\[T\left(  \left[\begin{array}{c}
-x_{1} \\
-x_{2} \\
-x_{3}
+x \\
+y \\
+z
 \end{array}\right]  \right) =  \left[\begin{array}{c}
-x_{1} - 2 \, x_{2} - x_{3} \\
--2 \, x_{1} + 5 \, x_{2} + 3 \, x_{3} \\
-2 \, x_{1} - x_{2} + x_{3} \\
--x_{1} + 5 \, x_{2} + 4 \, x_{3}
+-3 \, x - y + 7 \, z \\
+3 \, x - 2 \, y - 4 \, z \\
+-4 \, x + 8 \, z \\
+-3 \, x - 2 \, y + 8 \, z
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+-3 &amp; -1 &amp; 7 \\
+3 &amp; -2 &amp; -4 \\
+-4 &amp; 0 &amp; 8 \\
+-3 &amp; -2 &amp; 8
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; -2 \\
+0 &amp; 1 &amp; -1 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
-1 \\
--2 \\
-2 \\
--1
+-3 \\
+3 \\
+-4 \\
+-3
 \end{array}\right] , \left[\begin{array}{c}
--2 \\
-5 \\
 -1 \\
-5
+-2 \\
+0 \\
+-2
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
--a \\
--a \\
+2 \, a \\
+a \\
 a
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
-1 \\
--2 \\
-2 \\
--1
+-3 \\
+3 \\
+-4 \\
+-3
 \end{array}\right] , \left[\begin{array}{c}
+-1 \\
 -2 \\
-5 \\
--1 \\
-5
+0 \\
+-2
 \end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
--1 \\
--1 \\
+2 \\
+1 \\
 1
 \end{array}\right] \right\} \)</li>
       <li> The rank of \(T\) is \( 2 \), the nullity of \(T\) is \( 1 \), and the dimension of the domain of \(T\) is \( 3 \). The rank-nullity theorem asserts that \( 2 + 1 = 3 \), which we see to be true. </li>
@@ -1571,47 +1909,60 @@ x_{1} \\
 x_{2} \\
 x_{3}
 \end{array}\right]  \right) =  \left[\begin{array}{c}
-x_{1} + x_{2} + 2 \, x_{3} \\
--3 \, x_{1} - 2 \, x_{2} - 4 \, x_{3} \\
-2 \, x_{1} - 2 \, x_{2} - 4 \, x_{3} \\
--2 \, x_{2} - 4 \, x_{3}
+x_{1} - x_{2} - 2 \, x_{3} \\
+-x_{1} + 2 \, x_{2} + 2 \, x_{3} \\
+4 \, x_{1} - 8 \, x_{3} \\
+4 \, x_{1} - 8 \, x_{3}
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+1 &amp; -1 &amp; -2 \\
+-1 &amp; 2 &amp; 2 \\
+4 &amp; 0 &amp; -8 \\
+4 &amp; 0 &amp; -8
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; -2 \\
+0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
 1 \\
--3 \\
-2 \\
-0
+-1 \\
+4 \\
+4
 \end{array}\right] , \left[\begin{array}{c}
-1 \\
--2 \\
--2 \\
--2
+-1 \\
+2 \\
+0 \\
+0
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
+2 \, a \\
 0 \\
--2 \, a \\
 a
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
 1 \\
--3 \\
-2 \\
-0
+-1 \\
+4 \\
+4
 \end{array}\right] , \left[\begin{array}{c}
-1 \\
--2 \\
--2 \\
--2
-\end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
+-1 \\
+2 \\
 0 \\
--2 \\
+0
+\end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
+2 \\
+0 \\
 1
 \end{array}\right] \right\} \)</li>
       <li> The rank of \(T\) is \( 2 \), the nullity of \(T\) is \( 1 \), and the dimension of the domain of \(T\) is \( 3 \). The rank-nullity theorem asserts that \( 2 + 1 = 3 \), which we see to be true. </li>
@@ -1626,47 +1977,60 @@ x_{1} \\
 x_{2} \\
 x_{3}
 \end{array}\right]  \right) =  \left[\begin{array}{c}
--x_{1} - 5 \, x_{2} + 4 \, x_{3} \\
-x_{1} - 4 \, x_{2} + 5 \, x_{3} \\
-x_{1} + x_{3} \\
-x_{1} + x_{3}
+x_{2} \\
+-x_{1} - 4 \, x_{2} \\
+2 \, x_{1} + 5 \, x_{2} \\
+-2 \, x_{1} - 5 \, x_{2}
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+0 &amp; 1 &amp; 0 \\
+-1 &amp; -4 &amp; 0 \\
+2 &amp; 5 &amp; 0 \\
+-2 &amp; -5 &amp; 0
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
--1 \\
-1 \\
-1 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
--5 \\
--4 \\
 0 \\
-0
+-1 \\
+2 \\
+-2
+\end{array}\right] , \left[\begin{array}{c}
+1 \\
+-4 \\
+5 \\
+-5
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
--a \\
-a \\
+0 \\
+0 \\
 a
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
--1 \\
-1 \\
-1 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
--5 \\
--4 \\
 0 \\
-0
-\end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
 -1 \\
+2 \\
+-2
+\end{array}\right] , \left[\begin{array}{c}
 1 \\
+-4 \\
+5 \\
+-5
+\end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
+0 \\
+0 \\
 1
 \end{array}\right] \right\} \)</li>
       <li> The rank of \(T\) is \( 2 \), the nullity of \(T\) is \( 1 \), and the dimension of the domain of \(T\) is \( 3 \). The rank-nullity theorem asserts that \( 2 + 1 = 3 \), which we see to be true. </li>
@@ -1681,47 +2045,60 @@ x_{1} \\
 x_{2} \\
 x_{3}
 \end{array}\right]  \right) =  \left[\begin{array}{c}
-4 \, x_{1} + 3 \, x_{2} + 2 \, x_{3} \\
-2 \, x_{1} + x_{2} \\
-4 \, x_{2} + 8 \, x_{3} \\
-3 \, x_{1} + 3 \, x_{2} + 3 \, x_{3}
+x_{1} + 6 \, x_{2} - 8 \, x_{3} \\
+-2 \, x_{1} - 3 \, x_{2} + 7 \, x_{3} \\
+2 \, x_{1} + 4 \, x_{2} - 8 \, x_{3} \\
+2 \, x_{2} - 2 \, x_{3}
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+1 &amp; 6 &amp; -8 \\
+-2 &amp; -3 &amp; 7 \\
+2 &amp; 4 &amp; -8 \\
+0 &amp; 2 &amp; -2
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; -2 \\
+0 &amp; 1 &amp; -1 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
-4 \\
-2 \\
-0 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
-3 \\
 1 \\
+-2 \\
+2 \\
+0
+\end{array}\right] , \left[\begin{array}{c}
+6 \\
+-3 \\
 4 \\
-3
+2
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
+2 \, a \\
 a \\
--2 \, a \\
 a
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
-4 \\
-2 \\
-0 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
-3 \\
-1 \\
-4 \\
-3
-\end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
 1 \\
 -2 \\
+2 \\
+0
+\end{array}\right] , \left[\begin{array}{c}
+6 \\
+-3 \\
+4 \\
+2
+\end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
+2 \\
+1 \\
 1
 \end{array}\right] \right\} \)</li>
       <li> The rank of \(T\) is \( 2 \), the nullity of \(T\) is \( 1 \), and the dimension of the domain of \(T\) is \( 3 \). The rank-nullity theorem asserts that \( 2 + 1 = 3 \), which we see to be true. </li>
@@ -1736,48 +2113,61 @@ x \\
 y \\
 z
 \end{array}\right]  \right) =  \left[\begin{array}{c}
-x - 3 \, y + 3 \, z \\
-z \\
-2 \, x - 6 \, y + 7 \, z \\
--x + 3 \, y - 3 \, z
+-x - 7 \, y - 8 \, z \\
+2 \, x - 5 \, y - 3 \, z \\
+2 \, x - 3 \, y - z \\
+x + 2 \, y + 3 \, z
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+-1 &amp; -7 &amp; -8 \\
+2 &amp; -5 &amp; -3 \\
+2 &amp; -3 &amp; -1 \\
+1 &amp; 2 &amp; 3
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; 1 \\
+0 &amp; 1 &amp; 1 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
-1 \\
-0 \\
+-1 \\
 2 \\
--1
+2 \\
+1
 \end{array}\right] , \left[\begin{array}{c}
-3 \\
-1 \\
-7 \\
--3
+-7 \\
+-5 \\
+-3 \\
+2
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
-3 \, a \\
-a \\
-0
+-a \\
+-a \\
+a
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
-1 \\
-0 \\
+-1 \\
 2 \\
--1
+2 \\
+1
 \end{array}\right] , \left[\begin{array}{c}
-3 \\
-1 \\
-7 \\
--3
+-7 \\
+-5 \\
+-3 \\
+2
 \end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
-3 \\
-1 \\
-0
+-1 \\
+-1 \\
+1
 \end{array}\right] \right\} \)</li>
       <li> The rank of \(T\) is \( 2 \), the nullity of \(T\) is \( 1 \), and the dimension of the domain of \(T\) is \( 3 \). The rank-nullity theorem asserts that \( 2 + 1 = 3 \), which we see to be true. </li>
     </ol>
@@ -1791,48 +2181,61 @@ x \\
 y \\
 z
 \end{array}\right]  \right) =  \left[\begin{array}{c}
-x - 5 \, y \\
-x - 5 \, y + z \\
--x + 5 \, y - 5 \, z \\
-x - 5 \, y + 4 \, z
+-3 \, x - 5 \, y + 7 \, z \\
+x - 4 \, z \\
+y + z \\
+-2 \, x - 2 \, y + 6 \, z
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+-3 &amp; -5 &amp; 7 \\
+1 &amp; 0 &amp; -4 \\
+0 &amp; 1 &amp; 1 \\
+-2 &amp; -2 &amp; 6
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; -4 \\
+0 &amp; 1 &amp; 1 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
+-3 \\
 1 \\
-1 \\
--1 \\
-1
+0 \\
+-2
 \end{array}\right] , \left[\begin{array}{c}
+-5 \\
 0 \\
 1 \\
--5 \\
-4
+-2
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
-5 \, a \\
-a \\
-0
+4 \, a \\
+-a \\
+a
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
+-3 \\
 1 \\
-1 \\
--1 \\
-1
+0 \\
+-2
 \end{array}\right] , \left[\begin{array}{c}
+-5 \\
 0 \\
 1 \\
--5 \\
-4
+-2
 \end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
-5 \\
-1 \\
-0
+4 \\
+-1 \\
+1
 \end{array}\right] \right\} \)</li>
       <li> The rank of \(T\) is \( 2 \), the nullity of \(T\) is \( 1 \), and the dimension of the domain of \(T\) is \( 3 \). The rank-nullity theorem asserts that \( 2 + 1 = 3 \), which we see to be true. </li>
     </ol>
@@ -1842,52 +2245,65 @@ a \\
 <hr/>
 <h4>Example 32</h4><div class="exercise">
   <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by <p>\[T\left(  \left[\begin{array}{c}
-x_{1} \\
-x_{2} \\
-x_{3}
+x \\
+y \\
+z
 \end{array}\right]  \right) =  \left[\begin{array}{c}
-0 \\
-x_{1} + x_{2} + 6 \, x_{3} \\
-x_{1} + x_{2} + 8 \, x_{3} \\
--x_{1} - x_{2} - 5 \, x_{3}
+4 \, x - 3 \, y + 8 \, z \\
+3 \, x - 2 \, y + 5 \, z \\
+x - y + 3 \, z \\
+-3 \, x + 2 \, y - 5 \, z
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+4 &amp; -3 &amp; 8 \\
+3 &amp; -2 &amp; 5 \\
+1 &amp; -1 &amp; 3 \\
+-3 &amp; 2 &amp; -5
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; -1 \\
+0 &amp; 1 &amp; -4 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
-0 \\
+4 \\
+3 \\
 1 \\
-1 \\
--1
+-3
 \end{array}\right] , \left[\begin{array}{c}
-0 \\
-6 \\
-8 \\
--5
+-3 \\
+-2 \\
+-1 \\
+2
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
--a \\
 a \\
-0
+4 \, a \\
+a
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
-0 \\
+4 \\
+3 \\
 1 \\
-1 \\
--1
+-3
 \end{array}\right] , \left[\begin{array}{c}
-0 \\
-6 \\
-8 \\
--5
-\end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
+-3 \\
+-2 \\
 -1 \\
+2
+\end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
 1 \\
-0
+4 \\
+1
 \end{array}\right] \right\} \)</li>
       <li> The rank of \(T\) is \( 2 \), the nullity of \(T\) is \( 1 \), and the dimension of the domain of \(T\) is \( 3 \). The rank-nullity theorem asserts that \( 2 + 1 = 3 \), which we see to be true. </li>
     </ol>
@@ -1897,51 +2313,64 @@ a \\
 <hr/>
 <h4>Example 33</h4><div class="exercise">
   <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by <p>\[T\left(  \left[\begin{array}{c}
-x \\
-y \\
-z
+x_{1} \\
+x_{2} \\
+x_{3}
 \end{array}\right]  \right) =  \left[\begin{array}{c}
-x - 4 \, y - 2 \, z \\
--x + 5 \, y + 2 \, z \\
-3 \, x - 7 \, y - 6 \, z \\
--4 \, y
+x_{1} - 3 \, x_{2} + 6 \, x_{3} \\
+2 \, x_{1} + 3 \, x_{2} - 6 \, x_{3} \\
+5 \, x_{1} + 2 \, x_{2} - 4 \, x_{3} \\
+-2 \, x_{2} + 4 \, x_{3}
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+1 &amp; -3 &amp; 6 \\
+2 &amp; 3 &amp; -6 \\
+5 &amp; 2 &amp; -4 \\
+0 &amp; -2 &amp; 4
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; -2 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
 1 \\
--1 \\
-3 \\
+2 \\
+5 \\
 0
 \end{array}\right] , \left[\begin{array}{c}
--4 \\
-5 \\
--7 \\
--4
+-3 \\
+3 \\
+2 \\
+-2
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
-2 \, a \\
 0 \\
+2 \, a \\
 a
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
 1 \\
--1 \\
-3 \\
+2 \\
+5 \\
 0
 \end{array}\right] , \left[\begin{array}{c}
--4 \\
-5 \\
--7 \\
--4
-\end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
+-3 \\
+3 \\
 2 \\
+-2
+\end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
 0 \\
+2 \\
 1
 \end{array}\right] \right\} \)</li>
       <li> The rank of \(T\) is \( 2 \), the nullity of \(T\) is \( 1 \), and the dimension of the domain of \(T\) is \( 3 \). The rank-nullity theorem asserts that \( 2 + 1 = 3 \), which we see to be true. </li>
@@ -1956,47 +2385,60 @@ x \\
 y \\
 z
 \end{array}\right]  \right) =  \left[\begin{array}{c}
-y - 3 \, z \\
--x - y + 5 \, z \\
--2 \, y + 6 \, z \\
--x - 2 \, y + 8 \, z
+5 \, x - 4 \, y - 6 \, z \\
+4 \, x - 3 \, y - 5 \, z \\
+4 \, x - 4 \, y - 4 \, z \\
+x - 6 \, y + 4 \, z
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+5 &amp; -4 &amp; -6 \\
+4 &amp; -3 &amp; -5 \\
+4 &amp; -4 &amp; -4 \\
+1 &amp; -6 &amp; 4
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; -2 \\
+0 &amp; 1 &amp; -1 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
-0 \\
--1 \\
-0 \\
--1
+5 \\
+4 \\
+4 \\
+1
 \end{array}\right] , \left[\begin{array}{c}
-1 \\
--1 \\
--2 \\
--2
+-4 \\
+-3 \\
+-4 \\
+-6
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
 2 \, a \\
-3 \, a \\
+a \\
 a
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
-0 \\
--1 \\
-0 \\
--1
+5 \\
+4 \\
+4 \\
+1
 \end{array}\right] , \left[\begin{array}{c}
-1 \\
--1 \\
--2 \\
--2
+-4 \\
+-3 \\
+-4 \\
+-6
 \end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
 2 \\
-3 \\
+1 \\
 1
 \end{array}\right] \right\} \)</li>
       <li> The rank of \(T\) is \( 2 \), the nullity of \(T\) is \( 1 \), and the dimension of the domain of \(T\) is \( 3 \). The rank-nullity theorem asserts that \( 2 + 1 = 3 \), which we see to be true. </li>
@@ -2007,52 +2449,65 @@ a
 <hr/>
 <h4>Example 35</h4><div class="exercise">
   <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by <p>\[T\left(  \left[\begin{array}{c}
-x \\
-y \\
-z
+x_{1} \\
+x_{2} \\
+x_{3}
 \end{array}\right]  \right) =  \left[\begin{array}{c}
-x + 3 \, y - 3 \, z \\
-z \\
--2 \, x - 6 \, y - 2 \, z \\
--2 \, x - 6 \, y - 5 \, z
+x_{1} + x_{2} \\
+-4 \, x_{1} - 3 \, x_{2} + x_{3} \\
+4 \, x_{1} + 5 \, x_{2} + x_{3} \\
+-4 \, x_{1} + 4 \, x_{3}
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+1 &amp; 1 &amp; 0 \\
+-4 &amp; -3 &amp; 1 \\
+4 &amp; 5 &amp; 1 \\
+-4 &amp; 0 &amp; 4
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; -1 \\
+0 &amp; 1 &amp; 1 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
 1 \\
-0 \\
--2 \\
--2
+-4 \\
+4 \\
+-4
 \end{array}\right] , \left[\begin{array}{c}
--3 \\
 1 \\
--2 \\
--5
+-3 \\
+5 \\
+0
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
--3 \, a \\
 a \\
-0
+-a \\
+a
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
 1 \\
-0 \\
--2 \\
--2
+-4 \\
+4 \\
+-4
 \end{array}\right] , \left[\begin{array}{c}
--3 \\
 1 \\
--2 \\
--5
-\end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
 -3 \\
-1 \\
+5 \\
 0
+\end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
+1 \\
+-1 \\
+1
 \end{array}\right] \right\} \)</li>
       <li> The rank of \(T\) is \( 2 \), the nullity of \(T\) is \( 1 \), and the dimension of the domain of \(T\) is \( 3 \). The rank-nullity theorem asserts that \( 2 + 1 = 3 \), which we see to be true. </li>
     </ol>
@@ -2066,47 +2521,60 @@ x_{1} \\
 x_{2} \\
 x_{3}
 \end{array}\right]  \right) =  \left[\begin{array}{c}
-x_{1} - 2 \, x_{2} \\
-x_{1} - x_{2} - x_{3} \\
--x_{1} - 3 \, x_{2} + 5 \, x_{3} \\
-3 \, x_{1} - 8 \, x_{2} + 2 \, x_{3}
+x_{1} - x_{2} + 3 \, x_{3} \\
+-2 \, x_{1} + 3 \, x_{2} - 8 \, x_{3} \\
+5 \, x_{1} - x_{2} + 7 \, x_{3} \\
+0
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+1 &amp; -1 &amp; 3 \\
+-2 &amp; 3 &amp; -8 \\
+5 &amp; -1 &amp; 7 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; 1 \\
+0 &amp; 1 &amp; -2 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
 1 \\
-1 \\
--1 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
 -2 \\
+5 \\
+0
+\end{array}\right] , \left[\begin{array}{c}
 -1 \\
--3 \\
--8
+3 \\
+-1 \\
+0
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
+-a \\
 2 \, a \\
-a \\
 a
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
 1 \\
-1 \\
--1 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
 -2 \\
+5 \\
+0
+\end{array}\right] , \left[\begin{array}{c}
 -1 \\
--3 \\
--8
+3 \\
+-1 \\
+0
 \end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
+-1 \\
 2 \\
-1 \\
 1
 \end{array}\right] \right\} \)</li>
       <li> The rank of \(T\) is \( 2 \), the nullity of \(T\) is \( 1 \), and the dimension of the domain of \(T\) is \( 3 \). The rank-nullity theorem asserts that \( 2 + 1 = 3 \), which we see to be true. </li>
@@ -2121,47 +2589,60 @@ x_{1} \\
 x_{2} \\
 x_{3}
 \end{array}\right]  \right) =  \left[\begin{array}{c}
-x_{1} - x_{2} - 2 \, x_{3} \\
-x_{2} + x_{3} \\
-2 \, x_{2} + 2 \, x_{3} \\
--3 \, x_{2} - 3 \, x_{3}
+4 \, x_{1} - 8 \, x_{2} + 8 \, x_{3} \\
+4 \, x_{1} - 7 \, x_{2} + 6 \, x_{3} \\
+3 \, x_{1} - 6 \, x_{2} + 6 \, x_{3} \\
+-2 \, x_{1} + 6 \, x_{2} - 8 \, x_{3}
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+4 &amp; -8 &amp; 8 \\
+4 &amp; -7 &amp; 6 \\
+3 &amp; -6 &amp; 6 \\
+-2 &amp; 6 &amp; -8
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; -2 \\
+0 &amp; 1 &amp; -2 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
-1 \\
-0 \\
-0 \\
-0
+4 \\
+4 \\
+3 \\
+-2
 \end{array}\right] , \left[\begin{array}{c}
--1 \\
-1 \\
-2 \\
--3
+-8 \\
+-7 \\
+-6 \\
+6
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
-a \\
--a \\
+2 \, a \\
+2 \, a \\
 a
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
-1 \\
-0 \\
-0 \\
-0
+4 \\
+4 \\
+3 \\
+-2
 \end{array}\right] , \left[\begin{array}{c}
--1 \\
-1 \\
-2 \\
--3
+-8 \\
+-7 \\
+-6 \\
+6
 \end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
-1 \\
--1 \\
+2 \\
+2 \\
 1
 \end{array}\right] \right\} \)</li>
       <li> The rank of \(T\) is \( 2 \), the nullity of \(T\) is \( 1 \), and the dimension of the domain of \(T\) is \( 3 \). The rank-nullity theorem asserts that \( 2 + 1 = 3 \), which we see to be true. </li>
@@ -2172,50 +2653,63 @@ a
 <hr/>
 <h4>Example 38</h4><div class="exercise">
   <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by <p>\[T\left(  \left[\begin{array}{c}
-x \\
-y \\
-z
+x_{1} \\
+x_{2} \\
+x_{3}
 \end{array}\right]  \right) =  \left[\begin{array}{c}
--x + 3 \, y - z \\
--4 \, x + 5 \, y - 4 \, z \\
--3 \, x + 8 \, y - 3 \, z \\
--x + 2 \, y - z
+x_{1} - 7 \, x_{2} \\
+x_{2} \\
+5 \, x_{2} \\
+-x_{1} + 7 \, x_{2}
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+1 &amp; -7 &amp; 0 \\
+0 &amp; 1 &amp; 0 \\
+0 &amp; 5 &amp; 0 \\
+-1 &amp; 7 &amp; 0
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
--1 \\
--4 \\
--3 \\
+1 \\
+0 \\
+0 \\
 -1
 \end{array}\right] , \left[\begin{array}{c}
-3 \\
+-7 \\
+1 \\
 5 \\
-8 \\
-2
+7
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
--a \\
+0 \\
 0 \\
 a
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
--1 \\
--4 \\
--3 \\
+1 \\
+0 \\
+0 \\
 -1
 \end{array}\right] , \left[\begin{array}{c}
-3 \\
+-7 \\
+1 \\
 5 \\
-8 \\
-2
+7
 \end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
--1 \\
+0 \\
 0 \\
 1
 \end{array}\right] \right\} \)</li>
@@ -2231,46 +2725,59 @@ x \\
 y \\
 z
 \end{array}\right]  \right) =  \left[\begin{array}{c}
--x - 3 \, y - 3 \, z \\
--x - 4 \, y - 5 \, z \\
--x - 4 \, y - 5 \, z \\
-x + 2 \, y + z
+x + 2 \, y + 2 \, z \\
+y + 2 \, z \\
+-x - 4 \, y - 6 \, z \\
+x + 5 \, y + 8 \, z
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+1 &amp; 2 &amp; 2 \\
+0 &amp; 1 &amp; 2 \\
+-1 &amp; -4 &amp; -6 \\
+1 &amp; 5 &amp; 8
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; -2 \\
+0 &amp; 1 &amp; 2 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
--1 \\
--1 \\
+1 \\
+0 \\
 -1 \\
 1
 \end{array}\right] , \left[\begin{array}{c}
--3 \\
+2 \\
+1 \\
 -4 \\
--4 \\
-2
+5
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
-3 \, a \\
+2 \, a \\
 -2 \, a \\
 a
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
--1 \\
--1 \\
+1 \\
+0 \\
 -1 \\
 1
 \end{array}\right] , \left[\begin{array}{c}
--3 \\
+2 \\
+1 \\
 -4 \\
--4 \\
-2
+5
 \end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
-3 \\
+2 \\
 -2 \\
 1
 \end{array}\right] \right\} \)</li>
@@ -2286,47 +2793,60 @@ x \\
 y \\
 z
 \end{array}\right]  \right) =  \left[\begin{array}{c}
-x + 4 \, y - 4 \, z \\
-2 \, x + 5 \, y - 5 \, z \\
--x + 2 \, y - 2 \, z \\
-y - z
+5 \, x + 7 \, y + 6 \, z \\
+5 \, x + 6 \, y + 3 \, z \\
+-4 \, x - 6 \, y - 6 \, z \\
+-5 \, x - 4 \, y + 3 \, z
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+5 &amp; 7 &amp; 6 \\
+5 &amp; 6 &amp; 3 \\
+-4 &amp; -6 &amp; -6 \\
+-5 &amp; -4 &amp; 3
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; -3 \\
+0 &amp; 1 &amp; 3 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
-1 \\
-2 \\
--1 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
-4 \\
 5 \\
-2 \\
-1
+5 \\
+-4 \\
+-5
+\end{array}\right] , \left[\begin{array}{c}
+7 \\
+6 \\
+-6 \\
+-4
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
-0 \\
-a \\
+3 \, a \\
+-3 \, a \\
 a
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
-1 \\
-2 \\
--1 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
-4 \\
 5 \\
-2 \\
-1
+5 \\
+-4 \\
+-5
+\end{array}\right] , \left[\begin{array}{c}
+7 \\
+6 \\
+-6 \\
+-4
 \end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
-0 \\
-1 \\
+3 \\
+-3 \\
 1
 \end{array}\right] \right\} \)</li>
       <li> The rank of \(T\) is \( 2 \), the nullity of \(T\) is \( 1 \), and the dimension of the domain of \(T\) is \( 3 \). The rank-nullity theorem asserts that \( 2 + 1 = 3 \), which we see to be true. </li>
@@ -2337,51 +2857,64 @@ a
 <hr/>
 <h4>Example 41</h4><div class="exercise">
   <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by <p>\[T\left(  \left[\begin{array}{c}
-x_{1} \\
-x_{2} \\
-x_{3}
+x \\
+y \\
+z
 \end{array}\right]  \right) =  \left[\begin{array}{c}
--x_{1} + 3 \, x_{2} \\
--x_{1} - 4 \, x_{2} - 7 \, x_{3} \\
--x_{1} - 2 \, x_{2} - 5 \, x_{3} \\
--x_{1} - x_{2} - 4 \, x_{3}
+x - 4 \, y - z \\
+y \\
+3 \, x - 7 \, y - 3 \, z \\
+-2 \, x + 6 \, y + 2 \, z
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+1 &amp; -4 &amp; -1 \\
+0 &amp; 1 &amp; 0 \\
+3 &amp; -7 &amp; -3 \\
+-2 &amp; 6 &amp; 2
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; -1 \\
+0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
--1 \\
--1 \\
--1 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
+1 \\
+0 \\
 3 \\
+-2
+\end{array}\right] , \left[\begin{array}{c}
 -4 \\
--2 \\
--1
+1 \\
+-7 \\
+6
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
--3 \, a \\
--a \\
+a \\
+0 \\
 a
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
--1 \\
--1 \\
--1 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
+1 \\
+0 \\
 3 \\
+-2
+\end{array}\right] , \left[\begin{array}{c}
 -4 \\
--2 \\
--1
+1 \\
+-7 \\
+6
 \end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
--3 \\
--1 \\
+1 \\
+0 \\
 1
 \end{array}\right] \right\} \)</li>
       <li> The rank of \(T\) is \( 2 \), the nullity of \(T\) is \( 1 \), and the dimension of the domain of \(T\) is \( 3 \). The rank-nullity theorem asserts that \( 2 + 1 = 3 \), which we see to be true. </li>
@@ -2392,50 +2925,63 @@ a
 <hr/>
 <h4>Example 42</h4><div class="exercise">
   <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by <p>\[T\left(  \left[\begin{array}{c}
-x_{1} \\
-x_{2} \\
-x_{3}
+x \\
+y \\
+z
 \end{array}\right]  \right) =  \left[\begin{array}{c}
-x_{1} - 4 \, x_{2} + 5 \, x_{3} \\
-x_{2} - 2 \, x_{3} \\
-x_{1} - 4 \, x_{2} + 5 \, x_{3} \\
--4 \, x_{2} + 8 \, x_{3}
+4 \, x + y - 2 \, z \\
+-x \\
+-2 \, x + 2 \, y - 4 \, z \\
+-4 \, x - 4 \, y + 8 \, z
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+4 &amp; 1 &amp; -2 \\
+-1 &amp; 0 &amp; 0 \\
+-2 &amp; 2 &amp; -4 \\
+-4 &amp; -4 &amp; 8
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; -2 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
+4 \\
+-1 \\
+-2 \\
+-4
+\end{array}\right] , \left[\begin{array}{c}
 1 \\
 0 \\
-1 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
--4 \\
-1 \\
--4 \\
+2 \\
 -4
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
-3 \, a \\
+0 \\
 2 \, a \\
 a
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
+4 \\
+-1 \\
+-2 \\
+-4
+\end{array}\right] , \left[\begin{array}{c}
 1 \\
 0 \\
-1 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
--4 \\
-1 \\
--4 \\
+2 \\
 -4
 \end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
-3 \\
+0 \\
 2 \\
 1
 \end{array}\right] \right\} \)</li>
@@ -2447,51 +2993,64 @@ a
 <hr/>
 <h4>Example 43</h4><div class="exercise">
   <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by <p>\[T\left(  \left[\begin{array}{c}
-x_{1} \\
-x_{2} \\
-x_{3}
+x \\
+y \\
+z
 \end{array}\right]  \right) =  \left[\begin{array}{c}
-x_{1} - 3 \, x_{2} + x_{3} \\
--x_{1} + 4 \, x_{2} - x_{3} \\
-x_{1} - 6 \, x_{2} + x_{3} \\
--3 \, x_{1} + 8 \, x_{2} - 3 \, x_{3}
+x + 5 \, y - 4 \, z \\
+x + 6 \, y - 5 \, z \\
+-x - 5 \, y + 4 \, z \\
+x + 7 \, y - 6 \, z
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+1 &amp; 5 &amp; -4 \\
+1 &amp; 6 &amp; -5 \\
+-1 &amp; -5 &amp; 4 \\
+1 &amp; 7 &amp; -6
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; 1 \\
+0 &amp; 1 &amp; -1 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
 1 \\
--1 \\
 1 \\
--3
+-1 \\
+1
 \end{array}\right] , \left[\begin{array}{c}
--3 \\
-4 \\
--6 \\
-8
+5 \\
+6 \\
+-5 \\
+7
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
 -a \\
-0 \\
+a \\
 a
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
 1 \\
--1 \\
 1 \\
--3
+-1 \\
+1
 \end{array}\right] , \left[\begin{array}{c}
--3 \\
-4 \\
--6 \\
-8
+5 \\
+6 \\
+-5 \\
+7
 \end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
 -1 \\
-0 \\
+1 \\
 1
 \end{array}\right] \right\} \)</li>
       <li> The rank of \(T\) is \( 2 \), the nullity of \(T\) is \( 1 \), and the dimension of the domain of \(T\) is \( 3 \). The rank-nullity theorem asserts that \( 2 + 1 = 3 \), which we see to be true. </li>
@@ -2502,51 +3061,64 @@ a
 <hr/>
 <h4>Example 44</h4><div class="exercise">
   <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by <p>\[T\left(  \left[\begin{array}{c}
-x \\
-y \\
-z
+x_{1} \\
+x_{2} \\
+x_{3}
 \end{array}\right]  \right) =  \left[\begin{array}{c}
-2 \, x + y + 5 \, z \\
-y + z \\
-0 \\
-x - 2 \, y
+2 \, x_{1} - 6 \, x_{2} + 4 \, x_{3} \\
+-x_{1} + 5 \, x_{2} - 2 \, x_{3} \\
+x_{1} - 2 \, x_{2} + 2 \, x_{3} \\
+-x_{1} - 2 \, x_{3}
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+2 &amp; -6 &amp; 4 \\
+-1 &amp; 5 &amp; -2 \\
+1 &amp; -2 &amp; 2 \\
+-1 &amp; 0 &amp; -2
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; 2 \\
+0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
 2 \\
-0 \\
-0 \\
-1
+-1 \\
+1 \\
+-1
 \end{array}\right] , \left[\begin{array}{c}
-1 \\
-1 \\
-0 \\
--2
+-6 \\
+5 \\
+-2 \\
+0
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
 -2 \, a \\
--a \\
+0 \\
 a
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
 2 \\
-0 \\
-0 \\
-1
+-1 \\
+1 \\
+-1
 \end{array}\right] , \left[\begin{array}{c}
-1 \\
-1 \\
-0 \\
--2
+-6 \\
+5 \\
+-2 \\
+0
 \end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
 -2 \\
--1 \\
+0 \\
 1
 \end{array}\right] \right\} \)</li>
       <li> The rank of \(T\) is \( 2 \), the nullity of \(T\) is \( 1 \), and the dimension of the domain of \(T\) is \( 3 \). The rank-nullity theorem asserts that \( 2 + 1 = 3 \), which we see to be true. </li>
@@ -2557,51 +3129,64 @@ a
 <hr/>
 <h4>Example 45</h4><div class="exercise">
   <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by <p>\[T\left(  \left[\begin{array}{c}
-x \\
-y \\
-z
+x_{1} \\
+x_{2} \\
+x_{3}
 \end{array}\right]  \right) =  \left[\begin{array}{c}
-x + 3 \, y + 8 \, z \\
--x - 2 \, y - 5 \, z \\
-0 \\
--2 \, y - 6 \, z
+x_{1} + x_{2} - 3 \, x_{3} \\
+-x_{1} + 4 \, x_{3} \\
+-3 \, x_{1} - 4 \, x_{2} + 8 \, x_{3} \\
+-3 \, x_{1} - 6 \, x_{2} + 6 \, x_{3}
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+1 &amp; 1 &amp; -3 \\
+-1 &amp; 0 &amp; 4 \\
+-3 &amp; -4 &amp; 8 \\
+-3 &amp; -6 &amp; 6
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; -4 \\
+0 &amp; 1 &amp; 1 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
     </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
 1 \\
 -1 \\
-0 \\
-0
+-3 \\
+-3
 \end{array}\right] , \left[\begin{array}{c}
-3 \\
--2 \\
+1 \\
 0 \\
--2
+-4 \\
+-6
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
-a \\
--3 \, a \\
+4 \, a \\
+-a \\
 a
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
 1 \\
 -1 \\
-0 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
-3 \\
--2 \\
-0 \\
--2
-\end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
-1 \\
 -3 \\
+-3
+\end{array}\right] , \left[\begin{array}{c}
+1 \\
+0 \\
+-4 \\
+-6
+\end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
+4 \\
+-1 \\
 1
 \end{array}\right] \right\} \)</li>
       <li> The rank of \(T\) is \( 2 \), the nullity of \(T\) is \( 1 \), and the dimension of the domain of \(T\) is \( 3 \). The rank-nullity theorem asserts that \( 2 + 1 = 3 \), which we see to be true. </li>
@@ -2612,50 +3197,63 @@ a
 <hr/>
 <h4>Example 46</h4><div class="exercise">
   <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by <p>\[T\left(  \left[\begin{array}{c}
-x_{1} \\
-x_{2} \\
-x_{3}
+x \\
+y \\
+z
 \end{array}\right]  \right) =  \left[\begin{array}{c}
-x_{3} \\
--x_{1} + 3 \, x_{2} + 3 \, x_{3} \\
-x_{3} \\
-2 \, x_{1} - 6 \, x_{2} - 2 \, x_{3}
+-x - 5 \, y - 3 \, z \\
+-x - 5 \, y - 4 \, z \\
+x + 5 \, y + 8 \, z \\
+5 \, z
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+-1 &amp; -5 &amp; -3 \\
+-1 &amp; -5 &amp; -4 \\
+1 &amp; 5 &amp; 8 \\
+0 &amp; 0 &amp; 5
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 5 &amp; 0 \\
+0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
-0 \\
 -1 \\
-0 \\
-2
+-1 \\
+1 \\
+0
 \end{array}\right] , \left[\begin{array}{c}
-1 \\
-3 \\
-1 \\
--2
+-3 \\
+-4 \\
+8 \\
+5
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
-3 \, a \\
+-5 \, a \\
 a \\
 0
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
-0 \\
 -1 \\
-0 \\
-2
+-1 \\
+1 \\
+0
 \end{array}\right] , \left[\begin{array}{c}
-1 \\
-3 \\
-1 \\
--2
+-3 \\
+-4 \\
+8 \\
+5
 \end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
-3 \\
+-5 \\
 1 \\
 0
 \end{array}\right] \right\} \)</li>
@@ -2671,48 +3269,61 @@ x \\
 y \\
 z
 \end{array}\right]  \right) =  \left[\begin{array}{c}
--3 \, x + 6 \, y + 3 \, z \\
-y + z \\
-2 \, x - 5 \, y - 3 \, z \\
-3 \, y + 3 \, z
+-2 \, x - 4 \, y - 5 \, z \\
+3 \, x + 6 \, y + 7 \, z \\
+3 \, z \\
+x + 2 \, y - 2 \, z
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+-2 &amp; -4 &amp; -5 \\
+3 &amp; 6 &amp; 7 \\
+0 &amp; 0 &amp; 3 \\
+1 &amp; 2 &amp; -2
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 2 &amp; 0 \\
+0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
--3 \\
+-2 \\
+3 \\
 0 \\
-2 \\
-0
+1
 \end{array}\right] , \left[\begin{array}{c}
-6 \\
-1 \\
 -5 \\
-3
+7 \\
+3 \\
+-2
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
--a \\
--a \\
-a
+-2 \, a \\
+a \\
+0
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
--3 \\
+-2 \\
+3 \\
 0 \\
-2 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
-6 \\
-1 \\
--5 \\
-3
-\end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
--1 \\
--1 \\
 1
+\end{array}\right] , \left[\begin{array}{c}
+-5 \\
+7 \\
+3 \\
+-2
+\end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
+-2 \\
+1 \\
+0
 \end{array}\right] \right\} \)</li>
       <li> The rank of \(T\) is \( 2 \), the nullity of \(T\) is \( 1 \), and the dimension of the domain of \(T\) is \( 3 \). The rank-nullity theorem asserts that \( 2 + 1 = 3 \), which we see to be true. </li>
     </ol>
@@ -2726,47 +3337,60 @@ x_{1} \\
 x_{2} \\
 x_{3}
 \end{array}\right]  \right) =  \left[\begin{array}{c}
-4 \, x_{1} - x_{2} - 2 \, x_{3} \\
-x_{2} - 2 \, x_{3} \\
--2 \, x_{1} + 2 \, x_{3} \\
--x_{1} + x_{2} - x_{3}
+2 \, x_{1} - 2 \, x_{2} + 4 \, x_{3} \\
+x_{2} - 3 \, x_{3} \\
+-x_{1} + x_{3} \\
+-2 \, x_{1} + 3 \, x_{2} - 7 \, x_{3}
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+2 &amp; -2 &amp; 4 \\
+0 &amp; 1 &amp; -3 \\
+-1 &amp; 0 &amp; 1 \\
+-2 &amp; 3 &amp; -7
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; -1 \\
+0 &amp; 1 &amp; -3 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
-4 \\
+2 \\
 0 \\
--2 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
 -1 \\
+-2
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
 1 \\
 0 \\
-1
+3
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
 a \\
-2 \, a \\
+3 \, a \\
 a
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
-4 \\
+2 \\
 0 \\
--2 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
 -1 \\
+-2
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
 1 \\
 0 \\
-1
+3
 \end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
 1 \\
-2 \\
+3 \\
 1
 \end{array}\right] \right\} \)</li>
       <li> The rank of \(T\) is \( 2 \), the nullity of \(T\) is \( 1 \), and the dimension of the domain of \(T\) is \( 3 \). The rank-nullity theorem asserts that \( 2 + 1 = 3 \), which we see to be true. </li>
@@ -2777,51 +3401,64 @@ a
 <hr/>
 <h4>Example 49</h4><div class="exercise">
   <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by <p>\[T\left(  \left[\begin{array}{c}
-x_{1} \\
-x_{2} \\
-x_{3}
+x \\
+y \\
+z
 \end{array}\right]  \right) =  \left[\begin{array}{c}
-x_{1} - x_{2} - 2 \, x_{3} \\
--3 \, x_{1} + 4 \, x_{2} + 8 \, x_{3} \\
-2 \, x_{2} + 4 \, x_{3} \\
-5 \, x_{1} - 4 \, x_{2} - 8 \, x_{3}
+3 \, x + 5 \, y - 3 \, z \\
+-x - 4 \, y + z \\
+x - z \\
+-x - 6 \, y + z
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+3 &amp; 5 &amp; -3 \\
+-1 &amp; -4 &amp; 1 \\
+1 &amp; 0 &amp; -1 \\
+-1 &amp; -6 &amp; 1
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; -1 \\
+0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
-1 \\
--3 \\
-0 \\
-5
-\end{array}\right] , \left[\begin{array}{c}
+3 \\
 -1 \\
-4 \\
-2 \\
--4
+1 \\
+-1
+\end{array}\right] , \left[\begin{array}{c}
+5 \\
+-4 \\
+0 \\
+-6
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
+a \\
 0 \\
--2 \, a \\
 a
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
-1 \\
--3 \\
-0 \\
-5
-\end{array}\right] , \left[\begin{array}{c}
+3 \\
 -1 \\
-4 \\
-2 \\
--4
-\end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
+1 \\
+-1
+\end{array}\right] , \left[\begin{array}{c}
+5 \\
+-4 \\
 0 \\
--2 \\
+-6
+\end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
+1 \\
+0 \\
 1
 \end{array}\right] \right\} \)</li>
       <li> The rank of \(T\) is \( 2 \), the nullity of \(T\) is \( 1 \), and the dimension of the domain of \(T\) is \( 3 \). The rank-nullity theorem asserts that \( 2 + 1 = 3 \), which we see to be true. </li>
@@ -2836,48 +3473,61 @@ x \\
 y \\
 z
 \end{array}\right]  \right) =  \left[\begin{array}{c}
-x - 4 \, y + 4 \, z \\
-z \\
-x - 4 \, y + 6 \, z \\
-2 \, x - 8 \, y + 7 \, z
+x - y - 4 \, z \\
+x - 2 \, z \\
+-2 \, x - y + 2 \, z \\
+-2 \, x + 4 \, z
 \end{array}\right] .\]</p><ol type="a"><li>Explain how to find the image of \(T\) and the kernel of \(T\).</li><li>Explain how to find a basis of the image of \(T\) and a basis of the kernel of \(T\).</li><li>Explain how to find the rank and nullity of \(T\), and why the rank-nullity theorem holds for \(T\).</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+1 &amp; -1 &amp; -4 \\
+1 &amp; 0 &amp; -2 \\
+-2 &amp; -1 &amp; 2 \\
+-2 &amp; 0 &amp; 4
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; -2 \\
+0 &amp; 1 &amp; 2 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>
         <p>\[\operatorname{Im}\ T = \operatorname{span}\  \left\{ \left[\begin{array}{c}
 1 \\
-0 \\
 1 \\
-2
+-2 \\
+-2
 \end{array}\right] , \left[\begin{array}{c}
-4 \\
-1 \\
-6 \\
-7
+-1 \\
+0 \\
+-1 \\
+0
 \end{array}\right] \right\} \]</p>
         <p>\[\operatorname{ker}\ T =  \left\{ \left[\begin{array}{c}
-4 \, a \\
-a \\
-0
+2 \, a \\
+-2 \, a \\
+a
 \end{array}\right] \middle|\,a\in\mathbb{R}\right\} \]</p>
       </li>
       <li> A basis of \(\operatorname{Im}\ T\) is \( \left\{ \left[\begin{array}{c}
 1 \\
-0 \\
 1 \\
-2
+-2 \\
+-2
 \end{array}\right] , \left[\begin{array}{c}
-4 \\
-1 \\
-6 \\
-7
-\end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
-4 \\
-1 \\
+-1 \\
+0 \\
+-1 \\
 0
+\end{array}\right] \right\} \). A basis of \(\operatorname{ker}\ T\) is \( \left\{ \left[\begin{array}{c}
+2 \\
+-2 \\
+1
 \end{array}\right] \right\} \)</li>
       <li> The rank of \(T\) is \( 2 \), the nullity of \(T\) is \( 1 \), and the dimension of the domain of \(T\) is \( 3 \). The rank-nullity theorem asserts that \( 2 + 1 = 3 \), which we see to be true. </li>
     </ol>

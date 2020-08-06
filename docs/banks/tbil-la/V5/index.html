@@ -138,29 +138,29 @@
 <h4>Example 1</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
--1 \\
--2 \\
-1 \\
--4 \\
-5
-\end{array}\right] , \left[\begin{array}{c}
-1 \\
--5 \\
+2 \\
+0 \\
 4 \\
-3 \\
--1
+0 \\
+4
 \end{array}\right] , \left[\begin{array}{c}
--6 \\
--2 \\
 5 \\
 -5 \\
--3
-\end{array}\right] , \left[\begin{array}{c}
-3 \\
--3 \\
 -4 \\
+-1 \\
+-6
+\end{array}\right] , \left[\begin{array}{c}
+2 \\
+5 \\
+3 \\
+3 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
+-3 \\
 -2 \\
--2
+4 \\
+0 \\
+3
 \end{array}\right] \right\} \)is linearly dependent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a vector equation.</li>
@@ -171,55 +171,70 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc|c}
+2 &amp; 5 &amp; 2 &amp; -3 &amp; 0 \\
+0 &amp; -5 &amp; 5 &amp; -2 &amp; 0 \\
+4 &amp; -4 &amp; 3 &amp; 4 &amp; 0 \\
+0 &amp; -1 &amp; 3 &amp; 0 &amp; 0 \\
+4 &amp; -6 &amp; 1 &amp; 3 &amp; 0
+\end{array}\right] = \left[\begin{array}{cccc|c}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
--1 \\
--2 \\
-1 \\
--4 \\
-5
-\end{array}\right] , \left[\begin{array}{c}
-1 \\
--5 \\
+2 \\
+0 \\
 4 \\
-3 \\
--1
+0 \\
+4
 \end{array}\right] , \left[\begin{array}{c}
--6 \\
--2 \\
 5 \\
 -5 \\
--3
-\end{array}\right] , \left[\begin{array}{c}
-3 \\
--3 \\
 -4 \\
+-1 \\
+-6
+\end{array}\right] , \left[\begin{array}{c}
+2 \\
+5 \\
+3 \\
+3 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
+-3 \\
 -2 \\
--2
+4 \\
+0 \\
+3
 \end{array}\right] \right\} \)is linearly dependent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
--1 \\
--2 \\
-1 \\
--4 \\
-5
-\end{array}\right] + x_{2} \left[\begin{array}{c}
-1 \\
--5 \\
+2 \\
+0 \\
 4 \\
-3 \\
--1
-\end{array}\right] + x_{3} \left[\begin{array}{c}
--6 \\
--2 \\
+0 \\
+4
+\end{array}\right] + x_{2} \left[\begin{array}{c}
 5 \\
 -5 \\
--3
-\end{array}\right] + x_{4} \left[\begin{array}{c}
-3 \\
--3 \\
 -4 \\
+-1 \\
+-6
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+2 \\
+5 \\
+3 \\
+3 \\
+1
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+-3 \\
 -2 \\
--2
+4 \\
+0 \\
+3
 \end{array}\right] = \left[\begin{array}{c}
 0 \\
 0 \\
@@ -228,29 +243,29 @@
 0
 \end{array}\right] \)has (infinitely many) nontrivial solutions.</p></li>
       <li> The set of vectors \( \left\{ \left[\begin{array}{c}
--1 \\
--2 \\
-1 \\
--4 \\
-5
-\end{array}\right] , \left[\begin{array}{c}
-1 \\
--5 \\
+2 \\
+0 \\
 4 \\
-3 \\
--1
+0 \\
+4
 \end{array}\right] , \left[\begin{array}{c}
--6 \\
--2 \\
 5 \\
 -5 \\
--3
-\end{array}\right] , \left[\begin{array}{c}
-3 \\
--3 \\
 -4 \\
+-1 \\
+-6
+\end{array}\right] , \left[\begin{array}{c}
+2 \\
+5 \\
+3 \\
+3 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
+-3 \\
 -2 \\
--2
+4 \\
+0 \\
+3
 \end{array}\right] \right\} \)is linearly independent.</li>
     </ol>
   </div>
@@ -260,36 +275,30 @@
 <h4>Example 2</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
-0 \\
--2 \\
--1 \\
--3 \\
-4
-\end{array}\right] , \left[\begin{array}{c}
--4 \\
 4 \\
--4 \\
 -6 \\
+-6 \\
+1 \\
 1
 \end{array}\right] , \left[\begin{array}{c}
-3 \\
--3 \\
+0 \\
+-5 \\
+-1 \\
 5 \\
--6 \\
+-6
+\end{array}\right] , \left[\begin{array}{c}
+1 \\
+-5 \\
+0 \\
+5 \\
 -3
 \end{array}\right] , \left[\begin{array}{c}
--1 \\
--3 \\
--4 \\
--1 \\
-5
-\end{array}\right] , \left[\begin{array}{c}
-4 \\
-2 \\
+-9 \\
 7 \\
-15 \\
--13
-\end{array}\right] \right\} \)is linearly dependent.</p></p>
+10 \\
+3 \\
+-11
+\end{array}\right] \right\} \)is linearly independent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a vector equation.</li>
       <li> Explain why your statement is true or false.</li>
@@ -299,104 +308,101 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc|c}
+4 &amp; 0 &amp; 1 &amp; -9 &amp; 0 \\
+-6 &amp; -5 &amp; -5 &amp; 7 &amp; 0 \\
+-6 &amp; -1 &amp; 0 &amp; 10 &amp; 0 \\
+1 &amp; 5 &amp; 5 &amp; 3 &amp; 0 \\
+1 &amp; -6 &amp; -3 &amp; -11 &amp; 0
+\end{array}\right] = \left[\begin{array}{cccc|c}
+1 &amp; 0 &amp; 0 &amp; -2 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 2 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; -1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
-0 \\
--2 \\
--1 \\
--3 \\
-4
-\end{array}\right] , \left[\begin{array}{c}
--4 \\
 4 \\
--4 \\
 -6 \\
+-6 \\
+1 \\
 1
 \end{array}\right] , \left[\begin{array}{c}
-3 \\
--3 \\
+0 \\
+-5 \\
+-1 \\
 5 \\
--6 \\
+-6
+\end{array}\right] , \left[\begin{array}{c}
+1 \\
+-5 \\
+0 \\
+5 \\
 -3
 \end{array}\right] , \left[\begin{array}{c}
--1 \\
--3 \\
--4 \\
--1 \\
-5
-\end{array}\right] , \left[\begin{array}{c}
-4 \\
-2 \\
+-9 \\
 7 \\
-15 \\
--13
-\end{array}\right] \right\} \)is linearly dependent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
-0 \\
--2 \\
--1 \\
--3 \\
-4
-\end{array}\right] + x_{2} \left[\begin{array}{c}
--4 \\
-4 \\
--4 \\
--6 \\
-1
-\end{array}\right] + x_{3} \left[\begin{array}{c}
+10 \\
 3 \\
--3 \\
-5 \\
+-11
+\end{array}\right] \right\} \)is linearly independent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
+4 \\
 -6 \\
+-6 \\
+1 \\
+1
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+0 \\
+-5 \\
+-1 \\
+5 \\
+-6
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+1 \\
+-5 \\
+0 \\
+5 \\
 -3
 \end{array}\right] + x_{4} \left[\begin{array}{c}
--1 \\
--3 \\
--4 \\
--1 \\
-5
-\end{array}\right] + x_{5} \left[\begin{array}{c}
-4 \\
-2 \\
+-9 \\
 7 \\
-15 \\
--13
+10 \\
+3 \\
+-11
 \end{array}\right] = \left[\begin{array}{c}
 0 \\
 0 \\
 0 \\
 0 \\
 0
-\end{array}\right] \)has (infinitely many) nontrivial solutions.</p></li>
+\end{array}\right] \)has no nontrivial solutions.</p></li>
       <li> The set of vectors \( \left\{ \left[\begin{array}{c}
-0 \\
--2 \\
--1 \\
--3 \\
-4
-\end{array}\right] , \left[\begin{array}{c}
--4 \\
 4 \\
--4 \\
 -6 \\
+-6 \\
+1 \\
 1
 \end{array}\right] , \left[\begin{array}{c}
-3 \\
--3 \\
+0 \\
+-5 \\
+-1 \\
 5 \\
--6 \\
+-6
+\end{array}\right] , \left[\begin{array}{c}
+1 \\
+-5 \\
+0 \\
+5 \\
 -3
 \end{array}\right] , \left[\begin{array}{c}
--1 \\
--3 \\
--4 \\
--1 \\
-5
-\end{array}\right] , \left[\begin{array}{c}
-4 \\
-2 \\
+-9 \\
 7 \\
-15 \\
--13
+10 \\
+3 \\
+-11
 \end{array}\right] \right\} \)is linearly dependent.</li>
     </ol>
   </div>
@@ -407,150 +413,34 @@
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
 -2 \\
--2 \\
--2 \\
--5 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
-0 \\
--2 \\
--1 \\
--2 \\
-5
-\end{array}\right] , \left[\begin{array}{c}
--2 \\
--1 \\
-1 \\
-1 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
--8 \\
--2 \\
-0 \\
--4 \\
--8
-\end{array}\right] \right\} \)is linearly independent.</p></p>
-    <ol type="a">
-      <li> Write an equivalent statement using a vector equation.</li>
-      <li> Explain why your statement is true or false.</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
--2 \\
--2 \\
--2 \\
--5 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
-0 \\
--2 \\
--1 \\
--2 \\
-5
-\end{array}\right] , \left[\begin{array}{c}
--2 \\
--1 \\
-1 \\
-1 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
--8 \\
--2 \\
-0 \\
--4 \\
--8
-\end{array}\right] \right\} \)is linearly independent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
--2 \\
--2 \\
--2 \\
--5 \\
-2
-\end{array}\right] + x_{2} \left[\begin{array}{c}
-0 \\
--2 \\
--1 \\
--2 \\
-5
-\end{array}\right] + x_{3} \left[\begin{array}{c}
--2 \\
--1 \\
-1 \\
-1 \\
--1
-\end{array}\right] + x_{4} \left[\begin{array}{c}
--8 \\
--2 \\
-0 \\
--4 \\
--8
-\end{array}\right] = \left[\begin{array}{c}
-0 \\
-0 \\
-0 \\
-0 \\
-0
-\end{array}\right] \)has no nontrivial solutions.</p></li>
-      <li> The set of vectors \( \left\{ \left[\begin{array}{c}
--2 \\
--2 \\
--2 \\
--5 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
-0 \\
--2 \\
--1 \\
--2 \\
-5
-\end{array}\right] , \left[\begin{array}{c}
--2 \\
--1 \\
-1 \\
-1 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
--8 \\
--2 \\
-0 \\
--4 \\
--8
-\end{array}\right] \right\} \)is linearly dependent.</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 4</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
-4 \\
-2 \\
--2 \\
-0 \\
--2
-\end{array}\right] , \left[\begin{array}{c}
-2 \\
 -6 \\
+-6 \\
+0 \\
+5
+\end{array}\right] , \left[\begin{array}{c}
 5 \\
+0 \\
 -3 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
--2 \\
--4 \\
-1 \\
 -6 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
+4 \\
+-5 \\
+5 \\
+-5 \\
 -3
 \end{array}\right] , \left[\begin{array}{c}
-2 \\
--1 \\
-5 \\
-2 \\
+-2 \\
+3 \\
+-5 \\
+-4 \\
 4
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
+-12 \\
+-12 \\
+0 \\
+10
 \end{array}\right] \right\} \)is linearly dependent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a vector equation.</li>
@@ -561,55 +451,82 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccccc|c}
+-2 &amp; 5 &amp; 4 &amp; -2 &amp; -4 &amp; 0 \\
+-6 &amp; 0 &amp; -5 &amp; 3 &amp; -12 &amp; 0 \\
+-6 &amp; -3 &amp; 5 &amp; -5 &amp; -12 &amp; 0 \\
+0 &amp; -6 &amp; -5 &amp; -4 &amp; 0 &amp; 0 \\
+5 &amp; 1 &amp; -3 &amp; 4 &amp; 10 &amp; 0
+\end{array}\right] = \left[\begin{array}{ccccc|c}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 2 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
-4 \\
-2 \\
 -2 \\
+-6 \\
+-6 \\
 0 \\
--2
+5
 \end{array}\right] , \left[\begin{array}{c}
-2 \\
--6 \\
 5 \\
+0 \\
 -3 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
--2 \\
--4 \\
-1 \\
 -6 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
+4 \\
+-5 \\
+5 \\
+-5 \\
 -3
 \end{array}\right] , \left[\begin{array}{c}
-2 \\
--1 \\
-5 \\
-2 \\
-4
-\end{array}\right] \right\} \)is linearly dependent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
-4 \\
-2 \\
 -2 \\
-0 \\
--2
-\end{array}\right] + x_{2} \left[\begin{array}{c}
-2 \\
--6 \\
-5 \\
--3 \\
-0
-\end{array}\right] + x_{3} \left[\begin{array}{c}
--2 \\
+3 \\
+-5 \\
 -4 \\
-1 \\
+4
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
+-12 \\
+-12 \\
+0 \\
+10
+\end{array}\right] \right\} \)is linearly dependent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
+-2 \\
 -6 \\
+-6 \\
+0 \\
+5
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+5 \\
+0 \\
+-3 \\
+-6 \\
+1
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+4 \\
+-5 \\
+5 \\
+-5 \\
 -3
 \end{array}\right] + x_{4} \left[\begin{array}{c}
-2 \\
--1 \\
-5 \\
-2 \\
+-2 \\
+3 \\
+-5 \\
+-4 \\
 4
+\end{array}\right] + x_{5} \left[\begin{array}{c}
+-4 \\
+-12 \\
+-12 \\
+0 \\
+10
 \end{array}\right] = \left[\begin{array}{c}
 0 \\
 0 \\
@@ -618,29 +535,172 @@
 0
 \end{array}\right] \)has (infinitely many) nontrivial solutions.</p></li>
       <li> The set of vectors \( \left\{ \left[\begin{array}{c}
-4 \\
-2 \\
 -2 \\
+-6 \\
+-6 \\
 0 \\
--2
+5
 \end{array}\right] , \left[\begin{array}{c}
-2 \\
--6 \\
 5 \\
+0 \\
 -3 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
--2 \\
--4 \\
-1 \\
 -6 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
+4 \\
+-5 \\
+5 \\
+-5 \\
 -3
 \end{array}\right] , \left[\begin{array}{c}
-2 \\
--1 \\
-5 \\
-2 \\
+-2 \\
+3 \\
+-5 \\
+-4 \\
 4
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
+-12 \\
+-12 \\
+0 \\
+10
+\end{array}\right] \right\} \)is linearly dependent.</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 4</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
+0 \\
+0 \\
+4 \\
+5 \\
+3
+\end{array}\right] , \left[\begin{array}{c}
+-6 \\
+-1 \\
+-1 \\
+-6 \\
+5
+\end{array}\right] , \left[\begin{array}{c}
+-5 \\
+-5 \\
+1 \\
+-2 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
+-1 \\
+-3 \\
+1 \\
+-6 \\
+-1
+\end{array}\right] \right\} \)is linearly independent.</p></p>
+    <ol type="a">
+      <li> Write an equivalent statement using a vector equation.</li>
+      <li> Explain why your statement is true or false.</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc|c}
+0 &amp; -6 &amp; -5 &amp; -1 &amp; 0 \\
+0 &amp; -1 &amp; -5 &amp; -3 &amp; 0 \\
+4 &amp; -1 &amp; 1 &amp; 1 &amp; 0 \\
+5 &amp; -6 &amp; -2 &amp; -6 &amp; 0 \\
+3 &amp; 5 &amp; 2 &amp; -1 &amp; 0
+\end{array}\right] = \left[\begin{array}{cccc|c}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
+    <ol type="a">
+      <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
+0 \\
+0 \\
+4 \\
+5 \\
+3
+\end{array}\right] , \left[\begin{array}{c}
+-6 \\
+-1 \\
+-1 \\
+-6 \\
+5
+\end{array}\right] , \left[\begin{array}{c}
+-5 \\
+-5 \\
+1 \\
+-2 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
+-1 \\
+-3 \\
+1 \\
+-6 \\
+-1
+\end{array}\right] \right\} \)is linearly independent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
+0 \\
+0 \\
+4 \\
+5 \\
+3
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+-6 \\
+-1 \\
+-1 \\
+-6 \\
+5
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+-5 \\
+-5 \\
+1 \\
+-2 \\
+2
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+-1 \\
+-3 \\
+1 \\
+-6 \\
+-1
+\end{array}\right] = \left[\begin{array}{c}
+0 \\
+0 \\
+0 \\
+0 \\
+0
+\end{array}\right] \)has no nontrivial solutions.</p></li>
+      <li> The set of vectors \( \left\{ \left[\begin{array}{c}
+0 \\
+0 \\
+4 \\
+5 \\
+3
+\end{array}\right] , \left[\begin{array}{c}
+-6 \\
+-1 \\
+-1 \\
+-6 \\
+5
+\end{array}\right] , \left[\begin{array}{c}
+-5 \\
+-5 \\
+1 \\
+-2 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
+-1 \\
+-3 \\
+1 \\
+-6 \\
+-1
 \end{array}\right] \right\} \)is linearly independent.</li>
     </ol>
   </div>
@@ -651,35 +711,29 @@
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
 -1 \\
--3 \\
-4 \\
--4 \\
--3
-\end{array}\right] , \left[\begin{array}{c}
-4 \\
--1 \\
--1 \\
 -6 \\
--5
-\end{array}\right] , \left[\begin{array}{c}
--6 \\
-5 \\
--1 \\
+-5 \\
 -5 \\
 4
 \end{array}\right] , \left[\begin{array}{c}
-4 \\
-1 \\
-3 \\
-1 \\
--4
+-4 \\
+-2 \\
+-4 \\
+-6 \\
+5
 \end{array}\right] , \left[\begin{array}{c}
 9 \\
-1 \\
--6 \\
--8 \\
--7
-\end{array}\right] \right\} \)is linearly independent.</p></p>
+10 \\
+13 \\
+17 \\
+-14
+\end{array}\right] , \left[\begin{array}{c}
+11 \\
+0 \\
+7 \\
+13 \\
+-11
+\end{array}\right] \right\} \)is linearly dependent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a vector equation.</li>
       <li> Explain why your statement is true or false.</li>
@@ -689,104 +743,101 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc|c}
+-1 &amp; -4 &amp; 9 &amp; 11 &amp; 0 \\
+-6 &amp; -2 &amp; 10 &amp; 0 &amp; 0 \\
+-5 &amp; -4 &amp; 13 &amp; 7 &amp; 0 \\
+-5 &amp; -6 &amp; 17 &amp; 13 &amp; 0 \\
+4 &amp; 5 &amp; -14 &amp; -11 &amp; 0
+\end{array}\right] = \left[\begin{array}{cccc|c}
+1 &amp; 0 &amp; -1 &amp; 1 &amp; 0 \\
+0 &amp; 1 &amp; -2 &amp; -3 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
 -1 \\
--3 \\
-4 \\
--4 \\
--3
-\end{array}\right] , \left[\begin{array}{c}
-4 \\
--1 \\
--1 \\
 -6 \\
--5
-\end{array}\right] , \left[\begin{array}{c}
--6 \\
-5 \\
--1 \\
+-5 \\
 -5 \\
 4
 \end{array}\right] , \left[\begin{array}{c}
-4 \\
-1 \\
-3 \\
-1 \\
--4
+-4 \\
+-2 \\
+-4 \\
+-6 \\
+5
 \end{array}\right] , \left[\begin{array}{c}
 9 \\
-1 \\
--6 \\
--8 \\
--7
-\end{array}\right] \right\} \)is linearly independent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
+10 \\
+13 \\
+17 \\
+-14
+\end{array}\right] , \left[\begin{array}{c}
+11 \\
+0 \\
+7 \\
+13 \\
+-11
+\end{array}\right] \right\} \)is linearly dependent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
 -1 \\
--3 \\
-4 \\
--4 \\
--3
+-6 \\
+-5 \\
+-5 \\
+4
 \end{array}\right] + x_{2} \left[\begin{array}{c}
-4 \\
--1 \\
--1 \\
+-4 \\
+-2 \\
+-4 \\
 -6 \\
--5
+5
 \end{array}\right] + x_{3} \left[\begin{array}{c}
--6 \\
-5 \\
--1 \\
--5 \\
-4
-\end{array}\right] + x_{4} \left[\begin{array}{c}
-4 \\
-1 \\
-3 \\
-1 \\
--4
-\end{array}\right] + x_{5} \left[\begin{array}{c}
 9 \\
-1 \\
--6 \\
--8 \\
--7
+10 \\
+13 \\
+17 \\
+-14
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+11 \\
+0 \\
+7 \\
+13 \\
+-11
 \end{array}\right] = \left[\begin{array}{c}
 0 \\
 0 \\
 0 \\
 0 \\
 0
-\end{array}\right] \)has no nontrivial solutions.</p></li>
+\end{array}\right] \)has (infinitely many) nontrivial solutions.</p></li>
       <li> The set of vectors \( \left\{ \left[\begin{array}{c}
 -1 \\
--3 \\
-4 \\
--4 \\
--3
-\end{array}\right] , \left[\begin{array}{c}
-4 \\
--1 \\
--1 \\
 -6 \\
--5
-\end{array}\right] , \left[\begin{array}{c}
--6 \\
-5 \\
--1 \\
+-5 \\
 -5 \\
 4
 \end{array}\right] , \left[\begin{array}{c}
-4 \\
-1 \\
-3 \\
-1 \\
--4
+-4 \\
+-2 \\
+-4 \\
+-6 \\
+5
 \end{array}\right] , \left[\begin{array}{c}
 9 \\
-1 \\
--6 \\
--8 \\
--7
+10 \\
+13 \\
+17 \\
+-14
+\end{array}\right] , \left[\begin{array}{c}
+11 \\
+0 \\
+7 \\
+13 \\
+-11
 \end{array}\right] \right\} \)is linearly dependent.</li>
     </ol>
   </div>
@@ -796,36 +847,36 @@
 <h4>Example 6</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
-1 \\
-5 \\
-2 \\
 -5 \\
-4
-\end{array}\right] , \left[\begin{array}{c}
--2 \\
-3 \\
-0 \\
-4 \\
--6
-\end{array}\right] , \left[\begin{array}{c}
-4 \\
-4 \\
--5 \\
--5 \\
+-6 \\
+-1 \\
+-1 \\
 -4
 \end{array}\right] , \left[\begin{array}{c}
--3 \\
-11 \\
 2 \\
-3 \\
--8
+1 \\
+-2 \\
+-2 \\
+2
 \end{array}\right] , \left[\begin{array}{c}
--7 \\
--13 \\
-17 \\
+-6 \\
+-2 \\
+-2 \\
+-4 \\
+-4
+\end{array}\right] , \left[\begin{array}{c}
+3 \\
+5 \\
+1 \\
+1 \\
+-2
+\end{array}\right] , \left[\begin{array}{c}
+5 \\
+0 \\
 2 \\
-28
-\end{array}\right] \right\} \)is linearly dependent.</p></p>
+5 \\
+5
+\end{array}\right] \right\} \)is linearly independent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a vector equation.</li>
       <li> Explain why your statement is true or false.</li>
@@ -835,105 +886,120 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccccc|c}
+-5 &amp; 2 &amp; -6 &amp; 3 &amp; 5 &amp; 0 \\
+-6 &amp; 1 &amp; -2 &amp; 5 &amp; 0 &amp; 0 \\
+-1 &amp; -2 &amp; -2 &amp; 1 &amp; 2 &amp; 0 \\
+-1 &amp; -2 &amp; -4 &amp; 1 &amp; 5 &amp; 0 \\
+-4 &amp; 2 &amp; -4 &amp; -2 &amp; 5 &amp; 0
+\end{array}\right] = \left[\begin{array}{ccccc|c}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
-1 \\
-5 \\
-2 \\
 -5 \\
-4
-\end{array}\right] , \left[\begin{array}{c}
--2 \\
-3 \\
-0 \\
-4 \\
--6
-\end{array}\right] , \left[\begin{array}{c}
-4 \\
-4 \\
--5 \\
--5 \\
+-6 \\
+-1 \\
+-1 \\
 -4
 \end{array}\right] , \left[\begin{array}{c}
--3 \\
-11 \\
 2 \\
-3 \\
--8
-\end{array}\right] , \left[\begin{array}{c}
--7 \\
--13 \\
-17 \\
-2 \\
-28
-\end{array}\right] \right\} \)is linearly dependent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
 1 \\
-5 \\
-2 \\
--5 \\
-4
-\end{array}\right] + x_{2} \left[\begin{array}{c}
 -2 \\
+-2 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
+-6 \\
+-2 \\
+-2 \\
+-4 \\
+-4
+\end{array}\right] , \left[\begin{array}{c}
 3 \\
+5 \\
+1 \\
+1 \\
+-2
+\end{array}\right] , \left[\begin{array}{c}
+5 \\
 0 \\
-4 \\
--6
+2 \\
+5 \\
+5
+\end{array}\right] \right\} \)is linearly independent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
+-5 \\
+-6 \\
+-1 \\
+-1 \\
+-4
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+2 \\
+1 \\
+-2 \\
+-2 \\
+2
 \end{array}\right] + x_{3} \left[\begin{array}{c}
-4 \\
-4 \\
--5 \\
--5 \\
+-6 \\
+-2 \\
+-2 \\
+-4 \\
 -4
 \end{array}\right] + x_{4} \left[\begin{array}{c}
--3 \\
-11 \\
-2 \\
 3 \\
--8
+5 \\
+1 \\
+1 \\
+-2
 \end{array}\right] + x_{5} \left[\begin{array}{c}
--7 \\
--13 \\
-17 \\
+5 \\
+0 \\
 2 \\
-28
+5 \\
+5
 \end{array}\right] = \left[\begin{array}{c}
 0 \\
 0 \\
 0 \\
 0 \\
 0
-\end{array}\right] \)has (infinitely many) nontrivial solutions.</p></li>
+\end{array}\right] \)has no nontrivial solutions.</p></li>
       <li> The set of vectors \( \left\{ \left[\begin{array}{c}
-1 \\
-5 \\
-2 \\
 -5 \\
-4
-\end{array}\right] , \left[\begin{array}{c}
--2 \\
-3 \\
-0 \\
-4 \\
--6
-\end{array}\right] , \left[\begin{array}{c}
-4 \\
-4 \\
--5 \\
--5 \\
+-6 \\
+-1 \\
+-1 \\
 -4
 \end{array}\right] , \left[\begin{array}{c}
--3 \\
-11 \\
 2 \\
-3 \\
--8
+1 \\
+-2 \\
+-2 \\
+2
 \end{array}\right] , \left[\begin{array}{c}
--7 \\
--13 \\
-17 \\
+-6 \\
+-2 \\
+-2 \\
+-4 \\
+-4
+\end{array}\right] , \left[\begin{array}{c}
+3 \\
+5 \\
+1 \\
+1 \\
+-2
+\end{array}\right] , \left[\begin{array}{c}
+5 \\
+0 \\
 2 \\
-28
-\end{array}\right] \right\} \)is linearly dependent.</li>
+5 \\
+5
+\end{array}\right] \right\} \)is linearly independent.</li>
     </ol>
   </div>
 </div>
@@ -942,30 +1008,36 @@
 <h4>Example 7</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
-4 \\
+-3 \\
+-4 \\
 -3 \\
 -2 \\
--6 \\
 2
 \end{array}\right] , \left[\begin{array}{c}
--1 \\
 3 \\
--5 \\
--5 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
--2 \\
 -1 \\
--3 \\
-1 \\
--2
+-4 \\
+-6 \\
+-4
 \end{array}\right] , \left[\begin{array}{c}
--2 \\
+4 \\
+1 \\
+0 \\
 -3 \\
-12 \\
-16 \\
+-5
+\end{array}\right] , \left[\begin{array}{c}
+-3 \\
+0 \\
+5 \\
+-5 \\
 -6
-\end{array}\right] \right\} \)is linearly dependent.</p></p>
+\end{array}\right] , \left[\begin{array}{c}
+-24 \\
+-9 \\
+2 \\
+17 \\
+27
+\end{array}\right] \right\} \)is linearly independent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a vector equation.</li>
       <li> Explain why your statement is true or false.</li>
@@ -975,86 +1047,119 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccccc|c}
+-3 &amp; 3 &amp; 4 &amp; -3 &amp; -24 &amp; 0 \\
+-4 &amp; -1 &amp; 1 &amp; 0 &amp; -9 &amp; 0 \\
+-3 &amp; -4 &amp; 0 &amp; 5 &amp; 2 &amp; 0 \\
+-2 &amp; -6 &amp; -3 &amp; -5 &amp; 17 &amp; 0 \\
+2 &amp; -4 &amp; -5 &amp; -6 &amp; 27 &amp; 0
+\end{array}\right] = \left[\begin{array}{ccccc|c}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 2 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; -2 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; -3 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
-4 \\
+-3 \\
+-4 \\
 -3 \\
 -2 \\
--6 \\
 2
 \end{array}\right] , \left[\begin{array}{c}
--1 \\
 3 \\
--5 \\
--5 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
--2 \\
 -1 \\
--3 \\
-1 \\
--2
-\end{array}\right] , \left[\begin{array}{c}
--2 \\
--3 \\
-12 \\
-16 \\
--6
-\end{array}\right] \right\} \)is linearly dependent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
-4 \\
--3 \\
--2 \\
+-4 \\
 -6 \\
+-4
+\end{array}\right] , \left[\begin{array}{c}
+4 \\
+1 \\
+0 \\
+-3 \\
+-5
+\end{array}\right] , \left[\begin{array}{c}
+-3 \\
+0 \\
+5 \\
+-5 \\
+-6
+\end{array}\right] , \left[\begin{array}{c}
+-24 \\
+-9 \\
+2 \\
+17 \\
+27
+\end{array}\right] \right\} \)is linearly independent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
+-3 \\
+-4 \\
+-3 \\
+-2 \\
 2
 \end{array}\right] + x_{2} \left[\begin{array}{c}
--1 \\
 3 \\
--5 \\
--5 \\
-2
-\end{array}\right] + x_{3} \left[\begin{array}{c}
--2 \\
 -1 \\
--3 \\
+-4 \\
+-6 \\
+-4
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+4 \\
 1 \\
--2
-\end{array}\right] + x_{4} \left[\begin{array}{c}
--2 \\
+0 \\
 -3 \\
-12 \\
-16 \\
+-5
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+-3 \\
+0 \\
+5 \\
+-5 \\
 -6
+\end{array}\right] + x_{5} \left[\begin{array}{c}
+-24 \\
+-9 \\
+2 \\
+17 \\
+27
 \end{array}\right] = \left[\begin{array}{c}
 0 \\
 0 \\
 0 \\
 0 \\
 0
-\end{array}\right] \)has (infinitely many) nontrivial solutions.</p></li>
+\end{array}\right] \)has no nontrivial solutions.</p></li>
       <li> The set of vectors \( \left\{ \left[\begin{array}{c}
-4 \\
+-3 \\
+-4 \\
 -3 \\
 -2 \\
--6 \\
 2
 \end{array}\right] , \left[\begin{array}{c}
--1 \\
 3 \\
--5 \\
--5 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
--2 \\
 -1 \\
--3 \\
-1 \\
--2
+-4 \\
+-6 \\
+-4
 \end{array}\right] , \left[\begin{array}{c}
--2 \\
+4 \\
+1 \\
+0 \\
 -3 \\
-12 \\
-16 \\
+-5
+\end{array}\right] , \left[\begin{array}{c}
+-3 \\
+0 \\
+5 \\
+-5 \\
 -6
+\end{array}\right] , \left[\begin{array}{c}
+-24 \\
+-9 \\
+2 \\
+17 \\
+27
 \end{array}\right] \right\} \)is linearly dependent.</li>
     </ol>
   </div>
@@ -1064,181 +1169,29 @@
 <h4>Example 8</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
--2 \\
-3 \\
-3 \\
--2 \\
--5
-\end{array}\right] , \left[\begin{array}{c}
-5 \\
 4 \\
--5 \\
-5 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
+-4 \\
+0 \\
 -1 \\
--6 \\
-5 \\
--3 \\
-0
+-1
 \end{array}\right] , \left[\begin{array}{c}
-4 \\
--4 \\
-0 \\
-4 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
--2 \\
-4 \\
--2 \\
--3 \\
-5
-\end{array}\right] \right\} \)is linearly independent.</p></p>
-    <ol type="a">
-      <li> Write an equivalent statement using a vector equation.</li>
-      <li> Explain why your statement is true or false.</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
--2 \\
-3 \\
-3 \\
--2 \\
--5
-\end{array}\right] , \left[\begin{array}{c}
-5 \\
-4 \\
--5 \\
-5 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
--6 \\
-5 \\
--3 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
-4 \\
--4 \\
-0 \\
-4 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
--2 \\
-4 \\
--2 \\
--3 \\
-5
-\end{array}\right] \right\} \)is linearly independent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
--2 \\
-3 \\
-3 \\
--2 \\
--5
-\end{array}\right] + x_{2} \left[\begin{array}{c}
-5 \\
-4 \\
--5 \\
-5 \\
-3
-\end{array}\right] + x_{3} \left[\begin{array}{c}
--1 \\
--6 \\
-5 \\
--3 \\
-0
-\end{array}\right] + x_{4} \left[\begin{array}{c}
-4 \\
--4 \\
-0 \\
-4 \\
-1
-\end{array}\right] + x_{5} \left[\begin{array}{c}
--2 \\
-4 \\
--2 \\
--3 \\
-5
-\end{array}\right] = \left[\begin{array}{c}
-0 \\
-0 \\
-0 \\
-0 \\
-0
-\end{array}\right] \)has no nontrivial solutions.</p></li>
-      <li> The set of vectors \( \left\{ \left[\begin{array}{c}
--2 \\
-3 \\
-3 \\
--2 \\
--5
-\end{array}\right] , \left[\begin{array}{c}
-5 \\
-4 \\
--5 \\
-5 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
--6 \\
-5 \\
--3 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
-4 \\
--4 \\
-0 \\
-4 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
--2 \\
-4 \\
--2 \\
--3 \\
-5
-\end{array}\right] \right\} \)is linearly independent.</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 9</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
--3 \\
--3 \\
-4 \\
-2 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
-5 \\
-5 \\
-5 \\
--4 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
--6 \\
--6 \\
-8 \\
-4 \\
-6
-\end{array}\right] , \left[\begin{array}{c}
-2 \\
--4 \\
--8 \\
--12 \\
-6
-\end{array}\right] , \left[\begin{array}{c}
-5 \\
--3 \\
 1 \\
--1 \\
--5
+2 \\
+-3 \\
+-3 \\
+4
+\end{array}\right] , \left[\begin{array}{c}
+5 \\
+-2 \\
+5 \\
+-4 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
+9 \\
+-6 \\
+5 \\
+-5 \\
+1
 \end{array}\right] \right\} \)is linearly dependent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a vector equation.</li>
@@ -1249,67 +1202,70 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc|c}
+4 &amp; 1 &amp; 5 &amp; 9 &amp; 0 \\
+-4 &amp; 2 &amp; -2 &amp; -6 &amp; 0 \\
+0 &amp; -3 &amp; 5 &amp; 5 &amp; 0 \\
+-1 &amp; -3 &amp; -4 &amp; -5 &amp; 0 \\
+-1 &amp; 4 &amp; 2 &amp; 1 &amp; 0
+\end{array}\right] = \left[\begin{array}{cccc|c}
+1 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
--3 \\
--3 \\
 4 \\
-2 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
-5 \\
-5 \\
-5 \\
 -4 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
--6 \\
--6 \\
-8 \\
-4 \\
-6
-\end{array}\right] , \left[\begin{array}{c}
-2 \\
--4 \\
--8 \\
--12 \\
-6
-\end{array}\right] , \left[\begin{array}{c}
-5 \\
--3 \\
-1 \\
+0 \\
 -1 \\
--5
+-1
+\end{array}\right] , \left[\begin{array}{c}
+1 \\
+2 \\
+-3 \\
+-3 \\
+4
+\end{array}\right] , \left[\begin{array}{c}
+5 \\
+-2 \\
+5 \\
+-4 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
+9 \\
+-6 \\
+5 \\
+-5 \\
+1
 \end{array}\right] \right\} \)is linearly dependent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
--3 \\
--3 \\
 4 \\
-2 \\
-3
-\end{array}\right] + x_{2} \left[\begin{array}{c}
-5 \\
-5 \\
-5 \\
 -4 \\
-3
-\end{array}\right] + x_{3} \left[\begin{array}{c}
--6 \\
--6 \\
-8 \\
-4 \\
-6
-\end{array}\right] + x_{4} \left[\begin{array}{c}
-2 \\
--4 \\
--8 \\
--12 \\
-6
-\end{array}\right] + x_{5} \left[\begin{array}{c}
-5 \\
--3 \\
-1 \\
+0 \\
 -1 \\
--5
+-1
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+1 \\
+2 \\
+-3 \\
+-3 \\
+4
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+5 \\
+-2 \\
+5 \\
+-4 \\
+2
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+9 \\
+-6 \\
+5 \\
+-5 \\
+1
 \end{array}\right] = \left[\begin{array}{c}
 0 \\
 0 \\
@@ -1318,35 +1274,190 @@
 0
 \end{array}\right] \)has (infinitely many) nontrivial solutions.</p></li>
       <li> The set of vectors \( \left\{ \left[\begin{array}{c}
--3 \\
--3 \\
 4 \\
-2 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
-5 \\
-5 \\
-5 \\
 -4 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
--6 \\
--6 \\
-8 \\
-4 \\
-6
-\end{array}\right] , \left[\begin{array}{c}
-2 \\
--4 \\
--8 \\
--12 \\
-6
-\end{array}\right] , \left[\begin{array}{c}
-5 \\
--3 \\
-1 \\
+0 \\
 -1 \\
--5
+-1
+\end{array}\right] , \left[\begin{array}{c}
+1 \\
+2 \\
+-3 \\
+-3 \\
+4
+\end{array}\right] , \left[\begin{array}{c}
+5 \\
+-2 \\
+5 \\
+-4 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
+9 \\
+-6 \\
+5 \\
+-5 \\
+1
+\end{array}\right] \right\} \)is linearly dependent.</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 9</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
+-5 \\
+-5 \\
+-1 \\
+3 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
+-6 \\
+-1 \\
+3 \\
+-4 \\
+0
+\end{array}\right] , \left[\begin{array}{c}
+2 \\
+1 \\
+5 \\
+4 \\
+4
+\end{array}\right] , \left[\begin{array}{c}
+11 \\
+6 \\
+-2 \\
+1 \\
+-1
+\end{array}\right] , \left[\begin{array}{c}
+-15 \\
+-8 \\
+-8 \\
+-9 \\
+-7
+\end{array}\right] \right\} \)is linearly dependent.</p></p>
+    <ol type="a">
+      <li> Write an equivalent statement using a vector equation.</li>
+      <li> Explain why your statement is true or false.</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccccc|c}
+-5 &amp; -6 &amp; 2 &amp; 11 &amp; -15 &amp; 0 \\
+-5 &amp; -1 &amp; 1 &amp; 6 &amp; -8 &amp; 0 \\
+-1 &amp; 3 &amp; 5 &amp; -2 &amp; -8 &amp; 0 \\
+3 &amp; -4 &amp; 4 &amp; 1 &amp; -9 &amp; 0 \\
+1 &amp; 0 &amp; 4 &amp; -1 &amp; -7 &amp; 0
+\end{array}\right] = \left[\begin{array}{ccccc|c}
+1 &amp; 0 &amp; 0 &amp; -1 &amp; 1 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; -1 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; -2 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
+    <ol type="a">
+      <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
+-5 \\
+-5 \\
+-1 \\
+3 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
+-6 \\
+-1 \\
+3 \\
+-4 \\
+0
+\end{array}\right] , \left[\begin{array}{c}
+2 \\
+1 \\
+5 \\
+4 \\
+4
+\end{array}\right] , \left[\begin{array}{c}
+11 \\
+6 \\
+-2 \\
+1 \\
+-1
+\end{array}\right] , \left[\begin{array}{c}
+-15 \\
+-8 \\
+-8 \\
+-9 \\
+-7
+\end{array}\right] \right\} \)is linearly dependent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
+-5 \\
+-5 \\
+-1 \\
+3 \\
+1
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+-6 \\
+-1 \\
+3 \\
+-4 \\
+0
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+2 \\
+1 \\
+5 \\
+4 \\
+4
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+11 \\
+6 \\
+-2 \\
+1 \\
+-1
+\end{array}\right] + x_{5} \left[\begin{array}{c}
+-15 \\
+-8 \\
+-8 \\
+-9 \\
+-7
+\end{array}\right] = \left[\begin{array}{c}
+0 \\
+0 \\
+0 \\
+0 \\
+0
+\end{array}\right] \)has (infinitely many) nontrivial solutions.</p></li>
+      <li> The set of vectors \( \left\{ \left[\begin{array}{c}
+-5 \\
+-5 \\
+-1 \\
+3 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
+-6 \\
+-1 \\
+3 \\
+-4 \\
+0
+\end{array}\right] , \left[\begin{array}{c}
+2 \\
+1 \\
+5 \\
+4 \\
+4
+\end{array}\right] , \left[\begin{array}{c}
+11 \\
+6 \\
+-2 \\
+1 \\
+-1
+\end{array}\right] , \left[\begin{array}{c}
+-15 \\
+-8 \\
+-8 \\
+-9 \\
+-7
 \end{array}\right] \right\} \)is linearly dependent.</li>
     </ol>
   </div>
@@ -1356,35 +1467,29 @@
 <h4>Example 10</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
--5 \\
-4 \\
-1 \\
-5 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
-1 \\
--2 \\
--3 \\
-4 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
-4 \\
 0 \\
+-1 \\
+1 \\
+-5 \\
+3
+\end{array}\right] , \left[\begin{array}{c}
+1 \\
+4 \\
 2 \\
--3 \\
+-6 \\
 1
 \end{array}\right] , \left[\begin{array}{c}
-4 \\
--1 \\
--5 \\
--1 \\
-0
+-2 \\
+-3 \\
+-2 \\
+5 \\
+-5
 \end{array}\right] , \left[\begin{array}{c}
+3 \\
 0 \\
--1 \\
--5 \\
--4 \\
--4
+-3 \\
+18 \\
+3
 \end{array}\right] \right\} \)is linearly independent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a vector equation.</li>
@@ -1395,67 +1500,70 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc|c}
+0 &amp; 1 &amp; -2 &amp; 3 &amp; 0 \\
+-1 &amp; 4 &amp; -3 &amp; 0 &amp; 0 \\
+1 &amp; 2 &amp; -2 &amp; -3 &amp; 0 \\
+-5 &amp; -6 &amp; 5 &amp; 18 &amp; 0 \\
+3 &amp; 1 &amp; -5 &amp; 3 &amp; 0
+\end{array}\right] = \left[\begin{array}{cccc|c}
+1 &amp; 0 &amp; 0 &amp; -3 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; -3 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; -3 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
--5 \\
-4 \\
-1 \\
-5 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
-1 \\
--2 \\
--3 \\
-4 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
-4 \\
 0 \\
+-1 \\
+1 \\
+-5 \\
+3
+\end{array}\right] , \left[\begin{array}{c}
+1 \\
+4 \\
 2 \\
--3 \\
+-6 \\
 1
 \end{array}\right] , \left[\begin{array}{c}
-4 \\
--1 \\
--5 \\
--1 \\
-0
+-2 \\
+-3 \\
+-2 \\
+5 \\
+-5
 \end{array}\right] , \left[\begin{array}{c}
+3 \\
+0 \\
+-3 \\
+18 \\
+3
+\end{array}\right] \right\} \)is linearly independent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
 0 \\
 -1 \\
--5 \\
--4 \\
--4
-\end{array}\right] \right\} \)is linearly independent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
--5 \\
-4 \\
 1 \\
-5 \\
--4
+-5 \\
+3
 \end{array}\right] + x_{2} \left[\begin{array}{c}
 1 \\
+4 \\
+2 \\
+-6 \\
+1
+\end{array}\right] + x_{3} \left[\begin{array}{c}
 -2 \\
 -3 \\
-4 \\
--1
-\end{array}\right] + x_{3} \left[\begin{array}{c}
-4 \\
-0 \\
-2 \\
--3 \\
-1
+-2 \\
+5 \\
+-5
 \end{array}\right] + x_{4} \left[\begin{array}{c}
-4 \\
--1 \\
--5 \\
--1 \\
-0
-\end{array}\right] + x_{5} \left[\begin{array}{c}
+3 \\
 0 \\
--1 \\
--5 \\
--4 \\
--4
+-3 \\
+18 \\
+3
 \end{array}\right] = \left[\begin{array}{c}
 0 \\
 0 \\
@@ -1464,36 +1572,30 @@
 0
 \end{array}\right] \)has no nontrivial solutions.</p></li>
       <li> The set of vectors \( \left\{ \left[\begin{array}{c}
--5 \\
-4 \\
-1 \\
-5 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
-1 \\
--2 \\
--3 \\
-4 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
-4 \\
 0 \\
+-1 \\
+1 \\
+-5 \\
+3
+\end{array}\right] , \left[\begin{array}{c}
+1 \\
+4 \\
 2 \\
--3 \\
+-6 \\
 1
 \end{array}\right] , \left[\begin{array}{c}
-4 \\
--1 \\
--5 \\
--1 \\
-0
+-2 \\
+-3 \\
+-2 \\
+5 \\
+-5
 \end{array}\right] , \left[\begin{array}{c}
+3 \\
 0 \\
--1 \\
--5 \\
--4 \\
--4
-\end{array}\right] \right\} \)is linearly independent.</li>
+-3 \\
+18 \\
+3
+\end{array}\right] \right\} \)is linearly dependent.</li>
     </ol>
   </div>
 </div>
@@ -1502,36 +1604,36 @@
 <h4>Example 11</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
+2 \\
 0 \\
-3 \\
--4 \\
--5 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
-5 \\
-0 \\
-1 \\
-3 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
 -6 \\
--1 \\
-1 \\
--6 \\
+2 \\
 1
 \end{array}\right] , \left[\begin{array}{c}
--4 \\
-0 \\
--1 \\
--2 \\
--2
-\end{array}\right] , \left[\begin{array}{c}
-4 \\
+3 \\
+3 \\
 -6 \\
-1 \\
+-6 \\
+4
+\end{array}\right] , \left[\begin{array}{c}
 5 \\
--6
-\end{array}\right] \right\} \)is linearly independent.</p></p>
+-6 \\
+0 \\
+-2 \\
+3
+\end{array}\right] , \left[\begin{array}{c}
+-6 \\
+-4 \\
+5 \\
+0 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
+-3 \\
+-5 \\
+-6 \\
+3 \\
+1
+\end{array}\right] \right\} \)is linearly dependent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a vector equation.</li>
       <li> Explain why your statement is true or false.</li>
@@ -1541,104 +1643,119 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccccc|c}
+2 &amp; 3 &amp; 5 &amp; -6 &amp; -3 &amp; 0 \\
+0 &amp; 3 &amp; -6 &amp; -4 &amp; -5 &amp; 0 \\
+-6 &amp; -6 &amp; 0 &amp; 5 &amp; -6 &amp; 0 \\
+2 &amp; -6 &amp; -2 &amp; 0 &amp; 3 &amp; 0 \\
+1 &amp; 4 &amp; 3 &amp; 1 &amp; 1 &amp; 0
+\end{array}\right] = \left[\begin{array}{ccccc|c}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
+2 \\
 0 \\
-3 \\
--4 \\
--5 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
-5 \\
-0 \\
-1 \\
-3 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
 -6 \\
--1 \\
-1 \\
--6 \\
+2 \\
 1
 \end{array}\right] , \left[\begin{array}{c}
--4 \\
-0 \\
--1 \\
--2 \\
--2
-\end{array}\right] , \left[\begin{array}{c}
-4 \\
--6 \\
-1 \\
-5 \\
--6
-\end{array}\right] \right\} \)is linearly independent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
-0 \\
 3 \\
--4 \\
--5 \\
+3 \\
+-6 \\
+-6 \\
+4
+\end{array}\right] , \left[\begin{array}{c}
+5 \\
+-6 \\
+0 \\
+-2 \\
 3
+\end{array}\right] , \left[\begin{array}{c}
+-6 \\
+-4 \\
+5 \\
+0 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
+-3 \\
+-5 \\
+-6 \\
+3 \\
+1
+\end{array}\right] \right\} \)is linearly dependent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
+2 \\
+0 \\
+-6 \\
+2 \\
+1
 \end{array}\right] + x_{2} \left[\begin{array}{c}
-5 \\
-0 \\
-1 \\
 3 \\
-3
+3 \\
+-6 \\
+-6 \\
+4
 \end{array}\right] + x_{3} \left[\begin{array}{c}
--6 \\
--1 \\
-1 \\
--6 \\
-1
-\end{array}\right] + x_{4} \left[\begin{array}{c}
--4 \\
-0 \\
--1 \\
--2 \\
--2
-\end{array}\right] + x_{5} \left[\begin{array}{c}
-4 \\
--6 \\
-1 \\
 5 \\
--6
+-6 \\
+0 \\
+-2 \\
+3
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+-6 \\
+-4 \\
+5 \\
+0 \\
+1
+\end{array}\right] + x_{5} \left[\begin{array}{c}
+-3 \\
+-5 \\
+-6 \\
+3 \\
+1
 \end{array}\right] = \left[\begin{array}{c}
 0 \\
 0 \\
 0 \\
 0 \\
 0
-\end{array}\right] \)has no nontrivial solutions.</p></li>
+\end{array}\right] \)has (infinitely many) nontrivial solutions.</p></li>
       <li> The set of vectors \( \left\{ \left[\begin{array}{c}
+2 \\
 0 \\
-3 \\
--4 \\
--5 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
-5 \\
-0 \\
-1 \\
-3 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
 -6 \\
--1 \\
-1 \\
--6 \\
+2 \\
 1
 \end{array}\right] , \left[\begin{array}{c}
--4 \\
-0 \\
--1 \\
--2 \\
--2
-\end{array}\right] , \left[\begin{array}{c}
-4 \\
+3 \\
+3 \\
 -6 \\
-1 \\
+-6 \\
+4
+\end{array}\right] , \left[\begin{array}{c}
 5 \\
--6
+-6 \\
+0 \\
+-2 \\
+3
+\end{array}\right] , \left[\begin{array}{c}
+-6 \\
+-4 \\
+5 \\
+0 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
+-3 \\
+-5 \\
+-6 \\
+3 \\
+1
 \end{array}\right] \right\} \)is linearly independent.</li>
     </ol>
   </div>
@@ -1648,36 +1765,30 @@
 <h4>Example 12</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
--2 \\
--1 \\
--5 \\
-0 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
-1 \\
-5 \\
+-4 \\
 2 \\
--3 \\
--5
+1 \\
+-4 \\
+5
 \end{array}\right] , \left[\begin{array}{c}
--5 \\
--5 \\
+-2 \\
+-4 \\
 5 \\
+-5 \\
+3
+\end{array}\right] , \left[\begin{array}{c}
+3 \\
+0 \\
+0 \\
 -5 \\
 -3
 \end{array}\right] , \left[\begin{array}{c}
+16 \\
 0 \\
--9 \\
-1 \\
-6 \\
-11
-\end{array}\right] , \left[\begin{array}{c}
--3 \\
--6 \\
-4 \\
--6 \\
-4
-\end{array}\right] \right\} \)is linearly independent.</p></p>
+-7 \\
+3 \\
+-19
+\end{array}\right] \right\} \)is linearly dependent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a vector equation.</li>
       <li> Explain why your statement is true or false.</li>
@@ -1687,104 +1798,101 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc|c}
+-4 &amp; -2 &amp; 3 &amp; 16 &amp; 0 \\
+2 &amp; -4 &amp; 0 &amp; 0 &amp; 0 \\
+1 &amp; 5 &amp; 0 &amp; -7 &amp; 0 \\
+-4 &amp; -5 &amp; -5 &amp; 3 &amp; 0 \\
+5 &amp; 3 &amp; -3 &amp; -19 &amp; 0
+\end{array}\right] = \left[\begin{array}{cccc|c}
+1 &amp; 0 &amp; 0 &amp; -2 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; -1 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 2 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
--2 \\
--1 \\
--5 \\
-0 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
-1 \\
-5 \\
+-4 \\
 2 \\
--3 \\
--5
+1 \\
+-4 \\
+5
 \end{array}\right] , \left[\begin{array}{c}
--5 \\
--5 \\
+-2 \\
+-4 \\
 5 \\
+-5 \\
+3
+\end{array}\right] , \left[\begin{array}{c}
+3 \\
+0 \\
+0 \\
 -5 \\
 -3
 \end{array}\right] , \left[\begin{array}{c}
+16 \\
 0 \\
--9 \\
-1 \\
-6 \\
-11
-\end{array}\right] , \left[\begin{array}{c}
--3 \\
--6 \\
-4 \\
--6 \\
-4
-\end{array}\right] \right\} \)is linearly independent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
--2 \\
--1 \\
--5 \\
-0 \\
--1
-\end{array}\right] + x_{2} \left[\begin{array}{c}
-1 \\
-5 \\
+-7 \\
+3 \\
+-19
+\end{array}\right] \right\} \)is linearly dependent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
+-4 \\
 2 \\
--3 \\
--5
-\end{array}\right] + x_{3} \left[\begin{array}{c}
--5 \\
--5 \\
+1 \\
+-4 \\
+5
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+-2 \\
+-4 \\
 5 \\
+-5 \\
+3
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+3 \\
+0 \\
+0 \\
 -5 \\
 -3
 \end{array}\right] + x_{4} \left[\begin{array}{c}
+16 \\
 0 \\
--9 \\
-1 \\
-6 \\
-11
-\end{array}\right] + x_{5} \left[\begin{array}{c}
--3 \\
--6 \\
-4 \\
--6 \\
-4
+-7 \\
+3 \\
+-19
 \end{array}\right] = \left[\begin{array}{c}
 0 \\
 0 \\
 0 \\
 0 \\
 0
-\end{array}\right] \)has no nontrivial solutions.</p></li>
+\end{array}\right] \)has (infinitely many) nontrivial solutions.</p></li>
       <li> The set of vectors \( \left\{ \left[\begin{array}{c}
--2 \\
--1 \\
--5 \\
-0 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
-1 \\
-5 \\
+-4 \\
 2 \\
--3 \\
--5
+1 \\
+-4 \\
+5
 \end{array}\right] , \left[\begin{array}{c}
--5 \\
--5 \\
+-2 \\
+-4 \\
 5 \\
+-5 \\
+3
+\end{array}\right] , \left[\begin{array}{c}
+3 \\
+0 \\
+0 \\
 -5 \\
 -3
 \end{array}\right] , \left[\begin{array}{c}
+16 \\
 0 \\
--9 \\
-1 \\
-6 \\
-11
-\end{array}\right] , \left[\begin{array}{c}
--3 \\
--6 \\
-4 \\
--6 \\
-4
+-7 \\
+3 \\
+-19
 \end{array}\right] \right\} \)is linearly dependent.</li>
     </ol>
   </div>
@@ -1794,29 +1902,35 @@
 <h4>Example 13</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
-5 \\
-0 \\
--6 \\
+-3 \\
+2 \\
 -4 \\
--5
-\end{array}\right] , \left[\begin{array}{c}
--4 \\
-5 \\
 -1 \\
+0
+\end{array}\right] , \left[\begin{array}{c}
+-3 \\
+-2 \\
 -5 \\
--2
+-3 \\
+-1
 \end{array}\right] , \left[\begin{array}{c}
--2 \\
--1 \\
-5 \\
--2 \\
-5
-\end{array}\right] , \left[\begin{array}{c}
+-3 \\
 1 \\
+-1 \\
+-6 \\
+-1
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+-1 \\
 4 \\
--5 \\
+0 \\
+-4
+\end{array}\right] , \left[\begin{array}{c}
+4 \\
+2 \\
+-2 \\
 -4 \\
--3
+-4
 \end{array}\right] \right\} \)is linearly independent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a vector equation.</li>
@@ -1827,55 +1941,82 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccccc|c}
+-3 &amp; -3 &amp; -3 &amp; -2 &amp; 4 &amp; 0 \\
+2 &amp; -2 &amp; 1 &amp; -1 &amp; 2 &amp; 0 \\
+-4 &amp; -5 &amp; -1 &amp; 4 &amp; -2 &amp; 0 \\
+-1 &amp; -3 &amp; -6 &amp; 0 &amp; -4 &amp; 0 \\
+0 &amp; -1 &amp; -1 &amp; -4 &amp; -4 &amp; 0
+\end{array}\right] = \left[\begin{array}{ccccc|c}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
-5 \\
-0 \\
--6 \\
+-3 \\
+2 \\
 -4 \\
--5
-\end{array}\right] , \left[\begin{array}{c}
--4 \\
-5 \\
 -1 \\
+0
+\end{array}\right] , \left[\begin{array}{c}
+-3 \\
+-2 \\
 -5 \\
--2
+-3 \\
+-1
 \end{array}\right] , \left[\begin{array}{c}
--2 \\
--1 \\
-5 \\
--2 \\
-5
-\end{array}\right] , \left[\begin{array}{c}
+-3 \\
 1 \\
+-1 \\
+-6 \\
+-1
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+-1 \\
 4 \\
--5 \\
+0 \\
+-4
+\end{array}\right] , \left[\begin{array}{c}
+4 \\
+2 \\
+-2 \\
 -4 \\
--3
+-4
 \end{array}\right] \right\} \)is linearly independent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
-5 \\
-0 \\
--6 \\
+-3 \\
+2 \\
 -4 \\
--5
+-1 \\
+0
 \end{array}\right] + x_{2} \left[\begin{array}{c}
--4 \\
-5 \\
--1 \\
+-3 \\
+-2 \\
 -5 \\
--2
+-3 \\
+-1
 \end{array}\right] + x_{3} \left[\begin{array}{c}
+-3 \\
+1 \\
+-1 \\
+-6 \\
+-1
+\end{array}\right] + x_{4} \left[\begin{array}{c}
 -2 \\
 -1 \\
-5 \\
--2 \\
-5
-\end{array}\right] + x_{4} \left[\begin{array}{c}
-1 \\
 4 \\
--5 \\
+0 \\
+-4
+\end{array}\right] + x_{5} \left[\begin{array}{c}
+4 \\
+2 \\
+-2 \\
 -4 \\
--3
+-4
 \end{array}\right] = \left[\begin{array}{c}
 0 \\
 0 \\
@@ -1884,29 +2025,35 @@
 0
 \end{array}\right] \)has no nontrivial solutions.</p></li>
       <li> The set of vectors \( \left\{ \left[\begin{array}{c}
-5 \\
-0 \\
--6 \\
+-3 \\
+2 \\
 -4 \\
--5
-\end{array}\right] , \left[\begin{array}{c}
--4 \\
-5 \\
 -1 \\
+0
+\end{array}\right] , \left[\begin{array}{c}
+-3 \\
+-2 \\
 -5 \\
--2
+-3 \\
+-1
 \end{array}\right] , \left[\begin{array}{c}
--2 \\
--1 \\
-5 \\
--2 \\
-5
-\end{array}\right] , \left[\begin{array}{c}
+-3 \\
 1 \\
+-1 \\
+-6 \\
+-1
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+-1 \\
 4 \\
--5 \\
+0 \\
+-4
+\end{array}\right] , \left[\begin{array}{c}
+4 \\
+2 \\
+-2 \\
 -4 \\
--3
+-4
 \end{array}\right] \right\} \)is linearly independent.</li>
     </ol>
   </div>
@@ -1916,29 +2063,29 @@
 <h4>Example 14</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
-5 \\
+1 \\
 -3 \\
--4 \\
--2 \\
--4
+2 \\
+1 \\
+5
 \end{array}\right] , \left[\begin{array}{c}
-4 \\
-4 \\
+1 \\
+5 \\
 -2 \\
-4 \\
--1
+2 \\
+0
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
+-1 \\
+-4 \\
+-5 \\
+4
 \end{array}\right] , \left[\begin{array}{c}
 0 \\
--3 \\
--1 \\
-5 \\
--2
-\end{array}\right] , \left[\begin{array}{c}
--8 \\
--11 \\
-3 \\
--3 \\
-0
+8 \\
+-4 \\
+1 \\
+-5
 \end{array}\right] \right\} \)is linearly independent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a vector equation.</li>
@@ -1949,55 +2096,70 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc|c}
+1 &amp; 1 &amp; -4 &amp; 0 &amp; 0 \\
+-3 &amp; 5 &amp; -1 &amp; 8 &amp; 0 \\
+2 &amp; -2 &amp; -4 &amp; -4 &amp; 0 \\
+1 &amp; 2 &amp; -5 &amp; 1 &amp; 0 \\
+5 &amp; 0 &amp; 4 &amp; -5 &amp; 0
+\end{array}\right] = \left[\begin{array}{cccc|c}
+1 &amp; 0 &amp; 0 &amp; -1 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
-5 \\
+1 \\
 -3 \\
--4 \\
--2 \\
--4
+2 \\
+1 \\
+5
 \end{array}\right] , \left[\begin{array}{c}
-4 \\
-4 \\
+1 \\
+5 \\
 -2 \\
-4 \\
--1
+2 \\
+0
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
+-1 \\
+-4 \\
+-5 \\
+4
 \end{array}\right] , \left[\begin{array}{c}
 0 \\
--3 \\
--1 \\
-5 \\
--2
-\end{array}\right] , \left[\begin{array}{c}
--8 \\
--11 \\
-3 \\
--3 \\
-0
+8 \\
+-4 \\
+1 \\
+-5
 \end{array}\right] \right\} \)is linearly independent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
-5 \\
+1 \\
 -3 \\
--4 \\
--2 \\
--4
+2 \\
+1 \\
+5
 \end{array}\right] + x_{2} \left[\begin{array}{c}
-4 \\
-4 \\
--2 \\
-4 \\
--1
-\end{array}\right] + x_{3} \left[\begin{array}{c}
-0 \\
--3 \\
--1 \\
+1 \\
 5 \\
--2
-\end{array}\right] + x_{4} \left[\begin{array}{c}
--8 \\
--11 \\
-3 \\
--3 \\
+-2 \\
+2 \\
 0
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+-4 \\
+-1 \\
+-4 \\
+-5 \\
+4
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+0 \\
+8 \\
+-4 \\
+1 \\
+-5
 \end{array}\right] = \left[\begin{array}{c}
 0 \\
 0 \\
@@ -2006,29 +2168,29 @@
 0
 \end{array}\right] \)has no nontrivial solutions.</p></li>
       <li> The set of vectors \( \left\{ \left[\begin{array}{c}
-5 \\
+1 \\
 -3 \\
--4 \\
--2 \\
--4
+2 \\
+1 \\
+5
 \end{array}\right] , \left[\begin{array}{c}
-4 \\
-4 \\
+1 \\
+5 \\
 -2 \\
-4 \\
--1
+2 \\
+0
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
+-1 \\
+-4 \\
+-5 \\
+4
 \end{array}\right] , \left[\begin{array}{c}
 0 \\
--3 \\
--1 \\
-5 \\
--2
-\end{array}\right] , \left[\begin{array}{c}
--8 \\
--11 \\
-3 \\
--3 \\
-0
+8 \\
+-4 \\
+1 \\
+-5
 \end{array}\right] \right\} \)is linearly dependent.</li>
     </ol>
   </div>
@@ -2038,35 +2200,35 @@
 <h4>Example 15</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
-1 \\
--2 \\
 -5 \\
-0 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
-0 \\
+-6 \\
+5 \\
 -2 \\
-0 \\
-4 \\
-3
+1
 \end{array}\right] , \left[\begin{array}{c}
--4 \\
--1 \\
 -2 \\
 -6 \\
--6
-\end{array}\right] , \left[\begin{array}{c}
--3 \\
--1 \\
--1 \\
+-4 \\
 4 \\
--3
+-1
 \end{array}\right] , \left[\begin{array}{c}
-4 \\
-1 \\
 3 \\
 5 \\
-5
+1 \\
+-5 \\
+-6
+\end{array}\right] , \left[\begin{array}{c}
+17 \\
+24 \\
+-11 \\
+2 \\
+-2
+\end{array}\right] , \left[\begin{array}{c}
+5 \\
+-6 \\
+2 \\
+-2 \\
+4
 \end{array}\right] \right\} \)is linearly independent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a vector equation.</li>
@@ -2077,67 +2239,82 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccccc|c}
+-5 &amp; -2 &amp; 3 &amp; 17 &amp; 5 &amp; 0 \\
+-6 &amp; -6 &amp; 5 &amp; 24 &amp; -6 &amp; 0 \\
+5 &amp; -4 &amp; 1 &amp; -11 &amp; 2 &amp; 0 \\
+-2 &amp; 4 &amp; -5 &amp; 2 &amp; -2 &amp; 0 \\
+1 &amp; -1 &amp; -6 &amp; -2 &amp; 4 &amp; 0
+\end{array}\right] = \left[\begin{array}{ccccc|c}
+1 &amp; 0 &amp; 0 &amp; -3 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; -1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
-1 \\
--2 \\
 -5 \\
-0 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
-0 \\
+-6 \\
+5 \\
 -2 \\
-0 \\
-4 \\
-3
+1
 \end{array}\right] , \left[\begin{array}{c}
--4 \\
--1 \\
 -2 \\
 -6 \\
--6
-\end{array}\right] , \left[\begin{array}{c}
--3 \\
--1 \\
--1 \\
+-4 \\
 4 \\
--3
+-1
 \end{array}\right] , \left[\begin{array}{c}
-4 \\
-1 \\
 3 \\
 5 \\
-5
-\end{array}\right] \right\} \)is linearly independent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
 1 \\
--2 \\
 -5 \\
-0 \\
--4
-\end{array}\right] + x_{2} \left[\begin{array}{c}
-0 \\
+-6
+\end{array}\right] , \left[\begin{array}{c}
+17 \\
+24 \\
+-11 \\
+2 \\
+-2
+\end{array}\right] , \left[\begin{array}{c}
+5 \\
+-6 \\
+2 \\
 -2 \\
-0 \\
-4 \\
-3
-\end{array}\right] + x_{3} \left[\begin{array}{c}
--4 \\
--1 \\
+4
+\end{array}\right] \right\} \)is linearly independent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
+-5 \\
+-6 \\
+5 \\
+-2 \\
+1
+\end{array}\right] + x_{2} \left[\begin{array}{c}
 -2 \\
 -6 \\
+-4 \\
+4 \\
+-1
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+3 \\
+5 \\
+1 \\
+-5 \\
 -6
 \end{array}\right] + x_{4} \left[\begin{array}{c}
--3 \\
--1 \\
--1 \\
-4 \\
--3
+17 \\
+24 \\
+-11 \\
+2 \\
+-2
 \end{array}\right] + x_{5} \left[\begin{array}{c}
-4 \\
-1 \\
-3 \\
 5 \\
-5
+-6 \\
+2 \\
+-2 \\
+4
 \end{array}\right] = \left[\begin{array}{c}
 0 \\
 0 \\
@@ -2146,36 +2323,36 @@
 0
 \end{array}\right] \)has no nontrivial solutions.</p></li>
       <li> The set of vectors \( \left\{ \left[\begin{array}{c}
-1 \\
--2 \\
 -5 \\
-0 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
-0 \\
+-6 \\
+5 \\
 -2 \\
-0 \\
-4 \\
-3
+1
 \end{array}\right] , \left[\begin{array}{c}
--4 \\
--1 \\
 -2 \\
 -6 \\
--6
-\end{array}\right] , \left[\begin{array}{c}
--3 \\
--1 \\
--1 \\
+-4 \\
 4 \\
--3
+-1
 \end{array}\right] , \left[\begin{array}{c}
-4 \\
-1 \\
 3 \\
 5 \\
-5
-\end{array}\right] \right\} \)is linearly independent.</li>
+1 \\
+-5 \\
+-6
+\end{array}\right] , \left[\begin{array}{c}
+17 \\
+24 \\
+-11 \\
+2 \\
+-2
+\end{array}\right] , \left[\begin{array}{c}
+5 \\
+-6 \\
+2 \\
+-2 \\
+4
+\end{array}\right] \right\} \)is linearly dependent.</li>
     </ol>
   </div>
 </div>
@@ -2184,29 +2361,29 @@
 <h4>Example 16</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
--6 \\
--6 \\
--6 \\
--5 \\
-4
-\end{array}\right] , \left[\begin{array}{c}
-2 \\
-5 \\
 4 \\
--4 \\
--6
+2 \\
+-2 \\
+-5 \\
+5
 \end{array}\right] , \left[\begin{array}{c}
 1 \\
+-3 \\
 0 \\
 -3 \\
-4 \\
-2
+-3
 \end{array}\right] , \left[\begin{array}{c}
-20 \\
-23 \\
-22 \\
-11 \\
--18
+-5 \\
+-3 \\
+-5 \\
+-3 \\
+-3
+\end{array}\right] , \left[\begin{array}{c}
+3 \\
+5 \\
+-2 \\
+-2 \\
+8
 \end{array}\right] \right\} \)is linearly independent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a vector equation.</li>
@@ -2217,55 +2394,70 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc|c}
+4 &amp; 1 &amp; -5 &amp; 3 &amp; 0 \\
+2 &amp; -3 &amp; -3 &amp; 5 &amp; 0 \\
+-2 &amp; 0 &amp; -5 &amp; -2 &amp; 0 \\
+-5 &amp; -3 &amp; -3 &amp; -2 &amp; 0 \\
+5 &amp; -3 &amp; -3 &amp; 8 &amp; 0
+\end{array}\right] = \left[\begin{array}{cccc|c}
+1 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; -1 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
--6 \\
--6 \\
--6 \\
--5 \\
-4
-\end{array}\right] , \left[\begin{array}{c}
-2 \\
-5 \\
 4 \\
--4 \\
--6
+2 \\
+-2 \\
+-5 \\
+5
 \end{array}\right] , \left[\begin{array}{c}
 1 \\
+-3 \\
 0 \\
 -3 \\
-4 \\
-2
+-3
 \end{array}\right] , \left[\begin{array}{c}
-20 \\
-23 \\
-22 \\
-11 \\
--18
+-5 \\
+-3 \\
+-5 \\
+-3 \\
+-3
+\end{array}\right] , \left[\begin{array}{c}
+3 \\
+5 \\
+-2 \\
+-2 \\
+8
 \end{array}\right] \right\} \)is linearly independent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
--6 \\
--6 \\
--6 \\
--5 \\
-4
-\end{array}\right] + x_{2} \left[\begin{array}{c}
-2 \\
-5 \\
 4 \\
--4 \\
--6
-\end{array}\right] + x_{3} \left[\begin{array}{c}
+2 \\
+-2 \\
+-5 \\
+5
+\end{array}\right] + x_{2} \left[\begin{array}{c}
 1 \\
+-3 \\
 0 \\
 -3 \\
-4 \\
-2
+-3
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+-5 \\
+-3 \\
+-5 \\
+-3 \\
+-3
 \end{array}\right] + x_{4} \left[\begin{array}{c}
-20 \\
-23 \\
-22 \\
-11 \\
--18
+3 \\
+5 \\
+-2 \\
+-2 \\
+8
 \end{array}\right] = \left[\begin{array}{c}
 0 \\
 0 \\
@@ -2274,29 +2466,29 @@
 0
 \end{array}\right] \)has no nontrivial solutions.</p></li>
       <li> The set of vectors \( \left\{ \left[\begin{array}{c}
--6 \\
--6 \\
--6 \\
--5 \\
-4
-\end{array}\right] , \left[\begin{array}{c}
-2 \\
-5 \\
 4 \\
--4 \\
--6
+2 \\
+-2 \\
+-5 \\
+5
 \end{array}\right] , \left[\begin{array}{c}
 1 \\
+-3 \\
 0 \\
 -3 \\
-4 \\
-2
+-3
 \end{array}\right] , \left[\begin{array}{c}
-20 \\
-23 \\
-22 \\
-11 \\
--18
+-5 \\
+-3 \\
+-5 \\
+-3 \\
+-3
+\end{array}\right] , \left[\begin{array}{c}
+3 \\
+5 \\
+-2 \\
+-2 \\
+8
 \end{array}\right] \right\} \)is linearly dependent.</li>
     </ol>
   </div>
@@ -2306,30 +2498,36 @@
 <h4>Example 17</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
--2 \\
+-4 \\
+-1 \\
+-4 \\
+-6 \\
+4
+\end{array}\right] , \left[\begin{array}{c}
 0 \\
 5 \\
-3 \\
+4 \\
+4 \\
+-1
+\end{array}\right] , \left[\begin{array}{c}
+5 \\
+-1 \\
+-1 \\
+-3 \\
 5
 \end{array}\right] , \left[\begin{array}{c}
+-4 \\
+2 \\
+-3 \\
+4 \\
+-2
+\end{array}\right] , \left[\begin{array}{c}
+5 \\
 1 \\
 3 \\
--4 \\
-4 \\
--5
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
--1 \\
-3 \\
-3 \\
--6
-\end{array}\right] , \left[\begin{array}{c}
-4 \\
--4 \\
--8 \\
--10 \\
--16
-\end{array}\right] \right\} \)is linearly independent.</p></p>
+-2 \\
+4
+\end{array}\right] \right\} \)is linearly dependent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a vector equation.</li>
       <li> Explain why your statement is true or false.</li>
@@ -2339,87 +2537,120 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccccc|c}
+-4 &amp; 0 &amp; 5 &amp; -4 &amp; 5 &amp; 0 \\
+-1 &amp; 5 &amp; -1 &amp; 2 &amp; 1 &amp; 0 \\
+-4 &amp; 4 &amp; -1 &amp; -3 &amp; 3 &amp; 0 \\
+-6 &amp; 4 &amp; -3 &amp; 4 &amp; -2 &amp; 0 \\
+4 &amp; -1 &amp; 5 &amp; -2 &amp; 4 &amp; 0
+\end{array}\right] = \left[\begin{array}{ccccc|c}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
--2 \\
+-4 \\
+-1 \\
+-4 \\
+-6 \\
+4
+\end{array}\right] , \left[\begin{array}{c}
 0 \\
 5 \\
-3 \\
+4 \\
+4 \\
+-1
+\end{array}\right] , \left[\begin{array}{c}
+5 \\
+-1 \\
+-1 \\
+-3 \\
 5
 \end{array}\right] , \left[\begin{array}{c}
+-4 \\
+2 \\
+-3 \\
+4 \\
+-2
+\end{array}\right] , \left[\begin{array}{c}
+5 \\
 1 \\
 3 \\
--4 \\
-4 \\
--5
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
--1 \\
-3 \\
-3 \\
--6
-\end{array}\right] , \left[\begin{array}{c}
-4 \\
--4 \\
--8 \\
--10 \\
--16
-\end{array}\right] \right\} \)is linearly independent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
 -2 \\
-0 \\
-5 \\
-3 \\
-5
+4
+\end{array}\right] \right\} \)is linearly dependent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
+-4 \\
+-1 \\
+-4 \\
+-6 \\
+4
 \end{array}\right] + x_{2} \left[\begin{array}{c}
+0 \\
+5 \\
+4 \\
+4 \\
+-1
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+5 \\
+-1 \\
+-1 \\
+-3 \\
+5
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+-4 \\
+2 \\
+-3 \\
+4 \\
+-2
+\end{array}\right] + x_{5} \left[\begin{array}{c}
+5 \\
 1 \\
 3 \\
--4 \\
-4 \\
--5
-\end{array}\right] + x_{3} \left[\begin{array}{c}
--1 \\
--1 \\
-3 \\
-3 \\
--6
-\end{array}\right] + x_{4} \left[\begin{array}{c}
-4 \\
--4 \\
--8 \\
--10 \\
--16
+-2 \\
+4
 \end{array}\right] = \left[\begin{array}{c}
 0 \\
 0 \\
 0 \\
 0 \\
 0
-\end{array}\right] \)has no nontrivial solutions.</p></li>
+\end{array}\right] \)has (infinitely many) nontrivial solutions.</p></li>
       <li> The set of vectors \( \left\{ \left[\begin{array}{c}
--2 \\
+-4 \\
+-1 \\
+-4 \\
+-6 \\
+4
+\end{array}\right] , \left[\begin{array}{c}
 0 \\
 5 \\
-3 \\
+4 \\
+4 \\
+-1
+\end{array}\right] , \left[\begin{array}{c}
+5 \\
+-1 \\
+-1 \\
+-3 \\
 5
 \end{array}\right] , \left[\begin{array}{c}
+-4 \\
+2 \\
+-3 \\
+4 \\
+-2
+\end{array}\right] , \left[\begin{array}{c}
+5 \\
 1 \\
 3 \\
--4 \\
-4 \\
--5
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
--1 \\
-3 \\
-3 \\
--6
-\end{array}\right] , \left[\begin{array}{c}
-4 \\
--4 \\
--8 \\
--10 \\
--16
-\end{array}\right] \right\} \)is linearly dependent.</li>
+-2 \\
+4
+\end{array}\right] \right\} \)is linearly independent.</li>
     </ol>
   </div>
 </div>
@@ -2429,27 +2660,33 @@
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
 3 \\
-4 \\
-4 \\
-3 \\
--5
-\end{array}\right] , \left[\begin{array}{c}
-4 \\
--4 \\
-2 \\
--1 \\
--5
-\end{array}\right] , \left[\begin{array}{c}
-4 \\
-2 \\
-3 \\
+-6 \\
 -2 \\
-3
+-4 \\
+2
 \end{array}\right] , \left[\begin{array}{c}
+4 \\
+1 \\
 -1 \\
-5 \\
+4 \\
+4
+\end{array}\right] , \left[\begin{array}{c}
+-7 \\
 5 \\
 3 \\
+0 \\
+-6
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+-15 \\
+1 \\
+-16 \\
+-2
+\end{array}\right] , \left[\begin{array}{c}
+1 \\
+1 \\
+1 \\
+4 \\
 4
 \end{array}\right] \right\} \)is linearly dependent.</p></p>
     <ol type="a">
@@ -2461,54 +2698,81 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccccc|c}
+3 &amp; 4 &amp; -7 &amp; -2 &amp; 1 &amp; 0 \\
+-6 &amp; 1 &amp; 5 &amp; -15 &amp; 1 &amp; 0 \\
+-2 &amp; -1 &amp; 3 &amp; 1 &amp; 1 &amp; 0 \\
+-4 &amp; 4 &amp; 0 &amp; -16 &amp; 4 &amp; 0 \\
+2 &amp; 4 &amp; -6 &amp; -2 &amp; 4 &amp; 0
+\end{array}\right] = \left[\begin{array}{ccccc|c}
+1 &amp; 0 &amp; -1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; -1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
 3 \\
-4 \\
-4 \\
-3 \\
--5
-\end{array}\right] , \left[\begin{array}{c}
-4 \\
--4 \\
-2 \\
--1 \\
--5
-\end{array}\right] , \left[\begin{array}{c}
-4 \\
-2 \\
-3 \\
+-6 \\
 -2 \\
-3
+-4 \\
+2
 \end{array}\right] , \left[\begin{array}{c}
+4 \\
+1 \\
 -1 \\
-5 \\
+4 \\
+4
+\end{array}\right] , \left[\begin{array}{c}
+-7 \\
 5 \\
 3 \\
+0 \\
+-6
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+-15 \\
+1 \\
+-16 \\
+-2
+\end{array}\right] , \left[\begin{array}{c}
+1 \\
+1 \\
+1 \\
+4 \\
 4
 \end{array}\right] \right\} \)is linearly dependent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
 3 \\
-4 \\
-4 \\
-3 \\
--5
+-6 \\
+-2 \\
+-4 \\
+2
 \end{array}\right] + x_{2} \left[\begin{array}{c}
 4 \\
--4 \\
-2 \\
+1 \\
 -1 \\
--5
-\end{array}\right] + x_{3} \left[\begin{array}{c}
 4 \\
-2 \\
+4
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+-7 \\
+5 \\
 3 \\
--2 \\
-3
+0 \\
+-6
 \end{array}\right] + x_{4} \left[\begin{array}{c}
--1 \\
-5 \\
-5 \\
-3 \\
+-2 \\
+-15 \\
+1 \\
+-16 \\
+-2
+\end{array}\right] + x_{5} \left[\begin{array}{c}
+1 \\
+1 \\
+1 \\
+4 \\
 4
 \end{array}\right] = \left[\begin{array}{c}
 0 \\
@@ -2519,29 +2783,35 @@
 \end{array}\right] \)has (infinitely many) nontrivial solutions.</p></li>
       <li> The set of vectors \( \left\{ \left[\begin{array}{c}
 3 \\
-4 \\
-4 \\
-3 \\
--5
-\end{array}\right] , \left[\begin{array}{c}
-4 \\
--4 \\
-2 \\
--1 \\
--5
-\end{array}\right] , \left[\begin{array}{c}
-4 \\
-2 \\
-3 \\
+-6 \\
 -2 \\
-3
+-4 \\
+2
 \end{array}\right] , \left[\begin{array}{c}
+4 \\
+1 \\
 -1 \\
-5 \\
+4 \\
+4
+\end{array}\right] , \left[\begin{array}{c}
+-7 \\
 5 \\
 3 \\
+0 \\
+-6
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+-15 \\
+1 \\
+-16 \\
+-2
+\end{array}\right] , \left[\begin{array}{c}
+1 \\
+1 \\
+1 \\
+4 \\
 4
-\end{array}\right] \right\} \)is linearly independent.</li>
+\end{array}\right] \right\} \)is linearly dependent.</li>
     </ol>
   </div>
 </div>
@@ -2551,34 +2821,28 @@
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
 2 \\
--5 \\
--4 \\
--2 \\
--3
-\end{array}\right] , \left[\begin{array}{c}
--3 \\
--5 \\
-5 \\
-5 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
-4 \\
--3 \\
-2 \\
--2 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
 3 \\
-0 \\
-3 \\
--3 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
-5 \\
-0 \\
 -6 \\
-3
+0 \\
+-5
+\end{array}\right] , \left[\begin{array}{c}
+-6 \\
+2 \\
+4 \\
+-2 \\
+-1
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
+5 \\
+-4 \\
+2 \\
+-5
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+-3 \\
+8 \\
+-4 \\
+4
 \end{array}\right] \right\} \)is linearly dependent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a vector equation.</li>
@@ -2589,67 +2853,70 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc|c}
+2 &amp; -6 &amp; -4 &amp; -2 &amp; 0 \\
+3 &amp; 2 &amp; 5 &amp; -3 &amp; 0 \\
+-6 &amp; 4 &amp; -4 &amp; 8 &amp; 0 \\
+0 &amp; -2 &amp; 2 &amp; -4 &amp; 0 \\
+-5 &amp; -1 &amp; -5 &amp; 4 &amp; 0
+\end{array}\right] = \left[\begin{array}{cccc|c}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; -1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
 2 \\
--5 \\
--4 \\
--2 \\
--3
-\end{array}\right] , \left[\begin{array}{c}
--3 \\
--5 \\
-5 \\
-5 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
-4 \\
--3 \\
-2 \\
--2 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
 3 \\
-0 \\
-3 \\
--3 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
-5 \\
-0 \\
 -6 \\
-3
+0 \\
+-5
+\end{array}\right] , \left[\begin{array}{c}
+-6 \\
+2 \\
+4 \\
+-2 \\
+-1
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
+5 \\
+-4 \\
+2 \\
+-5
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+-3 \\
+8 \\
+-4 \\
+4
 \end{array}\right] \right\} \)is linearly dependent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
 2 \\
--5 \\
--4 \\
--2 \\
--3
-\end{array}\right] + x_{2} \left[\begin{array}{c}
--3 \\
--5 \\
-5 \\
-5 \\
-1
-\end{array}\right] + x_{3} \left[\begin{array}{c}
-4 \\
--3 \\
-2 \\
--2 \\
-3
-\end{array}\right] + x_{4} \left[\begin{array}{c}
 3 \\
-0 \\
-3 \\
--3 \\
--4
-\end{array}\right] + x_{5} \left[\begin{array}{c}
--1 \\
-5 \\
-0 \\
 -6 \\
-3
+0 \\
+-5
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+-6 \\
+2 \\
+4 \\
+-2 \\
+-1
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+-4 \\
+5 \\
+-4 \\
+2 \\
+-5
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+-2 \\
+-3 \\
+8 \\
+-4 \\
+4
 \end{array}\right] = \left[\begin{array}{c}
 0 \\
 0 \\
@@ -2659,35 +2926,29 @@
 \end{array}\right] \)has (infinitely many) nontrivial solutions.</p></li>
       <li> The set of vectors \( \left\{ \left[\begin{array}{c}
 2 \\
--5 \\
--4 \\
--2 \\
--3
-\end{array}\right] , \left[\begin{array}{c}
--3 \\
--5 \\
-5 \\
-5 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
-4 \\
--3 \\
-2 \\
--2 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
 3 \\
-0 \\
-3 \\
--3 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
-5 \\
-0 \\
 -6 \\
-3
-\end{array}\right] \right\} \)is linearly independent.</li>
+0 \\
+-5
+\end{array}\right] , \left[\begin{array}{c}
+-6 \\
+2 \\
+4 \\
+-2 \\
+-1
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
+5 \\
+-4 \\
+2 \\
+-5
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+-3 \\
+8 \\
+-4 \\
+4
+\end{array}\right] \right\} \)is linearly dependent.</li>
     </ol>
   </div>
 </div>
@@ -2696,29 +2957,29 @@
 <h4>Example 20</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
-1 \\
-1 \\
--6 \\
-3 \\
--6
-\end{array}\right] , \left[\begin{array}{c}
-4 \\
--6 \\
--3 \\
--5 \\
--6
-\end{array}\right] , \left[\begin{array}{c}
--2 \\
--5 \\
 0 \\
--5 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
-9 \\
-8 \\
 3 \\
-7 \\
--3
+-1 \\
+-5 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
+1 \\
+5 \\
+-6 \\
+5 \\
+-6
+\end{array}\right] , \left[\begin{array}{c}
+5 \\
+0 \\
+5 \\
+-3 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
+-1 \\
+-14 \\
+9 \\
+10 \\
+0
 \end{array}\right] \right\} \)is linearly independent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a vector equation.</li>
@@ -2729,55 +2990,70 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc|c}
+0 &amp; 1 &amp; 5 &amp; -1 &amp; 0 \\
+3 &amp; 5 &amp; 0 &amp; -14 &amp; 0 \\
+-1 &amp; -6 &amp; 5 &amp; 9 &amp; 0 \\
+-5 &amp; 5 &amp; -3 &amp; 10 &amp; 0 \\
+2 &amp; -6 &amp; 2 &amp; 0 &amp; 0
+\end{array}\right] = \left[\begin{array}{cccc|c}
+1 &amp; 0 &amp; 0 &amp; -3 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; -1 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
-1 \\
-1 \\
--6 \\
-3 \\
--6
-\end{array}\right] , \left[\begin{array}{c}
-4 \\
--6 \\
--3 \\
--5 \\
--6
-\end{array}\right] , \left[\begin{array}{c}
--2 \\
--5 \\
 0 \\
+3 \\
+-1 \\
 -5 \\
-1
+2
 \end{array}\right] , \left[\begin{array}{c}
-9 \\
-8 \\
-3 \\
-7 \\
--3
-\end{array}\right] \right\} \)is linearly independent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
 1 \\
-1 \\
+5 \\
 -6 \\
-3 \\
+5 \\
 -6
-\end{array}\right] + x_{2} \left[\begin{array}{c}
-4 \\
--6 \\
+\end{array}\right] , \left[\begin{array}{c}
+5 \\
+0 \\
+5 \\
 -3 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
+-1 \\
+-14 \\
+9 \\
+10 \\
+0
+\end{array}\right] \right\} \)is linearly independent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
+0 \\
+3 \\
+-1 \\
 -5 \\
+2
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+1 \\
+5 \\
+-6 \\
+5 \\
 -6
 \end{array}\right] + x_{3} \left[\begin{array}{c}
--2 \\
--5 \\
+5 \\
 0 \\
--5 \\
-1
+5 \\
+-3 \\
+2
 \end{array}\right] + x_{4} \left[\begin{array}{c}
+-1 \\
+-14 \\
 9 \\
-8 \\
-3 \\
-7 \\
--3
+10 \\
+0
 \end{array}\right] = \left[\begin{array}{c}
 0 \\
 0 \\
@@ -2786,29 +3062,29 @@
 0
 \end{array}\right] \)has no nontrivial solutions.</p></li>
       <li> The set of vectors \( \left\{ \left[\begin{array}{c}
-1 \\
-1 \\
--6 \\
-3 \\
--6
-\end{array}\right] , \left[\begin{array}{c}
-4 \\
--6 \\
--3 \\
--5 \\
--6
-\end{array}\right] , \left[\begin{array}{c}
--2 \\
--5 \\
 0 \\
--5 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
-9 \\
-8 \\
 3 \\
-7 \\
--3
+-1 \\
+-5 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
+1 \\
+5 \\
+-6 \\
+5 \\
+-6
+\end{array}\right] , \left[\begin{array}{c}
+5 \\
+0 \\
+5 \\
+-3 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
+-1 \\
+-14 \\
+9 \\
+10 \\
+0
 \end{array}\right] \right\} \)is linearly dependent.</li>
     </ol>
   </div>
@@ -2819,28 +3095,28 @@
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
 2 \\
--3 \\
--2 \\
 -1 \\
--3
-\end{array}\right] , \left[\begin{array}{c}
-2 \\
+0 \\
 -4 \\
--2 \\
--3 \\
-0
+-2
 \end{array}\right] , \left[\begin{array}{c}
--2 \\
-2 \\
--1 \\
+-3 \\
+3 \\
+-3 \\
+5 \\
+5
+\end{array}\right] , \left[\begin{array}{c}
 -5 \\
-4
+5 \\
+-6 \\
+1 \\
+-6
 \end{array}\right] , \left[\begin{array}{c}
-4 \\
--3 \\
-2 \\
-12 \\
--11
+11 \\
+-10 \\
+9 \\
+-19 \\
+-17
 \end{array}\right] \right\} \)is linearly dependent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a vector equation.</li>
@@ -2851,55 +3127,70 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc|c}
+2 &amp; -3 &amp; -5 &amp; 11 &amp; 0 \\
+-1 &amp; 3 &amp; 5 &amp; -10 &amp; 0 \\
+0 &amp; -3 &amp; -6 &amp; 9 &amp; 0 \\
+-4 &amp; 5 &amp; 1 &amp; -19 &amp; 0 \\
+-2 &amp; 5 &amp; -6 &amp; -17 &amp; 0
+\end{array}\right] = \left[\begin{array}{cccc|c}
+1 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; -3 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
 2 \\
--3 \\
--2 \\
 -1 \\
--3
-\end{array}\right] , \left[\begin{array}{c}
-2 \\
+0 \\
 -4 \\
--2 \\
--3 \\
-0
+-2
 \end{array}\right] , \left[\begin{array}{c}
--2 \\
-2 \\
--1 \\
+-3 \\
+3 \\
+-3 \\
+5 \\
+5
+\end{array}\right] , \left[\begin{array}{c}
 -5 \\
-4
+5 \\
+-6 \\
+1 \\
+-6
 \end{array}\right] , \left[\begin{array}{c}
-4 \\
--3 \\
-2 \\
-12 \\
--11
+11 \\
+-10 \\
+9 \\
+-19 \\
+-17
 \end{array}\right] \right\} \)is linearly dependent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
 2 \\
--3 \\
--2 \\
 -1 \\
--3
-\end{array}\right] + x_{2} \left[\begin{array}{c}
-2 \\
+0 \\
 -4 \\
--2 \\
+-2
+\end{array}\right] + x_{2} \left[\begin{array}{c}
 -3 \\
-0
+3 \\
+-3 \\
+5 \\
+5
 \end{array}\right] + x_{3} \left[\begin{array}{c}
--2 \\
-2 \\
--1 \\
 -5 \\
-4
+5 \\
+-6 \\
+1 \\
+-6
 \end{array}\right] + x_{4} \left[\begin{array}{c}
-4 \\
--3 \\
-2 \\
-12 \\
--11
+11 \\
+-10 \\
+9 \\
+-19 \\
+-17
 \end{array}\right] = \left[\begin{array}{c}
 0 \\
 0 \\
@@ -2909,28 +3200,28 @@
 \end{array}\right] \)has (infinitely many) nontrivial solutions.</p></li>
       <li> The set of vectors \( \left\{ \left[\begin{array}{c}
 2 \\
--3 \\
--2 \\
 -1 \\
--3
-\end{array}\right] , \left[\begin{array}{c}
-2 \\
+0 \\
 -4 \\
--2 \\
--3 \\
-0
+-2
 \end{array}\right] , \left[\begin{array}{c}
--2 \\
-2 \\
--1 \\
+-3 \\
+3 \\
+-3 \\
+5 \\
+5
+\end{array}\right] , \left[\begin{array}{c}
 -5 \\
-4
+5 \\
+-6 \\
+1 \\
+-6
 \end{array}\right] , \left[\begin{array}{c}
-4 \\
--3 \\
-2 \\
-12 \\
--11
+11 \\
+-10 \\
+9 \\
+-19 \\
+-17
 \end{array}\right] \right\} \)is linearly dependent.</li>
     </ol>
   </div>
@@ -2940,29 +3231,29 @@
 <h4>Example 22</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
-0 \\
--2 \\
-3 \\
+-1 \\
+4 \\
+-6 \\
 4 \\
 5
 \end{array}\right] , \left[\begin{array}{c}
 3 \\
-1 \\
-0 \\
--4 \\
--3
-\end{array}\right] , \left[\begin{array}{c}
+3 \\
 4 \\
--2 \\
--2 \\
-4 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
-0 \\
 2 \\
+-1
+\end{array}\right] , \left[\begin{array}{c}
+3 \\
+-5 \\
+-4 \\
+-2 \\
+3
+\end{array}\right] , \left[\begin{array}{c}
+4 \\
+4 \\
+-2 \\
 -1 \\
--3 \\
-2
+4
 \end{array}\right] \right\} \)is linearly independent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a vector equation.</li>
@@ -2973,55 +3264,70 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc|c}
+-1 &amp; 3 &amp; 3 &amp; 4 &amp; 0 \\
+4 &amp; 3 &amp; -5 &amp; 4 &amp; 0 \\
+-6 &amp; 4 &amp; -4 &amp; -2 &amp; 0 \\
+4 &amp; 2 &amp; -2 &amp; -1 &amp; 0 \\
+5 &amp; -1 &amp; 3 &amp; 4 &amp; 0
+\end{array}\right] = \left[\begin{array}{cccc|c}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
-0 \\
--2 \\
-3 \\
+-1 \\
+4 \\
+-6 \\
 4 \\
 5
 \end{array}\right] , \left[\begin{array}{c}
 3 \\
-1 \\
-0 \\
--4 \\
--3
-\end{array}\right] , \left[\begin{array}{c}
-4 \\
--2 \\
--2 \\
-4 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
-0 \\
-2 \\
--1 \\
--3 \\
-2
-\end{array}\right] \right\} \)is linearly independent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
-0 \\
--2 \\
 3 \\
+4 \\
+2 \\
+-1
+\end{array}\right] , \left[\begin{array}{c}
+3 \\
+-5 \\
+-4 \\
+-2 \\
+3
+\end{array}\right] , \left[\begin{array}{c}
+4 \\
+4 \\
+-2 \\
+-1 \\
+4
+\end{array}\right] \right\} \)is linearly independent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
+-1 \\
+4 \\
+-6 \\
 4 \\
 5
 \end{array}\right] + x_{2} \left[\begin{array}{c}
 3 \\
-1 \\
-0 \\
--4 \\
--3
-\end{array}\right] + x_{3} \left[\begin{array}{c}
+3 \\
 4 \\
--2 \\
--2 \\
-4 \\
-1
-\end{array}\right] + x_{4} \left[\begin{array}{c}
-0 \\
 2 \\
+-1
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+3 \\
+-5 \\
+-4 \\
+-2 \\
+3
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+4 \\
+4 \\
+-2 \\
 -1 \\
--3 \\
-2
+4
 \end{array}\right] = \left[\begin{array}{c}
 0 \\
 0 \\
@@ -3030,29 +3336,29 @@
 0
 \end{array}\right] \)has no nontrivial solutions.</p></li>
       <li> The set of vectors \( \left\{ \left[\begin{array}{c}
-0 \\
--2 \\
-3 \\
+-1 \\
+4 \\
+-6 \\
 4 \\
 5
 \end{array}\right] , \left[\begin{array}{c}
 3 \\
-1 \\
-0 \\
--4 \\
--3
-\end{array}\right] , \left[\begin{array}{c}
+3 \\
 4 \\
--2 \\
--2 \\
-4 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
-0 \\
 2 \\
+-1
+\end{array}\right] , \left[\begin{array}{c}
+3 \\
+-5 \\
+-4 \\
+-2 \\
+3
+\end{array}\right] , \left[\begin{array}{c}
+4 \\
+4 \\
+-2 \\
 -1 \\
--3 \\
-2
+4
 \end{array}\right] \right\} \)is linearly independent.</li>
     </ol>
   </div>
@@ -3062,35 +3368,35 @@
 <h4>Example 23</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
-1 \\
--1 \\
-1 \\
--4 \\
+-3 \\
+-5 \\
+0 \\
+-5 \\
 3
 \end{array}\right] , \left[\begin{array}{c}
--3 \\
--1 \\
--3 \\
 5 \\
+0 \\
+-1 \\
+-2 \\
+3
+\end{array}\right] , \left[\begin{array}{c}
+-1 \\
+0 \\
+2 \\
+2 \\
 -2
 \end{array}\right] , \left[\begin{array}{c}
-6 \\
-6 \\
-6 \\
--3 \\
--3
+-10 \\
+5 \\
+-1 \\
+7 \\
+-8
 \end{array}\right] , \left[\begin{array}{c}
+1 \\
+-5 \\
 -1 \\
 5 \\
--6 \\
-15 \\
--7
-\end{array}\right] , \left[\begin{array}{c}
--4 \\
--3 \\
-2 \\
-4 \\
-0
+2
 \end{array}\right] \right\} \)is linearly dependent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a vector equation.</li>
@@ -3101,67 +3407,82 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccccc|c}
+-3 &amp; 5 &amp; -1 &amp; -10 &amp; 1 &amp; 0 \\
+-5 &amp; 0 &amp; 0 &amp; 5 &amp; -5 &amp; 0 \\
+0 &amp; -1 &amp; 2 &amp; -1 &amp; -1 &amp; 0 \\
+-5 &amp; -2 &amp; 2 &amp; 7 &amp; 5 &amp; 0 \\
+3 &amp; 3 &amp; -2 &amp; -8 &amp; 2 &amp; 0
+\end{array}\right] = \left[\begin{array}{ccccc|c}
+1 &amp; 0 &amp; 0 &amp; -1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; -3 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; -2 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
-1 \\
--1 \\
-1 \\
--4 \\
+-3 \\
+-5 \\
+0 \\
+-5 \\
 3
 \end{array}\right] , \left[\begin{array}{c}
--3 \\
--1 \\
--3 \\
 5 \\
+0 \\
+-1 \\
+-2 \\
+3
+\end{array}\right] , \left[\begin{array}{c}
+-1 \\
+0 \\
+2 \\
+2 \\
 -2
 \end{array}\right] , \left[\begin{array}{c}
-6 \\
-6 \\
-6 \\
--3 \\
--3
+-10 \\
+5 \\
+-1 \\
+7 \\
+-8
 \end{array}\right] , \left[\begin{array}{c}
+1 \\
+-5 \\
 -1 \\
 5 \\
--6 \\
-15 \\
--7
-\end{array}\right] , \left[\begin{array}{c}
--4 \\
--3 \\
-2 \\
-4 \\
-0
+2
 \end{array}\right] \right\} \)is linearly dependent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
-1 \\
--1 \\
-1 \\
--4 \\
+-3 \\
+-5 \\
+0 \\
+-5 \\
 3
 \end{array}\right] + x_{2} \left[\begin{array}{c}
--3 \\
--1 \\
--3 \\
 5 \\
--2
+0 \\
+-1 \\
+-2 \\
+3
 \end{array}\right] + x_{3} \left[\begin{array}{c}
-6 \\
-6 \\
-6 \\
--3 \\
--3
+-1 \\
+0 \\
+2 \\
+2 \\
+-2
 \end{array}\right] + x_{4} \left[\begin{array}{c}
+-10 \\
+5 \\
+-1 \\
+7 \\
+-8
+\end{array}\right] + x_{5} \left[\begin{array}{c}
+1 \\
+-5 \\
 -1 \\
 5 \\
--6 \\
-15 \\
--7
-\end{array}\right] + x_{5} \left[\begin{array}{c}
--4 \\
--3 \\
-2 \\
-4 \\
-0
+2
 \end{array}\right] = \left[\begin{array}{c}
 0 \\
 0 \\
@@ -3170,35 +3491,35 @@
 0
 \end{array}\right] \)has (infinitely many) nontrivial solutions.</p></li>
       <li> The set of vectors \( \left\{ \left[\begin{array}{c}
-1 \\
--1 \\
-1 \\
--4 \\
+-3 \\
+-5 \\
+0 \\
+-5 \\
 3
 \end{array}\right] , \left[\begin{array}{c}
--3 \\
--1 \\
--3 \\
 5 \\
+0 \\
+-1 \\
+-2 \\
+3
+\end{array}\right] , \left[\begin{array}{c}
+-1 \\
+0 \\
+2 \\
+2 \\
 -2
 \end{array}\right] , \left[\begin{array}{c}
-6 \\
-6 \\
-6 \\
--3 \\
--3
+-10 \\
+5 \\
+-1 \\
+7 \\
+-8
 \end{array}\right] , \left[\begin{array}{c}
+1 \\
+-5 \\
 -1 \\
 5 \\
--6 \\
-15 \\
--7
-\end{array}\right] , \left[\begin{array}{c}
--4 \\
--3 \\
-2 \\
-4 \\
-0
+2
 \end{array}\right] \right\} \)is linearly dependent.</li>
     </ol>
   </div>
@@ -3208,30 +3529,30 @@
 <h4>Example 24</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
-4 \\
+0 \\
+-3 \\
+5 \\
+-3 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
+3 \\
+2 \\
 5 \\
 -6 \\
+4
+\end{array}\right] , \left[\begin{array}{c}
+-6 \\
+-1 \\
+2 \\
 -4 \\
 0
 \end{array}\right] , \left[\begin{array}{c}
-5 \\
-3 \\
--6 \\
-3 \\
--2
-\end{array}\right] , \left[\begin{array}{c}
--6 \\
--4 \\
 1 \\
--1 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
--5 \\
-16 \\
-7 \\
-4
-\end{array}\right] \right\} \)is linearly dependent.</p></p>
+-6 \\
+4 \\
+2 \\
+0
+\end{array}\right] \right\} \)is linearly independent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a vector equation.</li>
       <li> Explain why your statement is true or false.</li>
@@ -3241,87 +3562,102 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc|c}
+0 &amp; 3 &amp; -6 &amp; 1 &amp; 0 \\
+-3 &amp; 2 &amp; -1 &amp; -6 &amp; 0 \\
+5 &amp; 5 &amp; 2 &amp; 4 &amp; 0 \\
+-3 &amp; -6 &amp; -4 &amp; 2 &amp; 0 \\
+2 &amp; 4 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] = \left[\begin{array}{cccc|c}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
-4 \\
+0 \\
+-3 \\
+5 \\
+-3 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
+3 \\
+2 \\
 5 \\
 -6 \\
--4 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
-5 \\
-3 \\
--6 \\
-3 \\
--2
-\end{array}\right] , \left[\begin{array}{c}
--6 \\
--4 \\
-1 \\
--1 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
--5 \\
-16 \\
-7 \\
 4
-\end{array}\right] \right\} \)is linearly dependent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
-4 \\
-5 \\
+\end{array}\right] , \left[\begin{array}{c}
 -6 \\
+-1 \\
+2 \\
 -4 \\
 0
-\end{array}\right] + x_{2} \left[\begin{array}{c}
-5 \\
-3 \\
+\end{array}\right] , \left[\begin{array}{c}
+1 \\
 -6 \\
+4 \\
+2 \\
+0
+\end{array}\right] \right\} \)is linearly independent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
+0 \\
+-3 \\
+5 \\
+-3 \\
+2
+\end{array}\right] + x_{2} \left[\begin{array}{c}
 3 \\
--2
+2 \\
+5 \\
+-6 \\
+4
 \end{array}\right] + x_{3} \left[\begin{array}{c}
 -6 \\
+-1 \\
+2 \\
 -4 \\
-1 \\
--1 \\
--1
+0
 \end{array}\right] + x_{4} \left[\begin{array}{c}
--1 \\
--5 \\
-16 \\
-7 \\
-4
+1 \\
+-6 \\
+4 \\
+2 \\
+0
 \end{array}\right] = \left[\begin{array}{c}
 0 \\
 0 \\
 0 \\
 0 \\
 0
-\end{array}\right] \)has (infinitely many) nontrivial solutions.</p></li>
+\end{array}\right] \)has no nontrivial solutions.</p></li>
       <li> The set of vectors \( \left\{ \left[\begin{array}{c}
-4 \\
+0 \\
+-3 \\
+5 \\
+-3 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
+3 \\
+2 \\
 5 \\
 -6 \\
+4
+\end{array}\right] , \left[\begin{array}{c}
+-6 \\
+-1 \\
+2 \\
 -4 \\
 0
 \end{array}\right] , \left[\begin{array}{c}
-5 \\
-3 \\
--6 \\
-3 \\
--2
-\end{array}\right] , \left[\begin{array}{c}
--6 \\
--4 \\
 1 \\
--1 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
--5 \\
-16 \\
-7 \\
-4
-\end{array}\right] \right\} \)is linearly dependent.</li>
+-6 \\
+4 \\
+2 \\
+0
+\end{array}\right] \right\} \)is linearly independent.</li>
     </ol>
   </div>
 </div>
@@ -3330,36 +3666,30 @@
 <h4>Example 25</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
--2 \\
--2 \\
-0 \\
-4 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
-5 \\
-5 \\
-2 \\
--2 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
--5 \\
--6 \\
--6 \\
 -3 \\
+3 \\
+2 \\
+5 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+-5 \\
+5 \\
+-3 \\
+0
+\end{array}\right] , \left[\begin{array}{c}
+7 \\
+-14 \\
+-1 \\
+-18 \\
 -3
 \end{array}\right] , \left[\begin{array}{c}
--4 \\
-1 \\
--6 \\
--5 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
-0 \\
--1 \\
-4 \\
-4
-\end{array}\right] \right\} \)is linearly dependent.</p></p>
+7 \\
+9 \\
+-19 \\
+-3 \\
+-6
+\end{array}\right] \right\} \)is linearly independent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a vector equation.</li>
       <li> Explain why your statement is true or false.</li>
@@ -3369,105 +3699,102 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc|c}
+-3 &amp; -2 &amp; 7 &amp; 7 &amp; 0 \\
+3 &amp; -5 &amp; -14 &amp; 9 &amp; 0 \\
+2 &amp; 5 &amp; -1 &amp; -19 &amp; 0 \\
+5 &amp; -3 &amp; -18 &amp; -3 &amp; 0 \\
+1 &amp; 0 &amp; -3 &amp; -6 &amp; 0
+\end{array}\right] = \left[\begin{array}{cccc|c}
+1 &amp; 0 &amp; -3 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
--2 \\
--2 \\
-0 \\
-4 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
-5 \\
-5 \\
-2 \\
--2 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
--5 \\
--6 \\
--6 \\
 -3 \\
+3 \\
+2 \\
+5 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+-5 \\
+5 \\
+-3 \\
+0
+\end{array}\right] , \left[\begin{array}{c}
+7 \\
+-14 \\
+-1 \\
+-18 \\
 -3
 \end{array}\right] , \left[\begin{array}{c}
--4 \\
-1 \\
--6 \\
--5 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
-0 \\
--1 \\
-4 \\
-4
-\end{array}\right] \right\} \)is linearly dependent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
--2 \\
--2 \\
-0 \\
-4 \\
-3
-\end{array}\right] + x_{2} \left[\begin{array}{c}
-5 \\
-5 \\
-2 \\
--2 \\
--4
-\end{array}\right] + x_{3} \left[\begin{array}{c}
--5 \\
--6 \\
--6 \\
+7 \\
+9 \\
+-19 \\
 -3 \\
+-6
+\end{array}\right] \right\} \)is linearly independent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
+-3 \\
+3 \\
+2 \\
+5 \\
+1
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+-2 \\
+-5 \\
+5 \\
+-3 \\
+0
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+7 \\
+-14 \\
+-1 \\
+-18 \\
 -3
 \end{array}\right] + x_{4} \left[\begin{array}{c}
--4 \\
-1 \\
--6 \\
--5 \\
-2
-\end{array}\right] + x_{5} \left[\begin{array}{c}
--1 \\
-0 \\
--1 \\
-4 \\
-4
+7 \\
+9 \\
+-19 \\
+-3 \\
+-6
 \end{array}\right] = \left[\begin{array}{c}
 0 \\
 0 \\
 0 \\
 0 \\
 0
-\end{array}\right] \)has (infinitely many) nontrivial solutions.</p></li>
+\end{array}\right] \)has no nontrivial solutions.</p></li>
       <li> The set of vectors \( \left\{ \left[\begin{array}{c}
--2 \\
--2 \\
-0 \\
-4 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
-5 \\
-5 \\
-2 \\
--2 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
--5 \\
--6 \\
--6 \\
 -3 \\
+3 \\
+2 \\
+5 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+-5 \\
+5 \\
+-3 \\
+0
+\end{array}\right] , \left[\begin{array}{c}
+7 \\
+-14 \\
+-1 \\
+-18 \\
 -3
 \end{array}\right] , \left[\begin{array}{c}
--4 \\
-1 \\
--6 \\
--5 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
-0 \\
--1 \\
-4 \\
-4
-\end{array}\right] \right\} \)is linearly independent.</li>
+7 \\
+9 \\
+-19 \\
+-3 \\
+-6
+\end{array}\right] \right\} \)is linearly dependent.</li>
     </ol>
   </div>
 </div>
@@ -3476,30 +3803,36 @@
 <h4>Example 26</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
-0 \\
--3 \\
+-5 \\
+2 \\
 3 \\
+5 \\
+3
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
 3 \\
+5 \\
+2 \\
 -4
 \end{array}\right] , \left[\begin{array}{c}
--5 \\
-3 \\
-5 \\
--4 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
+-6 \\
 4 \\
-1 \\
-5 \\
-4 \\
+2 \\
+-3 \\
 -2
 \end{array}\right] , \left[\begin{array}{c}
--18 \\
+2 \\
 -2 \\
-6 \\
--10 \\
-0
-\end{array}\right] \right\} \)is linearly dependent.</p></p>
+-4 \\
+-5 \\
+-3
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
+5 \\
+-3 \\
+-6 \\
+-5
+\end{array}\right] \right\} \)is linearly independent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a vector equation.</li>
       <li> Explain why your statement is true or false.</li>
@@ -3509,87 +3842,120 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccccc|c}
+-5 &amp; -4 &amp; -6 &amp; 2 &amp; -4 &amp; 0 \\
+2 &amp; 3 &amp; 4 &amp; -2 &amp; 5 &amp; 0 \\
+3 &amp; 5 &amp; 2 &amp; -4 &amp; -3 &amp; 0 \\
+5 &amp; 2 &amp; -3 &amp; -5 &amp; -6 &amp; 0 \\
+3 &amp; -4 &amp; -2 &amp; -3 &amp; -5 &amp; 0
+\end{array}\right] = \left[\begin{array}{ccccc|c}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
-0 \\
--3 \\
+-5 \\
+2 \\
 3 \\
+5 \\
+3
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
 3 \\
+5 \\
+2 \\
 -4
 \end{array}\right] , \left[\begin{array}{c}
--5 \\
-3 \\
-5 \\
--4 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
+-6 \\
 4 \\
-1 \\
-5 \\
-4 \\
+2 \\
+-3 \\
 -2
 \end{array}\right] , \left[\begin{array}{c}
--18 \\
+2 \\
 -2 \\
-6 \\
--10 \\
-0
-\end{array}\right] \right\} \)is linearly dependent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
-0 \\
--3 \\
-3 \\
-3 \\
--4
-\end{array}\right] + x_{2} \left[\begin{array}{c}
--5 \\
-3 \\
-5 \\
 -4 \\
-2
-\end{array}\right] + x_{3} \left[\begin{array}{c}
-4 \\
-1 \\
+-5 \\
+-3
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
 5 \\
+-3 \\
+-6 \\
+-5
+\end{array}\right] \right\} \)is linearly independent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
+-5 \\
+2 \\
+3 \\
+5 \\
+3
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+-4 \\
+3 \\
+5 \\
+2 \\
+-4
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+-6 \\
 4 \\
+2 \\
+-3 \\
 -2
 \end{array}\right] + x_{4} \left[\begin{array}{c}
--18 \\
+2 \\
 -2 \\
-6 \\
--10 \\
-0
+-4 \\
+-5 \\
+-3
+\end{array}\right] + x_{5} \left[\begin{array}{c}
+-4 \\
+5 \\
+-3 \\
+-6 \\
+-5
 \end{array}\right] = \left[\begin{array}{c}
 0 \\
 0 \\
 0 \\
 0 \\
 0
-\end{array}\right] \)has (infinitely many) nontrivial solutions.</p></li>
+\end{array}\right] \)has no nontrivial solutions.</p></li>
       <li> The set of vectors \( \left\{ \left[\begin{array}{c}
-0 \\
--3 \\
+-5 \\
+2 \\
 3 \\
+5 \\
+3
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
 3 \\
+5 \\
+2 \\
 -4
 \end{array}\right] , \left[\begin{array}{c}
--5 \\
-3 \\
-5 \\
--4 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
+-6 \\
 4 \\
-1 \\
-5 \\
-4 \\
+2 \\
+-3 \\
 -2
 \end{array}\right] , \left[\begin{array}{c}
--18 \\
+2 \\
 -2 \\
-6 \\
--10 \\
-0
-\end{array}\right] \right\} \)is linearly dependent.</li>
+-4 \\
+-5 \\
+-3
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
+5 \\
+-3 \\
+-6 \\
+-5
+\end{array}\right] \right\} \)is linearly independent.</li>
     </ol>
   </div>
 </div>
@@ -3599,34 +3965,34 @@
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
 -2 \\
--2 \\
--1 \\
-5 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
-3 \\
+-3 \\
 -4 \\
-4 \\
--5 \\
--5
-\end{array}\right] , \left[\begin{array}{c}
-3 \\
--3 \\
-0 \\
--3 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
--2 \\
--2 \\
 -1 \\
+-3
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+3 \\
 5 \\
+-5 \\
+5
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
+1 \\
+4 \\
+-2 \\
 2
 \end{array}\right] , \left[\begin{array}{c}
-3 \\
+-4 \\
 1 \\
 0 \\
--5 \\
-1
+-3 \\
+4
+\end{array}\right] , \left[\begin{array}{c}
+8 \\
+3 \\
+-2 \\
+-4 \\
+4
 \end{array}\right] \right\} \)is linearly independent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a vector equation.</li>
@@ -3637,67 +4003,82 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccccc|c}
+-2 &amp; -2 &amp; -4 &amp; -4 &amp; 8 &amp; 0 \\
+-3 &amp; 3 &amp; 1 &amp; 1 &amp; 3 &amp; 0 \\
+-4 &amp; 5 &amp; 4 &amp; 0 &amp; -2 &amp; 0 \\
+-1 &amp; -5 &amp; -2 &amp; -3 &amp; -4 &amp; 0 \\
+-3 &amp; 5 &amp; 2 &amp; 4 &amp; 4 &amp; 0
+\end{array}\right] = \left[\begin{array}{ccccc|c}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 2 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; -3 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
 -2 \\
--2 \\
--1 \\
-5 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
-3 \\
+-3 \\
 -4 \\
-4 \\
--5 \\
--5
-\end{array}\right] , \left[\begin{array}{c}
-3 \\
--3 \\
-0 \\
--3 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
--2 \\
--2 \\
 -1 \\
+-3
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+3 \\
 5 \\
+-5 \\
+5
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
+1 \\
+4 \\
+-2 \\
 2
 \end{array}\right] , \left[\begin{array}{c}
-3 \\
+-4 \\
 1 \\
 0 \\
--5 \\
-1
+-3 \\
+4
+\end{array}\right] , \left[\begin{array}{c}
+8 \\
+3 \\
+-2 \\
+-4 \\
+4
 \end{array}\right] \right\} \)is linearly independent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
 -2 \\
--2 \\
--1 \\
-5 \\
-2
-\end{array}\right] + x_{2} \left[\begin{array}{c}
-3 \\
+-3 \\
 -4 \\
-4 \\
--5 \\
--5
-\end{array}\right] + x_{3} \left[\begin{array}{c}
+-1 \\
+-3
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+-2 \\
 3 \\
--3 \\
-0 \\
--3 \\
+5 \\
+-5 \\
+5
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+-4 \\
+1 \\
+4 \\
+-2 \\
 2
 \end{array}\right] + x_{4} \left[\begin{array}{c}
--2 \\
--2 \\
--1 \\
-5 \\
-2
-\end{array}\right] + x_{5} \left[\begin{array}{c}
-3 \\
+-4 \\
 1 \\
 0 \\
--5 \\
-1
+-3 \\
+4
+\end{array}\right] + x_{5} \left[\begin{array}{c}
+8 \\
+3 \\
+-2 \\
+-4 \\
+4
 \end{array}\right] = \left[\begin{array}{c}
 0 \\
 0 \\
@@ -3707,34 +4088,34 @@
 \end{array}\right] \)has no nontrivial solutions.</p></li>
       <li> The set of vectors \( \left\{ \left[\begin{array}{c}
 -2 \\
--2 \\
--1 \\
-5 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
-3 \\
+-3 \\
 -4 \\
-4 \\
--5 \\
--5
-\end{array}\right] , \left[\begin{array}{c}
-3 \\
--3 \\
-0 \\
--3 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
--2 \\
--2 \\
 -1 \\
+-3
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+3 \\
 5 \\
+-5 \\
+5
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
+1 \\
+4 \\
+-2 \\
 2
 \end{array}\right] , \left[\begin{array}{c}
-3 \\
+-4 \\
 1 \\
 0 \\
--5 \\
-1
+-3 \\
+4
+\end{array}\right] , \left[\begin{array}{c}
+8 \\
+3 \\
+-2 \\
+-4 \\
+4
 \end{array}\right] \right\} \)is linearly dependent.</li>
     </ol>
   </div>
@@ -3744,175 +4125,29 @@
 <h4>Example 28</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
--5 \\
-4 \\
-1 \\
-4 \\
--3
-\end{array}\right] , \left[\begin{array}{c}
--6 \\
-1 \\
-0 \\
--2 \\
--3
-\end{array}\right] , \left[\begin{array}{c}
-3 \\
--2 \\
--4 \\
--2 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
-1 \\
--5 \\
--2 \\
-3 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
-3 \\
 -3 \\
+-2 \\
+0 \\
+-5 \\
+-1
+\end{array}\right] , \left[\begin{array}{c}
+4 \\
+-4 \\
 -1 \\
+4 \\
+-5
+\end{array}\right] , \left[\begin{array}{c}
 2 \\
--4
-\end{array}\right] \right\} \)is linearly independent.</p></p>
-    <ol type="a">
-      <li> Write an equivalent statement using a vector equation.</li>
-      <li> Explain why your statement is true or false.</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
--5 \\
-4 \\
-1 \\
-4 \\
--3
-\end{array}\right] , \left[\begin{array}{c}
--6 \\
-1 \\
+3 \\
 0 \\
--2 \\
--3
-\end{array}\right] , \left[\begin{array}{c}
-3 \\
--2 \\
--4 \\
--2 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
-1 \\
 -5 \\
--2 \\
-3 \\
-0
+-5
 \end{array}\right] , \left[\begin{array}{c}
-3 \\
--3 \\
--1 \\
-2 \\
--4
-\end{array}\right] \right\} \)is linearly independent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
--5 \\
-4 \\
-1 \\
-4 \\
--3
-\end{array}\right] + x_{2} \left[\begin{array}{c}
--6 \\
-1 \\
-0 \\
--2 \\
--3
-\end{array}\right] + x_{3} \left[\begin{array}{c}
-3 \\
--2 \\
--4 \\
--2 \\
--4
-\end{array}\right] + x_{4} \left[\begin{array}{c}
-1 \\
--5 \\
--2 \\
-3 \\
-0
-\end{array}\right] + x_{5} \left[\begin{array}{c}
-3 \\
--3 \\
--1 \\
-2 \\
--4
-\end{array}\right] = \left[\begin{array}{c}
-0 \\
-0 \\
-0 \\
-0 \\
-0
-\end{array}\right] \)has no nontrivial solutions.</p></li>
-      <li> The set of vectors \( \left\{ \left[\begin{array}{c}
--5 \\
-4 \\
-1 \\
-4 \\
--3
-\end{array}\right] , \left[\begin{array}{c}
--6 \\
-1 \\
-0 \\
--2 \\
--3
-\end{array}\right] , \left[\begin{array}{c}
-3 \\
--2 \\
--4 \\
--2 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
-1 \\
--5 \\
--2 \\
-3 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
-3 \\
--3 \\
--1 \\
-2 \\
--4
-\end{array}\right] \right\} \)is linearly independent.</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 29</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
-0 \\
-3 \\
--6 \\
--5 \\
-5
-\end{array}\right] , \left[\begin{array}{c}
-5 \\
-3 \\
-2 \\
--4 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
--3 \\
--5 \\
-5 \\
--2 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
--8 \\
--14 \\
-15 \\
+-7 \\
 12 \\
--14
+3 \\
+13 \\
+28
 \end{array}\right] \right\} \)is linearly dependent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a vector equation.</li>
@@ -3923,55 +4158,70 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc|c}
+-3 &amp; 4 &amp; 2 &amp; -7 &amp; 0 \\
+-2 &amp; -4 &amp; 3 &amp; 12 &amp; 0 \\
+0 &amp; -1 &amp; 0 &amp; 3 &amp; 0 \\
+-5 &amp; 4 &amp; -5 &amp; 13 &amp; 0 \\
+-1 &amp; -5 &amp; -5 &amp; 28 &amp; 0
+\end{array}\right] = \left[\begin{array}{cccc|c}
+1 &amp; 0 &amp; 0 &amp; -3 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; -3 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; -2 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
-0 \\
-3 \\
--6 \\
--5 \\
-5
-\end{array}\right] , \left[\begin{array}{c}
-5 \\
-3 \\
-2 \\
--4 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
 -3 \\
--5 \\
-5 \\
 -2 \\
--4
+0 \\
+-5 \\
+-1
 \end{array}\right] , \left[\begin{array}{c}
--8 \\
--14 \\
-15 \\
+4 \\
+-4 \\
+-1 \\
+4 \\
+-5
+\end{array}\right] , \left[\begin{array}{c}
+2 \\
+3 \\
+0 \\
+-5 \\
+-5
+\end{array}\right] , \left[\begin{array}{c}
+-7 \\
 12 \\
--14
+3 \\
+13 \\
+28
 \end{array}\right] \right\} \)is linearly dependent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
-0 \\
-3 \\
--6 \\
--5 \\
-5
-\end{array}\right] + x_{2} \left[\begin{array}{c}
-5 \\
-3 \\
-2 \\
--4 \\
-0
-\end{array}\right] + x_{3} \left[\begin{array}{c}
 -3 \\
--5 \\
-5 \\
 -2 \\
--4
+0 \\
+-5 \\
+-1
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+4 \\
+-4 \\
+-1 \\
+4 \\
+-5
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+2 \\
+3 \\
+0 \\
+-5 \\
+-5
 \end{array}\right] + x_{4} \left[\begin{array}{c}
--8 \\
--14 \\
-15 \\
+-7 \\
 12 \\
--14
+3 \\
+13 \\
+28
 \end{array}\right] = \left[\begin{array}{c}
 0 \\
 0 \\
@@ -3980,29 +4230,166 @@
 0
 \end{array}\right] \)has (infinitely many) nontrivial solutions.</p></li>
       <li> The set of vectors \( \left\{ \left[\begin{array}{c}
+-3 \\
+-2 \\
 0 \\
-3 \\
--6 \\
 -5 \\
+-1
+\end{array}\right] , \left[\begin{array}{c}
+4 \\
+-4 \\
+-1 \\
+4 \\
+-5
+\end{array}\right] , \left[\begin{array}{c}
+2 \\
+3 \\
+0 \\
+-5 \\
+-5
+\end{array}\right] , \left[\begin{array}{c}
+-7 \\
+12 \\
+3 \\
+13 \\
+28
+\end{array}\right] \right\} \)is linearly dependent.</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 29</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
+-3 \\
+-6 \\
+2 \\
+5 \\
+-1
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+-6 \\
+-6 \\
+4 \\
+4
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
+-4 \\
+3 \\
+-3 \\
 5
 \end{array}\right] , \left[\begin{array}{c}
-5 \\
 3 \\
-2 \\
--4 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
--3 \\
--5 \\
-5 \\
--2 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
--8 \\
--14 \\
-15 \\
 12 \\
--14
+20 \\
+-7 \\
+-13
+\end{array}\right] \right\} \)is linearly independent.</p></p>
+    <ol type="a">
+      <li> Write an equivalent statement using a vector equation.</li>
+      <li> Explain why your statement is true or false.</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc|c}
+-3 &amp; -2 &amp; -4 &amp; 3 &amp; 0 \\
+-6 &amp; -6 &amp; -4 &amp; 12 &amp; 0 \\
+2 &amp; -6 &amp; 3 &amp; 20 &amp; 0 \\
+5 &amp; 4 &amp; -3 &amp; -7 &amp; 0 \\
+-1 &amp; 4 &amp; 5 &amp; -13 &amp; 0
+\end{array}\right] = \left[\begin{array}{cccc|c}
+1 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; -3 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
+    <ol type="a">
+      <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
+-3 \\
+-6 \\
+2 \\
+5 \\
+-1
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+-6 \\
+-6 \\
+4 \\
+4
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
+-4 \\
+3 \\
+-3 \\
+5
+\end{array}\right] , \left[\begin{array}{c}
+3 \\
+12 \\
+20 \\
+-7 \\
+-13
+\end{array}\right] \right\} \)is linearly independent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
+-3 \\
+-6 \\
+2 \\
+5 \\
+-1
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+-2 \\
+-6 \\
+-6 \\
+4 \\
+4
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+-4 \\
+-4 \\
+3 \\
+-3 \\
+5
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+3 \\
+12 \\
+20 \\
+-7 \\
+-13
+\end{array}\right] = \left[\begin{array}{c}
+0 \\
+0 \\
+0 \\
+0 \\
+0
+\end{array}\right] \)has no nontrivial solutions.</p></li>
+      <li> The set of vectors \( \left\{ \left[\begin{array}{c}
+-3 \\
+-6 \\
+2 \\
+5 \\
+-1
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+-6 \\
+-6 \\
+4 \\
+4
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
+-4 \\
+3 \\
+-3 \\
+5
+\end{array}\right] , \left[\begin{array}{c}
+3 \\
+12 \\
+20 \\
+-7 \\
+-13
 \end{array}\right] \right\} \)is linearly dependent.</li>
     </ol>
   </div>
@@ -4012,35 +4399,29 @@
 <h4>Example 30</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
-1 \\
+-2 \\
+-1 \\
 2 \\
-4 \\
--6 \\
--4
+-3 \\
+5
 \end{array}\right] , \left[\begin{array}{c}
+-4 \\
 -3 \\
 1 \\
 1 \\
-5 \\
+-6
+\end{array}\right] , \left[\begin{array}{c}
+-6 \\
+1 \\
+-2 \\
+0 \\
 3
 \end{array}\right] , \left[\begin{array}{c}
 -1 \\
-2 \\
-2 \\
--4 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
--4 \\
--6 \\
-2 \\
 3 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
-1 \\
--2 \\
-5 \\
-1 \\
-2
+-3 \\
+3 \\
+1
 \end{array}\right] \right\} \)is linearly independent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a vector equation.</li>
@@ -4051,67 +4432,70 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc|c}
+-2 &amp; -4 &amp; -6 &amp; -1 &amp; 0 \\
+-1 &amp; -3 &amp; 1 &amp; 3 &amp; 0 \\
+2 &amp; 1 &amp; -2 &amp; -3 &amp; 0 \\
+-3 &amp; 1 &amp; 0 &amp; 3 &amp; 0 \\
+5 &amp; -6 &amp; 3 &amp; 1 &amp; 0
+\end{array}\right] = \left[\begin{array}{cccc|c}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
-1 \\
+-2 \\
+-1 \\
 2 \\
-4 \\
--6 \\
--4
+-3 \\
+5
 \end{array}\right] , \left[\begin{array}{c}
+-4 \\
 -3 \\
 1 \\
 1 \\
-5 \\
+-6
+\end{array}\right] , \left[\begin{array}{c}
+-6 \\
+1 \\
+-2 \\
+0 \\
 3
 \end{array}\right] , \left[\begin{array}{c}
 -1 \\
-2 \\
-2 \\
--4 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
--4 \\
--6 \\
-2 \\
 3 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
-1 \\
--2 \\
-5 \\
-1 \\
-2
+-3 \\
+3 \\
+1
 \end{array}\right] \right\} \)is linearly independent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
-1 \\
+-2 \\
+-1 \\
 2 \\
-4 \\
--6 \\
--4
+-3 \\
+5
 \end{array}\right] + x_{2} \left[\begin{array}{c}
+-4 \\
 -3 \\
 1 \\
 1 \\
-5 \\
-3
+-6
 \end{array}\right] + x_{3} \left[\begin{array}{c}
--1 \\
-2 \\
-2 \\
--4 \\
-0
-\end{array}\right] + x_{4} \left[\begin{array}{c}
--4 \\
 -6 \\
-2 \\
-3 \\
-2
-\end{array}\right] + x_{5} \left[\begin{array}{c}
 1 \\
 -2 \\
-5 \\
-1 \\
-2
+0 \\
+3
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+-1 \\
+3 \\
+-3 \\
+3 \\
+1
 \end{array}\right] = \left[\begin{array}{c}
 0 \\
 0 \\
@@ -4120,35 +4504,29 @@
 0
 \end{array}\right] \)has no nontrivial solutions.</p></li>
       <li> The set of vectors \( \left\{ \left[\begin{array}{c}
-1 \\
+-2 \\
+-1 \\
 2 \\
-4 \\
--6 \\
--4
+-3 \\
+5
 \end{array}\right] , \left[\begin{array}{c}
+-4 \\
 -3 \\
 1 \\
 1 \\
-5 \\
+-6
+\end{array}\right] , \left[\begin{array}{c}
+-6 \\
+1 \\
+-2 \\
+0 \\
 3
 \end{array}\right] , \left[\begin{array}{c}
 -1 \\
-2 \\
-2 \\
--4 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
--4 \\
--6 \\
-2 \\
 3 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
-1 \\
--2 \\
-5 \\
-1 \\
-2
+-3 \\
+3 \\
+1
 \end{array}\right] \right\} \)is linearly independent.</li>
     </ol>
   </div>
@@ -4158,181 +4536,29 @@
 <h4>Example 31</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
--5 \\
+-4 \\
 1 \\
-1 \\
-1 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
--5 \\
-4 \\
-0 \\
-4 \\
--6
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
+-6 \\
 -3 \\
--5 \\
+-4
+\end{array}\right] , \left[\begin{array}{c}
+1 \\
+4 \\
 3 \\
-4
-\end{array}\right] , \left[\begin{array}{c}
--4 \\
-5 \\
-1 \\
 2 \\
--5
+-1
 \end{array}\right] , \left[\begin{array}{c}
 -1 \\
+-5 \\
+4 \\
 -2 \\
-4 \\
--6 \\
-5
-\end{array}\right] \right\} \)is linearly independent.</p></p>
-    <ol type="a">
-      <li> Write an equivalent statement using a vector equation.</li>
-      <li> Explain why your statement is true or false.</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
--5 \\
-1 \\
-1 \\
-1 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
--5 \\
-4 \\
-0 \\
-4 \\
--6
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
--3 \\
--5 \\
-3 \\
-4
-\end{array}\right] , \left[\begin{array}{c}
--4 \\
-5 \\
-1 \\
-2 \\
--5
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
--2 \\
-4 \\
--6 \\
-5
-\end{array}\right] \right\} \)is linearly independent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
--5 \\
-1 \\
-1 \\
-1 \\
-0
-\end{array}\right] + x_{2} \left[\begin{array}{c}
--5 \\
-4 \\
-0 \\
-4 \\
--6
-\end{array}\right] + x_{3} \left[\begin{array}{c}
--1 \\
--3 \\
--5 \\
-3 \\
-4
-\end{array}\right] + x_{4} \left[\begin{array}{c}
--4 \\
-5 \\
-1 \\
-2 \\
--5
-\end{array}\right] + x_{5} \left[\begin{array}{c}
--1 \\
--2 \\
-4 \\
--6 \\
-5
-\end{array}\right] = \left[\begin{array}{c}
-0 \\
-0 \\
-0 \\
-0 \\
-0
-\end{array}\right] \)has no nontrivial solutions.</p></li>
-      <li> The set of vectors \( \left\{ \left[\begin{array}{c}
--5 \\
-1 \\
-1 \\
-1 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
--5 \\
-4 \\
-0 \\
-4 \\
--6
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
--3 \\
--5 \\
-3 \\
-4
-\end{array}\right] , \left[\begin{array}{c}
--4 \\
-5 \\
-1 \\
-2 \\
--5
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
--2 \\
-4 \\
--6 \\
-5
-\end{array}\right] \right\} \)is linearly independent.</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 32</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
-3 \\
-5 \\
-2 \\
--4 \\
--2
-\end{array}\right] , \left[\begin{array}{c}
--2 \\
-5 \\
--6 \\
-2 \\
 -3
 \end{array}\right] , \left[\begin{array}{c}
--5 \\
-4 \\
--4 \\
--4 \\
--2
-\end{array}\right] , \left[\begin{array}{c}
--11 \\
--10 \\
--12 \\
-14 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
 -2 \\
--3 \\
+-8 \\
 -6 \\
-4 \\
-1
+-4 \\
+2
 \end{array}\right] \right\} \)is linearly dependent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a vector equation.</li>
@@ -4343,67 +4569,70 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc|c}
+-4 &amp; 1 &amp; -1 &amp; -2 &amp; 0 \\
+1 &amp; 4 &amp; -5 &amp; -8 &amp; 0 \\
+-6 &amp; 3 &amp; 4 &amp; -6 &amp; 0 \\
+-3 &amp; 2 &amp; -2 &amp; -4 &amp; 0 \\
+-4 &amp; -1 &amp; -3 &amp; 2 &amp; 0
+\end{array}\right] = \left[\begin{array}{cccc|c}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; -2 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
-3 \\
-5 \\
-2 \\
 -4 \\
--2
-\end{array}\right] , \left[\begin{array}{c}
--2 \\
-5 \\
+1 \\
 -6 \\
-2 \\
--3
+-3 \\
+-4
 \end{array}\right] , \left[\begin{array}{c}
+1 \\
+4 \\
+3 \\
+2 \\
+-1
+\end{array}\right] , \left[\begin{array}{c}
+-1 \\
 -5 \\
 4 \\
--4 \\
--4 \\
--2
-\end{array}\right] , \left[\begin{array}{c}
--11 \\
--10 \\
--12 \\
-14 \\
-3
+-2 \\
+-3
 \end{array}\right] , \left[\begin{array}{c}
 -2 \\
--3 \\
+-8 \\
 -6 \\
-4 \\
-1
+-4 \\
+2
 \end{array}\right] \right\} \)is linearly dependent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
-3 \\
-5 \\
-2 \\
 -4 \\
--2
-\end{array}\right] + x_{2} \left[\begin{array}{c}
--2 \\
-5 \\
+1 \\
 -6 \\
+-3 \\
+-4
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+1 \\
+4 \\
+3 \\
 2 \\
--3
+-1
 \end{array}\right] + x_{3} \left[\begin{array}{c}
+-1 \\
 -5 \\
 4 \\
--4 \\
--4 \\
--2
-\end{array}\right] + x_{4} \left[\begin{array}{c}
--11 \\
--10 \\
--12 \\
-14 \\
-3
-\end{array}\right] + x_{5} \left[\begin{array}{c}
 -2 \\
--3 \\
+-3
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+-2 \\
+-8 \\
 -6 \\
-4 \\
-1
+-4 \\
+2
 \end{array}\right] = \left[\begin{array}{c}
 0 \\
 0 \\
@@ -4412,35 +4641,166 @@
 0
 \end{array}\right] \)has (infinitely many) nontrivial solutions.</p></li>
       <li> The set of vectors \( \left\{ \left[\begin{array}{c}
-3 \\
-5 \\
-2 \\
 -4 \\
--2
-\end{array}\right] , \left[\begin{array}{c}
--2 \\
-5 \\
+1 \\
 -6 \\
-2 \\
--3
+-3 \\
+-4
 \end{array}\right] , \left[\begin{array}{c}
+1 \\
+4 \\
+3 \\
+2 \\
+-1
+\end{array}\right] , \left[\begin{array}{c}
+-1 \\
 -5 \\
 4 \\
--4 \\
--4 \\
--2
+-2 \\
+-3
 \end{array}\right] , \left[\begin{array}{c}
--11 \\
--10 \\
--12 \\
-14 \\
-3
+-2 \\
+-8 \\
+-6 \\
+-4 \\
+2
+\end{array}\right] \right\} \)is linearly dependent.</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 32</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
+-3 \\
+-2 \\
+-5 \\
+-1 \\
+0
 \end{array}\right] , \left[\begin{array}{c}
+-3 \\
 -2 \\
 -3 \\
 -6 \\
-4 \\
-1
+-4
+\end{array}\right] , \left[\begin{array}{c}
+-6 \\
+-4 \\
+-2 \\
+-1 \\
+5
+\end{array}\right] , \left[\begin{array}{c}
+15 \\
+10 \\
+13 \\
+14 \\
+3
+\end{array}\right] \right\} \)is linearly independent.</p></p>
+    <ol type="a">
+      <li> Write an equivalent statement using a vector equation.</li>
+      <li> Explain why your statement is true or false.</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc|c}
+-3 &amp; -3 &amp; -6 &amp; 15 &amp; 0 \\
+-2 &amp; -2 &amp; -4 &amp; 10 &amp; 0 \\
+-5 &amp; -3 &amp; -2 &amp; 13 &amp; 0 \\
+-1 &amp; -6 &amp; -1 &amp; 14 &amp; 0 \\
+0 &amp; -4 &amp; 5 &amp; 3 &amp; 0
+\end{array}\right] = \left[\begin{array}{cccc|c}
+1 &amp; 0 &amp; 0 &amp; -1 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; -2 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; -1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
+    <ol type="a">
+      <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
+-3 \\
+-2 \\
+-5 \\
+-1 \\
+0
+\end{array}\right] , \left[\begin{array}{c}
+-3 \\
+-2 \\
+-3 \\
+-6 \\
+-4
+\end{array}\right] , \left[\begin{array}{c}
+-6 \\
+-4 \\
+-2 \\
+-1 \\
+5
+\end{array}\right] , \left[\begin{array}{c}
+15 \\
+10 \\
+13 \\
+14 \\
+3
+\end{array}\right] \right\} \)is linearly independent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
+-3 \\
+-2 \\
+-5 \\
+-1 \\
+0
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+-3 \\
+-2 \\
+-3 \\
+-6 \\
+-4
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+-6 \\
+-4 \\
+-2 \\
+-1 \\
+5
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+15 \\
+10 \\
+13 \\
+14 \\
+3
+\end{array}\right] = \left[\begin{array}{c}
+0 \\
+0 \\
+0 \\
+0 \\
+0
+\end{array}\right] \)has no nontrivial solutions.</p></li>
+      <li> The set of vectors \( \left\{ \left[\begin{array}{c}
+-3 \\
+-2 \\
+-5 \\
+-1 \\
+0
+\end{array}\right] , \left[\begin{array}{c}
+-3 \\
+-2 \\
+-3 \\
+-6 \\
+-4
+\end{array}\right] , \left[\begin{array}{c}
+-6 \\
+-4 \\
+-2 \\
+-1 \\
+5
+\end{array}\right] , \left[\begin{array}{c}
+15 \\
+10 \\
+13 \\
+14 \\
+3
 \end{array}\right] \right\} \)is linearly dependent.</li>
     </ol>
   </div>
@@ -4450,35 +4810,35 @@
 <h4>Example 33</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
--5 \\
--4 \\
-0 \\
-4 \\
--3
-\end{array}\right] , \left[\begin{array}{c}
--6 \\
--4 \\
+-1 \\
 3 \\
--5 \\
--5
-\end{array}\right] , \left[\begin{array}{c}
-5 \\
 -2 \\
 2 \\
--3 \\
-5
+-4
 \end{array}\right] , \left[\begin{array}{c}
--8 \\
-10 \\
--12 \\
-23 \\
--8
+-4 \\
+-4 \\
+5 \\
+3 \\
+4
 \end{array}\right] , \left[\begin{array}{c}
+-5 \\
+-17 \\
+16 \\
 0 \\
+20
+\end{array}\right] , \left[\begin{array}{c}
 2 \\
 3 \\
+1 \\
+-3 \\
+4
+\end{array}\right] , \left[\begin{array}{c}
+15 \\
 4 \\
-5
+-14 \\
+-10 \\
+-10
 \end{array}\right] \right\} \)is linearly dependent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a vector equation.</li>
@@ -4489,67 +4849,82 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccccc|c}
+-1 &amp; -4 &amp; -5 &amp; 2 &amp; 15 &amp; 0 \\
+3 &amp; -4 &amp; -17 &amp; 3 &amp; 4 &amp; 0 \\
+-2 &amp; 5 &amp; 16 &amp; 1 &amp; -14 &amp; 0 \\
+2 &amp; 3 &amp; 0 &amp; -3 &amp; -10 &amp; 0 \\
+-4 &amp; 4 &amp; 20 &amp; 4 &amp; -10 &amp; 0
+\end{array}\right] = \left[\begin{array}{ccccc|c}
+1 &amp; 0 &amp; -3 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 2 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
--5 \\
--4 \\
-0 \\
-4 \\
--3
-\end{array}\right] , \left[\begin{array}{c}
--6 \\
--4 \\
+-1 \\
 3 \\
--5 \\
--5
-\end{array}\right] , \left[\begin{array}{c}
-5 \\
 -2 \\
 2 \\
--3 \\
-5
+-4
 \end{array}\right] , \left[\begin{array}{c}
--8 \\
-10 \\
--12 \\
-23 \\
--8
+-4 \\
+-4 \\
+5 \\
+3 \\
+4
 \end{array}\right] , \left[\begin{array}{c}
+-5 \\
+-17 \\
+16 \\
 0 \\
+20
+\end{array}\right] , \left[\begin{array}{c}
 2 \\
 3 \\
+1 \\
+-3 \\
+4
+\end{array}\right] , \left[\begin{array}{c}
+15 \\
 4 \\
-5
+-14 \\
+-10 \\
+-10
 \end{array}\right] \right\} \)is linearly dependent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
--5 \\
--4 \\
-0 \\
-4 \\
--3
-\end{array}\right] + x_{2} \left[\begin{array}{c}
--6 \\
--4 \\
+-1 \\
 3 \\
--5 \\
--5
-\end{array}\right] + x_{3} \left[\begin{array}{c}
-5 \\
 -2 \\
 2 \\
--3 \\
-5
-\end{array}\right] + x_{4} \left[\begin{array}{c}
--8 \\
-10 \\
--12 \\
-23 \\
--8
-\end{array}\right] + x_{5} \left[\begin{array}{c}
+-4
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+-4 \\
+-4 \\
+5 \\
+3 \\
+4
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+-5 \\
+-17 \\
+16 \\
 0 \\
+20
+\end{array}\right] + x_{4} \left[\begin{array}{c}
 2 \\
 3 \\
+1 \\
+-3 \\
+4
+\end{array}\right] + x_{5} \left[\begin{array}{c}
+15 \\
 4 \\
-5
+-14 \\
+-10 \\
+-10
 \end{array}\right] = \left[\begin{array}{c}
 0 \\
 0 \\
@@ -4558,35 +4933,35 @@
 0
 \end{array}\right] \)has (infinitely many) nontrivial solutions.</p></li>
       <li> The set of vectors \( \left\{ \left[\begin{array}{c}
--5 \\
--4 \\
-0 \\
-4 \\
--3
-\end{array}\right] , \left[\begin{array}{c}
--6 \\
--4 \\
+-1 \\
 3 \\
--5 \\
--5
-\end{array}\right] , \left[\begin{array}{c}
-5 \\
 -2 \\
 2 \\
--3 \\
-5
+-4
 \end{array}\right] , \left[\begin{array}{c}
--8 \\
-10 \\
--12 \\
-23 \\
--8
+-4 \\
+-4 \\
+5 \\
+3 \\
+4
 \end{array}\right] , \left[\begin{array}{c}
+-5 \\
+-17 \\
+16 \\
 0 \\
+20
+\end{array}\right] , \left[\begin{array}{c}
 2 \\
 3 \\
+1 \\
+-3 \\
+4
+\end{array}\right] , \left[\begin{array}{c}
+15 \\
 4 \\
-5
+-14 \\
+-10 \\
+-10
 \end{array}\right] \right\} \)is linearly dependent.</li>
     </ol>
   </div>
@@ -4596,36 +4971,30 @@
 <h4>Example 34</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
-4 \\
+2 \\
+3 \\
+-3 \\
+-6 \\
+5
+\end{array}\right] , \left[\begin{array}{c}
 5 \\
-4 \\
-4 \\
+2 \\
+-6 \\
+-6 \\
 -5
 \end{array}\right] , \left[\begin{array}{c}
--5 \\
-5 \\
-1 \\
-1 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
-4 \\
--5 \\
-3 \\
 -6 \\
+3 \\
+-4 \\
+2 \\
 -2
 \end{array}\right] , \left[\begin{array}{c}
-1 \\
-0 \\
--1 \\
+-3 \\
+-3 \\
 5 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
-4 \\
--2 \\
--2 \\
--4 \\
--1
-\end{array}\right] \right\} \)is linearly independent.</p></p>
+3 \\
+-6
+\end{array}\right] \right\} \)is linearly dependent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a vector equation.</li>
       <li> Explain why your statement is true or false.</li>
@@ -4635,104 +5004,101 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc|c}
+2 &amp; 5 &amp; -6 &amp; -3 &amp; 0 \\
+3 &amp; 2 &amp; 3 &amp; -3 &amp; 0 \\
+-3 &amp; -6 &amp; -4 &amp; 5 &amp; 0 \\
+-6 &amp; -6 &amp; 2 &amp; 3 &amp; 0 \\
+5 &amp; -5 &amp; -2 &amp; -6 &amp; 0
+\end{array}\right] = \left[\begin{array}{cccc|c}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
-4 \\
+2 \\
+3 \\
+-3 \\
+-6 \\
+5
+\end{array}\right] , \left[\begin{array}{c}
 5 \\
-4 \\
-4 \\
+2 \\
+-6 \\
+-6 \\
 -5
 \end{array}\right] , \left[\begin{array}{c}
--5 \\
-5 \\
-1 \\
-1 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
-4 \\
--5 \\
-3 \\
 -6 \\
+3 \\
+-4 \\
+2 \\
 -2
 \end{array}\right] , \left[\begin{array}{c}
-1 \\
-0 \\
--1 \\
+-3 \\
+-3 \\
 5 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
-4 \\
--2 \\
--2 \\
--4 \\
--1
-\end{array}\right] \right\} \)is linearly independent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
-4 \\
-5 \\
-4 \\
-4 \\
--5
-\end{array}\right] + x_{2} \left[\begin{array}{c}
--5 \\
-5 \\
-1 \\
-1 \\
--4
-\end{array}\right] + x_{3} \left[\begin{array}{c}
-4 \\
--5 \\
 3 \\
+-6
+\end{array}\right] \right\} \)is linearly dependent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
+2 \\
+3 \\
+-3 \\
 -6 \\
+5
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+5 \\
+2 \\
+-6 \\
+-6 \\
+-5
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+-6 \\
+3 \\
+-4 \\
+2 \\
 -2
 \end{array}\right] + x_{4} \left[\begin{array}{c}
-1 \\
-0 \\
--1 \\
+-3 \\
+-3 \\
 5 \\
--1
-\end{array}\right] + x_{5} \left[\begin{array}{c}
-4 \\
--2 \\
--2 \\
--4 \\
--1
+3 \\
+-6
 \end{array}\right] = \left[\begin{array}{c}
 0 \\
 0 \\
 0 \\
 0 \\
 0
-\end{array}\right] \)has no nontrivial solutions.</p></li>
+\end{array}\right] \)has (infinitely many) nontrivial solutions.</p></li>
       <li> The set of vectors \( \left\{ \left[\begin{array}{c}
-4 \\
+2 \\
+3 \\
+-3 \\
+-6 \\
+5
+\end{array}\right] , \left[\begin{array}{c}
 5 \\
-4 \\
-4 \\
+2 \\
+-6 \\
+-6 \\
 -5
 \end{array}\right] , \left[\begin{array}{c}
--5 \\
-5 \\
-1 \\
-1 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
-4 \\
--5 \\
-3 \\
 -6 \\
+3 \\
+-4 \\
+2 \\
 -2
 \end{array}\right] , \left[\begin{array}{c}
-1 \\
-0 \\
--1 \\
+-3 \\
+-3 \\
 5 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
-4 \\
--2 \\
--2 \\
--4 \\
--1
+3 \\
+-6
 \end{array}\right] \right\} \)is linearly independent.</li>
     </ol>
   </div>
@@ -4742,30 +5108,30 @@
 <h4>Example 35</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
-5 \\
--1 \\
 2 \\
 -6 \\
+1 \\
+-2 \\
 0
 \end{array}\right] , \left[\begin{array}{c}
--1 \\
-0 \\
--3 \\
--3 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
 -5 \\
-0 \\
-5 \\
-5 \\
-5
+-3 \\
+-4 \\
+-6 \\
+-3
 \end{array}\right] , \left[\begin{array}{c}
+-6 \\
 2 \\
+3 \\
+-2 \\
+-2
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
 -5 \\
 -6 \\
-4 \\
-4
-\end{array}\right] \right\} \)is linearly dependent.</p></p>
+-3 \\
+-4
+\end{array}\right] \right\} \)is linearly independent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a vector equation.</li>
       <li> Explain why your statement is true or false.</li>
@@ -4775,86 +5141,101 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc|c}
+2 &amp; -5 &amp; -6 &amp; -2 &amp; 0 \\
+-6 &amp; -3 &amp; 2 &amp; -5 &amp; 0 \\
+1 &amp; -4 &amp; 3 &amp; -6 &amp; 0 \\
+-2 &amp; -6 &amp; -2 &amp; -3 &amp; 0 \\
+0 &amp; -3 &amp; -2 &amp; -4 &amp; 0
+\end{array}\right] = \left[\begin{array}{cccc|c}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
-5 \\
--1 \\
 2 \\
 -6 \\
+1 \\
+-2 \\
 0
 \end{array}\right] , \left[\begin{array}{c}
--1 \\
-0 \\
--3 \\
--3 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
 -5 \\
-0 \\
-5 \\
-5 \\
-5
+-3 \\
+-4 \\
+-6 \\
+-3
 \end{array}\right] , \left[\begin{array}{c}
+-6 \\
 2 \\
+3 \\
+-2 \\
+-2
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
 -5 \\
 -6 \\
-4 \\
-4
-\end{array}\right] \right\} \)is linearly dependent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
-5 \\
--1 \\
+-3 \\
+-4
+\end{array}\right] \right\} \)is linearly independent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
 2 \\
 -6 \\
+1 \\
+-2 \\
 0
 \end{array}\right] + x_{2} \left[\begin{array}{c}
--1 \\
-0 \\
--3 \\
--3 \\
--1
-\end{array}\right] + x_{3} \left[\begin{array}{c}
 -5 \\
-0 \\
-5 \\
-5 \\
-5
-\end{array}\right] + x_{4} \left[\begin{array}{c}
+-3 \\
+-4 \\
+-6 \\
+-3
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+-6 \\
 2 \\
+3 \\
+-2 \\
+-2
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+-2 \\
 -5 \\
 -6 \\
-4 \\
-4
+-3 \\
+-4
 \end{array}\right] = \left[\begin{array}{c}
 0 \\
 0 \\
 0 \\
 0 \\
 0
-\end{array}\right] \)has (infinitely many) nontrivial solutions.</p></li>
+\end{array}\right] \)has no nontrivial solutions.</p></li>
       <li> The set of vectors \( \left\{ \left[\begin{array}{c}
-5 \\
--1 \\
 2 \\
 -6 \\
+1 \\
+-2 \\
 0
 \end{array}\right] , \left[\begin{array}{c}
--1 \\
-0 \\
--3 \\
--3 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
 -5 \\
-0 \\
-5 \\
-5 \\
-5
+-3 \\
+-4 \\
+-6 \\
+-3
 \end{array}\right] , \left[\begin{array}{c}
+-6 \\
 2 \\
+3 \\
+-2 \\
+-2
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
 -5 \\
 -6 \\
-4 \\
-4
+-3 \\
+-4
 \end{array}\right] \right\} \)is linearly independent.</li>
     </ol>
   </div>
@@ -4864,326 +5245,28 @@
 <h4>Example 36</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
-5 \\
--3 \\
-0 \\
-2 \\
-4
-\end{array}\right] , \left[\begin{array}{c}
--5 \\
-3 \\
--5 \\
-2 \\
--6
-\end{array}\right] , \left[\begin{array}{c}
--5 \\
-5 \\
--1 \\
-5 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
 -4 \\
 -6 \\
-5 \\
+1 \\
+2 \\
 -2
 \end{array}\right] , \left[\begin{array}{c}
+1 \\
 -6 \\
--3 \\
-2 \\
--5 \\
--4
-\end{array}\right] \right\} \)is linearly independent.</p></p>
-    <ol type="a">
-      <li> Write an equivalent statement using a vector equation.</li>
-      <li> Explain why your statement is true or false.</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
-5 \\
--3 \\
-0 \\
-2 \\
-4
-\end{array}\right] , \left[\begin{array}{c}
--5 \\
-3 \\
--5 \\
-2 \\
--6
-\end{array}\right] , \left[\begin{array}{c}
--5 \\
-5 \\
--1 \\
-5 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
--4 \\
--6 \\
-5 \\
--2
-\end{array}\right] , \left[\begin{array}{c}
--6 \\
--3 \\
-2 \\
--5 \\
--4
-\end{array}\right] \right\} \)is linearly independent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
-5 \\
--3 \\
-0 \\
-2 \\
-4
-\end{array}\right] + x_{2} \left[\begin{array}{c}
--5 \\
-3 \\
--5 \\
-2 \\
--6
-\end{array}\right] + x_{3} \left[\begin{array}{c}
--5 \\
-5 \\
--1 \\
-5 \\
-2
-\end{array}\right] + x_{4} \left[\begin{array}{c}
--1 \\
--4 \\
--6 \\
-5 \\
--2
-\end{array}\right] + x_{5} \left[\begin{array}{c}
--6 \\
--3 \\
-2 \\
--5 \\
--4
-\end{array}\right] = \left[\begin{array}{c}
-0 \\
-0 \\
-0 \\
-0 \\
-0
-\end{array}\right] \)has no nontrivial solutions.</p></li>
-      <li> The set of vectors \( \left\{ \left[\begin{array}{c}
-5 \\
--3 \\
-0 \\
-2 \\
-4
-\end{array}\right] , \left[\begin{array}{c}
--5 \\
-3 \\
--5 \\
-2 \\
--6
-\end{array}\right] , \left[\begin{array}{c}
--5 \\
-5 \\
--1 \\
-5 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
--4 \\
--6 \\
-5 \\
--2
-\end{array}\right] , \left[\begin{array}{c}
--6 \\
--3 \\
-2 \\
--5 \\
--4
-\end{array}\right] \right\} \)is linearly independent.</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 37</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
--5 \\
-3 \\
--5 \\
--6 \\
-4
-\end{array}\right] , \left[\begin{array}{c}
-5 \\
-5 \\
-0 \\
--4 \\
-4
-\end{array}\right] , \left[\begin{array}{c}
 -6 \\
 0 \\
--1 \\
-0 \\
--6
-\end{array}\right] , \left[\begin{array}{c}
-23 \\
--3 \\
-8 \\
-6 \\
-14
-\end{array}\right] , \left[\begin{array}{c}
-5 \\
-13 \\
--5 \\
--14 \\
-12
-\end{array}\right] \right\} \)is linearly independent.</p></p>
-    <ol type="a">
-      <li> Write an equivalent statement using a vector equation.</li>
-      <li> Explain why your statement is true or false.</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
--5 \\
-3 \\
--5 \\
--6 \\
-4
-\end{array}\right] , \left[\begin{array}{c}
-5 \\
-5 \\
-0 \\
--4 \\
-4
-\end{array}\right] , \left[\begin{array}{c}
--6 \\
-0 \\
--1 \\
-0 \\
--6
-\end{array}\right] , \left[\begin{array}{c}
-23 \\
--3 \\
-8 \\
-6 \\
-14
-\end{array}\right] , \left[\begin{array}{c}
-5 \\
-13 \\
--5 \\
--14 \\
-12
-\end{array}\right] \right\} \)is linearly independent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
--5 \\
-3 \\
--5 \\
--6 \\
-4
-\end{array}\right] + x_{2} \left[\begin{array}{c}
-5 \\
-5 \\
-0 \\
--4 \\
-4
-\end{array}\right] + x_{3} \left[\begin{array}{c}
--6 \\
-0 \\
--1 \\
-0 \\
--6
-\end{array}\right] + x_{4} \left[\begin{array}{c}
-23 \\
--3 \\
-8 \\
-6 \\
-14
-\end{array}\right] + x_{5} \left[\begin{array}{c}
-5 \\
-13 \\
--5 \\
--14 \\
-12
-\end{array}\right] = \left[\begin{array}{c}
-0 \\
-0 \\
-0 \\
-0 \\
-0
-\end{array}\right] \)has no nontrivial solutions.</p></li>
-      <li> The set of vectors \( \left\{ \left[\begin{array}{c}
--5 \\
-3 \\
--5 \\
--6 \\
-4
-\end{array}\right] , \left[\begin{array}{c}
-5 \\
-5 \\
-0 \\
--4 \\
-4
-\end{array}\right] , \left[\begin{array}{c}
--6 \\
-0 \\
--1 \\
-0 \\
--6
-\end{array}\right] , \left[\begin{array}{c}
-23 \\
--3 \\
-8 \\
-6 \\
-14
-\end{array}\right] , \left[\begin{array}{c}
-5 \\
-13 \\
--5 \\
--14 \\
-12
-\end{array}\right] \right\} \)is linearly dependent.</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 38</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
--2 \\
--6 \\
--2 \\
--6 \\
 -1
 \end{array}\right] , \left[\begin{array}{c}
-3 \\
-1 \\
-0 \\
--5 \\
+-3 \\
+5 \\
+5 \\
+-2 \\
 0
 \end{array}\right] , \left[\begin{array}{c}
-4 \\
-1 \\
-1 \\
--6 \\
--6
-\end{array}\right] , \left[\begin{array}{c}
-0 \\
+-3 \\
 5 \\
-3 \\
-10 \\
--5
-\end{array}\right] , \left[\begin{array}{c}
-6 \\
-2 \\
-0 \\
--10 \\
+5 \\
+-2 \\
 0
 \end{array}\right] \right\} \)is linearly dependent.</p></p>
     <ol type="a">
@@ -5195,66 +5278,69 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc|c}
+-4 &amp; 1 &amp; -3 &amp; -3 &amp; 0 \\
+-6 &amp; -6 &amp; 5 &amp; 5 &amp; 0 \\
+1 &amp; -6 &amp; 5 &amp; 5 &amp; 0 \\
+2 &amp; 0 &amp; -2 &amp; -2 &amp; 0 \\
+-2 &amp; -1 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] = \left[\begin{array}{cccc|c}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
--2 \\
+-4 \\
 -6 \\
--2 \\
+1 \\
+2 \\
+-2
+\end{array}\right] , \left[\begin{array}{c}
+1 \\
 -6 \\
+-6 \\
+0 \\
 -1
 \end{array}\right] , \left[\begin{array}{c}
-3 \\
-1 \\
-0 \\
--5 \\
+-3 \\
+5 \\
+5 \\
+-2 \\
 0
 \end{array}\right] , \left[\begin{array}{c}
-4 \\
-1 \\
-1 \\
--6 \\
--6
-\end{array}\right] , \left[\begin{array}{c}
-0 \\
+-3 \\
 5 \\
-3 \\
-10 \\
--5
-\end{array}\right] , \left[\begin{array}{c}
-6 \\
-2 \\
-0 \\
--10 \\
+5 \\
+-2 \\
 0
 \end{array}\right] \right\} \)is linearly dependent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
--2 \\
+-4 \\
 -6 \\
--2 \\
--6 \\
--1
-\end{array}\right] + x_{2} \left[\begin{array}{c}
-3 \\
 1 \\
-0 \\
--5 \\
-0
-\end{array}\right] + x_{3} \left[\begin{array}{c}
-4 \\
-1 \\
-1 \\
--6 \\
--6
-\end{array}\right] + x_{4} \left[\begin{array}{c}
-0 \\
-5 \\
-3 \\
-10 \\
--5
-\end{array}\right] + x_{5} \left[\begin{array}{c}
-6 \\
 2 \\
+-2
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+1 \\
+-6 \\
+-6 \\
 0 \\
--10 \\
+-1
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+-3 \\
+5 \\
+5 \\
+-2 \\
+0
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+-3 \\
+5 \\
+5 \\
+-2 \\
 0
 \end{array}\right] = \left[\begin{array}{c}
 0 \\
@@ -5264,34 +5350,28 @@
 0
 \end{array}\right] \)has (infinitely many) nontrivial solutions.</p></li>
       <li> The set of vectors \( \left\{ \left[\begin{array}{c}
--2 \\
+-4 \\
 -6 \\
--2 \\
+1 \\
+2 \\
+-2
+\end{array}\right] , \left[\begin{array}{c}
+1 \\
 -6 \\
+-6 \\
+0 \\
 -1
 \end{array}\right] , \left[\begin{array}{c}
-3 \\
-1 \\
-0 \\
--5 \\
+-3 \\
+5 \\
+5 \\
+-2 \\
 0
 \end{array}\right] , \left[\begin{array}{c}
-4 \\
-1 \\
-1 \\
--6 \\
--6
-\end{array}\right] , \left[\begin{array}{c}
-0 \\
+-3 \\
 5 \\
-3 \\
-10 \\
--5
-\end{array}\right] , \left[\begin{array}{c}
-6 \\
-2 \\
-0 \\
--10 \\
+5 \\
+-2 \\
 0
 \end{array}\right] \right\} \)is linearly dependent.</li>
     </ol>
@@ -5299,32 +5379,38 @@
 </div>
 
 <hr/>
-<h4>Example 39</h4><div class="exercise">
+<h4>Example 37</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
--4 \\
-5 \\
--1 \\
 1 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
 -2 \\
-4 \\
--4 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
-4 \\
--4 \\
 1 \\
--6 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
 -2 \\
-2 \\
--5 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
 3 \\
+-2 \\
+-6 \\
+-2 \\
+4
+\end{array}\right] , \left[\begin{array}{c}
+-6 \\
+1 \\
+5 \\
+-5 \\
 -4
+\end{array}\right] , \left[\begin{array}{c}
+0 \\
+-2 \\
+-2 \\
+-1 \\
+-4
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+1 \\
+2 \\
+3 \\
+1
 \end{array}\right] \right\} \)is linearly independent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a vector equation.</li>
@@ -5335,55 +5421,82 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccccc|c}
+1 &amp; 3 &amp; -6 &amp; 0 &amp; -2 &amp; 0 \\
+-2 &amp; -2 &amp; 1 &amp; -2 &amp; 1 &amp; 0 \\
+1 &amp; -6 &amp; 5 &amp; -2 &amp; 2 &amp; 0 \\
+-2 &amp; -2 &amp; -5 &amp; -1 &amp; 3 &amp; 0 \\
+1 &amp; 4 &amp; -4 &amp; -4 &amp; 1 &amp; 0
+\end{array}\right] = \left[\begin{array}{ccccc|c}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
--4 \\
-5 \\
--1 \\
 1 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
 -2 \\
-4 \\
--4 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
-4 \\
--4 \\
 1 \\
--6 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
 -2 \\
-2 \\
--5 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
 3 \\
+-2 \\
+-6 \\
+-2 \\
+4
+\end{array}\right] , \left[\begin{array}{c}
+-6 \\
+1 \\
+5 \\
+-5 \\
 -4
+\end{array}\right] , \left[\begin{array}{c}
+0 \\
+-2 \\
+-2 \\
+-1 \\
+-4
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+1 \\
+2 \\
+3 \\
+1
 \end{array}\right] \right\} \)is linearly independent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
--4 \\
-5 \\
--1 \\
 1 \\
-2
+-2 \\
+1 \\
+-2 \\
+1
 \end{array}\right] + x_{2} \left[\begin{array}{c}
--1 \\
--2 \\
-4 \\
--4 \\
--1
-\end{array}\right] + x_{3} \left[\begin{array}{c}
-4 \\
--4 \\
-1 \\
--6 \\
-2
-\end{array}\right] + x_{4} \left[\begin{array}{c}
--2 \\
-2 \\
--5 \\
 3 \\
+-2 \\
+-6 \\
+-2 \\
+4
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+-6 \\
+1 \\
+5 \\
+-5 \\
 -4
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+0 \\
+-2 \\
+-2 \\
+-1 \\
+-4
+\end{array}\right] + x_{5} \left[\begin{array}{c}
+-2 \\
+1 \\
+2 \\
+3 \\
+1
 \end{array}\right] = \left[\begin{array}{c}
 0 \\
 0 \\
@@ -5392,30 +5505,334 @@
 0
 \end{array}\right] \)has no nontrivial solutions.</p></li>
       <li> The set of vectors \( \left\{ \left[\begin{array}{c}
--4 \\
-5 \\
--1 \\
 1 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
 -2 \\
-4 \\
--4 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
-4 \\
--4 \\
 1 \\
--6 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
 -2 \\
-2 \\
--5 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
 3 \\
+-2 \\
+-6 \\
+-2 \\
+4
+\end{array}\right] , \left[\begin{array}{c}
+-6 \\
+1 \\
+5 \\
+-5 \\
 -4
+\end{array}\right] , \left[\begin{array}{c}
+0 \\
+-2 \\
+-2 \\
+-1 \\
+-4
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+1 \\
+2 \\
+3 \\
+1
 \end{array}\right] \right\} \)is linearly independent.</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 38</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
+5 \\
+-3 \\
+-5 \\
+-1 \\
+3
+\end{array}\right] , \left[\begin{array}{c}
+3 \\
+-4 \\
+3 \\
+4 \\
+5
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
+4 \\
+5 \\
+-5 \\
+5
+\end{array}\right] , \left[\begin{array}{c}
+3 \\
+-1 \\
+4 \\
+2 \\
+4
+\end{array}\right] \right\} \)is linearly independent.</p></p>
+    <ol type="a">
+      <li> Write an equivalent statement using a vector equation.</li>
+      <li> Explain why your statement is true or false.</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc|c}
+5 &amp; 3 &amp; -4 &amp; 3 &amp; 0 \\
+-3 &amp; -4 &amp; 4 &amp; -1 &amp; 0 \\
+-5 &amp; 3 &amp; 5 &amp; 4 &amp; 0 \\
+-1 &amp; 4 &amp; -5 &amp; 2 &amp; 0 \\
+3 &amp; 5 &amp; 5 &amp; 4 &amp; 0
+\end{array}\right] = \left[\begin{array}{cccc|c}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
+    <ol type="a">
+      <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
+5 \\
+-3 \\
+-5 \\
+-1 \\
+3
+\end{array}\right] , \left[\begin{array}{c}
+3 \\
+-4 \\
+3 \\
+4 \\
+5
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
+4 \\
+5 \\
+-5 \\
+5
+\end{array}\right] , \left[\begin{array}{c}
+3 \\
+-1 \\
+4 \\
+2 \\
+4
+\end{array}\right] \right\} \)is linearly independent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
+5 \\
+-3 \\
+-5 \\
+-1 \\
+3
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+3 \\
+-4 \\
+3 \\
+4 \\
+5
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+-4 \\
+4 \\
+5 \\
+-5 \\
+5
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+3 \\
+-1 \\
+4 \\
+2 \\
+4
+\end{array}\right] = \left[\begin{array}{c}
+0 \\
+0 \\
+0 \\
+0 \\
+0
+\end{array}\right] \)has no nontrivial solutions.</p></li>
+      <li> The set of vectors \( \left\{ \left[\begin{array}{c}
+5 \\
+-3 \\
+-5 \\
+-1 \\
+3
+\end{array}\right] , \left[\begin{array}{c}
+3 \\
+-4 \\
+3 \\
+4 \\
+5
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
+4 \\
+5 \\
+-5 \\
+5
+\end{array}\right] , \left[\begin{array}{c}
+3 \\
+-1 \\
+4 \\
+2 \\
+4
+\end{array}\right] \right\} \)is linearly independent.</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 39</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
+-6 \\
+-5 \\
+-2 \\
+1 \\
+0
+\end{array}\right] , \left[\begin{array}{c}
+1 \\
+2 \\
+5 \\
+-4 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
+-1 \\
+0 \\
+-6 \\
+-3 \\
+-5
+\end{array}\right] , \left[\begin{array}{c}
+4 \\
+3 \\
+4 \\
+1 \\
+-5
+\end{array}\right] , \left[\begin{array}{c}
+6 \\
+5 \\
+2 \\
+-1 \\
+0
+\end{array}\right] \right\} \)is linearly independent.</p></p>
+    <ol type="a">
+      <li> Write an equivalent statement using a vector equation.</li>
+      <li> Explain why your statement is true or false.</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccccc|c}
+-6 &amp; 1 &amp; -1 &amp; 4 &amp; 6 &amp; 0 \\
+-5 &amp; 2 &amp; 0 &amp; 3 &amp; 5 &amp; 0 \\
+-2 &amp; 5 &amp; -6 &amp; 4 &amp; 2 &amp; 0 \\
+1 &amp; -4 &amp; -3 &amp; 1 &amp; -1 &amp; 0 \\
+0 &amp; 1 &amp; -5 &amp; -5 &amp; 0 &amp; 0
+\end{array}\right] = \left[\begin{array}{ccccc|c}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; -1 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
+    <ol type="a">
+      <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
+-6 \\
+-5 \\
+-2 \\
+1 \\
+0
+\end{array}\right] , \left[\begin{array}{c}
+1 \\
+2 \\
+5 \\
+-4 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
+-1 \\
+0 \\
+-6 \\
+-3 \\
+-5
+\end{array}\right] , \left[\begin{array}{c}
+4 \\
+3 \\
+4 \\
+1 \\
+-5
+\end{array}\right] , \left[\begin{array}{c}
+6 \\
+5 \\
+2 \\
+-1 \\
+0
+\end{array}\right] \right\} \)is linearly independent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
+-6 \\
+-5 \\
+-2 \\
+1 \\
+0
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+1 \\
+2 \\
+5 \\
+-4 \\
+1
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+-1 \\
+0 \\
+-6 \\
+-3 \\
+-5
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+4 \\
+3 \\
+4 \\
+1 \\
+-5
+\end{array}\right] + x_{5} \left[\begin{array}{c}
+6 \\
+5 \\
+2 \\
+-1 \\
+0
+\end{array}\right] = \left[\begin{array}{c}
+0 \\
+0 \\
+0 \\
+0 \\
+0
+\end{array}\right] \)has no nontrivial solutions.</p></li>
+      <li> The set of vectors \( \left\{ \left[\begin{array}{c}
+-6 \\
+-5 \\
+-2 \\
+1 \\
+0
+\end{array}\right] , \left[\begin{array}{c}
+1 \\
+2 \\
+5 \\
+-4 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
+-1 \\
+0 \\
+-6 \\
+-3 \\
+-5
+\end{array}\right] , \left[\begin{array}{c}
+4 \\
+3 \\
+4 \\
+1 \\
+-5
+\end{array}\right] , \left[\begin{array}{c}
+6 \\
+5 \\
+2 \\
+-1 \\
+0
+\end{array}\right] \right\} \)is linearly dependent.</li>
     </ol>
   </div>
 </div>
@@ -5425,34 +5842,34 @@
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
 4 \\
+-5 \\
+4 \\
+-5 \\
+-5
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+2 \\
+4 \\
+0 \\
+5
+\end{array}\right] , \left[\begin{array}{c}
+0 \\
+-3 \\
+0 \\
 1 \\
-0 \\
-5 \\
--3
+-2
 \end{array}\right] , \left[\begin{array}{c}
-4 \\
-3 \\
 -3 \\
-2 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
--6 \\
--6 \\
-2 \\
-4 \\
-4
-\end{array}\right] , \left[\begin{array}{c}
--6 \\
-2 \\
--3 \\
-0 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
--6 \\
 5 \\
-2 \\
 -1 \\
-4
+-1 \\
+-2
+\end{array}\right] , \left[\begin{array}{c}
+1 \\
+-3 \\
+-6 \\
+-5 \\
+5
 \end{array}\right] \right\} \)is linearly dependent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a vector equation.</li>
@@ -5463,67 +5880,82 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccccc|c}
+4 &amp; -2 &amp; 0 &amp; -3 &amp; 1 &amp; 0 \\
+-5 &amp; 2 &amp; -3 &amp; 5 &amp; -3 &amp; 0 \\
+4 &amp; 4 &amp; 0 &amp; -1 &amp; -6 &amp; 0 \\
+-5 &amp; 0 &amp; 1 &amp; -1 &amp; -5 &amp; 0 \\
+-5 &amp; 5 &amp; -2 &amp; -2 &amp; 5 &amp; 0
+\end{array}\right] = \left[\begin{array}{ccccc|c}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
 4 \\
+-5 \\
+4 \\
+-5 \\
+-5
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+2 \\
+4 \\
+0 \\
+5
+\end{array}\right] , \left[\begin{array}{c}
+0 \\
+-3 \\
+0 \\
 1 \\
-0 \\
-5 \\
--3
+-2
 \end{array}\right] , \left[\begin{array}{c}
-4 \\
-3 \\
 -3 \\
-2 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
--6 \\
--6 \\
-2 \\
-4 \\
-4
-\end{array}\right] , \left[\begin{array}{c}
--6 \\
-2 \\
--3 \\
-0 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
--6 \\
 5 \\
-2 \\
 -1 \\
-4
+-1 \\
+-2
+\end{array}\right] , \left[\begin{array}{c}
+1 \\
+-3 \\
+-6 \\
+-5 \\
+5
 \end{array}\right] \right\} \)is linearly dependent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
 4 \\
-1 \\
-0 \\
-5 \\
--3
+-5 \\
+4 \\
+-5 \\
+-5
 \end{array}\right] + x_{2} \left[\begin{array}{c}
-4 \\
-3 \\
--3 \\
+-2 \\
 2 \\
--4
+4 \\
+0 \\
+5
 \end{array}\right] + x_{3} \left[\begin{array}{c}
--6 \\
--6 \\
-2 \\
-4 \\
-4
-\end{array}\right] + x_{4} \left[\begin{array}{c}
--6 \\
-2 \\
+0 \\
 -3 \\
 0 \\
--1
-\end{array}\right] + x_{5} \left[\begin{array}{c}
--6 \\
+1 \\
+-2
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+-3 \\
 5 \\
-2 \\
 -1 \\
-4
+-1 \\
+-2
+\end{array}\right] + x_{5} \left[\begin{array}{c}
+1 \\
+-3 \\
+-6 \\
+-5 \\
+5
 \end{array}\right] = \left[\begin{array}{c}
 0 \\
 0 \\
@@ -5533,34 +5965,34 @@
 \end{array}\right] \)has (infinitely many) nontrivial solutions.</p></li>
       <li> The set of vectors \( \left\{ \left[\begin{array}{c}
 4 \\
+-5 \\
+4 \\
+-5 \\
+-5
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+2 \\
+4 \\
+0 \\
+5
+\end{array}\right] , \left[\begin{array}{c}
+0 \\
+-3 \\
+0 \\
 1 \\
-0 \\
-5 \\
--3
+-2
 \end{array}\right] , \left[\begin{array}{c}
-4 \\
-3 \\
 -3 \\
-2 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
--6 \\
--6 \\
-2 \\
-4 \\
-4
-\end{array}\right] , \left[\begin{array}{c}
--6 \\
-2 \\
--3 \\
-0 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
--6 \\
 5 \\
-2 \\
 -1 \\
-4
+-1 \\
+-2
+\end{array}\right] , \left[\begin{array}{c}
+1 \\
+-3 \\
+-6 \\
+-5 \\
+5
 \end{array}\right] \right\} \)is linearly independent.</li>
     </ol>
   </div>
@@ -5570,35 +6002,29 @@
 <h4>Example 41</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
-0 \\
-5 \\
-2 \\
--2 \\
--3
-\end{array}\right] , \left[\begin{array}{c}
--6 \\
-3 \\
--1 \\
-5 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
--2 \\
--4 \\
-3 \\
-0 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
-18 \\
--24 \\
--3 \\
--9 \\
-21
-\end{array}\right] , \left[\begin{array}{c}
--10 \\
-5 \\
-9 \\
 1 \\
--10
+-6 \\
+-2 \\
+5 \\
+3
+\end{array}\right] , \left[\begin{array}{c}
+0 \\
+3 \\
+-4 \\
+-4 \\
+-6
+\end{array}\right] , \left[\begin{array}{c}
+-3 \\
+-4 \\
+-5 \\
+4 \\
+5
+\end{array}\right] , \left[\begin{array}{c}
+4 \\
+-3 \\
+-3 \\
+-6 \\
+-4
 \end{array}\right] \right\} \)is linearly dependent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a vector equation.</li>
@@ -5609,67 +6035,70 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc|c}
+1 &amp; 0 &amp; -3 &amp; 4 &amp; 0 \\
+-6 &amp; 3 &amp; -4 &amp; -3 &amp; 0 \\
+-2 &amp; -4 &amp; -5 &amp; -3 &amp; 0 \\
+5 &amp; -4 &amp; 4 &amp; -6 &amp; 0 \\
+3 &amp; -6 &amp; 5 &amp; -4 &amp; 0
+\end{array}\right] = \left[\begin{array}{cccc|c}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
-0 \\
-5 \\
-2 \\
--2 \\
--3
-\end{array}\right] , \left[\begin{array}{c}
--6 \\
-3 \\
--1 \\
-5 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
--2 \\
--4 \\
-3 \\
-0 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
-18 \\
--24 \\
--3 \\
--9 \\
-21
-\end{array}\right] , \left[\begin{array}{c}
--10 \\
-5 \\
-9 \\
 1 \\
--10
+-6 \\
+-2 \\
+5 \\
+3
+\end{array}\right] , \left[\begin{array}{c}
+0 \\
+3 \\
+-4 \\
+-4 \\
+-6
+\end{array}\right] , \left[\begin{array}{c}
+-3 \\
+-4 \\
+-5 \\
+4 \\
+5
+\end{array}\right] , \left[\begin{array}{c}
+4 \\
+-3 \\
+-3 \\
+-6 \\
+-4
 \end{array}\right] \right\} \)is linearly dependent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
-0 \\
-5 \\
-2 \\
--2 \\
--3
-\end{array}\right] + x_{2} \left[\begin{array}{c}
--6 \\
-3 \\
--1 \\
-5 \\
--4
-\end{array}\right] + x_{3} \left[\begin{array}{c}
--2 \\
--4 \\
-3 \\
-0 \\
-0
-\end{array}\right] + x_{4} \left[\begin{array}{c}
-18 \\
--24 \\
--3 \\
--9 \\
-21
-\end{array}\right] + x_{5} \left[\begin{array}{c}
--10 \\
-5 \\
-9 \\
 1 \\
--10
+-6 \\
+-2 \\
+5 \\
+3
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+0 \\
+3 \\
+-4 \\
+-4 \\
+-6
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+-3 \\
+-4 \\
+-5 \\
+4 \\
+5
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+4 \\
+-3 \\
+-3 \\
+-6 \\
+-4
 \end{array}\right] = \left[\begin{array}{c}
 0 \\
 0 \\
@@ -5678,36 +6107,30 @@
 0
 \end{array}\right] \)has (infinitely many) nontrivial solutions.</p></li>
       <li> The set of vectors \( \left\{ \left[\begin{array}{c}
-0 \\
-5 \\
-2 \\
--2 \\
--3
-\end{array}\right] , \left[\begin{array}{c}
--6 \\
-3 \\
--1 \\
-5 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
--2 \\
--4 \\
-3 \\
-0 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
-18 \\
--24 \\
--3 \\
--9 \\
-21
-\end{array}\right] , \left[\begin{array}{c}
--10 \\
-5 \\
-9 \\
 1 \\
--10
-\end{array}\right] \right\} \)is linearly dependent.</li>
+-6 \\
+-2 \\
+5 \\
+3
+\end{array}\right] , \left[\begin{array}{c}
+0 \\
+3 \\
+-4 \\
+-4 \\
+-6
+\end{array}\right] , \left[\begin{array}{c}
+-3 \\
+-4 \\
+-5 \\
+4 \\
+5
+\end{array}\right] , \left[\begin{array}{c}
+4 \\
+-3 \\
+-3 \\
+-6 \\
+-4
+\end{array}\right] \right\} \)is linearly independent.</li>
     </ol>
   </div>
 </div>
@@ -5716,29 +6139,29 @@
 <h4>Example 42</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
--5 \\
--5 \\
-5 \\
--3 \\
--5
-\end{array}\right] , \left[\begin{array}{c}
-1 \\
--1 \\
-2 \\
 3 \\
+4 \\
+-5 \\
+-6 \\
+-3
+\end{array}\right] , \left[\begin{array}{c}
+2 \\
+1 \\
+5 \\
+1 \\
 -6
 \end{array}\right] , \left[\begin{array}{c}
-1 \\
--5 \\
--3 \\
 5 \\
-0
+-2 \\
+3 \\
+-3 \\
+4
 \end{array}\right] , \left[\begin{array}{c}
--14 \\
-2 \\
-12 \\
--22 \\
-2
+-6 \\
+5 \\
+-4 \\
+-2 \\
+-1
 \end{array}\right] \right\} \)is linearly dependent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a vector equation.</li>
@@ -5749,55 +6172,70 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc|c}
+3 &amp; 2 &amp; 5 &amp; -6 &amp; 0 \\
+4 &amp; 1 &amp; -2 &amp; 5 &amp; 0 \\
+-5 &amp; 5 &amp; 3 &amp; -4 &amp; 0 \\
+-6 &amp; 1 &amp; -3 &amp; -2 &amp; 0 \\
+-3 &amp; -6 &amp; 4 &amp; -1 &amp; 0
+\end{array}\right] = \left[\begin{array}{cccc|c}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
--5 \\
--5 \\
-5 \\
--3 \\
--5
-\end{array}\right] , \left[\begin{array}{c}
-1 \\
--1 \\
-2 \\
 3 \\
+4 \\
+-5 \\
+-6 \\
+-3
+\end{array}\right] , \left[\begin{array}{c}
+2 \\
+1 \\
+5 \\
+1 \\
 -6
 \end{array}\right] , \left[\begin{array}{c}
-1 \\
--5 \\
--3 \\
 5 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
--14 \\
-2 \\
-12 \\
--22 \\
-2
-\end{array}\right] \right\} \)is linearly dependent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
--5 \\
--5 \\
-5 \\
--3 \\
--5
-\end{array}\right] + x_{2} \left[\begin{array}{c}
-1 \\
--1 \\
-2 \\
+-2 \\
 3 \\
+-3 \\
+4
+\end{array}\right] , \left[\begin{array}{c}
+-6 \\
+5 \\
+-4 \\
+-2 \\
+-1
+\end{array}\right] \right\} \)is linearly dependent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
+3 \\
+4 \\
+-5 \\
+-6 \\
+-3
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+2 \\
+1 \\
+5 \\
+1 \\
 -6
 \end{array}\right] + x_{3} \left[\begin{array}{c}
-1 \\
--5 \\
--3 \\
 5 \\
-0
+-2 \\
+3 \\
+-3 \\
+4
 \end{array}\right] + x_{4} \left[\begin{array}{c}
--14 \\
-2 \\
-12 \\
--22 \\
-2
+-6 \\
+5 \\
+-4 \\
+-2 \\
+-1
 \end{array}\right] = \left[\begin{array}{c}
 0 \\
 0 \\
@@ -5806,30 +6244,30 @@
 0
 \end{array}\right] \)has (infinitely many) nontrivial solutions.</p></li>
       <li> The set of vectors \( \left\{ \left[\begin{array}{c}
--5 \\
--5 \\
-5 \\
--3 \\
--5
-\end{array}\right] , \left[\begin{array}{c}
-1 \\
--1 \\
-2 \\
 3 \\
+4 \\
+-5 \\
+-6 \\
+-3
+\end{array}\right] , \left[\begin{array}{c}
+2 \\
+1 \\
+5 \\
+1 \\
 -6
 \end{array}\right] , \left[\begin{array}{c}
-1 \\
--5 \\
--3 \\
 5 \\
-0
+-2 \\
+3 \\
+-3 \\
+4
 \end{array}\right] , \left[\begin{array}{c}
--14 \\
-2 \\
-12 \\
--22 \\
-2
-\end{array}\right] \right\} \)is linearly dependent.</li>
+-6 \\
+5 \\
+-4 \\
+-2 \\
+-1
+\end{array}\right] \right\} \)is linearly independent.</li>
     </ol>
   </div>
 </div>
@@ -5838,29 +6276,196 @@
 <h4>Example 43</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
+-6 \\
 -4 \\
-0 \\
+-2 \\
+1 \\
+4
+\end{array}\right] , \left[\begin{array}{c}
 2 \\
+1 \\
+-5 \\
+4 \\
+-3
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+-6 \\
+5 \\
+0 \\
+4
+\end{array}\right] , \left[\begin{array}{c}
 -3 \\
+-2 \\
+0 \\
+-5 \\
+-6
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+-5 \\
+1 \\
+-1 \\
 -5
+\end{array}\right] \right\} \)is linearly dependent.</p></p>
+    <ol type="a">
+      <li> Write an equivalent statement using a vector equation.</li>
+      <li> Explain why your statement is true or false.</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccccc|c}
+-6 &amp; 2 &amp; -2 &amp; -3 &amp; -2 &amp; 0 \\
+-4 &amp; 1 &amp; -6 &amp; -2 &amp; -5 &amp; 0 \\
+-2 &amp; -5 &amp; 5 &amp; 0 &amp; 1 &amp; 0 \\
+1 &amp; 4 &amp; 0 &amp; -5 &amp; -1 &amp; 0 \\
+4 &amp; -3 &amp; 4 &amp; -6 &amp; -5 &amp; 0
+\end{array}\right] = \left[\begin{array}{ccccc|c}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0
+\end{array}\right] \]</p>
+    </p>
+    <ol type="a">
+      <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
+-6 \\
+-4 \\
+-2 \\
+1 \\
+4
 \end{array}\right] , \left[\begin{array}{c}
 2 \\
--3 \\
--6 \\
--6 \\
-0
+1 \\
+-5 \\
+4 \\
+-3
 \end{array}\right] , \left[\begin{array}{c}
-0 \\
-3 \\
+-2 \\
 -6 \\
+5 \\
+0 \\
+4
+\end{array}\right] , \left[\begin{array}{c}
 -3 \\
+-2 \\
+0 \\
+-5 \\
+-6
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+-5 \\
+1 \\
+-1 \\
+-5
+\end{array}\right] \right\} \)is linearly dependent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
+-6 \\
+-4 \\
+-2 \\
+1 \\
+4
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+2 \\
+1 \\
+-5 \\
+4 \\
+-3
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+-2 \\
+-6 \\
+5 \\
+0 \\
+4
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+-3 \\
+-2 \\
+0 \\
+-5 \\
+-6
+\end{array}\right] + x_{5} \left[\begin{array}{c}
+-2 \\
+-5 \\
+1 \\
+-1 \\
+-5
+\end{array}\right] = \left[\begin{array}{c}
+0 \\
+0 \\
+0 \\
+0 \\
+0
+\end{array}\right] \)has (infinitely many) nontrivial solutions.</p></li>
+      <li> The set of vectors \( \left\{ \left[\begin{array}{c}
+-6 \\
+-4 \\
+-2 \\
+1 \\
+4
+\end{array}\right] , \left[\begin{array}{c}
+2 \\
+1 \\
+-5 \\
+4 \\
+-3
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+-6 \\
+5 \\
+0 \\
+4
+\end{array}\right] , \left[\begin{array}{c}
+-3 \\
+-2 \\
+0 \\
+-5 \\
+-6
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+-5 \\
+1 \\
+-1 \\
+-5
+\end{array}\right] \right\} \)is linearly independent.</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 44</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
+2 \\
+1 \\
+-2 \\
+-5 \\
 5
 \end{array}\right] , \left[\begin{array}{c}
-2 \\
 -5 \\
--1 \\
--3 \\
--6
+-2 \\
+-4 \\
+5 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
+1 \\
+2 \\
+0 \\
+-6 \\
+-5
+\end{array}\right] , \left[\begin{array}{c}
+-6 \\
+4 \\
+-6 \\
+3 \\
+5
+\end{array}\right] , \left[\begin{array}{c}
+3 \\
+3 \\
+-2 \\
+-11 \\
+0
 \end{array}\right] \right\} \)is linearly independent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a vector equation.</li>
@@ -5871,55 +6476,82 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccccc|c}
+2 &amp; -5 &amp; 1 &amp; -6 &amp; 3 &amp; 0 \\
+1 &amp; -2 &amp; 2 &amp; 4 &amp; 3 &amp; 0 \\
+-2 &amp; -4 &amp; 0 &amp; -6 &amp; -2 &amp; 0 \\
+-5 &amp; 5 &amp; -6 &amp; 3 &amp; -11 &amp; 0 \\
+5 &amp; 1 &amp; -5 &amp; 5 &amp; 0 &amp; 0
+\end{array}\right] = \left[\begin{array}{ccccc|c}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
--4 \\
-0 \\
 2 \\
--3 \\
--5
-\end{array}\right] , \left[\begin{array}{c}
-2 \\
--3 \\
--6 \\
--6 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
-0 \\
-3 \\
--6 \\
--3 \\
+1 \\
+-2 \\
+-5 \\
 5
 \end{array}\right] , \left[\begin{array}{c}
-2 \\
 -5 \\
--1 \\
--3 \\
--6
+-2 \\
+-4 \\
+5 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
+1 \\
+2 \\
+0 \\
+-6 \\
+-5
+\end{array}\right] , \left[\begin{array}{c}
+-6 \\
+4 \\
+-6 \\
+3 \\
+5
+\end{array}\right] , \left[\begin{array}{c}
+3 \\
+3 \\
+-2 \\
+-11 \\
+0
 \end{array}\right] \right\} \)is linearly independent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
--4 \\
-0 \\
 2 \\
--3 \\
--5
-\end{array}\right] + x_{2} \left[\begin{array}{c}
-2 \\
--3 \\
--6 \\
--6 \\
-0
-\end{array}\right] + x_{3} \left[\begin{array}{c}
-0 \\
-3 \\
--6 \\
--3 \\
-5
-\end{array}\right] + x_{4} \left[\begin{array}{c}
-2 \\
+1 \\
+-2 \\
 -5 \\
--1 \\
--3 \\
--6
+5
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+-5 \\
+-2 \\
+-4 \\
+5 \\
+1
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+1 \\
+2 \\
+0 \\
+-6 \\
+-5
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+-6 \\
+4 \\
+-6 \\
+3 \\
+5
+\end{array}\right] + x_{5} \left[\begin{array}{c}
+3 \\
+3 \\
+-2 \\
+-11 \\
+0
 \end{array}\right] = \left[\begin{array}{c}
 0 \\
 0 \\
@@ -5928,175 +6560,35 @@
 0
 \end{array}\right] \)has no nontrivial solutions.</p></li>
       <li> The set of vectors \( \left\{ \left[\begin{array}{c}
--4 \\
-0 \\
 2 \\
--3 \\
--5
-\end{array}\right] , \left[\begin{array}{c}
-2 \\
--3 \\
--6 \\
--6 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
-0 \\
-3 \\
--6 \\
--3 \\
+1 \\
+-2 \\
+-5 \\
 5
 \end{array}\right] , \left[\begin{array}{c}
-2 \\
 -5 \\
--1 \\
--3 \\
--6
-\end{array}\right] \right\} \)is linearly independent.</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 44</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
 -2 \\
+-4 \\
 5 \\
--2 \\
-4 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
+1 \\
+2 \\
+0 \\
+-6 \\
 -5
 \end{array}\right] , \left[\begin{array}{c}
--2 \\
-5 \\
--1 \\
-5 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
 -6 \\
--3 \\
--6 \\
-3 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
-0 \\
-0 \\
-2 \\
-2 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
--5 \\
-3 \\
--6 \\
--4 \\
-3
-\end{array}\right] \right\} \)is linearly dependent.</p></p>
-    <ol type="a">
-      <li> Write an equivalent statement using a vector equation.</li>
-      <li> Explain why your statement is true or false.</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
--2 \\
-5 \\
--2 \\
 4 \\
--5
-\end{array}\right] , \left[\begin{array}{c}
--2 \\
-5 \\
--1 \\
-5 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
--6 \\
--3 \\
 -6 \\
 3 \\
+5
+\end{array}\right] , \left[\begin{array}{c}
+3 \\
+3 \\
+-2 \\
+-11 \\
 0
-\end{array}\right] , \left[\begin{array}{c}
-0 \\
-0 \\
-2 \\
-2 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
--5 \\
-3 \\
--6 \\
--4 \\
-3
-\end{array}\right] \right\} \)is linearly dependent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
--2 \\
-5 \\
--2 \\
-4 \\
--5
-\end{array}\right] + x_{2} \left[\begin{array}{c}
--2 \\
-5 \\
--1 \\
-5 \\
--4
-\end{array}\right] + x_{3} \left[\begin{array}{c}
--6 \\
--3 \\
--6 \\
-3 \\
-0
-\end{array}\right] + x_{4} \left[\begin{array}{c}
-0 \\
-0 \\
-2 \\
-2 \\
-2
-\end{array}\right] + x_{5} \left[\begin{array}{c}
--5 \\
-3 \\
--6 \\
--4 \\
-3
-\end{array}\right] = \left[\begin{array}{c}
-0 \\
-0 \\
-0 \\
-0 \\
-0
-\end{array}\right] \)has (infinitely many) nontrivial solutions.</p></li>
-      <li> The set of vectors \( \left\{ \left[\begin{array}{c}
--2 \\
-5 \\
--2 \\
-4 \\
--5
-\end{array}\right] , \left[\begin{array}{c}
--2 \\
-5 \\
--1 \\
-5 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
--6 \\
--3 \\
--6 \\
-3 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
-0 \\
-0 \\
-2 \\
-2 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
--5 \\
-3 \\
--6 \\
--4 \\
-3
 \end{array}\right] \right\} \)is linearly dependent.</li>
     </ol>
   </div>
@@ -6107,29 +6599,29 @@
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
 2 \\
--6 \\
-2 \\
-1 \\
+3 \\
+-2 \\
+-2 \\
 0
 \end{array}\right] , \left[\begin{array}{c}
--2 \\
-2 \\
-2 \\
--4 \\
--5
-\end{array}\right] , \left[\begin{array}{c}
+-3 \\
+5 \\
 -2 \\
 4 \\
--3 \\
--2 \\
--5
+3
 \end{array}\right] , \left[\begin{array}{c}
-6 \\
--4 \\
-1 \\
-12 \\
-25
-\end{array}\right] \right\} \)is linearly independent.</p></p>
+0 \\
+2 \\
+4 \\
+4 \\
+-6
+\end{array}\right] , \left[\begin{array}{c}
+5 \\
+-25 \\
+2 \\
+-16 \\
+3
+\end{array}\right] \right\} \)is linearly dependent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a vector equation.</li>
       <li> Explain why your statement is true or false.</li>
@@ -6139,86 +6631,101 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc|c}
+2 &amp; -3 &amp; 0 &amp; 5 &amp; 0 \\
+3 &amp; 5 &amp; 2 &amp; -25 &amp; 0 \\
+-2 &amp; -2 &amp; 4 &amp; 2 &amp; 0 \\
+-2 &amp; 4 &amp; 4 &amp; -16 &amp; 0 \\
+0 &amp; 3 &amp; -6 &amp; 3 &amp; 0
+\end{array}\right] = \left[\begin{array}{cccc|c}
+1 &amp; 0 &amp; 0 &amp; -2 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; -3 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; -2 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
 2 \\
--6 \\
-2 \\
-1 \\
+3 \\
+-2 \\
+-2 \\
 0
 \end{array}\right] , \left[\begin{array}{c}
--2 \\
-2 \\
-2 \\
--4 \\
--5
-\end{array}\right] , \left[\begin{array}{c}
+-3 \\
+5 \\
 -2 \\
 4 \\
--3 \\
--2 \\
--5
+3
 \end{array}\right] , \left[\begin{array}{c}
-6 \\
--4 \\
-1 \\
-12 \\
-25
-\end{array}\right] \right\} \)is linearly independent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
+0 \\
 2 \\
--6 \\
+4 \\
+4 \\
+-6
+\end{array}\right] , \left[\begin{array}{c}
+5 \\
+-25 \\
 2 \\
-1 \\
+-16 \\
+3
+\end{array}\right] \right\} \)is linearly dependent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
+2 \\
+3 \\
+-2 \\
+-2 \\
 0
 \end{array}\right] + x_{2} \left[\begin{array}{c}
--2 \\
-2 \\
-2 \\
--4 \\
--5
-\end{array}\right] + x_{3} \left[\begin{array}{c}
+-3 \\
+5 \\
 -2 \\
 4 \\
--3 \\
--2 \\
--5
+3
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+0 \\
+2 \\
+4 \\
+4 \\
+-6
 \end{array}\right] + x_{4} \left[\begin{array}{c}
-6 \\
--4 \\
-1 \\
-12 \\
-25
+5 \\
+-25 \\
+2 \\
+-16 \\
+3
 \end{array}\right] = \left[\begin{array}{c}
 0 \\
 0 \\
 0 \\
 0 \\
 0
-\end{array}\right] \)has no nontrivial solutions.</p></li>
+\end{array}\right] \)has (infinitely many) nontrivial solutions.</p></li>
       <li> The set of vectors \( \left\{ \left[\begin{array}{c}
 2 \\
--6 \\
-2 \\
-1 \\
+3 \\
+-2 \\
+-2 \\
 0
 \end{array}\right] , \left[\begin{array}{c}
--2 \\
-2 \\
-2 \\
--4 \\
--5
-\end{array}\right] , \left[\begin{array}{c}
+-3 \\
+5 \\
 -2 \\
 4 \\
--3 \\
--2 \\
--5
+3
 \end{array}\right] , \left[\begin{array}{c}
-6 \\
--4 \\
-1 \\
-12 \\
-25
+0 \\
+2 \\
+4 \\
+4 \\
+-6
+\end{array}\right] , \left[\begin{array}{c}
+5 \\
+-25 \\
+2 \\
+-16 \\
+3
 \end{array}\right] \right\} \)is linearly dependent.</li>
     </ol>
   </div>
@@ -6228,35 +6735,35 @@
 <h4>Example 46</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
-4 \\
--5 \\
 3 \\
-1 \\
-0
+-1 \\
+3 \\
+-1 \\
+-3
 \end{array}\right] , \left[\begin{array}{c}
 -5 \\
--1 \\
--4 \\
--4 \\
-4
-\end{array}\right] , \left[\begin{array}{c}
+5 \\
 2 \\
 1 \\
--3 \\
--4 \\
 -6
 \end{array}\right] , \left[\begin{array}{c}
+-4 \\
+-5 \\
+-1 \\
 -3 \\
-11 \\
--2 \\
-2 \\
--4
+-3
 \end{array}\right] , \left[\begin{array}{c}
--1 \\
--6 \\
--1 \\
+4 \\
 -3 \\
-4
+5 \\
+5 \\
+-3
+\end{array}\right] , \left[\begin{array}{c}
+4 \\
+0 \\
+4 \\
+-3 \\
+2
 \end{array}\right] \right\} \)is linearly independent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a vector equation.</li>
@@ -6267,67 +6774,82 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccccc|c}
+3 &amp; -5 &amp; -4 &amp; 4 &amp; 4 &amp; 0 \\
+-1 &amp; 5 &amp; -5 &amp; -3 &amp; 0 &amp; 0 \\
+3 &amp; 2 &amp; -1 &amp; 5 &amp; 4 &amp; 0 \\
+-1 &amp; 1 &amp; -3 &amp; 5 &amp; -3 &amp; 0 \\
+-3 &amp; -6 &amp; -3 &amp; -3 &amp; 2 &amp; 0
+\end{array}\right] = \left[\begin{array}{ccccc|c}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
-4 \\
--5 \\
 3 \\
-1 \\
-0
+-1 \\
+3 \\
+-1 \\
+-3
 \end{array}\right] , \left[\begin{array}{c}
 -5 \\
--1 \\
--4 \\
--4 \\
-4
-\end{array}\right] , \left[\begin{array}{c}
+5 \\
 2 \\
 1 \\
--3 \\
--4 \\
 -6
 \end{array}\right] , \left[\begin{array}{c}
--3 \\
-11 \\
--2 \\
-2 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
--6 \\
--1 \\
--3 \\
-4
-\end{array}\right] \right\} \)is linearly independent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
-4 \\
+-4 \\
 -5 \\
+-1 \\
+-3 \\
+-3
+\end{array}\right] , \left[\begin{array}{c}
+4 \\
+-3 \\
+5 \\
+5 \\
+-3
+\end{array}\right] , \left[\begin{array}{c}
+4 \\
+0 \\
+4 \\
+-3 \\
+2
+\end{array}\right] \right\} \)is linearly independent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
 3 \\
-1 \\
-0
+-1 \\
+3 \\
+-1 \\
+-3
 \end{array}\right] + x_{2} \left[\begin{array}{c}
 -5 \\
--1 \\
--4 \\
--4 \\
-4
-\end{array}\right] + x_{3} \left[\begin{array}{c}
+5 \\
 2 \\
 1 \\
--3 \\
--4 \\
 -6
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+-4 \\
+-5 \\
+-1 \\
+-3 \\
+-3
 \end{array}\right] + x_{4} \left[\begin{array}{c}
+4 \\
 -3 \\
-11 \\
--2 \\
-2 \\
--4
+5 \\
+5 \\
+-3
 \end{array}\right] + x_{5} \left[\begin{array}{c}
--1 \\
--6 \\
--1 \\
+4 \\
+0 \\
+4 \\
 -3 \\
-4
+2
 \end{array}\right] = \left[\begin{array}{c}
 0 \\
 0 \\
@@ -6336,36 +6858,36 @@
 0
 \end{array}\right] \)has no nontrivial solutions.</p></li>
       <li> The set of vectors \( \left\{ \left[\begin{array}{c}
-4 \\
--5 \\
 3 \\
-1 \\
-0
+-1 \\
+3 \\
+-1 \\
+-3
 \end{array}\right] , \left[\begin{array}{c}
 -5 \\
--1 \\
--4 \\
--4 \\
-4
-\end{array}\right] , \left[\begin{array}{c}
+5 \\
 2 \\
 1 \\
--3 \\
--4 \\
 -6
 \end{array}\right] , \left[\begin{array}{c}
+-4 \\
+-5 \\
+-1 \\
 -3 \\
-11 \\
--2 \\
-2 \\
--4
+-3
 \end{array}\right] , \left[\begin{array}{c}
--1 \\
--6 \\
--1 \\
+4 \\
 -3 \\
-4
-\end{array}\right] \right\} \)is linearly dependent.</li>
+5 \\
+5 \\
+-3
+\end{array}\right] , \left[\begin{array}{c}
+4 \\
+0 \\
+4 \\
+-3 \\
+2
+\end{array}\right] \right\} \)is linearly independent.</li>
     </ol>
   </div>
 </div>
@@ -6374,30 +6896,30 @@
 <h4>Example 47</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
+2 \\
 3 \\
 -1 \\
--2 \\
--3 \\
-4
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
--2 \\
--4 \\
-3 \\
+-6 \\
 -1
 \end{array}\right] , \left[\begin{array}{c}
-3 \\
-6 \\
-12 \\
--9 \\
-3
+0 \\
+-4 \\
+-6 \\
+4 \\
+-3
 \end{array}\right] , \left[\begin{array}{c}
 -2 \\
-6 \\
+-5 \\
+2 \\
+0 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
+0 \\
 -4 \\
--4 \\
-0
-\end{array}\right] \right\} \)is linearly independent.</p></p>
+-6 \\
+4 \\
+-3
+\end{array}\right] \right\} \)is linearly dependent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a vector equation.</li>
       <li> Explain why your statement is true or false.</li>
@@ -6407,86 +6929,101 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc|c}
+2 &amp; 0 &amp; -2 &amp; 0 &amp; 0 \\
+3 &amp; -4 &amp; -5 &amp; -4 &amp; 0 \\
+-1 &amp; -6 &amp; 2 &amp; -6 &amp; 0 \\
+-6 &amp; 4 &amp; 0 &amp; 4 &amp; 0 \\
+-1 &amp; -3 &amp; 1 &amp; -3 &amp; 0
+\end{array}\right] = \left[\begin{array}{cccc|c}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
+2 \\
 3 \\
 -1 \\
--2 \\
--3 \\
-4
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
--2 \\
--4 \\
-3 \\
+-6 \\
 -1
 \end{array}\right] , \left[\begin{array}{c}
-3 \\
-6 \\
-12 \\
--9 \\
-3
+0 \\
+-4 \\
+-6 \\
+4 \\
+-3
 \end{array}\right] , \left[\begin{array}{c}
 -2 \\
-6 \\
+-5 \\
+2 \\
+0 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
+0 \\
 -4 \\
--4 \\
-0
-\end{array}\right] \right\} \)is linearly independent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
+-6 \\
+4 \\
+-3
+\end{array}\right] \right\} \)is linearly dependent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
+2 \\
 3 \\
 -1 \\
--2 \\
--3 \\
-4
+-6 \\
+-1
 \end{array}\right] + x_{2} \left[\begin{array}{c}
--1 \\
--2 \\
+0 \\
 -4 \\
-3 \\
--1
+-6 \\
+4 \\
+-3
 \end{array}\right] + x_{3} \left[\begin{array}{c}
-3 \\
-6 \\
-12 \\
--9 \\
-3
-\end{array}\right] + x_{4} \left[\begin{array}{c}
 -2 \\
-6 \\
+-5 \\
+2 \\
+0 \\
+1
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+0 \\
 -4 \\
--4 \\
-0
+-6 \\
+4 \\
+-3
 \end{array}\right] = \left[\begin{array}{c}
 0 \\
 0 \\
 0 \\
 0 \\
 0
-\end{array}\right] \)has no nontrivial solutions.</p></li>
+\end{array}\right] \)has (infinitely many) nontrivial solutions.</p></li>
       <li> The set of vectors \( \left\{ \left[\begin{array}{c}
+2 \\
 3 \\
 -1 \\
--2 \\
--3 \\
-4
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
--2 \\
--4 \\
-3 \\
+-6 \\
 -1
 \end{array}\right] , \left[\begin{array}{c}
-3 \\
-6 \\
-12 \\
--9 \\
-3
+0 \\
+-4 \\
+-6 \\
+4 \\
+-3
 \end{array}\right] , \left[\begin{array}{c}
 -2 \\
-6 \\
+-5 \\
+2 \\
+0 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
+0 \\
 -4 \\
--4 \\
-0
+-6 \\
+4 \\
+-3
 \end{array}\right] \right\} \)is linearly dependent.</li>
     </ol>
   </div>
@@ -6496,35 +7033,29 @@
 <h4>Example 48</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
-0 \\
-0 \\
-2 \\
--1 \\
--2
-\end{array}\right] , \left[\begin{array}{c}
-5 \\
+-4 \\
 -6 \\
-2 \\
 -2 \\
-1
+0 \\
+4
 \end{array}\right] , \left[\begin{array}{c}
 2 \\
--2 \\
-5 \\
--3 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
--2 \\
-2 \\
-1 \\
--3 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
-1 \\
 -6 \\
+1 \\
+-2 \\
+-4
+\end{array}\right] , \left[\begin{array}{c}
+2 \\
+4 \\
 3 \\
--6 \\
+-3 \\
 2
+\end{array}\right] , \left[\begin{array}{c}
+-10 \\
+-6 \\
+-5 \\
+2 \\
+12
 \end{array}\right] \right\} \)is linearly dependent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a vector equation.</li>
@@ -6535,67 +7066,70 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc|c}
+-4 &amp; 2 &amp; 2 &amp; -10 &amp; 0 \\
+-6 &amp; -6 &amp; 4 &amp; -6 &amp; 0 \\
+-2 &amp; 1 &amp; 3 &amp; -5 &amp; 0 \\
+0 &amp; -2 &amp; -3 &amp; 2 &amp; 0 \\
+4 &amp; -4 &amp; 2 &amp; 12 &amp; 0
+\end{array}\right] = \left[\begin{array}{cccc|c}
+1 &amp; 0 &amp; 0 &amp; 2 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; -1 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
-0 \\
-0 \\
-2 \\
--1 \\
--2
-\end{array}\right] , \left[\begin{array}{c}
-5 \\
+-4 \\
 -6 \\
-2 \\
 -2 \\
-1
+0 \\
+4
 \end{array}\right] , \left[\begin{array}{c}
 2 \\
--2 \\
-5 \\
--3 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
--2 \\
-2 \\
-1 \\
--3 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
-1 \\
 -6 \\
+1 \\
+-2 \\
+-4
+\end{array}\right] , \left[\begin{array}{c}
+2 \\
+4 \\
 3 \\
--6 \\
+-3 \\
 2
-\end{array}\right] \right\} \)is linearly dependent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
-0 \\
-0 \\
-2 \\
--1 \\
--2
-\end{array}\right] + x_{2} \left[\begin{array}{c}
-5 \\
+\end{array}\right] , \left[\begin{array}{c}
+-10 \\
 -6 \\
+-5 \\
 2 \\
+12
+\end{array}\right] \right\} \)is linearly dependent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
+-4 \\
+-6 \\
 -2 \\
-1
+0 \\
+4
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+2 \\
+-6 \\
+1 \\
+-2 \\
+-4
 \end{array}\right] + x_{3} \left[\begin{array}{c}
 2 \\
--2 \\
-5 \\
--3 \\
-1
-\end{array}\right] + x_{4} \left[\begin{array}{c}
--2 \\
-2 \\
-1 \\
--3 \\
--1
-\end{array}\right] + x_{5} \left[\begin{array}{c}
-1 \\
--6 \\
+4 \\
 3 \\
--6 \\
+-3 \\
 2
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+-10 \\
+-6 \\
+-5 \\
+2 \\
+12
 \end{array}\right] = \left[\begin{array}{c}
 0 \\
 0 \\
@@ -6604,36 +7138,30 @@
 0
 \end{array}\right] \)has (infinitely many) nontrivial solutions.</p></li>
       <li> The set of vectors \( \left\{ \left[\begin{array}{c}
-0 \\
-0 \\
-2 \\
--1 \\
--2
-\end{array}\right] , \left[\begin{array}{c}
-5 \\
+-4 \\
 -6 \\
-2 \\
 -2 \\
-1
+0 \\
+4
 \end{array}\right] , \left[\begin{array}{c}
 2 \\
--2 \\
-5 \\
--3 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
--2 \\
-2 \\
-1 \\
--3 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
-1 \\
 -6 \\
+1 \\
+-2 \\
+-4
+\end{array}\right] , \left[\begin{array}{c}
+2 \\
+4 \\
 3 \\
--6 \\
+-3 \\
 2
-\end{array}\right] \right\} \)is linearly independent.</li>
+\end{array}\right] , \left[\begin{array}{c}
+-10 \\
+-6 \\
+-5 \\
+2 \\
+12
+\end{array}\right] \right\} \)is linearly dependent.</li>
     </ol>
   </div>
 </div>
@@ -6643,150 +7171,28 @@
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
 2 \\
-0 \\
-5 \\
-1 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
-1 \\
+4 \\
+4 \\
 -4 \\
--3 \\
--3 \\
-1
+3
 \end{array}\right] , \left[\begin{array}{c}
-0 \\
-0 \\
-5 \\
-5 \\
+-4 \\
+-1 \\
+4 \\
+-4 \\
 -5
 \end{array}\right] , \left[\begin{array}{c}
--1 \\
--3 \\
--5 \\
-1 \\
-1
-\end{array}\right] \right\} \)is linearly independent.</p></p>
-    <ol type="a">
-      <li> Write an equivalent statement using a vector equation.</li>
-      <li> Explain why your statement is true or false.</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
-2 \\
-0 \\
-5 \\
-1 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
-1 \\
 -4 \\
 -3 \\
--3 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
-0 \\
-0 \\
-5 \\
-5 \\
--5
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
--3 \\
--5 \\
-1 \\
-1
-\end{array}\right] \right\} \)is linearly independent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
-2 \\
-0 \\
-5 \\
-1 \\
-2
-\end{array}\right] + x_{2} \left[\begin{array}{c}
-1 \\
--4 \\
--3 \\
--3 \\
-1
-\end{array}\right] + x_{3} \left[\begin{array}{c}
-0 \\
-0 \\
-5 \\
-5 \\
--5
-\end{array}\right] + x_{4} \left[\begin{array}{c}
--1 \\
--3 \\
--5 \\
-1 \\
-1
-\end{array}\right] = \left[\begin{array}{c}
-0 \\
-0 \\
-0 \\
-0 \\
-0
-\end{array}\right] \)has no nontrivial solutions.</p></li>
-      <li> The set of vectors \( \left\{ \left[\begin{array}{c}
-2 \\
-0 \\
-5 \\
-1 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
-1 \\
--4 \\
--3 \\
--3 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
-0 \\
-0 \\
-5 \\
-5 \\
--5
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
--3 \\
--5 \\
-1 \\
-1
-\end{array}\right] \right\} \)is linearly independent.</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 50</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
--2 \\
-5 \\
-1 \\
--1 \\
--6
-\end{array}\right] , \left[\begin{array}{c}
-0 \\
--2 \\
--4 \\
-0 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
-0 \\
--4 \\
--8 \\
-0 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
-6 \\
--15 \\
--3 \\
+-6 \\
 3 \\
-18
+-4
+\end{array}\right] , \left[\begin{array}{c}
+8 \\
+2 \\
+-8 \\
+8 \\
+10
 \end{array}\right] \right\} \)is linearly dependent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a vector equation.</li>
@@ -6797,55 +7203,70 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc|c}
+2 &amp; -4 &amp; -4 &amp; 8 &amp; 0 \\
+4 &amp; -1 &amp; -3 &amp; 2 &amp; 0 \\
+4 &amp; 4 &amp; -6 &amp; -8 &amp; 0 \\
+-4 &amp; -4 &amp; 3 &amp; 8 &amp; 0 \\
+3 &amp; -5 &amp; -4 &amp; 10 &amp; 0
+\end{array}\right] = \left[\begin{array}{cccc|c}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; -2 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
--2 \\
-5 \\
-1 \\
+2 \\
+4 \\
+4 \\
+-4 \\
+3
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
 -1 \\
--6
-\end{array}\right] , \left[\begin{array}{c}
-0 \\
--2 \\
+4 \\
 -4 \\
-0 \\
-0
+-5
 \end{array}\right] , \left[\begin{array}{c}
-0 \\
 -4 \\
--8 \\
-0 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
-6 \\
--15 \\
 -3 \\
+-6 \\
 3 \\
-18
+-4
+\end{array}\right] , \left[\begin{array}{c}
+8 \\
+2 \\
+-8 \\
+8 \\
+10
 \end{array}\right] \right\} \)is linearly dependent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
--2 \\
-5 \\
-1 \\
--1 \\
--6
+2 \\
+4 \\
+4 \\
+-4 \\
+3
 \end{array}\right] + x_{2} \left[\begin{array}{c}
-0 \\
--2 \\
 -4 \\
-0 \\
-0
+-1 \\
+4 \\
+-4 \\
+-5
 \end{array}\right] + x_{3} \left[\begin{array}{c}
-0 \\
 -4 \\
--8 \\
-0 \\
-0
-\end{array}\right] + x_{4} \left[\begin{array}{c}
-6 \\
--15 \\
 -3 \\
+-6 \\
 3 \\
-18
+-4
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+8 \\
+2 \\
+-8 \\
+8 \\
+10
 \end{array}\right] = \left[\begin{array}{c}
 0 \\
 0 \\
@@ -6854,30 +7275,167 @@
 0
 \end{array}\right] \)has (infinitely many) nontrivial solutions.</p></li>
       <li> The set of vectors \( \left\{ \left[\begin{array}{c}
--2 \\
+2 \\
+4 \\
+4 \\
+-4 \\
+3
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
+-1 \\
+4 \\
+-4 \\
+-5
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
+-3 \\
+-6 \\
+3 \\
+-4
+\end{array}\right] , \left[\begin{array}{c}
+8 \\
+2 \\
+-8 \\
+8 \\
+10
+\end{array}\right] \right\} \)is linearly dependent.</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 50</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Consider the statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
+-5 \\
+-6 \\
 5 \\
+-6 \\
+4
+\end{array}\right] , \left[\begin{array}{c}
+5 \\
+-1 \\
+-6 \\
+1 \\
+3
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+-5 \\
 1 \\
 -1 \\
--6
+2
 \end{array}\right] , \left[\begin{array}{c}
-0 \\
--2 \\
--4 \\
-0 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
-0 \\
--4 \\
--8 \\
-0 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
-6 \\
--15 \\
 -3 \\
-3 \\
-18
-\end{array}\right] \right\} \)is linearly dependent.</li>
+2 \\
+-2 \\
+-1 \\
+-4
+\end{array}\right] \right\} \)is linearly dependent.</p></p>
+    <ol type="a">
+      <li> Write an equivalent statement using a vector equation.</li>
+      <li> Explain why your statement is true or false.</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc|c}
+-5 &amp; 5 &amp; -2 &amp; -3 &amp; 0 \\
+-6 &amp; -1 &amp; -5 &amp; 2 &amp; 0 \\
+5 &amp; -6 &amp; 1 &amp; -2 &amp; 0 \\
+-6 &amp; 1 &amp; -1 &amp; -1 &amp; 0 \\
+4 &amp; 3 &amp; 2 &amp; -4 &amp; 0
+\end{array}\right] = \left[\begin{array}{cccc|c}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
+    <ol type="a">
+      <li>The statement <p> The set of vectors \( \left\{ \left[\begin{array}{c}
+-5 \\
+-6 \\
+5 \\
+-6 \\
+4
+\end{array}\right] , \left[\begin{array}{c}
+5 \\
+-1 \\
+-6 \\
+1 \\
+3
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+-5 \\
+1 \\
+-1 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
+-3 \\
+2 \\
+-2 \\
+-1 \\
+-4
+\end{array}\right] \right\} \)is linearly dependent.</p> is equivalent to the statement <p> The vector equation \( x_{1} \left[\begin{array}{c}
+-5 \\
+-6 \\
+5 \\
+-6 \\
+4
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+5 \\
+-1 \\
+-6 \\
+1 \\
+3
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+-2 \\
+-5 \\
+1 \\
+-1 \\
+2
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+-3 \\
+2 \\
+-2 \\
+-1 \\
+-4
+\end{array}\right] = \left[\begin{array}{c}
+0 \\
+0 \\
+0 \\
+0 \\
+0
+\end{array}\right] \)has (infinitely many) nontrivial solutions.</p></li>
+      <li> The set of vectors \( \left\{ \left[\begin{array}{c}
+-5 \\
+-6 \\
+5 \\
+-6 \\
+4
+\end{array}\right] , \left[\begin{array}{c}
+5 \\
+-1 \\
+-6 \\
+1 \\
+3
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+-5 \\
+1 \\
+-1 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
+-3 \\
+2 \\
+-2 \\
+-1 \\
+-4
+\end{array}\right] \right\} \)is linearly independent.</li>
     </ol>
   </div>
 </div>

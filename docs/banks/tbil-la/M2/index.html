@@ -139,9 +139,9 @@
   <div class="exercise-statement">
     <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
     <ol type="a">
-      <li>Give a \(4 \times 4\) matrix \(B\) that may be used to perform the row operation \( R_2 \to -3R_2 \).</li>
-      <li>Give a \(4 \times 4\) matrix \(P\) that may be used to perform the row operation \( R_3 \leftrightarrow R_4 \).</li>
-      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_3 \leftrightarrow R_4 \) and then \( R_2 \to -3R_2 \) to \(A\) (note the order). </li>
+      <li>Give a \(4 \times 4\) matrix \(B\) that may be used to perform the row operation \( R_3 \to R_3 + 5R_1 \).</li>
+      <li>Give a \(4 \times 4\) matrix \(Q\) that may be used to perform the row operation \( R_2 \to -4R_2 \).</li>
+      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_3 \to R_3 + 5R_1 \) and then \( R_2 \to -4R_2 \) to \(A\) (note the order). </li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -151,17 +151,17 @@
     <ol type="a">
       <li>\(B= \left[\begin{array}{cccc}
 1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; -3 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+5 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(Q= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; -4 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 1 &amp; 0 \\
 0 &amp; 0 &amp; 0 &amp; 1
 \end{array}\right] \)</li>
-      <li>\(P= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1 \\
-0 &amp; 0 &amp; 1 &amp; 0
-\end{array}\right] \)</li>
-      <li>\(BPA\)</li>
+      <li>\(QBA\)</li>
     </ol>
   </div>
 </div>
@@ -171,9 +171,9 @@
   <div class="exercise-statement">
     <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
     <ol type="a">
-      <li>Give a \(4 \times 4\) matrix \(M\) that may be used to perform the row operation \( R_1 \to 4R_1 \).</li>
-      <li>Give a \(4 \times 4\) matrix \(P\) that may be used to perform the row operation \( R_1 \leftrightarrow R_4 \).</li>
-      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_1 \to 4R_1 \) and then \( R_1 \leftrightarrow R_4 \) to \(A\) (note the order). </li>
+      <li>Give a \(4 \times 4\) matrix \(M\) that may be used to perform the row operation \( R_4 \to R_4 + -4R_1 \).</li>
+      <li>Give a \(4 \times 4\) matrix \(N\) that may be used to perform the row operation \( R_1 \leftrightarrow R_3 \).</li>
+      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_4 \to R_4 + -4R_1 \) and then \( R_1 \leftrightarrow R_3 \) to \(A\) (note the order). </li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -182,18 +182,18 @@
     </p>
     <ol type="a">
       <li>\(M= \left[\begin{array}{cccc}
-4 &amp; 0 &amp; 0 &amp; 0 \\
+1 &amp; 0 &amp; 0 &amp; 0 \\
 0 &amp; 1 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 1 &amp; 0 \\
+-4 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(N= \left[\begin{array}{cccc}
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+1 &amp; 0 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 0 &amp; 1
 \end{array}\right] \)</li>
-      <li>\(P= \left[\begin{array}{cccc}
-0 &amp; 0 &amp; 0 &amp; 1 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-1 &amp; 0 &amp; 0 &amp; 0
-\end{array}\right] \)</li>
-      <li>\(PMA\)</li>
+      <li>\(NMA\)</li>
     </ol>
   </div>
 </div>
@@ -203,9 +203,9 @@
   <div class="exercise-statement">
     <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
     <ol type="a">
-      <li>Give a \(4 \times 4\) matrix \(N\) that may be used to perform the row operation \( R_2 \leftrightarrow R_3 \).</li>
-      <li>Give a \(4 \times 4\) matrix \(C\) that may be used to perform the row operation \( R_1 \to R_1 + 3R_4 \).</li>
-      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_1 \to R_1 + 3R_4 \) and then \( R_2 \leftrightarrow R_3 \) to \(A\) (note the order). </li>
+      <li>Give a \(4 \times 4\) matrix \(N\) that may be used to perform the row operation \( R_2 \to R_2 + 4R_4 \).</li>
+      <li>Give a \(4 \times 4\) matrix \(C\) that may be used to perform the row operation \( R_4 \to -3R_4 \).</li>
+      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_2 \to R_2 + 4R_4 \) and then \( R_4 \to -3R_4 \) to \(A\) (note the order). </li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -215,17 +215,17 @@
     <ol type="a">
       <li>\(N= \left[\begin{array}{cccc}
 1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 4 \\
 0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 0 &amp; 1
 \end{array}\right] \)</li>
       <li>\(C= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 3 \\
+1 &amp; 0 &amp; 0 &amp; 0 \\
 0 &amp; 1 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
+0 &amp; 0 &amp; 0 &amp; -3
 \end{array}\right] \)</li>
-      <li>\(NCA\)</li>
+      <li>\(CNA\)</li>
     </ol>
   </div>
 </div>
@@ -235,73 +235,9 @@
   <div class="exercise-statement">
     <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
     <ol type="a">
-      <li>Give a \(4 \times 4\) matrix \(M\) that may be used to perform the row operation \( R_4 \to R_4 + -3R_1 \).</li>
-      <li>Give a \(4 \times 4\) matrix \(B\) that may be used to perform the row operation \( R_1 \leftrightarrow R_2 \).</li>
-      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_1 \leftrightarrow R_2 \) and then \( R_4 \to R_4 + -3R_1 \) to \(A\) (note the order). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(M= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
--3 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(B= \left[\begin{array}{cccc}
-0 &amp; 1 &amp; 0 &amp; 0 \\
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(MBA\)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 5</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
-    <ol type="a">
-      <li>Give a \(4 \times 4\) matrix \(N\) that may be used to perform the row operation \( R_1 \to -2R_1 \).</li>
-      <li>Give a \(4 \times 4\) matrix \(M\) that may be used to perform the row operation \( R_4 \leftrightarrow R_2 \).</li>
-      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_1 \to -2R_1 \) and then \( R_4 \leftrightarrow R_2 \) to \(A\) (note the order). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(N= \left[\begin{array}{cccc}
--2 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(M= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0
-\end{array}\right] \)</li>
-      <li>\(MNA\)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 6</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
-    <ol type="a">
-      <li>Give a \(4 \times 4\) matrix \(P\) that may be used to perform the row operation \( R_2 \to R_2 + -5R_3 \).</li>
-      <li>Give a \(4 \times 4\) matrix \(C\) that may be used to perform the row operation \( R_1 \to -4R_1 \).</li>
-      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_1 \to -4R_1 \) and then \( R_2 \to R_2 + -5R_3 \) to \(A\) (note the order). </li>
+      <li>Give a \(4 \times 4\) matrix \(P\) that may be used to perform the row operation \( R_4 \to R_4 + -3R_2 \).</li>
+      <li>Give a \(4 \times 4\) matrix \(M\) that may be used to perform the row operation \( R_2 \to 3R_2 \).</li>
+      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_2 \to 3R_2 \) and then \( R_4 \to R_4 + -3R_2 \) to \(A\) (note the order). </li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -311,14 +247,78 @@
     <ol type="a">
       <li>\(P= \left[\begin{array}{cccc}
 1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; -5 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; -3 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(M= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 3 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 1 &amp; 0 \\
 0 &amp; 0 &amp; 0 &amp; 1
 \end{array}\right] \)</li>
+      <li>\(PMA\)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 5</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
+    <ol type="a">
+      <li>Give a \(4 \times 4\) matrix \(C\) that may be used to perform the row operation \( R_4 \leftrightarrow R_3 \).</li>
+      <li>Give a \(4 \times 4\) matrix \(B\) that may be used to perform the row operation \( R_3 \to 3R_3 \).</li>
+      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_4 \leftrightarrow R_3 \) and then \( R_3 \to 3R_3 \) to \(A\) (note the order). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
       <li>\(C= \left[\begin{array}{cccc}
--4 &amp; 0 &amp; 0 &amp; 0 \\
+1 &amp; 0 &amp; 0 &amp; 0 \\
 0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 1 &amp; 0
+\end{array}\right] \)</li>
+      <li>\(B= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 3 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(BCA\)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 6</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
+    <ol type="a">
+      <li>Give a \(4 \times 4\) matrix \(C\) that may be used to perform the row operation \( R_1 \leftrightarrow R_2 \).</li>
+      <li>Give a \(4 \times 4\) matrix \(P\) that may be used to perform the row operation \( R_3 \to -2R_3 \).</li>
+      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_1 \leftrightarrow R_2 \) and then \( R_3 \to -2R_3 \) to \(A\) (note the order). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(C= \left[\begin{array}{cccc}
+0 &amp; 1 &amp; 0 &amp; 0 \\
+1 &amp; 0 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(P= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; -2 &amp; 0 \\
 0 &amp; 0 &amp; 0 &amp; 1
 \end{array}\right] \)</li>
       <li>\(PCA\)</li>
@@ -331,9 +331,9 @@
   <div class="exercise-statement">
     <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
     <ol type="a">
-      <li>Give a \(4 \times 4\) matrix \(B\) that may be used to perform the row operation \( R_4 \to R_4 + 4R_2 \).</li>
-      <li>Give a \(4 \times 4\) matrix \(Q\) that may be used to perform the row operation \( R_3 \leftrightarrow R_2 \).</li>
-      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_4 \to R_4 + 4R_2 \) and then \( R_3 \leftrightarrow R_2 \) to \(A\) (note the order). </li>
+      <li>Give a \(4 \times 4\) matrix \(M\) that may be used to perform the row operation \( R_3 \to -4R_3 \).</li>
+      <li>Give a \(4 \times 4\) matrix \(Q\) that may be used to perform the row operation \( R_4 \to R_4 + 4R_2 \).</li>
+      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_3 \to -4R_3 \) and then \( R_4 \to R_4 + 4R_2 \) to \(A\) (note the order). </li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -341,19 +341,19 @@
       <b>Answer:</b>
     </p>
     <ol type="a">
-      <li>\(B= \left[\begin{array}{cccc}
+      <li>\(M= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; -4 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(Q= \left[\begin{array}{cccc}
 1 &amp; 0 &amp; 0 &amp; 0 \\
 0 &amp; 1 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 1 &amp; 0 \\
 0 &amp; 4 &amp; 0 &amp; 1
 \end{array}\right] \)</li>
-      <li>\(Q= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(QBA\)</li>
+      <li>\(QMA\)</li>
     </ol>
   </div>
 </div>
@@ -363,9 +363,9 @@
   <div class="exercise-statement">
     <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
     <ol type="a">
-      <li>Give a \(4 \times 4\) matrix \(Q\) that may be used to perform the row operation \( R_3 \to -2R_3 \).</li>
-      <li>Give a \(4 \times 4\) matrix \(M\) that may be used to perform the row operation \( R_4 \to R_4 + 3R_1 \).</li>
-      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_3 \to -2R_3 \) and then \( R_4 \to R_4 + 3R_1 \) to \(A\) (note the order). </li>
+      <li>Give a \(4 \times 4\) matrix \(C\) that may be used to perform the row operation \( R_2 \to R_2 + 3R_4 \).</li>
+      <li>Give a \(4 \times 4\) matrix \(P\) that may be used to perform the row operation \( R_4 \leftrightarrow R_3 \).</li>
+      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_2 \to R_2 + 3R_4 \) and then \( R_4 \leftrightarrow R_3 \) to \(A\) (note the order). </li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -373,19 +373,19 @@
       <b>Answer:</b>
     </p>
     <ol type="a">
-      <li>\(Q= \left[\begin{array}{cccc}
+      <li>\(C= \left[\begin{array}{cccc}
 1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; -2 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 3 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
 0 &amp; 0 &amp; 0 &amp; 1
 \end{array}\right] \)</li>
-      <li>\(M= \left[\begin{array}{cccc}
+      <li>\(P= \left[\begin{array}{cccc}
 1 &amp; 0 &amp; 0 &amp; 0 \\
 0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-3 &amp; 0 &amp; 0 &amp; 1
+0 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 1 &amp; 0
 \end{array}\right] \)</li>
-      <li>\(MQA\)</li>
+      <li>\(PCA\)</li>
     </ol>
   </div>
 </div>
@@ -395,9 +395,9 @@
   <div class="exercise-statement">
     <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
     <ol type="a">
-      <li>Give a \(4 \times 4\) matrix \(B\) that may be used to perform the row operation \( R_2 \leftrightarrow R_1 \).</li>
-      <li>Give a \(4 \times 4\) matrix \(M\) that may be used to perform the row operation \( R_3 \to -2R_3 \).</li>
-      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_2 \leftrightarrow R_1 \) and then \( R_3 \to -2R_3 \) to \(A\) (note the order). </li>
+      <li>Give a \(4 \times 4\) matrix \(B\) that may be used to perform the row operation \( R_2 \to -2R_2 \).</li>
+      <li>Give a \(4 \times 4\) matrix \(N\) that may be used to perform the row operation \( R_1 \leftrightarrow R_3 \).</li>
+      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_2 \to -2R_2 \) and then \( R_1 \leftrightarrow R_3 \) to \(A\) (note the order). </li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -406,18 +406,18 @@
     </p>
     <ol type="a">
       <li>\(B= \left[\begin{array}{cccc}
-0 &amp; 1 &amp; 0 &amp; 0 \\
 1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; -2 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 1 &amp; 0 \\
 0 &amp; 0 &amp; 0 &amp; 1
 \end{array}\right] \)</li>
-      <li>\(M= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
+      <li>\(N= \left[\begin{array}{cccc}
+0 &amp; 0 &amp; 1 &amp; 0 \\
 0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; -2 &amp; 0 \\
+1 &amp; 0 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 0 &amp; 1
 \end{array}\right] \)</li>
-      <li>\(MBA\)</li>
+      <li>\(NBA\)</li>
     </ol>
   </div>
 </div>
@@ -427,9 +427,1001 @@
   <div class="exercise-statement">
     <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
     <ol type="a">
-      <li>Give a \(4 \times 4\) matrix \(C\) that may be used to perform the row operation \( R_3 \to -2R_3 \).</li>
-      <li>Give a \(4 \times 4\) matrix \(N\) that may be used to perform the row operation \( R_4 \leftrightarrow R_2 \).</li>
-      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_3 \to -2R_3 \) and then \( R_4 \leftrightarrow R_2 \) to \(A\) (note the order). </li>
+      <li>Give a \(4 \times 4\) matrix \(M\) that may be used to perform the row operation \( R_3 \to 5R_3 \).</li>
+      <li>Give a \(4 \times 4\) matrix \(N\) that may be used to perform the row operation \( R_4 \to R_4 + 5R_1 \).</li>
+      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_4 \to R_4 + 5R_1 \) and then \( R_3 \to 5R_3 \) to \(A\) (note the order). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(M= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 5 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(N= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+5 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(MNA\)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 11</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
+    <ol type="a">
+      <li>Give a \(4 \times 4\) matrix \(B\) that may be used to perform the row operation \( R_3 \to R_3 + -2R_4 \).</li>
+      <li>Give a \(4 \times 4\) matrix \(P\) that may be used to perform the row operation \( R_1 \to -2R_1 \).</li>
+      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_1 \to -2R_1 \) and then \( R_3 \to R_3 + -2R_4 \) to \(A\) (note the order). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(B= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; -2 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(P= \left[\begin{array}{cccc}
+-2 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(BPA\)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 12</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
+    <ol type="a">
+      <li>Give a \(4 \times 4\) matrix \(C\) that may be used to perform the row operation \( R_2 \to R_2 + 2R_1 \).</li>
+      <li>Give a \(4 \times 4\) matrix \(N\) that may be used to perform the row operation \( R_3 \to 4R_3 \).</li>
+      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_3 \to 4R_3 \) and then \( R_2 \to R_2 + 2R_1 \) to \(A\) (note the order). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(C= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+2 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(N= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 4 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(CNA\)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 13</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
+    <ol type="a">
+      <li>Give a \(4 \times 4\) matrix \(M\) that may be used to perform the row operation \( R_1 \leftrightarrow R_2 \).</li>
+      <li>Give a \(4 \times 4\) matrix \(B\) that may be used to perform the row operation \( R_4 \to R_4 + 3R_3 \).</li>
+      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_1 \leftrightarrow R_2 \) and then \( R_4 \to R_4 + 3R_3 \) to \(A\) (note the order). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(M= \left[\begin{array}{cccc}
+0 &amp; 1 &amp; 0 &amp; 0 \\
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(B= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 3 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(BMA\)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 14</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
+    <ol type="a">
+      <li>Give a \(4 \times 4\) matrix \(B\) that may be used to perform the row operation \( R_4 \to R_4 + 5R_2 \).</li>
+      <li>Give a \(4 \times 4\) matrix \(Q\) that may be used to perform the row operation \( R_2 \leftrightarrow R_1 \).</li>
+      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_4 \to R_4 + 5R_2 \) and then \( R_2 \leftrightarrow R_1 \) to \(A\) (note the order). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(B= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 5 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(Q= \left[\begin{array}{cccc}
+0 &amp; 1 &amp; 0 &amp; 0 \\
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(QBA\)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 15</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
+    <ol type="a">
+      <li>Give a \(4 \times 4\) matrix \(B\) that may be used to perform the row operation \( R_3 \to R_3 + 3R_1 \).</li>
+      <li>Give a \(4 \times 4\) matrix \(P\) that may be used to perform the row operation \( R_2 \to 5R_2 \).</li>
+      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_3 \to R_3 + 3R_1 \) and then \( R_2 \to 5R_2 \) to \(A\) (note the order). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(B= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+3 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(P= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 5 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(PBA\)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 16</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
+    <ol type="a">
+      <li>Give a \(4 \times 4\) matrix \(Q\) that may be used to perform the row operation \( R_2 \to 2R_2 \).</li>
+      <li>Give a \(4 \times 4\) matrix \(N\) that may be used to perform the row operation \( R_1 \to R_1 + -4R_4 \).</li>
+      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_2 \to 2R_2 \) and then \( R_1 \to R_1 + -4R_4 \) to \(A\) (note the order). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(Q= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 2 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(N= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; -4 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(NQA\)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 17</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
+    <ol type="a">
+      <li>Give a \(4 \times 4\) matrix \(B\) that may be used to perform the row operation \( R_1 \to 5R_1 \).</li>
+      <li>Give a \(4 \times 4\) matrix \(N\) that may be used to perform the row operation \( R_2 \to R_2 + 2R_4 \).</li>
+      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_1 \to 5R_1 \) and then \( R_2 \to R_2 + 2R_4 \) to \(A\) (note the order). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(B= \left[\begin{array}{cccc}
+5 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(N= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 2 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(NBA\)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 18</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
+    <ol type="a">
+      <li>Give a \(4 \times 4\) matrix \(P\) that may be used to perform the row operation \( R_3 \leftrightarrow R_1 \).</li>
+      <li>Give a \(4 \times 4\) matrix \(N\) that may be used to perform the row operation \( R_3 \to R_3 + 5R_4 \).</li>
+      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_3 \leftrightarrow R_1 \) and then \( R_3 \to R_3 + 5R_4 \) to \(A\) (note the order). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(P= \left[\begin{array}{cccc}
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(N= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 5 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(NPA\)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 19</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
+    <ol type="a">
+      <li>Give a \(4 \times 4\) matrix \(Q\) that may be used to perform the row operation \( R_3 \leftrightarrow R_2 \).</li>
+      <li>Give a \(4 \times 4\) matrix \(N\) that may be used to perform the row operation \( R_4 \to 3R_4 \).</li>
+      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_4 \to 3R_4 \) and then \( R_3 \leftrightarrow R_2 \) to \(A\) (note the order). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(Q= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(N= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 3
+\end{array}\right] \)</li>
+      <li>\(QNA\)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 20</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
+    <ol type="a">
+      <li>Give a \(4 \times 4\) matrix \(N\) that may be used to perform the row operation \( R_4 \leftrightarrow R_3 \).</li>
+      <li>Give a \(4 \times 4\) matrix \(Q\) that may be used to perform the row operation \( R_1 \to R_1 + 2R_2 \).</li>
+      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_4 \leftrightarrow R_3 \) and then \( R_1 \to R_1 + 2R_2 \) to \(A\) (note the order). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(N= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 1 &amp; 0
+\end{array}\right] \)</li>
+      <li>\(Q= \left[\begin{array}{cccc}
+1 &amp; 2 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(QNA\)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 21</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
+    <ol type="a">
+      <li>Give a \(4 \times 4\) matrix \(Q\) that may be used to perform the row operation \( R_1 \to R_1 + 5R_4 \).</li>
+      <li>Give a \(4 \times 4\) matrix \(P\) that may be used to perform the row operation \( R_1 \leftrightarrow R_4 \).</li>
+      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_1 \to R_1 + 5R_4 \) and then \( R_1 \leftrightarrow R_4 \) to \(A\) (note the order). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(Q= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 5 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(P= \left[\begin{array}{cccc}
+0 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+1 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \)</li>
+      <li>\(PQA\)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 22</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
+    <ol type="a">
+      <li>Give a \(4 \times 4\) matrix \(P\) that may be used to perform the row operation \( R_3 \leftrightarrow R_2 \).</li>
+      <li>Give a \(4 \times 4\) matrix \(M\) that may be used to perform the row operation \( R_1 \to 4R_1 \).</li>
+      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_3 \leftrightarrow R_2 \) and then \( R_1 \to 4R_1 \) to \(A\) (note the order). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(P= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(M= \left[\begin{array}{cccc}
+4 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(MPA\)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 23</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
+    <ol type="a">
+      <li>Give a \(4 \times 4\) matrix \(N\) that may be used to perform the row operation \( R_4 \leftrightarrow R_1 \).</li>
+      <li>Give a \(4 \times 4\) matrix \(B\) that may be used to perform the row operation \( R_2 \to 5R_2 \).</li>
+      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_4 \leftrightarrow R_1 \) and then \( R_2 \to 5R_2 \) to \(A\) (note the order). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(N= \left[\begin{array}{cccc}
+0 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+1 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \)</li>
+      <li>\(B= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 5 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(BNA\)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 24</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
+    <ol type="a">
+      <li>Give a \(4 \times 4\) matrix \(C\) that may be used to perform the row operation \( R_4 \leftrightarrow R_1 \).</li>
+      <li>Give a \(4 \times 4\) matrix \(B\) that may be used to perform the row operation \( R_3 \to 4R_3 \).</li>
+      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_4 \leftrightarrow R_1 \) and then \( R_3 \to 4R_3 \) to \(A\) (note the order). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(C= \left[\begin{array}{cccc}
+0 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+1 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \)</li>
+      <li>\(B= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 4 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(BCA\)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 25</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
+    <ol type="a">
+      <li>Give a \(4 \times 4\) matrix \(B\) that may be used to perform the row operation \( R_4 \to 3R_4 \).</li>
+      <li>Give a \(4 \times 4\) matrix \(M\) that may be used to perform the row operation \( R_4 \to R_4 + 3R_1 \).</li>
+      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_4 \to 3R_4 \) and then \( R_4 \to R_4 + 3R_1 \) to \(A\) (note the order). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(B= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 3
+\end{array}\right] \)</li>
+      <li>\(M= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+3 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(MBA\)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 26</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
+    <ol type="a">
+      <li>Give a \(4 \times 4\) matrix \(M\) that may be used to perform the row operation \( R_2 \to R_2 + -5R_4 \).</li>
+      <li>Give a \(4 \times 4\) matrix \(C\) that may be used to perform the row operation \( R_4 \to 4R_4 \).</li>
+      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_2 \to R_2 + -5R_4 \) and then \( R_4 \to 4R_4 \) to \(A\) (note the order). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(M= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; -5 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(C= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 4
+\end{array}\right] \)</li>
+      <li>\(CMA\)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 27</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
+    <ol type="a">
+      <li>Give a \(4 \times 4\) matrix \(N\) that may be used to perform the row operation \( R_3 \to R_3 + -2R_2 \).</li>
+      <li>Give a \(4 \times 4\) matrix \(P\) that may be used to perform the row operation \( R_2 \leftrightarrow R_1 \).</li>
+      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_3 \to R_3 + -2R_2 \) and then \( R_2 \leftrightarrow R_1 \) to \(A\) (note the order). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(N= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; -2 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(P= \left[\begin{array}{cccc}
+0 &amp; 1 &amp; 0 &amp; 0 \\
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(PNA\)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 28</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
+    <ol type="a">
+      <li>Give a \(4 \times 4\) matrix \(M\) that may be used to perform the row operation \( R_3 \to 4R_3 \).</li>
+      <li>Give a \(4 \times 4\) matrix \(P\) that may be used to perform the row operation \( R_3 \leftrightarrow R_1 \).</li>
+      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_3 \leftrightarrow R_1 \) and then \( R_3 \to 4R_3 \) to \(A\) (note the order). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(M= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 4 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(P= \left[\begin{array}{cccc}
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(MPA\)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 29</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
+    <ol type="a">
+      <li>Give a \(4 \times 4\) matrix \(M\) that may be used to perform the row operation \( R_3 \leftrightarrow R_4 \).</li>
+      <li>Give a \(4 \times 4\) matrix \(Q\) that may be used to perform the row operation \( R_4 \to 3R_4 \).</li>
+      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_3 \leftrightarrow R_4 \) and then \( R_4 \to 3R_4 \) to \(A\) (note the order). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(M= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 1 &amp; 0
+\end{array}\right] \)</li>
+      <li>\(Q= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 3
+\end{array}\right] \)</li>
+      <li>\(QMA\)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 30</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
+    <ol type="a">
+      <li>Give a \(4 \times 4\) matrix \(P\) that may be used to perform the row operation \( R_3 \to R_3 + 4R_1 \).</li>
+      <li>Give a \(4 \times 4\) matrix \(B\) that may be used to perform the row operation \( R_4 \to 4R_4 \).</li>
+      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_3 \to R_3 + 4R_1 \) and then \( R_4 \to 4R_4 \) to \(A\) (note the order). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(P= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+4 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(B= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 4
+\end{array}\right] \)</li>
+      <li>\(BPA\)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 31</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
+    <ol type="a">
+      <li>Give a \(4 \times 4\) matrix \(B\) that may be used to perform the row operation \( R_2 \leftrightarrow R_4 \).</li>
+      <li>Give a \(4 \times 4\) matrix \(C\) that may be used to perform the row operation \( R_2 \to 4R_2 \).</li>
+      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_2 \to 4R_2 \) and then \( R_2 \leftrightarrow R_4 \) to \(A\) (note the order). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(B= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0
+\end{array}\right] \)</li>
+      <li>\(C= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 4 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(BCA\)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 32</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
+    <ol type="a">
+      <li>Give a \(4 \times 4\) matrix \(M\) that may be used to perform the row operation \( R_4 \to R_4 + 4R_3 \).</li>
+      <li>Give a \(4 \times 4\) matrix \(N\) that may be used to perform the row operation \( R_3 \leftrightarrow R_4 \).</li>
+      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_4 \to R_4 + 4R_3 \) and then \( R_3 \leftrightarrow R_4 \) to \(A\) (note the order). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(M= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 4 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(N= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 1 &amp; 0
+\end{array}\right] \)</li>
+      <li>\(NMA\)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 33</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
+    <ol type="a">
+      <li>Give a \(4 \times 4\) matrix \(M\) that may be used to perform the row operation \( R_4 \leftrightarrow R_2 \).</li>
+      <li>Give a \(4 \times 4\) matrix \(C\) that may be used to perform the row operation \( R_2 \to R_2 + 4R_4 \).</li>
+      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_4 \leftrightarrow R_2 \) and then \( R_2 \to R_2 + 4R_4 \) to \(A\) (note the order). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(M= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0
+\end{array}\right] \)</li>
+      <li>\(C= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 4 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(CMA\)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 34</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
+    <ol type="a">
+      <li>Give a \(4 \times 4\) matrix \(N\) that may be used to perform the row operation \( R_2 \to -5R_2 \).</li>
+      <li>Give a \(4 \times 4\) matrix \(Q\) that may be used to perform the row operation \( R_2 \to R_2 + 2R_4 \).</li>
+      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_2 \to -5R_2 \) and then \( R_2 \to R_2 + 2R_4 \) to \(A\) (note the order). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(N= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; -5 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(Q= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 2 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(QNA\)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 35</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
+    <ol type="a">
+      <li>Give a \(4 \times 4\) matrix \(Q\) that may be used to perform the row operation \( R_2 \to 2R_2 \).</li>
+      <li>Give a \(4 \times 4\) matrix \(M\) that may be used to perform the row operation \( R_3 \to R_3 + 3R_4 \).</li>
+      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_2 \to 2R_2 \) and then \( R_3 \to R_3 + 3R_4 \) to \(A\) (note the order). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(Q= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 2 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(M= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 3 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(MQA\)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 36</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
+    <ol type="a">
+      <li>Give a \(4 \times 4\) matrix \(M\) that may be used to perform the row operation \( R_4 \to -5R_4 \).</li>
+      <li>Give a \(4 \times 4\) matrix \(C\) that may be used to perform the row operation \( R_1 \to R_1 + 5R_2 \).</li>
+      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_4 \to -5R_4 \) and then \( R_1 \to R_1 + 5R_2 \) to \(A\) (note the order). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(M= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; -5
+\end{array}\right] \)</li>
+      <li>\(C= \left[\begin{array}{cccc}
+1 &amp; 5 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(CMA\)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 37</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
+    <ol type="a">
+      <li>Give a \(4 \times 4\) matrix \(M\) that may be used to perform the row operation \( R_2 \to -4R_2 \).</li>
+      <li>Give a \(4 \times 4\) matrix \(N\) that may be used to perform the row operation \( R_4 \leftrightarrow R_1 \).</li>
+      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_2 \to -4R_2 \) and then \( R_4 \leftrightarrow R_1 \) to \(A\) (note the order). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(M= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; -4 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(N= \left[\begin{array}{cccc}
+0 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+1 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \)</li>
+      <li>\(NMA\)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 38</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
+    <ol type="a">
+      <li>Give a \(4 \times 4\) matrix \(M\) that may be used to perform the row operation \( R_3 \to R_3 + 3R_1 \).</li>
+      <li>Give a \(4 \times 4\) matrix \(Q\) that may be used to perform the row operation \( R_3 \leftrightarrow R_1 \).</li>
+      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_3 \leftrightarrow R_1 \) and then \( R_3 \to R_3 + 3R_1 \) to \(A\) (note the order). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(M= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+3 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(Q= \left[\begin{array}{cccc}
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(MQA\)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 39</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
+    <ol type="a">
+      <li>Give a \(4 \times 4\) matrix \(Q\) that may be used to perform the row operation \( R_1 \to -2R_1 \).</li>
+      <li>Give a \(4 \times 4\) matrix \(C\) that may be used to perform the row operation \( R_4 \leftrightarrow R_2 \).</li>
+      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_1 \to -2R_1 \) and then \( R_4 \leftrightarrow R_2 \) to \(A\) (note the order). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(Q= \left[\begin{array}{cccc}
+-2 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(C= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0
+\end{array}\right] \)</li>
+      <li>\(CQA\)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 40</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
+    <ol type="a">
+      <li>Give a \(4 \times 4\) matrix \(B\) that may be used to perform the row operation \( R_4 \to R_4 + 2R_2 \).</li>
+      <li>Give a \(4 \times 4\) matrix \(Q\) that may be used to perform the row operation \( R_1 \leftrightarrow R_3 \).</li>
+      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_4 \to R_4 + 2R_2 \) and then \( R_1 \leftrightarrow R_3 \) to \(A\) (note the order). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(B= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 2 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(Q= \left[\begin{array}{cccc}
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(QBA\)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 41</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
+    <ol type="a">
+      <li>Give a \(4 \times 4\) matrix \(C\) that may be used to perform the row operation \( R_3 \to R_3 + 3R_1 \).</li>
+      <li>Give a \(4 \times 4\) matrix \(P\) that may be used to perform the row operation \( R_1 \to 3R_1 \).</li>
+      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_1 \to 3R_1 \) and then \( R_3 \to R_3 + 3R_1 \) to \(A\) (note the order). </li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -440,28 +1432,28 @@
       <li>\(C= \left[\begin{array}{cccc}
 1 &amp; 0 &amp; 0 &amp; 0 \\
 0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; -2 &amp; 0 \\
+3 &amp; 0 &amp; 1 &amp; 0 \\
 0 &amp; 0 &amp; 0 &amp; 1
 \end{array}\right] \)</li>
-      <li>\(N= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1 \\
+      <li>\(P= \left[\begin{array}{cccc}
+3 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0
+0 &amp; 0 &amp; 0 &amp; 1
 \end{array}\right] \)</li>
-      <li>\(NCA\)</li>
+      <li>\(CPA\)</li>
     </ol>
   </div>
 </div>
 
 <hr/>
-<h4>Example 11</h4><div class="exercise">
+<h4>Example 42</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
     <ol type="a">
-      <li>Give a \(4 \times 4\) matrix \(B\) that may be used to perform the row operation \( R_3 \to 2R_3 \).</li>
-      <li>Give a \(4 \times 4\) matrix \(M\) that may be used to perform the row operation \( R_3 \leftrightarrow R_1 \).</li>
-      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_3 \to 2R_3 \) and then \( R_3 \leftrightarrow R_1 \) to \(A\) (note the order). </li>
+      <li>Give a \(4 \times 4\) matrix \(C\) that may be used to perform the row operation \( R_1 \leftrightarrow R_3 \).</li>
+      <li>Give a \(4 \times 4\) matrix \(M\) that may be used to perform the row operation \( R_4 \to -4R_4 \).</li>
+      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_1 \leftrightarrow R_3 \) and then \( R_4 \to -4R_4 \) to \(A\) (note the order). </li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -469,31 +1461,31 @@
       <b>Answer:</b>
     </p>
     <ol type="a">
-      <li>\(B= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
+      <li>\(C= \left[\begin{array}{cccc}
+0 &amp; 0 &amp; 1 &amp; 0 \\
 0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 2 &amp; 0 \\
+1 &amp; 0 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 0 &amp; 1
 \end{array}\right] \)</li>
       <li>\(M= \left[\begin{array}{cccc}
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
 1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; -4
 \end{array}\right] \)</li>
-      <li>\(MBA\)</li>
+      <li>\(MCA\)</li>
     </ol>
   </div>
 </div>
 
 <hr/>
-<h4>Example 12</h4><div class="exercise">
+<h4>Example 43</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
     <ol type="a">
-      <li>Give a \(4 \times 4\) matrix \(B\) that may be used to perform the row operation \( R_3 \to -5R_3 \).</li>
-      <li>Give a \(4 \times 4\) matrix \(N\) that may be used to perform the row operation \( R_2 \leftrightarrow R_1 \).</li>
-      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_2 \leftrightarrow R_1 \) and then \( R_3 \to -5R_3 \) to \(A\) (note the order). </li>
+      <li>Give a \(4 \times 4\) matrix \(P\) that may be used to perform the row operation \( R_2 \to 5R_2 \).</li>
+      <li>Give a \(4 \times 4\) matrix \(C\) that may be used to perform the row operation \( R_2 \to R_2 + 5R_3 \).</li>
+      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_2 \to 5R_2 \) and then \( R_2 \to R_2 + 5R_3 \) to \(A\) (note the order). </li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -501,29 +1493,61 @@
       <b>Answer:</b>
     </p>
     <ol type="a">
-      <li>\(B= \left[\begin{array}{cccc}
+      <li>\(P= \left[\begin{array}{cccc}
 1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; -5 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(N= \left[\begin{array}{cccc}
-0 &amp; 1 &amp; 0 &amp; 0 \\
-1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 5 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 1 &amp; 0 \\
 0 &amp; 0 &amp; 0 &amp; 1
 \end{array}\right] \)</li>
-      <li>\(BNA\)</li>
+      <li>\(C= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 5 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(CPA\)</li>
     </ol>
   </div>
 </div>
 
 <hr/>
-<h4>Example 13</h4><div class="exercise">
+<h4>Example 44</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
     <ol type="a">
-      <li>Give a \(4 \times 4\) matrix \(N\) that may be used to perform the row operation \( R_4 \leftrightarrow R_2 \).</li>
+      <li>Give a \(4 \times 4\) matrix \(M\) that may be used to perform the row operation \( R_3 \to -2R_3 \).</li>
+      <li>Give a \(4 \times 4\) matrix \(C\) that may be used to perform the row operation \( R_3 \to R_3 + 5R_1 \).</li>
+      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_3 \to -2R_3 \) and then \( R_3 \to R_3 + 5R_1 \) to \(A\) (note the order). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(M= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; -2 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(C= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+5 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \)</li>
+      <li>\(CMA\)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 45</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
+    <ol type="a">
+      <li>Give a \(4 \times 4\) matrix \(M\) that may be used to perform the row operation \( R_4 \leftrightarrow R_2 \).</li>
       <li>Give a \(4 \times 4\) matrix \(Q\) that may be used to perform the row operation \( R_1 \to -4R_1 \).</li>
       <li>Use matrix multiplication to describe the matrix obtained by applying \( R_1 \to -4R_1 \) and then \( R_4 \leftrightarrow R_2 \) to \(A\) (note the order). </li>
     </ol>
@@ -533,7 +1557,7 @@
       <b>Answer:</b>
     </p>
     <ol type="a">
-      <li>\(N= \left[\begin{array}{cccc}
+      <li>\(M= \left[\begin{array}{cccc}
 1 &amp; 0 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 0 &amp; 1 \\
 0 &amp; 0 &amp; 1 &amp; 0 \\
@@ -545,115 +1569,19 @@
 0 &amp; 0 &amp; 1 &amp; 0 \\
 0 &amp; 0 &amp; 0 &amp; 1
 \end{array}\right] \)</li>
-      <li>\(NQA\)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 14</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
-    <ol type="a">
-      <li>Give a \(4 \times 4\) matrix \(C\) that may be used to perform the row operation \( R_3 \to R_3 + 3R_4 \).</li>
-      <li>Give a \(4 \times 4\) matrix \(M\) that may be used to perform the row operation \( R_3 \to 4R_3 \).</li>
-      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_3 \to R_3 + 3R_4 \) and then \( R_3 \to 4R_3 \) to \(A\) (note the order). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(C= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 3 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(M= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 4 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(MCA\)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 15</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
-    <ol type="a">
-      <li>Give a \(4 \times 4\) matrix \(N\) that may be used to perform the row operation \( R_3 \leftrightarrow R_2 \).</li>
-      <li>Give a \(4 \times 4\) matrix \(C\) that may be used to perform the row operation \( R_2 \to R_2 + -2R_4 \).</li>
-      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_3 \leftrightarrow R_2 \) and then \( R_2 \to R_2 + -2R_4 \) to \(A\) (note the order). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(N= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(C= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; -2 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(CNA\)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 16</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
-    <ol type="a">
-      <li>Give a \(4 \times 4\) matrix \(M\) that may be used to perform the row operation \( R_3 \to R_3 + 2R_1 \).</li>
-      <li>Give a \(4 \times 4\) matrix \(Q\) that may be used to perform the row operation \( R_1 \to -3R_1 \).</li>
-      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_1 \to -3R_1 \) and then \( R_3 \to R_3 + 2R_1 \) to \(A\) (note the order). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(M= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-2 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(Q= \left[\begin{array}{cccc}
--3 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
       <li>\(MQA\)</li>
     </ol>
   </div>
 </div>
 
 <hr/>
-<h4>Example 17</h4><div class="exercise">
+<h4>Example 46</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
     <ol type="a">
-      <li>Give a \(4 \times 4\) matrix \(C\) that may be used to perform the row operation \( R_4 \to R_4 + -2R_2 \).</li>
-      <li>Give a \(4 \times 4\) matrix \(Q\) that may be used to perform the row operation \( R_3 \leftrightarrow R_1 \).</li>
-      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_3 \leftrightarrow R_1 \) and then \( R_4 \to R_4 + -2R_2 \) to \(A\) (note the order). </li>
+      <li>Give a \(4 \times 4\) matrix \(M\) that may be used to perform the row operation \( R_4 \to R_4 + -5R_1 \).</li>
+      <li>Give a \(4 \times 4\) matrix \(B\) that may be used to perform the row operation \( R_2 \to 2R_2 \).</li>
+      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_4 \to R_4 + -5R_1 \) and then \( R_2 \to 2R_2 \) to \(A\) (note the order). </li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -661,191 +1589,31 @@
       <b>Answer:</b>
     </p>
     <ol type="a">
-      <li>\(C= \left[\begin{array}{cccc}
+      <li>\(M= \left[\begin{array}{cccc}
 1 &amp; 0 &amp; 0 &amp; 0 \\
 0 &amp; 1 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; -2 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(Q= \left[\begin{array}{cccc}
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(CQA\)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 18</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
-    <ol type="a">
-      <li>Give a \(4 \times 4\) matrix \(C\) that may be used to perform the row operation \( R_3 \to 5R_3 \).</li>
-      <li>Give a \(4 \times 4\) matrix \(B\) that may be used to perform the row operation \( R_2 \to R_2 + -3R_4 \).</li>
-      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_3 \to 5R_3 \) and then \( R_2 \to R_2 + -3R_4 \) to \(A\) (note the order). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(C= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 5 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
+-5 &amp; 0 &amp; 0 &amp; 1
 \end{array}\right] \)</li>
       <li>\(B= \left[\begin{array}{cccc}
 1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; -3 \\
+0 &amp; 2 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 1 &amp; 0 \\
 0 &amp; 0 &amp; 0 &amp; 1
 \end{array}\right] \)</li>
-      <li>\(BCA\)</li>
+      <li>\(BMA\)</li>
     </ol>
   </div>
 </div>
 
 <hr/>
-<h4>Example 19</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
-    <ol type="a">
-      <li>Give a \(4 \times 4\) matrix \(P\) that may be used to perform the row operation \( R_1 \leftrightarrow R_4 \).</li>
-      <li>Give a \(4 \times 4\) matrix \(B\) that may be used to perform the row operation \( R_1 \to 3R_1 \).</li>
-      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_1 \leftrightarrow R_4 \) and then \( R_1 \to 3R_1 \) to \(A\) (note the order). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(P= \left[\begin{array}{cccc}
-0 &amp; 0 &amp; 0 &amp; 1 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-1 &amp; 0 &amp; 0 &amp; 0
-\end{array}\right] \)</li>
-      <li>\(B= \left[\begin{array}{cccc}
-3 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(BPA\)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 20</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
-    <ol type="a">
-      <li>Give a \(4 \times 4\) matrix \(C\) that may be used to perform the row operation \( R_2 \to R_2 + 3R_3 \).</li>
-      <li>Give a \(4 \times 4\) matrix \(N\) that may be used to perform the row operation \( R_3 \to -2R_3 \).</li>
-      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_3 \to -2R_3 \) and then \( R_2 \to R_2 + 3R_3 \) to \(A\) (note the order). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(C= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 3 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(N= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; -2 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(CNA\)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 21</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
-    <ol type="a">
-      <li>Give a \(4 \times 4\) matrix \(B\) that may be used to perform the row operation \( R_4 \to R_4 + 4R_1 \).</li>
-      <li>Give a \(4 \times 4\) matrix \(Q\) that may be used to perform the row operation \( R_1 \leftrightarrow R_2 \).</li>
-      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_4 \to R_4 + 4R_1 \) and then \( R_1 \leftrightarrow R_2 \) to \(A\) (note the order). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(B= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-4 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(Q= \left[\begin{array}{cccc}
-0 &amp; 1 &amp; 0 &amp; 0 \\
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(QBA\)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 22</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
-    <ol type="a">
-      <li>Give a \(4 \times 4\) matrix \(N\) that may be used to perform the row operation \( R_4 \to R_4 + -5R_2 \).</li>
-      <li>Give a \(4 \times 4\) matrix \(B\) that may be used to perform the row operation \( R_2 \leftrightarrow R_1 \).</li>
-      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_4 \to R_4 + -5R_2 \) and then \( R_2 \leftrightarrow R_1 \) to \(A\) (note the order). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(N= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; -5 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(B= \left[\begin{array}{cccc}
-0 &amp; 1 &amp; 0 &amp; 0 \\
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(BNA\)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 23</h4><div class="exercise">
+<h4>Example 47</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
     <ol type="a">
       <li>Give a \(4 \times 4\) matrix \(M\) that may be used to perform the row operation \( R_4 \to 5R_4 \).</li>
-      <li>Give a \(4 \times 4\) matrix \(N\) that may be used to perform the row operation \( R_3 \leftrightarrow R_4 \).</li>
-      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_4 \to 5R_4 \) and then \( R_3 \leftrightarrow R_4 \) to \(A\) (note the order). </li>
+      <li>Give a \(4 \times 4\) matrix \(N\) that may be used to perform the row operation \( R_4 \to R_4 + -3R_2 \).</li>
+      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_4 \to R_4 + -3R_2 \) and then \( R_4 \to 5R_4 \) to \(A\) (note the order). </li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -862,104 +1630,8 @@
       <li>\(N= \left[\begin{array}{cccc}
 1 &amp; 0 &amp; 0 &amp; 0 \\
 0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1 \\
-0 &amp; 0 &amp; 1 &amp; 0
-\end{array}\right] \)</li>
-      <li>\(NMA\)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 24</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
-    <ol type="a">
-      <li>Give a \(4 \times 4\) matrix \(Q\) that may be used to perform the row operation \( R_4 \to R_4 + 5R_3 \).</li>
-      <li>Give a \(4 \times 4\) matrix \(B\) that may be used to perform the row operation \( R_1 \leftrightarrow R_2 \).</li>
-      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_4 \to R_4 + 5R_3 \) and then \( R_1 \leftrightarrow R_2 \) to \(A\) (note the order). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(Q= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 5 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(B= \left[\begin{array}{cccc}
-0 &amp; 1 &amp; 0 &amp; 0 \\
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(BQA\)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 25</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
-    <ol type="a">
-      <li>Give a \(4 \times 4\) matrix \(B\) that may be used to perform the row operation \( R_4 \leftrightarrow R_3 \).</li>
-      <li>Give a \(4 \times 4\) matrix \(P\) that may be used to perform the row operation \( R_1 \to R_1 + 5R_4 \).</li>
-      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_1 \to R_1 + 5R_4 \) and then \( R_4 \leftrightarrow R_3 \) to \(A\) (note the order). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(B= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1 \\
-0 &amp; 0 &amp; 1 &amp; 0
-\end{array}\right] \)</li>
-      <li>\(P= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 5 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(BPA\)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 26</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
-    <ol type="a">
-      <li>Give a \(4 \times 4\) matrix \(N\) that may be used to perform the row operation \( R_3 \to R_3 + -5R_4 \).</li>
-      <li>Give a \(4 \times 4\) matrix \(M\) that may be used to perform the row operation \( R_3 \leftrightarrow R_2 \).</li>
-      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_3 \to R_3 + -5R_4 \) and then \( R_3 \leftrightarrow R_2 \) to \(A\) (note the order). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(N= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; -5 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(M= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
+0 &amp; -3 &amp; 0 &amp; 1
 \end{array}\right] \)</li>
       <li>\(MNA\)</li>
     </ol>
@@ -967,71 +1639,7 @@
 </div>
 
 <hr/>
-<h4>Example 27</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
-    <ol type="a">
-      <li>Give a \(4 \times 4\) matrix \(C\) that may be used to perform the row operation \( R_3 \leftrightarrow R_2 \).</li>
-      <li>Give a \(4 \times 4\) matrix \(N\) that may be used to perform the row operation \( R_1 \to 2R_1 \).</li>
-      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_3 \leftrightarrow R_2 \) and then \( R_1 \to 2R_1 \) to \(A\) (note the order). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(C= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(N= \left[\begin{array}{cccc}
-2 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(NCA\)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 28</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
-    <ol type="a">
-      <li>Give a \(4 \times 4\) matrix \(N\) that may be used to perform the row operation \( R_2 \to R_2 + -2R_1 \).</li>
-      <li>Give a \(4 \times 4\) matrix \(P\) that may be used to perform the row operation \( R_4 \leftrightarrow R_1 \).</li>
-      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_2 \to R_2 + -2R_1 \) and then \( R_4 \leftrightarrow R_1 \) to \(A\) (note the order). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(N= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
--2 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(P= \left[\begin{array}{cccc}
-0 &amp; 0 &amp; 0 &amp; 1 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-1 &amp; 0 &amp; 0 &amp; 0
-\end{array}\right] \)</li>
-      <li>\(PNA\)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 29</h4><div class="exercise">
+<h4>Example 48</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
     <ol type="a">
@@ -1063,621 +1671,13 @@
 </div>
 
 <hr/>
-<h4>Example 30</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
-    <ol type="a">
-      <li>Give a \(4 \times 4\) matrix \(Q\) that may be used to perform the row operation \( R_3 \to -2R_3 \).</li>
-      <li>Give a \(4 \times 4\) matrix \(B\) that may be used to perform the row operation \( R_1 \leftrightarrow R_3 \).</li>
-      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_1 \leftrightarrow R_3 \) and then \( R_3 \to -2R_3 \) to \(A\) (note the order). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(Q= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; -2 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(B= \left[\begin{array}{cccc}
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(QBA\)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 31</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
-    <ol type="a">
-      <li>Give a \(4 \times 4\) matrix \(Q\) that may be used to perform the row operation \( R_4 \leftrightarrow R_2 \).</li>
-      <li>Give a \(4 \times 4\) matrix \(C\) that may be used to perform the row operation \( R_3 \to R_3 + -3R_4 \).</li>
-      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_3 \to R_3 + -3R_4 \) and then \( R_4 \leftrightarrow R_2 \) to \(A\) (note the order). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(Q= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0
-\end{array}\right] \)</li>
-      <li>\(C= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; -3 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(QCA\)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 32</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
-    <ol type="a">
-      <li>Give a \(4 \times 4\) matrix \(M\) that may be used to perform the row operation \( R_1 \leftrightarrow R_2 \).</li>
-      <li>Give a \(4 \times 4\) matrix \(B\) that may be used to perform the row operation \( R_3 \to -3R_3 \).</li>
-      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_3 \to -3R_3 \) and then \( R_1 \leftrightarrow R_2 \) to \(A\) (note the order). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(M= \left[\begin{array}{cccc}
-0 &amp; 1 &amp; 0 &amp; 0 \\
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(B= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; -3 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(MBA\)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 33</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
-    <ol type="a">
-      <li>Give a \(4 \times 4\) matrix \(N\) that may be used to perform the row operation \( R_2 \to 3R_2 \).</li>
-      <li>Give a \(4 \times 4\) matrix \(P\) that may be used to perform the row operation \( R_2 \leftrightarrow R_1 \).</li>
-      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_2 \to 3R_2 \) and then \( R_2 \leftrightarrow R_1 \) to \(A\) (note the order). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(N= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 3 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(P= \left[\begin{array}{cccc}
-0 &amp; 1 &amp; 0 &amp; 0 \\
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(PNA\)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 34</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
-    <ol type="a">
-      <li>Give a \(4 \times 4\) matrix \(Q\) that may be used to perform the row operation \( R_3 \to R_3 + -4R_4 \).</li>
-      <li>Give a \(4 \times 4\) matrix \(M\) that may be used to perform the row operation \( R_4 \leftrightarrow R_1 \).</li>
-      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_3 \to R_3 + -4R_4 \) and then \( R_4 \leftrightarrow R_1 \) to \(A\) (note the order). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(Q= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; -4 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(M= \left[\begin{array}{cccc}
-0 &amp; 0 &amp; 0 &amp; 1 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-1 &amp; 0 &amp; 0 &amp; 0
-\end{array}\right] \)</li>
-      <li>\(MQA\)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 35</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
-    <ol type="a">
-      <li>Give a \(4 \times 4\) matrix \(M\) that may be used to perform the row operation \( R_1 \to 3R_1 \).</li>
-      <li>Give a \(4 \times 4\) matrix \(Q\) that may be used to perform the row operation \( R_3 \to R_3 + 3R_2 \).</li>
-      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_1 \to 3R_1 \) and then \( R_3 \to R_3 + 3R_2 \) to \(A\) (note the order). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(M= \left[\begin{array}{cccc}
-3 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(Q= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 3 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(QMA\)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 36</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
-    <ol type="a">
-      <li>Give a \(4 \times 4\) matrix \(B\) that may be used to perform the row operation \( R_1 \leftrightarrow R_2 \).</li>
-      <li>Give a \(4 \times 4\) matrix \(N\) that may be used to perform the row operation \( R_4 \to 5R_4 \).</li>
-      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_1 \leftrightarrow R_2 \) and then \( R_4 \to 5R_4 \) to \(A\) (note the order). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(B= \left[\begin{array}{cccc}
-0 &amp; 1 &amp; 0 &amp; 0 \\
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(N= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 5
-\end{array}\right] \)</li>
-      <li>\(NBA\)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 37</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
-    <ol type="a">
-      <li>Give a \(4 \times 4\) matrix \(B\) that may be used to perform the row operation \( R_4 \to -3R_4 \).</li>
-      <li>Give a \(4 \times 4\) matrix \(C\) that may be used to perform the row operation \( R_3 \leftrightarrow R_4 \).</li>
-      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_4 \to -3R_4 \) and then \( R_3 \leftrightarrow R_4 \) to \(A\) (note the order). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(B= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; -3
-\end{array}\right] \)</li>
-      <li>\(C= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1 \\
-0 &amp; 0 &amp; 1 &amp; 0
-\end{array}\right] \)</li>
-      <li>\(CBA\)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 38</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
-    <ol type="a">
-      <li>Give a \(4 \times 4\) matrix \(P\) that may be used to perform the row operation \( R_4 \leftrightarrow R_1 \).</li>
-      <li>Give a \(4 \times 4\) matrix \(N\) that may be used to perform the row operation \( R_3 \to -3R_3 \).</li>
-      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_3 \to -3R_3 \) and then \( R_4 \leftrightarrow R_1 \) to \(A\) (note the order). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(P= \left[\begin{array}{cccc}
-0 &amp; 0 &amp; 0 &amp; 1 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-1 &amp; 0 &amp; 0 &amp; 0
-\end{array}\right] \)</li>
-      <li>\(N= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; -3 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(PNA\)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 39</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
-    <ol type="a">
-      <li>Give a \(4 \times 4\) matrix \(C\) that may be used to perform the row operation \( R_3 \leftrightarrow R_2 \).</li>
-      <li>Give a \(4 \times 4\) matrix \(B\) that may be used to perform the row operation \( R_2 \to R_2 + -2R_1 \).</li>
-      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_2 \to R_2 + -2R_1 \) and then \( R_3 \leftrightarrow R_2 \) to \(A\) (note the order). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(C= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(B= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
--2 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(CBA\)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 40</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
-    <ol type="a">
-      <li>Give a \(4 \times 4\) matrix \(P\) that may be used to perform the row operation \( R_3 \to R_3 + -3R_4 \).</li>
-      <li>Give a \(4 \times 4\) matrix \(Q\) that may be used to perform the row operation \( R_4 \to 2R_4 \).</li>
-      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_3 \to R_3 + -3R_4 \) and then \( R_4 \to 2R_4 \) to \(A\) (note the order). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(P= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; -3 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(Q= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 2
-\end{array}\right] \)</li>
-      <li>\(QPA\)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 41</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
-    <ol type="a">
-      <li>Give a \(4 \times 4\) matrix \(B\) that may be used to perform the row operation \( R_4 \leftrightarrow R_3 \).</li>
-      <li>Give a \(4 \times 4\) matrix \(C\) that may be used to perform the row operation \( R_2 \to -2R_2 \).</li>
-      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_4 \leftrightarrow R_3 \) and then \( R_2 \to -2R_2 \) to \(A\) (note the order). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(B= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1 \\
-0 &amp; 0 &amp; 1 &amp; 0
-\end{array}\right] \)</li>
-      <li>\(C= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; -2 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(CBA\)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 42</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
-    <ol type="a">
-      <li>Give a \(4 \times 4\) matrix \(P\) that may be used to perform the row operation \( R_2 \leftrightarrow R_1 \).</li>
-      <li>Give a \(4 \times 4\) matrix \(N\) that may be used to perform the row operation \( R_1 \to -4R_1 \).</li>
-      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_1 \to -4R_1 \) and then \( R_2 \leftrightarrow R_1 \) to \(A\) (note the order). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(P= \left[\begin{array}{cccc}
-0 &amp; 1 &amp; 0 &amp; 0 \\
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(N= \left[\begin{array}{cccc}
--4 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(PNA\)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 43</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
-    <ol type="a">
-      <li>Give a \(4 \times 4\) matrix \(P\) that may be used to perform the row operation \( R_4 \to 2R_4 \).</li>
-      <li>Give a \(4 \times 4\) matrix \(M\) that may be used to perform the row operation \( R_2 \to R_2 + 3R_1 \).</li>
-      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_4 \to 2R_4 \) and then \( R_2 \to R_2 + 3R_1 \) to \(A\) (note the order). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(P= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 2
-\end{array}\right] \)</li>
-      <li>\(M= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-3 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(MPA\)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 44</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
-    <ol type="a">
-      <li>Give a \(4 \times 4\) matrix \(C\) that may be used to perform the row operation \( R_2 \to R_2 + -2R_4 \).</li>
-      <li>Give a \(4 \times 4\) matrix \(B\) that may be used to perform the row operation \( R_1 \to 2R_1 \).</li>
-      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_1 \to 2R_1 \) and then \( R_2 \to R_2 + -2R_4 \) to \(A\) (note the order). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(C= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; -2 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(B= \left[\begin{array}{cccc}
-2 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(CBA\)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 45</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
-    <ol type="a">
-      <li>Give a \(4 \times 4\) matrix \(C\) that may be used to perform the row operation \( R_2 \to R_2 + 5R_1 \).</li>
-      <li>Give a \(4 \times 4\) matrix \(N\) that may be used to perform the row operation \( R_4 \to -4R_4 \).</li>
-      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_4 \to -4R_4 \) and then \( R_2 \to R_2 + 5R_1 \) to \(A\) (note the order). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(C= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-5 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(N= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; -4
-\end{array}\right] \)</li>
-      <li>\(CNA\)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 46</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
-    <ol type="a">
-      <li>Give a \(4 \times 4\) matrix \(P\) that may be used to perform the row operation \( R_1 \to -3R_1 \).</li>
-      <li>Give a \(4 \times 4\) matrix \(B\) that may be used to perform the row operation \( R_2 \to R_2 + -4R_1 \).</li>
-      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_1 \to -3R_1 \) and then \( R_2 \to R_2 + -4R_1 \) to \(A\) (note the order). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(P= \left[\begin{array}{cccc}
--3 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(B= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
--4 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(BPA\)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 47</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
-    <ol type="a">
-      <li>Give a \(4 \times 4\) matrix \(P\) that may be used to perform the row operation \( R_1 \to R_1 + 3R_3 \).</li>
-      <li>Give a \(4 \times 4\) matrix \(B\) that may be used to perform the row operation \( R_4 \leftrightarrow R_2 \).</li>
-      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_1 \to R_1 + 3R_3 \) and then \( R_4 \leftrightarrow R_2 \) to \(A\) (note the order). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(P= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 3 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(B= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0
-\end{array}\right] \)</li>
-      <li>\(BPA\)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 48</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
-    <ol type="a">
-      <li>Give a \(4 \times 4\) matrix \(M\) that may be used to perform the row operation \( R_1 \to R_1 + 2R_2 \).</li>
-      <li>Give a \(4 \times 4\) matrix \(C\) that may be used to perform the row operation \( R_1 \to -2R_1 \).</li>
-      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_1 \to -2R_1 \) and then \( R_1 \to R_1 + 2R_2 \) to \(A\) (note the order). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(M= \left[\begin{array}{cccc}
-1 &amp; 2 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(C= \left[\begin{array}{cccc}
--2 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \)</li>
-      <li>\(MCA\)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
 <h4>Example 49</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
     <ol type="a">
-      <li>Give a \(4 \times 4\) matrix \(P\) that may be used to perform the row operation \( R_4 \leftrightarrow R_1 \).</li>
-      <li>Give a \(4 \times 4\) matrix \(M\) that may be used to perform the row operation \( R_4 \to R_4 + 3R_2 \).</li>
-      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_4 \leftrightarrow R_1 \) and then \( R_4 \to R_4 + 3R_2 \) to \(A\) (note the order). </li>
+      <li>Give a \(4 \times 4\) matrix \(Q\) that may be used to perform the row operation \( R_1 \to R_1 + -3R_4 \).</li>
+      <li>Give a \(4 \times 4\) matrix \(P\) that may be used to perform the row operation \( R_3 \to 2R_3 \).</li>
+      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_3 \to 2R_3 \) and then \( R_1 \to R_1 + -3R_4 \) to \(A\) (note the order). </li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -1685,19 +1685,19 @@
       <b>Answer:</b>
     </p>
     <ol type="a">
-      <li>\(P= \left[\begin{array}{cccc}
-0 &amp; 0 &amp; 0 &amp; 1 \\
+      <li>\(Q= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; -3 \\
 0 &amp; 1 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 1 &amp; 0 \\
-1 &amp; 0 &amp; 0 &amp; 0
+0 &amp; 0 &amp; 0 &amp; 1
 \end{array}\right] \)</li>
-      <li>\(M= \left[\begin{array}{cccc}
+      <li>\(P= \left[\begin{array}{cccc}
 1 &amp; 0 &amp; 0 &amp; 0 \\
 0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 3 &amp; 0 &amp; 1
+0 &amp; 0 &amp; 2 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
 \end{array}\right] \)</li>
-      <li>\(MPA\)</li>
+      <li>\(QPA\)</li>
     </ol>
   </div>
 </div>
@@ -1707,9 +1707,9 @@
   <div class="exercise-statement">
     <p>Let \(A\) be a \(4 \times 4\) matrix.</p>
     <ol type="a">
-      <li>Give a \(4 \times 4\) matrix \(N\) that may be used to perform the row operation \( R_1 \to R_1 + -2R_4 \).</li>
-      <li>Give a \(4 \times 4\) matrix \(M\) that may be used to perform the row operation \( R_2 \leftrightarrow R_1 \).</li>
-      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_2 \leftrightarrow R_1 \) and then \( R_1 \to R_1 + -2R_4 \) to \(A\) (note the order). </li>
+      <li>Give a \(4 \times 4\) matrix \(P\) that may be used to perform the row operation \( R_1 \to R_1 + 4R_4 \).</li>
+      <li>Give a \(4 \times 4\) matrix \(B\) that may be used to perform the row operation \( R_3 \leftrightarrow R_1 \).</li>
+      <li>Use matrix multiplication to describe the matrix obtained by applying \( R_3 \leftrightarrow R_1 \) and then \( R_1 \to R_1 + 4R_4 \) to \(A\) (note the order). </li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -1717,19 +1717,19 @@
       <b>Answer:</b>
     </p>
     <ol type="a">
-      <li>\(N= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; -2 \\
+      <li>\(P= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 4 \\
 0 &amp; 1 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 1 &amp; 0 \\
 0 &amp; 0 &amp; 0 &amp; 1
 \end{array}\right] \)</li>
-      <li>\(M= \left[\begin{array}{cccc}
+      <li>\(B= \left[\begin{array}{cccc}
+0 &amp; 0 &amp; 1 &amp; 0 \\
 0 &amp; 1 &amp; 0 &amp; 0 \\
 1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
 0 &amp; 0 &amp; 0 &amp; 1
 \end{array}\right] \)</li>
-      <li>\(NMA\)</li>
+      <li>\(PBA\)</li>
     </ol>
   </div>
 </div>

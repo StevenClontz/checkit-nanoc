@@ -137,52 +137,85 @@
 <hr/>
 <h4>Example 1</h4><div class="exercise">
   <div class="exercise-statement"> Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{cccc}
-0 &amp; 0 &amp; -1 &amp; -2 \\
-1 &amp; -4 &amp; -4 &amp; -4 \\
--1 &amp; 4 &amp; 6 &amp; 8
+1 &amp; 1 &amp; 2 &amp; 4 \\
+0 &amp; 1 &amp; 4 &amp; 7 \\
+1 &amp; 0 &amp; -1 &amp; -1
 \end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+1 &amp; 1 &amp; 2 &amp; 4 \\
+0 &amp; 1 &amp; 4 &amp; 7 \\
+1 &amp; 0 &amp; -1 &amp; -1
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 1 &amp; 0 &amp; -1 \\
+0 &amp; 0 &amp; 1 &amp; 2
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>\(T\) is not injective</li>
-      <li>\(T\) is not surjective</li>
+      <li>\(T\) is surjective.</li>
     </ol>
   </div>
 </div>
 
 <hr/>
 <h4>Example 2</h4><div class="exercise">
-  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{ccc}
-3 &amp; 5 &amp; 8 \\
--2 &amp; -3 &amp; -4 \\
-3 &amp; 4 &amp; 5 \\
--4 &amp; -7 &amp; -8
+  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{cccc}
+0 &amp; 3 &amp; -4 &amp; -7 \\
+0 &amp; 1 &amp; -1 &amp; -2 \\
+1 &amp; -2 &amp; 2 &amp; 2
 \end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+0 &amp; 3 &amp; -4 &amp; -7 \\
+0 &amp; 1 &amp; -1 &amp; -2 \\
+1 &amp; -2 &amp; 2 &amp; 2
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; -2 \\
+0 &amp; 1 &amp; 0 &amp; -1 \\
+0 &amp; 0 &amp; 1 &amp; 1
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
-      <li>\(T\) is injective.</li>
-      <li>\(T\) is not surjective</li>
+      <li>\(T\) is not injective</li>
+      <li>\(T\) is surjective.</li>
     </ol>
   </div>
 </div>
 
 <hr/>
 <h4>Example 3</h4><div class="exercise">
-  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 5 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{ccc}
-1 &amp; 2 &amp; -1 \\
--3 &amp; -5 &amp; 5 \\
-0 &amp; 0 &amp; 1 \\
-4 &amp; 6 &amp; -5 \\
-2 &amp; 5 &amp; -6
+  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{ccc}
+1 &amp; 3 &amp; 5 \\
+-2 &amp; -5 &amp; -8 \\
+-1 &amp; 0 &amp; 2 \\
+2 &amp; 5 &amp; 3
 \end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+1 &amp; 3 &amp; 5 \\
+-2 &amp; -5 &amp; -8 \\
+-1 &amp; 0 &amp; 2 \\
+2 &amp; 5 &amp; 3
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
     </p>
     <ol type="a">
       <li>\(T\) is injective.</li>
@@ -193,14 +226,31 @@
 
 <hr/>
 <h4>Example 4</h4><div class="exercise">
-  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{cccc}
-3 &amp; 2 &amp; 6 &amp; 4 \\
--1 &amp; -1 &amp; -3 &amp; -1 \\
--1 &amp; 0 &amp; 0 &amp; -2
+  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 5 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{ccc}
+1 &amp; -2 &amp; -8 \\
+1 &amp; 1 &amp; 1 \\
+5 &amp; 2 &amp; -4 \\
+0 &amp; -2 &amp; -6 \\
+0 &amp; 1 &amp; 3
 \end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+1 &amp; -2 &amp; -8 \\
+1 &amp; 1 &amp; 1 \\
+5 &amp; 2 &amp; -4 \\
+0 &amp; -2 &amp; -6 \\
+0 &amp; 1 &amp; 3
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; -2 \\
+0 &amp; 1 &amp; 3 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
     </p>
     <ol type="a">
       <li>\(T\) is not injective</li>
@@ -211,15 +261,25 @@
 
 <hr/>
 <h4>Example 5</h4><div class="exercise">
-  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{cccc}
-1 &amp; -1 &amp; -1 &amp; -4 \\
-1 &amp; 0 &amp; 0 &amp; 0 \\
-2 &amp; -1 &amp; 0 &amp; -1 \\
-0 &amp; 2 &amp; 1 &amp; 5
+  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{cccc}
+-1 &amp; -3 &amp; 4 &amp; 3 \\
+-1 &amp; -4 &amp; 5 &amp; 5 \\
+1 &amp; 1 &amp; -2 &amp; 1
 \end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+-1 &amp; -3 &amp; 4 &amp; 3 \\
+-1 &amp; -4 &amp; 5 &amp; 5 \\
+1 &amp; 1 &amp; -2 &amp; 1
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; -1 &amp; 3 \\
+0 &amp; 1 &amp; -1 &amp; -2 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
     </p>
     <ol type="a">
       <li>\(T\) is not injective</li>
@@ -230,18 +290,34 @@
 
 <hr/>
 <h4>Example 6</h4><div class="exercise">
-  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{ccc}
-1 &amp; -5 &amp; 3 \\
-0 &amp; 1 &amp; -1 \\
-1 &amp; -6 &amp; 4 \\
-1 &amp; -6 &amp; 4
+  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 5 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{ccc}
+0 &amp; -3 &amp; -3 \\
+-1 &amp; 1 &amp; -2 \\
+2 &amp; -3 &amp; 3 \\
+-1 &amp; -3 &amp; -5 \\
+-1 &amp; -3 &amp; -7
 \end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+0 &amp; -3 &amp; -3 \\
+-1 &amp; 1 &amp; -2 \\
+2 &amp; -3 &amp; 3 \\
+-1 &amp; -3 &amp; -5 \\
+-1 &amp; -3 &amp; -7
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
-      <li>\(T\) is not injective</li>
+      <li>\(T\) is injective.</li>
       <li>\(T\) is not surjective</li>
     </ol>
   </div>
@@ -249,37 +325,60 @@
 
 <hr/>
 <h4>Example 7</h4><div class="exercise">
-  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{cccc}
--1 &amp; -1 &amp; 0 &amp; -1 \\
--2 &amp; -3 &amp; -3 &amp; 5 \\
--2 &amp; -3 &amp; -2 &amp; 3
+  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{ccc}
+-2 &amp; 0 &amp; 7 \\
+-1 &amp; -2 &amp; -3 \\
+0 &amp; 1 &amp; 5 \\
+-1 &amp; -1 &amp; 0
 \end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+-2 &amp; 0 &amp; 7 \\
+-1 &amp; -2 &amp; -3 \\
+0 &amp; 1 &amp; 5 \\
+-1 &amp; -1 &amp; 0
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
-      <li>\(T\) is not injective</li>
-      <li>\(T\) is surjective.</li>
+      <li>\(T\) is injective.</li>
+      <li>\(T\) is not surjective</li>
     </ol>
   </div>
 </div>
 
 <hr/>
 <h4>Example 8</h4><div class="exercise">
-  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 5 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{ccc}
-1 &amp; -6 &amp; -1 \\
--1 &amp; 1 &amp; 1 \\
--1 &amp; 2 &amp; -1 \\
-0 &amp; -2 &amp; 1 \\
--1 &amp; 2 &amp; -1
+  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{cccc}
+1 &amp; -1 &amp; 2 &amp; 1 \\
+-1 &amp; 2 &amp; -4 &amp; 0 \\
+3 &amp; -1 &amp; 2 &amp; 5
 \end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+1 &amp; -1 &amp; 2 &amp; 1 \\
+-1 &amp; 2 &amp; -4 &amp; 0 \\
+3 &amp; -1 &amp; 2 &amp; 5
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 2 \\
+0 &amp; 1 &amp; -2 &amp; 1 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
-      <li>\(T\) is injective.</li>
+      <li>\(T\) is not injective</li>
       <li>\(T\) is not surjective</li>
     </ol>
   </div>
@@ -287,34 +386,31 @@
 
 <hr/>
 <h4>Example 9</h4><div class="exercise">
-  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{cccc}
--3 &amp; -1 &amp; -2 &amp; -1 \\
-0 &amp; 1 &amp; -1 &amp; 6 \\
-0 &amp; 0 &amp; 1 &amp; -5 \\
-4 &amp; 1 &amp; 3 &amp; -1
+  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 5 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{ccc}
+0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 1 \\
+-1 &amp; -6 &amp; -2 \\
+1 &amp; 6 &amp; 6 \\
+1 &amp; 6 &amp; 1
 \end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
-    <ol type="a">
-      <li>\(T\) is injective.</li>
-      <li>\(T\) is surjective.</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 10</h4><div class="exercise">
-  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{cccc}
-1 &amp; 2 &amp; -6 &amp; -8 \\
--1 &amp; -1 &amp; 2 &amp; 2 \\
-0 &amp; -1 &amp; 5 &amp; 7 \\
-0 &amp; 0 &amp; -1 &amp; -1
-\end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
-  <div class="exercise-answer">
     <p>
-      <b>Answer:</b>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 1 \\
+-1 &amp; -6 &amp; -2 \\
+1 &amp; 6 &amp; 6 \\
+1 &amp; 6 &amp; 1
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 6 &amp; 0 \\
+0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
     </p>
     <ol type="a">
       <li>\(T\) is not injective</li>
@@ -324,20 +420,62 @@
 </div>
 
 <hr/>
-<h4>Example 11</h4><div class="exercise">
-  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{cccc}
-2 &amp; 2 &amp; -2 &amp; 7 \\
--4 &amp; -3 &amp; 5 &amp; -5 \\
-0 &amp; 0 &amp; 1 &amp; 4 \\
-1 &amp; 1 &amp; -1 &amp; 4
+<h4>Example 10</h4><div class="exercise">
+  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{cccc}
+0 &amp; -1 &amp; 0 &amp; -2 \\
+1 &amp; 2 &amp; -5 &amp; -1 \\
+1 &amp; -2 &amp; -4 &amp; -8
 \end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+0 &amp; -1 &amp; 0 &amp; -2 \\
+1 &amp; 2 &amp; -5 &amp; -1 \\
+1 &amp; -2 &amp; -4 &amp; -8
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 2 \\
+0 &amp; 0 &amp; 1 &amp; 1
+\end{array}\right] \]</p>
+    </p>
+    <ol type="a">
+      <li>\(T\) is not injective</li>
+      <li>\(T\) is surjective.</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 11</h4><div class="exercise">
+  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{ccc}
+1 &amp; 2 &amp; -3 \\
+0 &amp; 1 &amp; 0 \\
+-2 &amp; -4 &amp; 7 \\
+-1 &amp; -3 &amp; 5
+\end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+1 &amp; 2 &amp; -3 \\
+0 &amp; 1 &amp; 0 \\
+-2 &amp; -4 &amp; 7 \\
+-1 &amp; -3 &amp; 5
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>\(T\) is injective.</li>
-      <li>\(T\) is surjective.</li>
+      <li>\(T\) is not surjective</li>
     </ol>
   </div>
 </div>
@@ -345,34 +483,30 @@
 <hr/>
 <h4>Example 12</h4><div class="exercise">
   <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 5 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{ccc}
-1 &amp; 2 &amp; -6 \\
-0 &amp; 1 &amp; -5 \\
--1 &amp; -2 &amp; 7 \\
-0 &amp; 0 &amp; 4 \\
--1 &amp; -1 &amp; -1
+-1 &amp; 4 &amp; -3 \\
+2 &amp; -7 &amp; 5 \\
+0 &amp; -2 &amp; 2 \\
+1 &amp; -4 &amp; 3 \\
+0 &amp; 0 &amp; 0
 \end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
-    <ol type="a">
-      <li>\(T\) is injective.</li>
-      <li>\(T\) is not surjective</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 13</h4><div class="exercise">
-  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{cccc}
-1 &amp; -3 &amp; -1 &amp; 1 \\
-0 &amp; 1 &amp; 0 &amp; 1 \\
-0 &amp; 5 &amp; 1 &amp; 2 \\
-0 &amp; -3 &amp; 1 &amp; -6
-\end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
-  <div class="exercise-answer">
     <p>
-      <b>Answer:</b>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+-1 &amp; 4 &amp; -3 \\
+2 &amp; -7 &amp; 5 \\
+0 &amp; -2 &amp; 2 \\
+1 &amp; -4 &amp; 3 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; -1 \\
+0 &amp; 1 &amp; -1 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
     </p>
     <ol type="a">
       <li>\(T\) is not injective</li>
@@ -382,19 +516,70 @@
 </div>
 
 <hr/>
-<h4>Example 14</h4><div class="exercise">
-  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{ccc}
--1 &amp; -1 &amp; -3 \\
--1 &amp; -2 &amp; -5 \\
-1 &amp; 2 &amp; 6 \\
--1 &amp; 0 &amp; 1
+<h4>Example 13</h4><div class="exercise">
+  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 5 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{ccc}
+1 &amp; 2 &amp; -1 \\
+-1 &amp; -4 &amp; -6 \\
+0 &amp; 1 &amp; 3 \\
+0 &amp; 4 &amp; 6 \\
+0 &amp; 1 &amp; 3
 \end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+1 &amp; 2 &amp; -1 \\
+-1 &amp; -4 &amp; -6 \\
+0 &amp; 1 &amp; 3 \\
+0 &amp; 4 &amp; 6 \\
+0 &amp; 1 &amp; 3
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>\(T\) is injective.</li>
+      <li>\(T\) is not surjective</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 14</h4><div class="exercise">
+  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 5 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{ccc}
+-5 &amp; 1 &amp; -1 \\
+3 &amp; -2 &amp; -5 \\
+-1 &amp; 0 &amp; -1 \\
+-1 &amp; 0 &amp; -1 \\
+3 &amp; -1 &amp; -1
+\end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+-5 &amp; 1 &amp; -1 \\
+3 &amp; -2 &amp; -5 \\
+-1 &amp; 0 &amp; -1 \\
+-1 &amp; 0 &amp; -1 \\
+3 &amp; -1 &amp; -1
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; 1 \\
+0 &amp; 1 &amp; 4 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
+    <ol type="a">
+      <li>\(T\) is not injective</li>
       <li>\(T\) is not surjective</li>
     </ol>
   </div>
@@ -403,17 +588,28 @@
 <hr/>
 <h4>Example 15</h4><div class="exercise">
   <div class="exercise-statement"> Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{cccc}
-2 &amp; 0 &amp; -6 &amp; -4 \\
--1 &amp; 2 &amp; 7 &amp; -4 \\
-1 &amp; 1 &amp; -1 &amp; -5
+1 &amp; 3 &amp; -6 &amp; -3 \\
+-1 &amp; -2 &amp; 5 &amp; 3 \\
+0 &amp; 4 &amp; -3 &amp; 0
 \end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+1 &amp; 3 &amp; -6 &amp; -3 \\
+-1 &amp; -2 &amp; 5 &amp; 3 \\
+0 &amp; 4 &amp; -3 &amp; 0
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; -3 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>\(T\) is not injective</li>
-      <li>\(T\) is not surjective</li>
+      <li>\(T\) is surjective.</li>
     </ol>
   </div>
 </div>
@@ -421,13 +617,24 @@
 <hr/>
 <h4>Example 16</h4><div class="exercise">
   <div class="exercise-statement"> Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{cccc}
-0 &amp; 1 &amp; 1 &amp; 1 \\
--1 &amp; -3 &amp; 0 &amp; -4 \\
-1 &amp; 4 &amp; 1 &amp; 5
+-1 &amp; 2 &amp; 3 &amp; -2 \\
+-1 &amp; 4 &amp; 3 &amp; -6 \\
+-2 &amp; 5 &amp; 6 &amp; -6
 \end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+-1 &amp; 2 &amp; 3 &amp; -2 \\
+-1 &amp; 4 &amp; 3 &amp; -6 \\
+-2 &amp; 5 &amp; 6 &amp; -6
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; -3 &amp; -2 \\
+0 &amp; 1 &amp; 0 &amp; -2 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
     </p>
     <ol type="a">
       <li>\(T\) is not injective</li>
@@ -438,35 +645,25 @@
 
 <hr/>
 <h4>Example 17</h4><div class="exercise">
-  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{ccc}
-1 &amp; 7 &amp; -6 \\
-0 &amp; 1 &amp; -1 \\
-2 &amp; 5 &amp; -2 \\
-3 &amp; 7 &amp; -8
+  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{cccc}
+1 &amp; -4 &amp; 6 &amp; -7 \\
+0 &amp; 1 &amp; -1 &amp; 2 \\
+0 &amp; -4 &amp; 4 &amp; -8
 \end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
-    <ol type="a">
-      <li>\(T\) is injective.</li>
-      <li>\(T\) is not surjective</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 18</h4><div class="exercise">
-  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 5 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{ccc}
-1 &amp; 4 &amp; 4 \\
-2 &amp; 8 &amp; 5 \\
-0 &amp; 0 &amp; -1 \\
-2 &amp; 8 &amp; 5 \\
--1 &amp; -4 &amp; 0
-\end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
-  <div class="exercise-answer">
     <p>
-      <b>Answer:</b>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+1 &amp; -4 &amp; 6 &amp; -7 \\
+0 &amp; 1 &amp; -1 &amp; 2 \\
+0 &amp; -4 &amp; 4 &amp; -8
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 2 &amp; 1 \\
+0 &amp; 1 &amp; -1 &amp; 2 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
     </p>
     <ol type="a">
       <li>\(T\) is not injective</li>
@@ -476,19 +673,61 @@
 </div>
 
 <hr/>
-<h4>Example 19</h4><div class="exercise">
-  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{ccc}
-1 &amp; 0 &amp; -3 \\
-0 &amp; 1 &amp; -5 \\
-1 &amp; 1 &amp; -7 \\
-2 &amp; -1 &amp; -6
+<h4>Example 18</h4><div class="exercise">
+  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{cccc}
+1 &amp; -2 &amp; 3 &amp; 1 \\
+-1 &amp; 3 &amp; -5 &amp; -4 \\
+2 &amp; -1 &amp; 1 &amp; -5
 \end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+1 &amp; -2 &amp; 3 &amp; 1 \\
+-1 &amp; 3 &amp; -5 &amp; -4 \\
+2 &amp; -1 &amp; 1 &amp; -5
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; -3 \\
+0 &amp; 1 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 1 &amp; 2
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
-      <li>\(T\) is injective.</li>
+      <li>\(T\) is not injective</li>
+      <li>\(T\) is surjective.</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 19</h4><div class="exercise">
+  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{ccc}
+1 &amp; 2 &amp; -7 \\
+-1 &amp; 1 &amp; -2 \\
+0 &amp; 2 &amp; -6 \\
+3 &amp; 0 &amp; -3
+\end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+1 &amp; 2 &amp; -7 \\
+-1 &amp; 1 &amp; -2 \\
+0 &amp; 2 &amp; -6 \\
+3 &amp; 0 &amp; -3
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; -1 \\
+0 &amp; 1 &amp; -3 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
+    <ol type="a">
+      <li>\(T\) is not injective</li>
       <li>\(T\) is not surjective</li>
     </ol>
   </div>
@@ -496,16 +735,28 @@
 
 <hr/>
 <h4>Example 20</h4><div class="exercise">
-  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 5 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{ccc}
-1 &amp; -2 &amp; -8 \\
-0 &amp; 1 &amp; 2 \\
-0 &amp; 1 &amp; 3 \\
-1 &amp; 1 &amp; 3 \\
-1 &amp; -1 &amp; -4
+  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{ccc}
+1 &amp; 0 &amp; 4 \\
+-2 &amp; 1 &amp; -7 \\
+-2 &amp; 1 &amp; -6 \\
+2 &amp; -3 &amp; 1
 \end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+1 &amp; 0 &amp; 4 \\
+-2 &amp; 1 &amp; -7 \\
+-2 &amp; 1 &amp; -6 \\
+2 &amp; -3 &amp; 1
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
     </p>
     <ol type="a">
       <li>\(T\) is injective.</li>
@@ -516,15 +767,63 @@
 
 <hr/>
 <h4>Example 21</h4><div class="exercise">
-  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{ccc}
--2 &amp; -2 &amp; 0 \\
--1 &amp; 1 &amp; -6 \\
-0 &amp; -2 &amp; 6 \\
--3 &amp; -2 &amp; -3
+  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{cccc}
+4 &amp; 2 &amp; 8 &amp; 3 \\
+0 &amp; 1 &amp; -4 &amp; -3 \\
+1 &amp; 1 &amp; -2 &amp; 0 \\
+-1 &amp; -1 &amp; -1 &amp; 1
 \end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+4 &amp; 2 &amp; 8 &amp; 3 \\
+0 &amp; 1 &amp; -4 &amp; -3 \\
+1 &amp; 1 &amp; -2 &amp; 0 \\
+-1 &amp; -1 &amp; -1 &amp; 1
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \]</p>
+    </p>
+    <ol type="a">
+      <li>\(T\) is injective.</li>
+      <li>\(T\) is surjective.</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 22</h4><div class="exercise">
+  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 5 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{ccc}
+-2 &amp; -3 &amp; 3 \\
+-3 &amp; -5 &amp; 5 \\
+-3 &amp; -2 &amp; 2 \\
+4 &amp; 8 &amp; -8 \\
+0 &amp; 3 &amp; -3
+\end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+-2 &amp; -3 &amp; 3 \\
+-3 &amp; -5 &amp; 5 \\
+-3 &amp; -2 &amp; 2 \\
+4 &amp; 8 &amp; -8 \\
+0 &amp; 3 &amp; -3
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; -1 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
     </p>
     <ol type="a">
       <li>\(T\) is not injective</li>
@@ -534,37 +833,26 @@
 </div>
 
 <hr/>
-<h4>Example 22</h4><div class="exercise">
-  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 5 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{ccc}
--2 &amp; -1 &amp; 0 \\
-3 &amp; 1 &amp; -1 \\
-4 &amp; 1 &amp; -1 \\
--2 &amp; -4 &amp; -1 \\
-3 &amp; -1 &amp; 0
+<h4>Example 23</h4><div class="exercise">
+  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{cccc}
+1 &amp; -1 &amp; -1 &amp; -5 \\
+0 &amp; 1 &amp; 0 &amp; 3 \\
+1 &amp; -1 &amp; -1 &amp; -5
 \end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
-    <ol type="a">
-      <li>\(T\) is injective.</li>
-      <li>\(T\) is not surjective</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 23</h4><div class="exercise">
-  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 5 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{ccc}
--5 &amp; 1 &amp; -5 \\
--3 &amp; -2 &amp; -3 \\
--5 &amp; -8 &amp; -5 \\
--3 &amp; -4 &amp; -3 \\
--2 &amp; 0 &amp; -2
-\end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
-  <div class="exercise-answer">
     <p>
-      <b>Answer:</b>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+1 &amp; -1 &amp; -1 &amp; -5 \\
+0 &amp; 1 &amp; 0 &amp; 3 \\
+1 &amp; -1 &amp; -1 &amp; -5
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; -1 &amp; -2 \\
+0 &amp; 1 &amp; 0 &amp; 3 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
     </p>
     <ol type="a">
       <li>\(T\) is not injective</li>
@@ -575,16 +863,28 @@
 
 <hr/>
 <h4>Example 24</h4><div class="exercise">
-  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 5 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{ccc}
-1 &amp; 5 &amp; 2 \\
--1 &amp; -5 &amp; 4 \\
--1 &amp; -5 &amp; -2 \\
--1 &amp; -5 &amp; 7 \\
-0 &amp; 0 &amp; -5
+  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{ccc}
+-3 &amp; -1 &amp; 3 \\
+2 &amp; -1 &amp; -7 \\
+2 &amp; 0 &amp; -4 \\
+2 &amp; -1 &amp; -7
 \end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+-3 &amp; -1 &amp; 3 \\
+2 &amp; -1 &amp; -7 \\
+2 &amp; 0 &amp; -4 \\
+2 &amp; -1 &amp; -7
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; -2 \\
+0 &amp; 1 &amp; 3 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
     </p>
     <ol type="a">
       <li>\(T\) is not injective</li>
@@ -595,17 +895,34 @@
 
 <hr/>
 <h4>Example 25</h4><div class="exercise">
-  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{cccc}
-1 &amp; -4 &amp; -5 &amp; -4 \\
-0 &amp; 0 &amp; 1 &amp; 1 \\
-0 &amp; 0 &amp; -2 &amp; -2
+  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 5 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{ccc}
+-3 &amp; 0 &amp; -1 \\
+1 &amp; 2 &amp; 5 \\
+3 &amp; 0 &amp; 4 \\
+0 &amp; -1 &amp; -6 \\
+-4 &amp; -1 &amp; -4
 \end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+-3 &amp; 0 &amp; -1 \\
+1 &amp; 2 &amp; 5 \\
+3 &amp; 0 &amp; 4 \\
+0 &amp; -1 &amp; -6 \\
+-4 &amp; -1 &amp; -4
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
-      <li>\(T\) is not injective</li>
+      <li>\(T\) is injective.</li>
       <li>\(T\) is not surjective</li>
     </ol>
   </div>
@@ -614,13 +931,24 @@
 <hr/>
 <h4>Example 26</h4><div class="exercise">
   <div class="exercise-statement"> Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{cccc}
-1 &amp; -1 &amp; 6 &amp; 8 \\
-1 &amp; 0 &amp; 3 &amp; 2 \\
--1 &amp; 0 &amp; -2 &amp; -1
+1 &amp; 3 &amp; -7 &amp; -6 \\
+-1 &amp; -2 &amp; 3 &amp; 2 \\
+0 &amp; 1 &amp; -3 &amp; -3
 \end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+1 &amp; 3 &amp; -7 &amp; -6 \\
+-1 &amp; -2 &amp; 3 &amp; 2 \\
+0 &amp; 1 &amp; -3 &amp; -3
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 1
+\end{array}\right] \]</p>
     </p>
     <ol type="a">
       <li>\(T\) is not injective</li>
@@ -631,35 +959,54 @@
 
 <hr/>
 <h4>Example 27</h4><div class="exercise">
-  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{cccc}
-2 &amp; -3 &amp; 3 &amp; -7 \\
-1 &amp; -1 &amp; 1 &amp; -1 \\
--1 &amp; 2 &amp; -1 &amp; 2 \\
-1 &amp; -1 &amp; 2 &amp; -4
+  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{cccc}
+2 &amp; 0 &amp; 4 &amp; 0 \\
+-1 &amp; 2 &amp; -6 &amp; 2 \\
+1 &amp; 1 &amp; 0 &amp; 1
 \end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+2 &amp; 0 &amp; 4 &amp; 0 \\
+-1 &amp; 2 &amp; -6 &amp; 2 \\
+1 &amp; 1 &amp; 0 &amp; 1
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 2 &amp; 0 \\
+0 &amp; 1 &amp; -2 &amp; 1 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
-      <li>\(T\) is injective.</li>
-      <li>\(T\) is surjective.</li>
+      <li>\(T\) is not injective</li>
+      <li>\(T\) is not surjective</li>
     </ol>
   </div>
 </div>
 
 <hr/>
 <h4>Example 28</h4><div class="exercise">
-  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 5 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{ccc}
-0 &amp; -2 &amp; 2 \\
-1 &amp; 3 &amp; 1 \\
-1 &amp; 5 &amp; -1 \\
-3 &amp; 8 &amp; 4 \\
--1 &amp; -4 &amp; 0
+  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{cccc}
+1 &amp; 4 &amp; 3 &amp; -7 \\
+-1 &amp; -4 &amp; -2 &amp; 4 \\
+0 &amp; 0 &amp; 0 &amp; 0
 \end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+1 &amp; 4 &amp; 3 &amp; -7 \\
+-1 &amp; -4 &amp; -2 &amp; 4 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 4 &amp; 0 &amp; 2 \\
+0 &amp; 0 &amp; 1 &amp; -3 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
     </p>
     <ol type="a">
       <li>\(T\) is not injective</li>
@@ -670,14 +1017,28 @@
 
 <hr/>
 <h4>Example 29</h4><div class="exercise">
-  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{cccc}
-0 &amp; 0 &amp; 0 &amp; -1 \\
-1 &amp; 5 &amp; -3 &amp; 1 \\
-0 &amp; 0 &amp; 0 &amp; 3
+  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{cccc}
+1 &amp; 1 &amp; -1 &amp; -1 \\
+-3 &amp; -2 &amp; 0 &amp; -4 \\
+3 &amp; 4 &amp; -5 &amp; -8 \\
+5 &amp; 5 &amp; -4 &amp; -3
 \end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+1 &amp; 1 &amp; -1 &amp; -1 \\
+-3 &amp; -2 &amp; 0 &amp; -4 \\
+3 &amp; 4 &amp; -5 &amp; -8 \\
+5 &amp; 5 &amp; -4 &amp; -3
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 2 \\
+0 &amp; 1 &amp; 0 &amp; -1 \\
+0 &amp; 0 &amp; 1 &amp; 2 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
     </p>
     <ol type="a">
       <li>\(T\) is not injective</li>
@@ -688,35 +1049,54 @@
 
 <hr/>
 <h4>Example 30</h4><div class="exercise">
-  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 5 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{ccc}
-1 &amp; -4 &amp; 1 \\
-0 &amp; 1 &amp; -1 \\
--1 &amp; 3 &amp; 0 \\
-1 &amp; -3 &amp; 0 \\
--1 &amp; 7 &amp; -4
+  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 4 &amp; 3 \\
+2 &amp; -3 &amp; -8 &amp; -7 \\
+0 &amp; 1 &amp; 5 &amp; 4
 \end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 4 &amp; 3 \\
+2 &amp; -3 &amp; -8 &amp; -7 \\
+0 &amp; 1 &amp; 5 &amp; 4
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; -1 \\
+0 &amp; 1 &amp; 0 &amp; -1 \\
+0 &amp; 0 &amp; 1 &amp; 1
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>\(T\) is not injective</li>
-      <li>\(T\) is not surjective</li>
+      <li>\(T\) is surjective.</li>
     </ol>
   </div>
 </div>
 
 <hr/>
 <h4>Example 31</h4><div class="exercise">
-  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{cccc}
-1 &amp; 3 &amp; -1 &amp; -6 \\
-1 &amp; 4 &amp; -2 &amp; -6 \\
-0 &amp; 5 &amp; -4 &amp; -2 \\
--1 &amp; 2 &amp; -3 &amp; 4
+  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{cccc}
+1 &amp; 2 &amp; 3 &amp; 8 \\
+0 &amp; 0 &amp; 1 &amp; 2 \\
+1 &amp; 2 &amp; -2 &amp; -2
 \end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+1 &amp; 2 &amp; 3 &amp; 8 \\
+0 &amp; 0 &amp; 1 &amp; 2 \\
+1 &amp; 2 &amp; -2 &amp; -2
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 2 &amp; 0 &amp; 2 \\
+0 &amp; 0 &amp; 1 &amp; 2 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
     </p>
     <ol type="a">
       <li>\(T\) is not injective</li>
@@ -727,18 +1107,34 @@
 
 <hr/>
 <h4>Example 32</h4><div class="exercise">
-  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{ccc}
-1 &amp; 1 &amp; 3 \\
--3 &amp; -2 &amp; -5 \\
-4 &amp; 2 &amp; 5 \\
-1 &amp; 0 &amp; 0
+  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 5 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{ccc}
+-2 &amp; 2 &amp; -2 \\
+1 &amp; 3 &amp; -7 \\
+1 &amp; 0 &amp; -1 \\
+0 &amp; 4 &amp; -8 \\
+2 &amp; 0 &amp; -2
 \end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+-2 &amp; 2 &amp; -2 \\
+1 &amp; 3 &amp; -7 \\
+1 &amp; 0 &amp; -1 \\
+0 &amp; 4 &amp; -8 \\
+2 &amp; 0 &amp; -2
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; -1 \\
+0 &amp; 1 &amp; -2 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
-      <li>\(T\) is injective.</li>
+      <li>\(T\) is not injective</li>
       <li>\(T\) is not surjective</li>
     </ol>
   </div>
@@ -747,13 +1143,24 @@
 <hr/>
 <h4>Example 33</h4><div class="exercise">
   <div class="exercise-statement"> Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{cccc}
-0 &amp; -1 &amp; 2 &amp; -2 \\
-1 &amp; 0 &amp; -3 &amp; -2 \\
-1 &amp; 2 &amp; -6 &amp; 2
+1 &amp; 1 &amp; -1 &amp; 0 \\
+0 &amp; 1 &amp; -5 &amp; -3 \\
+1 &amp; 1 &amp; 0 &amp; 1
 \end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+1 &amp; 1 &amp; -1 &amp; 0 \\
+0 &amp; 1 &amp; -5 &amp; -3 \\
+1 &amp; 1 &amp; 0 &amp; 1
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; -1 \\
+0 &amp; 1 &amp; 0 &amp; 2 \\
+0 &amp; 0 &amp; 1 &amp; 1
+\end{array}\right] \]</p>
     </p>
     <ol type="a">
       <li>\(T\) is not injective</li>
@@ -765,14 +1172,27 @@
 <hr/>
 <h4>Example 34</h4><div class="exercise">
   <div class="exercise-statement"> Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{cccc}
--2 &amp; 3 &amp; -5 &amp; -8 \\
-2 &amp; 1 &amp; 6 &amp; 2 \\
--3 &amp; -1 &amp; -6 &amp; -7 \\
--1 &amp; 1 &amp; -2 &amp; -4
+1 &amp; 3 &amp; -1 &amp; -8 \\
+-1 &amp; -2 &amp; 1 &amp; 6 \\
+1 &amp; 1 &amp; 0 &amp; -6 \\
+1 &amp; 4 &amp; -2 &amp; -7
 \end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+1 &amp; 3 &amp; -1 &amp; -8 \\
+-1 &amp; -2 &amp; 1 &amp; 6 \\
+1 &amp; 1 &amp; 0 &amp; -6 \\
+1 &amp; 4 &amp; -2 &amp; -7
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \]</p>
     </p>
     <ol type="a">
       <li>\(T\) is injective.</li>
@@ -784,14 +1204,27 @@
 <hr/>
 <h4>Example 35</h4><div class="exercise">
   <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{ccc}
-1 &amp; 0 &amp; -1 \\
-1 &amp; -2 &amp; 1 \\
-0 &amp; 3 &amp; -3 \\
--1 &amp; 7 &amp; -6
+-5 &amp; 2 &amp; -1 \\
+0 &amp; 1 &amp; 2 \\
+-2 &amp; 0 &amp; -2 \\
+-1 &amp; 2 &amp; 3
 \end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+-5 &amp; 2 &amp; -1 \\
+0 &amp; 1 &amp; 2 \\
+-2 &amp; 0 &amp; -2 \\
+-1 &amp; 2 &amp; 3
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; 1 \\
+0 &amp; 1 &amp; 2 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
     </p>
     <ol type="a">
       <li>\(T\) is not injective</li>
@@ -802,14 +1235,28 @@
 
 <hr/>
 <h4>Example 36</h4><div class="exercise">
-  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{cccc}
-1 &amp; 4 &amp; -6 &amp; 5 \\
-0 &amp; 1 &amp; -2 &amp; 1 \\
-0 &amp; 2 &amp; -4 &amp; 2
+  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{ccc}
+3 &amp; 2 &amp; 8 \\
+-2 &amp; -1 &amp; -5 \\
+-1 &amp; -4 &amp; -6 \\
+2 &amp; 0 &amp; 4
 \end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+3 &amp; 2 &amp; 8 \\
+-2 &amp; -1 &amp; -5 \\
+-1 &amp; -4 &amp; -6 \\
+2 &amp; 0 &amp; 4
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; 2 \\
+0 &amp; 1 &amp; 1 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
     </p>
     <ol type="a">
       <li>\(T\) is not injective</li>
@@ -820,18 +1267,31 @@
 
 <hr/>
 <h4>Example 37</h4><div class="exercise">
-  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{cccc}
--5 &amp; -3 &amp; -4 &amp; -3 \\
--3 &amp; -2 &amp; -2 &amp; -3 \\
-1 &amp; 2 &amp; -1 &amp; 7 \\
-0 &amp; -2 &amp; 1 &amp; -6
+  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{ccc}
+1 &amp; -3 &amp; 0 \\
+0 &amp; 1 &amp; 1 \\
+1 &amp; -5 &amp; -1 \\
+0 &amp; 5 &amp; 6
 \end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+1 &amp; -3 &amp; 0 \\
+0 &amp; 1 &amp; 1 \\
+1 &amp; -5 &amp; -1 \\
+0 &amp; 5 &amp; 6
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
-      <li>\(T\) is not injective</li>
+      <li>\(T\) is injective.</li>
       <li>\(T\) is not surjective</li>
     </ol>
   </div>
@@ -840,13 +1300,24 @@
 <hr/>
 <h4>Example 38</h4><div class="exercise">
   <div class="exercise-statement"> Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{cccc}
-1 &amp; 0 &amp; -1 &amp; 1 \\
-0 &amp; 1 &amp; 4 &amp; 6 \\
-1 &amp; 1 &amp; 4 &amp; 8
+1 &amp; 5 &amp; 3 &amp; 4 \\
+2 &amp; 3 &amp; 8 &amp; -1 \\
+0 &amp; -4 &amp; 1 &amp; -5
 \end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+1 &amp; 5 &amp; 3 &amp; 4 \\
+2 &amp; 3 &amp; 8 &amp; -1 \\
+0 &amp; -4 &amp; 1 &amp; -5
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 2 \\
+0 &amp; 1 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 1 &amp; -1
+\end{array}\right] \]</p>
     </p>
     <ol type="a">
       <li>\(T\) is not injective</li>
@@ -858,32 +1329,53 @@
 <hr/>
 <h4>Example 39</h4><div class="exercise">
   <div class="exercise-statement"> Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{cccc}
-1 &amp; 1 &amp; 5 &amp; 0 \\
-0 &amp; 1 &amp; 2 &amp; 2 \\
-1 &amp; -2 &amp; -1 &amp; -6
+-5 &amp; -3 &amp; 7 &amp; 5 \\
+-4 &amp; -3 &amp; 6 &amp; 4 \\
+3 &amp; 2 &amp; -4 &amp; -2
 \end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+-5 &amp; -3 &amp; 7 &amp; 5 \\
+-4 &amp; -3 &amp; 6 &amp; 4 \\
+3 &amp; 2 &amp; -4 &amp; -2
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 2 \\
+0 &amp; 1 &amp; 0 &amp; 2 \\
+0 &amp; 0 &amp; 1 &amp; 3
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>\(T\) is not injective</li>
-      <li>\(T\) is not surjective</li>
+      <li>\(T\) is surjective.</li>
     </ol>
   </div>
 </div>
 
 <hr/>
 <h4>Example 40</h4><div class="exercise">
-  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{ccc}
-4 &amp; -1 &amp; 3 \\
--3 &amp; 1 &amp; -3 \\
-2 &amp; -1 &amp; 3 \\
--1 &amp; 0 &amp; 0
+  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{cccc}
+-2 &amp; 3 &amp; 0 &amp; -7 \\
+1 &amp; -2 &amp; 0 &amp; 5 \\
+1 &amp; -1 &amp; 0 &amp; 2
 \end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+-2 &amp; 3 &amp; 0 &amp; -7 \\
+1 &amp; -2 &amp; 0 &amp; 5 \\
+1 &amp; -1 &amp; 0 &amp; 2
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; -1 \\
+0 &amp; 1 &amp; 0 &amp; -3 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
     </p>
     <ol type="a">
       <li>\(T\) is not injective</li>
@@ -894,16 +1386,28 @@
 
 <hr/>
 <h4>Example 41</h4><div class="exercise">
-  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 5 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{ccc}
-1 &amp; 0 &amp; 2 \\
--2 &amp; 1 &amp; -3 \\
--3 &amp; 0 &amp; -6 \\
--2 &amp; 3 &amp; -1 \\
-3 &amp; -3 &amp; 3
+  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{ccc}
+1 &amp; 1 &amp; 0 \\
+0 &amp; 1 &amp; 0 \\
+-1 &amp; 1 &amp; 0 \\
+-1 &amp; -3 &amp; 0
 \end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+1 &amp; 1 &amp; 0 \\
+0 &amp; 1 &amp; 0 \\
+-1 &amp; 1 &amp; 0 \\
+-1 &amp; -3 &amp; 0
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
     </p>
     <ol type="a">
       <li>\(T\) is not injective</li>
@@ -914,37 +1418,60 @@
 
 <hr/>
 <h4>Example 42</h4><div class="exercise">
-  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{cccc}
--2 &amp; -3 &amp; 5 &amp; -8 \\
--1 &amp; -2 &amp; 3 &amp; -5 \\
--1 &amp; -2 &amp; 4 &amp; -7 \\
-0 &amp; -1 &amp; -2 &amp; 5
+  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{ccc}
+-1 &amp; -2 &amp; 8 \\
+-1 &amp; -1 &amp; 2 \\
+-1 &amp; -2 &amp; 7 \\
+2 &amp; 3 &amp; -4
 \end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+-1 &amp; -2 &amp; 8 \\
+-1 &amp; -1 &amp; 2 \\
+-1 &amp; -2 &amp; 7 \\
+2 &amp; 3 &amp; -4
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>\(T\) is injective.</li>
-      <li>\(T\) is surjective.</li>
+      <li>\(T\) is not surjective</li>
     </ol>
   </div>
 </div>
 
 <hr/>
 <h4>Example 43</h4><div class="exercise">
-  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{cccc}
--1 &amp; -1 &amp; -5 &amp; -7 \\
--2 &amp; 1 &amp; 1 &amp; 7 \\
-2 &amp; 1 &amp; 6 &amp; 6 \\
--2 &amp; 0 &amp; -5 &amp; -6
+  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 4 &amp; 2 \\
+0 &amp; 1 &amp; -4 &amp; 3 \\
+0 &amp; 0 &amp; 0 &amp; 1
 \end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 4 &amp; 2 \\
+0 &amp; 1 &amp; -4 &amp; 3 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 4 &amp; 0 \\
+0 &amp; 1 &amp; -4 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
-      <li>\(T\) is injective.</li>
+      <li>\(T\) is not injective</li>
       <li>\(T\) is surjective.</li>
     </ol>
   </div>
@@ -952,18 +1479,34 @@
 
 <hr/>
 <h4>Example 44</h4><div class="exercise">
-  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{cccc}
-1 &amp; -2 &amp; -6 &amp; -1 \\
--1 &amp; -3 &amp; -2 &amp; 3 \\
-0 &amp; -3 &amp; -5 &amp; 1 \\
-1 &amp; 6 &amp; 4 &amp; -7
+  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 5 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{ccc}
+2 &amp; -7 &amp; -2 \\
+-2 &amp; 7 &amp; -2 \\
+-1 &amp; 3 &amp; 0 \\
+-1 &amp; 4 &amp; 3 \\
+2 &amp; -6 &amp; 0
 \end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+2 &amp; -7 &amp; -2 \\
+-2 &amp; 7 &amp; -2 \\
+-1 &amp; 3 &amp; 0 \\
+-1 &amp; 4 &amp; 3 \\
+2 &amp; -6 &amp; 0
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
-      <li>\(T\) is not injective</li>
+      <li>\(T\) is injective.</li>
       <li>\(T\) is not surjective</li>
     </ol>
   </div>
@@ -971,15 +1514,28 @@
 
 <hr/>
 <h4>Example 45</h4><div class="exercise">
-  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{ccc}
--2 &amp; -8 &amp; 6 \\
--2 &amp; -7 &amp; 5 \\
--1 &amp; -4 &amp; 3 \\
-1 &amp; 4 &amp; -3
+  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 5 &amp; 8 \\
+0 &amp; 1 &amp; -3 &amp; -6 \\
+5 &amp; 6 &amp; 8 &amp; 6 \\
+4 &amp; 3 &amp; 7 &amp; 6
 \end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 5 &amp; 8 \\
+0 &amp; 1 &amp; -3 &amp; -6 \\
+5 &amp; 6 &amp; 8 &amp; 6 \\
+4 &amp; 3 &amp; 7 &amp; 6
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; -2 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 2 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
     </p>
     <ol type="a">
       <li>\(T\) is not injective</li>
@@ -990,33 +1546,31 @@
 
 <hr/>
 <h4>Example 46</h4><div class="exercise">
-  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{cccc}
--2 &amp; 0 &amp; 1 &amp; -6 \\
-2 &amp; -1 &amp; 0 &amp; 6 \\
-1 &amp; 0 &amp; 0 &amp; 1 \\
--3 &amp; 1 &amp; 0 &amp; -6
+  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 5 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{ccc}
+-8 &amp; 0 &amp; 0 \\
+-2 &amp; 1 &amp; -3 \\
+4 &amp; 0 &amp; 0 \\
+-3 &amp; 0 &amp; 0 \\
+-5 &amp; -2 &amp; 6
 \end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
-    <ol type="a">
-      <li>\(T\) is injective.</li>
-      <li>\(T\) is surjective.</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 47</h4><div class="exercise">
-  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{cccc}
-1 &amp; -1 &amp; 4 &amp; -1 \\
-2 &amp; -1 &amp; 5 &amp; -4 \\
-0 &amp; 2 &amp; -6 &amp; -4
-\end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
-  <div class="exercise-answer">
     <p>
-      <b>Answer:</b>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+-8 &amp; 0 &amp; 0 \\
+-2 &amp; 1 &amp; -3 \\
+4 &amp; 0 &amp; 0 \\
+-3 &amp; 0 &amp; 0 \\
+-5 &amp; -2 &amp; 6
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; -3 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
     </p>
     <ol type="a">
       <li>\(T\) is not injective</li>
@@ -1026,15 +1580,61 @@
 </div>
 
 <hr/>
-<h4>Example 48</h4><div class="exercise">
+<h4>Example 47</h4><div class="exercise">
   <div class="exercise-statement"> Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{cccc}
-4 &amp; 8 &amp; 1 &amp; 2 \\
--1 &amp; -2 &amp; 0 &amp; 0 \\
--1 &amp; -2 &amp; -1 &amp; -2
+1 &amp; -1 &amp; 1 &amp; 4 \\
+-1 &amp; -2 &amp; 4 &amp; 6 \\
+0 &amp; -2 &amp; 3 &amp; 6
 \end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+1 &amp; -1 &amp; 1 &amp; 4 \\
+-1 &amp; -2 &amp; 4 &amp; 6 \\
+0 &amp; -2 &amp; 3 &amp; 6
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 2 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 2
+\end{array}\right] \]</p>
+    </p>
+    <ol type="a">
+      <li>\(T\) is not injective</li>
+      <li>\(T\) is surjective.</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 48</h4><div class="exercise">
+  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 5 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{ccc}
+1 &amp; 2 &amp; 3 \\
+1 &amp; 3 &amp; 5 \\
+1 &amp; 1 &amp; 1 \\
+3 &amp; 4 &amp; 5 \\
+0 &amp; -4 &amp; -8
+\end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+1 &amp; 2 &amp; 3 \\
+1 &amp; 3 &amp; 5 \\
+1 &amp; 1 &amp; 1 \\
+3 &amp; 4 &amp; 5 \\
+0 &amp; -4 &amp; -8
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; -1 \\
+0 &amp; 1 &amp; 2 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
     </p>
     <ol type="a">
       <li>\(T\) is not injective</li>
@@ -1045,18 +1645,31 @@
 
 <hr/>
 <h4>Example 49</h4><div class="exercise">
-  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 2 &amp; 1 \\
--2 &amp; -1 &amp; -5 &amp; -5 \\
-0 &amp; -1 &amp; -2 &amp; -4 \\
-0 &amp; 1 &amp; 4 &amp; 6
+  <div class="exercise-statement"> Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{ccc}
+1 &amp; 1 &amp; 5 \\
+-2 &amp; -1 &amp; -5 \\
+0 &amp; 1 &amp; 6 \\
+2 &amp; 1 &amp; 5
 \end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccc}
+1 &amp; 1 &amp; 5 \\
+-2 &amp; -1 &amp; -5 \\
+0 &amp; 1 &amp; 6 \\
+2 &amp; 1 &amp; 5
+\end{array}\right] = \left[\begin{array}{ccc}
+1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
-      <li>\(T\) is not injective</li>
+      <li>\(T\) is injective.</li>
       <li>\(T\) is not surjective</li>
     </ol>
   </div>
@@ -1065,13 +1678,24 @@
 <hr/>
 <h4>Example 50</h4><div class="exercise">
   <div class="exercise-statement"> Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix \( \left[\begin{array}{cccc}
--2 &amp; -3 &amp; 5 &amp; 7 \\
--1 &amp; -2 &amp; 4 &amp; 4 \\
--1 &amp; -2 &amp; 4 &amp; 4
+1 &amp; 1 &amp; -3 &amp; -3 \\
+1 &amp; 2 &amp; -4 &amp; -5 \\
+1 &amp; 3 &amp; -5 &amp; -7
 \end{array}\right] .\)<ol type="a"><li>Explain why \(T\) is or is not injective.</li><li>Explain why \(T\) is or is not surjective.</li></ol></div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+1 &amp; 1 &amp; -3 &amp; -3 \\
+1 &amp; 2 &amp; -4 &amp; -5 \\
+1 &amp; 3 &amp; -5 &amp; -7
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; -2 &amp; -1 \\
+0 &amp; 1 &amp; -1 &amp; -2 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
     </p>
     <ol type="a">
       <li>\(T\) is not injective</li>

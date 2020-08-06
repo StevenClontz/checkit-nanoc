@@ -138,24 +138,22 @@
 <h4>Example 1</h4><div class="exercise">
   <div class="exercise-statement">
     <ol type="a">
-      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 4  \to \mathbb{R}^ 3 \) given by <p>\[S\left(  \left[\begin{array}{c}
-x_{1} \\
-x_{2} \\
-x_{3} \\
-x_{4}
+      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 4  \to \mathbb{R}^ 1 \) given by <p>\[S\left(  \left[\begin{array}{c}
+x \\
+y \\
+z \\
+{w}
 \end{array}\right]  \right) =  \left[\begin{array}{c}
-x_{1} + x_{2} + x_{3} + 5 \, x_{4} \\
-x_{2} + 3 \, x_{4} \\
-x_{1} + 2 \, x_{3} + 5 \, x_{4}
+x + 2 \, y - z
 \end{array}\right] .\]</p></li>
       <li>Let \(T:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cc}
-1 &amp; -3 \\
-3 &amp; -8 \\
-1 &amp; -2 \\
-0 &amp; 3
+-2 &amp; 2 \\
+0 &amp; 1 \\
+-3 &amp; 5 \\
+2 &amp; -3
 \end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
--2 \\
-0
+7 \\
+6
 \end{array}\right]  \right)\). </li>
     </ol>
   </div>
@@ -166,20 +164,18 @@ x_{1} + 2 \, x_{3} + 5 \, x_{4}
     <ol type="a">
       <li>
         <p>\[ \left[\begin{array}{cccc}
-1 &amp; 1 &amp; 1 &amp; 5 \\
-0 &amp; 1 &amp; 0 &amp; 3 \\
-1 &amp; 0 &amp; 2 &amp; 5
+1 &amp; 2 &amp; -1 &amp; 0
 \end{array}\right] \]</p>
       </li>
       <li>
         <p>\[T\left( \left[\begin{array}{c}
--2 \\
-0
+7 \\
+6
 \end{array}\right]  \right)= \left[\begin{array}{c}
 -2 \\
--6 \\
--2 \\
-0
+6 \\
+9 \\
+-4
 \end{array}\right] \]</p>
       </li>
     </ol>
@@ -190,24 +186,25 @@ x_{1} + 2 \, x_{3} + 5 \, x_{4}
 <h4>Example 2</h4><div class="exercise">
   <div class="exercise-statement">
     <ol type="a">
-      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) given by <p>\[S\left(  \left[\begin{array}{c}
-x \\
-y
+      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) given by <p>\[S\left(  \left[\begin{array}{c}
+x_{1} \\
+x_{2} \\
+x_{3}
 \end{array}\right]  \right) =  \left[\begin{array}{c}
-4 \, x + 4 \, y \\
-3 \, x + 7 \, y \\
-3 \, x + 2 \, y \\
--4 \, x - 3 \, y
+x_{1} - 4 \, x_{2} + 2 \, x_{3} \\
+x_{2} \\
+-2 \, x_{1} + 6 \, x_{2} - 3 \, x_{3} \\
+x_{1} - 3 \, x_{2} - 2 \, x_{3}
 \end{array}\right] .\]</p></li>
-      <li>Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cccc}
--1 &amp; 2 &amp; 2 &amp; 2 \\
-2 &amp; -5 &amp; -6 &amp; -2 \\
-1 &amp; -2 &amp; -1 &amp; -4
+      <li>Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{ccc}
+-1 &amp; 1 &amp; 2 \\
+0 &amp; 1 &amp; 5 \\
+0 &amp; -1 &amp; -4 \\
+1 &amp; 0 &amp; 3
 \end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
--7 \\
--3 \\
-5 \\
--5
+-4 \\
+3 \\
+-7
 \end{array}\right]  \right)\). </li>
     </ol>
   </div>
@@ -217,23 +214,23 @@ y
     </p>
     <ol type="a">
       <li>
-        <p>\[ \left[\begin{array}{cc}
-4 &amp; 4 \\
-3 &amp; 7 \\
-3 &amp; 2 \\
--4 &amp; -3
+        <p>\[ \left[\begin{array}{ccc}
+1 &amp; -4 &amp; 2 \\
+0 &amp; 1 &amp; 0 \\
+-2 &amp; 6 &amp; -3 \\
+1 &amp; -3 &amp; -2
 \end{array}\right] \]</p>
       </li>
       <li>
         <p>\[T\left( \left[\begin{array}{c}
--7 \\
--3 \\
-5 \\
--5
+-4 \\
+3 \\
+-7
 \end{array}\right]  \right)= \left[\begin{array}{c}
-1 \\
--19 \\
-14
+-7 \\
+-32 \\
+25 \\
+-25
 \end{array}\right] \]</p>
       </li>
     </ol>
@@ -250,16 +247,17 @@ x_{2} \\
 x_{3} \\
 x_{4}
 \end{array}\right]  \right) =  \left[\begin{array}{c}
-x_{1} - 4 \, x_{2} + 3 \, x_{3} + 7 \, x_{4} \\
-x_{3} + 2 \, x_{4}
+-x_{1} + 3 \, x_{2} - 4 \, x_{3} - 3 \, x_{4} \\
+x_{1} - 4 \, x_{2} + 6 \, x_{3} + 3 \, x_{4}
 \end{array}\right] .\]</p></li>
-      <li>Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 1 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cccc}
-1 &amp; -1 &amp; 2 &amp; -1
+      <li>Let \(T:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cc}
+1 &amp; 8 \\
+0 &amp; 1 \\
+-3 &amp; 8 \\
+0 &amp; 4
 \end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
--8 \\
--1 \\
--2 \\
--1
+-4 \\
+4
 \end{array}\right]  \right)\). </li>
     </ol>
   </div>
@@ -270,18 +268,19 @@ x_{3} + 2 \, x_{4}
     <ol type="a">
       <li>
         <p>\[ \left[\begin{array}{cccc}
-1 &amp; -4 &amp; 3 &amp; 7 \\
-0 &amp; 0 &amp; 1 &amp; 2
+-1 &amp; 3 &amp; -4 &amp; -3 \\
+1 &amp; -4 &amp; 6 &amp; 3
 \end{array}\right] \]</p>
       </li>
       <li>
         <p>\[T\left( \left[\begin{array}{c}
--8 \\
--1 \\
--2 \\
--1
+-4 \\
+4
 \end{array}\right]  \right)= \left[\begin{array}{c}
--10
+28 \\
+4 \\
+44 \\
+16
 \end{array}\right] \]</p>
       </li>
     </ol>
@@ -292,23 +291,23 @@ x_{3} + 2 \, x_{4}
 <h4>Example 4</h4><div class="exercise">
   <div class="exercise-statement">
     <ol type="a">
-      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) given by <p>\[S\left(  \left[\begin{array}{c}
+      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 3  \to \mathbb{R}^ 3 \) given by <p>\[S\left(  \left[\begin{array}{c}
 x \\
-y
+y \\
+z
 \end{array}\right]  \right) =  \left[\begin{array}{c}
--y \\
-x + 6 \, y \\
--x - 8 \, y \\
-x + 4 \, y
+x - 2 \, y + 3 \, z \\
+-x - 3 \, y + 5 \, z \\
+-2 \, y + 3 \, z
 \end{array}\right] .\]</p></li>
       <li>Let \(T:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cc}
-1 &amp; 4 \\
-1 &amp; 5 \\
--1 &amp; -8 \\
--3 &amp; -7
+-1 &amp; 6 \\
+5 &amp; -4 \\
+-2 &amp; 7 \\
+-2 &amp; 0
 \end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
-2 \\
-4
+8 \\
+8
 \end{array}\right]  \right)\). </li>
     </ol>
   </div>
@@ -318,22 +317,21 @@ x + 4 \, y
     </p>
     <ol type="a">
       <li>
-        <p>\[ \left[\begin{array}{cc}
-0 &amp; -1 \\
-1 &amp; 6 \\
--1 &amp; -8 \\
-1 &amp; 4
+        <p>\[ \left[\begin{array}{ccc}
+1 &amp; -2 &amp; 3 \\
+-1 &amp; -3 &amp; 5 \\
+0 &amp; -2 &amp; 3
 \end{array}\right] \]</p>
       </li>
       <li>
         <p>\[T\left( \left[\begin{array}{c}
-2 \\
-4
+8 \\
+8
 \end{array}\right]  \right)= \left[\begin{array}{c}
-18 \\
-22 \\
--34 \\
--34
+40 \\
+8 \\
+40 \\
+-16
 \end{array}\right] \]</p>
       </li>
     </ol>
@@ -344,276 +342,23 @@ x + 4 \, y
 <h4>Example 5</h4><div class="exercise">
   <div class="exercise-statement">
     <ol type="a">
-      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 3  \to \mathbb{R}^ 3 \) given by <p>\[S\left(  \left[\begin{array}{c}
-x_{1} \\
-x_{2} \\
-x_{3}
-\end{array}\right]  \right) =  \left[\begin{array}{c}
-x_{1} + 2 \, x_{3} \\
-2 \, x_{1} - 3 \, x_{2} - 7 \, x_{3} \\
--x_{2} - 4 \, x_{3}
-\end{array}\right] .\]</p></li>
-      <li>Let \(T:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cc}
--1 &amp; 3 \\
-2 &amp; -7 \\
-1 &amp; -4 \\
-1 &amp; -7
-\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
-1 \\
-3
-\end{array}\right]  \right)\). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-        <p>\[ \left[\begin{array}{ccc}
-1 &amp; 0 &amp; 2 \\
-2 &amp; -3 &amp; -7 \\
-0 &amp; -1 &amp; -4
-\end{array}\right] \]</p>
-      </li>
-      <li>
-        <p>\[T\left( \left[\begin{array}{c}
-1 \\
-3
-\end{array}\right]  \right)= \left[\begin{array}{c}
-8 \\
--19 \\
--11 \\
--20
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 6</h4><div class="exercise">
-  <div class="exercise-statement">
-    <ol type="a">
-      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) given by <p>\[S\left(  \left[\begin{array}{c}
-x_{1} \\
-x_{2}
-\end{array}\right]  \right) =  \left[\begin{array}{c}
--4 \, x_{1} + 4 \, x_{2} \\
--2 \, x_{1} + 5 \, x_{2} \\
-5 \, x_{1} - 6 \, x_{2} \\
-x_{1} - 7 \, x_{2}
-\end{array}\right] .\]</p></li>
-      <li>Let \(T:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cc}
--1 &amp; 0 \\
-1 &amp; -1 \\
-2 &amp; -4 \\
--3 &amp; 4
-\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
-8 \\
--3
-\end{array}\right]  \right)\). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-        <p>\[ \left[\begin{array}{cc}
--4 &amp; 4 \\
--2 &amp; 5 \\
-5 &amp; -6 \\
-1 &amp; -7
-\end{array}\right] \]</p>
-      </li>
-      <li>
-        <p>\[T\left( \left[\begin{array}{c}
-8 \\
--3
-\end{array}\right]  \right)= \left[\begin{array}{c}
--8 \\
-11 \\
-28 \\
--36
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 7</h4><div class="exercise">
-  <div class="exercise-statement">
-    <ol type="a">
-      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 2  \to \mathbb{R}^ 3 \) given by <p>\[S\left(  \left[\begin{array}{c}
-x \\
-y
-\end{array}\right]  \right) =  \left[\begin{array}{c}
--x + 2 \, y \\
-y \\
--2 \, x - y
-\end{array}\right] .\]</p></li>
-      <li>Let \(T:\mathbb{R}^ 2  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cc}
-1 &amp; -2 \\
--1 &amp; 3 \\
--2 &amp; 7
-\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
-6 \\
--7
-\end{array}\right]  \right)\). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-        <p>\[ \left[\begin{array}{cc}
--1 &amp; 2 \\
-0 &amp; 1 \\
--2 &amp; -1
-\end{array}\right] \]</p>
-      </li>
-      <li>
-        <p>\[T\left( \left[\begin{array}{c}
-6 \\
--7
-\end{array}\right]  \right)= \left[\begin{array}{c}
-20 \\
--27 \\
--61
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 8</h4><div class="exercise">
-  <div class="exercise-statement">
-    <ol type="a">
-      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 2  \to \mathbb{R}^ 3 \) given by <p>\[S\left(  \left[\begin{array}{c}
-x_{1} \\
-x_{2}
-\end{array}\right]  \right) =  \left[\begin{array}{c}
-7 \, x_{1} - 4 \, x_{2} \\
-2 \, x_{1} - x_{2} \\
-x_{1} + 2 \, x_{2}
-\end{array}\right] .\]</p></li>
-      <li>Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 2 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cccc}
--2 &amp; 1 &amp; 5 &amp; -2 \\
--1 &amp; 0 &amp; 3 &amp; -1
-\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
-2 \\
-8 \\
-2 \\
--7
-\end{array}\right]  \right)\). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-        <p>\[ \left[\begin{array}{cc}
-7 &amp; -4 \\
-2 &amp; -1 \\
-1 &amp; 2
-\end{array}\right] \]</p>
-      </li>
-      <li>
-        <p>\[T\left( \left[\begin{array}{c}
-2 \\
-8 \\
-2 \\
--7
-\end{array}\right]  \right)= \left[\begin{array}{c}
-28 \\
-11
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 9</h4><div class="exercise">
-  <div class="exercise-statement">
-    <ol type="a">
-      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) given by <p>\[S\left(  \left[\begin{array}{c}
-x \\
-y
-\end{array}\right]  \right) =  \left[\begin{array}{c}
--2 \, x + 3 \, y \\
--5 \, x + 6 \, y \\
-3 \, x - 6 \, y \\
-3 \, x - 4 \, y
-\end{array}\right] .\]</p></li>
-      <li>Let \(T:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cc}
-0 &amp; -1 \\
-1 &amp; 5 \\
-0 &amp; -3 \\
-1 &amp; 5
-\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
-6 \\
-8
-\end{array}\right]  \right)\). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-        <p>\[ \left[\begin{array}{cc}
--2 &amp; 3 \\
--5 &amp; 6 \\
-3 &amp; -6 \\
-3 &amp; -4
-\end{array}\right] \]</p>
-      </li>
-      <li>
-        <p>\[T\left( \left[\begin{array}{c}
-6 \\
-8
-\end{array}\right]  \right)= \left[\begin{array}{c}
--8 \\
-46 \\
--24 \\
-46
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 10</h4><div class="exercise">
-  <div class="exercise-statement">
-    <ol type="a">
-      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 4  \to \mathbb{R}^ 2 \) given by <p>\[S\left(  \left[\begin{array}{c}
+      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 4  \to \mathbb{R}^ 1 \) given by <p>\[S\left(  \left[\begin{array}{c}
 x_{1} \\
 x_{2} \\
 x_{3} \\
 x_{4}
 \end{array}\right]  \right) =  \left[\begin{array}{c}
-x_{1} + 5 \, x_{2} - 7 \, x_{3} - 8 \, x_{4} \\
-x_{2} - x_{3} - 2 \, x_{4}
+x_{1} - x_{2} - 2 \, x_{3}
 \end{array}\right] .\]</p></li>
-      <li>Let \(T:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cc}
-1 &amp; -4 \\
-1 &amp; -3 \\
--1 &amp; 6 \\
-1 &amp; -1
+      <li>Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cccc}
+-3 &amp; -3 &amp; -1 &amp; 2 \\
+0 &amp; 1 &amp; 2 &amp; -3 \\
+-2 &amp; -1 &amp; 1 &amp; -1
 \end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
-5 \\
--6
+-8 \\
+6 \\
+-1 \\
+6
 \end{array}\right]  \right)\). </li>
     </ol>
   </div>
@@ -624,19 +369,281 @@ x_{2} - x_{3} - 2 \, x_{4}
     <ol type="a">
       <li>
         <p>\[ \left[\begin{array}{cccc}
-1 &amp; 5 &amp; -7 &amp; -8 \\
-0 &amp; 1 &amp; -1 &amp; -2
+1 &amp; -1 &amp; -2 &amp; 0
 \end{array}\right] \]</p>
       </li>
       <li>
         <p>\[T\left( \left[\begin{array}{c}
-5 \\
--6
+-8 \\
+6 \\
+-1 \\
+6
 \end{array}\right]  \right)= \left[\begin{array}{c}
-29 \\
-23 \\
--41 \\
-11
+19 \\
+-14 \\
+3
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 6</h4><div class="exercise">
+  <div class="exercise-statement">
+    <ol type="a">
+      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) given by <p>\[S\left(  \left[\begin{array}{c}
+x \\
+y \\
+z
+\end{array}\right]  \right) =  \left[\begin{array}{c}
+3 \, x - 3 \, y + z \\
+2 \, x - y \\
+-x + y \\
+-4 \, x + 3 \, y - 3 \, z
+\end{array}\right] .\]</p></li>
+      <li>Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 1 &amp; 5 &amp; -1 \\
+0 &amp; -1 &amp; -4 &amp; 1
+\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
+0 \\
+-7 \\
+0 \\
+-7
+\end{array}\right]  \right)\). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+        <p>\[ \left[\begin{array}{ccc}
+3 &amp; -3 &amp; 1 \\
+2 &amp; -1 &amp; 0 \\
+-1 &amp; 1 &amp; 0 \\
+-4 &amp; 3 &amp; -3
+\end{array}\right] \]</p>
+      </li>
+      <li>
+        <p>\[T\left( \left[\begin{array}{c}
+0 \\
+-7 \\
+0 \\
+-7
+\end{array}\right]  \right)= \left[\begin{array}{c}
+0 \\
+0 \\
+0
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 7</h4><div class="exercise">
+  <div class="exercise-statement">
+    <ol type="a">
+      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 3  \to \mathbb{R}^ 3 \) given by <p>\[S\left(  \left[\begin{array}{c}
+x \\
+y \\
+z
+\end{array}\right]  \right) =  \left[\begin{array}{c}
+4 \, x + 2 \, y - 3 \, z \\
+y - 4 \, z \\
+-x - z
+\end{array}\right] .\]</p></li>
+      <li>Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 2 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{ccc}
+1 &amp; -1 &amp; -4 \\
+-1 &amp; 2 &amp; 6
+\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
+-8 \\
+6 \\
+3
+\end{array}\right]  \right)\). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+        <p>\[ \left[\begin{array}{ccc}
+4 &amp; 2 &amp; -3 \\
+0 &amp; 1 &amp; -4 \\
+-1 &amp; 0 &amp; -1
+\end{array}\right] \]</p>
+      </li>
+      <li>
+        <p>\[T\left( \left[\begin{array}{c}
+-8 \\
+6 \\
+3
+\end{array}\right]  \right)= \left[\begin{array}{c}
+-26 \\
+38
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 8</h4><div class="exercise">
+  <div class="exercise-statement">
+    <ol type="a">
+      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) given by <p>\[S\left(  \left[\begin{array}{c}
+x \\
+y
+\end{array}\right]  \right) =  \left[\begin{array}{c}
+x - 4 \, y \\
+-x + 5 \, y \\
+-2 \, x + 5 \, y \\
+3 \, y
+\end{array}\right] .\]</p></li>
+      <li>Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{ccc}
+7 &amp; -2 &amp; 4 \\
+1 &amp; 1 &amp; 6 \\
+-3 &amp; 1 &amp; -1 \\
+-3 &amp; 1 &amp; -4
+\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
+-6 \\
+6 \\
+0
+\end{array}\right]  \right)\). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+        <p>\[ \left[\begin{array}{cc}
+1 &amp; -4 \\
+-1 &amp; 5 \\
+-2 &amp; 5 \\
+0 &amp; 3
+\end{array}\right] \]</p>
+      </li>
+      <li>
+        <p>\[T\left( \left[\begin{array}{c}
+-6 \\
+6 \\
+0
+\end{array}\right]  \right)= \left[\begin{array}{c}
+-54 \\
+0 \\
+24 \\
+24
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 9</h4><div class="exercise">
+  <div class="exercise-statement">
+    <ol type="a">
+      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 2  \to \mathbb{R}^ 3 \) given by <p>\[S\left(  \left[\begin{array}{c}
+x_{1} \\
+x_{2}
+\end{array}\right]  \right) =  \left[\begin{array}{c}
+2 \, x_{1} - 8 \, x_{2} \\
+x_{1} - 3 \, x_{2} \\
+x_{1} - 4 \, x_{2}
+\end{array}\right] .\]</p></li>
+      <li>Let \(T:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cc}
+4 &amp; -3 \\
+-3 &amp; 1 \\
+-1 &amp; 1 \\
+5 &amp; -5
+\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
+6 \\
+0
+\end{array}\right]  \right)\). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+        <p>\[ \left[\begin{array}{cc}
+2 &amp; -8 \\
+1 &amp; -3 \\
+1 &amp; -4
+\end{array}\right] \]</p>
+      </li>
+      <li>
+        <p>\[T\left( \left[\begin{array}{c}
+6 \\
+0
+\end{array}\right]  \right)= \left[\begin{array}{c}
+24 \\
+-18 \\
+-6 \\
+30
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 10</h4><div class="exercise">
+  <div class="exercise-statement">
+    <ol type="a">
+      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) given by <p>\[S\left(  \left[\begin{array}{c}
+x \\
+y
+\end{array}\right]  \right) =  \left[\begin{array}{c}
+x + 4 \, y \\
+-2 \, x - 7 \, y \\
+-x - 2 \, y \\
+2 \, x + 6 \, y
+\end{array}\right] .\]</p></li>
+      <li>Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cccc}
+1 &amp; -2 &amp; 4 &amp; -3 \\
+0 &amp; 1 &amp; -4 &amp; 1 \\
+0 &amp; 1 &amp; -3 &amp; 1
+\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
+0 \\
+-2 \\
+-2 \\
+-4
+\end{array}\right]  \right)\). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+        <p>\[ \left[\begin{array}{cc}
+1 &amp; 4 \\
+-2 &amp; -7 \\
+-1 &amp; -2 \\
+2 &amp; 6
+\end{array}\right] \]</p>
+      </li>
+      <li>
+        <p>\[T\left( \left[\begin{array}{c}
+0 \\
+-2 \\
+-2 \\
+-4
+\end{array}\right]  \right)= \left[\begin{array}{c}
+8 \\
+2 \\
+0
 \end{array}\right] \]</p>
       </li>
     </ol>
@@ -647,25 +654,24 @@ x_{2} - x_{3} - 2 \, x_{4}
 <h4>Example 11</h4><div class="exercise">
   <div class="exercise-statement">
     <ol type="a">
-      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) given by <p>\[S\left(  \left[\begin{array}{c}
+      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) given by <p>\[S\left(  \left[\begin{array}{c}
 x_{1} \\
-x_{2} \\
-x_{3}
+x_{2}
 \end{array}\right]  \right) =  \left[\begin{array}{c}
-x_{1} + 4 \, x_{3} \\
-x_{2} - 5 \, x_{3} \\
-x_{1} + 5 \, x_{3} \\
-2 \, x_{1} - x_{2} + 8 \, x_{3}
+-x_{2} \\
+x_{1} - 3 \, x_{2} \\
+-3 \, x_{2} \\
+4 \, x_{2}
 \end{array}\right] .\]</p></li>
-      <li>Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{ccc}
--1 &amp; -1 &amp; -1 \\
--2 &amp; -3 &amp; 7 \\
-0 &amp; 2 &amp; -5 \\
-2 &amp; 3 &amp; -4
+      <li>Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cccc}
+1 &amp; -2 &amp; 2 &amp; -2 \\
+0 &amp; 1 &amp; -2 &amp; 3 \\
+2 &amp; 1 &amp; -5 &amp; 8
 \end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
+-4 \\
 -3 \\
-3 \\
-8
+-3 \\
+-3
 \end{array}\right]  \right)\). </li>
     </ol>
   </div>
@@ -675,23 +681,23 @@ x_{1} + 5 \, x_{3} \\
     </p>
     <ol type="a">
       <li>
-        <p>\[ \left[\begin{array}{ccc}
-1 &amp; 0 &amp; 4 \\
-0 &amp; 1 &amp; -5 \\
-1 &amp; 0 &amp; 5 \\
-2 &amp; -1 &amp; 8
+        <p>\[ \left[\begin{array}{cc}
+0 &amp; -1 \\
+1 &amp; -3 \\
+0 &amp; -3 \\
+0 &amp; 4
 \end{array}\right] \]</p>
       </li>
       <li>
         <p>\[T\left( \left[\begin{array}{c}
+-4 \\
 -3 \\
-3 \\
-8
+-3 \\
+-3
 \end{array}\right]  \right)= \left[\begin{array}{c}
--8 \\
-53 \\
--34 \\
--29
+2 \\
+-6 \\
+-20
 \end{array}\right] \]</p>
       </li>
     </ol>
@@ -702,23 +708,22 @@ x_{1} + 5 \, x_{3} \\
 <h4>Example 12</h4><div class="exercise">
   <div class="exercise-statement">
     <ol type="a">
-      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 3  \to \mathbb{R}^ 3 \) given by <p>\[S\left(  \left[\begin{array}{c}
+      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 3  \to \mathbb{R}^ 2 \) given by <p>\[S\left(  \left[\begin{array}{c}
 x_{1} \\
 x_{2} \\
 x_{3}
 \end{array}\right]  \right) =  \left[\begin{array}{c}
-x_{1} \\
-x_{2} - 3 \, x_{3} \\
--5 \, x_{1} - 2 \, x_{2} + 7 \, x_{3}
+x_{1} + 3 \, x_{2} + 2 \, x_{3} \\
+x_{2}
 \end{array}\right] .\]</p></li>
       <li>Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 2 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cccc}
-1 &amp; -5 &amp; 6 &amp; 8 \\
-0 &amp; 1 &amp; -1 &amp; -2
+1 &amp; 0 &amp; 1 &amp; 3 \\
+0 &amp; 1 &amp; 2 &amp; 1
 \end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
-3 \\
--1 \\
-4 \\
--7
+2 \\
+-3 \\
+-4 \\
+-4
 \end{array}\right]  \right)\). </li>
     </ol>
   </div>
@@ -729,20 +734,19 @@ x_{2} - 3 \, x_{3} \\
     <ol type="a">
       <li>
         <p>\[ \left[\begin{array}{ccc}
-1 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; -3 \\
--5 &amp; -2 &amp; 7
+1 &amp; 3 &amp; 2 \\
+0 &amp; 1 &amp; 0
 \end{array}\right] \]</p>
       </li>
       <li>
         <p>\[T\left( \left[\begin{array}{c}
-3 \\
--1 \\
-4 \\
--7
+2 \\
+-3 \\
+-4 \\
+-4
 \end{array}\right]  \right)= \left[\begin{array}{c}
--24 \\
-9
+-14 \\
+-15
 \end{array}\right] \]</p>
       </li>
     </ol>
@@ -757,18 +761,18 @@ x_{2} - 3 \, x_{3} \\
 x_{1} \\
 x_{2}
 \end{array}\right]  \right) =  \left[\begin{array}{c}
-x_{1} + 7 \, x_{2} \\
-x_{2} \\
--x_{1} - 8 \, x_{2} \\
-x_{1} + 2 \, x_{2}
+2 \, x_{1} + 5 \, x_{2} \\
+2 \, x_{1} + 3 \, x_{2} \\
+-x_{1} - 4 \, x_{2} \\
+3 \, x_{1}
 \end{array}\right] .\]</p></li>
-      <li>Let \(T:\mathbb{R}^ 2  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cc}
-0 &amp; -1 \\
-1 &amp; -4 \\
-2 &amp; -6
+      <li>Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 2 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{ccc}
+1 &amp; -6 &amp; 2 \\
+0 &amp; 0 &amp; 1
 \end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
--6 \\
-7
+-8 \\
+2 \\
+-5
 \end{array}\right]  \right)\). </li>
     </ol>
   </div>
@@ -779,20 +783,20 @@ x_{1} + 2 \, x_{2}
     <ol type="a">
       <li>
         <p>\[ \left[\begin{array}{cc}
-1 &amp; 7 \\
-0 &amp; 1 \\
--1 &amp; -8 \\
-1 &amp; 2
+2 &amp; 5 \\
+2 &amp; 3 \\
+-1 &amp; -4 \\
+3 &amp; 0
 \end{array}\right] \]</p>
       </li>
       <li>
         <p>\[T\left( \left[\begin{array}{c}
--6 \\
-7
+-8 \\
+2 \\
+-5
 \end{array}\right]  \right)= \left[\begin{array}{c}
--7 \\
--34 \\
--54
+-30 \\
+-5
 \end{array}\right] \]</p>
       </li>
     </ol>
@@ -803,171 +807,21 @@ x_{1} + 2 \, x_{2}
 <h4>Example 14</h4><div class="exercise">
   <div class="exercise-statement">
     <ol type="a">
-      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) given by <p>\[S\left(  \left[\begin{array}{c}
-x \\
-y \\
-z
-\end{array}\right]  \right) =  \left[\begin{array}{c}
-x - z \\
--4 \, x + y + 3 \, z \\
-z \\
-2 \, x - y - 3 \, z
-\end{array}\right] .\]</p></li>
-      <li>Let \(T:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cc}
--4 &amp; -5 \\
--3 &amp; 1 \\
--2 &amp; 4 \\
--5 &amp; -5
-\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
--2 \\
--2
-\end{array}\right]  \right)\). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-        <p>\[ \left[\begin{array}{ccc}
-1 &amp; 0 &amp; -1 \\
--4 &amp; 1 &amp; 3 \\
-0 &amp; 0 &amp; 1 \\
-2 &amp; -1 &amp; -3
-\end{array}\right] \]</p>
-      </li>
-      <li>
-        <p>\[T\left( \left[\begin{array}{c}
--2 \\
--2
-\end{array}\right]  \right)= \left[\begin{array}{c}
-18 \\
-4 \\
--4 \\
-20
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 15</h4><div class="exercise">
-  <div class="exercise-statement">
-    <ol type="a">
-      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) given by <p>\[S\left(  \left[\begin{array}{c}
+      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 2  \to \mathbb{R}^ 3 \) given by <p>\[S\left(  \left[\begin{array}{c}
 x \\
 y
 \end{array}\right]  \right) =  \left[\begin{array}{c}
+-y \\
 x + 4 \, y \\
-y \\
-x + 5 \, y \\
-3 \, y
+-x - 7 \, y
 \end{array}\right] .\]</p></li>
-      <li>Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 2 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{ccc}
-1 &amp; 5 &amp; -8 \\
-0 &amp; 1 &amp; -2
+      <li>Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 1 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cccc}
+1 &amp; 2 &amp; -2 &amp; 3
 \end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
-3 \\
+6 \\
+1 \\
 5 \\
--1
-\end{array}\right]  \right)\). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-        <p>\[ \left[\begin{array}{cc}
-1 &amp; 4 \\
-0 &amp; 1 \\
-1 &amp; 5 \\
-0 &amp; 3
-\end{array}\right] \]</p>
-      </li>
-      <li>
-        <p>\[T\left( \left[\begin{array}{c}
-3 \\
-5 \\
--1
-\end{array}\right]  \right)= \left[\begin{array}{c}
-36 \\
-7
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 16</h4><div class="exercise">
-  <div class="exercise-statement">
-    <ol type="a">
-      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 4  \to \mathbb{R}^ 1 \) given by <p>\[S\left(  \left[\begin{array}{c}
-x \\
-y \\
-z \\
-{w}
-\end{array}\right]  \right) =  \left[\begin{array}{c}
-x + 2 \, y - z + {w}
-\end{array}\right] .\]</p></li>
-      <li>Let \(T:\mathbb{R}^ 2  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cc}
--3 &amp; -8 \\
-2 &amp; 5 \\
-1 &amp; 3
-\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
-2 \\
--3
-\end{array}\right]  \right)\). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-        <p>\[ \left[\begin{array}{cccc}
-1 &amp; 2 &amp; -1 &amp; 1
-\end{array}\right] \]</p>
-      </li>
-      <li>
-        <p>\[T\left( \left[\begin{array}{c}
-2 \\
--3
-\end{array}\right]  \right)= \left[\begin{array}{c}
-18 \\
--11 \\
--7
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 17</h4><div class="exercise">
-  <div class="exercise-statement">
-    <ol type="a">
-      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 2  \to \mathbb{R}^ 3 \) given by <p>\[S\left(  \left[\begin{array}{c}
-x_{1} \\
-x_{2}
-\end{array}\right]  \right) =  \left[\begin{array}{c}
--x_{2} \\
-x_{1} + 6 \, x_{2} \\
-x_{1} + 5 \, x_{2}
-\end{array}\right] .\]</p></li>
-      <li>Let \(T:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cc}
--1 &amp; 0 \\
-0 &amp; 1 \\
--1 &amp; 2 \\
--2 &amp; 4
-\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
--7 \\
-5
+-2
 \end{array}\right]  \right)\). </li>
     </ol>
   </div>
@@ -979,19 +833,18 @@ x_{1} + 5 \, x_{2}
       <li>
         <p>\[ \left[\begin{array}{cc}
 0 &amp; -1 \\
-1 &amp; 6 \\
-1 &amp; 5
+1 &amp; 4 \\
+-1 &amp; -7
 \end{array}\right] \]</p>
       </li>
       <li>
         <p>\[T\left( \left[\begin{array}{c}
--7 \\
-5
-\end{array}\right]  \right)= \left[\begin{array}{c}
-7 \\
+6 \\
+1 \\
 5 \\
-17 \\
-34
+-2
+\end{array}\right]  \right)= \left[\begin{array}{c}
+-8
 \end{array}\right] \]</p>
       </li>
     </ol>
@@ -999,26 +852,76 @@ x_{1} + 5 \, x_{2}
 </div>
 
 <hr/>
-<h4>Example 18</h4><div class="exercise">
+<h4>Example 15</h4><div class="exercise">
+  <div class="exercise-statement">
+    <ol type="a">
+      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 4  \to \mathbb{R}^ 3 \) given by <p>\[S\left(  \left[\begin{array}{c}
+x \\
+y \\
+z \\
+{w}
+\end{array}\right]  \right) =  \left[\begin{array}{c}
+x + y + z + 4 \, {w} \\
+y + 2 \, z + 4 \, {w} \\
+-y - z - 3 \, {w}
+\end{array}\right] .\]</p></li>
+      <li>Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 2 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{ccc}
+1 &amp; 0 &amp; 1 \\
+0 &amp; 1 &amp; -2
+\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
+3 \\
+8 \\
+-4
+\end{array}\right]  \right)\). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+        <p>\[ \left[\begin{array}{cccc}
+1 &amp; 1 &amp; 1 &amp; 4 \\
+0 &amp; 1 &amp; 2 &amp; 4 \\
+0 &amp; -1 &amp; -1 &amp; -3
+\end{array}\right] \]</p>
+      </li>
+      <li>
+        <p>\[T\left( \left[\begin{array}{c}
+3 \\
+8 \\
+-4
+\end{array}\right]  \right)= \left[\begin{array}{c}
+-1 \\
+16
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 16</h4><div class="exercise">
   <div class="exercise-statement">
     <ol type="a">
       <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) given by <p>\[S\left(  \left[\begin{array}{c}
-x_{1} \\
-x_{2}
+x \\
+y
 \end{array}\right]  \right) =  \left[\begin{array}{c}
-x_{1} \\
-x_{2} \\
--5 \, x_{1} - 5 \, x_{2} \\
--x_{1} - 2 \, x_{2}
+x + y \\
+y \\
+-5 \, x - 7 \, y \\
+-5 \, x - y
 \end{array}\right] .\]</p></li>
-      <li>Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{ccc}
--2 &amp; -4 &amp; -3 \\
-1 &amp; 5 &amp; -1 \\
--3 &amp; -8 &amp; -3
+      <li>Let \(T:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cc}
+1 &amp; 1 \\
+0 &amp; 1 \\
+1 &amp; 1 \\
+1 &amp; 6
 \end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
-8 \\
--6 \\
--2
+4 \\
+4
 \end{array}\right]  \right)\). </li>
     </ol>
   </div>
@@ -1029,21 +932,124 @@ x_{2} \\
     <ol type="a">
       <li>
         <p>\[ \left[\begin{array}{cc}
-1 &amp; 0 \\
+1 &amp; 1 \\
 0 &amp; 1 \\
--5 &amp; -5 \\
--1 &amp; -2
+-5 &amp; -7 \\
+-5 &amp; -1
 \end{array}\right] \]</p>
       </li>
       <li>
         <p>\[T\left( \left[\begin{array}{c}
-8 \\
--6 \\
--2
+4 \\
+4
 \end{array}\right]  \right)= \left[\begin{array}{c}
-14 \\
--20 \\
-30
+8 \\
+4 \\
+8 \\
+28
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 17</h4><div class="exercise">
+  <div class="exercise-statement">
+    <ol type="a">
+      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) given by <p>\[S\left(  \left[\begin{array}{c}
+x \\
+y
+\end{array}\right]  \right) =  \left[\begin{array}{c}
+-5 \, y \\
+x - 3 \, y \\
+x + y \\
+y
+\end{array}\right] .\]</p></li>
+      <li>Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 1 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 3
+\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
+-3 \\
+-6 \\
+1 \\
+6
+\end{array}\right]  \right)\). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+        <p>\[ \left[\begin{array}{cc}
+0 &amp; -5 \\
+1 &amp; -3 \\
+1 &amp; 1 \\
+0 &amp; 1
+\end{array}\right] \]</p>
+      </li>
+      <li>
+        <p>\[T\left( \left[\begin{array}{c}
+-3 \\
+-6 \\
+1 \\
+6
+\end{array}\right]  \right)= \left[\begin{array}{c}
+15
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 18</h4><div class="exercise">
+  <div class="exercise-statement">
+    <ol type="a">
+      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) given by <p>\[S\left(  \left[\begin{array}{c}
+x \\
+y \\
+z
+\end{array}\right]  \right) =  \left[\begin{array}{c}
+7 \, x + 3 \, y + 7 \, z \\
+4 \, x + 5 \, y - 6 \, z \\
+-x - 3 \, y + 6 \, z \\
+3 \, x + y + 4 \, z
+\end{array}\right] .\]</p></li>
+      <li>Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{ccc}
+1 &amp; 0 &amp; -1 \\
+-1 &amp; 1 &amp; -4 \\
+4 &amp; -1 &amp; 2
+\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
+-1 \\
+-1 \\
+-5
+\end{array}\right]  \right)\). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+        <p>\[ \left[\begin{array}{ccc}
+7 &amp; 3 &amp; 7 \\
+4 &amp; 5 &amp; -6 \\
+-1 &amp; -3 &amp; 6 \\
+3 &amp; 1 &amp; 4
+\end{array}\right] \]</p>
+      </li>
+      <li>
+        <p>\[T\left( \left[\begin{array}{c}
+-1 \\
+-1 \\
+-5
+\end{array}\right]  \right)= \left[\begin{array}{c}
+4 \\
+20 \\
+-13
 \end{array}\right] \]</p>
       </li>
     </ol>
@@ -1055,22 +1061,21 @@ x_{2} \\
   <div class="exercise-statement">
     <ol type="a">
       <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 4  \to \mathbb{R}^ 2 \) given by <p>\[S\left(  \left[\begin{array}{c}
-x_{1} \\
-x_{2} \\
-x_{3} \\
-x_{4}
+x \\
+y \\
+z \\
+{w}
 \end{array}\right]  \right) =  \left[\begin{array}{c}
--2 \, x_{1} + 3 \, x_{2} + 5 \, x_{3} + 4 \, x_{4} \\
-x_{1} - 2 \, x_{2} - 4 \, x_{3} - 3 \, x_{4}
+x - 3 \, y - z + 3 \, {w} \\
+3 \, x - 8 \, y - 3 \, z + 8 \, {w}
 \end{array}\right] .\]</p></li>
-      <li>Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cccc}
-1 &amp; 0 &amp; -1 &amp; 4 \\
-2 &amp; 1 &amp; 2 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; -2
+      <li>Let \(T:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cc}
+3 &amp; -2 \\
+0 &amp; 1 \\
+0 &amp; 2 \\
+1 &amp; 1
 \end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
--8 \\
--2 \\
--4 \\
+6 \\
 -4
 \end{array}\right]  \right)\). </li>
     </ol>
@@ -1082,20 +1087,19 @@ x_{1} - 2 \, x_{2} - 4 \, x_{3} - 3 \, x_{4}
     <ol type="a">
       <li>
         <p>\[ \left[\begin{array}{cccc}
--2 &amp; 3 &amp; 5 &amp; 4 \\
-1 &amp; -2 &amp; -4 &amp; -3
+1 &amp; -3 &amp; -1 &amp; 3 \\
+3 &amp; -8 &amp; -3 &amp; 8
 \end{array}\right] \]</p>
       </li>
       <li>
         <p>\[T\left( \left[\begin{array}{c}
--8 \\
--2 \\
--4 \\
+6 \\
 -4
 \end{array}\right]  \right)= \left[\begin{array}{c}
--20 \\
--26 \\
-4
+26 \\
+-4 \\
+-8 \\
+2
 \end{array}\right] \]</p>
       </li>
     </ol>
@@ -1106,22 +1110,369 @@ x_{1} - 2 \, x_{2} - 4 \, x_{3} - 3 \, x_{4}
 <h4>Example 20</h4><div class="exercise">
   <div class="exercise-statement">
     <ol type="a">
-      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) given by <p>\[S\left(  \left[\begin{array}{c}
+      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 4  \to \mathbb{R}^ 1 \) given by <p>\[S\left(  \left[\begin{array}{c}
+x_{1} \\
+x_{2} \\
+x_{3} \\
+x_{4}
+\end{array}\right]  \right) =  \left[\begin{array}{c}
+x_{1} - 2 \, x_{2} - 2 \, x_{3}
+\end{array}\right] .\]</p></li>
+      <li>Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{ccc}
+1 &amp; 3 &amp; -8 \\
+0 &amp; 1 &amp; -2 \\
+0 &amp; -2 &amp; 5 \\
+0 &amp; 1 &amp; -7
+\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
+3 \\
+-8 \\
+-1
+\end{array}\right]  \right)\). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+        <p>\[ \left[\begin{array}{cccc}
+1 &amp; -2 &amp; -2 &amp; 0
+\end{array}\right] \]</p>
+      </li>
+      <li>
+        <p>\[T\left( \left[\begin{array}{c}
+3 \\
+-8 \\
+-1
+\end{array}\right]  \right)= \left[\begin{array}{c}
+-13 \\
+-6 \\
+11 \\
+-1
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 21</h4><div class="exercise">
+  <div class="exercise-statement">
+    <ol type="a">
+      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 2  \to \mathbb{R}^ 3 \) given by <p>\[S\left(  \left[\begin{array}{c}
 x_{1} \\
 x_{2}
 \end{array}\right]  \right) =  \left[\begin{array}{c}
--x_{2} \\
-x_{1} + 5 \, x_{2} \\
--3 \, x_{1} - 7 \, x_{2} \\
-x_{1} + 5 \, x_{2}
+-5 \, x_{1} + 2 \, x_{2} \\
+x_{2} \\
+-3 \, x_{1} + 2 \, x_{2}
+\end{array}\right] .\]</p></li>
+      <li>Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 2 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{ccc}
+7 &amp; 3 &amp; 6 \\
+2 &amp; 1 &amp; 2
+\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
+-6 \\
+0 \\
+0
+\end{array}\right]  \right)\). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+        <p>\[ \left[\begin{array}{cc}
+-5 &amp; 2 \\
+0 &amp; 1 \\
+-3 &amp; 2
+\end{array}\right] \]</p>
+      </li>
+      <li>
+        <p>\[T\left( \left[\begin{array}{c}
+-6 \\
+0 \\
+0
+\end{array}\right]  \right)= \left[\begin{array}{c}
+-42 \\
+-12
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 22</h4><div class="exercise">
+  <div class="exercise-statement">
+    <ol type="a">
+      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 4  \to \mathbb{R}^ 2 \) given by <p>\[S\left(  \left[\begin{array}{c}
+x_{1} \\
+x_{2} \\
+x_{3} \\
+x_{4}
+\end{array}\right]  \right) =  \left[\begin{array}{c}
+x_{1} - x_{2} - 4 \, x_{3} \\
+-x_{1} + 2 \, x_{2} + 7 \, x_{3} + 2 \, x_{4}
+\end{array}\right] .\]</p></li>
+      <li>Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 1 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cccc}
+1 &amp; 1 &amp; 4 &amp; 2
+\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
+-5 \\
+7 \\
+4 \\
+-7
+\end{array}\right]  \right)\). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+        <p>\[ \left[\begin{array}{cccc}
+1 &amp; -1 &amp; -4 &amp; 0 \\
+-1 &amp; 2 &amp; 7 &amp; 2
+\end{array}\right] \]</p>
+      </li>
+      <li>
+        <p>\[T\left( \left[\begin{array}{c}
+-5 \\
+7 \\
+4 \\
+-7
+\end{array}\right]  \right)= \left[\begin{array}{c}
+4
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 23</h4><div class="exercise">
+  <div class="exercise-statement">
+    <ol type="a">
+      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 3  \to \mathbb{R}^ 3 \) given by <p>\[S\left(  \left[\begin{array}{c}
+x_{1} \\
+x_{2} \\
+x_{3}
+\end{array}\right]  \right) =  \left[\begin{array}{c}
+x_{1} + x_{3} \\
+x_{2} + 3 \, x_{3} \\
+-2 \, x_{1} + 3 \, x_{2} + 8 \, x_{3}
+\end{array}\right] .\]</p></li>
+      <li>Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 2 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{ccc}
+2 &amp; -5 &amp; 7 \\
+-1 &amp; 3 &amp; -4
+\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
+1 \\
+4 \\
+0
+\end{array}\right]  \right)\). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+        <p>\[ \left[\begin{array}{ccc}
+1 &amp; 0 &amp; 1 \\
+0 &amp; 1 &amp; 3 \\
+-2 &amp; 3 &amp; 8
+\end{array}\right] \]</p>
+      </li>
+      <li>
+        <p>\[T\left( \left[\begin{array}{c}
+1 \\
+4 \\
+0
+\end{array}\right]  \right)= \left[\begin{array}{c}
+-18 \\
+11
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 24</h4><div class="exercise">
+  <div class="exercise-statement">
+    <ol type="a">
+      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) given by <p>\[S\left(  \left[\begin{array}{c}
+x \\
+y
+\end{array}\right]  \right) =  \left[\begin{array}{c}
+-2 \, x + 5 \, y \\
+x - 3 \, y \\
+-2 \, y \\
+-x + 3 \, y
+\end{array}\right] .\]</p></li>
+      <li>Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 1 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cccc}
+1 &amp; 1 &amp; -2 &amp; 1
+\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
+7 \\
+7 \\
+4 \\
+-1
+\end{array}\right]  \right)\). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+        <p>\[ \left[\begin{array}{cc}
+-2 &amp; 5 \\
+1 &amp; -3 \\
+0 &amp; -2 \\
+-1 &amp; 3
+\end{array}\right] \]</p>
+      </li>
+      <li>
+        <p>\[T\left( \left[\begin{array}{c}
+7 \\
+7 \\
+4 \\
+-1
+\end{array}\right]  \right)= \left[\begin{array}{c}
+5
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 25</h4><div class="exercise">
+  <div class="exercise-statement">
+    <ol type="a">
+      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) given by <p>\[S\left(  \left[\begin{array}{c}
+x \\
+y
+\end{array}\right]  \right) =  \left[\begin{array}{c}
+x - 3 \, y \\
+x - 2 \, y \\
+x + y \\
+x - 5 \, y
+\end{array}\right] .\]</p></li>
+      <li>Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 2 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{ccc}
+0 &amp; 1 &amp; 0 \\
+-1 &amp; -3 &amp; 3
+\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
+4 \\
+8 \\
+-1
+\end{array}\right]  \right)\). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+        <p>\[ \left[\begin{array}{cc}
+1 &amp; -3 \\
+1 &amp; -2 \\
+1 &amp; 1 \\
+1 &amp; -5
+\end{array}\right] \]</p>
+      </li>
+      <li>
+        <p>\[T\left( \left[\begin{array}{c}
+4 \\
+8 \\
+-1
+\end{array}\right]  \right)= \left[\begin{array}{c}
+8 \\
+-31
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 26</h4><div class="exercise">
+  <div class="exercise-statement">
+    <ol type="a">
+      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) given by <p>\[S\left(  \left[\begin{array}{c}
+x \\
+y
+\end{array}\right]  \right) =  \left[\begin{array}{c}
+-3 \, x - 7 \, y \\
+-2 \, x - 5 \, y \\
+-x - 7 \, y \\
+x - y
 \end{array}\right] .\]</p></li>
       <li>Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{ccc}
-0 &amp; 0 &amp; 1 \\
-0 &amp; 1 &amp; -1 \\
--1 &amp; -4 &amp; 7
+1 &amp; -2 &amp; 5 \\
+0 &amp; 1 &amp; -5 \\
+1 &amp; -1 &amp; 1
 \end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
-2 \\
--2 \\
+-6 \\
+-3 \\
+4
+\end{array}\right]  \right)\). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+        <p>\[ \left[\begin{array}{cc}
+-3 &amp; -7 \\
+-2 &amp; -5 \\
+-1 &amp; -7 \\
+1 &amp; -1
+\end{array}\right] \]</p>
+      </li>
+      <li>
+        <p>\[T\left( \left[\begin{array}{c}
+-6 \\
+-3 \\
+4
+\end{array}\right]  \right)= \left[\begin{array}{c}
+20 \\
+-23 \\
+1
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 27</h4><div class="exercise">
+  <div class="exercise-statement">
+    <ol type="a">
+      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 2  \to \mathbb{R}^ 3 \) given by <p>\[S\left(  \left[\begin{array}{c}
+x \\
+y
+\end{array}\right]  \right) =  \left[\begin{array}{c}
+-x - 5 \, y \\
+x + 4 \, y \\
+-4 \, x - 7 \, y
+\end{array}\right] .\]</p></li>
+      <li>Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{ccc}
+-2 &amp; 3 &amp; 5 \\
+-1 &amp; 1 &amp; 3 \\
+0 &amp; 1 &amp; 0 \\
+0 &amp; 4 &amp; -7
+\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
+-6 \\
+-8 \\
 -6
 \end{array}\right]  \right)\). </li>
     </ol>
@@ -1133,21 +1484,21 @@ x_{1} + 5 \, x_{2}
     <ol type="a">
       <li>
         <p>\[ \left[\begin{array}{cc}
-0 &amp; -1 \\
-1 &amp; 5 \\
--3 &amp; -7 \\
-1 &amp; 5
+-1 &amp; -5 \\
+1 &amp; 4 \\
+-4 &amp; -7
 \end{array}\right] \]</p>
       </li>
       <li>
         <p>\[T\left( \left[\begin{array}{c}
-2 \\
--2 \\
+-6 \\
+-8 \\
 -6
 \end{array}\right]  \right)= \left[\begin{array}{c}
--6 \\
-4 \\
--36
+-42 \\
+-20 \\
+-8 \\
+10
 \end{array}\right] \]</p>
       </li>
     </ol>
@@ -1155,7 +1506,1074 @@ x_{1} + 5 \, x_{2}
 </div>
 
 <hr/>
-<h4>Example 21</h4><div class="exercise">
+<h4>Example 28</h4><div class="exercise">
+  <div class="exercise-statement">
+    <ol type="a">
+      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 3  \to \mathbb{R}^ 2 \) given by <p>\[S\left(  \left[\begin{array}{c}
+x \\
+y \\
+z
+\end{array}\right]  \right) =  \left[\begin{array}{c}
+x + 2 \, y - z \\
+y - 2 \, z
+\end{array}\right] .\]</p></li>
+      <li>Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 1 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cccc}
+1 &amp; -1 &amp; -1 &amp; -3
+\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
+-8 \\
+7 \\
+-2 \\
+-8
+\end{array}\right]  \right)\). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+        <p>\[ \left[\begin{array}{ccc}
+1 &amp; 2 &amp; -1 \\
+0 &amp; 1 &amp; -2
+\end{array}\right] \]</p>
+      </li>
+      <li>
+        <p>\[T\left( \left[\begin{array}{c}
+-8 \\
+7 \\
+-2 \\
+-8
+\end{array}\right]  \right)= \left[\begin{array}{c}
+11
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 29</h4><div class="exercise">
+  <div class="exercise-statement">
+    <ol type="a">
+      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 3  \to \mathbb{R}^ 3 \) given by <p>\[S\left(  \left[\begin{array}{c}
+x_{1} \\
+x_{2} \\
+x_{3}
+\end{array}\right]  \right) =  \left[\begin{array}{c}
+-x_{1} - 3 \, x_{2} - 2 \, x_{3} \\
+-2 \, x_{1} - 7 \, x_{2} - 6 \, x_{3} \\
+-x_{1} - 2 \, x_{2} + x_{3}
+\end{array}\right] .\]</p></li>
+      <li>Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{ccc}
+-1 &amp; 1 &amp; -4 \\
+-2 &amp; 1 &amp; -7 \\
+-1 &amp; 1 &amp; -3
+\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
+4 \\
+3 \\
+1
+\end{array}\right]  \right)\). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+        <p>\[ \left[\begin{array}{ccc}
+-1 &amp; -3 &amp; -2 \\
+-2 &amp; -7 &amp; -6 \\
+-1 &amp; -2 &amp; 1
+\end{array}\right] \]</p>
+      </li>
+      <li>
+        <p>\[T\left( \left[\begin{array}{c}
+4 \\
+3 \\
+1
+\end{array}\right]  \right)= \left[\begin{array}{c}
+-5 \\
+-12 \\
+-4
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 30</h4><div class="exercise">
+  <div class="exercise-statement">
+    <ol type="a">
+      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 3  \to \mathbb{R}^ 3 \) given by <p>\[S\left(  \left[\begin{array}{c}
+x_{1} \\
+x_{2} \\
+x_{3}
+\end{array}\right]  \right) =  \left[\begin{array}{c}
+-x_{1} - 2 \, x_{2} + 2 \, x_{3} \\
+2 \, x_{1} + 3 \, x_{2} - 4 \, x_{3} \\
+-x_{1} - 4 \, x_{2} + 3 \, x_{3}
+\end{array}\right] .\]</p></li>
+      <li>Let \(T:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cc}
+1 &amp; 5 \\
+0 &amp; 1 \\
+1 &amp; 1 \\
+1 &amp; 6
+\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
+5 \\
+-8
+\end{array}\right]  \right)\). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+        <p>\[ \left[\begin{array}{ccc}
+-1 &amp; -2 &amp; 2 \\
+2 &amp; 3 &amp; -4 \\
+-1 &amp; -4 &amp; 3
+\end{array}\right] \]</p>
+      </li>
+      <li>
+        <p>\[T\left( \left[\begin{array}{c}
+5 \\
+-8
+\end{array}\right]  \right)= \left[\begin{array}{c}
+-35 \\
+-8 \\
+-3 \\
+-43
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 31</h4><div class="exercise">
+  <div class="exercise-statement">
+    <ol type="a">
+      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 4  \to \mathbb{R}^ 3 \) given by <p>\[S\left(  \left[\begin{array}{c}
+x_{1} \\
+x_{2} \\
+x_{3} \\
+x_{4}
+\end{array}\right]  \right) =  \left[\begin{array}{c}
+-3 \, x_{1} + 2 \, x_{2} + 6 \, x_{3} + 4 \, x_{4} \\
+-2 \, x_{1} + x_{2} + 5 \, x_{3} + 3 \, x_{4} \\
+x_{2} - 3 \, x_{3}
+\end{array}\right] .\]</p></li>
+      <li>Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{ccc}
+1 &amp; -1 &amp; 0 \\
+0 &amp; 1 &amp; 1 \\
+3 &amp; -4 &amp; 0 \\
+2 &amp; -7 &amp; 0
+\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
+4 \\
+-8 \\
+-1
+\end{array}\right]  \right)\). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+        <p>\[ \left[\begin{array}{cccc}
+-3 &amp; 2 &amp; 6 &amp; 4 \\
+-2 &amp; 1 &amp; 5 &amp; 3 \\
+0 &amp; 1 &amp; -3 &amp; 0
+\end{array}\right] \]</p>
+      </li>
+      <li>
+        <p>\[T\left( \left[\begin{array}{c}
+4 \\
+-8 \\
+-1
+\end{array}\right]  \right)= \left[\begin{array}{c}
+12 \\
+-9 \\
+44 \\
+64
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 32</h4><div class="exercise">
+  <div class="exercise-statement">
+    <ol type="a">
+      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 2  \to \mathbb{R}^ 3 \) given by <p>\[S\left(  \left[\begin{array}{c}
+x \\
+y
+\end{array}\right]  \right) =  \left[\begin{array}{c}
+-y \\
+x - 4 \, y \\
+-x + 3 \, y
+\end{array}\right] .\]</p></li>
+      <li>Let \(T:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cc}
+-1 &amp; 1 \\
+-1 &amp; 6 \\
+1 &amp; -4 \\
+-2 &amp; 6
+\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
+1 \\
+-8
+\end{array}\right]  \right)\). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+        <p>\[ \left[\begin{array}{cc}
+0 &amp; -1 \\
+1 &amp; -4 \\
+-1 &amp; 3
+\end{array}\right] \]</p>
+      </li>
+      <li>
+        <p>\[T\left( \left[\begin{array}{c}
+1 \\
+-8
+\end{array}\right]  \right)= \left[\begin{array}{c}
+-9 \\
+-49 \\
+33 \\
+-50
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 33</h4><div class="exercise">
+  <div class="exercise-statement">
+    <ol type="a">
+      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 2  \to \mathbb{R}^ 3 \) given by <p>\[S\left(  \left[\begin{array}{c}
+x_{1} \\
+x_{2}
+\end{array}\right]  \right) =  \left[\begin{array}{c}
+-5 \, x_{1} - 7 \, x_{2} \\
+-2 \, x_{1} + 3 \, x_{2} \\
+-2 \, x_{1} - 2 \, x_{2}
+\end{array}\right] .\]</p></li>
+      <li>Let \(T:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cc}
+1 &amp; 6 \\
+0 &amp; 1 \\
+2 &amp; 3 \\
+-1 &amp; -5
+\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
+0 \\
+5
+\end{array}\right]  \right)\). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+        <p>\[ \left[\begin{array}{cc}
+-5 &amp; -7 \\
+-2 &amp; 3 \\
+-2 &amp; -2
+\end{array}\right] \]</p>
+      </li>
+      <li>
+        <p>\[T\left( \left[\begin{array}{c}
+0 \\
+5
+\end{array}\right]  \right)= \left[\begin{array}{c}
+30 \\
+5 \\
+15 \\
+-25
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 34</h4><div class="exercise">
+  <div class="exercise-statement">
+    <ol type="a">
+      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) given by <p>\[S\left(  \left[\begin{array}{c}
+x \\
+y
+\end{array}\right]  \right) =  \left[\begin{array}{c}
+2 \, x - 3 \, y \\
+3 \, x - 5 \, y \\
+-x + 6 \, y \\
+x - y
+\end{array}\right] .\]</p></li>
+      <li>Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 2 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{ccc}
+-4 &amp; 5 &amp; 1 \\
+-5 &amp; 6 &amp; 1
+\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
+0 \\
+-3 \\
+4
+\end{array}\right]  \right)\). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+        <p>\[ \left[\begin{array}{cc}
+2 &amp; -3 \\
+3 &amp; -5 \\
+-1 &amp; 6 \\
+1 &amp; -1
+\end{array}\right] \]</p>
+      </li>
+      <li>
+        <p>\[T\left( \left[\begin{array}{c}
+0 \\
+-3 \\
+4
+\end{array}\right]  \right)= \left[\begin{array}{c}
+-11 \\
+-14
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 35</h4><div class="exercise">
+  <div class="exercise-statement">
+    <ol type="a">
+      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 4  \to \mathbb{R}^ 3 \) given by <p>\[S\left(  \left[\begin{array}{c}
+x \\
+y \\
+z \\
+{w}
+\end{array}\right]  \right) =  \left[\begin{array}{c}
+x + 2 \, y - 2 \, z + 2 \, {w} \\
+-x - y - 2 \, {w} \\
+4 \, y - 7 \, z
+\end{array}\right] .\]</p></li>
+      <li>Let \(T:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cc}
+1 &amp; 5 \\
+0 &amp; 1 \\
+1 &amp; -1 \\
+0 &amp; 3
+\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
+-4 \\
+2
+\end{array}\right]  \right)\). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+        <p>\[ \left[\begin{array}{cccc}
+1 &amp; 2 &amp; -2 &amp; 2 \\
+-1 &amp; -1 &amp; 0 &amp; -2 \\
+0 &amp; 4 &amp; -7 &amp; 0
+\end{array}\right] \]</p>
+      </li>
+      <li>
+        <p>\[T\left( \left[\begin{array}{c}
+-4 \\
+2
+\end{array}\right]  \right)= \left[\begin{array}{c}
+6 \\
+2 \\
+-6 \\
+6
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 36</h4><div class="exercise">
+  <div class="exercise-statement">
+    <ol type="a">
+      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 2  \to \mathbb{R}^ 3 \) given by <p>\[S\left(  \left[\begin{array}{c}
+x \\
+y
+\end{array}\right]  \right) =  \left[\begin{array}{c}
+x - 2 \, y \\
+y \\
+4 \, x - 8 \, y
+\end{array}\right] .\]</p></li>
+      <li>Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cccc}
+-1 &amp; 1 &amp; 2 &amp; 3 \\
+0 &amp; 1 &amp; -2 &amp; 3 \\
+-2 &amp; 2 &amp; 3 &amp; 6
+\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
+-4 \\
+3 \\
+5 \\
+8
+\end{array}\right]  \right)\). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+        <p>\[ \left[\begin{array}{cc}
+1 &amp; -2 \\
+0 &amp; 1 \\
+4 &amp; -8
+\end{array}\right] \]</p>
+      </li>
+      <li>
+        <p>\[T\left( \left[\begin{array}{c}
+-4 \\
+3 \\
+5 \\
+8
+\end{array}\right]  \right)= \left[\begin{array}{c}
+41 \\
+17 \\
+77
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 37</h4><div class="exercise">
+  <div class="exercise-statement">
+    <ol type="a">
+      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 4  \to \mathbb{R}^ 1 \) given by <p>\[S\left(  \left[\begin{array}{c}
+x_{1} \\
+x_{2} \\
+x_{3} \\
+x_{4}
+\end{array}\right]  \right) =  \left[\begin{array}{c}
+x_{1} - 3 \, x_{2} - 3 \, x_{3} - x_{4}
+\end{array}\right] .\]</p></li>
+      <li>Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cccc}
+1 &amp; -3 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 2 &amp; 1 \\
+0 &amp; 1 &amp; 3 &amp; 2
+\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
+1 \\
+-3 \\
+-5 \\
+4
+\end{array}\right]  \right)\). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+        <p>\[ \left[\begin{array}{cccc}
+1 &amp; -3 &amp; -3 &amp; -1
+\end{array}\right] \]</p>
+      </li>
+      <li>
+        <p>\[T\left( \left[\begin{array}{c}
+1 \\
+-3 \\
+-5 \\
+4
+\end{array}\right]  \right)= \left[\begin{array}{c}
+10 \\
+-9 \\
+-10
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 38</h4><div class="exercise">
+  <div class="exercise-statement">
+    <ol type="a">
+      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 2  \to \mathbb{R}^ 3 \) given by <p>\[S\left(  \left[\begin{array}{c}
+x \\
+y
+\end{array}\right]  \right) =  \left[\begin{array}{c}
+3 \, x + y \\
+-3 \, x + 4 \, y \\
+-2 \, x - 2 \, y
+\end{array}\right] .\]</p></li>
+      <li>Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 1 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cccc}
+1 &amp; -1 &amp; -2 &amp; 1
+\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
+-7 \\
+-8 \\
+-8 \\
+-2
+\end{array}\right]  \right)\). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+        <p>\[ \left[\begin{array}{cc}
+3 &amp; 1 \\
+-3 &amp; 4 \\
+-2 &amp; -2
+\end{array}\right] \]</p>
+      </li>
+      <li>
+        <p>\[T\left( \left[\begin{array}{c}
+-7 \\
+-8 \\
+-8 \\
+-2
+\end{array}\right]  \right)= \left[\begin{array}{c}
+15
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 39</h4><div class="exercise">
+  <div class="exercise-statement">
+    <ol type="a">
+      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) given by <p>\[S\left(  \left[\begin{array}{c}
+x_{1} \\
+x_{2} \\
+x_{3}
+\end{array}\right]  \right) =  \left[\begin{array}{c}
+-x_{1} - 2 \, x_{2} - 5 \, x_{3} \\
+x_{1} + x_{2} \\
+-x_{1} - x_{2} + x_{3} \\
+-5 \, x_{3}
+\end{array}\right] .\]</p></li>
+      <li>Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 2 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cccc}
+1 &amp; 4 &amp; 0 &amp; -1 \\
+-1 &amp; -4 &amp; 1 &amp; 0
+\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
+-6 \\
+3 \\
+-6 \\
+-7
+\end{array}\right]  \right)\). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+        <p>\[ \left[\begin{array}{ccc}
+-1 &amp; -2 &amp; -5 \\
+1 &amp; 1 &amp; 0 \\
+-1 &amp; -1 &amp; 1 \\
+0 &amp; 0 &amp; -5
+\end{array}\right] \]</p>
+      </li>
+      <li>
+        <p>\[T\left( \left[\begin{array}{c}
+-6 \\
+3 \\
+-6 \\
+-7
+\end{array}\right]  \right)= \left[\begin{array}{c}
+13 \\
+-12
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 40</h4><div class="exercise">
+  <div class="exercise-statement">
+    <ol type="a">
+      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) given by <p>\[S\left(  \left[\begin{array}{c}
+x \\
+y
+\end{array}\right]  \right) =  \left[\begin{array}{c}
+4 \, y \\
+-x - 4 \, y \\
+x + y \\
+x + 4 \, y
+\end{array}\right] .\]</p></li>
+      <li>Let \(T:\mathbb{R}^ 2  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cc}
+-3 &amp; 2 \\
+0 &amp; 1 \\
+-2 &amp; 0
+\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
+-3 \\
+-2
+\end{array}\right]  \right)\). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+        <p>\[ \left[\begin{array}{cc}
+0 &amp; 4 \\
+-1 &amp; -4 \\
+1 &amp; 1 \\
+1 &amp; 4
+\end{array}\right] \]</p>
+      </li>
+      <li>
+        <p>\[T\left( \left[\begin{array}{c}
+-3 \\
+-2
+\end{array}\right]  \right)= \left[\begin{array}{c}
+5 \\
+-2 \\
+6
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 41</h4><div class="exercise">
+  <div class="exercise-statement">
+    <ol type="a">
+      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 2  \to \mathbb{R}^ 3 \) given by <p>\[S\left(  \left[\begin{array}{c}
+x \\
+y
+\end{array}\right]  \right) =  \left[\begin{array}{c}
+2 \, x + y \\
+x + y \\
+-4 \, x + 3 \, y
+\end{array}\right] .\]</p></li>
+      <li>Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 1 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cccc}
+1 &amp; -1 &amp; 2 &amp; 3
+\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
+-8 \\
+7 \\
+-7 \\
+6
+\end{array}\right]  \right)\). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+        <p>\[ \left[\begin{array}{cc}
+2 &amp; 1 \\
+1 &amp; 1 \\
+-4 &amp; 3
+\end{array}\right] \]</p>
+      </li>
+      <li>
+        <p>\[T\left( \left[\begin{array}{c}
+-8 \\
+7 \\
+-7 \\
+6
+\end{array}\right]  \right)= \left[\begin{array}{c}
+-11
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 42</h4><div class="exercise">
+  <div class="exercise-statement">
+    <ol type="a">
+      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 4  \to \mathbb{R}^ 3 \) given by <p>\[S\left(  \left[\begin{array}{c}
+x \\
+y \\
+z \\
+{w}
+\end{array}\right]  \right) =  \left[\begin{array}{c}
+x - y - 3 \, z + 6 \, {w} \\
+2 \, x - y - 3 \, z + 8 \, {w} \\
+z - 2 \, {w}
+\end{array}\right] .\]</p></li>
+      <li>Let \(T:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cc}
+-1 &amp; 1 \\
+1 &amp; -4 \\
+-1 &amp; 3 \\
+0 &amp; 4
+\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
+-7 \\
+-8
+\end{array}\right]  \right)\). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+        <p>\[ \left[\begin{array}{cccc}
+1 &amp; -1 &amp; -3 &amp; 6 \\
+2 &amp; -1 &amp; -3 &amp; 8 \\
+0 &amp; 0 &amp; 1 &amp; -2
+\end{array}\right] \]</p>
+      </li>
+      <li>
+        <p>\[T\left( \left[\begin{array}{c}
+-7 \\
+-8
+\end{array}\right]  \right)= \left[\begin{array}{c}
+-1 \\
+25 \\
+-17 \\
+-32
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 43</h4><div class="exercise">
+  <div class="exercise-statement">
+    <ol type="a">
+      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 3  \to \mathbb{R}^ 2 \) given by <p>\[S\left(  \left[\begin{array}{c}
+x_{1} \\
+x_{2} \\
+x_{3}
+\end{array}\right]  \right) =  \left[\begin{array}{c}
+-x_{1} - 2 \, x_{2} + x_{3} \\
+-2 \, x_{1} - 5 \, x_{2} + 2 \, x_{3}
+\end{array}\right] .\]</p></li>
+      <li>Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{ccc}
+-7 &amp; 2 &amp; 2 \\
+-1 &amp; 1 &amp; -3 \\
+4 &amp; -1 &amp; -2 \\
+5 &amp; -1 &amp; -8
+\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
+-4 \\
+2 \\
+-6
+\end{array}\right]  \right)\). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+        <p>\[ \left[\begin{array}{ccc}
+-1 &amp; -2 &amp; 1 \\
+-2 &amp; -5 &amp; 2
+\end{array}\right] \]</p>
+      </li>
+      <li>
+        <p>\[T\left( \left[\begin{array}{c}
+-4 \\
+2 \\
+-6
+\end{array}\right]  \right)= \left[\begin{array}{c}
+20 \\
+24 \\
+-6 \\
+26
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 44</h4><div class="exercise">
+  <div class="exercise-statement">
+    <ol type="a">
+      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 2  \to \mathbb{R}^ 3 \) given by <p>\[S\left(  \left[\begin{array}{c}
+x_{1} \\
+x_{2}
+\end{array}\right]  \right) =  \left[\begin{array}{c}
+x_{1} + 3 \, x_{2} \\
+-3 \, x_{1} - 8 \, x_{2} \\
+0
+\end{array}\right] .\]</p></li>
+      <li>Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{ccc}
+1 &amp; 1 &amp; 0 \\
+0 &amp; 1 &amp; 5 \\
+-1 &amp; 0 &amp; 6 \\
+0 &amp; 1 &amp; 5
+\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
+-8 \\
+7 \\
+-7
+\end{array}\right]  \right)\). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+        <p>\[ \left[\begin{array}{cc}
+1 &amp; 3 \\
+-3 &amp; -8 \\
+0 &amp; 0
+\end{array}\right] \]</p>
+      </li>
+      <li>
+        <p>\[T\left( \left[\begin{array}{c}
+-8 \\
+7 \\
+-7
+\end{array}\right]  \right)= \left[\begin{array}{c}
+-1 \\
+-28 \\
+-34 \\
+-28
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 45</h4><div class="exercise">
+  <div class="exercise-statement">
+    <ol type="a">
+      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 4  \to \mathbb{R}^ 2 \) given by <p>\[S\left(  \left[\begin{array}{c}
+x_{1} \\
+x_{2} \\
+x_{3} \\
+x_{4}
+\end{array}\right]  \right) =  \left[\begin{array}{c}
+x_{1} + x_{2} + 3 \, x_{3} - 4 \, x_{4} \\
+x_{2} + 2 \, x_{3} - 2 \, x_{4}
+\end{array}\right] .\]</p></li>
+      <li>Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 1 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cccc}
+1 &amp; -3 &amp; -3 &amp; 3
+\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
+-2 \\
+-1 \\
+4 \\
+7
+\end{array}\right]  \right)\). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+        <p>\[ \left[\begin{array}{cccc}
+1 &amp; 1 &amp; 3 &amp; -4 \\
+0 &amp; 1 &amp; 2 &amp; -2
+\end{array}\right] \]</p>
+      </li>
+      <li>
+        <p>\[T\left( \left[\begin{array}{c}
+-2 \\
+-1 \\
+4 \\
+7
+\end{array}\right]  \right)= \left[\begin{array}{c}
+10
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 46</h4><div class="exercise">
+  <div class="exercise-statement">
+    <ol type="a">
+      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 3  \to \mathbb{R}^ 2 \) given by <p>\[S\left(  \left[\begin{array}{c}
+x_{1} \\
+x_{2} \\
+x_{3}
+\end{array}\right]  \right) =  \left[\begin{array}{c}
+2 \, x_{1} - x_{2} - 7 \, x_{3} \\
+x_{1} - 3 \, x_{3}
+\end{array}\right] .\]</p></li>
+      <li>Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{ccc}
+1 &amp; 1 &amp; 3 \\
+0 &amp; 1 &amp; 1 \\
+-2 &amp; -1 &amp; -4 \\
+1 &amp; 6 &amp; 8
+\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
+8 \\
+1 \\
+7
+\end{array}\right]  \right)\). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+        <p>\[ \left[\begin{array}{ccc}
+2 &amp; -1 &amp; -7 \\
+1 &amp; 0 &amp; -3
+\end{array}\right] \]</p>
+      </li>
+      <li>
+        <p>\[T\left( \left[\begin{array}{c}
+8 \\
+1 \\
+7
+\end{array}\right]  \right)= \left[\begin{array}{c}
+30 \\
+8 \\
+-45 \\
+70
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 47</h4><div class="exercise">
+  <div class="exercise-statement">
+    <ol type="a">
+      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 4  \to \mathbb{R}^ 3 \) given by <p>\[S\left(  \left[\begin{array}{c}
+x_{1} \\
+x_{2} \\
+x_{3} \\
+x_{4}
+\end{array}\right]  \right) =  \left[\begin{array}{c}
+x_{1} + x_{2} + 2 \, x_{3} - x_{4} \\
+-x_{1} - 2 \, x_{2} - 4 \, x_{3} + 3 \, x_{4} \\
+-2 \, x_{2} - 5 \, x_{3} + 6 \, x_{4}
+\end{array}\right] .\]</p></li>
+      <li>Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{ccc}
+1 &amp; 0 &amp; -1 \\
+2 &amp; -3 &amp; 6 \\
+0 &amp; 1 &amp; -3 \\
+1 &amp; -1 &amp; 0
+\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
+-5 \\
+8 \\
+0
+\end{array}\right]  \right)\). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+        <p>\[ \left[\begin{array}{cccc}
+1 &amp; 1 &amp; 2 &amp; -1 \\
+-1 &amp; -2 &amp; -4 &amp; 3 \\
+0 &amp; -2 &amp; -5 &amp; 6
+\end{array}\right] \]</p>
+      </li>
+      <li>
+        <p>\[T\left( \left[\begin{array}{c}
+-5 \\
+8 \\
+0
+\end{array}\right]  \right)= \left[\begin{array}{c}
+-5 \\
+-34 \\
+8 \\
+-13
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 48</h4><div class="exercise">
+  <div class="exercise-statement">
+    <ol type="a">
+      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) given by <p>\[S\left(  \left[\begin{array}{c}
+x_{1} \\
+x_{2} \\
+x_{3}
+\end{array}\right]  \right) =  \left[\begin{array}{c}
+x_{1} - 3 \, x_{2} - 5 \, x_{3} \\
+x_{2} \\
+x_{1} - 3 \, x_{2} - 4 \, x_{3} \\
+x_{1} + 4 \, x_{2} - 3 \, x_{3}
+\end{array}\right] .\]</p></li>
+      <li>Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{ccc}
+1 &amp; 1 &amp; -4 \\
+0 &amp; 1 &amp; 1 \\
+1 &amp; 0 &amp; -4
+\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
+3 \\
+2 \\
+-6
+\end{array}\right]  \right)\). </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+        <p>\[ \left[\begin{array}{ccc}
+1 &amp; -3 &amp; -5 \\
+0 &amp; 1 &amp; 0 \\
+1 &amp; -3 &amp; -4 \\
+1 &amp; 4 &amp; -3
+\end{array}\right] \]</p>
+      </li>
+      <li>
+        <p>\[T\left( \left[\begin{array}{c}
+3 \\
+2 \\
+-6
+\end{array}\right]  \right)= \left[\begin{array}{c}
+29 \\
+-4 \\
+27
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 49</h4><div class="exercise">
   <div class="exercise-statement">
     <ol type="a">
       <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 4  \to \mathbb{R}^ 2 \) given by <p>\[S\left(  \left[\begin{array}{c}
@@ -1207,1434 +2625,26 @@ x_{2} + x_{4}
 </div>
 
 <hr/>
-<h4>Example 22</h4><div class="exercise">
-  <div class="exercise-statement">
-    <ol type="a">
-      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) given by <p>\[S\left(  \left[\begin{array}{c}
-x_{1} \\
-x_{2} \\
-x_{3}
-\end{array}\right]  \right) =  \left[\begin{array}{c}
-6 \, x_{1} + 4 \, x_{2} + 7 \, x_{3} \\
-x_{2} \\
-5 \, x_{1} + 4 \, x_{2} + 6 \, x_{3} \\
--5 \, x_{1} - 2 \, x_{2} - 2 \, x_{3}
-\end{array}\right] .\]</p></li>
-      <li>Let \(T:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cc}
-1 &amp; 4 \\
--2 &amp; -7 \\
--3 &amp; -7 \\
--1 &amp; 1
-\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
-6 \\
-6
-\end{array}\right]  \right)\). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-        <p>\[ \left[\begin{array}{ccc}
-6 &amp; 4 &amp; 7 \\
-0 &amp; 1 &amp; 0 \\
-5 &amp; 4 &amp; 6 \\
--5 &amp; -2 &amp; -2
-\end{array}\right] \]</p>
-      </li>
-      <li>
-        <p>\[T\left( \left[\begin{array}{c}
-6 \\
-6
-\end{array}\right]  \right)= \left[\begin{array}{c}
-30 \\
--54 \\
--60 \\
-0
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 23</h4><div class="exercise">
-  <div class="exercise-statement">
-    <ol type="a">
-      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) given by <p>\[S\left(  \left[\begin{array}{c}
-x \\
-y \\
-z
-\end{array}\right]  \right) =  \left[\begin{array}{c}
-3 \, x - 8 \, y + 2 \, z \\
-2 \, x - 5 \, y + z \\
-3 \, y - 2 \, z \\
-3 \, y + 2 \, z
-\end{array}\right] .\]</p></li>
-      <li>Let \(T:\mathbb{R}^ 2  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cc}
--1 &amp; 0 \\
--3 &amp; -2 \\
--2 &amp; -1
-\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
-2 \\
--6
-\end{array}\right]  \right)\). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-        <p>\[ \left[\begin{array}{ccc}
-3 &amp; -8 &amp; 2 \\
-2 &amp; -5 &amp; 1 \\
-0 &amp; 3 &amp; -2 \\
-0 &amp; 3 &amp; 2
-\end{array}\right] \]</p>
-      </li>
-      <li>
-        <p>\[T\left( \left[\begin{array}{c}
-2 \\
--6
-\end{array}\right]  \right)= \left[\begin{array}{c}
--2 \\
-6 \\
-2
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 24</h4><div class="exercise">
-  <div class="exercise-statement">
-    <ol type="a">
-      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 4  \to \mathbb{R}^ 3 \) given by <p>\[S\left(  \left[\begin{array}{c}
-x \\
-y \\
-z \\
-{w}
-\end{array}\right]  \right) =  \left[\begin{array}{c}
-y + 3 \, z + 5 \, {w} \\
--x + 2 \, y + 4 \, z + 6 \, {w} \\
-x + 3 \, z + 6 \, {w}
-\end{array}\right] .\]</p></li>
-      <li>Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{ccc}
-0 &amp; 0 &amp; -1 \\
-2 &amp; -1 &amp; 5 \\
-1 &amp; -1 &amp; 6
-\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
-4 \\
--6 \\
--3
-\end{array}\right]  \right)\). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-        <p>\[ \left[\begin{array}{cccc}
-0 &amp; 1 &amp; 3 &amp; 5 \\
--1 &amp; 2 &amp; 4 &amp; 6 \\
-1 &amp; 0 &amp; 3 &amp; 6
-\end{array}\right] \]</p>
-      </li>
-      <li>
-        <p>\[T\left( \left[\begin{array}{c}
-4 \\
--6 \\
--3
-\end{array}\right]  \right)= \left[\begin{array}{c}
-3 \\
--1 \\
--8
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 25</h4><div class="exercise">
-  <div class="exercise-statement">
-    <ol type="a">
-      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) given by <p>\[S\left(  \left[\begin{array}{c}
-x \\
-y
-\end{array}\right]  \right) =  \left[\begin{array}{c}
--x - y \\
-y \\
-2 \, x + 6 \, y \\
-2 \, y
-\end{array}\right] .\]</p></li>
-      <li>Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{ccc}
-1 &amp; -3 &amp; 0 \\
-2 &amp; -5 &amp; 0 \\
-0 &amp; 0 &amp; 1
-\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
-3 \\
-2 \\
--1
-\end{array}\right]  \right)\). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-        <p>\[ \left[\begin{array}{cc}
--1 &amp; -1 \\
-0 &amp; 1 \\
-2 &amp; 6 \\
-0 &amp; 2
-\end{array}\right] \]</p>
-      </li>
-      <li>
-        <p>\[T\left( \left[\begin{array}{c}
-3 \\
-2 \\
--1
-\end{array}\right]  \right)= \left[\begin{array}{c}
--3 \\
--4 \\
--1
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 26</h4><div class="exercise">
-  <div class="exercise-statement">
-    <ol type="a">
-      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 4  \to \mathbb{R}^ 1 \) given by <p>\[S\left(  \left[\begin{array}{c}
-x_{1} \\
-x_{2} \\
-x_{3} \\
-x_{4}
-\end{array}\right]  \right) =  \left[\begin{array}{c}
-x_{1} + 2 \, x_{2} + 2 \, x_{3} + 2 \, x_{4}
-\end{array}\right] .\]</p></li>
-      <li>Let \(T:\mathbb{R}^ 2  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cc}
--1 &amp; 5 \\
--1 &amp; 4 \\
-3 &amp; -6
-\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
-5 \\
-8
-\end{array}\right]  \right)\). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-        <p>\[ \left[\begin{array}{cccc}
-1 &amp; 2 &amp; 2 &amp; 2
-\end{array}\right] \]</p>
-      </li>
-      <li>
-        <p>\[T\left( \left[\begin{array}{c}
-5 \\
-8
-\end{array}\right]  \right)= \left[\begin{array}{c}
-35 \\
-27 \\
--33
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 27</h4><div class="exercise">
-  <div class="exercise-statement">
-    <ol type="a">
-      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 2  \to \mathbb{R}^ 3 \) given by <p>\[S\left(  \left[\begin{array}{c}
-x \\
-y
-\end{array}\right]  \right) =  \left[\begin{array}{c}
--x - 5 \, y \\
-y \\
-2 \, x + 7 \, y
-\end{array}\right] .\]</p></li>
-      <li>Let \(T:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cc}
-1 &amp; -5 \\
-0 &amp; 1 \\
-1 &amp; 0 \\
-2 &amp; -6
-\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
--2 \\
--2
-\end{array}\right]  \right)\). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-        <p>\[ \left[\begin{array}{cc}
--1 &amp; -5 \\
-0 &amp; 1 \\
-2 &amp; 7
-\end{array}\right] \]</p>
-      </li>
-      <li>
-        <p>\[T\left( \left[\begin{array}{c}
--2 \\
--2
-\end{array}\right]  \right)= \left[\begin{array}{c}
-8 \\
--2 \\
--2 \\
-8
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 28</h4><div class="exercise">
-  <div class="exercise-statement">
-    <ol type="a">
-      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 2  \to \mathbb{R}^ 3 \) given by <p>\[S\left(  \left[\begin{array}{c}
-x_{1} \\
-x_{2}
-\end{array}\right]  \right) =  \left[\begin{array}{c}
-x_{1} + 3 \, x_{2} \\
--2 \, x_{1} - 5 \, x_{2} \\
--3 \, x_{2}
-\end{array}\right] .\]</p></li>
-      <li>Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{ccc}
-1 &amp; 0 &amp; 0 \\
--4 &amp; 1 &amp; -5 \\
-4 &amp; 0 &amp; 1
-\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
-6 \\
--2 \\
-7
-\end{array}\right]  \right)\). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-        <p>\[ \left[\begin{array}{cc}
-1 &amp; 3 \\
--2 &amp; -5 \\
-0 &amp; -3
-\end{array}\right] \]</p>
-      </li>
-      <li>
-        <p>\[T\left( \left[\begin{array}{c}
-6 \\
--2 \\
-7
-\end{array}\right]  \right)= \left[\begin{array}{c}
-6 \\
--61 \\
-31
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 29</h4><div class="exercise">
-  <div class="exercise-statement">
-    <ol type="a">
-      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 4  \to \mathbb{R}^ 3 \) given by <p>\[S\left(  \left[\begin{array}{c}
-x_{1} \\
-x_{2} \\
-x_{3} \\
-x_{4}
-\end{array}\right]  \right) =  \left[\begin{array}{c}
-x_{1} + 2 \, x_{2} - x_{3} - 5 \, x_{4} \\
-x_{1} + 3 \, x_{2} - x_{3} - 7 \, x_{4} \\
--3 \, x_{2} + x_{3} + 4 \, x_{4}
-\end{array}\right] .\]</p></li>
-      <li>Let \(T:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cc}
--1 &amp; -3 \\
--1 &amp; -3 \\
--2 &amp; -7 \\
-2 &amp; 7
-\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
-2 \\
-0
-\end{array}\right]  \right)\). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-        <p>\[ \left[\begin{array}{cccc}
-1 &amp; 2 &amp; -1 &amp; -5 \\
-1 &amp; 3 &amp; -1 &amp; -7 \\
-0 &amp; -3 &amp; 1 &amp; 4
-\end{array}\right] \]</p>
-      </li>
-      <li>
-        <p>\[T\left( \left[\begin{array}{c}
-2 \\
-0
-\end{array}\right]  \right)= \left[\begin{array}{c}
--2 \\
--2 \\
--4 \\
-4
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 30</h4><div class="exercise">
-  <div class="exercise-statement">
-    <ol type="a">
-      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 4  \to \mathbb{R}^ 1 \) given by <p>\[S\left(  \left[\begin{array}{c}
-x \\
-y \\
-z \\
-{w}
-\end{array}\right]  \right) =  \left[\begin{array}{c}
-x + 2 \, y - 2 \, z
-\end{array}\right] .\]</p></li>
-      <li>Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 2 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{ccc}
-0 &amp; -1 &amp; 3 \\
-1 &amp; 3 &amp; -8
-\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
--1 \\
--5 \\
-2
-\end{array}\right]  \right)\). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-        <p>\[ \left[\begin{array}{cccc}
-1 &amp; 2 &amp; -2 &amp; 0
-\end{array}\right] \]</p>
-      </li>
-      <li>
-        <p>\[T\left( \left[\begin{array}{c}
--1 \\
--5 \\
-2
-\end{array}\right]  \right)= \left[\begin{array}{c}
-11 \\
--32
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 31</h4><div class="exercise">
-  <div class="exercise-statement">
-    <ol type="a">
-      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) given by <p>\[S\left(  \left[\begin{array}{c}
-x_{1} \\
-x_{2} \\
-x_{3}
-\end{array}\right]  \right) =  \left[\begin{array}{c}
-x_{1} \\
--5 \, x_{1} + x_{2} + 4 \, x_{3} \\
--4 \, x_{1} + x_{2} + 5 \, x_{3} \\
--4 \, x_{1} + 2 \, x_{2} + 3 \, x_{3}
-\end{array}\right] .\]</p></li>
-      <li>Let \(T:\mathbb{R}^ 2  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cc}
-1 &amp; 4 \\
-0 &amp; 1 \\
--1 &amp; -4
-\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
-6 \\
--4
-\end{array}\right]  \right)\). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-        <p>\[ \left[\begin{array}{ccc}
-1 &amp; 0 &amp; 0 \\
--5 &amp; 1 &amp; 4 \\
--4 &amp; 1 &amp; 5 \\
--4 &amp; 2 &amp; 3
-\end{array}\right] \]</p>
-      </li>
-      <li>
-        <p>\[T\left( \left[\begin{array}{c}
-6 \\
--4
-\end{array}\right]  \right)= \left[\begin{array}{c}
--10 \\
--4 \\
-10
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 32</h4><div class="exercise">
-  <div class="exercise-statement">
-    <ol type="a">
-      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) given by <p>\[S\left(  \left[\begin{array}{c}
-x \\
-y
-\end{array}\right]  \right) =  \left[\begin{array}{c}
-6 \, x + 8 \, y \\
-2 \, x + 5 \, y \\
--x \\
--5 \, x - 6 \, y
-\end{array}\right] .\]</p></li>
-      <li>Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 2 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cccc}
--2 &amp; -1 &amp; -3 &amp; 1 \\
-3 &amp; 1 &amp; 5 &amp; -3
-\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
--8 \\
-1 \\
--8 \\
-3
-\end{array}\right]  \right)\). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-        <p>\[ \left[\begin{array}{cc}
-6 &amp; 8 \\
-2 &amp; 5 \\
--1 &amp; 0 \\
--5 &amp; -6
-\end{array}\right] \]</p>
-      </li>
-      <li>
-        <p>\[T\left( \left[\begin{array}{c}
--8 \\
-1 \\
--8 \\
-3
-\end{array}\right]  \right)= \left[\begin{array}{c}
-42 \\
--72
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 33</h4><div class="exercise">
-  <div class="exercise-statement">
-    <ol type="a">
-      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 3  \to \mathbb{R}^ 3 \) given by <p>\[S\left(  \left[\begin{array}{c}
-x \\
-y \\
-z
-\end{array}\right]  \right) =  \left[\begin{array}{c}
-x + 2 \, y + 3 \, z \\
-y + 3 \, z \\
--2 \, x - 4 \, y - 5 \, z
-\end{array}\right] .\]</p></li>
-      <li>Let \(T:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cc}
--1 &amp; 3 \\
-2 &amp; -5 \\
-1 &amp; -1 \\
-1 &amp; -3
-\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
--5 \\
--8
-\end{array}\right]  \right)\). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-        <p>\[ \left[\begin{array}{ccc}
-1 &amp; 2 &amp; 3 \\
-0 &amp; 1 &amp; 3 \\
--2 &amp; -4 &amp; -5
-\end{array}\right] \]</p>
-      </li>
-      <li>
-        <p>\[T\left( \left[\begin{array}{c}
--5 \\
--8
-\end{array}\right]  \right)= \left[\begin{array}{c}
--19 \\
-30 \\
-3 \\
-19
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 34</h4><div class="exercise">
-  <div class="exercise-statement">
-    <ol type="a">
-      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 4  \to \mathbb{R}^ 2 \) given by <p>\[S\left(  \left[\begin{array}{c}
-x_{1} \\
-x_{2} \\
-x_{3} \\
-x_{4}
-\end{array}\right]  \right) =  \left[\begin{array}{c}
-x_{1} - 4 \, x_{2} + 2 \, x_{3} + 7 \, x_{4} \\
-x_{1} - 3 \, x_{2} + x_{3} + 5 \, x_{4}
-\end{array}\right] .\]</p></li>
-      <li>Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 2 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cccc}
--5 &amp; -2 &amp; 4 &amp; 3 \\
-3 &amp; 1 &amp; -2 &amp; -2
-\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
-6 \\
-6 \\
--3 \\
-3
-\end{array}\right]  \right)\). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-        <p>\[ \left[\begin{array}{cccc}
-1 &amp; -4 &amp; 2 &amp; 7 \\
-1 &amp; -3 &amp; 1 &amp; 5
-\end{array}\right] \]</p>
-      </li>
-      <li>
-        <p>\[T\left( \left[\begin{array}{c}
-6 \\
-6 \\
--3 \\
-3
-\end{array}\right]  \right)= \left[\begin{array}{c}
--45 \\
-24
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 35</h4><div class="exercise">
-  <div class="exercise-statement">
-    <ol type="a">
-      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 4  \to \mathbb{R}^ 2 \) given by <p>\[S\left(  \left[\begin{array}{c}
-x_{1} \\
-x_{2} \\
-x_{3} \\
-x_{4}
-\end{array}\right]  \right) =  \left[\begin{array}{c}
-x_{1} + 4 \, x_{2} - 7 \, x_{3} - 6 \, x_{4} \\
-x_{3} + x_{4}
-\end{array}\right] .\]</p></li>
-      <li>Let \(T:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cc}
-1 &amp; -1 \\
-2 &amp; -1 \\
-0 &amp; 5 \\
-5 &amp; -5
-\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
-1 \\
-8
-\end{array}\right]  \right)\). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-        <p>\[ \left[\begin{array}{cccc}
-1 &amp; 4 &amp; -7 &amp; -6 \\
-0 &amp; 0 &amp; 1 &amp; 1
-\end{array}\right] \]</p>
-      </li>
-      <li>
-        <p>\[T\left( \left[\begin{array}{c}
-1 \\
-8
-\end{array}\right]  \right)= \left[\begin{array}{c}
--7 \\
--6 \\
-40 \\
--35
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 36</h4><div class="exercise">
-  <div class="exercise-statement">
-    <ol type="a">
-      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 4  \to \mathbb{R}^ 2 \) given by <p>\[S\left(  \left[\begin{array}{c}
-x_{1} \\
-x_{2} \\
-x_{3} \\
-x_{4}
-\end{array}\right]  \right) =  \left[\begin{array}{c}
-3 \, x_{1} + x_{2} + x_{3} - 5 \, x_{4} \\
--x_{1} - x_{3} + x_{4}
-\end{array}\right] .\]</p></li>
-      <li>Let \(T:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cc}
-5 &amp; -4 \\
--2 &amp; 1 \\
-0 &amp; 4 \\
-4 &amp; -4
-\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
--8 \\
-5
-\end{array}\right]  \right)\). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-        <p>\[ \left[\begin{array}{cccc}
-3 &amp; 1 &amp; 1 &amp; -5 \\
--1 &amp; 0 &amp; -1 &amp; 1
-\end{array}\right] \]</p>
-      </li>
-      <li>
-        <p>\[T\left( \left[\begin{array}{c}
--8 \\
-5
-\end{array}\right]  \right)= \left[\begin{array}{c}
--60 \\
-21 \\
-20 \\
--52
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 37</h4><div class="exercise">
-  <div class="exercise-statement">
-    <ol type="a">
-      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 4  \to \mathbb{R}^ 1 \) given by <p>\[S\left(  \left[\begin{array}{c}
-x \\
-y \\
-z \\
-{w}
-\end{array}\right]  \right) =  \left[\begin{array}{c}
-x - 3 \, y + 2 \, z - 2 \, {w}
-\end{array}\right] .\]</p></li>
-      <li>Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 1 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cccc}
-1 &amp; 2 &amp; 3 &amp; 2
-\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
-5 \\
-6 \\
--7 \\
-2
-\end{array}\right]  \right)\). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-        <p>\[ \left[\begin{array}{cccc}
-1 &amp; -3 &amp; 2 &amp; -2
-\end{array}\right] \]</p>
-      </li>
-      <li>
-        <p>\[T\left( \left[\begin{array}{c}
-5 \\
-6 \\
--7 \\
-2
-\end{array}\right]  \right)= \left[\begin{array}{c}
-0
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 38</h4><div class="exercise">
-  <div class="exercise-statement">
-    <ol type="a">
-      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 4  \to \mathbb{R}^ 3 \) given by <p>\[S\left(  \left[\begin{array}{c}
-x \\
-y \\
-z \\
-{w}
-\end{array}\right]  \right) =  \left[\begin{array}{c}
-3 \, x + y + 3 \, z - 8 \, {w} \\
-2 \, x + y + z - 3 \, {w} \\
-y - 2 \, z + 5 \, {w}
-\end{array}\right] .\]</p></li>
-      <li>Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 2 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{ccc}
--1 &amp; -5 &amp; 1 \\
-1 &amp; 5 &amp; -2
-\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
-5 \\
-3 \\
--3
-\end{array}\right]  \right)\). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-        <p>\[ \left[\begin{array}{cccc}
-3 &amp; 1 &amp; 3 &amp; -8 \\
-2 &amp; 1 &amp; 1 &amp; -3 \\
-0 &amp; 1 &amp; -2 &amp; 5
-\end{array}\right] \]</p>
-      </li>
-      <li>
-        <p>\[T\left( \left[\begin{array}{c}
-5 \\
-3 \\
--3
-\end{array}\right]  \right)= \left[\begin{array}{c}
--23 \\
-26
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 39</h4><div class="exercise">
-  <div class="exercise-statement">
-    <ol type="a">
-      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) given by <p>\[S\left(  \left[\begin{array}{c}
-x_{1} \\
-x_{2} \\
-x_{3}
-\end{array}\right]  \right) =  \left[\begin{array}{c}
-3 \, x_{1} + 5 \, x_{2} + 3 \, x_{3} \\
-4 \, x_{1} + 5 \, x_{2} - 2 \, x_{3} \\
-x_{1} + 2 \, x_{2} + 2 \, x_{3} \\
--2 \, x_{1} - 4 \, x_{2} - 6 \, x_{3}
-\end{array}\right] .\]</p></li>
-      <li>Let \(T:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cc}
-1 &amp; 5 \\
--1 &amp; -4 \\
--1 &amp; -6 \\
--1 &amp; -5
-\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
--4 \\
-3
-\end{array}\right]  \right)\). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-        <p>\[ \left[\begin{array}{ccc}
-3 &amp; 5 &amp; 3 \\
-4 &amp; 5 &amp; -2 \\
-1 &amp; 2 &amp; 2 \\
--2 &amp; -4 &amp; -6
-\end{array}\right] \]</p>
-      </li>
-      <li>
-        <p>\[T\left( \left[\begin{array}{c}
--4 \\
-3
-\end{array}\right]  \right)= \left[\begin{array}{c}
-11 \\
--8 \\
--14 \\
--11
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 40</h4><div class="exercise">
-  <div class="exercise-statement">
-    <ol type="a">
-      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) given by <p>\[S\left(  \left[\begin{array}{c}
-x \\
-y
-\end{array}\right]  \right) =  \left[\begin{array}{c}
--x - 3 \, y \\
-2 \, x + 5 \, y \\
--5 \, x - 6 \, y \\
--4 \, x - 8 \, y
-\end{array}\right] .\]</p></li>
-      <li>Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{ccc}
-1 &amp; -1 &amp; 1 \\
--3 &amp; 4 &amp; 1 \\
--1 &amp; 1 &amp; 0
-\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
--8 \\
--8 \\
--6
-\end{array}\right]  \right)\). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-        <p>\[ \left[\begin{array}{cc}
--1 &amp; -3 \\
-2 &amp; 5 \\
--5 &amp; -6 \\
--4 &amp; -8
-\end{array}\right] \]</p>
-      </li>
-      <li>
-        <p>\[T\left( \left[\begin{array}{c}
--8 \\
--8 \\
--6
-\end{array}\right]  \right)= \left[\begin{array}{c}
--6 \\
--14 \\
-0
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 41</h4><div class="exercise">
-  <div class="exercise-statement">
-    <ol type="a">
-      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 4  \to \mathbb{R}^ 3 \) given by <p>\[S\left(  \left[\begin{array}{c}
-x_{1} \\
-x_{2} \\
-x_{3} \\
-x_{4}
-\end{array}\right]  \right) =  \left[\begin{array}{c}
-x_{1} - 2 \, x_{2} - 5 \, x_{3} + 3 \, x_{4} \\
--x_{1} + 3 \, x_{2} + 5 \, x_{3} - x_{4} \\
--x_{1} + 6 \, x_{2} + 6 \, x_{3} + 4 \, x_{4}
-\end{array}\right] .\]</p></li>
-      <li>Let \(T:\mathbb{R}^ 2  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cc}
--1 &amp; 1 \\
-0 &amp; 1 \\
-2 &amp; 3
-\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
--5 \\
-5
-\end{array}\right]  \right)\). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-        <p>\[ \left[\begin{array}{cccc}
-1 &amp; -2 &amp; -5 &amp; 3 \\
--1 &amp; 3 &amp; 5 &amp; -1 \\
--1 &amp; 6 &amp; 6 &amp; 4
-\end{array}\right] \]</p>
-      </li>
-      <li>
-        <p>\[T\left( \left[\begin{array}{c}
--5 \\
-5
-\end{array}\right]  \right)= \left[\begin{array}{c}
-10 \\
-5 \\
-5
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 42</h4><div class="exercise">
-  <div class="exercise-statement">
-    <ol type="a">
-      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) given by <p>\[S\left(  \left[\begin{array}{c}
-x_{1} \\
-x_{2}
-\end{array}\right]  \right) =  \left[\begin{array}{c}
-6 \, x_{1} + 3 \, x_{2} \\
-x_{1} + 2 \, x_{2} \\
--2 \, x_{1} - 5 \, x_{2} \\
-5 \, x_{1} + 2 \, x_{2}
-\end{array}\right] .\]</p></li>
-      <li>Let \(T:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cc}
-1 &amp; 5 \\
-1 &amp; 6 \\
-1 &amp; 2 \\
-0 &amp; 0
-\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
-4 \\
--7
-\end{array}\right]  \right)\). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-        <p>\[ \left[\begin{array}{cc}
-6 &amp; 3 \\
-1 &amp; 2 \\
--2 &amp; -5 \\
-5 &amp; 2
-\end{array}\right] \]</p>
-      </li>
-      <li>
-        <p>\[T\left( \left[\begin{array}{c}
-4 \\
--7
-\end{array}\right]  \right)= \left[\begin{array}{c}
--31 \\
--38 \\
--10 \\
-0
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 43</h4><div class="exercise">
-  <div class="exercise-statement">
-    <ol type="a">
-      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 3  \to \mathbb{R}^ 3 \) given by <p>\[S\left(  \left[\begin{array}{c}
-x_{1} \\
-x_{2} \\
-x_{3}
-\end{array}\right]  \right) =  \left[\begin{array}{c}
-x_{1} - 2 \, x_{2} - 6 \, x_{3} \\
-x_{2} + x_{3} \\
--2 \, x_{2} - x_{3}
-\end{array}\right] .\]</p></li>
-      <li>Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 2 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cccc}
-1 &amp; -4 &amp; -6 &amp; 2 \\
-0 &amp; 0 &amp; 1 &amp; 0
-\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
-0 \\
-7 \\
-7 \\
--2
-\end{array}\right]  \right)\). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-        <p>\[ \left[\begin{array}{ccc}
-1 &amp; -2 &amp; -6 \\
-0 &amp; 1 &amp; 1 \\
-0 &amp; -2 &amp; -1
-\end{array}\right] \]</p>
-      </li>
-      <li>
-        <p>\[T\left( \left[\begin{array}{c}
-0 \\
-7 \\
-7 \\
--2
-\end{array}\right]  \right)= \left[\begin{array}{c}
--74 \\
-7
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 44</h4><div class="exercise">
-  <div class="exercise-statement">
-    <ol type="a">
-      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 4  \to \mathbb{R}^ 2 \) given by <p>\[S\left(  \left[\begin{array}{c}
-x \\
-y \\
-z \\
-{w}
-\end{array}\right]  \right) =  \left[\begin{array}{c}
-x - 5 \, y + 4 \, z + 2 \, {w} \\
-y - z
-\end{array}\right] .\]</p></li>
-      <li>Let \(T:\mathbb{R}^ 2  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cc}
--2 &amp; -5 \\
--1 &amp; -3 \\
--2 &amp; -4
-\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
-5 \\
-5
-\end{array}\right]  \right)\). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-        <p>\[ \left[\begin{array}{cccc}
-1 &amp; -5 &amp; 4 &amp; 2 \\
-0 &amp; 1 &amp; -1 &amp; 0
-\end{array}\right] \]</p>
-      </li>
-      <li>
-        <p>\[T\left( \left[\begin{array}{c}
-5 \\
-5
-\end{array}\right]  \right)= \left[\begin{array}{c}
--35 \\
--20 \\
--30
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 45</h4><div class="exercise">
-  <div class="exercise-statement">
-    <ol type="a">
-      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 3  \to \mathbb{R}^ 3 \) given by <p>\[S\left(  \left[\begin{array}{c}
-x \\
-y \\
-z
-\end{array}\right]  \right) =  \left[\begin{array}{c}
-x + y + 3 \, z \\
-y - z \\
--2 \, x + y - 8 \, z
-\end{array}\right] .\]</p></li>
-      <li>Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 2 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{ccc}
-1 &amp; -3 &amp; -4 \\
-1 &amp; -2 &amp; -3
-\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
-0 \\
--6 \\
--1
-\end{array}\right]  \right)\). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-        <p>\[ \left[\begin{array}{ccc}
-1 &amp; 1 &amp; 3 \\
-0 &amp; 1 &amp; -1 \\
--2 &amp; 1 &amp; -8
-\end{array}\right] \]</p>
-      </li>
-      <li>
-        <p>\[T\left( \left[\begin{array}{c}
-0 \\
--6 \\
--1
-\end{array}\right]  \right)= \left[\begin{array}{c}
-22 \\
-15
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 46</h4><div class="exercise">
-  <div class="exercise-statement">
-    <ol type="a">
-      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) given by <p>\[S\left(  \left[\begin{array}{c}
-x_{1} \\
-x_{2}
-\end{array}\right]  \right) =  \left[\begin{array}{c}
-4 \, x_{1} + 3 \, x_{2} \\
-x_{1} + x_{2} \\
-x_{1} - 3 \, x_{2} \\
--2 \, x_{2}
-\end{array}\right] .\]</p></li>
-      <li>Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 1 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cccc}
-1 &amp; 2 &amp; 0 &amp; -3
-\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
-8 \\
-1 \\
-4 \\
--6
-\end{array}\right]  \right)\). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-        <p>\[ \left[\begin{array}{cc}
-4 &amp; 3 \\
-1 &amp; 1 \\
-1 &amp; -3 \\
-0 &amp; -2
-\end{array}\right] \]</p>
-      </li>
-      <li>
-        <p>\[T\left( \left[\begin{array}{c}
-8 \\
-1 \\
-4 \\
--6
-\end{array}\right]  \right)= \left[\begin{array}{c}
-28
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 47</h4><div class="exercise">
-  <div class="exercise-statement">
-    <ol type="a">
-      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 4  \to \mathbb{R}^ 1 \) given by <p>\[S\left(  \left[\begin{array}{c}
-x \\
-y \\
-z \\
-{w}
-\end{array}\right]  \right) =  \left[\begin{array}{c}
-x + 2 \, y + z - 2 \, {w}
-\end{array}\right] .\]</p></li>
-      <li>Let \(T:\mathbb{R}^ 2  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cc}
-2 &amp; -6 \\
-0 &amp; 1 \\
--1 &amp; 1
-\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
-5 \\
-1
-\end{array}\right]  \right)\). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-        <p>\[ \left[\begin{array}{cccc}
-1 &amp; 2 &amp; 1 &amp; -2
-\end{array}\right] \]</p>
-      </li>
-      <li>
-        <p>\[T\left( \left[\begin{array}{c}
-5 \\
-1
-\end{array}\right]  \right)= \left[\begin{array}{c}
-4 \\
-1 \\
--4
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 48</h4><div class="exercise">
-  <div class="exercise-statement">
-    <ol type="a">
-      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) given by <p>\[S\left(  \left[\begin{array}{c}
-x \\
-y
-\end{array}\right]  \right) =  \left[\begin{array}{c}
--x + 3 \, y \\
-y \\
--2 \, x + 5 \, y \\
--2 \, x + 8 \, y
-\end{array}\right] .\]</p></li>
-      <li>Let \(T:\mathbb{R}^ 4  \to \mathbb{R}^ 3 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cccc}
--1 &amp; 2 &amp; 6 &amp; -5 \\
-2 &amp; -3 &amp; -7 &amp; 7 \\
--1 &amp; 2 &amp; 5 &amp; -5
-\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
-5 \\
-0 \\
-8 \\
-0
-\end{array}\right]  \right)\). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-        <p>\[ \left[\begin{array}{cc}
--1 &amp; 3 \\
-0 &amp; 1 \\
--2 &amp; 5 \\
--2 &amp; 8
-\end{array}\right] \]</p>
-      </li>
-      <li>
-        <p>\[T\left( \left[\begin{array}{c}
-5 \\
-0 \\
-8 \\
-0
-\end{array}\right]  \right)= \left[\begin{array}{c}
-43 \\
--46 \\
-35
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 49</h4><div class="exercise">
-  <div class="exercise-statement">
-    <ol type="a">
-      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 4  \to \mathbb{R}^ 1 \) given by <p>\[S\left(  \left[\begin{array}{c}
-x \\
-y \\
-z \\
-{w}
-\end{array}\right]  \right) =  \left[\begin{array}{c}
-x + 2 \, y - 3 \, z + 3 \, {w}
-\end{array}\right] .\]</p></li>
-      <li>Let \(T:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{ccc}
-1 &amp; 4 &amp; -8 \\
--1 &amp; -3 &amp; 6 \\
-1 &amp; 2 &amp; -3 \\
-0 &amp; 0 &amp; -3
-\end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
--1 \\
-2 \\
-8
-\end{array}\right]  \right)\). </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-        <p>\[ \left[\begin{array}{cccc}
-1 &amp; 2 &amp; -3 &amp; 3
-\end{array}\right] \]</p>
-      </li>
-      <li>
-        <p>\[T\left( \left[\begin{array}{c}
--1 \\
-2 \\
-8
-\end{array}\right]  \right)= \left[\begin{array}{c}
--57 \\
-43 \\
--21 \\
--24
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
 <h4>Example 50</h4><div class="exercise">
   <div class="exercise-statement">
     <ol type="a">
-      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 3  \to \mathbb{R}^ 4 \) given by <p>\[S\left(  \left[\begin{array}{c}
-x \\
-y \\
-z
+      <li>Find the standard matrix for the linear transformation \(S:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) given by <p>\[S\left(  \left[\begin{array}{c}
+x_{1} \\
+x_{2}
 \end{array}\right]  \right) =  \left[\begin{array}{c}
-x - z \\
--4 \, x + y + 3 \, z \\
-z \\
-2 \, x - y - 3 \, z
+-x_{1} - 3 \, x_{2} \\
+-x_{1} - 4 \, x_{2} \\
+x_{1} \\
+x_{1} + 6 \, x_{2}
 \end{array}\right] .\]</p></li>
       <li>Let \(T:\mathbb{R}^ 2  \to \mathbb{R}^ 4 \) be the linear transformation given by the standard matrix <p>\[ \left[\begin{array}{cc}
--4 &amp; -5 \\
--3 &amp; 1 \\
--2 &amp; 4 \\
--5 &amp; -5
+1 &amp; 2 \\
+0 &amp; 1 \\
+3 &amp; 0 \\
+-3 &amp; -6
 \end{array}\right] .\]</p> Compute \(T\left( \left[\begin{array}{c}
--2 \\
--2
+4 \\
+0
 \end{array}\right]  \right)\). </li>
     </ol>
   </div>
@@ -2644,22 +2654,22 @@ z \\
     </p>
     <ol type="a">
       <li>
-        <p>\[ \left[\begin{array}{ccc}
-1 &amp; 0 &amp; -1 \\
--4 &amp; 1 &amp; 3 \\
-0 &amp; 0 &amp; 1 \\
-2 &amp; -1 &amp; -3
+        <p>\[ \left[\begin{array}{cc}
+-1 &amp; -3 \\
+-1 &amp; -4 \\
+1 &amp; 0 \\
+1 &amp; 6
 \end{array}\right] \]</p>
       </li>
       <li>
         <p>\[T\left( \left[\begin{array}{c}
--2 \\
--2
-\end{array}\right]  \right)= \left[\begin{array}{c}
-18 \\
 4 \\
--4 \\
-20
+0
+\end{array}\right]  \right)= \left[\begin{array}{c}
+4 \\
+0 \\
+12 \\
+-12
 \end{array}\right] \]</p>
       </li>
     </ol>

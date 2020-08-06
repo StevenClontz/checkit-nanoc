@@ -138,35 +138,35 @@
 <h4>Example 1</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
--3 \\
-0 \\
-0 \\
--3
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
 -4 \\
+2 \\
 1 \\
-2
+-4
 \end{array}\right] , \left[\begin{array}{c}
-18 \\
-12 \\
--3 \\
-9
-\end{array}\right] , \left[\begin{array}{c}
-2 \\
 -2 \\
--1 \\
-2
+3 \\
+3 \\
+0
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+-5 \\
+-7 \\
+-8
+\end{array}\right] , \left[\begin{array}{c}
+0 \\
+-12 \\
+-15 \\
+-12
+\end{array}\right] , \left[\begin{array}{c}
+0 \\
+0 \\
+-2 \\
+3
 \end{array}\right] , \left[\begin{array}{c}
 -1 \\
 2 \\
--1 \\
--2
-\end{array}\right] , \left[\begin{array}{c}
--4 \\
--4 \\
--3 \\
-3
+3 \\
+0
 \end{array}\right] \right\} .\]</p></p>
     <ol type="a">
       <li> Explain how to find a basis of \(W\).</li>
@@ -177,27 +177,40 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccccc}
+-4 &amp; -2 &amp; -2 &amp; 0 &amp; 0 &amp; -1 \\
+2 &amp; 3 &amp; -5 &amp; -12 &amp; 0 &amp; 2 \\
+1 &amp; 3 &amp; -7 &amp; -15 &amp; -2 &amp; 3 \\
+-4 &amp; 0 &amp; -8 &amp; -12 &amp; 3 &amp; 0
+\end{array}\right] = \left[\begin{array}{cccccc}
+1 &amp; 0 &amp; 2 &amp; 3 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; -3 &amp; -6 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
--3 \\
-0 \\
-0 \\
--3
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
 -4 \\
+2 \\
 1 \\
-2
+-4
 \end{array}\right] , \left[\begin{array}{c}
-2 \\
 -2 \\
--1 \\
-2
+3 \\
+3 \\
+0
+\end{array}\right] , \left[\begin{array}{c}
+0 \\
+0 \\
+-2 \\
+3
 \end{array}\right] , \left[\begin{array}{c}
 -1 \\
 2 \\
--1 \\
--2
+3 \\
+0
 \end{array}\right] \right\} \).</li>
       <li>The dimension of \(W\) is \( 4 \).</li>
     </ol>
@@ -208,25 +221,25 @@
 <h4>Example 2</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
--3 \\
 1 \\
--1 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
 1 \\
 -2 \\
--2 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
-1 \\
--3 \\
-2 \\
 2
 \end{array}\right] , \left[\begin{array}{c}
+-4 \\
+-3 \\
+0 \\
+-4
+\end{array}\right] , \left[\begin{array}{c}
+2 \\
+-3 \\
 -1 \\
--5 \\
-3 \\
-3
+-3
+\end{array}\right] , \left[\begin{array}{c}
+1 \\
+0 \\
+6 \\
+-2
 \end{array}\right] \right\} .\]</p></p>
     <ol type="a">
       <li> Explain how to find a basis of \(W\).</li>
@@ -237,22 +250,35 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+1 &amp; -4 &amp; 2 &amp; 1 \\
+1 &amp; -3 &amp; -3 &amp; 0 \\
+-2 &amp; 0 &amp; -1 &amp; 6 \\
+2 &amp; -4 &amp; -3 &amp; -2
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; -3 \\
+0 &amp; 1 &amp; 0 &amp; -1 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
--3 \\
 1 \\
--1 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
 1 \\
 -2 \\
--2 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
-1 \\
--3 \\
-2 \\
 2
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
+-3 \\
+0 \\
+-4
+\end{array}\right] , \left[\begin{array}{c}
+2 \\
+-3 \\
+-1 \\
+-3
 \end{array}\right] \right\} \).</li>
       <li>The dimension of \(W\) is \( 3 \).</li>
     </ol>
@@ -263,30 +289,35 @@
 <h4>Example 3</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
-1 \\
-0 \\
-2 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
-0 \\
 0 \\
 3 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
 0 \\
--2 \\
-3 \\
-1
+-2
 \end{array}\right] , \left[\begin{array}{c}
+-1 \\
 2 \\
-6 \\
--8 \\
+3 \\
 -1
 \end{array}\right] , \left[\begin{array}{c}
-3 \\
+-4 \\
+20 \\
+12 \\
+-12
+\end{array}\right] , \left[\begin{array}{c}
 0 \\
+6 \\
+0 \\
+-4
+\end{array}\right] , \left[\begin{array}{c}
 2 \\
-0
+2 \\
+-3 \\
+-2
+\end{array}\right] , \left[\begin{array}{c}
+-6 \\
+21 \\
+18 \\
+-12
 \end{array}\right] \right\} .\]</p></p>
     <ol type="a">
       <li> Explain how to find a basis of \(W\).</li>
@@ -297,29 +328,37 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccccc}
+0 &amp; -1 &amp; -4 &amp; 0 &amp; 2 &amp; -6 \\
+3 &amp; 2 &amp; 20 &amp; 6 &amp; 2 &amp; 21 \\
+0 &amp; 3 &amp; 12 &amp; 0 &amp; -3 &amp; 18 \\
+-2 &amp; -1 &amp; -12 &amp; -4 &amp; -2 &amp; -12
+\end{array}\right] = \left[\begin{array}{cccccc}
+1 &amp; 0 &amp; 4 &amp; 2 &amp; 0 &amp; 3 \\
+0 &amp; 1 &amp; 4 &amp; 0 &amp; 0 &amp; 6 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
-1 \\
 0 \\
+3 \\
+0 \\
+-2
+\end{array}\right] , \left[\begin{array}{c}
+-1 \\
 2 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
-0 \\
-0 \\
 3 \\
-0
+-1
 \end{array}\right] , \left[\begin{array}{c}
-0 \\
--2 \\
-3 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
-3 \\
-0 \\
 2 \\
-0
+2 \\
+-3 \\
+-2
 \end{array}\right] \right\} \).</li>
-      <li>The dimension of \(W\) is \( 4 \).</li>
+      <li>The dimension of \(W\) is \( 3 \).</li>
     </ol>
   </div>
 </div>
@@ -328,35 +367,35 @@
 <h4>Example 4</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
--2 \\
--1 \\
--1 \\
--1
+3 \\
+-3 \\
+-3 \\
+-2
 \end{array}\right] , \left[\begin{array}{c}
--2 \\
+2 \\
+2 \\
+2 \\
+-2
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
 0 \\
-1 \\
+3 \\
 0
 \end{array}\right] , \left[\begin{array}{c}
--4 \\
--1 \\
-0 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
-0 \\
+-2 \\
 -3 \\
+-3 \\
+-2
+\end{array}\right] , \left[\begin{array}{c}
 2 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
--4 \\
-3 \\
+-3 \\
 1 \\
--4
+-3
 \end{array}\right] , \left[\begin{array}{c}
--1 \\
--1 \\
 -4 \\
--4
+2 \\
+-1 \\
+-2
 \end{array}\right] \right\} .\]</p></p>
     <ol type="a">
       <li> Explain how to find a basis of \(W\).</li>
@@ -367,27 +406,40 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccccc}
+3 &amp; 2 &amp; -4 &amp; -2 &amp; 2 &amp; -4 \\
+-3 &amp; 2 &amp; 0 &amp; -3 &amp; -3 &amp; 2 \\
+-3 &amp; 2 &amp; 3 &amp; -3 &amp; 1 &amp; -1 \\
+-2 &amp; -2 &amp; 0 &amp; -2 &amp; -3 &amp; -2
+\end{array}\right] = \left[\begin{array}{cccccc}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; \frac{137}{75} &amp; -2 \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; \frac{3}{10} &amp; 1 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; \frac{4}{3} &amp; -1 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; -\frac{47}{75} &amp; 2
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
--2 \\
--1 \\
--1 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
--2 \\
-0 \\
-1 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
-0 \\
+3 \\
 -3 \\
+-3 \\
+-2
+\end{array}\right] , \left[\begin{array}{c}
 2 \\
--1
+2 \\
+2 \\
+-2
 \end{array}\right] , \left[\begin{array}{c}
 -4 \\
+0 \\
 3 \\
-1 \\
--4
+0
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+-3 \\
+-3 \\
+-2
 \end{array}\right] \right\} \).</li>
       <li>The dimension of \(W\) is \( 4 \).</li>
     </ol>
@@ -398,25 +450,35 @@
 <h4>Example 5</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
--3 \\
 -1 \\
--2 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
 3 \\
--3 \\
+1 \\
+-2
+\end{array}\right] , \left[\begin{array}{c}
 -4 \\
+-4 \\
+1 \\
 -3
 \end{array}\right] , \left[\begin{array}{c}
--3 \\
--9 \\
--14 \\
-0
+13 \\
+9 \\
+-4 \\
+11
 \end{array}\right] , \left[\begin{array}{c}
--15 \\
--9 \\
--16 \\
-9
+-19 \\
+-7 \\
+7 \\
+-18
+\end{array}\right] , \left[\begin{array}{c}
+0 \\
+3 \\
+1 \\
+3
+\end{array}\right] , \left[\begin{array}{c}
+-3 \\
+-3 \\
+-2 \\
+0
 \end{array}\right] \right\} .\]</p></p>
     <ol type="a">
       <li> Explain how to find a basis of \(W\).</li>
@@ -427,19 +489,42 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccccc}
+-1 &amp; -4 &amp; 13 &amp; -19 &amp; 0 &amp; -3 \\
+3 &amp; -4 &amp; 9 &amp; -7 &amp; 3 &amp; -3 \\
+1 &amp; 1 &amp; -4 &amp; 7 &amp; 1 &amp; -2 \\
+-2 &amp; -3 &amp; 11 &amp; -18 &amp; 3 &amp; 0
+\end{array}\right] = \left[\begin{array}{cccccc}
+1 &amp; 0 &amp; -1 &amp; 3 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; -3 &amp; 4 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
--3 \\
 -1 \\
--2 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
 3 \\
--3 \\
+1 \\
+-2
+\end{array}\right] , \left[\begin{array}{c}
 -4 \\
+-4 \\
+1 \\
 -3
+\end{array}\right] , \left[\begin{array}{c}
+0 \\
+3 \\
+1 \\
+3
+\end{array}\right] , \left[\begin{array}{c}
+-3 \\
+-3 \\
+-2 \\
+0
 \end{array}\right] \right\} \).</li>
-      <li>The dimension of \(W\) is \( 2 \).</li>
+      <li>The dimension of \(W\) is \( 4 \).</li>
     </ol>
   </div>
 </div>
@@ -448,35 +533,30 @@
 <h4>Example 6</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
--2 \\
+0 \\
+1 \\
 -1 \\
--4 \\
--2
+-4
 \end{array}\right] , \left[\begin{array}{c}
+-3 \\
 -2 \\
 -3 \\
+3
+\end{array}\right] , \left[\begin{array}{c}
+15 \\
+10 \\
+15 \\
+-15
+\end{array}\right] , \left[\begin{array}{c}
+-3 \\
+2 \\
 -4 \\
 -3
 \end{array}\right] , \left[\begin{array}{c}
 -3 \\
-2 \\
--1 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
-1 \\
--1 \\
-1 \\
+0 \\
+-4 \\
 -1
-\end{array}\right] , \left[\begin{array}{c}
-14 \\
--2 \\
-14 \\
-19
-\end{array}\right] , \left[\begin{array}{c}
-11 \\
-9 \\
-15 \\
-22
 \end{array}\right] \right\} .\]</p></p>
     <ol type="a">
       <li> Explain how to find a basis of \(W\).</li>
@@ -487,26 +567,39 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccccc}
+0 &amp; -3 &amp; 15 &amp; -3 &amp; -3 \\
+1 &amp; -2 &amp; 10 &amp; 2 &amp; 0 \\
+-1 &amp; -3 &amp; 15 &amp; -4 &amp; -4 \\
+-4 &amp; 3 &amp; -15 &amp; -3 &amp; -1
+\end{array}\right] = \left[\begin{array}{ccccc}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; -5 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
--2 \\
+0 \\
+1 \\
 -1 \\
--4 \\
--2
+-4
 \end{array}\right] , \left[\begin{array}{c}
+-3 \\
 -2 \\
 -3 \\
+3
+\end{array}\right] , \left[\begin{array}{c}
+-3 \\
+2 \\
 -4 \\
 -3
 \end{array}\right] , \left[\begin{array}{c}
 -3 \\
-2 \\
--1 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
-1 \\
--1 \\
-1 \\
+0 \\
+-4 \\
 -1
 \end{array}\right] \right\} \).</li>
       <li>The dimension of \(W\) is \( 4 \).</li>
@@ -519,34 +612,34 @@
   <div class="exercise-statement">
     <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
 -2 \\
--2 \\
+2 \\
+-1 \\
+-4
+\end{array}\right] , \left[\begin{array}{c}
+3 \\
 1 \\
--2
+2 \\
+0
 \end{array}\right] , \left[\begin{array}{c}
--1 \\
--1 \\
--3 \\
--2
-\end{array}\right] , \left[\begin{array}{c}
+-9 \\
 -11 \\
--11 \\
--5 \\
--14
-\end{array}\right] , \left[\begin{array}{c}
-8 \\
-8 \\
-10 \\
+-7 \\
 12
 \end{array}\right] , \left[\begin{array}{c}
-2 \\
-0 \\
-1 \\
-0
+-13 \\
+-23 \\
+-11 \\
+28
 \end{array}\right] , \left[\begin{array}{c}
--2 \\
+3 \\
+-4 \\
+2 \\
+-1
+\end{array}\right] , \left[\begin{array}{c}
 -1 \\
--3 \\
-0
+2 \\
+1 \\
+-2
 \end{array}\right] \right\} .\]</p></p>
     <ol type="a">
       <li> Explain how to find a basis of \(W\).</li>
@@ -557,27 +650,40 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccccc}
+-2 &amp; 3 &amp; -9 &amp; -13 &amp; 3 &amp; -1 \\
+2 &amp; 1 &amp; -11 &amp; -23 &amp; -4 &amp; 2 \\
+-1 &amp; 2 &amp; -7 &amp; -11 &amp; 2 &amp; 1 \\
+-4 &amp; 0 &amp; 12 &amp; 28 &amp; -1 &amp; -2
+\end{array}\right] = \left[\begin{array}{cccccc}
+1 &amp; 0 &amp; -3 &amp; -7 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; -5 &amp; -9 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
 -2 \\
--2 \\
-1 \\
--2
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
--1 \\
--3 \\
--2
-\end{array}\right] , \left[\begin{array}{c}
 2 \\
-0 \\
+-1 \\
+-4
+\end{array}\right] , \left[\begin{array}{c}
+3 \\
 1 \\
+2 \\
 0
 \end{array}\right] , \left[\begin{array}{c}
--2 \\
+3 \\
+-4 \\
+2 \\
+-1
+\end{array}\right] , \left[\begin{array}{c}
 -1 \\
--3 \\
-0
+2 \\
+1 \\
+-2
 \end{array}\right] \right\} \).</li>
       <li>The dimension of \(W\) is \( 4 \).</li>
     </ol>
@@ -588,35 +694,30 @@
 <h4>Example 8</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
--3 \\
--4 \\
+0 \\
 1 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
--4 \\
-2 \\
--3
-\end{array}\right] , \left[\begin{array}{c}
 3 \\
+-4
+\end{array}\right] , \left[\begin{array}{c}
 -1 \\
--4 \\
+0 \\
+-3 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
+-1 \\
+3 \\
+-3 \\
 3
 \end{array}\right] , \left[\begin{array}{c}
+1 \\
 -1 \\
--1 \\
-2 \\
+-4 \\
 1
 \end{array}\right] , \left[\begin{array}{c}
--1 \\
-11 \\
-11 \\
--15
-\end{array}\right] , \left[\begin{array}{c}
--2 \\
--2 \\
+-3 \\
+2 \\
 1 \\
--2
+-1
 \end{array}\right] \right\} .\]</p></p>
     <ol type="a">
       <li> Explain how to find a basis of \(W\).</li>
@@ -627,26 +728,39 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccccc}
+0 &amp; -1 &amp; -1 &amp; 1 &amp; -3 \\
+1 &amp; 0 &amp; 3 &amp; -1 &amp; 2 \\
+3 &amp; -3 &amp; -3 &amp; -4 &amp; 1 \\
+-4 &amp; 2 &amp; 3 &amp; 1 &amp; -1
+\end{array}\right] = \left[\begin{array}{ccccc}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 2 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; -1
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
--3 \\
--4 \\
+0 \\
 1 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
--4 \\
-2 \\
--3
-\end{array}\right] , \left[\begin{array}{c}
 3 \\
+-4
+\end{array}\right] , \left[\begin{array}{c}
 -1 \\
--4 \\
+0 \\
+-3 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
+-1 \\
+3 \\
+-3 \\
 3
 \end{array}\right] , \left[\begin{array}{c}
+1 \\
 -1 \\
--1 \\
-2 \\
+-4 \\
 1
 \end{array}\right] \right\} \).</li>
       <li>The dimension of \(W\) is \( 4 \).</li>
@@ -659,29 +773,24 @@
   <div class="exercise-statement">
     <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
 -2 \\
--4 \\
+2 \\
+1 \\
+0
+\end{array}\right] , \left[\begin{array}{c}
+-3 \\
+1 \\
 -3 \\
 -4
 \end{array}\right] , \left[\begin{array}{c}
--1 \\
-3 \\
--3 \\
-2
+1 \\
+2 \\
+1 \\
+-4
 \end{array}\right] , \left[\begin{array}{c}
--5 \\
-5 \\
--12 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
-9 \\
-3 \\
-18 \\
-6
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
--1 \\
--2 \\
-0
+12 \\
+-9 \\
+6 \\
+16
 \end{array}\right] \right\} .\]</p></p>
     <ol type="a">
       <li> Explain how to find a basis of \(W\).</li>
@@ -692,22 +801,35 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+-2 &amp; -3 &amp; 1 &amp; 12 \\
+2 &amp; 1 &amp; 2 &amp; -9 \\
+1 &amp; -3 &amp; 1 &amp; 6 \\
+0 &amp; -4 &amp; -4 &amp; 16
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; -2 \\
+0 &amp; 1 &amp; 0 &amp; -3 \\
+0 &amp; 0 &amp; 1 &amp; -1 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
 -2 \\
--4 \\
+2 \\
+1 \\
+0
+\end{array}\right] , \left[\begin{array}{c}
+-3 \\
+1 \\
 -3 \\
 -4
 \end{array}\right] , \left[\begin{array}{c}
--1 \\
-3 \\
--3 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
--1 \\
--2 \\
-0
+1 \\
+2 \\
+1 \\
+-4
 \end{array}\right] \right\} \).</li>
       <li>The dimension of \(W\) is \( 3 \).</li>
     </ol>
@@ -718,35 +840,25 @@
 <h4>Example 10</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
+1 \\
 3 \\
-0 \\
-0 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
-0 \\
-2 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
-10 \\
-0 \\
--2 \\
--3
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
-3 \\
-0 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
--30 \\
-0 \\
-6 \\
-9
-\end{array}\right] , \left[\begin{array}{c}
--11 \\
--6 \\
 2 \\
 -1
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+-1 \\
+3 \\
+-2
+\end{array}\right] , \left[\begin{array}{c}
+-3 \\
+-3 \\
+3 \\
+3
+\end{array}\right] , \left[\begin{array}{c}
+3 \\
+5 \\
+1 \\
+5
 \end{array}\right] \right\} .\]</p></p>
     <ol type="a">
       <li> Explain how to find a basis of \(W\).</li>
@@ -757,22 +869,35 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+1 &amp; -2 &amp; -3 &amp; 3 \\
+3 &amp; -1 &amp; -3 &amp; 5 \\
+2 &amp; 3 &amp; 3 &amp; 1 \\
+-1 &amp; -2 &amp; 3 &amp; 5
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 2 \\
+0 &amp; 1 &amp; 0 &amp; -2 \\
+0 &amp; 0 &amp; 1 &amp; 1 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
+1 \\
 3 \\
-0 \\
-0 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
-0 \\
 2 \\
-3
+-1
 \end{array}\right] , \left[\begin{array}{c}
+-2 \\
 -1 \\
 3 \\
-0 \\
-2
+-2
+\end{array}\right] , \left[\begin{array}{c}
+-3 \\
+-3 \\
+3 \\
+3
 \end{array}\right] \right\} \).</li>
       <li>The dimension of \(W\) is \( 3 \).</li>
     </ol>
@@ -783,30 +908,25 @@
 <h4>Example 11</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
--4 \\
--4 \\
--3 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
+-1 \\
 1 \\
--3 \\
--3 \\
+3 \\
 -3
 \end{array}\right] , \left[\begin{array}{c}
 2 \\
+3 \\
 1 \\
--2 \\
-2
+1
 \end{array}\right] , \left[\begin{array}{c}
--9 \\
-4 \\
-8 \\
+-3 \\
+-12 \\
+-12 \\
 6
 \end{array}\right] , \left[\begin{array}{c}
--24 \\
-3 \\
-15 \\
-9
+2 \\
+2 \\
+1 \\
+3
 \end{array}\right] \right\} .\]</p></p>
     <ol type="a">
       <li> Explain how to find a basis of \(W\).</li>
@@ -817,22 +937,35 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+-1 &amp; 2 &amp; -3 &amp; 2 \\
+1 &amp; 3 &amp; -12 &amp; 2 \\
+3 &amp; 1 &amp; -12 &amp; 1 \\
+-3 &amp; 1 &amp; 6 &amp; 3
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; -3 &amp; 0 \\
+0 &amp; 1 &amp; -3 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
--4 \\
--4 \\
--3 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
+-1 \\
 1 \\
--3 \\
--3 \\
+3 \\
 -3
 \end{array}\right] , \left[\begin{array}{c}
 2 \\
+3 \\
 1 \\
--2 \\
-2
+1
+\end{array}\right] , \left[\begin{array}{c}
+2 \\
+2 \\
+1 \\
+3
 \end{array}\right] \right\} \).</li>
       <li>The dimension of \(W\) is \( 3 \).</li>
     </ol>
@@ -843,30 +976,25 @@
 <h4>Example 12</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
-3 \\
+-2 \\
 -1 \\
-3 \\
--3
+-4 \\
+-2
 \end{array}\right] , \left[\begin{array}{c}
-3 \\
-3 \\
-0 \\
--4
+-2 \\
+-1 \\
+-4 \\
+2
 \end{array}\right] , \left[\begin{array}{c}
--9 \\
-3 \\
--9 \\
-9
+-4 \\
+-4 \\
+-3 \\
+1
 \end{array}\right] , \left[\begin{array}{c}
--18 \\
+12 \\
+10 \\
 14 \\
--24 \\
-16
-\end{array}\right] , \left[\begin{array}{c}
-6 \\
-6 \\
-0 \\
--8
+6
 \end{array}\right] \right\} .\]</p></p>
     <ol type="a">
       <li> Explain how to find a basis of \(W\).</li>
@@ -877,19 +1005,37 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+-2 &amp; -2 &amp; -4 &amp; 12 \\
+-1 &amp; -1 &amp; -4 &amp; 10 \\
+-4 &amp; -4 &amp; -3 &amp; 14 \\
+-2 &amp; 2 &amp; 1 &amp; 6
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; -3 \\
+0 &amp; 1 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 1 &amp; -2 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
-3 \\
+-2 \\
 -1 \\
-3 \\
--3
+-4 \\
+-2
 \end{array}\right] , \left[\begin{array}{c}
-3 \\
-3 \\
-0 \\
--4
+-2 \\
+-1 \\
+-4 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
+-4 \\
+-3 \\
+1
 \end{array}\right] \right\} \).</li>
-      <li>The dimension of \(W\) is \( 2 \).</li>
+      <li>The dimension of \(W\) is \( 3 \).</li>
     </ol>
   </div>
 </div>
@@ -898,30 +1044,30 @@
 <h4>Example 13</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
-0 \\
--1 \\
 2 \\
--3
+1 \\
+3 \\
+-1
 \end{array}\right] , \left[\begin{array}{c}
+0 \\
 3 \\
-3 \\
+2 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+2 \\
+-2 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
+-3 \\
+-2 \\
 1 \\
 0
 \end{array}\right] , \left[\begin{array}{c}
-2 \\
--4 \\
--3 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
-3 \\
--2 \\
-2 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
--5 \\
--15 \\
--13 \\
--2
+4 \\
+-17 \\
+8 \\
+-11
 \end{array}\right] \right\} .\]</p></p>
     <ol type="a">
       <li> Explain how to find a basis of \(W\).</li>
@@ -932,27 +1078,40 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccccc}
+2 &amp; 0 &amp; -2 &amp; -3 &amp; 4 \\
+1 &amp; 3 &amp; 2 &amp; -2 &amp; -17 \\
+3 &amp; 2 &amp; -2 &amp; 1 &amp; 8 \\
+-1 &amp; 2 &amp; 1 &amp; 0 &amp; -11
+\end{array}\right] = \left[\begin{array}{ccccc}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 2 \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; -3 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; -3 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 2
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
-0 \\
--1 \\
 2 \\
--3
-\end{array}\right] , \left[\begin{array}{c}
-3 \\
-3 \\
 1 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
-2 \\
--4 \\
--3 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
 3 \\
+-1
+\end{array}\right] , \left[\begin{array}{c}
+0 \\
+3 \\
+2 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
 -2 \\
 2 \\
--1
+-2 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
+-3 \\
+-2 \\
+1 \\
+0
 \end{array}\right] \right\} \).</li>
       <li>The dimension of \(W\) is \( 4 \).</li>
     </ol>
@@ -964,283 +1123,28 @@
   <div class="exercise-statement">
     <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
 2 \\
--2 \\
-1 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
-2 \\
--3 \\
--4 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
-3 \\
-3 \\
-3 \\
--3
-\end{array}\right] , \left[\begin{array}{c}
-4 \\
-10 \\
-15 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
--15 \\
-13 \\
-11 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
-4 \\
--5 \\
--3 \\
-2
-\end{array}\right] \right\} .\]</p></p>
-    <ol type="a">
-      <li> Explain how to find a basis of \(W\).</li>
-      <li> Explain how to find the dimension of \(W\).</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
-2 \\
--2 \\
-1 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
-2 \\
--3 \\
--4 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
-3 \\
-3 \\
-3 \\
--3
-\end{array}\right] \right\} \).</li>
-      <li>The dimension of \(W\) is \( 3 \).</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 15</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
-0 \\
--4 \\
--1 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
-2 \\
 -4 \\
 -2 \\
--2
-\end{array}\right] , \left[\begin{array}{c}
-6 \\
-0 \\
--3 \\
--9
-\end{array}\right] , \left[\begin{array}{c}
-3 \\
-3 \\
--4 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
-10 \\
-12 \\
--2 \\
--18
-\end{array}\right] , \left[\begin{array}{c}
-0 \\
--4 \\
--2 \\
--4
-\end{array}\right] \right\} .\]</p></p>
-    <ol type="a">
-      <li> Explain how to find a basis of \(W\).</li>
-      <li> Explain how to find the dimension of \(W\).</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
-0 \\
--4 \\
--1 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
-2 \\
--4 \\
--2 \\
--2
-\end{array}\right] , \left[\begin{array}{c}
-3 \\
-3 \\
--4 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
-0 \\
--4 \\
--2 \\
--4
-\end{array}\right] \right\} \).</li>
-      <li>The dimension of \(W\) is \( 4 \).</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 16</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
-1 \\
--4 \\
-2 \\
--2
-\end{array}\right] , \left[\begin{array}{c}
-0 \\
-1 \\
--4 \\
 0
 \end{array}\right] , \left[\begin{array}{c}
--1 \\
 -4 \\
+-3 \\
 3 \\
--2
+-1
 \end{array}\right] , \left[\begin{array}{c}
-3 \\
-2 \\
-0 \\
--2
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
 20 \\
--12 \\
-10
-\end{array}\right] \right\} .\]</p></p>
-    <ol type="a">
-      <li> Explain how to find a basis of \(W\).</li>
-      <li> Explain how to find the dimension of \(W\).</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
-1 \\
+15 \\
+-15 \\
+5
+\end{array}\right] , \left[\begin{array}{c}
 -4 \\
-2 \\
--2
-\end{array}\right] , \left[\begin{array}{c}
-0 \\
-1 \\
--4 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
--4 \\
-3 \\
--2
-\end{array}\right] , \left[\begin{array}{c}
-3 \\
-2 \\
-0 \\
--2
-\end{array}\right] \right\} \).</li>
-      <li>The dimension of \(W\) is \( 4 \).</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 17</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
-3 \\
--3 \\
-1 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
--2 \\
 -3 \\
 3 \\
-3
+-1
 \end{array}\right] , \left[\begin{array}{c}
--7 \\
-27 \\
--17 \\
--17
-\end{array}\right] , \left[\begin{array}{c}
--8 \\
-63 \\
--43 \\
--43
-\end{array}\right] , \left[\begin{array}{c}
-3 \\
--4 \\
--4 \\
-2
-\end{array}\right] \right\} .\]</p></p>
-    <ol type="a">
-      <li> Explain how to find a basis of \(W\).</li>
-      <li> Explain how to find the dimension of \(W\).</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
-3 \\
--3 \\
-1 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
--2 \\
--3 \\
-3 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
-3 \\
--4 \\
--4 \\
-2
-\end{array}\right] \right\} \).</li>
-      <li>The dimension of \(W\) is \( 3 \).</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 18</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
-0 \\
--3 \\
-3 \\
--3
-\end{array}\right] , \left[\begin{array}{c}
--2 \\
-3 \\
-2 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
--4 \\
--1 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
-2 \\
-0 \\
--5 \\
+22 \\
+33 \\
+-15 \\
 7
 \end{array}\right] \right\} .\]</p></p>
     <ol type="a">
@@ -1252,24 +1156,319 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccccc}
+2 &amp; -4 &amp; 20 &amp; -4 &amp; 22 \\
+-4 &amp; -3 &amp; 15 &amp; -3 &amp; 33 \\
+-2 &amp; 3 &amp; -15 &amp; 3 &amp; -15 \\
+0 &amp; -1 &amp; 5 &amp; -1 &amp; 7
+\end{array}\right] = \left[\begin{array}{ccccc}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; -3 \\
+0 &amp; 1 &amp; -5 &amp; 1 &amp; -7 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
+    <ol type="a">
+      <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
+2 \\
+-4 \\
+-2 \\
+0
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
+-3 \\
+3 \\
+-1
+\end{array}\right] \right\} \).</li>
+      <li>The dimension of \(W\) is \( 2 \).</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 15</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
+-4 \\
+3 \\
+1 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
+0 \\
+-4 \\
+2 \\
+3
+\end{array}\right] , \left[\begin{array}{c}
+16 \\
+-8 \\
+-6 \\
+-11
+\end{array}\right] , \left[\begin{array}{c}
+8 \\
+2 \\
+-6 \\
+-10
+\end{array}\right] \right\} .\]</p></p>
+    <ol type="a">
+      <li> Explain how to find a basis of \(W\).</li>
+      <li> Explain how to find the dimension of \(W\).</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+-4 &amp; 0 &amp; 16 &amp; 8 \\
+3 &amp; -4 &amp; -8 &amp; 2 \\
+1 &amp; 2 &amp; -6 &amp; -6 \\
+2 &amp; 3 &amp; -11 &amp; -10
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; -4 &amp; -2 \\
+0 &amp; 1 &amp; -1 &amp; -2 \\
+0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
+    <ol type="a">
+      <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
+-4 \\
+3 \\
+1 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
+0 \\
+-4 \\
+2 \\
+3
+\end{array}\right] \right\} \).</li>
+      <li>The dimension of \(W\) is \( 2 \).</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 16</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
+-3 \\
+2 \\
+-4 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
+0 \\
+1 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
+-10 \\
+-4 \\
+12 \\
+6
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+3 \\
+-4 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+-4 \\
+3 \\
+-3
+\end{array}\right] \right\} .\]</p></p>
+    <ol type="a">
+      <li> Explain how to find a basis of \(W\).</li>
+      <li> Explain how to find the dimension of \(W\).</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccccc}
+-3 &amp; -4 &amp; -10 &amp; -2 &amp; -2 \\
+2 &amp; 0 &amp; -4 &amp; 3 &amp; -4 \\
+-4 &amp; 1 &amp; 12 &amp; -4 &amp; 3 \\
+1 &amp; 2 &amp; 6 &amp; 2 &amp; -3
+\end{array}\right] = \left[\begin{array}{ccccc}
+1 &amp; 0 &amp; -2 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 4 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \]</p>
+    </p>
+    <ol type="a">
+      <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
+-3 \\
+2 \\
+-4 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
+0 \\
+1 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+3 \\
+-4 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+-4 \\
+3 \\
+-3
+\end{array}\right] \right\} \).</li>
+      <li>The dimension of \(W\) is \( 4 \).</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 17</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
+-2 \\
+-1 \\
+-4 \\
+0
+\end{array}\right] , \left[\begin{array}{c}
+1 \\
+-3 \\
+-2 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
+-11 \\
+5 \\
+-10 \\
+-6
+\end{array}\right] , \left[\begin{array}{c}
+36 \\
+-17 \\
+32 \\
+20
+\end{array}\right] \right\} .\]</p></p>
+    <ol type="a">
+      <li> Explain how to find a basis of \(W\).</li>
+      <li> Explain how to find the dimension of \(W\).</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+-2 &amp; 1 &amp; -11 &amp; 36 \\
+-1 &amp; -3 &amp; 5 &amp; -17 \\
+-4 &amp; -2 &amp; -10 &amp; 32 \\
+0 &amp; 2 &amp; -6 &amp; 20
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 4 &amp; -13 \\
+0 &amp; 1 &amp; -3 &amp; 10 \\
+0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
+    <ol type="a">
+      <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
+-2 \\
+-1 \\
+-4 \\
+0
+\end{array}\right] , \left[\begin{array}{c}
+1 \\
+-3 \\
+-2 \\
+2
+\end{array}\right] \right\} \).</li>
+      <li>The dimension of \(W\) is \( 2 \).</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 18</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
+0 \\
+-3 \\
+-2 \\
+-1
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
+3 \\
+3 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+-3 \\
+-2 \\
+-2
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
+3 \\
+2 \\
+-1
+\end{array}\right] , \left[\begin{array}{c}
+0 \\
+-3 \\
+3 \\
+-1
+\end{array}\right] , \left[\begin{array}{c}
+-10 \\
+21 \\
+16 \\
+8
+\end{array}\right] \right\} .\]</p></p>
+    <ol type="a">
+      <li> Explain how to find a basis of \(W\).</li>
+      <li> Explain how to find the dimension of \(W\).</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccccc}
+0 &amp; -4 &amp; -2 &amp; -4 &amp; 0 &amp; -10 \\
+-3 &amp; 3 &amp; -3 &amp; 3 &amp; -3 &amp; 21 \\
+-2 &amp; 3 &amp; -2 &amp; 2 &amp; 3 &amp; 16 \\
+-1 &amp; 2 &amp; -2 &amp; -1 &amp; -1 &amp; 8
+\end{array}\right] = \left[\begin{array}{cccccc}
+1 &amp; 0 &amp; 0 &amp; -3 &amp; 0 &amp; -6 \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 2 \\
+0 &amp; 0 &amp; 1 &amp; 2 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
 0 \\
 -3 \\
+-2 \\
+-1
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
 3 \\
--3
+3 \\
+2
 \end{array}\right] , \left[\begin{array}{c}
 -2 \\
-3 \\
-2 \\
--4
+-3 \\
+-2 \\
+-2
 \end{array}\right] , \left[\begin{array}{c}
--1 \\
--4 \\
--1 \\
-1
+0 \\
+-3 \\
+3 \\
+-1
 \end{array}\right] \right\} \).</li>
-      <li>The dimension of \(W\) is \( 3 \).</li>
+      <li>The dimension of \(W\) is \( 4 \).</li>
     </ol>
   </div>
 </div>
@@ -1279,34 +1478,29 @@
   <div class="exercise-statement">
     <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
 -3 \\
--1 \\
--1 \\
-2
+-3 \\
+-2 \\
+1
 \end{array}\right] , \left[\begin{array}{c}
--4 \\
-2 \\
-1 \\
--4
+3 \\
+0 \\
+3 \\
+3
+\end{array}\right] , \left[\begin{array}{c}
+27 \\
+15 \\
+22 \\
+7
 \end{array}\right] , \left[\begin{array}{c}
 -2 \\
-1 \\
--3 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
+-2 \\
 0 \\
-5 \\
-0 \\
--6
+-3
 \end{array}\right] , \left[\begin{array}{c}
-10 \\
-5 \\
 1 \\
--6
-\end{array}\right] , \left[\begin{array}{c}
--4 \\
--3 \\
--4 \\
--2
+1 \\
+2 \\
+-4
 \end{array}\right] \right\} .\]</p></p>
     <ol type="a">
       <li> Explain how to find a basis of \(W\).</li>
@@ -1317,29 +1511,37 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccccc}
+-3 &amp; 3 &amp; 27 &amp; -2 &amp; 1 \\
+-3 &amp; 0 &amp; 15 &amp; -2 &amp; 1 \\
+-2 &amp; 3 &amp; 22 &amp; 0 &amp; 2 \\
+1 &amp; 3 &amp; 7 &amp; -3 &amp; -4
+\end{array}\right] = \left[\begin{array}{ccccc}
+1 &amp; 0 &amp; -5 &amp; 0 &amp; -1 \\
+0 &amp; 1 &amp; 4 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 1 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
 -3 \\
--1 \\
--1 \\
-2
+-3 \\
+-2 \\
+1
 \end{array}\right] , \left[\begin{array}{c}
--4 \\
-2 \\
-1 \\
--4
+3 \\
+0 \\
+3 \\
+3
 \end{array}\right] , \left[\begin{array}{c}
 -2 \\
-1 \\
--3 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
--4 \\
--3 \\
--4 \\
--2
+-2 \\
+0 \\
+-3
 \end{array}\right] \right\} \).</li>
-      <li>The dimension of \(W\) is \( 4 \).</li>
+      <li>The dimension of \(W\) is \( 3 \).</li>
     </ol>
   </div>
 </div>
@@ -1348,35 +1550,25 @@
 <h4>Example 20</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
--4 \\
--1 \\
+3 \\
 1 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
--2 \\
 -4 \\
--4 \\
--4
+1
 \end{array}\right] , \left[\begin{array}{c}
-10 \\
--8 \\
--16 \\
--12
-\end{array}\right] , \left[\begin{array}{c}
-0 \\
--4 \\
+-3 \\
+-3 \\
 -4 \\
 -1
 \end{array}\right] , \left[\begin{array}{c}
-22 \\
-3 \\
--11 \\
--10
+6 \\
+8 \\
+16 \\
+2
 \end{array}\right] , \left[\begin{array}{c}
--24 \\
-14 \\
-34 \\
-30
+0 \\
+3 \\
+-2 \\
+0
 \end{array}\right] \right\} .\]</p></p>
     <ol type="a">
       <li> Explain how to find a basis of \(W\).</li>
@@ -1387,22 +1579,35 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+3 &amp; -3 &amp; 6 &amp; 0 \\
+1 &amp; -3 &amp; 8 &amp; 3 \\
+-4 &amp; -4 &amp; 16 &amp; -2 \\
+1 &amp; -1 &amp; 2 &amp; 0
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; -1 &amp; 0 \\
+0 &amp; 1 &amp; -3 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
--4 \\
--1 \\
+3 \\
 1 \\
-0
+-4 \\
+1
 \end{array}\right] , \left[\begin{array}{c}
--2 \\
--4 \\
--4 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
-0 \\
--4 \\
+-3 \\
+-3 \\
 -4 \\
 -1
+\end{array}\right] , \left[\begin{array}{c}
+0 \\
+3 \\
+-2 \\
+0
 \end{array}\right] \right\} \).</li>
       <li>The dimension of \(W\) is \( 3 \).</li>
     </ol>
@@ -1413,30 +1618,35 @@
 <h4>Example 21</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
+2 \\
 3 \\
--1 \\
-2 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
-2 \\
--1 \\
+-2 \\
 0
 \end{array}\right] , \left[\begin{array}{c}
--2 \\
--1 \\
 -4 \\
--2
+-3 \\
+3 \\
+-4
 \end{array}\right] , \left[\begin{array}{c}
-1 \\
-8 \\
-8 \\
+10 \\
+12 \\
+-9 \\
 4
 \end{array}\right] , \left[\begin{array}{c}
--3 \\
--24 \\
--21 \\
--12
+-10 \\
+-15 \\
+10 \\
+0
+\end{array}\right] , \left[\begin{array}{c}
+-22 \\
+-33 \\
+22 \\
+0
+\end{array}\right] , \left[\begin{array}{c}
+-10 \\
+-15 \\
+10 \\
+0
 \end{array}\right] \right\} .\]</p></p>
     <ol type="a">
       <li> Explain how to find a basis of \(W\).</li>
@@ -1447,24 +1657,32 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccccc}
+2 &amp; -4 &amp; 10 &amp; -10 &amp; -22 &amp; -10 \\
+3 &amp; -3 &amp; 12 &amp; -15 &amp; -33 &amp; -15 \\
+-2 &amp; 3 &amp; -9 &amp; 10 &amp; 22 &amp; 10 \\
+0 &amp; -4 &amp; 4 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] = \left[\begin{array}{cccccc}
+1 &amp; 0 &amp; 3 &amp; -5 &amp; -11 &amp; -5 \\
+0 &amp; 1 &amp; -1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
+2 \\
 3 \\
--1 \\
-2 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
-2 \\
--1 \\
+-2 \\
 0
 \end{array}\right] , \left[\begin{array}{c}
--2 \\
--1 \\
 -4 \\
--2
+-3 \\
+3 \\
+-4
 \end{array}\right] \right\} \).</li>
-      <li>The dimension of \(W\) is \( 3 \).</li>
+      <li>The dimension of \(W\) is \( 2 \).</li>
     </ol>
   </div>
 </div>
@@ -1473,35 +1691,25 @@
 <h4>Example 22</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
-0 \\
--2 \\
--4 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
 1 \\
-0 \\
-2 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
-0 \\
-3 \\
-3 \\
+-4 \\
+-3 \\
 1
 \end{array}\right] , \left[\begin{array}{c}
-1 \\
+-2 \\
+3 \\
 -1 \\
--1 \\
-1
+0
+\end{array}\right] , \left[\begin{array}{c}
+5 \\
+-15 \\
+-8 \\
+3
 \end{array}\right] , \left[\begin{array}{c}
 2 \\
--1 \\
-1 \\
-4
-\end{array}\right] , \left[\begin{array}{c}
--2 \\
-0 \\
--4 \\
--6
+2 \\
+8 \\
+-2
 \end{array}\right] \right\} .\]</p></p>
     <ol type="a">
       <li> Explain how to find a basis of \(W\).</li>
@@ -1512,29 +1720,32 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+1 &amp; -2 &amp; 5 &amp; 2 \\
+-4 &amp; 3 &amp; -15 &amp; 2 \\
+-3 &amp; -1 &amp; -8 &amp; 8 \\
+1 &amp; 0 &amp; 3 &amp; -2
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 3 &amp; -2 \\
+0 &amp; 1 &amp; -1 &amp; -2 \\
+0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
-0 \\
--2 \\
+1 \\
 -4 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
-1 \\
-0 \\
-2 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
-0 \\
-3 \\
-3 \\
+-3 \\
 1
 \end{array}\right] , \left[\begin{array}{c}
-1 \\
+-2 \\
+3 \\
 -1 \\
--1 \\
-1
+0
 \end{array}\right] \right\} \).</li>
-      <li>The dimension of \(W\) is \( 4 \).</li>
+      <li>The dimension of \(W\) is \( 2 \).</li>
     </ol>
   </div>
 </div>
@@ -1543,25 +1754,25 @@
 <h4>Example 23</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
--4 \\
--2 \\
--2 \\
+1 \\
+3 \\
+-3 \\
 2
 \end{array}\right] , \left[\begin{array}{c}
--4 \\
--2 \\
-2 \\
--3
+3 \\
+0 \\
+-3 \\
+1
 \end{array}\right] , \left[\begin{array}{c}
--4 \\
--2 \\
-1 \\
--4
+11 \\
+6 \\
+-15 \\
+7
 \end{array}\right] , \left[\begin{array}{c}
--2 \\
--1 \\
-1 \\
--4
+-5 \\
+3 \\
+3 \\
+0
 \end{array}\right] \right\} .\]</p></p>
     <ol type="a">
       <li> Explain how to find a basis of \(W\).</li>
@@ -1572,24 +1783,32 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+1 &amp; 3 &amp; 11 &amp; -5 \\
+3 &amp; 0 &amp; 6 &amp; 3 \\
+-3 &amp; -3 &amp; -15 &amp; 3 \\
+2 &amp; 1 &amp; 7 &amp; 0
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 2 &amp; 1 \\
+0 &amp; 1 &amp; 3 &amp; -2 \\
+0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
--4 \\
--2 \\
--2 \\
+1 \\
+3 \\
+-3 \\
 2
 \end{array}\right] , \left[\begin{array}{c}
--4 \\
--2 \\
-2 \\
--3
-\end{array}\right] , \left[\begin{array}{c}
--4 \\
--2 \\
-1 \\
--4
+3 \\
+0 \\
+-3 \\
+1
 \end{array}\right] \right\} \).</li>
-      <li>The dimension of \(W\) is \( 3 \).</li>
+      <li>The dimension of \(W\) is \( 2 \).</li>
     </ol>
   </div>
 </div>
@@ -1598,349 +1817,34 @@
 <h4>Example 24</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
-2 \\
+-1 \\
 -2 \\
-2 \\
--2
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
--1 \\
--1 \\
--3
-\end{array}\right] , \left[\begin{array}{c}
--2 \\
--4 \\
-3 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
--3 \\
-0 \\
 1 \\
 -3
-\end{array}\right] \right\} .\]</p></p>
-    <ol type="a">
-      <li> Explain how to find a basis of \(W\).</li>
-      <li> Explain how to find the dimension of \(W\).</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
-2 \\
--2 \\
-2 \\
--2
 \end{array}\right] , \left[\begin{array}{c}
--1 \\
--1 \\
--1 \\
--3
-\end{array}\right] , \left[\begin{array}{c}
--2 \\
 -4 \\
-3 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
--3 \\
-0 \\
-1 \\
--3
-\end{array}\right] \right\} \).</li>
-      <li>The dimension of \(W\) is \( 4 \).</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 25</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
--2 \\
--2 \\
-3 \\
--2
-\end{array}\right] , \left[\begin{array}{c}
--3 \\
 -4 \\
-2 \\
-2
+-3 \\
+3
 \end{array}\right] , \left[\begin{array}{c}
--2 \\
-1 \\
-2 \\
--2
-\end{array}\right] , \left[\begin{array}{c}
-2 \\
+14 \\
+16 \\
 7 \\
-1 \\
--8
-\end{array}\right] , \left[\begin{array}{c}
-9 \\
-20 \\
--3 \\
--16
-\end{array}\right] , \left[\begin{array}{c}
--6 \\
--13 \\
-0 \\
-14
-\end{array}\right] \right\} .\]</p></p>
-    <ol type="a">
-      <li> Explain how to find a basis of \(W\).</li>
-      <li> Explain how to find the dimension of \(W\).</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
--2 \\
--2 \\
-3 \\
--2
-\end{array}\right] , \left[\begin{array}{c}
--3 \\
--4 \\
-2 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
--2 \\
-1 \\
-2 \\
--2
-\end{array}\right] \right\} \).</li>
-      <li>The dimension of \(W\) is \( 3 \).</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 26</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
--2 \\
-2 \\
--2 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
-2 \\
-1 \\
-0 \\
 -3
 \end{array}\right] , \left[\begin{array}{c}
-3 \\
-0 \\
-1 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
-4 \\
--3 \\
--6
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
-10 \\
--7 \\
--14
-\end{array}\right] \right\} .\]</p></p>
-    <ol type="a">
-      <li> Explain how to find a basis of \(W\).</li>
-      <li> Explain how to find the dimension of \(W\).</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
 -2 \\
-2 \\
+1 \\
 -2 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
-2 \\
-1 \\
-0 \\
--3
-\end{array}\right] , \left[\begin{array}{c}
-3 \\
-0 \\
-1 \\
--4
-\end{array}\right] \right\} \).</li>
-      <li>The dimension of \(W\) is \( 3 \).</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 27</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
--3 \\
--1 \\
-1 \\
--2
-\end{array}\right] , \left[\begin{array}{c}
-2 \\
-2 \\
-3 \\
--2
-\end{array}\right] , \left[\begin{array}{c}
-8 \\
-4 \\
-1 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
--4 \\
--1 \\
--3 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
-7 \\
--1 \\
--1 \\
-0
-\end{array}\right] \right\} .\]</p></p>
-    <ol type="a">
-      <li> Explain how to find a basis of \(W\).</li>
-      <li> Explain how to find the dimension of \(W\).</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
--3 \\
--1 \\
-1 \\
--2
-\end{array}\right] , \left[\begin{array}{c}
-2 \\
-2 \\
-3 \\
--2
-\end{array}\right] , \left[\begin{array}{c}
--4 \\
--1 \\
--3 \\
-3
-\end{array}\right] \right\} \).</li>
-      <li>The dimension of \(W\) is \( 3 \).</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 28</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
--1 \\
-1 \\
-1 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
--3 \\
--4 \\
--2 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
-3 \\
--3 \\
--3 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
--8 \\
--6 \\
--2 \\
--8
-\end{array}\right] , \left[\begin{array}{c}
--4 \\
--3 \\
-0 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
-3 \\
-0 \\
--2 \\
--2
-\end{array}\right] \right\} .\]</p></p>
-    <ol type="a">
-      <li> Explain how to find a basis of \(W\).</li>
-      <li> Explain how to find the dimension of \(W\).</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
--1 \\
-1 \\
-1 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
--3 \\
--4 \\
--2 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
--4 \\
--3 \\
-0 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
-3 \\
-0 \\
--2 \\
--2
-\end{array}\right] \right\} \).</li>
-      <li>The dimension of \(W\) is \( 4 \).</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4>Example 29</h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
-1 \\
-2 \\
--3 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
-3 \\
-0 \\
--2 \\
--3
-\end{array}\right] , \left[\begin{array}{c}
--4 \\
--1 \\
--2 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
--3 \\
-0 \\
--3 \\
 0
 \end{array}\right] , \left[\begin{array}{c}
 2 \\
-3 \\
 -4 \\
-0
+3 \\
+-2
 \end{array}\right] , \left[\begin{array}{c}
-5 \\
-0 \\
-0 \\
+-42 \\
+-42 \\
+-22 \\
 6
 \end{array}\right] \right\} .\]</p></p>
     <ol type="a">
@@ -1952,27 +1856,430 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccccc}
+-1 &amp; -4 &amp; 14 &amp; -2 &amp; 2 &amp; -42 \\
+-2 &amp; -4 &amp; 16 &amp; 1 &amp; -4 &amp; -42 \\
+1 &amp; -3 &amp; 7 &amp; -2 &amp; 3 &amp; -22 \\
+-3 &amp; 3 &amp; -3 &amp; 0 &amp; -2 &amp; 6
+\end{array}\right] = \left[\begin{array}{cccccc}
+1 &amp; 0 &amp; -2 &amp; 0 &amp; 0 &amp; 6 \\
+0 &amp; 1 &amp; -3 &amp; 0 &amp; 0 &amp; 8 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 2 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0
+\end{array}\right] \]</p>
+    </p>
+    <ol type="a">
+      <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
+-1 \\
+-2 \\
+1 \\
+-3
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
+-4 \\
+-3 \\
+3
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+1 \\
+-2 \\
+0
+\end{array}\right] , \left[\begin{array}{c}
+2 \\
+-4 \\
+3 \\
+-2
+\end{array}\right] \right\} \).</li>
+      <li>The dimension of \(W\) is \( 4 \).</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 25</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
+-1 \\
+-1 \\
+-2 \\
+-1
+\end{array}\right] , \left[\begin{array}{c}
+2 \\
+-2 \\
+2 \\
+-2
+\end{array}\right] , \left[\begin{array}{c}
+2 \\
+-2 \\
+2 \\
+-2
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
+3 \\
+0 \\
+-2
+\end{array}\right] , \left[\begin{array}{c}
+3 \\
+0 \\
+-1 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
+-1 \\
+-1 \\
+-3 \\
+-2
+\end{array}\right] \right\} .\]</p></p>
+    <ol type="a">
+      <li> Explain how to find a basis of \(W\).</li>
+      <li> Explain how to find the dimension of \(W\).</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccccc}
+-1 &amp; 2 &amp; 2 &amp; -4 &amp; 3 &amp; -1 \\
+-1 &amp; -2 &amp; -2 &amp; 3 &amp; 0 &amp; -1 \\
+-2 &amp; 2 &amp; 2 &amp; 0 &amp; -1 &amp; -3 \\
+-1 &amp; -2 &amp; -2 &amp; -2 &amp; 1 &amp; -2
+\end{array}\right] = \left[\begin{array}{cccccc}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; \frac{34}{23} \\
+0 &amp; 1 &amp; 1 &amp; 0 &amp; 0 &amp; \frac{17}{92} \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; \frac{13}{46} \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; \frac{19}{46}
+\end{array}\right] \]</p>
+    </p>
+    <ol type="a">
+      <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
+-1 \\
+-1 \\
+-2 \\
+-1
+\end{array}\right] , \left[\begin{array}{c}
+2 \\
+-2 \\
+2 \\
+-2
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
+3 \\
+0 \\
+-2
+\end{array}\right] , \left[\begin{array}{c}
+3 \\
+0 \\
+-1 \\
+1
+\end{array}\right] \right\} \).</li>
+      <li>The dimension of \(W\) is \( 4 \).</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 26</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
+1 \\
+2 \\
+2 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
+0 \\
+-3 \\
+-3 \\
+3
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
+-2 \\
+-2 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
+-7 \\
+-8 \\
+-8 \\
+-1
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
+-2 \\
+2 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
+1 \\
+3 \\
+-1 \\
+2
+\end{array}\right] \right\} .\]</p></p>
+    <ol type="a">
+      <li> Explain how to find a basis of \(W\).</li>
+      <li> Explain how to find the dimension of \(W\).</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccccc}
+1 &amp; 0 &amp; -4 &amp; -7 &amp; -4 &amp; 1 \\
+2 &amp; -3 &amp; -2 &amp; -8 &amp; -2 &amp; 3 \\
+2 &amp; -3 &amp; -2 &amp; -8 &amp; 2 &amp; -1 \\
+1 &amp; 3 &amp; 2 &amp; -1 &amp; 1 &amp; 2
+\end{array}\right] = \left[\begin{array}{cccccc}
+1 &amp; 0 &amp; 0 &amp; -3 &amp; 0 &amp; \frac{4}{3} \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; -\frac{1}{6} \\
+0 &amp; 0 &amp; 1 &amp; 1 &amp; 0 &amp; \frac{13}{12} \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; -1
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
 1 \\
 2 \\
+2 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
+0 \\
+-3 \\
 -3 \\
 3
 \end{array}\right] , \left[\begin{array}{c}
-3 \\
-0 \\
+-4 \\
 -2 \\
--3
+-2 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
+-2 \\
+2 \\
+1
+\end{array}\right] \right\} \).</li>
+      <li>The dimension of \(W\) is \( 4 \).</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 27</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
+-2 \\
+-3 \\
+-3 \\
+-1
+\end{array}\right] , \left[\begin{array}{c}
+0 \\
+1 \\
+0 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
+2 \\
+0 \\
+3 \\
+-2
+\end{array}\right] , \left[\begin{array}{c}
+4 \\
+-3 \\
+6 \\
+-7
 \end{array}\right] , \left[\begin{array}{c}
 -4 \\
 -1 \\
+-1 \\
+-2
+\end{array}\right] \right\} .\]</p></p>
+    <ol type="a">
+      <li> Explain how to find a basis of \(W\).</li>
+      <li> Explain how to find the dimension of \(W\).</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccccc}
+-2 &amp; 0 &amp; 2 &amp; 4 &amp; -4 \\
+-3 &amp; 1 &amp; 0 &amp; -3 &amp; -1 \\
+-3 &amp; 0 &amp; 3 &amp; 6 &amp; -1 \\
+-1 &amp; 1 &amp; -2 &amp; -7 &amp; -2
+\end{array}\right] = \left[\begin{array}{ccccc}
+1 &amp; 0 &amp; -1 &amp; -2 &amp; 0 \\
+0 &amp; 1 &amp; -3 &amp; -9 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
+    <ol type="a">
+      <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
 -2 \\
-3
+-3 \\
+-3 \\
+-1
+\end{array}\right] , \left[\begin{array}{c}
+0 \\
+1 \\
+0 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
+-1 \\
+-1 \\
+-2
+\end{array}\right] \right\} \).</li>
+      <li>The dimension of \(W\) is \( 3 \).</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 28</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
+-3 \\
+3 \\
+3 \\
+1
 \end{array}\right] , \left[\begin{array}{c}
 -3 \\
-0 \\
--3 \\
+2 \\
+1 \\
+-1
+\end{array}\right] , \left[\begin{array}{c}
+6 \\
+-5 \\
+-4 \\
 0
+\end{array}\right] , \left[\begin{array}{c}
+9 \\
+-7 \\
+-5 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
+0 \\
+-1 \\
+-3 \\
+3
+\end{array}\right] \right\} .\]</p></p>
+    <ol type="a">
+      <li> Explain how to find a basis of \(W\).</li>
+      <li> Explain how to find the dimension of \(W\).</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccccc}
+-3 &amp; -3 &amp; 6 &amp; 9 &amp; 0 \\
+3 &amp; 2 &amp; -5 &amp; -7 &amp; -1 \\
+3 &amp; 1 &amp; -4 &amp; -5 &amp; -3 \\
+1 &amp; -1 &amp; 0 &amp; 1 &amp; 3
+\end{array}\right] = \left[\begin{array}{ccccc}
+1 &amp; 0 &amp; -1 &amp; -1 &amp; 0 \\
+0 &amp; 1 &amp; -1 &amp; -2 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
+    <ol type="a">
+      <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
+-3 \\
+3 \\
+3 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
+-3 \\
+2 \\
+1 \\
+-1
+\end{array}\right] , \left[\begin{array}{c}
+0 \\
+-1 \\
+-3 \\
+3
+\end{array}\right] \right\} \).</li>
+      <li>The dimension of \(W\) is \( 3 \).</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4>Example 29</h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
+1 \\
+-2 \\
+-1 \\
+-4
+\end{array}\right] , \left[\begin{array}{c}
+1 \\
+-1 \\
+-3 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
+5 \\
+-6 \\
+-13 \\
+4
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+-3 \\
+1 \\
+-4
+\end{array}\right] , \left[\begin{array}{c}
+-1 \\
+1 \\
+1 \\
+-1
+\end{array}\right] \right\} .\]</p></p>
+    <ol type="a">
+      <li> Explain how to find a basis of \(W\).</li>
+      <li> Explain how to find the dimension of \(W\).</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccccc}
+1 &amp; 1 &amp; 5 &amp; -2 &amp; -1 \\
+-2 &amp; -1 &amp; -6 &amp; -3 &amp; 1 \\
+-1 &amp; -3 &amp; -13 &amp; 1 &amp; 1 \\
+-4 &amp; 2 &amp; 4 &amp; -4 &amp; -1
+\end{array}\right] = \left[\begin{array}{ccccc}
+1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 4 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \]</p>
+    </p>
+    <ol type="a">
+      <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
+1 \\
+-2 \\
+-1 \\
+-4
+\end{array}\right] , \left[\begin{array}{c}
+1 \\
+-1 \\
+-3 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+-3 \\
+1 \\
+-4
+\end{array}\right] , \left[\begin{array}{c}
+-1 \\
+1 \\
+1 \\
+-1
 \end{array}\right] \right\} \).</li>
       <li>The dimension of \(W\) is \( 4 \).</li>
     </ol>
@@ -1983,35 +2290,35 @@
 <h4>Example 30</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
--3 \\
+-4 \\
+2 \\
+1 \\
+-4
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
 3 \\
-2 \\
-1
+3 \\
+0
 \end{array}\right] , \left[\begin{array}{c}
--1 \\
--1 \\
--3 \\
-1
+-2 \\
+-5 \\
+-7 \\
+-8
 \end{array}\right] , \left[\begin{array}{c}
-1 \\
-2 \\
--4 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
-1 \\
-2 \\
--4 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
-2 \\
--3 \\
+0 \\
 -12 \\
+-15 \\
+-12
+\end{array}\right] , \left[\begin{array}{c}
+0 \\
+0 \\
+-2 \\
 3
 \end{array}\right] , \left[\begin{array}{c}
+-1 \\
 2 \\
--16 \\
-26 \\
--16
+3 \\
+0
 \end{array}\right] \right\} .\]</p></p>
     <ol type="a">
       <li> Explain how to find a basis of \(W\).</li>
@@ -2022,24 +2329,42 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccccc}
+-4 &amp; -2 &amp; -2 &amp; 0 &amp; 0 &amp; -1 \\
+2 &amp; 3 &amp; -5 &amp; -12 &amp; 0 &amp; 2 \\
+1 &amp; 3 &amp; -7 &amp; -15 &amp; -2 &amp; 3 \\
+-4 &amp; 0 &amp; -8 &amp; -12 &amp; 3 &amp; 0
+\end{array}\right] = \left[\begin{array}{cccccc}
+1 &amp; 0 &amp; 2 &amp; 3 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; -3 &amp; -6 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
--3 \\
-3 \\
-2 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
--1 \\
--3 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
-1 \\
-2 \\
 -4 \\
-2
+2 \\
+1 \\
+-4
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+3 \\
+3 \\
+0
+\end{array}\right] , \left[\begin{array}{c}
+0 \\
+0 \\
+-2 \\
+3
+\end{array}\right] , \left[\begin{array}{c}
+-1 \\
+2 \\
+3 \\
+0
 \end{array}\right] \right\} \).</li>
-      <li>The dimension of \(W\) is \( 3 \).</li>
+      <li>The dimension of \(W\) is \( 4 \).</li>
     </ol>
   </div>
 </div>
@@ -2049,34 +2374,34 @@
   <div class="exercise-statement">
     <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
 1 \\
+-1 \\
 -2 \\
-2 \\
--2
-\end{array}\right] , \left[\begin{array}{c}
-3 \\
--3 \\
-0 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
--3 \\
-1 \\
-3 \\
 -3
 \end{array}\right] , \left[\begin{array}{c}
--11 \\
-9 \\
-2 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
 -1 \\
-3 \\
-0 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
--11 \\
-12 \\
 -4 \\
-4
+-3 \\
+-3
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
+0 \\
+3 \\
+-1
+\end{array}\right] , \left[\begin{array}{c}
+-3 \\
+2 \\
+0 \\
+3
+\end{array}\right] , \left[\begin{array}{c}
+13 \\
+-16 \\
+-13 \\
+-20
+\end{array}\right] , \left[\begin{array}{c}
+-13 \\
+3 \\
+4 \\
+1
 \end{array}\right] \right\} .\]</p></p>
     <ol type="a">
       <li> Explain how to find a basis of \(W\).</li>
@@ -2087,27 +2412,40 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccccc}
+1 &amp; -1 &amp; -4 &amp; -3 &amp; 13 &amp; -13 \\
+-1 &amp; -4 &amp; 0 &amp; 2 &amp; -16 &amp; 3 \\
+-2 &amp; -3 &amp; 3 &amp; 0 &amp; -13 &amp; 4 \\
+-3 &amp; -3 &amp; -1 &amp; 3 &amp; -20 &amp; 1
+\end{array}\right] = \left[\begin{array}{cccccc}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 2 &amp; 1 \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 2 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; -1 &amp; 2 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; -3 &amp; 2
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
 1 \\
+-1 \\
 -2 \\
-2 \\
--2
-\end{array}\right] , \left[\begin{array}{c}
-3 \\
--3 \\
-0 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
--3 \\
-1 \\
-3 \\
 -3
 \end{array}\right] , \left[\begin{array}{c}
 -1 \\
-3 \\
+-4 \\
+-3 \\
+-3
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
 0 \\
-1
+3 \\
+-1
+\end{array}\right] , \left[\begin{array}{c}
+-3 \\
+2 \\
+0 \\
+3
 \end{array}\right] \right\} \).</li>
       <li>The dimension of \(W\) is \( 4 \).</li>
     </ol>
@@ -2118,25 +2456,35 @@
 <h4>Example 32</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
--1 \\
 -2 \\
--3 \\
+1 \\
+0 \\
 -2
 \end{array}\right] , \left[\begin{array}{c}
+1 \\
+-2 \\
+0 \\
+-3
+\end{array}\right] , \left[\begin{array}{c}
+-5 \\
+4 \\
+0 \\
+-1
+\end{array}\right] , \left[\begin{array}{c}
+2 \\
 -3 \\
--1 \\
--1 \\
-2
+3 \\
+3
 \end{array}\right] , \left[\begin{array}{c}
-13 \\
-6 \\
-7 \\
--6
+12 \\
+-11 \\
+3 \\
+5
 \end{array}\right] , \left[\begin{array}{c}
-10 \\
-10 \\
-14 \\
-4
+-6 \\
+8 \\
+-3 \\
+1
 \end{array}\right] \right\} .\]</p></p>
     <ol type="a">
       <li> Explain how to find a basis of \(W\).</li>
@@ -2147,19 +2495,37 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccccc}
+-2 &amp; 1 &amp; -5 &amp; 2 &amp; 12 &amp; -6 \\
+1 &amp; -2 &amp; 4 &amp; -3 &amp; -11 &amp; 8 \\
+0 &amp; 0 &amp; 0 &amp; 3 &amp; 3 &amp; -3 \\
+-2 &amp; -3 &amp; -1 &amp; 3 &amp; 5 &amp; 1
+\end{array}\right] = \left[\begin{array}{cccccc}
+1 &amp; 0 &amp; 2 &amp; 0 &amp; -4 &amp; 1 \\
+0 &amp; 1 &amp; -1 &amp; 0 &amp; 2 &amp; -2 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 1 &amp; -1 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
--1 \\
 -2 \\
--3 \\
+1 \\
+0 \\
 -2
 \end{array}\right] , \left[\begin{array}{c}
+1 \\
+-2 \\
+0 \\
+-3
+\end{array}\right] , \left[\begin{array}{c}
+2 \\
 -3 \\
--1 \\
--1 \\
-2
+3 \\
+3
 \end{array}\right] \right\} \).</li>
-      <li>The dimension of \(W\) is \( 2 \).</li>
+      <li>The dimension of \(W\) is \( 3 \).</li>
     </ol>
   </div>
 </div>
@@ -2168,35 +2534,25 @@
 <h4>Example 33</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
-2 \\
--1 \\
-2 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
-0 \\
+-4 \\
 -3 \\
--2 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
--3 \\
-2 \\
--1 \\
--2
+3 \\
+1
 \end{array}\right] , \left[\begin{array}{c}
 1 \\
--3 \\
+2 \\
 -3 \\
 2
 \end{array}\right] , \left[\begin{array}{c}
-1 \\
-3 \\
-3 \\
-0
+-6 \\
+-7 \\
+9 \\
+-3
 \end{array}\right] , \left[\begin{array}{c}
 3 \\
--3 \\
 -2 \\
-3
+3 \\
+2
 \end{array}\right] \right\} .\]</p></p>
     <ol type="a">
       <li> Explain how to find a basis of \(W\).</li>
@@ -2207,29 +2563,37 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+-4 &amp; 1 &amp; -6 &amp; 3 \\
+-3 &amp; 2 &amp; -7 &amp; -2 \\
+3 &amp; -3 &amp; 9 &amp; 3 \\
+1 &amp; 2 &amp; -3 &amp; 2
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 1 &amp; -2 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
-2 \\
--1 \\
-2 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
-0 \\
+-4 \\
 -3 \\
--2 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
--3 \\
-2 \\
--1 \\
--2
+3 \\
+1
 \end{array}\right] , \left[\begin{array}{c}
 1 \\
--3 \\
+2 \\
 -3 \\
 2
+\end{array}\right] , \left[\begin{array}{c}
+3 \\
+-2 \\
+3 \\
+2
 \end{array}\right] \right\} \).</li>
-      <li>The dimension of \(W\) is \( 4 \).</li>
+      <li>The dimension of \(W\) is \( 3 \).</li>
     </ol>
   </div>
 </div>
@@ -2238,35 +2602,25 @@
 <h4>Example 34</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
-0 \\
--1 \\
 3 \\
--4
+0 \\
+-4 \\
+3
 \end{array}\right] , \left[\begin{array}{c}
 -3 \\
--2 \\
+-4 \\
 2 \\
+-1
+\end{array}\right] , \left[\begin{array}{c}
+0 \\
+0 \\
+-2 \\
 2
 \end{array}\right] , \left[\begin{array}{c}
 3 \\
--3 \\
--1 \\
--3
-\end{array}\right] , \left[\begin{array}{c}
--9 \\
-6 \\
--2 \\
-16
-\end{array}\right] , \left[\begin{array}{c}
--12 \\
-8 \\
+12 \\
 2 \\
-15
-\end{array}\right] , \left[\begin{array}{c}
-15 \\
--12 \\
-0 \\
--22
+-3
 \end{array}\right] \right\} .\]</p></p>
     <ol type="a">
       <li> Explain how to find a basis of \(W\).</li>
@@ -2277,22 +2631,35 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+3 &amp; -3 &amp; 0 &amp; 3 \\
+0 &amp; -4 &amp; 0 &amp; 12 \\
+-4 &amp; 2 &amp; -2 &amp; 2 \\
+3 &amp; -1 &amp; 2 &amp; -3
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; -2 \\
+0 &amp; 1 &amp; 0 &amp; -3 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
+3 \\
 0 \\
--1 \\
-3 \\
--4
+-4 \\
+3
 \end{array}\right] , \left[\begin{array}{c}
 -3 \\
--2 \\
+-4 \\
 2 \\
-2
+-1
 \end{array}\right] , \left[\begin{array}{c}
-3 \\
--3 \\
--1 \\
--3
+0 \\
+0 \\
+-2 \\
+2
 \end{array}\right] \right\} \).</li>
       <li>The dimension of \(W\) is \( 3 \).</li>
     </ol>
@@ -2303,35 +2670,25 @@
 <h4>Example 35</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
+0 \\
+2 \\
+-4 \\
+-3
+\end{array}\right] , \left[\begin{array}{c}
 3 \\
-2 \\
-2 \\
+-1 \\
+1 \\
 3
 \end{array}\right] , \left[\begin{array}{c}
-3 \\
 -3 \\
-3 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
--3 \\
--17 \\
-1 \\
--24
-\end{array}\right] , \left[\begin{array}{c}
--3 \\
--7 \\
 -1 \\
--10
+3 \\
+0
 \end{array}\right] , \left[\begin{array}{c}
+3 \\
 -3 \\
-2 \\
-2 \\
+-3 \\
 -1
-\end{array}\right] , \left[\begin{array}{c}
--12 \\
--13 \\
--7 \\
--19
 \end{array}\right] \right\} .\]</p></p>
     <ol type="a">
       <li> Explain how to find a basis of \(W\).</li>
@@ -2342,21 +2699,34 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+0 &amp; 3 &amp; -3 &amp; 3 \\
+2 &amp; -1 &amp; -1 &amp; -3 \\
+-4 &amp; 1 &amp; 3 &amp; -3 \\
+-3 &amp; 3 &amp; 0 &amp; -1
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; -1 &amp; 0 \\
+0 &amp; 1 &amp; -1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
+0 \\
+2 \\
+-4 \\
+-3
+\end{array}\right] , \left[\begin{array}{c}
 3 \\
-2 \\
-2 \\
+-1 \\
+1 \\
 3
 \end{array}\right] , \left[\begin{array}{c}
 3 \\
 -3 \\
-3 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
 -3 \\
-2 \\
-2 \\
 -1
 \end{array}\right] \right\} \).</li>
       <li>The dimension of \(W\) is \( 3 \).</li>
@@ -2368,30 +2738,35 @@
 <h4>Example 36</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
-2 \\
--3 \\
-0 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
-1 \\
--4 \\
--4 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
--4 \\
--4 \\
--16 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
-9 \\
-14 \\
-44 \\
-4
-\end{array}\right] , \left[\begin{array}{c}
 -1 \\
+2 \\
 1 \\
--2 \\
 3
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+3 \\
+-2 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
+10 \\
+-17 \\
+2 \\
+-18
+\end{array}\right] , \left[\begin{array}{c}
+26 \\
+-44 \\
+6 \\
+-46
+\end{array}\right] , \left[\begin{array}{c}
+1 \\
+3 \\
+1 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
+-40 \\
+69 \\
+-4 \\
+76
 \end{array}\right] \right\} .\]</p></p>
     <ol type="a">
       <li> Explain how to find a basis of \(W\).</li>
@@ -2402,22 +2777,35 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccccc}
+-1 &amp; -2 &amp; 10 &amp; 26 &amp; 1 &amp; -40 \\
+2 &amp; 3 &amp; -17 &amp; -44 &amp; 3 &amp; 69 \\
+1 &amp; -2 &amp; 2 &amp; 6 &amp; 1 &amp; -4 \\
+3 &amp; 2 &amp; -18 &amp; -46 &amp; 1 &amp; 76
+\end{array}\right] = \left[\begin{array}{cccccc}
+1 &amp; 0 &amp; -4 &amp; -10 &amp; 0 &amp; 18 \\
+0 &amp; 1 &amp; -3 &amp; -8 &amp; 0 &amp; 11 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
-2 \\
--3 \\
-0 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
-1 \\
--4 \\
--4 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
 -1 \\
+2 \\
 1 \\
--2 \\
 3
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+3 \\
+-2 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
+1 \\
+3 \\
+1 \\
+1
 \end{array}\right] \right\} \).</li>
       <li>The dimension of \(W\) is \( 3 \).</li>
     </ol>
@@ -2428,30 +2816,30 @@
 <h4>Example 37</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
-1 \\
 3 \\
-3 \\
+0 \\
+2 \\
 0
 \end{array}\right] , \left[\begin{array}{c}
--3 \\
--2 \\
+-1 \\
 2 \\
+-3 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
+-1 \\
+0 \\
+3 \\
 1
 \end{array}\right] , \left[\begin{array}{c}
-3 \\
--2 \\
--3 \\
--2
+-1 \\
+-4 \\
+-1 \\
+-3
 \end{array}\right] , \left[\begin{array}{c}
-6 \\
--7 \\
--16 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
-16 \\
--13 \\
--32 \\
--10
+-10 \\
+-6 \\
+-17 \\
+-6
 \end{array}\right] \right\} .\]</p></p>
     <ol type="a">
       <li> Explain how to find a basis of \(W\).</li>
@@ -2462,24 +2850,42 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccccc}
+3 &amp; -1 &amp; -1 &amp; -1 &amp; -10 \\
+0 &amp; 2 &amp; 0 &amp; -4 &amp; -6 \\
+2 &amp; -3 &amp; 3 &amp; -1 &amp; -17 \\
+0 &amp; 2 &amp; 1 &amp; -3 &amp; -6
+\end{array}\right] = \left[\begin{array}{ccccc}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; -3 \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; -2 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 2
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
-1 \\
 3 \\
-3 \\
+0 \\
+2 \\
 0
 \end{array}\right] , \left[\begin{array}{c}
--3 \\
--2 \\
+-1 \\
 2 \\
+-3 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
+-1 \\
+0 \\
+3 \\
 1
 \end{array}\right] , \left[\begin{array}{c}
-3 \\
--2 \\
--3 \\
--2
+-1 \\
+-4 \\
+-1 \\
+-3
 \end{array}\right] \right\} \).</li>
-      <li>The dimension of \(W\) is \( 3 \).</li>
+      <li>The dimension of \(W\) is \( 4 \).</li>
     </ol>
   </div>
 </div>
@@ -2488,25 +2894,35 @@
 <h4>Example 38</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
-0 \\
+2 \\
 1 \\
-3 \\
+-4 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
+0 \\
+-2 \\
+1 \\
 1
 \end{array}\right] , \left[\begin{array}{c}
--2 \\
--4 \\
-0 \\
--4
+8 \\
+8 \\
+-18 \\
+6
 \end{array}\right] , \left[\begin{array}{c}
 -2 \\
--1 \\
-9 \\
+2 \\
+1 \\
 -1
 \end{array}\right] , \left[\begin{array}{c}
-0 \\
-4 \\
-12 \\
-4
+1 \\
+-4 \\
+-1 \\
+-1
+\end{array}\right] , \left[\begin{array}{c}
+1 \\
+-1 \\
+1 \\
+1
 \end{array}\right] \right\} .\]</p></p>
     <ol type="a">
       <li> Explain how to find a basis of \(W\).</li>
@@ -2517,19 +2933,42 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccccc}
+2 &amp; 0 &amp; 8 &amp; -2 &amp; 1 &amp; 1 \\
+1 &amp; -2 &amp; 8 &amp; 2 &amp; -4 &amp; -1 \\
+-4 &amp; 1 &amp; -18 &amp; 1 &amp; -1 &amp; 1 \\
+2 &amp; 1 &amp; 6 &amp; -1 &amp; -1 &amp; 1
+\end{array}\right] = \left[\begin{array}{cccccc}
+1 &amp; 0 &amp; 4 &amp; 0 &amp; 0 &amp; -\frac{7}{19} \\
+0 &amp; 1 &amp; -2 &amp; 0 &amp; 0 &amp; \frac{3}{19} \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; -\frac{21}{19} \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; -\frac{9}{19}
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
-0 \\
+2 \\
 1 \\
-3 \\
+-4 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
+0 \\
+-2 \\
+1 \\
 1
 \end{array}\right] , \left[\begin{array}{c}
 -2 \\
+2 \\
+1 \\
+-1
+\end{array}\right] , \left[\begin{array}{c}
+1 \\
 -4 \\
-0 \\
--4
+-1 \\
+-1
 \end{array}\right] \right\} \).</li>
-      <li>The dimension of \(W\) is \( 2 \).</li>
+      <li>The dimension of \(W\) is \( 4 \).</li>
     </ol>
   </div>
 </div>
@@ -2538,35 +2977,30 @@
 <h4>Example 39</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
+-3 \\
 3 \\
 -1 \\
-1 \\
-0
+-1
 \end{array}\right] , \left[\begin{array}{c}
--1 \\
--4 \\
-1 \\
--2
-\end{array}\right] , \left[\begin{array}{c}
--6 \\
-15 \\
--6 \\
-6
-\end{array}\right] , \left[\begin{array}{c}
--3 \\
-1 \\
 0 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
-5 \\
-7 \\
 -4 \\
-4
+-4 \\
+1
 \end{array}\right] , \left[\begin{array}{c}
--1 \\
--17 \\
-5 \\
--8
+-4 \\
+2 \\
+-4 \\
+-3
+\end{array}\right] , \left[\begin{array}{c}
+-14 \\
+2 \\
+-18 \\
+-6
+\end{array}\right] , \left[\begin{array}{c}
+21 \\
+-7 \\
+23 \\
+10
 \end{array}\right] \right\} .\]</p></p>
     <ol type="a">
       <li> Explain how to find a basis of \(W\).</li>
@@ -2577,22 +3011,35 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccccc}
+-3 &amp; 0 &amp; -4 &amp; -14 &amp; 21 \\
+3 &amp; -4 &amp; 2 &amp; 2 &amp; -7 \\
+-1 &amp; -4 &amp; -4 &amp; -18 &amp; 23 \\
+-1 &amp; 1 &amp; -3 &amp; -6 &amp; 10
+\end{array}\right] = \left[\begin{array}{ccccc}
+1 &amp; 0 &amp; 0 &amp; 2 &amp; -3 \\
+0 &amp; 1 &amp; 0 &amp; 2 &amp; -2 \\
+0 &amp; 0 &amp; 1 &amp; 2 &amp; -3 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
+-3 \\
 3 \\
 -1 \\
-1 \\
-0
+-1
 \end{array}\right] , \left[\begin{array}{c}
--1 \\
--4 \\
-1 \\
--2
-\end{array}\right] , \left[\begin{array}{c}
--3 \\
-1 \\
 0 \\
-0
+-4 \\
+-4 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
+2 \\
+-4 \\
+-3
 \end{array}\right] \right\} \).</li>
       <li>The dimension of \(W\) is \( 3 \).</li>
     </ol>
@@ -2603,25 +3050,25 @@
 <h4>Example 40</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
-0 \\
--4 \\
--4 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
 3 \\
--2 \\
-2 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
-9 \\
-2 \\
-14 \\
+1 \\
+3 \\
 -4
 \end{array}\right] , \left[\begin{array}{c}
 2 \\
 0 \\
 1 \\
--1
+1
+\end{array}\right] , \left[\begin{array}{c}
+-3 \\
+2 \\
+1 \\
+-3
+\end{array}\right] , \left[\begin{array}{c}
+-6 \\
+-3 \\
+-7 \\
+4
 \end{array}\right] \right\} .\]</p></p>
     <ol type="a">
       <li> Explain how to find a basis of \(W\).</li>
@@ -2632,22 +3079,35 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+3 &amp; 2 &amp; -3 &amp; -6 \\
+1 &amp; 0 &amp; 2 &amp; -3 \\
+3 &amp; 1 &amp; 1 &amp; -7 \\
+-4 &amp; 1 &amp; -3 &amp; 4
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; -1 \\
+0 &amp; 1 &amp; 0 &amp; -3 \\
+0 &amp; 0 &amp; 1 &amp; -1 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
-0 \\
--4 \\
--4 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
 3 \\
--2 \\
-2 \\
-0
+1 \\
+3 \\
+-4
 \end{array}\right] , \left[\begin{array}{c}
 2 \\
 0 \\
 1 \\
--1
+1
+\end{array}\right] , \left[\begin{array}{c}
+-3 \\
+2 \\
+1 \\
+-3
 \end{array}\right] \right\} \).</li>
       <li>The dimension of \(W\) is \( 3 \).</li>
     </ol>
@@ -2658,25 +3118,30 @@
 <h4>Example 41</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
+2 \\
+-2 \\
 1 \\
--4 \\
-3 \\
-1
+2
 \end{array}\right] , \left[\begin{array}{c}
 3 \\
--1 \\
-1 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
 -3 \\
--1 \\
-3 \\
+2 \\
 -1
 \end{array}\right] , \left[\begin{array}{c}
-0 \\
-3 \\
--3 \\
+8 \\
+-8 \\
+5 \\
 0
+\end{array}\right] , \left[\begin{array}{c}
+1 \\
+0 \\
+-4 \\
+-4
+\end{array}\right] , \left[\begin{array}{c}
+2 \\
+2 \\
+-2 \\
+3
 \end{array}\right] \right\} .\]</p></p>
     <ol type="a">
       <li> Explain how to find a basis of \(W\).</li>
@@ -2687,27 +3152,40 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccccc}
+2 &amp; 3 &amp; 8 &amp; 1 &amp; 2 \\
+-2 &amp; -3 &amp; -8 &amp; 0 &amp; 2 \\
+1 &amp; 2 &amp; 5 &amp; -4 &amp; -2 \\
+2 &amp; -1 &amp; 0 &amp; -4 &amp; 3
+\end{array}\right] = \left[\begin{array}{ccccc}
+1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 2 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
+2 \\
+-2 \\
 1 \\
--4 \\
-3 \\
-1
+2
 \end{array}\right] , \left[\begin{array}{c}
 3 \\
--1 \\
-1 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
 -3 \\
--1 \\
-3 \\
+2 \\
 -1
 \end{array}\right] , \left[\begin{array}{c}
+1 \\
 0 \\
-3 \\
--3 \\
-0
+-4 \\
+-4
+\end{array}\right] , \left[\begin{array}{c}
+2 \\
+2 \\
+-2 \\
+3
 \end{array}\right] \right\} \).</li>
       <li>The dimension of \(W\) is \( 4 \).</li>
     </ol>
@@ -2718,35 +3196,35 @@
 <h4>Example 42</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
--1 \\
 -4 \\
+-2 \\
+1 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
 -3 \\
--3
+0 \\
+-1 \\
+-2
+\end{array}\right] , \left[\begin{array}{c}
+3 \\
+6 \\
+-6 \\
+-9
+\end{array}\right] , \left[\begin{array}{c}
+9 \\
+0 \\
+3 \\
+6
 \end{array}\right] , \left[\begin{array}{c}
 2 \\
--3 \\
--2 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
-1 \\
-3 \\
--4 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
 2 \\
 0 \\
--3 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
-2 \\
-1 \\
--2 \\
--4
+1
 \end{array}\right] , \left[\begin{array}{c}
 -1 \\
--7 \\
--2 \\
--3
+0 \\
+-4 \\
+3
 \end{array}\right] \right\} .\]</p></p>
     <ol type="a">
       <li> Explain how to find a basis of \(W\).</li>
@@ -2757,26 +3235,39 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccccc}
+-4 &amp; -3 &amp; 3 &amp; 9 &amp; 2 &amp; -1 \\
+-2 &amp; 0 &amp; 6 &amp; 0 &amp; 2 &amp; 0 \\
+1 &amp; -1 &amp; -6 &amp; 3 &amp; 0 &amp; -4 \\
+1 &amp; -2 &amp; -9 &amp; 6 &amp; 1 &amp; 3
+\end{array}\right] = \left[\begin{array}{cccccc}
+1 &amp; 0 &amp; -3 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 3 &amp; -3 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
--1 \\
 -4 \\
+-2 \\
+1 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
 -3 \\
--3
+0 \\
+-1 \\
+-2
 \end{array}\right] , \left[\begin{array}{c}
 2 \\
--3 \\
--2 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
-1 \\
-3 \\
--4 \\
-3
-\end{array}\right] , \left[\begin{array}{c}
 2 \\
 0 \\
--3 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
+-1 \\
+0 \\
+-4 \\
 3
 \end{array}\right] \right\} \).</li>
       <li>The dimension of \(W\) is \( 4 \).</li>
@@ -2788,30 +3279,35 @@
 <h4>Example 43</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
--4 \\
-2 \\
+1 \\
 0 \\
-3
+1 \\
+1
 \end{array}\right] , \left[\begin{array}{c}
 -1 \\
-1 \\
--3 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
--8 \\
-6 \\
--12 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
 -4 \\
 2 \\
-0 \\
-3
+-1
 \end{array}\right] , \left[\begin{array}{c}
--6 \\
-4 \\
--6 \\
-1
+2 \\
+12 \\
+-7 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
+2 \\
+2 \\
+0 \\
+-3
+\end{array}\right] , \left[\begin{array}{c}
+0 \\
+10 \\
+-8 \\
+-5
+\end{array}\right] , \left[\begin{array}{c}
+3 \\
+0 \\
+1 \\
+0
 \end{array}\right] \right\} .\]</p></p>
     <ol type="a">
       <li> Explain how to find a basis of \(W\).</li>
@@ -2822,19 +3318,42 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccccc}
+1 &amp; -1 &amp; 2 &amp; 2 &amp; 0 &amp; 3 \\
+0 &amp; -4 &amp; 12 &amp; 2 &amp; 10 &amp; 0 \\
+1 &amp; 2 &amp; -7 &amp; 0 &amp; -8 &amp; 1 \\
+1 &amp; -1 &amp; 2 &amp; -3 &amp; -5 &amp; 0
+\end{array}\right] = \left[\begin{array}{cccccc}
+1 &amp; 0 &amp; -1 &amp; 0 &amp; -4 &amp; 0 \\
+0 &amp; 1 &amp; -3 &amp; 0 &amp; -2 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
--4 \\
-2 \\
+1 \\
 0 \\
-3
+1 \\
+1
 \end{array}\right] , \left[\begin{array}{c}
 -1 \\
-1 \\
--3 \\
+-4 \\
+2 \\
 -1
+\end{array}\right] , \left[\begin{array}{c}
+2 \\
+2 \\
+0 \\
+-3
+\end{array}\right] , \left[\begin{array}{c}
+3 \\
+0 \\
+1 \\
+0
 \end{array}\right] \right\} \).</li>
-      <li>The dimension of \(W\) is \( 2 \).</li>
+      <li>The dimension of \(W\) is \( 4 \).</li>
     </ol>
   </div>
 </div>
@@ -2843,25 +3362,35 @@
 <h4>Example 44</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
--3 \\
--2 \\
-3 \\
--3
-\end{array}\right] , \left[\begin{array}{c}
 0 \\
+-4 \\
 1 \\
-2 \\
--3
+3
 \end{array}\right] , \left[\begin{array}{c}
+-4 \\
+-2 \\
 2 \\
-2 \\
-0 \\
--3
+-4
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+-1 \\
+-3 \\
+-4
 \end{array}\right] , \left[\begin{array}{c}
 -4 \\
 -4 \\
 2 \\
--3
+-1
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
+-10 \\
+12 \\
+6
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
+-4 \\
+-4 \\
+-1
 \end{array}\right] \right\} .\]</p></p>
     <ol type="a">
       <li> Explain how to find a basis of \(W\).</li>
@@ -2872,24 +3401,42 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccccc}
+0 &amp; -4 &amp; -2 &amp; -4 &amp; -4 &amp; -4 \\
+-4 &amp; -2 &amp; -1 &amp; -4 &amp; -10 &amp; -4 \\
+1 &amp; 2 &amp; -3 &amp; 2 &amp; 12 &amp; -4 \\
+3 &amp; -4 &amp; -4 &amp; -1 &amp; 6 &amp; -1
+\end{array}\right] = \left[\begin{array}{cccccc}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 2 &amp; -\frac{6}{7} \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 2 &amp; -\frac{33}{14} \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; -2 &amp; \frac{9}{7} \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; \frac{19}{7}
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
--3 \\
--2 \\
-3 \\
--3
-\end{array}\right] , \left[\begin{array}{c}
 0 \\
+-4 \\
 1 \\
-2 \\
--3
+3
 \end{array}\right] , \left[\begin{array}{c}
+-4 \\
+-2 \\
 2 \\
+-4
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+-1 \\
+-3 \\
+-4
+\end{array}\right] , \left[\begin{array}{c}
+-4 \\
+-4 \\
 2 \\
-0 \\
--3
+-1
 \end{array}\right] \right\} \).</li>
-      <li>The dimension of \(W\) is \( 3 \).</li>
+      <li>The dimension of \(W\) is \( 4 \).</li>
     </ol>
   </div>
 </div>
@@ -2898,25 +3445,35 @@
 <h4>Example 45</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
--3 \\
 0 \\
--3 \\
-2
+-4 \\
+-4 \\
+-2
 \end{array}\right] , \left[\begin{array}{c}
-2 \\
 3 \\
-2 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
--3 \\
--1 \\
-2 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
--7 \\
-1 \\
 3 \\
-3
+-4 \\
+-4
+\end{array}\right] , \left[\begin{array}{c}
+12 \\
+28 \\
+0 \\
+-8
+\end{array}\right] , \left[\begin{array}{c}
+-33 \\
+-85 \\
+-8 \\
+18
+\end{array}\right] , \left[\begin{array}{c}
+-6 \\
+-10 \\
+4 \\
+6
+\end{array}\right] , \left[\begin{array}{c}
+111 \\
+279 \\
+20 \\
+-64
 \end{array}\right] \right\} .\]</p></p>
     <ol type="a">
       <li> Explain how to find a basis of \(W\).</li>
@@ -2927,24 +3484,32 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccccc}
+0 &amp; 3 &amp; 12 &amp; -33 &amp; -6 &amp; 111 \\
+-4 &amp; 3 &amp; 28 &amp; -85 &amp; -10 &amp; 279 \\
+-4 &amp; -4 &amp; 0 &amp; -8 &amp; 4 &amp; 20 \\
+-2 &amp; -4 &amp; -8 &amp; 18 &amp; 6 &amp; -64
+\end{array}\right] = \left[\begin{array}{cccccc}
+1 &amp; 0 &amp; -4 &amp; 13 &amp; 1 &amp; -42 \\
+0 &amp; 1 &amp; 4 &amp; -11 &amp; -2 &amp; 37 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
--3 \\
 0 \\
--3 \\
-2
+-4 \\
+-4 \\
+-2
 \end{array}\right] , \left[\begin{array}{c}
-2 \\
 3 \\
-2 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
--3 \\
--1 \\
-2 \\
-1
+3 \\
+-4 \\
+-4
 \end{array}\right] \right\} \).</li>
-      <li>The dimension of \(W\) is \( 3 \).</li>
+      <li>The dimension of \(W\) is \( 2 \).</li>
     </ol>
   </div>
 </div>
@@ -2953,25 +3518,35 @@
 <h4>Example 46</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
--4 \\
--4 \\
-1 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
--4 \\
-0 \\
-0 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
-8 \\
-16 \\
--4 \\
--6
+-3 \\
+-3 \\
+-1 \\
+-2
 \end{array}\right] , \left[\begin{array}{c}
 -3 \\
 2 \\
+0 \\
+3
+\end{array}\right] , \left[\begin{array}{c}
+-6 \\
+9 \\
+1 \\
+11
+\end{array}\right] , \left[\begin{array}{c}
+-1 \\
+1 \\
+0 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
 -3 \\
--3
+-2 \\
+-2 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
+17 \\
+-17 \\
+-1 \\
+-24
 \end{array}\right] \right\} .\]</p></p>
     <ol type="a">
       <li> Explain how to find a basis of \(W\).</li>
@@ -2982,24 +3557,42 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccccc}
+-3 &amp; -3 &amp; -6 &amp; -1 &amp; -3 &amp; 17 \\
+-3 &amp; 2 &amp; 9 &amp; 1 &amp; -2 &amp; -17 \\
+-1 &amp; 0 &amp; 1 &amp; 0 &amp; -2 &amp; -1 \\
+-2 &amp; 3 &amp; 11 &amp; 2 &amp; 1 &amp; -24
+\end{array}\right] = \left[\begin{array}{cccccc}
+1 &amp; 0 &amp; -1 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 1 &amp; 3 &amp; 0 &amp; 0 &amp; -6 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; -2 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
--4 \\
--4 \\
-1 \\
-2
-\end{array}\right] , \left[\begin{array}{c}
--4 \\
-0 \\
-0 \\
-1
+-3 \\
+-3 \\
+-1 \\
+-2
 \end{array}\right] , \left[\begin{array}{c}
 -3 \\
 2 \\
+0 \\
+3
+\end{array}\right] , \left[\begin{array}{c}
+-1 \\
+1 \\
+0 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
 -3 \\
--3
+-2 \\
+-2 \\
+1
 \end{array}\right] \right\} \).</li>
-      <li>The dimension of \(W\) is \( 3 \).</li>
+      <li>The dimension of \(W\) is \( 4 \).</li>
     </ol>
   </div>
 </div>
@@ -3008,30 +3601,25 @@
 <h4>Example 47</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
--4 \\
--1 \\
-0 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
-2 \\
--1 \\
--2 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
--14 \\
-1 \\
-6 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
--4 \\
--2 \\
 3 \\
+-1 \\
+-1 \\
 -4
 \end{array}\right] , \left[\begin{array}{c}
--1 \\
 -3 \\
-1 \\
-3
+-1 \\
+-1 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
+2 \\
+-4 \\
+3 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+-1 \\
+3 \\
+1
 \end{array}\right] \right\} .\]</p></p>
     <ol type="a">
       <li> Explain how to find a basis of \(W\).</li>
@@ -3042,27 +3630,40 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+3 &amp; -3 &amp; 2 &amp; -2 \\
+-1 &amp; -1 &amp; -4 &amp; -1 \\
+-1 &amp; -1 &amp; 3 &amp; 3 \\
+-4 &amp; 2 &amp; 1 &amp; 1
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
--4 \\
--1 \\
-0 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
-2 \\
--1 \\
--2 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
--4 \\
--2 \\
 3 \\
+-1 \\
+-1 \\
 -4
 \end{array}\right] , \left[\begin{array}{c}
--1 \\
 -3 \\
-1 \\
-3
+-1 \\
+-1 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
+2 \\
+-4 \\
+3 \\
+1
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+-1 \\
+3 \\
+1
 \end{array}\right] \right\} \).</li>
       <li>The dimension of \(W\) is \( 4 \).</li>
     </ol>
@@ -3073,25 +3674,35 @@
 <h4>Example 48</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
-2 \\
--2 \\
+0 \\
+1 \\
 1 \\
 2
 \end{array}\right] , \left[\begin{array}{c}
+-1 \\
+-1 \\
 2 \\
-2 \\
-3 \\
 0
 \end{array}\right] , \left[\begin{array}{c}
+-1 \\
+1 \\
+-2 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
+1 \\
+-3 \\
+0 \\
+-6
+\end{array}\right] , \left[\begin{array}{c}
 2 \\
-10 \\
-7 \\
+2 \\
+1 \\
 -4
 \end{array}\right] , \left[\begin{array}{c}
--2 \\
--3 \\
-1 \\
--3
+-6 \\
+8 \\
+2 \\
+20
 \end{array}\right] \right\} .\]</p></p>
     <ol type="a">
       <li> Explain how to find a basis of \(W\).</li>
@@ -3102,24 +3713,42 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccccc}
+0 &amp; -1 &amp; -1 &amp; 1 &amp; 2 &amp; -6 \\
+1 &amp; -1 &amp; 1 &amp; -3 &amp; 2 &amp; 8 \\
+1 &amp; 2 &amp; -2 &amp; 0 &amp; 1 &amp; 2 \\
+2 &amp; 0 &amp; 2 &amp; -6 &amp; -4 &amp; 20
+\end{array}\right] = \left[\begin{array}{cccccc}
+1 &amp; 0 &amp; 0 &amp; -2 &amp; 0 &amp; 6 \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; 2 \\
+0 &amp; 0 &amp; 1 &amp; -1 &amp; 0 &amp; 4 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
-2 \\
--2 \\
+0 \\
 1 \\
+1 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
+-1 \\
+-1 \\
+2 \\
+0
+\end{array}\right] , \left[\begin{array}{c}
+-1 \\
+1 \\
+-2 \\
 2
 \end{array}\right] , \left[\begin{array}{c}
 2 \\
 2 \\
-3 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
--2 \\
--3 \\
 1 \\
--3
+-4
 \end{array}\right] \right\} \).</li>
-      <li>The dimension of \(W\) is \( 3 \).</li>
+      <li>The dimension of \(W\) is \( 4 \).</li>
     </ol>
   </div>
 </div>
@@ -3128,35 +3757,30 @@
 <h4>Example 49</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
--3 \\
-1 \\
--3 \\
--3
+2 \\
+-2 \\
+-2 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
+-1 \\
+-1 \\
+-4 \\
+-2
+\end{array}\right] , \left[\begin{array}{c}
+3 \\
+-5 \\
+-8 \\
+2
 \end{array}\right] , \left[\begin{array}{c}
 -2 \\
+-1 \\
+2 \\
+-2
+\end{array}\right] , \left[\begin{array}{c}
+-1 \\
 1 \\
-0 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
--3 \\
 -4 \\
-3 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
-2 \\
--3 \\
--3 \\
--3
-\end{array}\right] , \left[\begin{array}{c}
-2 \\
--14 \\
-3 \\
--1
-\end{array}\right] , \left[\begin{array}{c}
-20 \\
-4 \\
--6 \\
-0
+3
 \end{array}\right] \right\} .\]</p></p>
     <ol type="a">
       <li> Explain how to find a basis of \(W\).</li>
@@ -3167,27 +3791,40 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccccc}
+2 &amp; -1 &amp; 3 &amp; -2 &amp; -1 \\
+-2 &amp; -1 &amp; -5 &amp; -1 &amp; 1 \\
+-2 &amp; -4 &amp; -8 &amp; 2 &amp; -4 \\
+2 &amp; -2 &amp; 2 &amp; -2 &amp; 3
+\end{array}\right] = \left[\begin{array}{ccccc}
+1 &amp; 0 &amp; 2 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
--3 \\
-1 \\
--3 \\
--3
+2 \\
+-2 \\
+-2 \\
+2
+\end{array}\right] , \left[\begin{array}{c}
+-1 \\
+-1 \\
+-4 \\
+-2
 \end{array}\right] , \left[\begin{array}{c}
 -2 \\
-1 \\
-0 \\
-0
-\end{array}\right] , \left[\begin{array}{c}
--3 \\
--4 \\
-3 \\
-1
-\end{array}\right] , \left[\begin{array}{c}
+-1 \\
 2 \\
--3 \\
--3 \\
--3
+-2
+\end{array}\right] , \left[\begin{array}{c}
+-1 \\
+1 \\
+-4 \\
+3
 \end{array}\right] \right\} \).</li>
       <li>The dimension of \(W\) is \( 4 \).</li>
     </ol>
@@ -3198,25 +3835,30 @@
 <h4>Example 50</h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the subspace <p>\[W=\operatorname{span}  \left\{ \left[\begin{array}{c}
-0 \\
-1 \\
+-3 \\
+3 \\
 -3 \\
 0
 \end{array}\right] , \left[\begin{array}{c}
--3 \\
+-2 \\
 0 \\
 -3 \\
--1
+2
 \end{array}\right] , \left[\begin{array}{c}
--4 \\
-2 \\
--4 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
-0 \\
 3 \\
--2
+3 \\
+3 \\
+3
+\end{array}\right] , \left[\begin{array}{c}
+-2 \\
+12 \\
+-3 \\
+8
+\end{array}\right] , \left[\begin{array}{c}
+10 \\
+-48 \\
+15 \\
+-34
 \end{array}\right] \right\} .\]</p></p>
     <ol type="a">
       <li> Explain how to find a basis of \(W\).</li>
@@ -3227,29 +3869,37 @@
     <p>
       <b>Answer:</b>
     </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccccc}
+-3 &amp; -2 &amp; 3 &amp; -2 &amp; 10 \\
+3 &amp; 0 &amp; 3 &amp; 12 &amp; -48 \\
+-3 &amp; -3 &amp; 3 &amp; -3 &amp; 15 \\
+0 &amp; 2 &amp; 3 &amp; 8 &amp; -34
+\end{array}\right] = \left[\begin{array}{ccccc}
+1 &amp; 0 &amp; 0 &amp; 2 &amp; -8 \\
+0 &amp; 1 &amp; 0 &amp; 1 &amp; -5 \\
+0 &amp; 0 &amp; 1 &amp; 2 &amp; -8 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
     <ol type="a">
       <li>A basis of \(W\) is \( \left\{ \left[\begin{array}{c}
-0 \\
-1 \\
+-3 \\
+3 \\
 -3 \\
 0
 \end{array}\right] , \left[\begin{array}{c}
--3 \\
+-2 \\
 0 \\
 -3 \\
--1
+2
 \end{array}\right] , \left[\begin{array}{c}
--4 \\
-2 \\
--4 \\
--4
-\end{array}\right] , \left[\begin{array}{c}
--1 \\
-0 \\
 3 \\
--2
+3 \\
+3 \\
+3
 \end{array}\right] \right\} \).</li>
-      <li>The dimension of \(W\) is \( 4 \).</li>
+      <li>The dimension of \(W\) is \( 3 \).</li>
     </ol>
   </div>
 </div>
