@@ -9,8 +9,8 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <!-- custom css -->
-  <link rel="stylesheet" href="/stylesheet.css">
-  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/assets/stylesheet.css">
+  <link rel="manifest" href="/assets/manifest.json">
   <title>☑️It - E1 - Linear systems, vector equations, and augmented matrices | Linear Algebra for Team-Based Inquiry Learning</title>
 </head>
 <body>
@@ -137,15 +137,31 @@
 <hr/>
 <h4 id='ex-1' class='exercise-heading'>Example 1 <small><a href='#ex-1'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p> Consider the augmented matrix </p>
-    <p>\[ \left[\begin{array}{cccc|c}
--2 &amp; 1 &amp; -8 &amp; -5 &amp; 1 \\
-1 &amp; -1 &amp; 5 &amp; 3 &amp; 0 \\
-0 &amp; -3 &amp; 6 &amp; 3 &amp; 3
+    <p>Consider the vector equation.</p>
+    <p>\[ x_{1} \left[\begin{array}{c}
+1 \\
+0 \\
+0
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+0 \\
+1 \\
+2
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+2 \\
+0 \\
+1
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+6 \\
+-2 \\
+-2
+\end{array}\right] = \left[\begin{array}{c}
+-6 \\
+-3 \\
+-8
 \end{array}\right] \]</p>
     <ol type="a">
-      <li> Write a system of scalar equations corresponding to this augmented matrix. </li>
-      <li> Write a vector equation corresponding to this augmented matrix. </li>
+      <li> Write a system of scalar equations corresponding to this vector equation. </li>
+      <li> Write an augmented matrix corresponding to this vector equation. </li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -154,29 +170,13 @@
     </p>
     <ol type="a">
       <li>
-                \begin{alignat*}{5} -2 \, x_{1} &amp;+&amp; x_{2} &amp;-&amp; 8 \, x_{3} &amp;-&amp; 5 \, x_{4} &amp;=&amp; 1 \\x_{1} &amp;-&amp; x_{2} &amp;+&amp; 5 \, x_{3} &amp;+&amp; 3 \, x_{4} &amp;=&amp; 0 \\ &amp;-&amp; 3 \, x_{2} &amp;+&amp; 6 \, x_{3} &amp;+&amp; 3 \, x_{4} &amp;=&amp; 3 \\ \end{alignat*}
+                \begin{alignat*}{5} x &amp; &amp;  &amp;+&amp; 2 \, z &amp;+&amp; 6 \, {w} &amp;=&amp; -6 \\ &amp; &amp; y &amp; &amp;  &amp;-&amp; 2 \, {w} &amp;=&amp; -3 \\ &amp; &amp; 2 \, y &amp;+&amp; z &amp;-&amp; 2 \, {w} &amp;=&amp; -8 \\ \end{alignat*}
             </li>
       <li>
-        <p>\[ x_{1} \left[\begin{array}{c}
--2 \\
-1 \\
-0
-\end{array}\right] + x_{2} \left[\begin{array}{c}
-1 \\
--1 \\
--3
-\end{array}\right] + x_{3} \left[\begin{array}{c}
--8 \\
-5 \\
-6
-\end{array}\right] + x_{4} \left[\begin{array}{c}
--5 \\
-3 \\
-3
-\end{array}\right] = \left[\begin{array}{c}
-1 \\
-0 \\
-3
+        <p>\[ \left[\begin{array}{cccc|c}
+1 &amp; 0 &amp; 2 &amp; 6 &amp; -6 \\
+0 &amp; 1 &amp; 0 &amp; -2 &amp; -3 \\
+0 &amp; 2 &amp; 1 &amp; -2 &amp; -8
 \end{array}\right] \]</p>
       </li>
     </ol>
@@ -187,7 +187,7 @@
 <h4 id='ex-2' class='exercise-heading'>Example 2 <small><a href='#ex-2'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
     <p> Consider the system of equations 
-                \begin{alignat*}{4} x_{1} &amp;+&amp; x_{2} &amp;-&amp; x_{3} &amp;=&amp; -2 \\-x_{1} &amp;+&amp; 4 \, x_{2} &amp;+&amp; 6 \, x_{3} &amp;=&amp; -8 \\ &amp;-&amp; 4 \, x_{2} &amp;-&amp; 4 \, x_{3} &amp;=&amp; 8 \\ &amp; &amp; 2 \, x_{2} &amp;+&amp; 2 \, x_{3} &amp;=&amp; -4 \\ \end{alignat*}
+                \begin{alignat*}{4} x &amp; &amp;  &amp;-&amp; 3 \, z &amp;=&amp; 4 \\ &amp; &amp; y &amp;-&amp; 3 \, z &amp;=&amp; -2 \\2 \, x &amp;+&amp; y &amp;-&amp; 8 \, z &amp;=&amp; 6 \\x &amp;-&amp; y &amp;-&amp; 3 \, z &amp;=&amp; 6 \\ \end{alignat*}
             </p>
     <ol type="a">
       <li> Write an augmented matrix corresponding to this system. </li>
@@ -201,33 +201,33 @@
     <ol type="a">
       <li>
         <p>\[ \left[\begin{array}{ccc|c}
-1 &amp; 1 &amp; -1 &amp; -2 \\
--1 &amp; 4 &amp; 6 &amp; -8 \\
-0 &amp; -4 &amp; -4 &amp; 8 \\
-0 &amp; 2 &amp; 2 &amp; -4
+1 &amp; 0 &amp; -3 &amp; 4 \\
+0 &amp; 1 &amp; -3 &amp; -2 \\
+2 &amp; 1 &amp; -8 &amp; 6 \\
+1 &amp; -1 &amp; -3 &amp; 6
 \end{array}\right] \]</p>
       </li>
       <li>
         <p>\[ x_{1} \left[\begin{array}{c}
 1 \\
--1 \\
 0 \\
-0
+2 \\
+1
 \end{array}\right] + x_{2} \left[\begin{array}{c}
+0 \\
 1 \\
-4 \\
--4 \\
-2
+1 \\
+-1
 \end{array}\right] + x_{3} \left[\begin{array}{c}
--1 \\
-6 \\
--4 \\
-2
-\end{array}\right] = \left[\begin{array}{c}
--2 \\
+-3 \\
+-3 \\
 -8 \\
-8 \\
--4
+-3
+\end{array}\right] = \left[\begin{array}{c}
+4 \\
+-2 \\
+6 \\
+6
 \end{array}\right] \]</p>
       </li>
     </ol>
@@ -239,25 +239,25 @@
   <div class="exercise-statement">
     <p>Consider the vector equation.</p>
     <p>\[ x_{1} \left[\begin{array}{c}
-0 \\
 1 \\
-1
+0 \\
+-2
 \end{array}\right] + x_{2} \left[\begin{array}{c}
 0 \\
-0 \\
--1
+1 \\
+0
 \end{array}\right] + x_{3} \left[\begin{array}{c}
-0 \\
-3 \\
-6
+2 \\
+4 \\
+-4
 \end{array}\right] + x_{4} \left[\begin{array}{c}
--1 \\
-3 \\
-3
-\end{array}\right] = \left[\begin{array}{c}
 -3 \\
-7 \\
+1 \\
 6
+\end{array}\right] = \left[\begin{array}{c}
+4 \\
+-3 \\
+-8
 \end{array}\right] \]</p>
     <ol type="a">
       <li> Write a system of scalar equations corresponding to this vector equation. </li>
@@ -270,13 +270,13 @@
     </p>
     <ol type="a">
       <li>
-                \begin{alignat*}{5}  &amp; &amp;  &amp; &amp;  &amp;-&amp; {w} &amp;=&amp; -3 \\x &amp; &amp;  &amp;+&amp; 3 \, z &amp;+&amp; 3 \, {w} &amp;=&amp; 7 \\x &amp;-&amp; y &amp;+&amp; 6 \, z &amp;+&amp; 3 \, {w} &amp;=&amp; 6 \\ \end{alignat*}
+                \begin{alignat*}{5} x_{1} &amp; &amp;  &amp;+&amp; 2 \, x_{3} &amp;-&amp; 3 \, x_{4} &amp;=&amp; 4 \\ &amp; &amp; x_{2} &amp;+&amp; 4 \, x_{3} &amp;+&amp; x_{4} &amp;=&amp; -3 \\-2 \, x_{1} &amp; &amp;  &amp;-&amp; 4 \, x_{3} &amp;+&amp; 6 \, x_{4} &amp;=&amp; -8 \\ \end{alignat*}
             </li>
       <li>
         <p>\[ \left[\begin{array}{cccc|c}
-0 &amp; 0 &amp; 0 &amp; -1 &amp; -3 \\
-1 &amp; 0 &amp; 3 &amp; 3 &amp; 7 \\
-1 &amp; -1 &amp; 6 &amp; 3 &amp; 6
+1 &amp; 0 &amp; 2 &amp; -3 &amp; 4 \\
+0 &amp; 1 &amp; 4 &amp; 1 &amp; -3 \\
+-2 &amp; 0 &amp; -4 &amp; 6 &amp; -8
 \end{array}\right] \]</p>
       </li>
     </ol>
@@ -289,24 +289,24 @@
     <p>Consider the vector equation.</p>
     <p>\[ x_{1} \left[\begin{array}{c}
 1 \\
-0 \\
-1 \\
--1
-\end{array}\right] + x_{2} \left[\begin{array}{c}
-0 \\
-1 \\
-0 \\
--3
-\end{array}\right] + x_{3} \left[\begin{array}{c}
-1 \\
-2 \\
-2 \\
--6
-\end{array}\right] = \left[\begin{array}{c}
 -1 \\
--3 \\
--3 \\
-8
+-1 \\
+0
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+-1 \\
+-4 \\
+-1 \\
+-2
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+-5 \\
+-5 \\
+1 \\
+-4
+\end{array}\right] = \left[\begin{array}{c}
+3 \\
+2 \\
+-1 \\
+2
 \end{array}\right] \]</p>
     <ol type="a">
       <li> Write a system of scalar equations corresponding to this vector equation. </li>
@@ -319,14 +319,14 @@
     </p>
     <ol type="a">
       <li>
-                \begin{alignat*}{4} x_{1} &amp; &amp;  &amp;+&amp; x_{3} &amp;=&amp; -1 \\ &amp; &amp; x_{2} &amp;+&amp; 2 \, x_{3} &amp;=&amp; -3 \\x_{1} &amp; &amp;  &amp;+&amp; 2 \, x_{3} &amp;=&amp; -3 \\-x_{1} &amp;-&amp; 3 \, x_{2} &amp;-&amp; 6 \, x_{3} &amp;=&amp; 8 \\ \end{alignat*}
+                \begin{alignat*}{4} x &amp;-&amp; y &amp;-&amp; 5 \, z &amp;=&amp; 3 \\-x &amp;-&amp; 4 \, y &amp;-&amp; 5 \, z &amp;=&amp; 2 \\-x &amp;-&amp; y &amp;+&amp; z &amp;=&amp; -1 \\ &amp;-&amp; 2 \, y &amp;-&amp; 4 \, z &amp;=&amp; 2 \\ \end{alignat*}
             </li>
       <li>
         <p>\[ \left[\begin{array}{ccc|c}
-1 &amp; 0 &amp; 1 &amp; -1 \\
-0 &amp; 1 &amp; 2 &amp; -3 \\
-1 &amp; 0 &amp; 2 &amp; -3 \\
--1 &amp; -3 &amp; -6 &amp; 8
+1 &amp; -1 &amp; -5 &amp; 3 \\
+-1 &amp; -4 &amp; -5 &amp; 2 \\
+-1 &amp; -1 &amp; 1 &amp; -1 \\
+0 &amp; -2 &amp; -4 &amp; 2
 \end{array}\right] \]</p>
       </li>
     </ol>
@@ -336,12 +336,15 @@
 <hr/>
 <h4 id='ex-5' class='exercise-heading'>Example 5 <small><a href='#ex-5'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p> Consider the system of equations 
-                \begin{alignat*}{4} x_{1} &amp;+&amp; 3 \, x_{2} &amp;-&amp; 3 \, x_{3} &amp;=&amp; 3 \\2 \, x_{1} &amp;+&amp; 7 \, x_{2} &amp;-&amp; 7 \, x_{3} &amp;=&amp; 8 \\-3 \, x_{1} &amp;-&amp; 6 \, x_{2} &amp;+&amp; 6 \, x_{3} &amp;=&amp; -3 \\-4 \, x_{1} &amp;-&amp; 8 \, x_{2} &amp;+&amp; 8 \, x_{3} &amp;=&amp; -4 \\ \end{alignat*}
-            </p>
+    <p> Consider the augmented matrix </p>
+    <p>\[ \left[\begin{array}{cccc|c}
+1 &amp; 0 &amp; 3 &amp; -2 &amp; -4 \\
+1 &amp; 1 &amp; 6 &amp; 0 &amp; -4 \\
+-1 &amp; 0 &amp; -3 &amp; 3 &amp; 5
+\end{array}\right] \]</p>
     <ol type="a">
-      <li> Write an augmented matrix corresponding to this system. </li>
-      <li> Write a vector equation corresponding to this system. </li>
+      <li> Write a system of scalar equations corresponding to this augmented matrix. </li>
+      <li> Write a vector equation corresponding to this augmented matrix. </li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -350,34 +353,29 @@
     </p>
     <ol type="a">
       <li>
-        <p>\[ \left[\begin{array}{ccc|c}
-1 &amp; 3 &amp; -3 &amp; 3 \\
-2 &amp; 7 &amp; -7 &amp; 8 \\
--3 &amp; -6 &amp; 6 &amp; -3 \\
--4 &amp; -8 &amp; 8 &amp; -4
-\end{array}\right] \]</p>
-      </li>
+                \begin{alignat*}{5} x_{1} &amp; &amp;  &amp;+&amp; 3 \, x_{3} &amp;-&amp; 2 \, x_{4} &amp;=&amp; -4 \\x_{1} &amp;+&amp; x_{2} &amp;+&amp; 6 \, x_{3} &amp; &amp;  &amp;=&amp; -4 \\-x_{1} &amp; &amp;  &amp;-&amp; 3 \, x_{3} &amp;+&amp; 3 \, x_{4} &amp;=&amp; 5 \\ \end{alignat*}
+            </li>
       <li>
         <p>\[ x_{1} \left[\begin{array}{c}
 1 \\
-2 \\
--3 \\
--4
+1 \\
+-1
 \end{array}\right] + x_{2} \left[\begin{array}{c}
-3 \\
-7 \\
--6 \\
--8
+0 \\
+1 \\
+0
 \end{array}\right] + x_{3} \left[\begin{array}{c}
--3 \\
--7 \\
-6 \\
-8
-\end{array}\right] = \left[\begin{array}{c}
 3 \\
-8 \\
--3 \\
--4
+6 \\
+-3
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+-2 \\
+0 \\
+3
+\end{array}\right] = \left[\begin{array}{c}
+-4 \\
+-4 \\
+5
 \end{array}\right] \]</p>
       </li>
     </ol>
@@ -387,12 +385,16 @@
 <hr/>
 <h4 id='ex-6' class='exercise-heading'>Example 6 <small><a href='#ex-6'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p> Consider the system of equations 
-                \begin{alignat*}{5} 2 \, x &amp;-&amp; 6 \, y &amp;-&amp; z &amp;+&amp; 5 \, {w} &amp;=&amp; -3 \\-x &amp;+&amp; 3 \, y &amp;+&amp; z &amp; &amp;  &amp;=&amp; -2 \\x &amp;-&amp; 3 \, y &amp; &amp;  &amp;+&amp; 6 \, {w} &amp;=&amp; -6 \\ \end{alignat*}
-            </p>
+    <p> Consider the augmented matrix </p>
+    <p>\[ \left[\begin{array}{ccc|c}
+-2 &amp; 3 &amp; -1 &amp; -7 \\
+1 &amp; -2 &amp; 0 &amp; 4 \\
+-2 &amp; 1 &amp; -2 &amp; -4 \\
+2 &amp; -6 &amp; -7 &amp; 5
+\end{array}\right] \]</p>
     <ol type="a">
-      <li> Write an augmented matrix corresponding to this system. </li>
-      <li> Write a vector equation corresponding to this system. </li>
+      <li> Write a system of scalar equations corresponding to this augmented matrix. </li>
+      <li> Write a vector equation corresponding to this augmented matrix. </li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -401,33 +403,29 @@
     </p>
     <ol type="a">
       <li>
-        <p>\[ \left[\begin{array}{cccc|c}
-2 &amp; -6 &amp; -1 &amp; 5 &amp; -3 \\
--1 &amp; 3 &amp; 1 &amp; 0 &amp; -2 \\
-1 &amp; -3 &amp; 0 &amp; 6 &amp; -6
-\end{array}\right] \]</p>
-      </li>
+                \begin{alignat*}{4} -2 \, x_{1} &amp;+&amp; 3 \, x_{2} &amp;-&amp; x_{3} &amp;=&amp; -7 \\x_{1} &amp;-&amp; 2 \, x_{2} &amp; &amp;  &amp;=&amp; 4 \\-2 \, x_{1} &amp;+&amp; x_{2} &amp;-&amp; 2 \, x_{3} &amp;=&amp; -4 \\2 \, x_{1} &amp;-&amp; 6 \, x_{2} &amp;-&amp; 7 \, x_{3} &amp;=&amp; 5 \\ \end{alignat*}
+            </li>
       <li>
         <p>\[ x_{1} \left[\begin{array}{c}
-2 \\
--1 \\
-1
+-2 \\
+1 \\
+-2 \\
+2
 \end{array}\right] + x_{2} \left[\begin{array}{c}
--6 \\
 3 \\
--3
+-2 \\
+1 \\
+-6
 \end{array}\right] + x_{3} \left[\begin{array}{c}
 -1 \\
-1 \\
-0
-\end{array}\right] + x_{4} \left[\begin{array}{c}
-5 \\
 0 \\
-6
-\end{array}\right] = \left[\begin{array}{c}
--3 \\
 -2 \\
--6
+-7
+\end{array}\right] = \left[\begin{array}{c}
+-7 \\
+4 \\
+-4 \\
+5
 \end{array}\right] \]</p>
       </li>
     </ol>
@@ -439,25 +437,25 @@
   <div class="exercise-statement">
     <p>Consider the vector equation.</p>
     <p>\[ x_{1} \left[\begin{array}{c}
+1 \\
+3 \\
 0 \\
--1 \\
 0
 \end{array}\right] + x_{2} \left[\begin{array}{c}
+3 \\
 1 \\
-1 \\
--3
-\end{array}\right] + x_{3} \left[\begin{array}{c}
--2 \\
--5 \\
-6
-\end{array}\right] + x_{4} \left[\begin{array}{c}
 -1 \\
+-2
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+-5 \\
+-6 \\
 1 \\
-3
+0
 \end{array}\right] = \left[\begin{array}{c}
+3 \\
+-6 \\
 -2 \\
--2 \\
-6
+-6
 \end{array}\right] \]</p>
     <ol type="a">
       <li> Write a system of scalar equations corresponding to this vector equation. </li>
@@ -470,13 +468,14 @@
     </p>
     <ol type="a">
       <li>
-                \begin{alignat*}{5}  &amp; &amp; x_{2} &amp;-&amp; 2 \, x_{3} &amp;-&amp; x_{4} &amp;=&amp; -2 \\-x_{1} &amp;+&amp; x_{2} &amp;-&amp; 5 \, x_{3} &amp;+&amp; x_{4} &amp;=&amp; -2 \\ &amp;-&amp; 3 \, x_{2} &amp;+&amp; 6 \, x_{3} &amp;+&amp; 3 \, x_{4} &amp;=&amp; 6 \\ \end{alignat*}
+                \begin{alignat*}{4} x_{1} &amp;+&amp; 3 \, x_{2} &amp;-&amp; 5 \, x_{3} &amp;=&amp; 3 \\3 \, x_{1} &amp;+&amp; x_{2} &amp;-&amp; 6 \, x_{3} &amp;=&amp; -6 \\ &amp;-&amp; x_{2} &amp;+&amp; x_{3} &amp;=&amp; -2 \\ &amp;-&amp; 2 \, x_{2} &amp; &amp;  &amp;=&amp; -6 \\ \end{alignat*}
             </li>
       <li>
-        <p>\[ \left[\begin{array}{cccc|c}
-0 &amp; 1 &amp; -2 &amp; -1 &amp; -2 \\
--1 &amp; 1 &amp; -5 &amp; 1 &amp; -2 \\
-0 &amp; -3 &amp; 6 &amp; 3 &amp; 6
+        <p>\[ \left[\begin{array}{ccc|c}
+1 &amp; 3 &amp; -5 &amp; 3 \\
+3 &amp; 1 &amp; -6 &amp; -6 \\
+0 &amp; -1 &amp; 1 &amp; -2 \\
+0 &amp; -2 &amp; 0 &amp; -6
 \end{array}\right] \]</p>
       </li>
     </ol>
@@ -486,12 +485,60 @@
 <hr/>
 <h4 id='ex-8' class='exercise-heading'>Example 8 <small><a href='#ex-8'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
+    <p>Consider the vector equation.</p>
+    <p>\[ x_{1} \left[\begin{array}{c}
+4 \\
+3 \\
+2
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+-3 \\
+-2 \\
+-3
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+-2 \\
+-1 \\
+-3
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+-8 \\
+-7 \\
+0
+\end{array}\right] = \left[\begin{array}{c}
+1 \\
+-1 \\
+8
+\end{array}\right] \]</p>
+    <ol type="a">
+      <li> Write a system of scalar equations corresponding to this vector equation. </li>
+      <li> Write an augmented matrix corresponding to this vector equation. </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+                \begin{alignat*}{5} 4 \, x &amp;-&amp; 3 \, y &amp;-&amp; 2 \, z &amp;-&amp; 8 \, {w} &amp;=&amp; 1 \\3 \, x &amp;-&amp; 2 \, y &amp;-&amp; z &amp;-&amp; 7 \, {w} &amp;=&amp; -1 \\2 \, x &amp;-&amp; 3 \, y &amp;-&amp; 3 \, z &amp; &amp;  &amp;=&amp; 8 \\ \end{alignat*}
+            </li>
+      <li>
+        <p>\[ \left[\begin{array}{cccc|c}
+4 &amp; -3 &amp; -2 &amp; -8 &amp; 1 \\
+3 &amp; -2 &amp; -1 &amp; -7 &amp; -1 \\
+2 &amp; -3 &amp; -3 &amp; 0 &amp; 8
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-9' class='exercise-heading'>Example 9 <small><a href='#ex-9'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
     <p> Consider the augmented matrix </p>
-    <p>\[ \left[\begin{array}{ccc|c}
--3 &amp; 5 &amp; 6 &amp; 8 \\
--2 &amp; 3 &amp; 4 &amp; 5 \\
--2 &amp; 4 &amp; 5 &amp; 6 \\
-0 &amp; -3 &amp; -5 &amp; -3
+    <p>\[ \left[\begin{array}{cccc|c}
+1 &amp; -2 &amp; 0 &amp; 3 &amp; 3 \\
+0 &amp; 1 &amp; 2 &amp; 2 &amp; -5 \\
+1 &amp; -2 &amp; 1 &amp; 5 &amp; 1
 \end{array}\right] \]</p>
     <ol type="a">
       <li> Write a system of scalar equations corresponding to this augmented matrix. </li>
@@ -504,29 +551,29 @@
     </p>
     <ol type="a">
       <li>
-                \begin{alignat*}{4} -3 \, x_{1} &amp;+&amp; 5 \, x_{2} &amp;+&amp; 6 \, x_{3} &amp;=&amp; 8 \\-2 \, x_{1} &amp;+&amp; 3 \, x_{2} &amp;+&amp; 4 \, x_{3} &amp;=&amp; 5 \\-2 \, x_{1} &amp;+&amp; 4 \, x_{2} &amp;+&amp; 5 \, x_{3} &amp;=&amp; 6 \\ &amp;-&amp; 3 \, x_{2} &amp;-&amp; 5 \, x_{3} &amp;=&amp; -3 \\ \end{alignat*}
+                \begin{alignat*}{5} x &amp;-&amp; 2 \, y &amp; &amp;  &amp;+&amp; 3 \, {w} &amp;=&amp; 3 \\ &amp; &amp; y &amp;+&amp; 2 \, z &amp;+&amp; 2 \, {w} &amp;=&amp; -5 \\x &amp;-&amp; 2 \, y &amp;+&amp; z &amp;+&amp; 5 \, {w} &amp;=&amp; 1 \\ \end{alignat*}
             </li>
       <li>
         <p>\[ x_{1} \left[\begin{array}{c}
--3 \\
--2 \\
--2 \\
-0
+1 \\
+0 \\
+1
 \end{array}\right] + x_{2} \left[\begin{array}{c}
-5 \\
-3 \\
-4 \\
--3
+-2 \\
+1 \\
+-2
 \end{array}\right] + x_{3} \left[\begin{array}{c}
-6 \\
-4 \\
-5 \\
--5
+0 \\
+2 \\
+1
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+3 \\
+2 \\
+5
 \end{array}\right] = \left[\begin{array}{c}
-8 \\
-5 \\
-6 \\
--3
+3 \\
+-5 \\
+1
 \end{array}\right] \]</p>
       </li>
     </ol>
@@ -534,10 +581,10 @@
 </div>
 
 <hr/>
-<h4 id='ex-9' class='exercise-heading'>Example 9 <small><a href='#ex-9'>🔗</a></small></h4><div class="exercise">
+<h4 id='ex-10' class='exercise-heading'>Example 10 <small><a href='#ex-10'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
     <p> Consider the system of equations 
-                \begin{alignat*}{5} x &amp;+&amp; y &amp;+&amp; z &amp;-&amp; 5 \, {w} &amp;=&amp; 1 \\-2 \, x &amp;-&amp; y &amp;+&amp; z &amp;+&amp; 8 \, {w} &amp;=&amp; -2 \\ &amp; &amp; 2 \, y &amp;+&amp; 6 \, z &amp;-&amp; 4 \, {w} &amp;=&amp; 0 \\ \end{alignat*}
+                \begin{alignat*}{5} x &amp;-&amp; y &amp;+&amp; 3 \, z &amp;-&amp; 4 \, {w} &amp;=&amp; 0 \\ &amp; &amp; y &amp;-&amp; 4 \, z &amp;+&amp; 2 \, {w} &amp;=&amp; -1 \\ &amp;-&amp; y &amp;+&amp; 4 \, z &amp;-&amp; 2 \, {w} &amp;=&amp; 1 \\ \end{alignat*}
             </p>
     <ol type="a">
       <li> Write an augmented matrix corresponding to this system. </li>
@@ -551,81 +598,32 @@
     <ol type="a">
       <li>
         <p>\[ \left[\begin{array}{cccc|c}
-1 &amp; 1 &amp; 1 &amp; -5 &amp; 1 \\
--2 &amp; -1 &amp; 1 &amp; 8 &amp; -2 \\
-0 &amp; 2 &amp; 6 &amp; -4 &amp; 0
+1 &amp; -1 &amp; 3 &amp; -4 &amp; 0 \\
+0 &amp; 1 &amp; -4 &amp; 2 &amp; -1 \\
+0 &amp; -1 &amp; 4 &amp; -2 &amp; 1
 \end{array}\right] \]</p>
       </li>
       <li>
         <p>\[ x_{1} \left[\begin{array}{c}
 1 \\
--2 \\
+0 \\
 0
 \end{array}\right] + x_{2} \left[\begin{array}{c}
-1 \\
 -1 \\
-2
+1 \\
+-1
 \end{array}\right] + x_{3} \left[\begin{array}{c}
-1 \\
-1 \\
-6
+3 \\
+-4 \\
+4
 \end{array}\right] + x_{4} \left[\begin{array}{c}
--5 \\
-8 \\
--4
-\end{array}\right] = \left[\begin{array}{c}
-1 \\
--2 \\
-0
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-10' class='exercise-heading'>Example 10 <small><a href='#ex-10'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Consider the vector equation.</p>
-    <p>\[ x_{1} \left[\begin{array}{c}
+-4 \\
 2 \\
-1 \\
--2
-\end{array}\right] + x_{2} \left[\begin{array}{c}
-5 \\
-3 \\
--2
-\end{array}\right] + x_{3} \left[\begin{array}{c}
-4 \\
-3 \\
-3
-\end{array}\right] + x_{4} \left[\begin{array}{c}
--1 \\
--1 \\
 -2
 \end{array}\right] = \left[\begin{array}{c}
--7 \\
--5 \\
--3
-\end{array}\right] \]</p>
-    <ol type="a">
-      <li> Write a system of scalar equations corresponding to this vector equation. </li>
-      <li> Write an augmented matrix corresponding to this vector equation. </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-                \begin{alignat*}{5} 2 \, x_{1} &amp;+&amp; 5 \, x_{2} &amp;+&amp; 4 \, x_{3} &amp;-&amp; x_{4} &amp;=&amp; -7 \\x_{1} &amp;+&amp; 3 \, x_{2} &amp;+&amp; 3 \, x_{3} &amp;-&amp; x_{4} &amp;=&amp; -5 \\-2 \, x_{1} &amp;-&amp; 2 \, x_{2} &amp;+&amp; 3 \, x_{3} &amp;-&amp; 2 \, x_{4} &amp;=&amp; -3 \\ \end{alignat*}
-            </li>
-      <li>
-        <p>\[ \left[\begin{array}{cccc|c}
-2 &amp; 5 &amp; 4 &amp; -1 &amp; -7 \\
-1 &amp; 3 &amp; 3 &amp; -1 &amp; -5 \\
--2 &amp; -2 &amp; 3 &amp; -2 &amp; -3
+0 \\
+-1 \\
+1
 \end{array}\right] \]</p>
       </li>
     </ol>
@@ -637,25 +635,25 @@
   <div class="exercise-statement">
     <p>Consider the vector equation.</p>
     <p>\[ x_{1} \left[\begin{array}{c}
--5 \\
--3 \\
--3 \\
--2
-\end{array}\right] + x_{2} \left[\begin{array}{c}
 2 \\
 1 \\
-4 \\
--3
+4
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+3 \\
+2 \\
+4
 \end{array}\right] + x_{3} \left[\begin{array}{c}
 -3 \\
--2 \\
-1 \\
--5
+-1 \\
+-8
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+7 \\
+5 \\
+8
 \end{array}\right] = \left[\begin{array}{c}
--8 \\
--5 \\
--2 \\
--7
+4 \\
+3 \\
+4
 \end{array}\right] \]</p>
     <ol type="a">
       <li> Write a system of scalar equations corresponding to this vector equation. </li>
@@ -668,14 +666,13 @@
     </p>
     <ol type="a">
       <li>
-                \begin{alignat*}{4} -5 \, x_{1} &amp;+&amp; 2 \, x_{2} &amp;-&amp; 3 \, x_{3} &amp;=&amp; -8 \\-3 \, x_{1} &amp;+&amp; x_{2} &amp;-&amp; 2 \, x_{3} &amp;=&amp; -5 \\-3 \, x_{1} &amp;+&amp; 4 \, x_{2} &amp;+&amp; x_{3} &amp;=&amp; -2 \\-2 \, x_{1} &amp;-&amp; 3 \, x_{2} &amp;-&amp; 5 \, x_{3} &amp;=&amp; -7 \\ \end{alignat*}
+                \begin{alignat*}{5} 2 \, x &amp;+&amp; 3 \, y &amp;-&amp; 3 \, z &amp;+&amp; 7 \, {w} &amp;=&amp; 4 \\x &amp;+&amp; 2 \, y &amp;-&amp; z &amp;+&amp; 5 \, {w} &amp;=&amp; 3 \\4 \, x &amp;+&amp; 4 \, y &amp;-&amp; 8 \, z &amp;+&amp; 8 \, {w} &amp;=&amp; 4 \\ \end{alignat*}
             </li>
       <li>
-        <p>\[ \left[\begin{array}{ccc|c}
--5 &amp; 2 &amp; -3 &amp; -8 \\
--3 &amp; 1 &amp; -2 &amp; -5 \\
--3 &amp; 4 &amp; 1 &amp; -2 \\
--2 &amp; -3 &amp; -5 &amp; -7
+        <p>\[ \left[\begin{array}{cccc|c}
+2 &amp; 3 &amp; -3 &amp; 7 &amp; 4 \\
+1 &amp; 2 &amp; -1 &amp; 5 &amp; 3 \\
+4 &amp; 4 &amp; -8 &amp; 8 &amp; 4
 \end{array}\right] \]</p>
       </li>
     </ol>
@@ -687,9 +684,9 @@
   <div class="exercise-statement">
     <p> Consider the augmented matrix </p>
     <p>\[ \left[\begin{array}{cccc|c}
--1 &amp; 5 &amp; 0 &amp; 0 &amp; 0 \\
--1 &amp; 5 &amp; 1 &amp; -3 &amp; 1 \\
--1 &amp; 5 &amp; 0 &amp; 0 &amp; 0
+1 &amp; 0 &amp; -2 &amp; 1 &amp; 1 \\
+3 &amp; 1 &amp; -8 &amp; 0 &amp; 2 \\
+2 &amp; 1 &amp; -6 &amp; -1 &amp; 1
 \end{array}\right] \]</p>
     <ol type="a">
       <li> Write a system of scalar equations corresponding to this augmented matrix. </li>
@@ -702,29 +699,29 @@
     </p>
     <ol type="a">
       <li>
-                \begin{alignat*}{5} -x_{1} &amp;+&amp; 5 \, x_{2} &amp; &amp;  &amp; &amp;  &amp;=&amp; 0 \\-x_{1} &amp;+&amp; 5 \, x_{2} &amp;+&amp; x_{3} &amp;-&amp; 3 \, x_{4} &amp;=&amp; 1 \\-x_{1} &amp;+&amp; 5 \, x_{2} &amp; &amp;  &amp; &amp;  &amp;=&amp; 0 \\ \end{alignat*}
+                \begin{alignat*}{5} x_{1} &amp; &amp;  &amp;-&amp; 2 \, x_{3} &amp;+&amp; x_{4} &amp;=&amp; 1 \\3 \, x_{1} &amp;+&amp; x_{2} &amp;-&amp; 8 \, x_{3} &amp; &amp;  &amp;=&amp; 2 \\2 \, x_{1} &amp;+&amp; x_{2} &amp;-&amp; 6 \, x_{3} &amp;-&amp; x_{4} &amp;=&amp; 1 \\ \end{alignat*}
             </li>
       <li>
         <p>\[ x_{1} \left[\begin{array}{c}
--1 \\
--1 \\
--1
+1 \\
+3 \\
+2
 \end{array}\right] + x_{2} \left[\begin{array}{c}
-5 \\
-5 \\
-5
+0 \\
+1 \\
+1
 \end{array}\right] + x_{3} \left[\begin{array}{c}
-0 \\
-1 \\
-0
+-2 \\
+-8 \\
+-6
 \end{array}\right] + x_{4} \left[\begin{array}{c}
-0 \\
--3 \\
-0
-\end{array}\right] = \left[\begin{array}{c}
-0 \\
 1 \\
-0
+0 \\
+-1
+\end{array}\right] = \left[\begin{array}{c}
+1 \\
+2 \\
+1
 \end{array}\right] \]</p>
       </li>
     </ol>
@@ -734,12 +731,15 @@
 <hr/>
 <h4 id='ex-13' class='exercise-heading'>Example 13 <small><a href='#ex-13'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p> Consider the system of equations 
-                \begin{alignat*}{5} -x_{1} &amp;-&amp; x_{2} &amp;+&amp; 2 \, x_{3} &amp;-&amp; 6 \, x_{4} &amp;=&amp; 1 \\x_{1} &amp; &amp;  &amp;+&amp; x_{3} &amp;+&amp; 2 \, x_{4} &amp;=&amp; -4 \\x_{1} &amp;+&amp; x_{2} &amp;-&amp; x_{3} &amp;+&amp; 5 \, x_{4} &amp;=&amp; -2 \\ \end{alignat*}
-            </p>
+    <p> Consider the augmented matrix </p>
+    <p>\[ \left[\begin{array}{cccc|c}
+1 &amp; -3 &amp; 0 &amp; -6 &amp; -1 \\
+-1 &amp; -2 &amp; -2 &amp; -2 &amp; -5 \\
+0 &amp; -2 &amp; -1 &amp; -3 &amp; -3
+\end{array}\right] \]</p>
     <ol type="a">
-      <li> Write an augmented matrix corresponding to this system. </li>
-      <li> Write a vector equation corresponding to this system. </li>
+      <li> Write a system of scalar equations corresponding to this augmented matrix. </li>
+      <li> Write a vector equation corresponding to this augmented matrix. </li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -748,33 +748,29 @@
     </p>
     <ol type="a">
       <li>
-        <p>\[ \left[\begin{array}{cccc|c}
--1 &amp; -1 &amp; 2 &amp; -6 &amp; 1 \\
-1 &amp; 0 &amp; 1 &amp; 2 &amp; -4 \\
-1 &amp; 1 &amp; -1 &amp; 5 &amp; -2
-\end{array}\right] \]</p>
-      </li>
+                \begin{alignat*}{5} x_{1} &amp;-&amp; 3 \, x_{2} &amp; &amp;  &amp;-&amp; 6 \, x_{4} &amp;=&amp; -1 \\-x_{1} &amp;-&amp; 2 \, x_{2} &amp;-&amp; 2 \, x_{3} &amp;-&amp; 2 \, x_{4} &amp;=&amp; -5 \\ &amp;-&amp; 2 \, x_{2} &amp;-&amp; x_{3} &amp;-&amp; 3 \, x_{4} &amp;=&amp; -3 \\ \end{alignat*}
+            </li>
       <li>
         <p>\[ x_{1} \left[\begin{array}{c}
--1 \\
 1 \\
-1
+-1 \\
+0
 \end{array}\right] + x_{2} \left[\begin{array}{c}
--1 \\
-0 \\
-1
+-3 \\
+-2 \\
+-2
 \end{array}\right] + x_{3} \left[\begin{array}{c}
-2 \\
-1 \\
+0 \\
+-2 \\
 -1
 \end{array}\right] + x_{4} \left[\begin{array}{c}
 -6 \\
-2 \\
-5
+-2 \\
+-3
 \end{array}\right] = \left[\begin{array}{c}
-1 \\
--4 \\
--2
+-1 \\
+-5 \\
+-3
 \end{array}\right] \]</p>
       </li>
     </ol>
@@ -786,25 +782,25 @@
   <div class="exercise-statement">
     <p>Consider the vector equation.</p>
     <p>\[ x_{1} \left[\begin{array}{c}
--2 \\
-5 \\
--1 \\
--5
-\end{array}\right] + x_{2} \left[\begin{array}{c}
-0 \\
 1 \\
+0 \\
 0 \\
 0
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+1 \\
+1 \\
+-4 \\
+4
 \end{array}\right] + x_{3} \left[\begin{array}{c}
-1 \\
-1 \\
-0 \\
--3
+4 \\
+-1 \\
+4 \\
+-4
 \end{array}\right] = \left[\begin{array}{c}
+1 \\
 2 \\
-2 \\
-0 \\
--6
+-7 \\
+7
 \end{array}\right] \]</p>
     <ol type="a">
       <li> Write a system of scalar equations corresponding to this vector equation. </li>
@@ -817,14 +813,14 @@
     </p>
     <ol type="a">
       <li>
-                \begin{alignat*}{4} -2 \, x_{1} &amp; &amp;  &amp;+&amp; x_{3} &amp;=&amp; 2 \\5 \, x_{1} &amp;+&amp; x_{2} &amp;+&amp; x_{3} &amp;=&amp; 2 \\-x_{1} &amp; &amp;  &amp; &amp;  &amp;=&amp; 0 \\-5 \, x_{1} &amp; &amp;  &amp;-&amp; 3 \, x_{3} &amp;=&amp; -6 \\ \end{alignat*}
+                \begin{alignat*}{4} x_{1} &amp;+&amp; x_{2} &amp;+&amp; 4 \, x_{3} &amp;=&amp; 1 \\ &amp; &amp; x_{2} &amp;-&amp; x_{3} &amp;=&amp; 2 \\ &amp;-&amp; 4 \, x_{2} &amp;+&amp; 4 \, x_{3} &amp;=&amp; -7 \\ &amp; &amp; 4 \, x_{2} &amp;-&amp; 4 \, x_{3} &amp;=&amp; 7 \\ \end{alignat*}
             </li>
       <li>
         <p>\[ \left[\begin{array}{ccc|c}
--2 &amp; 0 &amp; 1 &amp; 2 \\
-5 &amp; 1 &amp; 1 &amp; 2 \\
--1 &amp; 0 &amp; 0 &amp; 0 \\
--5 &amp; 0 &amp; -3 &amp; -6
+1 &amp; 1 &amp; 4 &amp; 1 \\
+0 &amp; 1 &amp; -1 &amp; 2 \\
+0 &amp; -4 &amp; 4 &amp; -7 \\
+0 &amp; 4 &amp; -4 &amp; 7
 \end{array}\right] \]</p>
       </li>
     </ol>
@@ -836,10 +832,10 @@
   <div class="exercise-statement">
     <p> Consider the augmented matrix </p>
     <p>\[ \left[\begin{array}{ccc|c}
-1 &amp; -4 &amp; 5 &amp; 3 \\
-1 &amp; -3 &amp; 3 &amp; 2 \\
-0 &amp; 3 &amp; -6 &amp; -3 \\
--3 &amp; 8 &amp; -7 &amp; -5
+-1 &amp; -3 &amp; 2 &amp; 1 \\
+1 &amp; 3 &amp; -4 &amp; -3 \\
+0 &amp; 0 &amp; 0 &amp; 0 \\
+2 &amp; 6 &amp; -7 &amp; -5
 \end{array}\right] \]</p>
     <ol type="a">
       <li> Write a system of scalar equations corresponding to this augmented matrix. </li>
@@ -852,28 +848,28 @@
     </p>
     <ol type="a">
       <li>
-                \begin{alignat*}{4} x &amp;-&amp; 4 \, y &amp;+&amp; 5 \, z &amp;=&amp; 3 \\x &amp;-&amp; 3 \, y &amp;+&amp; 3 \, z &amp;=&amp; 2 \\ &amp; &amp; 3 \, y &amp;-&amp; 6 \, z &amp;=&amp; -3 \\-3 \, x &amp;+&amp; 8 \, y &amp;-&amp; 7 \, z &amp;=&amp; -5 \\ \end{alignat*}
+                \begin{alignat*}{4} -x_{1} &amp;-&amp; 3 \, x_{2} &amp;+&amp; 2 \, x_{3} &amp;=&amp; 1 \\x_{1} &amp;+&amp; 3 \, x_{2} &amp;-&amp; 4 \, x_{3} &amp;=&amp; -3 \\ &amp; &amp;  &amp; &amp; 0 &amp;=&amp; 0 \\2 \, x_{1} &amp;+&amp; 6 \, x_{2} &amp;-&amp; 7 \, x_{3} &amp;=&amp; -5 \\ \end{alignat*}
             </li>
       <li>
         <p>\[ x_{1} \left[\begin{array}{c}
-1 \\
+-1 \\
 1 \\
 0 \\
--3
+2
 \end{array}\right] + x_{2} \left[\begin{array}{c}
--4 \\
 -3 \\
 3 \\
-8
+0 \\
+6
 \end{array}\right] + x_{3} \left[\begin{array}{c}
-5 \\
-3 \\
--6 \\
+2 \\
+-4 \\
+0 \\
 -7
 \end{array}\right] = \left[\begin{array}{c}
-3 \\
-2 \\
+1 \\
 -3 \\
+0 \\
 -5
 \end{array}\right] \]</p>
       </li>
@@ -884,16 +880,12 @@
 <hr/>
 <h4 id='ex-16' class='exercise-heading'>Example 16 <small><a href='#ex-16'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p> Consider the augmented matrix </p>
-    <p>\[ \left[\begin{array}{ccc|c}
-1 &amp; 0 &amp; -2 &amp; -1 \\
-0 &amp; 1 &amp; 2 &amp; -1 \\
-0 &amp; -2 &amp; -4 &amp; 2 \\
--1 &amp; 2 &amp; 6 &amp; -1
-\end{array}\right] \]</p>
+    <p> Consider the system of equations 
+                \begin{alignat*}{4} 6 \, x &amp;+&amp; 5 \, y &amp;-&amp; 7 \, z &amp;=&amp; -4 \\-5 \, x &amp;-&amp; 4 \, y &amp;+&amp; 6 \, z &amp;=&amp; 4 \\5 \, x &amp;+&amp; 3 \, y &amp;-&amp; 6 \, z &amp;=&amp; -7 \\-5 \, x &amp;-&amp; 3 \, y &amp;+&amp; 7 \, z &amp;=&amp; 8 \\ \end{alignat*}
+            </p>
     <ol type="a">
-      <li> Write a system of scalar equations corresponding to this augmented matrix. </li>
-      <li> Write a vector equation corresponding to this augmented matrix. </li>
+      <li> Write an augmented matrix corresponding to this system. </li>
+      <li> Write a vector equation corresponding to this system. </li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -902,29 +894,34 @@
     </p>
     <ol type="a">
       <li>
-                \begin{alignat*}{4} x &amp; &amp;  &amp;-&amp; 2 \, z &amp;=&amp; -1 \\ &amp; &amp; y &amp;+&amp; 2 \, z &amp;=&amp; -1 \\ &amp;-&amp; 2 \, y &amp;-&amp; 4 \, z &amp;=&amp; 2 \\-x &amp;+&amp; 2 \, y &amp;+&amp; 6 \, z &amp;=&amp; -1 \\ \end{alignat*}
-            </li>
+        <p>\[ \left[\begin{array}{ccc|c}
+6 &amp; 5 &amp; -7 &amp; -4 \\
+-5 &amp; -4 &amp; 6 &amp; 4 \\
+5 &amp; 3 &amp; -6 &amp; -7 \\
+-5 &amp; -3 &amp; 7 &amp; 8
+\end{array}\right] \]</p>
+      </li>
       <li>
         <p>\[ x_{1} \left[\begin{array}{c}
-1 \\
-0 \\
-0 \\
--1
+6 \\
+-5 \\
+5 \\
+-5
 \end{array}\right] + x_{2} \left[\begin{array}{c}
-0 \\
-1 \\
--2 \\
-2
-\end{array}\right] + x_{3} \left[\begin{array}{c}
--2 \\
-2 \\
+5 \\
 -4 \\
-6
+3 \\
+-3
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+-7 \\
+6 \\
+-6 \\
+7
 \end{array}\right] = \left[\begin{array}{c}
--1 \\
--1 \\
-2 \\
--1
+-4 \\
+4 \\
+-7 \\
+8
 \end{array}\right] \]</p>
       </li>
     </ol>
@@ -936,25 +933,25 @@
   <div class="exercise-statement">
     <p>Consider the vector equation.</p>
     <p>\[ x_{1} \left[\begin{array}{c}
--2 \\
--1 \\
-2
-\end{array}\right] + x_{2} \left[\begin{array}{c}
--1 \\
--1 \\
-2
-\end{array}\right] + x_{3} \left[\begin{array}{c}
-6 \\
-4 \\
--8
-\end{array}\right] + x_{4} \left[\begin{array}{c}
--3 \\
--1 \\
-2
-\end{array}\right] = \left[\begin{array}{c}
-0 \\
 1 \\
+0 \\
+0 \\
+-1
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+2 \\
+0 \\
+0 \\
 -2
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+5 \\
+1 \\
+1 \\
+-1
+\end{array}\right] = \left[\begin{array}{c}
+8 \\
+2 \\
+2 \\
+0
 \end{array}\right] \]</p>
     <ol type="a">
       <li> Write a system of scalar equations corresponding to this vector equation. </li>
@@ -967,13 +964,14 @@
     </p>
     <ol type="a">
       <li>
-                \begin{alignat*}{5} -2 \, x_{1} &amp;-&amp; x_{2} &amp;+&amp; 6 \, x_{3} &amp;-&amp; 3 \, x_{4} &amp;=&amp; 0 \\-x_{1} &amp;-&amp; x_{2} &amp;+&amp; 4 \, x_{3} &amp;-&amp; x_{4} &amp;=&amp; 1 \\2 \, x_{1} &amp;+&amp; 2 \, x_{2} &amp;-&amp; 8 \, x_{3} &amp;+&amp; 2 \, x_{4} &amp;=&amp; -2 \\ \end{alignat*}
+                \begin{alignat*}{4} x &amp;+&amp; 2 \, y &amp;+&amp; 5 \, z &amp;=&amp; 8 \\ &amp; &amp;  &amp; &amp; z &amp;=&amp; 2 \\ &amp; &amp;  &amp; &amp; z &amp;=&amp; 2 \\-x &amp;-&amp; 2 \, y &amp;-&amp; z &amp;=&amp; 0 \\ \end{alignat*}
             </li>
       <li>
-        <p>\[ \left[\begin{array}{cccc|c}
--2 &amp; -1 &amp; 6 &amp; -3 &amp; 0 \\
--1 &amp; -1 &amp; 4 &amp; -1 &amp; 1 \\
-2 &amp; 2 &amp; -8 &amp; 2 &amp; -2
+        <p>\[ \left[\begin{array}{ccc|c}
+1 &amp; 2 &amp; 5 &amp; 8 \\
+0 &amp; 0 &amp; 1 &amp; 2 \\
+0 &amp; 0 &amp; 1 &amp; 2 \\
+-1 &amp; -2 &amp; -1 &amp; 0
 \end{array}\right] \]</p>
       </li>
     </ol>
@@ -983,164 +981,12 @@
 <hr/>
 <h4 id='ex-18' class='exercise-heading'>Example 18 <small><a href='#ex-18'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p> Consider the system of equations 
-                \begin{alignat*}{4} x &amp;-&amp; y &amp; &amp;  &amp;=&amp; -1 \\-x &amp;+&amp; 5 \, y &amp;+&amp; 8 \, z &amp;=&amp; 1 \\-x &amp; &amp;  &amp;-&amp; 2 \, z &amp;=&amp; 1 \\ &amp;-&amp; y &amp;-&amp; 2 \, z &amp;=&amp; 0 \\ \end{alignat*}
-            </p>
-    <ol type="a">
-      <li> Write an augmented matrix corresponding to this system. </li>
-      <li> Write a vector equation corresponding to this system. </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-        <p>\[ \left[\begin{array}{ccc|c}
-1 &amp; -1 &amp; 0 &amp; -1 \\
--1 &amp; 5 &amp; 8 &amp; 1 \\
--1 &amp; 0 &amp; -2 &amp; 1 \\
-0 &amp; -1 &amp; -2 &amp; 0
-\end{array}\right] \]</p>
-      </li>
-      <li>
-        <p>\[ x_{1} \left[\begin{array}{c}
-1 \\
--1 \\
--1 \\
-0
-\end{array}\right] + x_{2} \left[\begin{array}{c}
--1 \\
-5 \\
-0 \\
--1
-\end{array}\right] + x_{3} \left[\begin{array}{c}
-0 \\
-8 \\
--2 \\
--2
-\end{array}\right] = \left[\begin{array}{c}
--1 \\
-1 \\
-1 \\
-0
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-19' class='exercise-heading'>Example 19 <small><a href='#ex-19'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p> Consider the system of equations 
-                \begin{alignat*}{4} x_{1} &amp;+&amp; 6 \, x_{2} &amp; &amp;  &amp;=&amp; 7 \\-x_{1} &amp;+&amp; 5 \, x_{2} &amp;+&amp; x_{3} &amp;=&amp; 5 \\-x_{1} &amp;+&amp; 3 \, x_{2} &amp; &amp;  &amp;=&amp; 2 \\ &amp; &amp; 5 \, x_{2} &amp; &amp;  &amp;=&amp; 5 \\ \end{alignat*}
-            </p>
-    <ol type="a">
-      <li> Write an augmented matrix corresponding to this system. </li>
-      <li> Write a vector equation corresponding to this system. </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-        <p>\[ \left[\begin{array}{ccc|c}
-1 &amp; 6 &amp; 0 &amp; 7 \\
--1 &amp; 5 &amp; 1 &amp; 5 \\
--1 &amp; 3 &amp; 0 &amp; 2 \\
-0 &amp; 5 &amp; 0 &amp; 5
-\end{array}\right] \]</p>
-      </li>
-      <li>
-        <p>\[ x_{1} \left[\begin{array}{c}
-1 \\
--1 \\
--1 \\
-0
-\end{array}\right] + x_{2} \left[\begin{array}{c}
-6 \\
-5 \\
-3 \\
-5
-\end{array}\right] + x_{3} \left[\begin{array}{c}
-0 \\
-1 \\
-0 \\
-0
-\end{array}\right] = \left[\begin{array}{c}
-7 \\
-5 \\
-2 \\
-5
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-20' class='exercise-heading'>Example 20 <small><a href='#ex-20'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Consider the vector equation.</p>
-    <p>\[ x_{1} \left[\begin{array}{c}
--3 \\
--2 \\
--3 \\
-2
-\end{array}\right] + x_{2} \left[\begin{array}{c}
-2 \\
-1 \\
--1 \\
-2
-\end{array}\right] + x_{3} \left[\begin{array}{c}
--1 \\
-0 \\
-6 \\
--7
-\end{array}\right] = \left[\begin{array}{c}
--8 \\
--5 \\
--6 \\
-3
-\end{array}\right] \]</p>
-    <ol type="a">
-      <li> Write a system of scalar equations corresponding to this vector equation. </li>
-      <li> Write an augmented matrix corresponding to this vector equation. </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-                \begin{alignat*}{4} -3 \, x &amp;+&amp; 2 \, y &amp;-&amp; z &amp;=&amp; -8 \\-2 \, x &amp;+&amp; y &amp; &amp;  &amp;=&amp; -5 \\-3 \, x &amp;-&amp; y &amp;+&amp; 6 \, z &amp;=&amp; -6 \\2 \, x &amp;+&amp; 2 \, y &amp;-&amp; 7 \, z &amp;=&amp; 3 \\ \end{alignat*}
-            </li>
-      <li>
-        <p>\[ \left[\begin{array}{ccc|c}
--3 &amp; 2 &amp; -1 &amp; -8 \\
--2 &amp; 1 &amp; 0 &amp; -5 \\
--3 &amp; -1 &amp; 6 &amp; -6 \\
-2 &amp; 2 &amp; -7 &amp; 3
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-21' class='exercise-heading'>Example 21 <small><a href='#ex-21'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
     <p> Consider the augmented matrix </p>
     <p>\[ \left[\begin{array}{ccc|c}
-1 &amp; 0 &amp; -2 &amp; -7 \\
--1 &amp; 1 &amp; 2 &amp; 8 \\
-1 &amp; -4 &amp; -1 &amp; -8 \\
-0 &amp; 3 &amp; -1 &amp; 0
+-1 &amp; -1 &amp; 1 &amp; -3 \\
+3 &amp; -2 &amp; -4 &amp; 7 \\
+3 &amp; -4 &amp; -1 &amp; -4 \\
+-2 &amp; 0 &amp; 2 &amp; -4
 \end{array}\right] \]</p>
     <ol type="a">
       <li> Write a system of scalar equations corresponding to this augmented matrix. </li>
@@ -1153,78 +999,29 @@
     </p>
     <ol type="a">
       <li>
-                \begin{alignat*}{4} x_{1} &amp; &amp;  &amp;-&amp; 2 \, x_{3} &amp;=&amp; -7 \\-x_{1} &amp;+&amp; x_{2} &amp;+&amp; 2 \, x_{3} &amp;=&amp; 8 \\x_{1} &amp;-&amp; 4 \, x_{2} &amp;-&amp; x_{3} &amp;=&amp; -8 \\ &amp; &amp; 3 \, x_{2} &amp;-&amp; x_{3} &amp;=&amp; 0 \\ \end{alignat*}
+                \begin{alignat*}{4} -x_{1} &amp;-&amp; x_{2} &amp;+&amp; x_{3} &amp;=&amp; -3 \\3 \, x_{1} &amp;-&amp; 2 \, x_{2} &amp;-&amp; 4 \, x_{3} &amp;=&amp; 7 \\3 \, x_{1} &amp;-&amp; 4 \, x_{2} &amp;-&amp; x_{3} &amp;=&amp; -4 \\-2 \, x_{1} &amp; &amp;  &amp;+&amp; 2 \, x_{3} &amp;=&amp; -4 \\ \end{alignat*}
             </li>
       <li>
         <p>\[ x_{1} \left[\begin{array}{c}
-1 \\
 -1 \\
-1 \\
-0
+3 \\
+3 \\
+-2
 \end{array}\right] + x_{2} \left[\begin{array}{c}
-0 \\
+-1 \\
+-2 \\
+-4 \\
+0
+\end{array}\right] + x_{3} \left[\begin{array}{c}
 1 \\
 -4 \\
-3
-\end{array}\right] + x_{3} \left[\begin{array}{c}
--2 \\
-2 \\
 -1 \\
--1
+2
 \end{array}\right] = \left[\begin{array}{c}
--7 \\
-8 \\
--8 \\
-0
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-22' class='exercise-heading'>Example 22 <small><a href='#ex-22'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Consider the vector equation.</p>
-    <p>\[ x_{1} \left[\begin{array}{c}
-1 \\
-0 \\
-1
-\end{array}\right] + x_{2} \left[\begin{array}{c}
--1 \\
-1 \\
-1
-\end{array}\right] + x_{3} \left[\begin{array}{c}
-1 \\
-1 \\
-3
-\end{array}\right] + x_{4} \left[\begin{array}{c}
-2 \\
--2 \\
--2
-\end{array}\right] = \left[\begin{array}{c}
-6 \\
 -3 \\
-0
-\end{array}\right] \]</p>
-    <ol type="a">
-      <li> Write a system of scalar equations corresponding to this vector equation. </li>
-      <li> Write an augmented matrix corresponding to this vector equation. </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-                \begin{alignat*}{5} x_{1} &amp;-&amp; x_{2} &amp;+&amp; x_{3} &amp;+&amp; 2 \, x_{4} &amp;=&amp; 6 \\ &amp; &amp; x_{2} &amp;+&amp; x_{3} &amp;-&amp; 2 \, x_{4} &amp;=&amp; -3 \\x_{1} &amp;+&amp; x_{2} &amp;+&amp; 3 \, x_{3} &amp;-&amp; 2 \, x_{4} &amp;=&amp; 0 \\ \end{alignat*}
-            </li>
-      <li>
-        <p>\[ \left[\begin{array}{cccc|c}
-1 &amp; -1 &amp; 1 &amp; 2 &amp; 6 \\
-0 &amp; 1 &amp; 1 &amp; -2 &amp; -3 \\
-1 &amp; 1 &amp; 3 &amp; -2 &amp; 0
+7 \\
+-4 \\
+-4
 \end{array}\right] \]</p>
       </li>
     </ol>
@@ -1232,60 +1029,10 @@
 </div>
 
 <hr/>
-<h4 id='ex-23' class='exercise-heading'>Example 23 <small><a href='#ex-23'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Consider the vector equation.</p>
-    <p>\[ x_{1} \left[\begin{array}{c}
--3 \\
-2 \\
-2 \\
-0
-\end{array}\right] + x_{2} \left[\begin{array}{c}
-7 \\
--5 \\
--7 \\
-5
-\end{array}\right] + x_{3} \left[\begin{array}{c}
-7 \\
--5 \\
--7 \\
-5
-\end{array}\right] = \left[\begin{array}{c}
--5 \\
-3 \\
-1 \\
-5
-\end{array}\right] \]</p>
-    <ol type="a">
-      <li> Write a system of scalar equations corresponding to this vector equation. </li>
-      <li> Write an augmented matrix corresponding to this vector equation. </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-                \begin{alignat*}{4} -3 \, x_{1} &amp;+&amp; 7 \, x_{2} &amp;+&amp; 7 \, x_{3} &amp;=&amp; -5 \\2 \, x_{1} &amp;-&amp; 5 \, x_{2} &amp;-&amp; 5 \, x_{3} &amp;=&amp; 3 \\2 \, x_{1} &amp;-&amp; 7 \, x_{2} &amp;-&amp; 7 \, x_{3} &amp;=&amp; 1 \\ &amp; &amp; 5 \, x_{2} &amp;+&amp; 5 \, x_{3} &amp;=&amp; 5 \\ \end{alignat*}
-            </li>
-      <li>
-        <p>\[ \left[\begin{array}{ccc|c}
--3 &amp; 7 &amp; 7 &amp; -5 \\
-2 &amp; -5 &amp; -5 &amp; 3 \\
-2 &amp; -7 &amp; -7 &amp; 1 \\
-0 &amp; 5 &amp; 5 &amp; 5
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-24' class='exercise-heading'>Example 24 <small><a href='#ex-24'>🔗</a></small></h4><div class="exercise">
+<h4 id='ex-19' class='exercise-heading'>Example 19 <small><a href='#ex-19'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
     <p> Consider the system of equations 
-                \begin{alignat*}{4} x &amp;-&amp; y &amp;+&amp; 5 \, z &amp;=&amp; 0 \\ &amp; &amp; y &amp;-&amp; z &amp;=&amp; -4 \\x &amp;-&amp; y &amp;+&amp; 5 \, z &amp;=&amp; 1 \\ &amp; &amp; 2 \, y &amp;-&amp; 2 \, z &amp;=&amp; -8 \\ \end{alignat*}
+                \begin{alignat*}{4} x &amp;+&amp; 5 \, y &amp; &amp;  &amp;=&amp; 0 \\-x &amp;-&amp; 4 \, y &amp; &amp;  &amp;=&amp; 0 \\ &amp;-&amp; y &amp;+&amp; z &amp;=&amp; 3 \\-2 \, x &amp;-&amp; 5 \, y &amp;-&amp; 2 \, z &amp;=&amp; -6 \\ \end{alignat*}
             </p>
     <ol type="a">
       <li> Write an augmented matrix corresponding to this system. </li>
@@ -1299,33 +1046,281 @@
     <ol type="a">
       <li>
         <p>\[ \left[\begin{array}{ccc|c}
-1 &amp; -1 &amp; 5 &amp; 0 \\
-0 &amp; 1 &amp; -1 &amp; -4 \\
-1 &amp; -1 &amp; 5 &amp; 1 \\
-0 &amp; 2 &amp; -2 &amp; -8
+1 &amp; 5 &amp; 0 &amp; 0 \\
+-1 &amp; -4 &amp; 0 &amp; 0 \\
+0 &amp; -1 &amp; 1 &amp; 3 \\
+-2 &amp; -5 &amp; -2 &amp; -6
 \end{array}\right] \]</p>
       </li>
       <li>
         <p>\[ x_{1} \left[\begin{array}{c}
 1 \\
+-1 \\
+0 \\
+-2
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+5 \\
+-4 \\
+-1 \\
+-5
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+0 \\
 0 \\
 1 \\
-0
-\end{array}\right] + x_{2} \left[\begin{array}{c}
--1 \\
-1 \\
--1 \\
-2
-\end{array}\right] + x_{3} \left[\begin{array}{c}
-5 \\
--1 \\
-5 \\
 -2
 \end{array}\right] = \left[\begin{array}{c}
 0 \\
+0 \\
+3 \\
+-6
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-20' class='exercise-heading'>Example 20 <small><a href='#ex-20'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p> Consider the augmented matrix </p>
+    <p>\[ \left[\begin{array}{ccc|c}
+-7 &amp; -5 &amp; 1 &amp; -5 \\
+-4 &amp; -3 &amp; 0 &amp; -2 \\
+-2 &amp; -1 &amp; 3 &amp; -6 \\
+5 &amp; 3 &amp; 0 &amp; 1
+\end{array}\right] \]</p>
+    <ol type="a">
+      <li> Write a system of scalar equations corresponding to this augmented matrix. </li>
+      <li> Write a vector equation corresponding to this augmented matrix. </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+                \begin{alignat*}{4} -7 \, x &amp;-&amp; 5 \, y &amp;+&amp; z &amp;=&amp; -5 \\-4 \, x &amp;-&amp; 3 \, y &amp; &amp;  &amp;=&amp; -2 \\-2 \, x &amp;-&amp; y &amp;+&amp; 3 \, z &amp;=&amp; -6 \\5 \, x &amp;+&amp; 3 \, y &amp; &amp;  &amp;=&amp; 1 \\ \end{alignat*}
+            </li>
+      <li>
+        <p>\[ x_{1} \left[\begin{array}{c}
+-7 \\
 -4 \\
+-2 \\
+5
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+-5 \\
+-3 \\
+-1 \\
+3
+\end{array}\right] + x_{3} \left[\begin{array}{c}
 1 \\
--8
+0 \\
+3 \\
+0
+\end{array}\right] = \left[\begin{array}{c}
+-5 \\
+-2 \\
+-6 \\
+1
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-21' class='exercise-heading'>Example 21 <small><a href='#ex-21'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Consider the vector equation.</p>
+    <p>\[ x_{1} \left[\begin{array}{c}
+1 \\
+0 \\
+0
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+2 \\
+1 \\
+2
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+3 \\
+1 \\
+3
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+4 \\
+1 \\
+4
+\end{array}\right] = \left[\begin{array}{c}
+-3 \\
+-1 \\
+-4
+\end{array}\right] \]</p>
+    <ol type="a">
+      <li> Write a system of scalar equations corresponding to this vector equation. </li>
+      <li> Write an augmented matrix corresponding to this vector equation. </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+                \begin{alignat*}{5} x &amp;+&amp; 2 \, y &amp;+&amp; 3 \, z &amp;+&amp; 4 \, {w} &amp;=&amp; -3 \\ &amp; &amp; y &amp;+&amp; z &amp;+&amp; {w} &amp;=&amp; -1 \\ &amp; &amp; 2 \, y &amp;+&amp; 3 \, z &amp;+&amp; 4 \, {w} &amp;=&amp; -4 \\ \end{alignat*}
+            </li>
+      <li>
+        <p>\[ \left[\begin{array}{cccc|c}
+1 &amp; 2 &amp; 3 &amp; 4 &amp; -3 \\
+0 &amp; 1 &amp; 1 &amp; 1 &amp; -1 \\
+0 &amp; 2 &amp; 3 &amp; 4 &amp; -4
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-22' class='exercise-heading'>Example 22 <small><a href='#ex-22'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p> Consider the augmented matrix </p>
+    <p>\[ \left[\begin{array}{ccc|c}
+4 &amp; -6 &amp; -7 &amp; 0 \\
+1 &amp; -2 &amp; -1 &amp; -3 \\
+-1 &amp; 1 &amp; 2 &amp; -2 \\
+-2 &amp; 5 &amp; 3 &amp; 7
+\end{array}\right] \]</p>
+    <ol type="a">
+      <li> Write a system of scalar equations corresponding to this augmented matrix. </li>
+      <li> Write a vector equation corresponding to this augmented matrix. </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+                \begin{alignat*}{4} 4 \, x &amp;-&amp; 6 \, y &amp;-&amp; 7 \, z &amp;=&amp; 0 \\x &amp;-&amp; 2 \, y &amp;-&amp; z &amp;=&amp; -3 \\-x &amp;+&amp; y &amp;+&amp; 2 \, z &amp;=&amp; -2 \\-2 \, x &amp;+&amp; 5 \, y &amp;+&amp; 3 \, z &amp;=&amp; 7 \\ \end{alignat*}
+            </li>
+      <li>
+        <p>\[ x_{1} \left[\begin{array}{c}
+4 \\
+1 \\
+-1 \\
+-2
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+-6 \\
+-2 \\
+1 \\
+5
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+-7 \\
+-1 \\
+2 \\
+3
+\end{array}\right] = \left[\begin{array}{c}
+0 \\
+-3 \\
+-2 \\
+7
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-23' class='exercise-heading'>Example 23 <small><a href='#ex-23'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p> Consider the system of equations 
+                \begin{alignat*}{5} -x &amp;-&amp; 2 \, y &amp;+&amp; 5 \, z &amp;-&amp; 3 \, {w} &amp;=&amp; -1 \\2 \, x &amp;+&amp; 3 \, y &amp;-&amp; 8 \, z &amp;+&amp; 4 \, {w} &amp;=&amp; 2 \\4 \, x &amp;+&amp; y &amp;-&amp; 6 \, z &amp;-&amp; 2 \, {w} &amp;=&amp; 4 \\ \end{alignat*}
+            </p>
+    <ol type="a">
+      <li> Write an augmented matrix corresponding to this system. </li>
+      <li> Write a vector equation corresponding to this system. </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+        <p>\[ \left[\begin{array}{cccc|c}
+-1 &amp; -2 &amp; 5 &amp; -3 &amp; -1 \\
+2 &amp; 3 &amp; -8 &amp; 4 &amp; 2 \\
+4 &amp; 1 &amp; -6 &amp; -2 &amp; 4
+\end{array}\right] \]</p>
+      </li>
+      <li>
+        <p>\[ x_{1} \left[\begin{array}{c}
+-1 \\
+2 \\
+4
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+-2 \\
+3 \\
+1
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+5 \\
+-8 \\
+-6
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+-3 \\
+4 \\
+-2
+\end{array}\right] = \left[\begin{array}{c}
+-1 \\
+2 \\
+4
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-24' class='exercise-heading'>Example 24 <small><a href='#ex-24'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p> Consider the augmented matrix </p>
+    <p>\[ \left[\begin{array}{cccc|c}
+1 &amp; -2 &amp; 1 &amp; 1 &amp; 1 \\
+0 &amp; 0 &amp; 1 &amp; 2 &amp; 1 \\
+1 &amp; -2 &amp; 4 &amp; 7 &amp; 4
+\end{array}\right] \]</p>
+    <ol type="a">
+      <li> Write a system of scalar equations corresponding to this augmented matrix. </li>
+      <li> Write a vector equation corresponding to this augmented matrix. </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+                \begin{alignat*}{5} x &amp;-&amp; 2 \, y &amp;+&amp; z &amp;+&amp; {w} &amp;=&amp; 1 \\ &amp; &amp;  &amp; &amp; z &amp;+&amp; 2 \, {w} &amp;=&amp; 1 \\x &amp;-&amp; 2 \, y &amp;+&amp; 4 \, z &amp;+&amp; 7 \, {w} &amp;=&amp; 4 \\ \end{alignat*}
+            </li>
+      <li>
+        <p>\[ x_{1} \left[\begin{array}{c}
+1 \\
+0 \\
+1
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+-2 \\
+0 \\
+-2
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+1 \\
+1 \\
+4
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+1 \\
+2 \\
+7
+\end{array}\right] = \left[\begin{array}{c}
+1 \\
+1 \\
+4
 \end{array}\right] \]</p>
       </li>
     </ol>
@@ -1337,25 +1332,25 @@
   <div class="exercise-statement">
     <p>Consider the vector equation.</p>
     <p>\[ x_{1} \left[\begin{array}{c}
-3 \\
--1 \\
-2 \\
-0
-\end{array}\right] + x_{2} \left[\begin{array}{c}
--2 \\
-3 \\
+1 \\
 0 \\
-3
-\end{array}\right] + x_{3} \left[\begin{array}{c}
 -1 \\
-5 \\
+1
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+0 \\
+1 \\
+0 \\
+1
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+-2 \\
+0 \\
 2 \\
-6
+-2
 \end{array}\right] = \left[\begin{array}{c}
-7 \\
--7 \\
 2 \\
--6
+2 \\
+-2 \\
+4
 \end{array}\right] \]</p>
     <ol type="a">
       <li> Write a system of scalar equations corresponding to this vector equation. </li>
@@ -1368,14 +1363,14 @@
     </p>
     <ol type="a">
       <li>
-                \begin{alignat*}{4} 3 \, x_{1} &amp;-&amp; 2 \, x_{2} &amp;-&amp; x_{3} &amp;=&amp; 7 \\-x_{1} &amp;+&amp; 3 \, x_{2} &amp;+&amp; 5 \, x_{3} &amp;=&amp; -7 \\2 \, x_{1} &amp; &amp;  &amp;+&amp; 2 \, x_{3} &amp;=&amp; 2 \\ &amp; &amp; 3 \, x_{2} &amp;+&amp; 6 \, x_{3} &amp;=&amp; -6 \\ \end{alignat*}
+                \begin{alignat*}{4} x_{1} &amp; &amp;  &amp;-&amp; 2 \, x_{3} &amp;=&amp; 2 \\ &amp; &amp; x_{2} &amp; &amp;  &amp;=&amp; 2 \\-x_{1} &amp; &amp;  &amp;+&amp; 2 \, x_{3} &amp;=&amp; -2 \\x_{1} &amp;+&amp; x_{2} &amp;-&amp; 2 \, x_{3} &amp;=&amp; 4 \\ \end{alignat*}
             </li>
       <li>
         <p>\[ \left[\begin{array}{ccc|c}
-3 &amp; -2 &amp; -1 &amp; 7 \\
--1 &amp; 3 &amp; 5 &amp; -7 \\
-2 &amp; 0 &amp; 2 &amp; 2 \\
-0 &amp; 3 &amp; 6 &amp; -6
+1 &amp; 0 &amp; -2 &amp; 2 \\
+0 &amp; 1 &amp; 0 &amp; 2 \\
+-1 &amp; 0 &amp; 2 &amp; -2 \\
+1 &amp; 1 &amp; -2 &amp; 4
 \end{array}\right] \]</p>
       </li>
     </ol>
@@ -1386,7 +1381,7 @@
 <h4 id='ex-26' class='exercise-heading'>Example 26 <small><a href='#ex-26'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
     <p> Consider the system of equations 
-                \begin{alignat*}{4} 3 \, x &amp;-&amp; y &amp;-&amp; 7 \, z &amp;=&amp; 5 \\x &amp; &amp;  &amp;-&amp; 2 \, z &amp;=&amp; 2 \\-3 \, x &amp;+&amp; y &amp;+&amp; 7 \, z &amp;=&amp; -5 \\2 \, x &amp; &amp;  &amp;-&amp; 4 \, z &amp;=&amp; 4 \\ \end{alignat*}
+                \begin{alignat*}{5} 2 \, x_{1} &amp;-&amp; 4 \, x_{2} &amp;-&amp; 5 \, x_{3} &amp;+&amp; 4 \, x_{4} &amp;=&amp; -5 \\-x_{1} &amp;+&amp; 2 \, x_{2} &amp;+&amp; 3 \, x_{3} &amp;-&amp; 2 \, x_{4} &amp;=&amp; 3 \\x_{1} &amp;-&amp; 3 \, x_{2} &amp;-&amp; 6 \, x_{3} &amp;+&amp; 2 \, x_{4} &amp;=&amp; -6 \\ \end{alignat*}
             </p>
     <ol type="a">
       <li> Write an augmented matrix corresponding to this system. </li>
@@ -1399,34 +1394,33 @@
     </p>
     <ol type="a">
       <li>
-        <p>\[ \left[\begin{array}{ccc|c}
-3 &amp; -1 &amp; -7 &amp; 5 \\
-1 &amp; 0 &amp; -2 &amp; 2 \\
--3 &amp; 1 &amp; 7 &amp; -5 \\
-2 &amp; 0 &amp; -4 &amp; 4
+        <p>\[ \left[\begin{array}{cccc|c}
+2 &amp; -4 &amp; -5 &amp; 4 &amp; -5 \\
+-1 &amp; 2 &amp; 3 &amp; -2 &amp; 3 \\
+1 &amp; -3 &amp; -6 &amp; 2 &amp; -6
 \end{array}\right] \]</p>
       </li>
       <li>
         <p>\[ x_{1} \left[\begin{array}{c}
-3 \\
-1 \\
--3 \\
-2
-\end{array}\right] + x_{2} \left[\begin{array}{c}
--1 \\
-0 \\
-1 \\
-0
-\end{array}\right] + x_{3} \left[\begin{array}{c}
--7 \\
--2 \\
-7 \\
--4
-\end{array}\right] = \left[\begin{array}{c}
-5 \\
 2 \\
+-1 \\
+1
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+-4 \\
+2 \\
+-3
+\end{array}\right] + x_{3} \left[\begin{array}{c}
 -5 \\
-4
+3 \\
+-6
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+4 \\
+-2 \\
+2
+\end{array}\right] = \left[\begin{array}{c}
+-5 \\
+3 \\
+-6
 \end{array}\right] \]</p>
       </li>
     </ol>
@@ -1438,10 +1432,10 @@
   <div class="exercise-statement">
     <p> Consider the augmented matrix </p>
     <p>\[ \left[\begin{array}{ccc|c}
-1 &amp; 4 &amp; -4 &amp; 1 \\
--3 &amp; -2 &amp; 2 &amp; -3 \\
-0 &amp; -3 &amp; 3 &amp; 0 \\
--1 &amp; -4 &amp; 4 &amp; -1
+1 &amp; -2 &amp; 5 &amp; 0 \\
+1 &amp; -1 &amp; 5 &amp; -2 \\
+0 &amp; 2 &amp; -3 &amp; -1 \\
+0 &amp; 0 &amp; -2 &amp; 2
 \end{array}\right] \]</p>
     <ol type="a">
       <li> Write a system of scalar equations corresponding to this augmented matrix. </li>
@@ -1454,29 +1448,29 @@
     </p>
     <ol type="a">
       <li>
-                \begin{alignat*}{4} x_{1} &amp;+&amp; 4 \, x_{2} &amp;-&amp; 4 \, x_{3} &amp;=&amp; 1 \\-3 \, x_{1} &amp;-&amp; 2 \, x_{2} &amp;+&amp; 2 \, x_{3} &amp;=&amp; -3 \\ &amp;-&amp; 3 \, x_{2} &amp;+&amp; 3 \, x_{3} &amp;=&amp; 0 \\-x_{1} &amp;-&amp; 4 \, x_{2} &amp;+&amp; 4 \, x_{3} &amp;=&amp; -1 \\ \end{alignat*}
+                \begin{alignat*}{4} x_{1} &amp;-&amp; 2 \, x_{2} &amp;+&amp; 5 \, x_{3} &amp;=&amp; 0 \\x_{1} &amp;-&amp; x_{2} &amp;+&amp; 5 \, x_{3} &amp;=&amp; -2 \\ &amp; &amp; 2 \, x_{2} &amp;-&amp; 3 \, x_{3} &amp;=&amp; -1 \\ &amp; &amp;  &amp;-&amp; 2 \, x_{3} &amp;=&amp; 2 \\ \end{alignat*}
             </li>
       <li>
         <p>\[ x_{1} \left[\begin{array}{c}
 1 \\
--3 \\
-0 \\
--1
-\end{array}\right] + x_{2} \left[\begin{array}{c}
-4 \\
--2 \\
--3 \\
--4
-\end{array}\right] + x_{3} \left[\begin{array}{c}
--4 \\
-2 \\
-3 \\
-4
-\end{array}\right] = \left[\begin{array}{c}
 1 \\
--3 \\
 0 \\
--1
+0
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+-2 \\
+-1 \\
+2 \\
+0
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+5 \\
+5 \\
+-3 \\
+-2
+\end{array}\right] = \left[\begin{array}{c}
+0 \\
+-2 \\
+-1 \\
+2
 \end{array}\right] \]</p>
       </li>
     </ol>
@@ -1486,27 +1480,127 @@
 <hr/>
 <h4 id='ex-28' class='exercise-heading'>Example 28 <small><a href='#ex-28'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Consider the vector equation.</p>
-    <p>\[ x_{1} \left[\begin{array}{c}
--2 \\
--3 \\
-1
+    <p> Consider the system of equations 
+                \begin{alignat*}{5}  &amp;-&amp; x_{2} &amp;+&amp; 3 \, x_{3} &amp;+&amp; 6 \, x_{4} &amp;=&amp; -3 \\x_{1} &amp; &amp;  &amp;+&amp; 4 \, x_{3} &amp;+&amp; 3 \, x_{4} &amp;=&amp; 1 \\-x_{1} &amp; &amp;  &amp;-&amp; 4 \, x_{3} &amp;-&amp; 2 \, x_{4} &amp;=&amp; -1 \\ \end{alignat*}
+            </p>
+    <ol type="a">
+      <li> Write an augmented matrix corresponding to this system. </li>
+      <li> Write a vector equation corresponding to this system. </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+        <p>\[ \left[\begin{array}{cccc|c}
+0 &amp; -1 &amp; 3 &amp; 6 &amp; -3 \\
+1 &amp; 0 &amp; 4 &amp; 3 &amp; 1 \\
+-1 &amp; 0 &amp; -4 &amp; -2 &amp; -1
+\end{array}\right] \]</p>
+      </li>
+      <li>
+        <p>\[ x_{1} \left[\begin{array}{c}
+0 \\
+1 \\
+-1
 \end{array}\right] + x_{2} \left[\begin{array}{c}
-1 \\
-1 \\
-3
+-1 \\
+0 \\
+0
 \end{array}\right] + x_{3} \left[\begin{array}{c}
 3 \\
 4 \\
-2
+-4
 \end{array}\right] + x_{4} \left[\begin{array}{c}
-1 \\
-1 \\
-3
+6 \\
+3 \\
+-2
 \end{array}\right] = \left[\begin{array}{c}
--5 \\
--7 \\
+-3 \\
+1 \\
 -1
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-29' class='exercise-heading'>Example 29 <small><a href='#ex-29'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p> Consider the augmented matrix </p>
+    <p>\[ \left[\begin{array}{ccc|c}
+-2 &amp; 1 &amp; 6 &amp; 0 \\
+1 &amp; -1 &amp; -4 &amp; 0 \\
+1 &amp; -1 &amp; -4 &amp; 0 \\
+0 &amp; -3 &amp; -6 &amp; 0
+\end{array}\right] \]</p>
+    <ol type="a">
+      <li> Write a system of scalar equations corresponding to this augmented matrix. </li>
+      <li> Write a vector equation corresponding to this augmented matrix. </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+                \begin{alignat*}{4} -2 \, x &amp;+&amp; y &amp;+&amp; 6 \, z &amp;=&amp; 0 \\x &amp;-&amp; y &amp;-&amp; 4 \, z &amp;=&amp; 0 \\x &amp;-&amp; y &amp;-&amp; 4 \, z &amp;=&amp; 0 \\ &amp;-&amp; 3 \, y &amp;-&amp; 6 \, z &amp;=&amp; 0 \\ \end{alignat*}
+            </li>
+      <li>
+        <p>\[ x_{1} \left[\begin{array}{c}
+-2 \\
+1 \\
+1 \\
+0
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+1 \\
+-1 \\
+-1 \\
+-3
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+6 \\
+-4 \\
+-4 \\
+-6
+\end{array}\right] = \left[\begin{array}{c}
+0 \\
+0 \\
+0 \\
+0
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-30' class='exercise-heading'>Example 30 <small><a href='#ex-30'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Consider the vector equation.</p>
+    <p>\[ x_{1} \left[\begin{array}{c}
+1 \\
+0 \\
+-1
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+-4 \\
+0 \\
+4
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+3 \\
+0 \\
+-3
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+0 \\
+1 \\
+-2
+\end{array}\right] = \left[\begin{array}{c}
+-2 \\
+3 \\
+-4
 \end{array}\right] \]</p>
     <ol type="a">
       <li> Write a system of scalar equations corresponding to this vector equation. </li>
@@ -1519,111 +1613,13 @@
     </p>
     <ol type="a">
       <li>
-                \begin{alignat*}{5} -2 \, x_{1} &amp;+&amp; x_{2} &amp;+&amp; 3 \, x_{3} &amp;+&amp; x_{4} &amp;=&amp; -5 \\-3 \, x_{1} &amp;+&amp; x_{2} &amp;+&amp; 4 \, x_{3} &amp;+&amp; x_{4} &amp;=&amp; -7 \\x_{1} &amp;+&amp; 3 \, x_{2} &amp;+&amp; 2 \, x_{3} &amp;+&amp; 3 \, x_{4} &amp;=&amp; -1 \\ \end{alignat*}
+                \begin{alignat*}{5} x_{1} &amp;-&amp; 4 \, x_{2} &amp;+&amp; 3 \, x_{3} &amp; &amp;  &amp;=&amp; -2 \\ &amp; &amp;  &amp; &amp;  &amp; &amp; x_{4} &amp;=&amp; 3 \\-x_{1} &amp;+&amp; 4 \, x_{2} &amp;-&amp; 3 \, x_{3} &amp;-&amp; 2 \, x_{4} &amp;=&amp; -4 \\ \end{alignat*}
             </li>
       <li>
         <p>\[ \left[\begin{array}{cccc|c}
--2 &amp; 1 &amp; 3 &amp; 1 &amp; -5 \\
--3 &amp; 1 &amp; 4 &amp; 1 &amp; -7 \\
-1 &amp; 3 &amp; 2 &amp; 3 &amp; -1
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-29' class='exercise-heading'>Example 29 <small><a href='#ex-29'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p> Consider the augmented matrix </p>
-    <p>\[ \left[\begin{array}{cccc|c}
-0 &amp; 0 &amp; 1 &amp; -1 &amp; 0 \\
-2 &amp; -3 &amp; -6 &amp; -2 &amp; -5 \\
--1 &amp; 2 &amp; 6 &amp; -1 &amp; 3
-\end{array}\right] \]</p>
-    <ol type="a">
-      <li> Write a system of scalar equations corresponding to this augmented matrix. </li>
-      <li> Write a vector equation corresponding to this augmented matrix. </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-                \begin{alignat*}{5}  &amp; &amp;  &amp; &amp; z &amp;-&amp; {w} &amp;=&amp; 0 \\2 \, x &amp;-&amp; 3 \, y &amp;-&amp; 6 \, z &amp;-&amp; 2 \, {w} &amp;=&amp; -5 \\-x &amp;+&amp; 2 \, y &amp;+&amp; 6 \, z &amp;-&amp; {w} &amp;=&amp; 3 \\ \end{alignat*}
-            </li>
-      <li>
-        <p>\[ x_{1} \left[\begin{array}{c}
-0 \\
-2 \\
--1
-\end{array}\right] + x_{2} \left[\begin{array}{c}
-0 \\
--3 \\
-2
-\end{array}\right] + x_{3} \left[\begin{array}{c}
-1 \\
--6 \\
-6
-\end{array}\right] + x_{4} \left[\begin{array}{c}
--1 \\
--2 \\
--1
-\end{array}\right] = \left[\begin{array}{c}
-0 \\
--5 \\
-3
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-30' class='exercise-heading'>Example 30 <small><a href='#ex-30'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p> Consider the augmented matrix </p>
-    <p>\[ \left[\begin{array}{cccc|c}
--2 &amp; 1 &amp; -1 &amp; -3 &amp; -4 \\
--3 &amp; 1 &amp; -2 &amp; -6 &amp; -5 \\
-3 &amp; -1 &amp; 2 &amp; 6 &amp; 5
-\end{array}\right] \]</p>
-    <ol type="a">
-      <li> Write a system of scalar equations corresponding to this augmented matrix. </li>
-      <li> Write a vector equation corresponding to this augmented matrix. </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-                \begin{alignat*}{5} -2 \, x &amp;+&amp; y &amp;-&amp; z &amp;-&amp; 3 \, {w} &amp;=&amp; -4 \\-3 \, x &amp;+&amp; y &amp;-&amp; 2 \, z &amp;-&amp; 6 \, {w} &amp;=&amp; -5 \\3 \, x &amp;-&amp; y &amp;+&amp; 2 \, z &amp;+&amp; 6 \, {w} &amp;=&amp; 5 \\ \end{alignat*}
-            </li>
-      <li>
-        <p>\[ x_{1} \left[\begin{array}{c}
--2 \\
--3 \\
-3
-\end{array}\right] + x_{2} \left[\begin{array}{c}
-1 \\
-1 \\
--1
-\end{array}\right] + x_{3} \left[\begin{array}{c}
--1 \\
--2 \\
-2
-\end{array}\right] + x_{4} \left[\begin{array}{c}
--3 \\
--6 \\
-6
-\end{array}\right] = \left[\begin{array}{c}
--4 \\
--5 \\
-5
+1 &amp; -4 &amp; 3 &amp; 0 &amp; -2 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; 3 \\
+-1 &amp; 4 &amp; -3 &amp; -2 &amp; -4
 \end{array}\right] \]</p>
       </li>
     </ol>
@@ -1635,25 +1631,25 @@
   <div class="exercise-statement">
     <p>Consider the vector equation.</p>
     <p>\[ x_{1} \left[\begin{array}{c}
+1 \\
+-1 \\
 0 \\
-2 \\
-1
+0
 \end{array}\right] + x_{2} \left[\begin{array}{c}
+2 \\
 -3 \\
--3 \\
+3 \\
 1
 \end{array}\right] + x_{3} \left[\begin{array}{c}
--6 \\
--4 \\
-3
-\end{array}\right] + x_{4} \left[\begin{array}{c}
--6 \\
--8 \\
-1
+0 \\
+4 \\
+-5 \\
+-3
 \end{array}\right] = \left[\begin{array}{c}
--3 \\
--7 \\
--1
+7 \\
+2 \\
+-6 \\
+-6
 \end{array}\right] \]</p>
     <ol type="a">
       <li> Write a system of scalar equations corresponding to this vector equation. </li>
@@ -1666,13 +1662,14 @@
     </p>
     <ol type="a">
       <li>
-                \begin{alignat*}{5}  &amp;-&amp; 3 \, y &amp;-&amp; 6 \, z &amp;-&amp; 6 \, {w} &amp;=&amp; -3 \\2 \, x &amp;-&amp; 3 \, y &amp;-&amp; 4 \, z &amp;-&amp; 8 \, {w} &amp;=&amp; -7 \\x &amp;+&amp; y &amp;+&amp; 3 \, z &amp;+&amp; {w} &amp;=&amp; -1 \\ \end{alignat*}
+                \begin{alignat*}{4} x &amp;+&amp; 2 \, y &amp; &amp;  &amp;=&amp; 7 \\-x &amp;-&amp; 3 \, y &amp;+&amp; 4 \, z &amp;=&amp; 2 \\ &amp; &amp; 3 \, y &amp;-&amp; 5 \, z &amp;=&amp; -6 \\ &amp; &amp; y &amp;-&amp; 3 \, z &amp;=&amp; -6 \\ \end{alignat*}
             </li>
       <li>
-        <p>\[ \left[\begin{array}{cccc|c}
-0 &amp; -3 &amp; -6 &amp; -6 &amp; -3 \\
-2 &amp; -3 &amp; -4 &amp; -8 &amp; -7 \\
-1 &amp; 1 &amp; 3 &amp; 1 &amp; -1
+        <p>\[ \left[\begin{array}{ccc|c}
+1 &amp; 2 &amp; 0 &amp; 7 \\
+-1 &amp; -3 &amp; 4 &amp; 2 \\
+0 &amp; 3 &amp; -5 &amp; -6 \\
+0 &amp; 1 &amp; -3 &amp; -6
 \end{array}\right] \]</p>
       </li>
     </ol>
@@ -1684,10 +1681,10 @@
   <div class="exercise-statement">
     <p> Consider the augmented matrix </p>
     <p>\[ \left[\begin{array}{ccc|c}
-1 &amp; -4 &amp; 3 &amp; -6 \\
-1 &amp; 6 &amp; -7 &amp; 4 \\
-0 &amp; 3 &amp; -3 &amp; 3 \\
-2 &amp; 5 &amp; -7 &amp; 1
+-3 &amp; 1 &amp; 4 &amp; 4 \\
+0 &amp; 1 &amp; -3 &amp; 1 \\
+-2 &amp; 1 &amp; 4 &amp; 3 \\
+-2 &amp; 0 &amp; 5 &amp; 2
 \end{array}\right] \]</p>
     <ol type="a">
       <li> Write a system of scalar equations corresponding to this augmented matrix. </li>
@@ -1700,29 +1697,29 @@
     </p>
     <ol type="a">
       <li>
-                \begin{alignat*}{4} x &amp;-&amp; 4 \, y &amp;+&amp; 3 \, z &amp;=&amp; -6 \\x &amp;+&amp; 6 \, y &amp;-&amp; 7 \, z &amp;=&amp; 4 \\ &amp; &amp; 3 \, y &amp;-&amp; 3 \, z &amp;=&amp; 3 \\2 \, x &amp;+&amp; 5 \, y &amp;-&amp; 7 \, z &amp;=&amp; 1 \\ \end{alignat*}
+                \begin{alignat*}{4} -3 \, x_{1} &amp;+&amp; x_{2} &amp;+&amp; 4 \, x_{3} &amp;=&amp; 4 \\ &amp; &amp; x_{2} &amp;-&amp; 3 \, x_{3} &amp;=&amp; 1 \\-2 \, x_{1} &amp;+&amp; x_{2} &amp;+&amp; 4 \, x_{3} &amp;=&amp; 3 \\-2 \, x_{1} &amp; &amp;  &amp;+&amp; 5 \, x_{3} &amp;=&amp; 2 \\ \end{alignat*}
             </li>
       <li>
         <p>\[ x_{1} \left[\begin{array}{c}
-1 \\
-1 \\
-0 \\
-2
-\end{array}\right] + x_{2} \left[\begin{array}{c}
--4 \\
-6 \\
-3 \\
-5
-\end{array}\right] + x_{3} \left[\begin{array}{c}
-3 \\
--7 \\
 -3 \\
--7
-\end{array}\right] = \left[\begin{array}{c}
--6 \\
+0 \\
+-2 \\
+-2
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+1 \\
+1 \\
+1 \\
+0
+\end{array}\right] + x_{3} \left[\begin{array}{c}
 4 \\
+-3 \\
+4 \\
+5
+\end{array}\right] = \left[\begin{array}{c}
+4 \\
+1 \\
 3 \\
-1
+2
 \end{array}\right] \]</p>
       </li>
     </ol>
@@ -1733,7 +1730,58 @@
 <h4 id='ex-33' class='exercise-heading'>Example 33 <small><a href='#ex-33'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
     <p> Consider the system of equations 
-                \begin{alignat*}{5} x &amp;+&amp; 2 \, y &amp;+&amp; z &amp;+&amp; 2 \, {w} &amp;=&amp; -6 \\-2 \, x &amp;-&amp; 3 \, y &amp;+&amp; z &amp;-&amp; 4 \, {w} &amp;=&amp; 6 \\x &amp;+&amp; 2 \, y &amp;+&amp; 2 \, z &amp;+&amp; {w} &amp;=&amp; -7 \\ \end{alignat*}
+                \begin{alignat*}{4}  &amp;-&amp; x_{2} &amp; &amp;  &amp;=&amp; 0 \\ &amp; &amp; x_{2} &amp;+&amp; 2 \, x_{3} &amp;=&amp; -6 \\x_{1} &amp;+&amp; x_{2} &amp;+&amp; x_{3} &amp;=&amp; -4 \\-x_{1} &amp;-&amp; 3 \, x_{2} &amp;-&amp; 2 \, x_{3} &amp;=&amp; 7 \\ \end{alignat*}
+            </p>
+    <ol type="a">
+      <li> Write an augmented matrix corresponding to this system. </li>
+      <li> Write a vector equation corresponding to this system. </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+        <p>\[ \left[\begin{array}{ccc|c}
+0 &amp; -1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 2 &amp; -6 \\
+1 &amp; 1 &amp; 1 &amp; -4 \\
+-1 &amp; -3 &amp; -2 &amp; 7
+\end{array}\right] \]</p>
+      </li>
+      <li>
+        <p>\[ x_{1} \left[\begin{array}{c}
+0 \\
+0 \\
+1 \\
+-1
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+-1 \\
+1 \\
+1 \\
+-3
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+0 \\
+2 \\
+1 \\
+-2
+\end{array}\right] = \left[\begin{array}{c}
+0 \\
+-6 \\
+-4 \\
+7
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-34' class='exercise-heading'>Example 34 <small><a href='#ex-34'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p> Consider the system of equations 
+                \begin{alignat*}{5} x_{1} &amp;-&amp; x_{2} &amp;-&amp; 6 \, x_{3} &amp;-&amp; 8 \, x_{4} &amp;=&amp; -3 \\ &amp; &amp; x_{2} &amp;+&amp; 3 \, x_{3} &amp;+&amp; 4 \, x_{4} &amp;=&amp; 3 \\ &amp; &amp;  &amp; &amp; x_{3} &amp;+&amp; x_{4} &amp;=&amp; 1 \\ \end{alignat*}
             </p>
     <ol type="a">
       <li> Write an augmented matrix corresponding to this system. </li>
@@ -1747,82 +1795,32 @@
     <ol type="a">
       <li>
         <p>\[ \left[\begin{array}{cccc|c}
-1 &amp; 2 &amp; 1 &amp; 2 &amp; -6 \\
--2 &amp; -3 &amp; 1 &amp; -4 &amp; 6 \\
-1 &amp; 2 &amp; 2 &amp; 1 &amp; -7
+1 &amp; -1 &amp; -6 &amp; -8 &amp; -3 \\
+0 &amp; 1 &amp; 3 &amp; 4 &amp; 3 \\
+0 &amp; 0 &amp; 1 &amp; 1 &amp; 1
 \end{array}\right] \]</p>
       </li>
       <li>
         <p>\[ x_{1} \left[\begin{array}{c}
 1 \\
--2 \\
-1
+0 \\
+0
 \end{array}\right] + x_{2} \left[\begin{array}{c}
-2 \\
--3 \\
-2
+-1 \\
+1 \\
+0
 \end{array}\right] + x_{3} \left[\begin{array}{c}
-1 \\
-1 \\
-2
-\end{array}\right] + x_{4} \left[\begin{array}{c}
-2 \\
--4 \\
-1
-\end{array}\right] = \left[\begin{array}{c}
 -6 \\
-6 \\
--7
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-34' class='exercise-heading'>Example 34 <small><a href='#ex-34'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Consider the vector equation.</p>
-    <p>\[ x_{1} \left[\begin{array}{c}
--8 \\
-0 \\
-1 \\
--3
-\end{array}\right] + x_{2} \left[\begin{array}{c}
-0 \\
-1 \\
--2 \\
-0
-\end{array}\right] + x_{3} \left[\begin{array}{c}
--2 \\
-1 \\
-0 \\
--1
-\end{array}\right] = \left[\begin{array}{c}
-2 \\
-1 \\
 3 \\
-0
-\end{array}\right] \]</p>
-    <ol type="a">
-      <li> Write a system of scalar equations corresponding to this vector equation. </li>
-      <li> Write an augmented matrix corresponding to this vector equation. </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-                \begin{alignat*}{4} -8 \, x_{1} &amp; &amp;  &amp;-&amp; 2 \, x_{3} &amp;=&amp; 2 \\ &amp; &amp; x_{2} &amp;+&amp; x_{3} &amp;=&amp; 1 \\x_{1} &amp;-&amp; 2 \, x_{2} &amp; &amp;  &amp;=&amp; 3 \\-3 \, x_{1} &amp; &amp;  &amp;-&amp; x_{3} &amp;=&amp; 0 \\ \end{alignat*}
-            </li>
-      <li>
-        <p>\[ \left[\begin{array}{ccc|c}
--8 &amp; 0 &amp; -2 &amp; 2 \\
-0 &amp; 1 &amp; 1 &amp; 1 \\
-1 &amp; -2 &amp; 0 &amp; 3 \\
--3 &amp; 0 &amp; -1 &amp; 0
+1
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+-8 \\
+4 \\
+1
+\end{array}\right] = \left[\begin{array}{c}
+-3 \\
+3 \\
+1
 \end{array}\right] \]</p>
       </li>
     </ol>
@@ -1833,11 +1831,10 @@
 <h4 id='ex-35' class='exercise-heading'>Example 35 <small><a href='#ex-35'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
     <p> Consider the augmented matrix </p>
-    <p>\[ \left[\begin{array}{ccc|c}
--1 &amp; 2 &amp; 3 &amp; -4 \\
--2 &amp; -3 &amp; -8 &amp; 6 \\
-3 &amp; 2 &amp; 7 &amp; -4 \\
--1 &amp; 0 &amp; -1 &amp; 0
+    <p>\[ \left[\begin{array}{cccc|c}
+1 &amp; -5 &amp; -1 &amp; 6 &amp; 2 \\
+1 &amp; -5 &amp; 2 &amp; -3 &amp; -1 \\
+0 &amp; 0 &amp; 2 &amp; -6 &amp; -2
 \end{array}\right] \]</p>
     <ol type="a">
       <li> Write a system of scalar equations corresponding to this augmented matrix. </li>
@@ -1850,29 +1847,29 @@
     </p>
     <ol type="a">
       <li>
-                \begin{alignat*}{4} -x_{1} &amp;+&amp; 2 \, x_{2} &amp;+&amp; 3 \, x_{3} &amp;=&amp; -4 \\-2 \, x_{1} &amp;-&amp; 3 \, x_{2} &amp;-&amp; 8 \, x_{3} &amp;=&amp; 6 \\3 \, x_{1} &amp;+&amp; 2 \, x_{2} &amp;+&amp; 7 \, x_{3} &amp;=&amp; -4 \\-x_{1} &amp; &amp;  &amp;-&amp; x_{3} &amp;=&amp; 0 \\ \end{alignat*}
+                \begin{alignat*}{5} x_{1} &amp;-&amp; 5 \, x_{2} &amp;-&amp; x_{3} &amp;+&amp; 6 \, x_{4} &amp;=&amp; 2 \\x_{1} &amp;-&amp; 5 \, x_{2} &amp;+&amp; 2 \, x_{3} &amp;-&amp; 3 \, x_{4} &amp;=&amp; -1 \\ &amp; &amp;  &amp; &amp; 2 \, x_{3} &amp;-&amp; 6 \, x_{4} &amp;=&amp; -2 \\ \end{alignat*}
             </li>
       <li>
         <p>\[ x_{1} \left[\begin{array}{c}
--1 \\
--2 \\
-3 \\
--1
+1 \\
+1 \\
+0
 \end{array}\right] + x_{2} \left[\begin{array}{c}
-2 \\
--3 \\
-2 \\
+-5 \\
+-5 \\
 0
 \end{array}\right] + x_{3} \left[\begin{array}{c}
-3 \\
--8 \\
-7 \\
--1
-\end{array}\right] = \left[\begin{array}{c}
--4 \\
+-1 \\
+2 \\
+2
+\end{array}\right] + x_{4} \left[\begin{array}{c}
 6 \\
--4 \\
-0
+-3 \\
+-6
+\end{array}\right] = \left[\begin{array}{c}
+2 \\
+-1 \\
+-2
 \end{array}\right] \]</p>
       </li>
     </ol>
@@ -1882,31 +1879,16 @@
 <hr/>
 <h4 id='ex-36' class='exercise-heading'>Example 36 <small><a href='#ex-36'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Consider the vector equation.</p>
-    <p>\[ x_{1} \left[\begin{array}{c}
-1 \\
--1 \\
--1
-\end{array}\right] + x_{2} \left[\begin{array}{c}
-4 \\
--4 \\
--4
-\end{array}\right] + x_{3} \left[\begin{array}{c}
--2 \\
-3 \\
-2
-\end{array}\right] + x_{4} \left[\begin{array}{c}
--6 \\
-8 \\
-6
-\end{array}\right] = \left[\begin{array}{c}
-4 \\
--6 \\
--4
+    <p> Consider the augmented matrix </p>
+    <p>\[ \left[\begin{array}{ccc|c}
+-1 &amp; 0 &amp; 5 &amp; -6 \\
+-2 &amp; -7 &amp; -8 &amp; 6 \\
+-1 &amp; -2 &amp; 0 &amp; -1 \\
+1 &amp; 3 &amp; 8 &amp; -7
 \end{array}\right] \]</p>
     <ol type="a">
-      <li> Write a system of scalar equations corresponding to this vector equation. </li>
-      <li> Write an augmented matrix corresponding to this vector equation. </li>
+      <li> Write a system of scalar equations corresponding to this augmented matrix. </li>
+      <li> Write a vector equation corresponding to this augmented matrix. </li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -1915,13 +1897,29 @@
     </p>
     <ol type="a">
       <li>
-                \begin{alignat*}{5} x_{1} &amp;+&amp; 4 \, x_{2} &amp;-&amp; 2 \, x_{3} &amp;-&amp; 6 \, x_{4} &amp;=&amp; 4 \\-x_{1} &amp;-&amp; 4 \, x_{2} &amp;+&amp; 3 \, x_{3} &amp;+&amp; 8 \, x_{4} &amp;=&amp; -6 \\-x_{1} &amp;-&amp; 4 \, x_{2} &amp;+&amp; 2 \, x_{3} &amp;+&amp; 6 \, x_{4} &amp;=&amp; -4 \\ \end{alignat*}
+                \begin{alignat*}{4} -x_{1} &amp; &amp;  &amp;+&amp; 5 \, x_{3} &amp;=&amp; -6 \\-2 \, x_{1} &amp;-&amp; 7 \, x_{2} &amp;-&amp; 8 \, x_{3} &amp;=&amp; 6 \\-x_{1} &amp;-&amp; 2 \, x_{2} &amp; &amp;  &amp;=&amp; -1 \\x_{1} &amp;+&amp; 3 \, x_{2} &amp;+&amp; 8 \, x_{3} &amp;=&amp; -7 \\ \end{alignat*}
             </li>
       <li>
-        <p>\[ \left[\begin{array}{cccc|c}
-1 &amp; 4 &amp; -2 &amp; -6 &amp; 4 \\
--1 &amp; -4 &amp; 3 &amp; 8 &amp; -6 \\
--1 &amp; -4 &amp; 2 &amp; 6 &amp; -4
+        <p>\[ x_{1} \left[\begin{array}{c}
+-1 \\
+-2 \\
+-1 \\
+1
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+0 \\
+-7 \\
+-2 \\
+3
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+5 \\
+-8 \\
+0 \\
+8
+\end{array}\right] = \left[\begin{array}{c}
+-6 \\
+6 \\
+-1 \\
+-7
 \end{array}\right] \]</p>
       </li>
     </ol>
@@ -1931,31 +1929,15 @@
 <hr/>
 <h4 id='ex-37' class='exercise-heading'>Example 37 <small><a href='#ex-37'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Consider the vector equation.</p>
-    <p>\[ x_{1} \left[\begin{array}{c}
-2 \\
-1 \\
-2
-\end{array}\right] + x_{2} \left[\begin{array}{c}
--3 \\
--1 \\
--6
-\end{array}\right] + x_{3} \left[\begin{array}{c}
--2 \\
-0 \\
--7
-\end{array}\right] + x_{4} \left[\begin{array}{c}
--5 \\
--3 \\
--3
-\end{array}\right] = \left[\begin{array}{c}
--1 \\
--2 \\
-5
+    <p> Consider the augmented matrix </p>
+    <p>\[ \left[\begin{array}{cccc|c}
+-2 &amp; -3 &amp; -2 &amp; 2 &amp; -2 \\
+0 &amp; 1 &amp; -3 &amp; -5 &amp; 5 \\
+1 &amp; 1 &amp; 2 &amp; 1 &amp; -1
 \end{array}\right] \]</p>
     <ol type="a">
-      <li> Write a system of scalar equations corresponding to this vector equation. </li>
-      <li> Write an augmented matrix corresponding to this vector equation. </li>
+      <li> Write a system of scalar equations corresponding to this augmented matrix. </li>
+      <li> Write a vector equation corresponding to this augmented matrix. </li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -1964,13 +1946,29 @@
     </p>
     <ol type="a">
       <li>
-                \begin{alignat*}{5} 2 \, x &amp;-&amp; 3 \, y &amp;-&amp; 2 \, z &amp;-&amp; 5 \, {w} &amp;=&amp; -1 \\x &amp;-&amp; y &amp; &amp;  &amp;-&amp; 3 \, {w} &amp;=&amp; -2 \\2 \, x &amp;-&amp; 6 \, y &amp;-&amp; 7 \, z &amp;-&amp; 3 \, {w} &amp;=&amp; 5 \\ \end{alignat*}
+                \begin{alignat*}{5} -2 \, x_{1} &amp;-&amp; 3 \, x_{2} &amp;-&amp; 2 \, x_{3} &amp;+&amp; 2 \, x_{4} &amp;=&amp; -2 \\ &amp; &amp; x_{2} &amp;-&amp; 3 \, x_{3} &amp;-&amp; 5 \, x_{4} &amp;=&amp; 5 \\x_{1} &amp;+&amp; x_{2} &amp;+&amp; 2 \, x_{3} &amp;+&amp; x_{4} &amp;=&amp; -1 \\ \end{alignat*}
             </li>
       <li>
-        <p>\[ \left[\begin{array}{cccc|c}
-2 &amp; -3 &amp; -2 &amp; -5 &amp; -1 \\
-1 &amp; -1 &amp; 0 &amp; -3 &amp; -2 \\
-2 &amp; -6 &amp; -7 &amp; -3 &amp; 5
+        <p>\[ x_{1} \left[\begin{array}{c}
+-2 \\
+0 \\
+1
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+-3 \\
+1 \\
+1
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+-2 \\
+-3 \\
+2
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+2 \\
+-5 \\
+1
+\end{array}\right] = \left[\begin{array}{c}
+-2 \\
+5 \\
+-1
 \end{array}\right] \]</p>
       </li>
     </ol>
@@ -1981,259 +1979,7 @@
 <h4 id='ex-38' class='exercise-heading'>Example 38 <small><a href='#ex-38'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
     <p> Consider the system of equations 
-                \begin{alignat*}{4} x &amp; &amp;  &amp;+&amp; 2 \, z &amp;=&amp; 6 \\x &amp;+&amp; y &amp;+&amp; 2 \, z &amp;=&amp; 4 \\ &amp; &amp; 3 \, y &amp;+&amp; z &amp;=&amp; -4 \\ &amp; &amp; 3 \, y &amp; &amp;  &amp;=&amp; -6 \\ \end{alignat*}
-            </p>
-    <ol type="a">
-      <li> Write an augmented matrix corresponding to this system. </li>
-      <li> Write a vector equation corresponding to this system. </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-        <p>\[ \left[\begin{array}{ccc|c}
-1 &amp; 0 &amp; 2 &amp; 6 \\
-1 &amp; 1 &amp; 2 &amp; 4 \\
-0 &amp; 3 &amp; 1 &amp; -4 \\
-0 &amp; 3 &amp; 0 &amp; -6
-\end{array}\right] \]</p>
-      </li>
-      <li>
-        <p>\[ x_{1} \left[\begin{array}{c}
-1 \\
-1 \\
-0 \\
-0
-\end{array}\right] + x_{2} \left[\begin{array}{c}
-0 \\
-1 \\
-3 \\
-3
-\end{array}\right] + x_{3} \left[\begin{array}{c}
-2 \\
-2 \\
-1 \\
-0
-\end{array}\right] = \left[\begin{array}{c}
-6 \\
-4 \\
--4 \\
--6
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-39' class='exercise-heading'>Example 39 <small><a href='#ex-39'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p> Consider the augmented matrix </p>
-    <p>\[ \left[\begin{array}{cccc|c}
-1 &amp; -3 &amp; -3 &amp; -1 &amp; -4 \\
-1 &amp; -3 &amp; -2 &amp; 0 &amp; -2 \\
-0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
-\end{array}\right] \]</p>
-    <ol type="a">
-      <li> Write a system of scalar equations corresponding to this augmented matrix. </li>
-      <li> Write a vector equation corresponding to this augmented matrix. </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-                \begin{alignat*}{5} x &amp;-&amp; 3 \, y &amp;-&amp; 3 \, z &amp;-&amp; {w} &amp;=&amp; -4 \\x &amp;-&amp; 3 \, y &amp;-&amp; 2 \, z &amp; &amp;  &amp;=&amp; -2 \\ &amp; &amp;  &amp; &amp;  &amp; &amp; 0 &amp;=&amp; 0 \\ \end{alignat*}
-            </li>
-      <li>
-        <p>\[ x_{1} \left[\begin{array}{c}
-1 \\
-1 \\
-0
-\end{array}\right] + x_{2} \left[\begin{array}{c}
--3 \\
--3 \\
-0
-\end{array}\right] + x_{3} \left[\begin{array}{c}
--3 \\
--2 \\
-0
-\end{array}\right] + x_{4} \left[\begin{array}{c}
--1 \\
-0 \\
-0
-\end{array}\right] = \left[\begin{array}{c}
--4 \\
--2 \\
-0
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-40' class='exercise-heading'>Example 40 <small><a href='#ex-40'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p> Consider the system of equations 
-                \begin{alignat*}{4} x &amp;+&amp; y &amp;+&amp; z &amp;=&amp; 0 \\4 \, x &amp;+&amp; 5 \, y &amp;+&amp; 7 \, z &amp;=&amp; -3 \\-x &amp;+&amp; y &amp;+&amp; 6 \, z &amp;=&amp; -8 \\ &amp;-&amp; 3 \, y &amp;-&amp; 6 \, z &amp;=&amp; 3 \\ \end{alignat*}
-            </p>
-    <ol type="a">
-      <li> Write an augmented matrix corresponding to this system. </li>
-      <li> Write a vector equation corresponding to this system. </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-        <p>\[ \left[\begin{array}{ccc|c}
-1 &amp; 1 &amp; 1 &amp; 0 \\
-4 &amp; 5 &amp; 7 &amp; -3 \\
--1 &amp; 1 &amp; 6 &amp; -8 \\
-0 &amp; -3 &amp; -6 &amp; 3
-\end{array}\right] \]</p>
-      </li>
-      <li>
-        <p>\[ x_{1} \left[\begin{array}{c}
-1 \\
-4 \\
--1 \\
-0
-\end{array}\right] + x_{2} \left[\begin{array}{c}
-1 \\
-5 \\
-1 \\
--3
-\end{array}\right] + x_{3} \left[\begin{array}{c}
-1 \\
-7 \\
-6 \\
--6
-\end{array}\right] = \left[\begin{array}{c}
-0 \\
--3 \\
--8 \\
-3
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-41' class='exercise-heading'>Example 41 <small><a href='#ex-41'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p> Consider the system of equations 
-                \begin{alignat*}{4} -x_{1} &amp;+&amp; x_{2} &amp;-&amp; 2 \, x_{3} &amp;=&amp; -1 \\-x_{1} &amp; &amp;  &amp;+&amp; 3 \, x_{3} &amp;=&amp; -2 \\-x_{1} &amp; &amp;  &amp;+&amp; 4 \, x_{3} &amp;=&amp; -2 \\ &amp; &amp;  &amp;-&amp; 4 \, x_{3} &amp;=&amp; 0 \\ \end{alignat*}
-            </p>
-    <ol type="a">
-      <li> Write an augmented matrix corresponding to this system. </li>
-      <li> Write a vector equation corresponding to this system. </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-        <p>\[ \left[\begin{array}{ccc|c}
--1 &amp; 1 &amp; -2 &amp; -1 \\
--1 &amp; 0 &amp; 3 &amp; -2 \\
--1 &amp; 0 &amp; 4 &amp; -2 \\
-0 &amp; 0 &amp; -4 &amp; 0
-\end{array}\right] \]</p>
-      </li>
-      <li>
-        <p>\[ x_{1} \left[\begin{array}{c}
--1 \\
--1 \\
--1 \\
-0
-\end{array}\right] + x_{2} \left[\begin{array}{c}
-1 \\
-0 \\
-0 \\
-0
-\end{array}\right] + x_{3} \left[\begin{array}{c}
--2 \\
-3 \\
-4 \\
--4
-\end{array}\right] = \left[\begin{array}{c}
--1 \\
--2 \\
--2 \\
-0
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-42' class='exercise-heading'>Example 42 <small><a href='#ex-42'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Consider the vector equation.</p>
-    <p>\[ x_{1} \left[\begin{array}{c}
-1 \\
-2 \\
--1 \\
--1
-\end{array}\right] + x_{2} \left[\begin{array}{c}
-1 \\
-3 \\
--2 \\
--6
-\end{array}\right] + x_{3} \left[\begin{array}{c}
-4 \\
-8 \\
--3 \\
--4
-\end{array}\right] = \left[\begin{array}{c}
-2 \\
-4 \\
--1 \\
--2
-\end{array}\right] \]</p>
-    <ol type="a">
-      <li> Write a system of scalar equations corresponding to this vector equation. </li>
-      <li> Write an augmented matrix corresponding to this vector equation. </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-                \begin{alignat*}{4} x &amp;+&amp; y &amp;+&amp; 4 \, z &amp;=&amp; 2 \\2 \, x &amp;+&amp; 3 \, y &amp;+&amp; 8 \, z &amp;=&amp; 4 \\-x &amp;-&amp; 2 \, y &amp;-&amp; 3 \, z &amp;=&amp; -1 \\-x &amp;-&amp; 6 \, y &amp;-&amp; 4 \, z &amp;=&amp; -2 \\ \end{alignat*}
-            </li>
-      <li>
-        <p>\[ \left[\begin{array}{ccc|c}
-1 &amp; 1 &amp; 4 &amp; 2 \\
-2 &amp; 3 &amp; 8 &amp; 4 \\
--1 &amp; -2 &amp; -3 &amp; -1 \\
--1 &amp; -6 &amp; -4 &amp; -2
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-43' class='exercise-heading'>Example 43 <small><a href='#ex-43'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p> Consider the system of equations 
-                \begin{alignat*}{5} 2 \, x &amp; &amp;  &amp;-&amp; 3 \, z &amp;+&amp; 6 \, {w} &amp;=&amp; 3 \\5 \, x &amp;+&amp; y &amp;-&amp; 2 \, z &amp;+&amp; 3 \, {w} &amp;=&amp; 3 \\-x &amp; &amp;  &amp;+&amp; 2 \, z &amp;-&amp; 4 \, {w} &amp;=&amp; -2 \\ \end{alignat*}
+                \begin{alignat*}{5} -x &amp;-&amp; y &amp;-&amp; 2 \, z &amp;+&amp; 3 \, {w} &amp;=&amp; 3 \\-x &amp;+&amp; 2 \, y &amp;-&amp; z &amp;-&amp; 5 \, {w} &amp;=&amp; 6 \\2 \, x &amp; &amp;  &amp;+&amp; 3 \, z &amp;-&amp; {w} &amp;=&amp; -7 \\ \end{alignat*}
             </p>
     <ol type="a">
       <li> Write an augmented matrix corresponding to this system. </li>
@@ -2247,32 +1993,32 @@
     <ol type="a">
       <li>
         <p>\[ \left[\begin{array}{cccc|c}
-2 &amp; 0 &amp; -3 &amp; 6 &amp; 3 \\
-5 &amp; 1 &amp; -2 &amp; 3 &amp; 3 \\
--1 &amp; 0 &amp; 2 &amp; -4 &amp; -2
+-1 &amp; -1 &amp; -2 &amp; 3 &amp; 3 \\
+-1 &amp; 2 &amp; -1 &amp; -5 &amp; 6 \\
+2 &amp; 0 &amp; 3 &amp; -1 &amp; -7
 \end{array}\right] \]</p>
       </li>
       <li>
         <p>\[ x_{1} \left[\begin{array}{c}
-2 \\
-5 \\
--1
+-1 \\
+-1 \\
+2
 \end{array}\right] + x_{2} \left[\begin{array}{c}
-0 \\
-1 \\
+-1 \\
+2 \\
 0
 \end{array}\right] + x_{3} \left[\begin{array}{c}
--3 \\
 -2 \\
-2
+-1 \\
+3
 \end{array}\right] + x_{4} \left[\begin{array}{c}
-6 \\
 3 \\
--4
+-5 \\
+-1
 \end{array}\right] = \left[\begin{array}{c}
 3 \\
-3 \\
--2
+6 \\
+-7
 \end{array}\right] \]</p>
       </li>
     </ol>
@@ -2280,14 +2026,161 @@
 </div>
 
 <hr/>
-<h4 id='ex-44' class='exercise-heading'>Example 44 <small><a href='#ex-44'>🔗</a></small></h4><div class="exercise">
+<h4 id='ex-39' class='exercise-heading'>Example 39 <small><a href='#ex-39'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Consider the vector equation.</p>
+    <p>\[ x_{1} \left[\begin{array}{c}
+2 \\
+1 \\
+1
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+-6 \\
+0 \\
+-5
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+1 \\
+3 \\
+-1
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+0 \\
+5 \\
+-3
+\end{array}\right] = \left[\begin{array}{c}
+-6 \\
+-5 \\
+-2
+\end{array}\right] \]</p>
+    <ol type="a">
+      <li> Write a system of scalar equations corresponding to this vector equation. </li>
+      <li> Write an augmented matrix corresponding to this vector equation. </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+                \begin{alignat*}{5} 2 \, x_{1} &amp;-&amp; 6 \, x_{2} &amp;+&amp; x_{3} &amp; &amp;  &amp;=&amp; -6 \\x_{1} &amp; &amp;  &amp;+&amp; 3 \, x_{3} &amp;+&amp; 5 \, x_{4} &amp;=&amp; -5 \\x_{1} &amp;-&amp; 5 \, x_{2} &amp;-&amp; x_{3} &amp;-&amp; 3 \, x_{4} &amp;=&amp; -2 \\ \end{alignat*}
+            </li>
+      <li>
+        <p>\[ \left[\begin{array}{cccc|c}
+2 &amp; -6 &amp; 1 &amp; 0 &amp; -6 \\
+1 &amp; 0 &amp; 3 &amp; 5 &amp; -5 \\
+1 &amp; -5 &amp; -1 &amp; -3 &amp; -2
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-40' class='exercise-heading'>Example 40 <small><a href='#ex-40'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Consider the vector equation.</p>
+    <p>\[ x_{1} \left[\begin{array}{c}
+1 \\
+-3 \\
+0
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+3 \\
+-5 \\
+1
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+3 \\
+-6 \\
+1
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+0 \\
+1 \\
+0
+\end{array}\right] = \left[\begin{array}{c}
+-3 \\
+3 \\
+-1
+\end{array}\right] \]</p>
+    <ol type="a">
+      <li> Write a system of scalar equations corresponding to this vector equation. </li>
+      <li> Write an augmented matrix corresponding to this vector equation. </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+                \begin{alignat*}{5} x_{1} &amp;+&amp; 3 \, x_{2} &amp;+&amp; 3 \, x_{3} &amp; &amp;  &amp;=&amp; -3 \\-3 \, x_{1} &amp;-&amp; 5 \, x_{2} &amp;-&amp; 6 \, x_{3} &amp;+&amp; x_{4} &amp;=&amp; 3 \\ &amp; &amp; x_{2} &amp;+&amp; x_{3} &amp; &amp;  &amp;=&amp; -1 \\ \end{alignat*}
+            </li>
+      <li>
+        <p>\[ \left[\begin{array}{cccc|c}
+1 &amp; 3 &amp; 3 &amp; 0 &amp; -3 \\
+-3 &amp; -5 &amp; -6 &amp; 1 &amp; 3 \\
+0 &amp; 1 &amp; 1 &amp; 0 &amp; -1
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-41' class='exercise-heading'>Example 41 <small><a href='#ex-41'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p> Consider the system of equations 
+                \begin{alignat*}{5} x_{1} &amp;+&amp; 5 \, x_{2} &amp;-&amp; x_{3} &amp;+&amp; 3 \, x_{4} &amp;=&amp; 0 \\x_{1} &amp;+&amp; 5 \, x_{2} &amp; &amp;  &amp;+&amp; x_{4} &amp;=&amp; 2 \\x_{1} &amp;+&amp; 5 \, x_{2} &amp;-&amp; x_{3} &amp;+&amp; 3 \, x_{4} &amp;=&amp; 0 \\ \end{alignat*}
+            </p>
+    <ol type="a">
+      <li> Write an augmented matrix corresponding to this system. </li>
+      <li> Write a vector equation corresponding to this system. </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+        <p>\[ \left[\begin{array}{cccc|c}
+1 &amp; 5 &amp; -1 &amp; 3 &amp; 0 \\
+1 &amp; 5 &amp; 0 &amp; 1 &amp; 2 \\
+1 &amp; 5 &amp; -1 &amp; 3 &amp; 0
+\end{array}\right] \]</p>
+      </li>
+      <li>
+        <p>\[ x_{1} \left[\begin{array}{c}
+1 \\
+1 \\
+1
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+5 \\
+5 \\
+5
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+-1 \\
+0 \\
+-1
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+3 \\
+1 \\
+3
+\end{array}\right] = \left[\begin{array}{c}
+0 \\
+2 \\
+0
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-42' class='exercise-heading'>Example 42 <small><a href='#ex-42'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
     <p> Consider the augmented matrix </p>
-    <p>\[ \left[\begin{array}{ccc|c}
-3 &amp; -2 &amp; 3 &amp; 4 \\
-0 &amp; 1 &amp; -2 &amp; -6 \\
--2 &amp; 1 &amp; -1 &amp; 0 \\
-1 &amp; -2 &amp; 2 &amp; 6
+    <p>\[ \left[\begin{array}{cccc|c}
+1 &amp; -1 &amp; 0 &amp; 2 &amp; 6 \\
+0 &amp; 1 &amp; -2 &amp; -1 &amp; -4 \\
+0 &amp; 1 &amp; -2 &amp; 0 &amp; -3
 \end{array}\right] \]</p>
     <ol type="a">
       <li> Write a system of scalar equations corresponding to this augmented matrix. </li>
@@ -2300,29 +2193,129 @@
     </p>
     <ol type="a">
       <li>
-                \begin{alignat*}{4} 3 \, x_{1} &amp;-&amp; 2 \, x_{2} &amp;+&amp; 3 \, x_{3} &amp;=&amp; 4 \\ &amp; &amp; x_{2} &amp;-&amp; 2 \, x_{3} &amp;=&amp; -6 \\-2 \, x_{1} &amp;+&amp; x_{2} &amp;-&amp; x_{3} &amp;=&amp; 0 \\x_{1} &amp;-&amp; 2 \, x_{2} &amp;+&amp; 2 \, x_{3} &amp;=&amp; 6 \\ \end{alignat*}
+                \begin{alignat*}{5} x &amp;-&amp; y &amp; &amp;  &amp;+&amp; 2 \, {w} &amp;=&amp; 6 \\ &amp; &amp; y &amp;-&amp; 2 \, z &amp;-&amp; {w} &amp;=&amp; -4 \\ &amp; &amp; y &amp;-&amp; 2 \, z &amp; &amp;  &amp;=&amp; -3 \\ \end{alignat*}
             </li>
       <li>
         <p>\[ x_{1} \left[\begin{array}{c}
-3 \\
+1 \\
 0 \\
--2 \\
-1
+0
 \end{array}\right] + x_{2} \left[\begin{array}{c}
--2 \\
-1 \\
-1 \\
--2
-\end{array}\right] + x_{3} \left[\begin{array}{c}
-3 \\
--2 \\
 -1 \\
-2
-\end{array}\right] = \left[\begin{array}{c}
-4 \\
--6 \\
+1 \\
+1
+\end{array}\right] + x_{3} \left[\begin{array}{c}
 0 \\
-6
+-2 \\
+-2
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+2 \\
+-1 \\
+0
+\end{array}\right] = \left[\begin{array}{c}
+6 \\
+-4 \\
+-3
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-43' class='exercise-heading'>Example 43 <small><a href='#ex-43'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p> Consider the system of equations 
+                \begin{alignat*}{4} -x &amp;+&amp; y &amp;-&amp; z &amp;=&amp; -4 \\-x &amp; &amp;  &amp;-&amp; 4 \, z &amp;=&amp; -5 \\x &amp;-&amp; y &amp;+&amp; 2 \, z &amp;=&amp; 5 \\-x &amp; &amp;  &amp;-&amp; 7 \, z &amp;=&amp; -8 \\ \end{alignat*}
+            </p>
+    <ol type="a">
+      <li> Write an augmented matrix corresponding to this system. </li>
+      <li> Write a vector equation corresponding to this system. </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+        <p>\[ \left[\begin{array}{ccc|c}
+-1 &amp; 1 &amp; -1 &amp; -4 \\
+-1 &amp; 0 &amp; -4 &amp; -5 \\
+1 &amp; -1 &amp; 2 &amp; 5 \\
+-1 &amp; 0 &amp; -7 &amp; -8
+\end{array}\right] \]</p>
+      </li>
+      <li>
+        <p>\[ x_{1} \left[\begin{array}{c}
+-1 \\
+-1 \\
+1 \\
+-1
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+1 \\
+0 \\
+-1 \\
+0
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+-1 \\
+-4 \\
+2 \\
+-7
+\end{array}\right] = \left[\begin{array}{c}
+-4 \\
+-5 \\
+5 \\
+-8
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-44' class='exercise-heading'>Example 44 <small><a href='#ex-44'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p> Consider the augmented matrix </p>
+    <p>\[ \left[\begin{array}{cccc|c}
+-5 &amp; 2 &amp; 2 &amp; 1 &amp; 0 \\
+2 &amp; -1 &amp; 0 &amp; -2 &amp; 3 \\
+2 &amp; -1 &amp; 0 &amp; -1 &amp; 1
+\end{array}\right] \]</p>
+    <ol type="a">
+      <li> Write a system of scalar equations corresponding to this augmented matrix. </li>
+      <li> Write a vector equation corresponding to this augmented matrix. </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+                \begin{alignat*}{5} -5 \, x_{1} &amp;+&amp; 2 \, x_{2} &amp;+&amp; 2 \, x_{3} &amp;+&amp; x_{4} &amp;=&amp; 0 \\2 \, x_{1} &amp;-&amp; x_{2} &amp; &amp;  &amp;-&amp; 2 \, x_{4} &amp;=&amp; 3 \\2 \, x_{1} &amp;-&amp; x_{2} &amp; &amp;  &amp;-&amp; x_{4} &amp;=&amp; 1 \\ \end{alignat*}
+            </li>
+      <li>
+        <p>\[ x_{1} \left[\begin{array}{c}
+-5 \\
+2 \\
+2
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+2 \\
+-1 \\
+-1
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+2 \\
+0 \\
+0
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+1 \\
+-2 \\
+-1
+\end{array}\right] = \left[\begin{array}{c}
+0 \\
+3 \\
+1
 \end{array}\right] \]</p>
       </li>
     </ol>
@@ -2335,24 +2328,24 @@
     <p>Consider the vector equation.</p>
     <p>\[ x_{1} \left[\begin{array}{c}
 1 \\
+0 \\
 -1 \\
--1
+1
 \end{array}\right] + x_{2} \left[\begin{array}{c}
 5 \\
+0 \\
 -5 \\
--5
-\end{array}\right] + x_{3} \left[\begin{array}{c}
-4 \\
--3 \\
--2
-\end{array}\right] + x_{4} \left[\begin{array}{c}
--7 \\
-6 \\
 5
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+-3 \\
+1 \\
+4 \\
+0
 \end{array}\right] = \left[\begin{array}{c}
-7 \\
--5 \\
--3
+3 \\
+-1 \\
+-4 \\
+0
 \end{array}\right] \]</p>
     <ol type="a">
       <li> Write a system of scalar equations corresponding to this vector equation. </li>
@@ -2365,13 +2358,14 @@
     </p>
     <ol type="a">
       <li>
-                \begin{alignat*}{5} x_{1} &amp;+&amp; 5 \, x_{2} &amp;+&amp; 4 \, x_{3} &amp;-&amp; 7 \, x_{4} &amp;=&amp; 7 \\-x_{1} &amp;-&amp; 5 \, x_{2} &amp;-&amp; 3 \, x_{3} &amp;+&amp; 6 \, x_{4} &amp;=&amp; -5 \\-x_{1} &amp;-&amp; 5 \, x_{2} &amp;-&amp; 2 \, x_{3} &amp;+&amp; 5 \, x_{4} &amp;=&amp; -3 \\ \end{alignat*}
+                \begin{alignat*}{4} x_{1} &amp;+&amp; 5 \, x_{2} &amp;-&amp; 3 \, x_{3} &amp;=&amp; 3 \\ &amp; &amp;  &amp; &amp; x_{3} &amp;=&amp; -1 \\-x_{1} &amp;-&amp; 5 \, x_{2} &amp;+&amp; 4 \, x_{3} &amp;=&amp; -4 \\x_{1} &amp;+&amp; 5 \, x_{2} &amp; &amp;  &amp;=&amp; 0 \\ \end{alignat*}
             </li>
       <li>
-        <p>\[ \left[\begin{array}{cccc|c}
-1 &amp; 5 &amp; 4 &amp; -7 &amp; 7 \\
--1 &amp; -5 &amp; -3 &amp; 6 &amp; -5 \\
--1 &amp; -5 &amp; -2 &amp; 5 &amp; -3
+        <p>\[ \left[\begin{array}{ccc|c}
+1 &amp; 5 &amp; -3 &amp; 3 \\
+0 &amp; 0 &amp; 1 &amp; -1 \\
+-1 &amp; -5 &amp; 4 &amp; -4 \\
+1 &amp; 5 &amp; 0 &amp; 0
 \end{array}\right] \]</p>
       </li>
     </ol>
@@ -2381,27 +2375,127 @@
 <hr/>
 <h4 id='ex-46' class='exercise-heading'>Example 46 <small><a href='#ex-46'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Consider the vector equation.</p>
-    <p>\[ x_{1} \left[\begin{array}{c}
--3 \\
--2 \\
-2
+    <p> Consider the system of equations 
+                \begin{alignat*}{5} x &amp; &amp;  &amp;-&amp; 2 \, z &amp;+&amp; {w} &amp;=&amp; -8 \\x &amp;+&amp; y &amp;-&amp; 2 \, z &amp;+&amp; 3 \, {w} &amp;=&amp; -6 \\ &amp;-&amp; 4 \, y &amp;+&amp; z &amp;-&amp; 8 \, {w} &amp;=&amp; -4 \\ \end{alignat*}
+            </p>
+    <ol type="a">
+      <li> Write an augmented matrix corresponding to this system. </li>
+      <li> Write a vector equation corresponding to this system. </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+        <p>\[ \left[\begin{array}{cccc|c}
+1 &amp; 0 &amp; -2 &amp; 1 &amp; -8 \\
+1 &amp; 1 &amp; -2 &amp; 3 &amp; -6 \\
+0 &amp; -4 &amp; 1 &amp; -8 &amp; -4
+\end{array}\right] \]</p>
+      </li>
+      <li>
+        <p>\[ x_{1} \left[\begin{array}{c}
+1 \\
+1 \\
+0
 \end{array}\right] + x_{2} \left[\begin{array}{c}
--6 \\
--4 \\
-4
-\end{array}\right] + x_{3} \left[\begin{array}{c}
-2 \\
-1 \\
--2
-\end{array}\right] + x_{4} \left[\begin{array}{c}
-2 \\
-1 \\
--2
-\end{array}\right] = \left[\begin{array}{c}
 0 \\
 1 \\
-2
+-4
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+-2 \\
+-2 \\
+1
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+1 \\
+3 \\
+-8
+\end{array}\right] = \left[\begin{array}{c}
+-8 \\
+-6 \\
+-4
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-47' class='exercise-heading'>Example 47 <small><a href='#ex-47'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p> Consider the system of equations 
+                \begin{alignat*}{5} -x &amp;+&amp; y &amp;+&amp; 5 \, z &amp;+&amp; 3 \, {w} &amp;=&amp; 8 \\-x &amp; &amp;  &amp;+&amp; z &amp; &amp;  &amp;=&amp; 2 \\-3 \, x &amp;-&amp; 2 \, y &amp;-&amp; 4 \, z &amp;-&amp; 5 \, {w} &amp;=&amp; -5 \\ \end{alignat*}
+            </p>
+    <ol type="a">
+      <li> Write an augmented matrix corresponding to this system. </li>
+      <li> Write a vector equation corresponding to this system. </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+        <p>\[ \left[\begin{array}{cccc|c}
+-1 &amp; 1 &amp; 5 &amp; 3 &amp; 8 \\
+-1 &amp; 0 &amp; 1 &amp; 0 &amp; 2 \\
+-3 &amp; -2 &amp; -4 &amp; -5 &amp; -5
+\end{array}\right] \]</p>
+      </li>
+      <li>
+        <p>\[ x_{1} \left[\begin{array}{c}
+-1 \\
+-1 \\
+-3
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+1 \\
+0 \\
+-2
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+5 \\
+1 \\
+-4
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+3 \\
+0 \\
+-5
+\end{array}\right] = \left[\begin{array}{c}
+8 \\
+2 \\
+-5
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-48' class='exercise-heading'>Example 48 <small><a href='#ex-48'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Consider the vector equation.</p>
+    <p>\[ x_{1} \left[\begin{array}{c}
+1 \\
+0 \\
+-2
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+-1 \\
+1 \\
+0
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+1 \\
+3 \\
+-8
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+6 \\
+-3 \\
+-5
+\end{array}\right] = \left[\begin{array}{c}
+1 \\
+0 \\
+-2
 \end{array}\right] \]</p>
     <ol type="a">
       <li> Write a system of scalar equations corresponding to this vector equation. </li>
@@ -2414,13 +2508,13 @@
     </p>
     <ol type="a">
       <li>
-                \begin{alignat*}{5} -3 \, x &amp;-&amp; 6 \, y &amp;+&amp; 2 \, z &amp;+&amp; 2 \, {w} &amp;=&amp; 0 \\-2 \, x &amp;-&amp; 4 \, y &amp;+&amp; z &amp;+&amp; {w} &amp;=&amp; 1 \\2 \, x &amp;+&amp; 4 \, y &amp;-&amp; 2 \, z &amp;-&amp; 2 \, {w} &amp;=&amp; 2 \\ \end{alignat*}
+                \begin{alignat*}{5} x_{1} &amp;-&amp; x_{2} &amp;+&amp; x_{3} &amp;+&amp; 6 \, x_{4} &amp;=&amp; 1 \\ &amp; &amp; x_{2} &amp;+&amp; 3 \, x_{3} &amp;-&amp; 3 \, x_{4} &amp;=&amp; 0 \\-2 \, x_{1} &amp; &amp;  &amp;-&amp; 8 \, x_{3} &amp;-&amp; 5 \, x_{4} &amp;=&amp; -2 \\ \end{alignat*}
             </li>
       <li>
         <p>\[ \left[\begin{array}{cccc|c}
--3 &amp; -6 &amp; 2 &amp; 2 &amp; 0 \\
--2 &amp; -4 &amp; 1 &amp; 1 &amp; 1 \\
-2 &amp; 4 &amp; -2 &amp; -2 &amp; 2
+1 &amp; -1 &amp; 1 &amp; 6 &amp; 1 \\
+0 &amp; 1 &amp; 3 &amp; -3 &amp; 0 \\
+-2 &amp; 0 &amp; -8 &amp; -5 &amp; -2
 \end{array}\right] \]</p>
       </li>
     </ol>
@@ -2428,14 +2522,63 @@
 </div>
 
 <hr/>
-<h4 id='ex-47' class='exercise-heading'>Example 47 <small><a href='#ex-47'>🔗</a></small></h4><div class="exercise">
+<h4 id='ex-49' class='exercise-heading'>Example 49 <small><a href='#ex-49'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Consider the vector equation.</p>
+    <p>\[ x_{1} \left[\begin{array}{c}
+0 \\
+-1 \\
+0 \\
+-1
+\end{array}\right] + x_{2} \left[\begin{array}{c}
+2 \\
+-3 \\
+-1 \\
+-2
+\end{array}\right] + x_{3} \left[\begin{array}{c}
+2 \\
+-4 \\
+0 \\
+-3
+\end{array}\right] = \left[\begin{array}{c}
+4 \\
+-6 \\
+-1 \\
+-4
+\end{array}\right] \]</p>
+    <ol type="a">
+      <li> Write a system of scalar equations corresponding to this vector equation. </li>
+      <li> Write an augmented matrix corresponding to this vector equation. </li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>
+                \begin{alignat*}{4}  &amp; &amp; 2 \, x_{2} &amp;+&amp; 2 \, x_{3} &amp;=&amp; 4 \\-x_{1} &amp;-&amp; 3 \, x_{2} &amp;-&amp; 4 \, x_{3} &amp;=&amp; -6 \\ &amp;-&amp; x_{2} &amp; &amp;  &amp;=&amp; -1 \\-x_{1} &amp;-&amp; 2 \, x_{2} &amp;-&amp; 3 \, x_{3} &amp;=&amp; -4 \\ \end{alignat*}
+            </li>
+      <li>
+        <p>\[ \left[\begin{array}{ccc|c}
+0 &amp; 2 &amp; 2 &amp; 4 \\
+-1 &amp; -3 &amp; -4 &amp; -6 \\
+0 &amp; -1 &amp; 0 &amp; -1 \\
+-1 &amp; -2 &amp; -3 &amp; -4
+\end{array}\right] \]</p>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-50' class='exercise-heading'>Example 50 <small><a href='#ex-50'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
     <p> Consider the augmented matrix </p>
-    <p>\[ \left[\begin{array}{ccc|c}
-5 &amp; 3 &amp; 5 &amp; 6 \\
-5 &amp; 1 &amp; 5 &amp; 2 \\
--4 &amp; -3 &amp; -4 &amp; -6 \\
--1 &amp; -2 &amp; -1 &amp; -4
+    <p>\[ \left[\begin{array}{cccc|c}
+1 &amp; 2 &amp; 3 &amp; -4 &amp; 8 \\
+-1 &amp; 0 &amp; 4 &amp; -5 &amp; 3 \\
+0 &amp; -1 &amp; -3 &amp; 4 &amp; -5
 \end{array}\right] \]</p>
     <ol type="a">
       <li> Write a system of scalar equations corresponding to this augmented matrix. </li>
@@ -2448,182 +2591,29 @@
     </p>
     <ol type="a">
       <li>
-                \begin{alignat*}{4} 5 \, x_{1} &amp;+&amp; 3 \, x_{2} &amp;+&amp; 5 \, x_{3} &amp;=&amp; 6 \\5 \, x_{1} &amp;+&amp; x_{2} &amp;+&amp; 5 \, x_{3} &amp;=&amp; 2 \\-4 \, x_{1} &amp;-&amp; 3 \, x_{2} &amp;-&amp; 4 \, x_{3} &amp;=&amp; -6 \\-x_{1} &amp;-&amp; 2 \, x_{2} &amp;-&amp; x_{3} &amp;=&amp; -4 \\ \end{alignat*}
+                \begin{alignat*}{5} x &amp;+&amp; 2 \, y &amp;+&amp; 3 \, z &amp;-&amp; 4 \, {w} &amp;=&amp; 8 \\-x &amp; &amp;  &amp;+&amp; 4 \, z &amp;-&amp; 5 \, {w} &amp;=&amp; 3 \\ &amp;-&amp; y &amp;-&amp; 3 \, z &amp;+&amp; 4 \, {w} &amp;=&amp; -5 \\ \end{alignat*}
             </li>
       <li>
         <p>\[ x_{1} \left[\begin{array}{c}
-5 \\
-5 \\
--4 \\
--1
-\end{array}\right] + x_{2} \left[\begin{array}{c}
-3 \\
-1 \\
--3 \\
--2
-\end{array}\right] + x_{3} \left[\begin{array}{c}
-5 \\
-5 \\
--4 \\
--1
-\end{array}\right] = \left[\begin{array}{c}
-6 \\
-2 \\
--6 \\
--4
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-48' class='exercise-heading'>Example 48 <small><a href='#ex-48'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p> Consider the system of equations 
-                \begin{alignat*}{4} -x &amp;+&amp; 3 \, y &amp;+&amp; 8 \, z &amp;=&amp; 0 \\x &amp;-&amp; 2 \, y &amp;-&amp; 5 \, z &amp;=&amp; 1 \\-x &amp;+&amp; 3 \, y &amp;+&amp; 8 \, z &amp;=&amp; 0 \\x &amp;-&amp; 3 \, y &amp;-&amp; 8 \, z &amp;=&amp; 0 \\ \end{alignat*}
-            </p>
-    <ol type="a">
-      <li> Write an augmented matrix corresponding to this system. </li>
-      <li> Write a vector equation corresponding to this system. </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-        <p>\[ \left[\begin{array}{ccc|c}
--1 &amp; 3 &amp; 8 &amp; 0 \\
-1 &amp; -2 &amp; -5 &amp; 1 \\
--1 &amp; 3 &amp; 8 &amp; 0 \\
-1 &amp; -3 &amp; -8 &amp; 0
-\end{array}\right] \]</p>
-      </li>
-      <li>
-        <p>\[ x_{1} \left[\begin{array}{c}
--1 \\
 1 \\
 -1 \\
-1
-\end{array}\right] + x_{2} \left[\begin{array}{c}
-3 \\
--2 \\
-3 \\
--3
-\end{array}\right] + x_{3} \left[\begin{array}{c}
-8 \\
--5 \\
-8 \\
--8
-\end{array}\right] = \left[\begin{array}{c}
-0 \\
-1 \\
-0 \\
 0
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-49' class='exercise-heading'>Example 49 <small><a href='#ex-49'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p> Consider the system of equations 
-                \begin{alignat*}{4} -x &amp;-&amp; 2 \, y &amp;+&amp; z &amp;=&amp; -5 \\x &amp;-&amp; y &amp;+&amp; 5 \, z &amp;=&amp; -1 \\-x &amp; &amp;  &amp;-&amp; 3 \, z &amp;=&amp; -1 \\x &amp;+&amp; y &amp;+&amp; z &amp;=&amp; 3 \\ \end{alignat*}
-            </p>
-    <ol type="a">
-      <li> Write an augmented matrix corresponding to this system. </li>
-      <li> Write a vector equation corresponding to this system. </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-        <p>\[ \left[\begin{array}{ccc|c}
--1 &amp; -2 &amp; 1 &amp; -5 \\
-1 &amp; -1 &amp; 5 &amp; -1 \\
--1 &amp; 0 &amp; -3 &amp; -1 \\
-1 &amp; 1 &amp; 1 &amp; 3
-\end{array}\right] \]</p>
-      </li>
-      <li>
-        <p>\[ x_{1} \left[\begin{array}{c}
--1 \\
-1 \\
--1 \\
-1
 \end{array}\right] + x_{2} \left[\begin{array}{c}
--2 \\
--1 \\
+2 \\
 0 \\
-1
+-1
 \end{array}\right] + x_{3} \left[\begin{array}{c}
-1 \\
-5 \\
--3 \\
-1
-\end{array}\right] = \left[\begin{array}{c}
--5 \\
--1 \\
--1 \\
-3
-\end{array}\right] \]</p>
-      </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-50' class='exercise-heading'>Example 50 <small><a href='#ex-50'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p> Consider the system of equations 
-                \begin{alignat*}{4} x_{1} &amp;-&amp; 3 \, x_{2} &amp;+&amp; 4 \, x_{3} &amp;=&amp; -5 \\ &amp; &amp;  &amp; &amp; x_{3} &amp;=&amp; -1 \\x_{1} &amp;-&amp; 3 \, x_{2} &amp;-&amp; x_{3} &amp;=&amp; 0 \\x_{1} &amp;-&amp; 3 \, x_{2} &amp;-&amp; 3 \, x_{3} &amp;=&amp; 2 \\ \end{alignat*}
-            </p>
-    <ol type="a">
-      <li> Write an augmented matrix corresponding to this system. </li>
-      <li> Write a vector equation corresponding to this system. </li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>
-        <p>\[ \left[\begin{array}{ccc|c}
-1 &amp; -3 &amp; 4 &amp; -5 \\
-0 &amp; 0 &amp; 1 &amp; -1 \\
-1 &amp; -3 &amp; -1 &amp; 0 \\
-1 &amp; -3 &amp; -3 &amp; 2
-\end{array}\right] \]</p>
-      </li>
-      <li>
-        <p>\[ x_{1} \left[\begin{array}{c}
-1 \\
-0 \\
-1 \\
-1
-\end{array}\right] + x_{2} \left[\begin{array}{c}
--3 \\
-0 \\
--3 \\
--3
-\end{array}\right] + x_{3} \left[\begin{array}{c}
+3 \\
 4 \\
-1 \\
--1 \\
 -3
-\end{array}\right] = \left[\begin{array}{c}
+\end{array}\right] + x_{4} \left[\begin{array}{c}
+-4 \\
 -5 \\
--1 \\
-0 \\
-2
+4
+\end{array}\right] = \left[\begin{array}{c}
+8 \\
+3 \\
+-5
 \end{array}\right] \]</p>
       </li>
     </ol>

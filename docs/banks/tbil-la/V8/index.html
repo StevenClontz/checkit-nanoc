@@ -9,8 +9,8 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <!-- custom css -->
-  <link rel="stylesheet" href="/stylesheet.css">
-  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/assets/stylesheet.css">
+  <link rel="manifest" href="/assets/manifest.json">
   <title>☑️It - V8 - Polynomial and matrix spaces | Linear Algebra for Team-Based Inquiry Learning</title>
 </head>
 <body>
@@ -137,9 +137,24 @@
 <hr/>
 <h4 id='ex-1' class='exercise-heading'>Example 1 <small><a href='#ex-1'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Consider the statement <p> The set of polynomials \( \left\{ 2 \, x^{3} - 4 \, x^{2} + 3 \, x - 1 , -2 \, x^{2} - 3 \, x - 1 , -3 \, x^{3} + 4 \, x^{2} + 2 , 4 \, x^{3} + x^{2} + x - 3 , -3 \, x^{3} - 4 \, x^{2} - 5 \, x - 1 , -5 \, x^{3} - x^{2} + 4 \right\} \) spans \(\mathcal{P}_3\). </p></p>
+    <p>Consider the statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
+-3 &amp; -1 \\
+2 &amp; 1
+\end{array}\right] , \left[\begin{array}{cc}
+-3 &amp; -4 \\
+-3 &amp; 1
+\end{array}\right] , \left[\begin{array}{cc}
+2 &amp; -5 \\
+1 &amp; -1
+\end{array}\right] , \left[\begin{array}{cc}
+0 &amp; -1 \\
+1 &amp; -4
+\end{array}\right] , \left[\begin{array}{cc}
+-2 &amp; 3 \\
+4 &amp; -3
+\end{array}\right] \right\} \) spans \(\mathrm{M}_{2,2}\). </p></p>
     <ol type="a">
-      <li> Write an equivalent statement using a polynomial equation.</li>
+      <li> Write an equivalent statement using a matrix equation.</li>
       <li> Explain why your statement is true or false.</li>
     </ol>
   </div>
@@ -148,21 +163,66 @@
       <b>Answer:</b>
     </p>
     <p>
-      <p>\[\operatorname{RREF} \left[\begin{array}{cccccc}
--1 &amp; -1 &amp; 2 &amp; -3 &amp; -1 &amp; 4 \\
-3 &amp; -3 &amp; 0 &amp; 1 &amp; -5 &amp; 0 \\
--4 &amp; -2 &amp; 4 &amp; 1 &amp; -4 &amp; -1 \\
-2 &amp; 0 &amp; -3 &amp; 4 &amp; -3 &amp; -5
-\end{array}\right] = \left[\begin{array}{cccccc}
-1 &amp; 0 &amp; 0 &amp; 0 &amp; \frac{16}{9} &amp; \frac{2}{9} \\
-0 &amp; 1 &amp; 0 &amp; 0 &amp; \frac{95}{27} &amp; -\frac{5}{27} \\
-0 &amp; 0 &amp; 1 &amp; 0 &amp; \frac{67}{27} &amp; \frac{5}{27} \\
-0 &amp; 0 &amp; 0 &amp; 1 &amp; \frac{2}{9} &amp; -\frac{11}{9}
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccccc}
+-3 &amp; -3 &amp; 2 &amp; 0 &amp; -2 \\
+-1 &amp; -4 &amp; -5 &amp; -1 &amp; 3 \\
+2 &amp; -3 &amp; 1 &amp; 1 &amp; 4 \\
+1 &amp; 1 &amp; -1 &amp; -4 &amp; -3
+\end{array}\right] = \left[\begin{array}{ccccc}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; \frac{29}{32} \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; -\frac{241}{416} \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; -\frac{53}{104} \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; \frac{399}{416}
 \end{array}\right] \]</p>
     </p>
     <ol type="a">
-      <li>The statement <p> The set of polynomials \( \left\{ 2 \, x^{3} - 4 \, x^{2} + 3 \, x - 1 , -2 \, x^{2} - 3 \, x - 1 , -3 \, x^{3} + 4 \, x^{2} + 2 , 4 \, x^{3} + x^{2} + x - 3 , -3 \, x^{3} - 4 \, x^{2} - 5 \, x - 1 , -5 \, x^{3} - x^{2} + 4 \right\} \) spans \(\mathcal{P}_3\). </p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( 2 \, x^{3} - 4 \, x^{2} + 3 \, x - 1 \right) + y_{2} \left( -2 \, x^{2} - 3 \, x - 1 \right) + y_{3} \left( -3 \, x^{3} + 4 \, x^{2} + 2 \right) + y_{4} \left( 4 \, x^{3} + x^{2} + x - 3 \right) + y_{5} \left( -3 \, x^{3} - 4 \, x^{2} - 5 \, x - 1 \right) + y_{6} \left( -5 \, x^{3} - x^{2} + 4 \right) =f\]</p> has a solution for every \(f \in \mathcal{P}_3\). </p></li>
-      <li>The set of polynomials \( \left\{ 2 \, x^{3} - 4 \, x^{2} + 3 \, x - 1 , -2 \, x^{2} - 3 \, x - 1 , -3 \, x^{3} + 4 \, x^{2} + 2 , 4 \, x^{3} + x^{2} + x - 3 , -3 \, x^{3} - 4 \, x^{2} - 5 \, x - 1 , -5 \, x^{3} - x^{2} + 4 \right\} \) spans \(\mathcal{P}_3\). </li>
+      <li>The statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
+-3 &amp; -1 \\
+2 &amp; 1
+\end{array}\right] , \left[\begin{array}{cc}
+-3 &amp; -4 \\
+-3 &amp; 1
+\end{array}\right] , \left[\begin{array}{cc}
+2 &amp; -5 \\
+1 &amp; -1
+\end{array}\right] , \left[\begin{array}{cc}
+0 &amp; -1 \\
+1 &amp; -4
+\end{array}\right] , \left[\begin{array}{cc}
+-2 &amp; 3 \\
+4 &amp; -3
+\end{array}\right] \right\} \) spans \(\mathrm{M}_{2,2}\). </p> is equivalent to the statement <p> The matrix equation <p>\[ y_{1} \left[\begin{array}{cc}
+-3 &amp; -1 \\
+2 &amp; 1
+\end{array}\right] + y_{2} \left[\begin{array}{cc}
+-3 &amp; -4 \\
+-3 &amp; 1
+\end{array}\right] + y_{3} \left[\begin{array}{cc}
+2 &amp; -5 \\
+1 &amp; -1
+\end{array}\right] + y_{4} \left[\begin{array}{cc}
+0 &amp; -1 \\
+1 &amp; -4
+\end{array}\right] + y_{5} \left[\begin{array}{cc}
+-2 &amp; 3 \\
+4 &amp; -3
+\end{array}\right] =B\]</p> has a solution for every \(B \in \mathrm{M}_{2,2}\). </p></li>
+      <li>The set of matrices \( \left\{ \left[\begin{array}{cc}
+-3 &amp; -1 \\
+2 &amp; 1
+\end{array}\right] , \left[\begin{array}{cc}
+-3 &amp; -4 \\
+-3 &amp; 1
+\end{array}\right] , \left[\begin{array}{cc}
+2 &amp; -5 \\
+1 &amp; -1
+\end{array}\right] , \left[\begin{array}{cc}
+0 &amp; -1 \\
+1 &amp; -4
+\end{array}\right] , \left[\begin{array}{cc}
+-2 &amp; 3 \\
+4 &amp; -3
+\end{array}\right] \right\} \) spans \(\mathrm{M}_{2,2}\). </li>
     </ol>
   </div>
 </div>
@@ -170,75 +230,21 @@
 <hr/>
 <h4 id='ex-2' class='exercise-heading'>Example 2 <small><a href='#ex-2'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Consider the statement <p> The set of polynomials \( \left\{ -5 \, x^{3} - x^{2} + x , 3 \, x^{2} - 2 \, x + 4 , x^{3} - 4 \, x^{2} - 5 \, x - 5 , -3 \, x^{3} + 18 \, x^{2} + 11 \, x + 23 , -3 \, x^{3} - 3 \, x^{2} + 4 \, x + 3 \right\} \) spans \(\mathcal{P}_3\). </p></p>
+    <p>Consider the statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
+2 &amp; -5 \\
+-4 &amp; 2
+\end{array}\right] , \left[\begin{array}{cc}
+0 &amp; -3 \\
+-1 &amp; -4
+\end{array}\right] , \left[\begin{array}{cc}
+-1 &amp; 4 \\
+-2 &amp; -4
+\end{array}\right] , \left[\begin{array}{cc}
+-4 &amp; -1 \\
+-2 &amp; 3
+\end{array}\right] \right\} \) spans \(\mathrm{M}_{2,2}\). </p></p>
     <ol type="a">
-      <li> Write an equivalent statement using a polynomial equation.</li>
-      <li> Explain why your statement is true or false.</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <p>
-      <p>\[\operatorname{RREF} \left[\begin{array}{ccccc}
-0 &amp; 4 &amp; -5 &amp; 23 &amp; 3 \\
-1 &amp; -2 &amp; -5 &amp; 11 &amp; 4 \\
--1 &amp; 3 &amp; -4 &amp; 18 &amp; -3 \\
--5 &amp; 0 &amp; 1 &amp; -3 &amp; -3
-\end{array}\right] = \left[\begin{array}{ccccc}
-1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 2 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; -3 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \]</p>
-    </p>
-    <ol type="a">
-      <li>The statement <p> The set of polynomials \( \left\{ -5 \, x^{3} - x^{2} + x , 3 \, x^{2} - 2 \, x + 4 , x^{3} - 4 \, x^{2} - 5 \, x - 5 , -3 \, x^{3} + 18 \, x^{2} + 11 \, x + 23 , -3 \, x^{3} - 3 \, x^{2} + 4 \, x + 3 \right\} \) spans \(\mathcal{P}_3\). </p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( -5 \, x^{3} - x^{2} + x \right) + y_{2} \left( 3 \, x^{2} - 2 \, x + 4 \right) + y_{3} \left( x^{3} - 4 \, x^{2} - 5 \, x - 5 \right) + y_{4} \left( -3 \, x^{3} + 18 \, x^{2} + 11 \, x + 23 \right) + y_{5} \left( -3 \, x^{3} - 3 \, x^{2} + 4 \, x + 3 \right) =f\]</p> has a solution for every \(f \in \mathcal{P}_3\). </p></li>
-      <li>The set of polynomials \( \left\{ -5 \, x^{3} - x^{2} + x , 3 \, x^{2} - 2 \, x + 4 , x^{3} - 4 \, x^{2} - 5 \, x - 5 , -3 \, x^{3} + 18 \, x^{2} + 11 \, x + 23 , -3 \, x^{3} - 3 \, x^{2} + 4 \, x + 3 \right\} \) spans \(\mathcal{P}_3\). </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-3' class='exercise-heading'>Example 3 <small><a href='#ex-3'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Consider the statement <p> The set of polynomials \( \left\{ -2 \, x^{3} - 4 \, x^{2} - 5 \, x , 2 \, x^{3} + 3 \, x^{2} - 4 \, x + 3 , 8 \, x^{3} + 15 \, x^{2} + 11 \, x + 3 , -8 \, x^{3} - 15 \, x^{2} - 11 \, x - 3 , 4 \, x^{2} - 2 \, x - 2 \right\} \) spans \(\mathcal{P}_3\). </p></p>
-    <ol type="a">
-      <li> Write an equivalent statement using a polynomial equation.</li>
-      <li> Explain why your statement is true or false.</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <p>
-      <p>\[\operatorname{RREF} \left[\begin{array}{ccccc}
-0 &amp; 3 &amp; 3 &amp; -3 &amp; -2 \\
--5 &amp; -4 &amp; 11 &amp; -11 &amp; -2 \\
--4 &amp; 3 &amp; 15 &amp; -15 &amp; 4 \\
--2 &amp; 2 &amp; 8 &amp; -8 &amp; 0
-\end{array}\right] = \left[\begin{array}{ccccc}
-1 &amp; 0 &amp; -3 &amp; 3 &amp; 0 \\
-0 &amp; 1 &amp; 1 &amp; -1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\
-0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
-\end{array}\right] \]</p>
-    </p>
-    <ol type="a">
-      <li>The statement <p> The set of polynomials \( \left\{ -2 \, x^{3} - 4 \, x^{2} - 5 \, x , 2 \, x^{3} + 3 \, x^{2} - 4 \, x + 3 , 8 \, x^{3} + 15 \, x^{2} + 11 \, x + 3 , -8 \, x^{3} - 15 \, x^{2} - 11 \, x - 3 , 4 \, x^{2} - 2 \, x - 2 \right\} \) spans \(\mathcal{P}_3\). </p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( -2 \, x^{3} - 4 \, x^{2} - 5 \, x \right) + y_{2} \left( 2 \, x^{3} + 3 \, x^{2} - 4 \, x + 3 \right) + y_{3} \left( 8 \, x^{3} + 15 \, x^{2} + 11 \, x + 3 \right) + y_{4} \left( -8 \, x^{3} - 15 \, x^{2} - 11 \, x - 3 \right) + y_{5} \left( 4 \, x^{2} - 2 \, x - 2 \right) =f\]</p> has a solution for every \(f \in \mathcal{P}_3\). </p></li>
-      <li>The set of polynomials \( \left\{ -2 \, x^{3} - 4 \, x^{2} - 5 \, x , 2 \, x^{3} + 3 \, x^{2} - 4 \, x + 3 , 8 \, x^{3} + 15 \, x^{2} + 11 \, x + 3 , -8 \, x^{3} - 15 \, x^{2} - 11 \, x - 3 , 4 \, x^{2} - 2 \, x - 2 \right\} \) does not span \(\mathcal{P}_3\). </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-4' class='exercise-heading'>Example 4 <small><a href='#ex-4'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Consider the statement <p> The set of polynomials \( \left\{ 3 \, x^{3} - 5 \, x^{2} - x + 5 , 2 \, x^{3} - 5 \, x^{2} + 2 \, x - 4 , 5 \, x^{3} + 5 \, x^{2} - x - 6 , 13 \, x^{3} + 5 \, x^{2} - 3 \, x - 7 \right\} \) is linearly independent.</p></p>
-    <ol type="a">
-      <li> Write an equivalent statement using a polynomial equation.</li>
+      <li> Write an equivalent statement using a matrix equation.</li>
       <li> Explain why your statement is true or false.</li>
     </ol>
   </div>
@@ -248,30 +254,84 @@
     </p>
     <p>
       <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
-5 &amp; -4 &amp; -6 &amp; -7 \\
--1 &amp; 2 &amp; -1 &amp; -3 \\
--5 &amp; -5 &amp; 5 &amp; 5 \\
-3 &amp; 2 &amp; 5 &amp; 13
+2 &amp; 0 &amp; -1 &amp; -4 \\
+-5 &amp; -3 &amp; 4 &amp; -1 \\
+-4 &amp; -1 &amp; -2 &amp; -2 \\
+2 &amp; -4 &amp; -4 &amp; 3
 \end{array}\right] = \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 1 \\
+1 &amp; 0 &amp; 0 &amp; 0 \\
 0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 2 \\
-0 &amp; 0 &amp; 0 &amp; 0
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
 \end{array}\right] \]</p>
     </p>
     <ol type="a">
-      <li>The statement <p> The set of polynomials \( \left\{ 3 \, x^{3} - 5 \, x^{2} - x + 5 , 2 \, x^{3} - 5 \, x^{2} + 2 \, x - 4 , 5 \, x^{3} + 5 \, x^{2} - x - 6 , 13 \, x^{3} + 5 \, x^{2} - 3 \, x - 7 \right\} \) is linearly independent.</p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( 3 \, x^{3} - 5 \, x^{2} - x + 5 \right) + y_{2} \left( 2 \, x^{3} - 5 \, x^{2} + 2 \, x - 4 \right) + y_{3} \left( 5 \, x^{3} + 5 \, x^{2} - x - 6 \right) + y_{4} \left( 13 \, x^{3} + 5 \, x^{2} - 3 \, x - 7 \right) = 0 \]</p> has no nontrivial solutions. </p></li>
-      <li>The set of polynomials \( \left\{ 3 \, x^{3} - 5 \, x^{2} - x + 5 , 2 \, x^{3} - 5 \, x^{2} + 2 \, x - 4 , 5 \, x^{3} + 5 \, x^{2} - x - 6 , 13 \, x^{3} + 5 \, x^{2} - 3 \, x - 7 \right\} \)is linearly dependent.</li>
+      <li>The statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
+2 &amp; -5 \\
+-4 &amp; 2
+\end{array}\right] , \left[\begin{array}{cc}
+0 &amp; -3 \\
+-1 &amp; -4
+\end{array}\right] , \left[\begin{array}{cc}
+-1 &amp; 4 \\
+-2 &amp; -4
+\end{array}\right] , \left[\begin{array}{cc}
+-4 &amp; -1 \\
+-2 &amp; 3
+\end{array}\right] \right\} \) spans \(\mathrm{M}_{2,2}\). </p> is equivalent to the statement <p> The matrix equation <p>\[ y_{1} \left[\begin{array}{cc}
+2 &amp; -5 \\
+-4 &amp; 2
+\end{array}\right] + y_{2} \left[\begin{array}{cc}
+0 &amp; -3 \\
+-1 &amp; -4
+\end{array}\right] + y_{3} \left[\begin{array}{cc}
+-1 &amp; 4 \\
+-2 &amp; -4
+\end{array}\right] + y_{4} \left[\begin{array}{cc}
+-4 &amp; -1 \\
+-2 &amp; 3
+\end{array}\right] =B\]</p> has a solution for every \(B \in \mathrm{M}_{2,2}\). </p></li>
+      <li>The set of matrices \( \left\{ \left[\begin{array}{cc}
+2 &amp; -5 \\
+-4 &amp; 2
+\end{array}\right] , \left[\begin{array}{cc}
+0 &amp; -3 \\
+-1 &amp; -4
+\end{array}\right] , \left[\begin{array}{cc}
+-1 &amp; 4 \\
+-2 &amp; -4
+\end{array}\right] , \left[\begin{array}{cc}
+-4 &amp; -1 \\
+-2 &amp; 3
+\end{array}\right] \right\} \) spans \(\mathrm{M}_{2,2}\). </li>
     </ol>
   </div>
 </div>
 
 <hr/>
-<h4 id='ex-5' class='exercise-heading'>Example 5 <small><a href='#ex-5'>🔗</a></small></h4><div class="exercise">
+<h4 id='ex-3' class='exercise-heading'>Example 3 <small><a href='#ex-3'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Consider the statement <p> The set of polynomials \( \left\{ -5 \, x^{3} + 3 \, x^{2} + 4 \, x + 1 , -5 \, x^{2} + 3 \, x + 3 , 10 \, x^{3} + 4 \, x^{2} - 14 \, x - 8 , 15 \, x^{3} - 4 \, x^{2} - 15 \, x - 6 , -5 \, x^{3} - x^{2} + 2 \, x + 4 , -3 \, x^{3} + x^{2} + 3 \, x - 5 \right\} \) spans \(\mathcal{P}_3\). </p></p>
+    <p>Consider the statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
+-3 &amp; 0 \\
+2 &amp; -5
+\end{array}\right] , \left[\begin{array}{cc}
+0 &amp; 0 \\
+-3 &amp; 4
+\end{array}\right] , \left[\begin{array}{cc}
+3 &amp; 0 \\
+-8 &amp; 13
+\end{array}\right] , \left[\begin{array}{cc}
+-3 &amp; 0 \\
+14 &amp; -21
+\end{array}\right] , \left[\begin{array}{cc}
+-2 &amp; -2 \\
+2 &amp; 1
+\end{array}\right] , \left[\begin{array}{cc}
+-5 &amp; 3 \\
+0 &amp; -2
+\end{array}\right] \right\} \) spans \(\mathrm{M}_{2,2}\). </p></p>
     <ol type="a">
-      <li> Write an equivalent statement using a polynomial equation.</li>
+      <li> Write an equivalent statement using a matrix equation.</li>
       <li> Explain why your statement is true or false.</li>
     </ol>
   </div>
@@ -281,39 +341,93 @@
     </p>
     <p>
       <p>\[\operatorname{RREF} \left[\begin{array}{cccccc}
-1 &amp; 3 &amp; -8 &amp; -6 &amp; 4 &amp; -5 \\
-4 &amp; 3 &amp; -14 &amp; -15 &amp; 2 &amp; 3 \\
-3 &amp; -5 &amp; 4 &amp; -4 &amp; -1 &amp; 1 \\
--5 &amp; 0 &amp; 10 &amp; 15 &amp; -5 &amp; -3
+-3 &amp; 0 &amp; 3 &amp; -3 &amp; -2 &amp; -5 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; -2 &amp; 3 \\
+2 &amp; -3 &amp; -8 &amp; 14 &amp; 2 &amp; 0 \\
+-5 &amp; 4 &amp; 13 &amp; -21 &amp; 1 &amp; -2
 \end{array}\right] = \left[\begin{array}{cccccc}
-1 &amp; 0 &amp; -2 &amp; -3 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; -2 &amp; -1 &amp; 0 &amp; 0 \\
+1 &amp; 0 &amp; -1 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 2 &amp; -4 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1
 \end{array}\right] \]</p>
     </p>
     <ol type="a">
-      <li>The statement <p> The set of polynomials \( \left\{ -5 \, x^{3} + 3 \, x^{2} + 4 \, x + 1 , -5 \, x^{2} + 3 \, x + 3 , 10 \, x^{3} + 4 \, x^{2} - 14 \, x - 8 , 15 \, x^{3} - 4 \, x^{2} - 15 \, x - 6 , -5 \, x^{3} - x^{2} + 2 \, x + 4 , -3 \, x^{3} + x^{2} + 3 \, x - 5 \right\} \) spans \(\mathcal{P}_3\). </p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( -5 \, x^{3} + 3 \, x^{2} + 4 \, x + 1 \right) + y_{2} \left( -5 \, x^{2} + 3 \, x + 3 \right) + y_{3} \left( 10 \, x^{3} + 4 \, x^{2} - 14 \, x - 8 \right) + y_{4} \left( 15 \, x^{3} - 4 \, x^{2} - 15 \, x - 6 \right) + y_{5} \left( -5 \, x^{3} - x^{2} + 2 \, x + 4 \right) + y_{6} \left( -3 \, x^{3} + x^{2} + 3 \, x - 5 \right) =f\]</p> has a solution for every \(f \in \mathcal{P}_3\). </p></li>
-      <li>The set of polynomials \( \left\{ -5 \, x^{3} + 3 \, x^{2} + 4 \, x + 1 , -5 \, x^{2} + 3 \, x + 3 , 10 \, x^{3} + 4 \, x^{2} - 14 \, x - 8 , 15 \, x^{3} - 4 \, x^{2} - 15 \, x - 6 , -5 \, x^{3} - x^{2} + 2 \, x + 4 , -3 \, x^{3} + x^{2} + 3 \, x - 5 \right\} \) spans \(\mathcal{P}_3\). </li>
+      <li>The statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
+-3 &amp; 0 \\
+2 &amp; -5
+\end{array}\right] , \left[\begin{array}{cc}
+0 &amp; 0 \\
+-3 &amp; 4
+\end{array}\right] , \left[\begin{array}{cc}
+3 &amp; 0 \\
+-8 &amp; 13
+\end{array}\right] , \left[\begin{array}{cc}
+-3 &amp; 0 \\
+14 &amp; -21
+\end{array}\right] , \left[\begin{array}{cc}
+-2 &amp; -2 \\
+2 &amp; 1
+\end{array}\right] , \left[\begin{array}{cc}
+-5 &amp; 3 \\
+0 &amp; -2
+\end{array}\right] \right\} \) spans \(\mathrm{M}_{2,2}\). </p> is equivalent to the statement <p> The matrix equation <p>\[ y_{1} \left[\begin{array}{cc}
+-3 &amp; 0 \\
+2 &amp; -5
+\end{array}\right] + y_{2} \left[\begin{array}{cc}
+0 &amp; 0 \\
+-3 &amp; 4
+\end{array}\right] + y_{3} \left[\begin{array}{cc}
+3 &amp; 0 \\
+-8 &amp; 13
+\end{array}\right] + y_{4} \left[\begin{array}{cc}
+-3 &amp; 0 \\
+14 &amp; -21
+\end{array}\right] + y_{5} \left[\begin{array}{cc}
+-2 &amp; -2 \\
+2 &amp; 1
+\end{array}\right] + y_{6} \left[\begin{array}{cc}
+-5 &amp; 3 \\
+0 &amp; -2
+\end{array}\right] =B\]</p> has a solution for every \(B \in \mathrm{M}_{2,2}\). </p></li>
+      <li>The set of matrices \( \left\{ \left[\begin{array}{cc}
+-3 &amp; 0 \\
+2 &amp; -5
+\end{array}\right] , \left[\begin{array}{cc}
+0 &amp; 0 \\
+-3 &amp; 4
+\end{array}\right] , \left[\begin{array}{cc}
+3 &amp; 0 \\
+-8 &amp; 13
+\end{array}\right] , \left[\begin{array}{cc}
+-3 &amp; 0 \\
+14 &amp; -21
+\end{array}\right] , \left[\begin{array}{cc}
+-2 &amp; -2 \\
+2 &amp; 1
+\end{array}\right] , \left[\begin{array}{cc}
+-5 &amp; 3 \\
+0 &amp; -2
+\end{array}\right] \right\} \) spans \(\mathrm{M}_{2,2}\). </li>
     </ol>
   </div>
 </div>
 
 <hr/>
-<h4 id='ex-6' class='exercise-heading'>Example 6 <small><a href='#ex-6'>🔗</a></small></h4><div class="exercise">
+<h4 id='ex-4' class='exercise-heading'>Example 4 <small><a href='#ex-4'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
--3 &amp; 5 \\
+-2 &amp; -2 \\
+3 &amp; -1
+\end{array}\right] , \left[\begin{array}{cc}
+4 &amp; -5 \\
+0 &amp; -1
+\end{array}\right] , \left[\begin{array}{cc}
+0 &amp; -1 \\
 1 &amp; -2
 \end{array}\right] , \left[\begin{array}{cc}
-2 &amp; -1 \\
--3 &amp; -6
-\end{array}\right] , \left[\begin{array}{cc}
-13 &amp; -17 \\
--9 &amp; -6
-\end{array}\right] , \left[\begin{array}{cc}
--12 &amp; -2 \\
-2 &amp; -20
+-5 &amp; -1 \\
+-2 &amp; -1
 \end{array}\right] \right\} \) is linearly independent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a matrix equation.</li>
@@ -326,67 +440,67 @@
     </p>
     <p>
       <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
--3 &amp; 2 &amp; 13 &amp; -12 \\
-5 &amp; -1 &amp; -17 &amp; -2 \\
-1 &amp; -3 &amp; -9 &amp; 2 \\
--2 &amp; -6 &amp; -6 &amp; -20
+-2 &amp; 4 &amp; 0 &amp; -5 \\
+-2 &amp; -5 &amp; -1 &amp; -1 \\
+3 &amp; 0 &amp; 1 &amp; -2 \\
+-1 &amp; -1 &amp; -2 &amp; -1
 \end{array}\right] = \left[\begin{array}{cccc}
-1 &amp; 0 &amp; -3 &amp; 0 \\
-0 &amp; 1 &amp; 2 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1 \\
-0 &amp; 0 &amp; 0 &amp; 0
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
 \end{array}\right] \]</p>
     </p>
     <ol type="a">
       <li>The statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
--3 &amp; 5 \\
+-2 &amp; -2 \\
+3 &amp; -1
+\end{array}\right] , \left[\begin{array}{cc}
+4 &amp; -5 \\
+0 &amp; -1
+\end{array}\right] , \left[\begin{array}{cc}
+0 &amp; -1 \\
 1 &amp; -2
 \end{array}\right] , \left[\begin{array}{cc}
-2 &amp; -1 \\
--3 &amp; -6
-\end{array}\right] , \left[\begin{array}{cc}
-13 &amp; -17 \\
--9 &amp; -6
-\end{array}\right] , \left[\begin{array}{cc}
--12 &amp; -2 \\
-2 &amp; -20
+-5 &amp; -1 \\
+-2 &amp; -1
 \end{array}\right] \right\} \) is linearly independent.</p> is equivalent to the statement <p> The matrix equation <p>\[ y_{1} \left[\begin{array}{cc}
--3 &amp; 5 \\
-1 &amp; -2
+-2 &amp; -2 \\
+3 &amp; -1
 \end{array}\right] + y_{2} \left[\begin{array}{cc}
-2 &amp; -1 \\
--3 &amp; -6
+4 &amp; -5 \\
+0 &amp; -1
 \end{array}\right] + y_{3} \left[\begin{array}{cc}
-13 &amp; -17 \\
--9 &amp; -6
+0 &amp; -1 \\
+1 &amp; -2
 \end{array}\right] + y_{4} \left[\begin{array}{cc}
--12 &amp; -2 \\
-2 &amp; -20
+-5 &amp; -1 \\
+-2 &amp; -1
 \end{array}\right] = \left[\begin{array}{cc}
 0 &amp; 0 \\
 0 &amp; 0
 \end{array}\right] \]</p> has no nontrivial solutions. </p></li>
       <li>The set of matrices \( \left\{ \left[\begin{array}{cc}
--3 &amp; 5 \\
+-2 &amp; -2 \\
+3 &amp; -1
+\end{array}\right] , \left[\begin{array}{cc}
+4 &amp; -5 \\
+0 &amp; -1
+\end{array}\right] , \left[\begin{array}{cc}
+0 &amp; -1 \\
 1 &amp; -2
 \end{array}\right] , \left[\begin{array}{cc}
-2 &amp; -1 \\
--3 &amp; -6
-\end{array}\right] , \left[\begin{array}{cc}
-13 &amp; -17 \\
--9 &amp; -6
-\end{array}\right] , \left[\begin{array}{cc}
--12 &amp; -2 \\
-2 &amp; -20
-\end{array}\right] \right\} \)is linearly dependent.</li>
+-5 &amp; -1 \\
+-2 &amp; -1
+\end{array}\right] \right\} \)is linearly independent.</li>
     </ol>
   </div>
 </div>
 
 <hr/>
-<h4 id='ex-7' class='exercise-heading'>Example 7 <small><a href='#ex-7'>🔗</a></small></h4><div class="exercise">
+<h4 id='ex-5' class='exercise-heading'>Example 5 <small><a href='#ex-5'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Consider the statement <p> The set of polynomials \( \left\{ 2 \, x^{3} - 5 \, x^{2} + 5 \, x - 4 , -3 \, x^{3} + 4 \, x^{2} - 5 \, x - 4 , -5 \, x^{3} - 3 \, x + 4 , -3 \, x^{3} + 3 \, x^{2} + 5 \, x + 1 \right\} \) is linearly independent.</p></p>
+    <p>Consider the statement <p> The set of polynomials \( \left\{ -3 \, x^{3} - 2 \, x^{2} + 3 \, x + 2 , -4 \, x^{3} - 3 \, x^{2} - x , -5 \, x^{3} + 2 \, x^{2} - 1 , 5 \, x^{3} + 1 \right\} \) is linearly independent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a polynomial equation.</li>
       <li> Explain why your statement is true or false.</li>
@@ -398,10 +512,10 @@
     </p>
     <p>
       <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
--4 &amp; -4 &amp; 4 &amp; 1 \\
-5 &amp; -5 &amp; -3 &amp; 5 \\
--5 &amp; 4 &amp; 0 &amp; 3 \\
-2 &amp; -3 &amp; -5 &amp; -3
+2 &amp; 0 &amp; -1 &amp; 1 \\
+3 &amp; -1 &amp; 0 &amp; 0 \\
+-2 &amp; -3 &amp; 2 &amp; 0 \\
+-3 &amp; -4 &amp; -5 &amp; 5
 \end{array}\right] = \left[\begin{array}{cccc}
 1 &amp; 0 &amp; 0 &amp; 0 \\
 0 &amp; 1 &amp; 0 &amp; 0 \\
@@ -410,33 +524,66 @@
 \end{array}\right] \]</p>
     </p>
     <ol type="a">
-      <li>The statement <p> The set of polynomials \( \left\{ 2 \, x^{3} - 5 \, x^{2} + 5 \, x - 4 , -3 \, x^{3} + 4 \, x^{2} - 5 \, x - 4 , -5 \, x^{3} - 3 \, x + 4 , -3 \, x^{3} + 3 \, x^{2} + 5 \, x + 1 \right\} \) is linearly independent.</p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( 2 \, x^{3} - 5 \, x^{2} + 5 \, x - 4 \right) + y_{2} \left( -3 \, x^{3} + 4 \, x^{2} - 5 \, x - 4 \right) + y_{3} \left( -5 \, x^{3} - 3 \, x + 4 \right) + y_{4} \left( -3 \, x^{3} + 3 \, x^{2} + 5 \, x + 1 \right) = 0 \]</p> has no nontrivial solutions. </p></li>
-      <li>The set of polynomials \( \left\{ 2 \, x^{3} - 5 \, x^{2} + 5 \, x - 4 , -3 \, x^{3} + 4 \, x^{2} - 5 \, x - 4 , -5 \, x^{3} - 3 \, x + 4 , -3 \, x^{3} + 3 \, x^{2} + 5 \, x + 1 \right\} \)is linearly independent.</li>
+      <li>The statement <p> The set of polynomials \( \left\{ -3 \, x^{3} - 2 \, x^{2} + 3 \, x + 2 , -4 \, x^{3} - 3 \, x^{2} - x , -5 \, x^{3} + 2 \, x^{2} - 1 , 5 \, x^{3} + 1 \right\} \) is linearly independent.</p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( -3 \, x^{3} - 2 \, x^{2} + 3 \, x + 2 \right) + y_{2} \left( -4 \, x^{3} - 3 \, x^{2} - x \right) + y_{3} \left( -5 \, x^{3} + 2 \, x^{2} - 1 \right) + y_{4} \left( 5 \, x^{3} + 1 \right) = 0 \]</p> has no nontrivial solutions. </p></li>
+      <li>The set of polynomials \( \left\{ -3 \, x^{3} - 2 \, x^{2} + 3 \, x + 2 , -4 \, x^{3} - 3 \, x^{2} - x , -5 \, x^{3} + 2 \, x^{2} - 1 , 5 \, x^{3} + 1 \right\} \)is linearly independent.</li>
     </ol>
   </div>
 </div>
 
 <hr/>
-<h4 id='ex-8' class='exercise-heading'>Example 8 <small><a href='#ex-8'>🔗</a></small></h4><div class="exercise">
+<h4 id='ex-6' class='exercise-heading'>Example 6 <small><a href='#ex-6'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Consider the statement <p> The set of polynomials \( \left\{ -5 \, x^{3} - 3 \, x^{2} + 5 \, x + 1 , -4 \, x^{3} - 2 \, x + 3 , 6 \, x^{3} + 6 \, x^{2} - 12 \, x + 1 , 2 \, x^{3} - 6 \, x^{2} + 16 \, x - 7 \right\} \) is linearly independent.</p></p>
+    <ol type="a">
+      <li> Write an equivalent statement using a polynomial equation.</li>
+      <li> Explain why your statement is true or false.</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+1 &amp; 3 &amp; 1 &amp; -7 \\
+5 &amp; -2 &amp; -12 &amp; 16 \\
+-3 &amp; 0 &amp; 6 &amp; -6 \\
+-5 &amp; -4 &amp; 6 &amp; 2
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; -2 &amp; 2 \\
+0 &amp; 1 &amp; 1 &amp; -3 \\
+0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
+    <ol type="a">
+      <li>The statement <p> The set of polynomials \( \left\{ -5 \, x^{3} - 3 \, x^{2} + 5 \, x + 1 , -4 \, x^{3} - 2 \, x + 3 , 6 \, x^{3} + 6 \, x^{2} - 12 \, x + 1 , 2 \, x^{3} - 6 \, x^{2} + 16 \, x - 7 \right\} \) is linearly independent.</p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( -5 \, x^{3} - 3 \, x^{2} + 5 \, x + 1 \right) + y_{2} \left( -4 \, x^{3} - 2 \, x + 3 \right) + y_{3} \left( 6 \, x^{3} + 6 \, x^{2} - 12 \, x + 1 \right) + y_{4} \left( 2 \, x^{3} - 6 \, x^{2} + 16 \, x - 7 \right) = 0 \]</p> has no nontrivial solutions. </p></li>
+      <li>The set of polynomials \( \left\{ -5 \, x^{3} - 3 \, x^{2} + 5 \, x + 1 , -4 \, x^{3} - 2 \, x + 3 , 6 \, x^{3} + 6 \, x^{2} - 12 \, x + 1 , 2 \, x^{3} - 6 \, x^{2} + 16 \, x - 7 \right\} \)is linearly dependent.</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-7' class='exercise-heading'>Example 7 <small><a href='#ex-7'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
--4 &amp; -5 \\
--3 &amp; 4
+-1 &amp; -4 \\
+2 &amp; -1
 \end{array}\right] , \left[\begin{array}{cc}
--5 &amp; -3 \\
--2 &amp; 4
+-1 &amp; -2 \\
+-5 &amp; -5
 \end{array}\right] , \left[\begin{array}{cc}
-12 &amp; 15 \\
-9 &amp; -12
+1 &amp; -2 \\
+4 &amp; 1
 \end{array}\right] , \left[\begin{array}{cc}
--33 &amp; -38 \\
--23 &amp; 32
+3 &amp; 4 \\
+-3 &amp; 2
 \end{array}\right] , \left[\begin{array}{cc}
-0 &amp; -3 \\
-1 &amp; -5
-\end{array}\right] , \left[\begin{array}{cc}
--5 &amp; -5 \\
+3 &amp; -4 \\
 -3 &amp; -3
+\end{array}\right] , \left[\begin{array}{cc}
+-5 &amp; 0 \\
+0 &amp; 2
 \end{array}\right] \right\} \) spans \(\mathrm{M}_{2,2}\). </p></p>
     <ol type="a">
       <li> Write an equivalent statement using a matrix equation.</li>
@@ -449,175 +596,82 @@
     </p>
     <p>
       <p>\[\operatorname{RREF} \left[\begin{array}{cccccc}
--4 &amp; -5 &amp; 12 &amp; -33 &amp; 0 &amp; -5 \\
--5 &amp; -3 &amp; 15 &amp; -38 &amp; -3 &amp; -5 \\
--3 &amp; -2 &amp; 9 &amp; -23 &amp; 1 &amp; -3 \\
-4 &amp; 4 &amp; -12 &amp; 32 &amp; -5 &amp; -3
+-1 &amp; -1 &amp; 1 &amp; 3 &amp; 3 &amp; -5 \\
+-4 &amp; -2 &amp; -2 &amp; 4 &amp; -4 &amp; 0 \\
+2 &amp; -5 &amp; 4 &amp; -3 &amp; -3 &amp; 0 \\
+-1 &amp; -5 &amp; 1 &amp; 2 &amp; -3 &amp; 2
 \end{array}\right] = \left[\begin{array}{cccccc}
-1 &amp; 0 &amp; -3 &amp; 7 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1
+1 &amp; 0 &amp; 0 &amp; 0 &amp; \frac{61}{45} &amp; \frac{20}{9} \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; \frac{17}{15} &amp; -\frac{5}{3} \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; \frac{49}{45} &amp; -\frac{31}{9} \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; \frac{22}{15} &amp; -\frac{1}{3}
 \end{array}\right] \]</p>
     </p>
     <ol type="a">
       <li>The statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
--4 &amp; -5 \\
--3 &amp; 4
+-1 &amp; -4 \\
+2 &amp; -1
 \end{array}\right] , \left[\begin{array}{cc}
--5 &amp; -3 \\
--2 &amp; 4
+-1 &amp; -2 \\
+-5 &amp; -5
 \end{array}\right] , \left[\begin{array}{cc}
-12 &amp; 15 \\
-9 &amp; -12
+1 &amp; -2 \\
+4 &amp; 1
 \end{array}\right] , \left[\begin{array}{cc}
--33 &amp; -38 \\
--23 &amp; 32
+3 &amp; 4 \\
+-3 &amp; 2
 \end{array}\right] , \left[\begin{array}{cc}
-0 &amp; -3 \\
-1 &amp; -5
-\end{array}\right] , \left[\begin{array}{cc}
--5 &amp; -5 \\
+3 &amp; -4 \\
 -3 &amp; -3
+\end{array}\right] , \left[\begin{array}{cc}
+-5 &amp; 0 \\
+0 &amp; 2
 \end{array}\right] \right\} \) spans \(\mathrm{M}_{2,2}\). </p> is equivalent to the statement <p> The matrix equation <p>\[ y_{1} \left[\begin{array}{cc}
--4 &amp; -5 \\
--3 &amp; 4
+-1 &amp; -4 \\
+2 &amp; -1
 \end{array}\right] + y_{2} \left[\begin{array}{cc}
--5 &amp; -3 \\
--2 &amp; 4
+-1 &amp; -2 \\
+-5 &amp; -5
 \end{array}\right] + y_{3} \left[\begin{array}{cc}
-12 &amp; 15 \\
-9 &amp; -12
+1 &amp; -2 \\
+4 &amp; 1
 \end{array}\right] + y_{4} \left[\begin{array}{cc}
--33 &amp; -38 \\
--23 &amp; 32
+3 &amp; 4 \\
+-3 &amp; 2
 \end{array}\right] + y_{5} \left[\begin{array}{cc}
-0 &amp; -3 \\
-1 &amp; -5
+3 &amp; -4 \\
+-3 &amp; -3
 \end{array}\right] + y_{6} \left[\begin{array}{cc}
--5 &amp; -5 \\
--3 &amp; -3
+-5 &amp; 0 \\
+0 &amp; 2
 \end{array}\right] =B\]</p> has a solution for every \(B \in \mathrm{M}_{2,2}\). </p></li>
       <li>The set of matrices \( \left\{ \left[\begin{array}{cc}
--4 &amp; -5 \\
--3 &amp; 4
+-1 &amp; -4 \\
+2 &amp; -1
 \end{array}\right] , \left[\begin{array}{cc}
--5 &amp; -3 \\
--2 &amp; 4
+-1 &amp; -2 \\
+-5 &amp; -5
 \end{array}\right] , \left[\begin{array}{cc}
-12 &amp; 15 \\
-9 &amp; -12
+1 &amp; -2 \\
+4 &amp; 1
 \end{array}\right] , \left[\begin{array}{cc}
--33 &amp; -38 \\
--23 &amp; 32
+3 &amp; 4 \\
+-3 &amp; 2
 \end{array}\right] , \left[\begin{array}{cc}
-0 &amp; -3 \\
-1 &amp; -5
-\end{array}\right] , \left[\begin{array}{cc}
--5 &amp; -5 \\
+3 &amp; -4 \\
 -3 &amp; -3
+\end{array}\right] , \left[\begin{array}{cc}
+-5 &amp; 0 \\
+0 &amp; 2
 \end{array}\right] \right\} \) spans \(\mathrm{M}_{2,2}\). </li>
     </ol>
   </div>
 </div>
 
 <hr/>
-<h4 id='ex-9' class='exercise-heading'>Example 9 <small><a href='#ex-9'>🔗</a></small></h4><div class="exercise">
+<h4 id='ex-8' class='exercise-heading'>Example 8 <small><a href='#ex-8'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Consider the statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
-3 &amp; 1 \\
-3 &amp; -2
-\end{array}\right] , \left[\begin{array}{cc}
-1 &amp; 1 \\
--5 &amp; -2
-\end{array}\right] , \left[\begin{array}{cc}
-0 &amp; -5 \\
--4 &amp; -5
-\end{array}\right] , \left[\begin{array}{cc}
--4 &amp; -4 \\
--3 &amp; -1
-\end{array}\right] , \left[\begin{array}{cc}
-0 &amp; -4 \\
-3 &amp; -1
-\end{array}\right] \right\} \) spans \(\mathrm{M}_{2,2}\). </p></p>
-    <ol type="a">
-      <li> Write an equivalent statement using a matrix equation.</li>
-      <li> Explain why your statement is true or false.</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <p>
-      <p>\[\operatorname{RREF} \left[\begin{array}{ccccc}
-3 &amp; 1 &amp; 0 &amp; -4 &amp; 0 \\
-1 &amp; 1 &amp; -5 &amp; -4 &amp; -4 \\
-3 &amp; -5 &amp; -4 &amp; -3 &amp; 3 \\
--2 &amp; -2 &amp; -5 &amp; -1 &amp; -1
-\end{array}\right] = \left[\begin{array}{ccccc}
-1 &amp; 0 &amp; 0 &amp; 0 &amp; -\frac{11}{32} \\
-0 &amp; 1 &amp; 0 &amp; 0 &amp; -\frac{39}{32} \\
-0 &amp; 0 &amp; 1 &amp; 0 &amp; \frac{15}{16} \\
-0 &amp; 0 &amp; 0 &amp; 1 &amp; -\frac{9}{16}
-\end{array}\right] \]</p>
-    </p>
-    <ol type="a">
-      <li>The statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
-3 &amp; 1 \\
-3 &amp; -2
-\end{array}\right] , \left[\begin{array}{cc}
-1 &amp; 1 \\
--5 &amp; -2
-\end{array}\right] , \left[\begin{array}{cc}
-0 &amp; -5 \\
--4 &amp; -5
-\end{array}\right] , \left[\begin{array}{cc}
--4 &amp; -4 \\
--3 &amp; -1
-\end{array}\right] , \left[\begin{array}{cc}
-0 &amp; -4 \\
-3 &amp; -1
-\end{array}\right] \right\} \) spans \(\mathrm{M}_{2,2}\). </p> is equivalent to the statement <p> The matrix equation <p>\[ y_{1} \left[\begin{array}{cc}
-3 &amp; 1 \\
-3 &amp; -2
-\end{array}\right] + y_{2} \left[\begin{array}{cc}
-1 &amp; 1 \\
--5 &amp; -2
-\end{array}\right] + y_{3} \left[\begin{array}{cc}
-0 &amp; -5 \\
--4 &amp; -5
-\end{array}\right] + y_{4} \left[\begin{array}{cc}
--4 &amp; -4 \\
--3 &amp; -1
-\end{array}\right] + y_{5} \left[\begin{array}{cc}
-0 &amp; -4 \\
-3 &amp; -1
-\end{array}\right] =B\]</p> has a solution for every \(B \in \mathrm{M}_{2,2}\). </p></li>
-      <li>The set of matrices \( \left\{ \left[\begin{array}{cc}
-3 &amp; 1 \\
-3 &amp; -2
-\end{array}\right] , \left[\begin{array}{cc}
-1 &amp; 1 \\
--5 &amp; -2
-\end{array}\right] , \left[\begin{array}{cc}
-0 &amp; -5 \\
--4 &amp; -5
-\end{array}\right] , \left[\begin{array}{cc}
--4 &amp; -4 \\
--3 &amp; -1
-\end{array}\right] , \left[\begin{array}{cc}
-0 &amp; -4 \\
-3 &amp; -1
-\end{array}\right] \right\} \) spans \(\mathrm{M}_{2,2}\). </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-10' class='exercise-heading'>Example 10 <small><a href='#ex-10'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Consider the statement <p> The set of polynomials \( \left\{ -x^{2} + 4 \, x + 1 , 3 \, x^{2} - 5 \, x - 6 , -5 \, x^{3} - 5 \, x^{2} - 6 \, x + 5 , -10 \, x^{3} - 17 \, x^{2} - 5 \, x + 26 \right\} \) is linearly independent.</p></p>
+    <p>Consider the statement <p> The set of polynomials \( \left\{ -x^{3} - 2 \, x^{2} - 6 \, x - 1 , 4 \, x^{3} - x^{2} + 3 \, x - 1 , -5 \, x^{3} - x^{2} - 9 \, x , -28 \, x^{3} - 14 \, x^{2} - 15 \, x + 14 \right\} \) is linearly independent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a polynomial equation.</li>
       <li> Explain why your statement is true or false.</li>
@@ -629,20 +683,86 @@
     </p>
     <p>
       <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
-1 &amp; -6 &amp; 5 &amp; 26 \\
-4 &amp; -5 &amp; -6 &amp; -5 \\
--1 &amp; 3 &amp; -5 &amp; -17 \\
-0 &amp; 0 &amp; -5 &amp; -10
+-1 &amp; -1 &amp; 0 &amp; 14 \\
+-6 &amp; 3 &amp; -9 &amp; -15 \\
+-2 &amp; -1 &amp; -1 &amp; -14 \\
+-1 &amp; 4 &amp; -5 &amp; -28
 \end{array}\right] = \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; -2 \\
-0 &amp; 1 &amp; 0 &amp; -3 \\
-0 &amp; 0 &amp; 1 &amp; 2 \\
+1 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 1 &amp; -1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 \\
 0 &amp; 0 &amp; 0 &amp; 0
 \end{array}\right] \]</p>
     </p>
     <ol type="a">
-      <li>The statement <p> The set of polynomials \( \left\{ -x^{2} + 4 \, x + 1 , 3 \, x^{2} - 5 \, x - 6 , -5 \, x^{3} - 5 \, x^{2} - 6 \, x + 5 , -10 \, x^{3} - 17 \, x^{2} - 5 \, x + 26 \right\} \) is linearly independent.</p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( -x^{2} + 4 \, x + 1 \right) + y_{2} \left( 3 \, x^{2} - 5 \, x - 6 \right) + y_{3} \left( -5 \, x^{3} - 5 \, x^{2} - 6 \, x + 5 \right) + y_{4} \left( -10 \, x^{3} - 17 \, x^{2} - 5 \, x + 26 \right) = 0 \]</p> has no nontrivial solutions. </p></li>
-      <li>The set of polynomials \( \left\{ -x^{2} + 4 \, x + 1 , 3 \, x^{2} - 5 \, x - 6 , -5 \, x^{3} - 5 \, x^{2} - 6 \, x + 5 , -10 \, x^{3} - 17 \, x^{2} - 5 \, x + 26 \right\} \)is linearly dependent.</li>
+      <li>The statement <p> The set of polynomials \( \left\{ -x^{3} - 2 \, x^{2} - 6 \, x - 1 , 4 \, x^{3} - x^{2} + 3 \, x - 1 , -5 \, x^{3} - x^{2} - 9 \, x , -28 \, x^{3} - 14 \, x^{2} - 15 \, x + 14 \right\} \) is linearly independent.</p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( -x^{3} - 2 \, x^{2} - 6 \, x - 1 \right) + y_{2} \left( 4 \, x^{3} - x^{2} + 3 \, x - 1 \right) + y_{3} \left( -5 \, x^{3} - x^{2} - 9 \, x \right) + y_{4} \left( -28 \, x^{3} - 14 \, x^{2} - 15 \, x + 14 \right) = 0 \]</p> has no nontrivial solutions. </p></li>
+      <li>The set of polynomials \( \left\{ -x^{3} - 2 \, x^{2} - 6 \, x - 1 , 4 \, x^{3} - x^{2} + 3 \, x - 1 , -5 \, x^{3} - x^{2} - 9 \, x , -28 \, x^{3} - 14 \, x^{2} - 15 \, x + 14 \right\} \)is linearly dependent.</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-9' class='exercise-heading'>Example 9 <small><a href='#ex-9'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Consider the statement <p> The set of polynomials \( \left\{ 2 \, x^{3} - 3 \, x^{2} - 5 \, x , 4 \, x^{3} + 3 \, x^{2} + 4 \, x + 1 , 3 \, x^{3} - 5 \, x^{2} + 4 \, x + 2 , 3 \, x^{3} - 14 \, x^{2} - 10 \, x + 1 , x^{3} - 4 \, x^{2} - 4 \, x + 4 \right\} \) spans \(\mathcal{P}_3\). </p></p>
+    <ol type="a">
+      <li> Write an equivalent statement using a polynomial equation.</li>
+      <li> Explain why your statement is true or false.</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccccc}
+0 &amp; 1 &amp; 2 &amp; 1 &amp; 4 \\
+-5 &amp; 4 &amp; 4 &amp; -10 &amp; -4 \\
+-3 &amp; 3 &amp; -5 &amp; -14 &amp; -4 \\
+2 &amp; 4 &amp; 3 &amp; 3 &amp; 1
+\end{array}\right] = \left[\begin{array}{ccccc}
+1 &amp; 0 &amp; 0 &amp; 2 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; -1 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \]</p>
+    </p>
+    <ol type="a">
+      <li>The statement <p> The set of polynomials \( \left\{ 2 \, x^{3} - 3 \, x^{2} - 5 \, x , 4 \, x^{3} + 3 \, x^{2} + 4 \, x + 1 , 3 \, x^{3} - 5 \, x^{2} + 4 \, x + 2 , 3 \, x^{3} - 14 \, x^{2} - 10 \, x + 1 , x^{3} - 4 \, x^{2} - 4 \, x + 4 \right\} \) spans \(\mathcal{P}_3\). </p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( 2 \, x^{3} - 3 \, x^{2} - 5 \, x \right) + y_{2} \left( 4 \, x^{3} + 3 \, x^{2} + 4 \, x + 1 \right) + y_{3} \left( 3 \, x^{3} - 5 \, x^{2} + 4 \, x + 2 \right) + y_{4} \left( 3 \, x^{3} - 14 \, x^{2} - 10 \, x + 1 \right) + y_{5} \left( x^{3} - 4 \, x^{2} - 4 \, x + 4 \right) =f\]</p> has a solution for every \(f \in \mathcal{P}_3\). </p></li>
+      <li>The set of polynomials \( \left\{ 2 \, x^{3} - 3 \, x^{2} - 5 \, x , 4 \, x^{3} + 3 \, x^{2} + 4 \, x + 1 , 3 \, x^{3} - 5 \, x^{2} + 4 \, x + 2 , 3 \, x^{3} - 14 \, x^{2} - 10 \, x + 1 , x^{3} - 4 \, x^{2} - 4 \, x + 4 \right\} \) spans \(\mathcal{P}_3\). </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-10' class='exercise-heading'>Example 10 <small><a href='#ex-10'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Consider the statement <p> The set of polynomials \( \left\{ -5 \, x^{3} + 2 \, x^{2} + 2 \, x - 1 , 3 \, x^{3} - x^{2} - 2 \, x + 1 , -7 \, x^{3} + 3 \, x^{2} + 2 \, x - 1 , -14 \, x^{3} + 6 \, x^{2} + 4 \, x - 2 , 2 \, x^{3} + x^{2} + 3 \, x + 3 \right\} \) spans \(\mathcal{P}_3\). </p></p>
+    <ol type="a">
+      <li> Write an equivalent statement using a polynomial equation.</li>
+      <li> Explain why your statement is true or false.</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccccc}
+-1 &amp; 1 &amp; -1 &amp; -2 &amp; 3 \\
+2 &amp; -2 &amp; 2 &amp; 4 &amp; 3 \\
+2 &amp; -1 &amp; 3 &amp; 6 &amp; 1 \\
+-5 &amp; 3 &amp; -7 &amp; -14 &amp; 2
+\end{array}\right] = \left[\begin{array}{ccccc}
+1 &amp; 0 &amp; 2 &amp; 4 &amp; 0 \\
+0 &amp; 1 &amp; 1 &amp; 2 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
+    <ol type="a">
+      <li>The statement <p> The set of polynomials \( \left\{ -5 \, x^{3} + 2 \, x^{2} + 2 \, x - 1 , 3 \, x^{3} - x^{2} - 2 \, x + 1 , -7 \, x^{3} + 3 \, x^{2} + 2 \, x - 1 , -14 \, x^{3} + 6 \, x^{2} + 4 \, x - 2 , 2 \, x^{3} + x^{2} + 3 \, x + 3 \right\} \) spans \(\mathcal{P}_3\). </p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( -5 \, x^{3} + 2 \, x^{2} + 2 \, x - 1 \right) + y_{2} \left( 3 \, x^{3} - x^{2} - 2 \, x + 1 \right) + y_{3} \left( -7 \, x^{3} + 3 \, x^{2} + 2 \, x - 1 \right) + y_{4} \left( -14 \, x^{3} + 6 \, x^{2} + 4 \, x - 2 \right) + y_{5} \left( 2 \, x^{3} + x^{2} + 3 \, x + 3 \right) =f\]</p> has a solution for every \(f \in \mathcal{P}_3\). </p></li>
+      <li>The set of polynomials \( \left\{ -5 \, x^{3} + 2 \, x^{2} + 2 \, x - 1 , 3 \, x^{3} - x^{2} - 2 \, x + 1 , -7 \, x^{3} + 3 \, x^{2} + 2 \, x - 1 , -14 \, x^{3} + 6 \, x^{2} + 4 \, x - 2 , 2 \, x^{3} + x^{2} + 3 \, x + 3 \right\} \) does not span \(\mathcal{P}_3\). </li>
     </ol>
   </div>
 </div>
@@ -651,17 +771,17 @@
 <h4 id='ex-11' class='exercise-heading'>Example 11 <small><a href='#ex-11'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
-2 &amp; 0 \\
--2 &amp; 0
-\end{array}\right] , \left[\begin{array}{cc}
--2 &amp; -4 \\
--6 &amp; 4
+1 &amp; -4 \\
+-6 &amp; 2
 \end{array}\right] , \left[\begin{array}{cc}
 -2 &amp; -5 \\
-0 &amp; -6
+-3 &amp; -5
 \end{array}\right] , \left[\begin{array}{cc}
--10 &amp; -8 \\
--6 &amp; 8
+1 &amp; -1 \\
+-3 &amp; -3
+\end{array}\right] , \left[\begin{array}{cc}
+0 &amp; -3 \\
+3 &amp; -5
 \end{array}\right] \right\} \) is linearly independent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a matrix equation.</li>
@@ -674,59 +794,59 @@
     </p>
     <p>
       <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
-2 &amp; -2 &amp; -2 &amp; -10 \\
-0 &amp; -4 &amp; -5 &amp; -8 \\
--2 &amp; -6 &amp; 0 &amp; -6 \\
-0 &amp; 4 &amp; -6 &amp; 8
+1 &amp; -2 &amp; 1 &amp; 0 \\
+-4 &amp; -5 &amp; -1 &amp; -3 \\
+-6 &amp; -3 &amp; -3 &amp; 3 \\
+2 &amp; -5 &amp; -3 &amp; -5
 \end{array}\right] = \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; -3 \\
-0 &amp; 1 &amp; 0 &amp; 2 \\
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 0
+0 &amp; 0 &amp; 0 &amp; 1
 \end{array}\right] \]</p>
     </p>
     <ol type="a">
       <li>The statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
-2 &amp; 0 \\
--2 &amp; 0
-\end{array}\right] , \left[\begin{array}{cc}
--2 &amp; -4 \\
--6 &amp; 4
+1 &amp; -4 \\
+-6 &amp; 2
 \end{array}\right] , \left[\begin{array}{cc}
 -2 &amp; -5 \\
-0 &amp; -6
+-3 &amp; -5
 \end{array}\right] , \left[\begin{array}{cc}
--10 &amp; -8 \\
--6 &amp; 8
+1 &amp; -1 \\
+-3 &amp; -3
+\end{array}\right] , \left[\begin{array}{cc}
+0 &amp; -3 \\
+3 &amp; -5
 \end{array}\right] \right\} \) is linearly independent.</p> is equivalent to the statement <p> The matrix equation <p>\[ y_{1} \left[\begin{array}{cc}
-2 &amp; 0 \\
--2 &amp; 0
+1 &amp; -4 \\
+-6 &amp; 2
 \end{array}\right] + y_{2} \left[\begin{array}{cc}
--2 &amp; -4 \\
--6 &amp; 4
-\end{array}\right] + y_{3} \left[\begin{array}{cc}
 -2 &amp; -5 \\
-0 &amp; -6
+-3 &amp; -5
+\end{array}\right] + y_{3} \left[\begin{array}{cc}
+1 &amp; -1 \\
+-3 &amp; -3
 \end{array}\right] + y_{4} \left[\begin{array}{cc}
--10 &amp; -8 \\
--6 &amp; 8
+0 &amp; -3 \\
+3 &amp; -5
 \end{array}\right] = \left[\begin{array}{cc}
 0 &amp; 0 \\
 0 &amp; 0
 \end{array}\right] \]</p> has no nontrivial solutions. </p></li>
       <li>The set of matrices \( \left\{ \left[\begin{array}{cc}
-2 &amp; 0 \\
--2 &amp; 0
-\end{array}\right] , \left[\begin{array}{cc}
--2 &amp; -4 \\
--6 &amp; 4
+1 &amp; -4 \\
+-6 &amp; 2
 \end{array}\right] , \left[\begin{array}{cc}
 -2 &amp; -5 \\
-0 &amp; -6
+-3 &amp; -5
 \end{array}\right] , \left[\begin{array}{cc}
--10 &amp; -8 \\
--6 &amp; 8
-\end{array}\right] \right\} \)is linearly dependent.</li>
+1 &amp; -1 \\
+-3 &amp; -3
+\end{array}\right] , \left[\begin{array}{cc}
+0 &amp; -3 \\
+3 &amp; -5
+\end{array}\right] \right\} \)is linearly independent.</li>
     </ol>
   </div>
 </div>
@@ -734,54 +854,18 @@
 <hr/>
 <h4 id='ex-12' class='exercise-heading'>Example 12 <small><a href='#ex-12'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Consider the statement <p> The set of polynomials \( \left\{ -x^{3} + 4 \, x - 1 , -2 \, x^{3} + x^{2} + 2 \, x + 1 , -5 \, x^{3} - 2 \, x^{2} - 2 \, x , -5 \, x^{3} - 4 \, x^{2} + 2 , 4 \, x^{3} + 4 \, x^{2} - 4 \, x - 2 , 3 \, x^{3} - 2 \, x^{2} - x - 2 \right\} \) spans \(\mathcal{P}_3\). </p></p>
-    <ol type="a">
-      <li> Write an equivalent statement using a polynomial equation.</li>
-      <li> Explain why your statement is true or false.</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <p>
-      <p>\[\operatorname{RREF} \left[\begin{array}{cccccc}
--1 &amp; 1 &amp; 0 &amp; 2 &amp; -2 &amp; -2 \\
-4 &amp; 2 &amp; -2 &amp; 0 &amp; -4 &amp; -1 \\
-0 &amp; 1 &amp; -2 &amp; -4 &amp; 4 &amp; -2 \\
--1 &amp; -2 &amp; -5 &amp; -5 &amp; 4 &amp; 3
-\end{array}\right] = \left[\begin{array}{cccccc}
-1 &amp; 0 &amp; 0 &amp; 0 &amp; -\frac{2}{3} &amp; \frac{44}{81} \\
-0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; -\frac{47}{27} \\
-0 &amp; 0 &amp; 1 &amp; 0 &amp; \frac{2}{3} &amp; -\frac{25}{162} \\
-0 &amp; 0 &amp; 0 &amp; 1 &amp; -\frac{4}{3} &amp; \frac{23}{162}
-\end{array}\right] \]</p>
-    </p>
-    <ol type="a">
-      <li>The statement <p> The set of polynomials \( \left\{ -x^{3} + 4 \, x - 1 , -2 \, x^{3} + x^{2} + 2 \, x + 1 , -5 \, x^{3} - 2 \, x^{2} - 2 \, x , -5 \, x^{3} - 4 \, x^{2} + 2 , 4 \, x^{3} + 4 \, x^{2} - 4 \, x - 2 , 3 \, x^{3} - 2 \, x^{2} - x - 2 \right\} \) spans \(\mathcal{P}_3\). </p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( -x^{3} + 4 \, x - 1 \right) + y_{2} \left( -2 \, x^{3} + x^{2} + 2 \, x + 1 \right) + y_{3} \left( -5 \, x^{3} - 2 \, x^{2} - 2 \, x \right) + y_{4} \left( -5 \, x^{3} - 4 \, x^{2} + 2 \right) + y_{5} \left( 4 \, x^{3} + 4 \, x^{2} - 4 \, x - 2 \right) + y_{6} \left( 3 \, x^{3} - 2 \, x^{2} - x - 2 \right) =f\]</p> has a solution for every \(f \in \mathcal{P}_3\). </p></li>
-      <li>The set of polynomials \( \left\{ -x^{3} + 4 \, x - 1 , -2 \, x^{3} + x^{2} + 2 \, x + 1 , -5 \, x^{3} - 2 \, x^{2} - 2 \, x , -5 \, x^{3} - 4 \, x^{2} + 2 , 4 \, x^{3} + 4 \, x^{2} - 4 \, x - 2 , 3 \, x^{3} - 2 \, x^{2} - x - 2 \right\} \) spans \(\mathcal{P}_3\). </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-13' class='exercise-heading'>Example 13 <small><a href='#ex-13'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
     <p>Consider the statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
--1 &amp; 3 \\
-1 &amp; 3
+2 &amp; -2 \\
+-3 &amp; -2
 \end{array}\right] , \left[\begin{array}{cc}
--3 &amp; -3 \\
+3 &amp; 2 \\
 -3 &amp; 1
 \end{array}\right] , \left[\begin{array}{cc}
-0 &amp; 0 \\
-3 &amp; -1
+-3 &amp; 1 \\
+0 &amp; 0
 \end{array}\right] , \left[\begin{array}{cc}
--2 &amp; -2 \\
--4 &amp; 2
-\end{array}\right] , \left[\begin{array}{cc}
-4 &amp; -3 \\
-0 &amp; -2
+2 &amp; 2 \\
+3 &amp; 2
 \end{array}\right] \right\} \) spans \(\mathrm{M}_{2,2}\). </p></p>
     <ol type="a">
       <li> Write an equivalent statement using a matrix equation.</li>
@@ -793,66 +877,90 @@
       <b>Answer:</b>
     </p>
     <p>
-      <p>\[\operatorname{RREF} \left[\begin{array}{ccccc}
--1 &amp; -3 &amp; 0 &amp; -2 &amp; 4 \\
-3 &amp; -3 &amp; 0 &amp; -2 &amp; -3 \\
-1 &amp; -3 &amp; 3 &amp; -4 &amp; 0 \\
-3 &amp; 1 &amp; -1 &amp; 2 &amp; -2
-\end{array}\right] = \left[\begin{array}{ccccc}
-1 &amp; 0 &amp; 0 &amp; 0 &amp; -\frac{7}{4} \\
-0 &amp; 1 &amp; 0 &amp; 0 &amp; -\frac{55}{12} \\
-0 &amp; 0 &amp; 1 &amp; 0 &amp; \frac{11}{3} \\
-0 &amp; 0 &amp; 0 &amp; 1 &amp; \frac{23}{4}
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+2 &amp; 3 &amp; -3 &amp; 2 \\
+-2 &amp; 2 &amp; 1 &amp; 2 \\
+-3 &amp; -3 &amp; 0 &amp; 3 \\
+-2 &amp; 1 &amp; 0 &amp; 2
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
 \end{array}\right] \]</p>
     </p>
     <ol type="a">
       <li>The statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
--1 &amp; 3 \\
-1 &amp; 3
+2 &amp; -2 \\
+-3 &amp; -2
 \end{array}\right] , \left[\begin{array}{cc}
--3 &amp; -3 \\
+3 &amp; 2 \\
 -3 &amp; 1
 \end{array}\right] , \left[\begin{array}{cc}
-0 &amp; 0 \\
-3 &amp; -1
+-3 &amp; 1 \\
+0 &amp; 0
 \end{array}\right] , \left[\begin{array}{cc}
--2 &amp; -2 \\
--4 &amp; 2
-\end{array}\right] , \left[\begin{array}{cc}
-4 &amp; -3 \\
-0 &amp; -2
+2 &amp; 2 \\
+3 &amp; 2
 \end{array}\right] \right\} \) spans \(\mathrm{M}_{2,2}\). </p> is equivalent to the statement <p> The matrix equation <p>\[ y_{1} \left[\begin{array}{cc}
--1 &amp; 3 \\
-1 &amp; 3
+2 &amp; -2 \\
+-3 &amp; -2
 \end{array}\right] + y_{2} \left[\begin{array}{cc}
--3 &amp; -3 \\
+3 &amp; 2 \\
 -3 &amp; 1
 \end{array}\right] + y_{3} \left[\begin{array}{cc}
-0 &amp; 0 \\
-3 &amp; -1
+-3 &amp; 1 \\
+0 &amp; 0
 \end{array}\right] + y_{4} \left[\begin{array}{cc}
--2 &amp; -2 \\
--4 &amp; 2
-\end{array}\right] + y_{5} \left[\begin{array}{cc}
-4 &amp; -3 \\
-0 &amp; -2
+2 &amp; 2 \\
+3 &amp; 2
 \end{array}\right] =B\]</p> has a solution for every \(B \in \mathrm{M}_{2,2}\). </p></li>
       <li>The set of matrices \( \left\{ \left[\begin{array}{cc}
--1 &amp; 3 \\
-1 &amp; 3
+2 &amp; -2 \\
+-3 &amp; -2
 \end{array}\right] , \left[\begin{array}{cc}
--3 &amp; -3 \\
+3 &amp; 2 \\
 -3 &amp; 1
 \end{array}\right] , \left[\begin{array}{cc}
-0 &amp; 0 \\
-3 &amp; -1
+-3 &amp; 1 \\
+0 &amp; 0
 \end{array}\right] , \left[\begin{array}{cc}
--2 &amp; -2 \\
--4 &amp; 2
-\end{array}\right] , \left[\begin{array}{cc}
-4 &amp; -3 \\
-0 &amp; -2
+2 &amp; 2 \\
+3 &amp; 2
 \end{array}\right] \right\} \) spans \(\mathrm{M}_{2,2}\). </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-13' class='exercise-heading'>Example 13 <small><a href='#ex-13'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Consider the statement <p> The set of polynomials \( \left\{ -5 \, x^{3} - 3 \, x^{2} + 2 \, x , -6 \, x^{3} - 6 \, x^{2} - 3 \, x + 2 , -6 \, x^{3} + 3 \, x^{2} , -5 \, x^{3} + 2 \, x^{2} + 5 \, x - 3 \right\} \) is linearly independent.</p></p>
+    <ol type="a">
+      <li> Write an equivalent statement using a polynomial equation.</li>
+      <li> Explain why your statement is true or false.</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+0 &amp; 2 &amp; 0 &amp; -3 \\
+2 &amp; -3 &amp; 0 &amp; 5 \\
+-3 &amp; -6 &amp; 3 &amp; 2 \\
+-5 &amp; -6 &amp; -6 &amp; -5
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \]</p>
+    </p>
+    <ol type="a">
+      <li>The statement <p> The set of polynomials \( \left\{ -5 \, x^{3} - 3 \, x^{2} + 2 \, x , -6 \, x^{3} - 6 \, x^{2} - 3 \, x + 2 , -6 \, x^{3} + 3 \, x^{2} , -5 \, x^{3} + 2 \, x^{2} + 5 \, x - 3 \right\} \) is linearly independent.</p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( -5 \, x^{3} - 3 \, x^{2} + 2 \, x \right) + y_{2} \left( -6 \, x^{3} - 6 \, x^{2} - 3 \, x + 2 \right) + y_{3} \left( -6 \, x^{3} + 3 \, x^{2} \right) + y_{4} \left( -5 \, x^{3} + 2 \, x^{2} + 5 \, x - 3 \right) = 0 \]</p> has no nontrivial solutions. </p></li>
+      <li>The set of polynomials \( \left\{ -5 \, x^{3} - 3 \, x^{2} + 2 \, x , -6 \, x^{3} - 6 \, x^{2} - 3 \, x + 2 , -6 \, x^{3} + 3 \, x^{2} , -5 \, x^{3} + 2 \, x^{2} + 5 \, x - 3 \right\} \)is linearly independent.</li>
     </ol>
   </div>
 </div>
@@ -861,18 +969,18 @@
 <h4 id='ex-14' class='exercise-heading'>Example 14 <small><a href='#ex-14'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
--2 &amp; 4 \\
-2 &amp; -4
+2 &amp; 3 \\
+4 &amp; 2
 \end{array}\right] , \left[\begin{array}{cc}
-5 &amp; -3 \\
-4 &amp; -5
+-3 &amp; 0 \\
+3 &amp; -2
 \end{array}\right] , \left[\begin{array}{cc}
-0 &amp; 0 \\
--2 &amp; 2
+-9 &amp; 0 \\
+9 &amp; -6
 \end{array}\right] , \left[\begin{array}{cc}
--12 &amp; 10 \\
--10 &amp; 10
-\end{array}\right] \right\} \) is linearly independent.</p></p>
+19 &amp; -3 \\
+-25 &amp; 12
+\end{array}\right] \right\} \) spans \(\mathrm{M}_{2,2}\). </p></p>
     <ol type="a">
       <li> Write an equivalent statement using a matrix equation.</li>
       <li> Explain why your statement is true or false.</li>
@@ -884,59 +992,56 @@
     </p>
     <p>
       <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
--2 &amp; 5 &amp; 0 &amp; -12 \\
-4 &amp; -3 &amp; 0 &amp; 10 \\
-2 &amp; 4 &amp; -2 &amp; -10 \\
--4 &amp; -5 &amp; 2 &amp; 10
+2 &amp; -3 &amp; -9 &amp; 19 \\
+3 &amp; 0 &amp; 0 &amp; -3 \\
+4 &amp; 3 &amp; 9 &amp; -25 \\
+2 &amp; -2 &amp; -6 &amp; 12
 \end{array}\right] = \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 1 \\
-0 &amp; 1 &amp; 0 &amp; -2 \\
-0 &amp; 0 &amp; 1 &amp; 2 \\
+1 &amp; 0 &amp; 0 &amp; -1 \\
+0 &amp; 1 &amp; 3 &amp; -7 \\
+0 &amp; 0 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 0 &amp; 0
 \end{array}\right] \]</p>
     </p>
     <ol type="a">
       <li>The statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
--2 &amp; 4 \\
-2 &amp; -4
+2 &amp; 3 \\
+4 &amp; 2
 \end{array}\right] , \left[\begin{array}{cc}
-5 &amp; -3 \\
-4 &amp; -5
+-3 &amp; 0 \\
+3 &amp; -2
 \end{array}\right] , \left[\begin{array}{cc}
-0 &amp; 0 \\
--2 &amp; 2
+-9 &amp; 0 \\
+9 &amp; -6
 \end{array}\right] , \left[\begin{array}{cc}
--12 &amp; 10 \\
--10 &amp; 10
-\end{array}\right] \right\} \) is linearly independent.</p> is equivalent to the statement <p> The matrix equation <p>\[ y_{1} \left[\begin{array}{cc}
--2 &amp; 4 \\
-2 &amp; -4
+19 &amp; -3 \\
+-25 &amp; 12
+\end{array}\right] \right\} \) spans \(\mathrm{M}_{2,2}\). </p> is equivalent to the statement <p> The matrix equation <p>\[ y_{1} \left[\begin{array}{cc}
+2 &amp; 3 \\
+4 &amp; 2
 \end{array}\right] + y_{2} \left[\begin{array}{cc}
-5 &amp; -3 \\
-4 &amp; -5
+-3 &amp; 0 \\
+3 &amp; -2
 \end{array}\right] + y_{3} \left[\begin{array}{cc}
-0 &amp; 0 \\
--2 &amp; 2
+-9 &amp; 0 \\
+9 &amp; -6
 \end{array}\right] + y_{4} \left[\begin{array}{cc}
--12 &amp; 10 \\
--10 &amp; 10
-\end{array}\right] = \left[\begin{array}{cc}
-0 &amp; 0 \\
-0 &amp; 0
-\end{array}\right] \]</p> has no nontrivial solutions. </p></li>
+19 &amp; -3 \\
+-25 &amp; 12
+\end{array}\right] =B\]</p> has a solution for every \(B \in \mathrm{M}_{2,2}\). </p></li>
       <li>The set of matrices \( \left\{ \left[\begin{array}{cc}
--2 &amp; 4 \\
-2 &amp; -4
+2 &amp; 3 \\
+4 &amp; 2
 \end{array}\right] , \left[\begin{array}{cc}
-5 &amp; -3 \\
-4 &amp; -5
+-3 &amp; 0 \\
+3 &amp; -2
 \end{array}\right] , \left[\begin{array}{cc}
-0 &amp; 0 \\
--2 &amp; 2
+-9 &amp; 0 \\
+9 &amp; -6
 \end{array}\right] , \left[\begin{array}{cc}
--12 &amp; 10 \\
--10 &amp; 10
-\end{array}\right] \right\} \)is linearly dependent.</li>
+19 &amp; -3 \\
+-25 &amp; 12
+\end{array}\right] \right\} \) does not span \(\mathrm{M}_{2,2}\). </li>
     </ol>
   </div>
 </div>
@@ -944,7 +1049,7 @@
 <hr/>
 <h4 id='ex-15' class='exercise-heading'>Example 15 <small><a href='#ex-15'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Consider the statement <p> The set of polynomials \( \left\{ 3 \, x^{3} - 4 \, x^{2} + 2 \, x - 1 , -3 \, x^{3} - x^{2} + 2 \, x - 1 , -2 \, x^{3} - x^{2} - 3 \, x + 2 , 2 \, x^{3} + x^{2} + 4 \, x - 3 , -2 \, x^{3} + 2 \, x^{2} - 3 \, x - 5 , -5 \, x^{3} + 3 \, x^{2} - x - 3 \right\} \) spans \(\mathcal{P}_3\). </p></p>
+    <p>Consider the statement <p> The set of polynomials \( \left\{ 3 \, x^{3} + 4 \, x^{2} + 3 , -3 \, x^{3} + x^{2} + 2 \, x + 2 , x^{3} - 2 \, x^{2} + 4 \, x - 4 , -x^{3} - 3 \, x^{2} - 6 \, x - 1 , -3 \, x^{3} - 3 \, x^{2} + 2 \, x + 1 , -5 \, x^{3} + 3 \, x^{2} - 3 \, x - 4 \right\} \) spans \(\mathcal{P}_3\). </p></p>
     <ol type="a">
       <li> Write an equivalent statement using a polynomial equation.</li>
       <li> Explain why your statement is true or false.</li>
@@ -956,20 +1061,20 @@
     </p>
     <p>
       <p>\[\operatorname{RREF} \left[\begin{array}{cccccc}
--1 &amp; -1 &amp; 2 &amp; -3 &amp; -5 &amp; -3 \\
-2 &amp; 2 &amp; -3 &amp; 4 &amp; -3 &amp; -1 \\
--4 &amp; -1 &amp; -1 &amp; 1 &amp; 2 &amp; 3 \\
-3 &amp; -3 &amp; -2 &amp; 2 &amp; -2 &amp; -5
+3 &amp; 2 &amp; -4 &amp; -1 &amp; 1 &amp; -4 \\
+0 &amp; 2 &amp; 4 &amp; -6 &amp; 2 &amp; -3 \\
+4 &amp; 1 &amp; -2 &amp; -3 &amp; -3 &amp; 3 \\
+3 &amp; -3 &amp; 1 &amp; -1 &amp; -3 &amp; -5
 \end{array}\right] = \left[\begin{array}{cccccc}
-1 &amp; 0 &amp; 0 &amp; 0 &amp; -\frac{22}{27} &amp; -\frac{29}{27} \\
-0 &amp; 1 &amp; 0 &amp; 0 &amp; -\frac{80}{27} &amp; -\frac{22}{27} \\
-0 &amp; 0 &amp; 1 &amp; 0 &amp; \frac{193}{9} &amp; \frac{101}{9} \\
-0 &amp; 0 &amp; 0 &amp; 1 &amp; \frac{155}{9} &amp; \frac{82}{9}
+1 &amp; 0 &amp; 0 &amp; -1 &amp; 0 &amp; -\frac{93}{40} \\
+0 &amp; 1 &amp; 0 &amp; -1 &amp; 0 &amp; \frac{647}{280} \\
+0 &amp; 0 &amp; 1 &amp; -1 &amp; 0 &amp; -\frac{101}{280} \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; -\frac{173}{56}
 \end{array}\right] \]</p>
     </p>
     <ol type="a">
-      <li>The statement <p> The set of polynomials \( \left\{ 3 \, x^{3} - 4 \, x^{2} + 2 \, x - 1 , -3 \, x^{3} - x^{2} + 2 \, x - 1 , -2 \, x^{3} - x^{2} - 3 \, x + 2 , 2 \, x^{3} + x^{2} + 4 \, x - 3 , -2 \, x^{3} + 2 \, x^{2} - 3 \, x - 5 , -5 \, x^{3} + 3 \, x^{2} - x - 3 \right\} \) spans \(\mathcal{P}_3\). </p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( 3 \, x^{3} - 4 \, x^{2} + 2 \, x - 1 \right) + y_{2} \left( -3 \, x^{3} - x^{2} + 2 \, x - 1 \right) + y_{3} \left( -2 \, x^{3} - x^{2} - 3 \, x + 2 \right) + y_{4} \left( 2 \, x^{3} + x^{2} + 4 \, x - 3 \right) + y_{5} \left( -2 \, x^{3} + 2 \, x^{2} - 3 \, x - 5 \right) + y_{6} \left( -5 \, x^{3} + 3 \, x^{2} - x - 3 \right) =f\]</p> has a solution for every \(f \in \mathcal{P}_3\). </p></li>
-      <li>The set of polynomials \( \left\{ 3 \, x^{3} - 4 \, x^{2} + 2 \, x - 1 , -3 \, x^{3} - x^{2} + 2 \, x - 1 , -2 \, x^{3} - x^{2} - 3 \, x + 2 , 2 \, x^{3} + x^{2} + 4 \, x - 3 , -2 \, x^{3} + 2 \, x^{2} - 3 \, x - 5 , -5 \, x^{3} + 3 \, x^{2} - x - 3 \right\} \) spans \(\mathcal{P}_3\). </li>
+      <li>The statement <p> The set of polynomials \( \left\{ 3 \, x^{3} + 4 \, x^{2} + 3 , -3 \, x^{3} + x^{2} + 2 \, x + 2 , x^{3} - 2 \, x^{2} + 4 \, x - 4 , -x^{3} - 3 \, x^{2} - 6 \, x - 1 , -3 \, x^{3} - 3 \, x^{2} + 2 \, x + 1 , -5 \, x^{3} + 3 \, x^{2} - 3 \, x - 4 \right\} \) spans \(\mathcal{P}_3\). </p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( 3 \, x^{3} + 4 \, x^{2} + 3 \right) + y_{2} \left( -3 \, x^{3} + x^{2} + 2 \, x + 2 \right) + y_{3} \left( x^{3} - 2 \, x^{2} + 4 \, x - 4 \right) + y_{4} \left( -x^{3} - 3 \, x^{2} - 6 \, x - 1 \right) + y_{5} \left( -3 \, x^{3} - 3 \, x^{2} + 2 \, x + 1 \right) + y_{6} \left( -5 \, x^{3} + 3 \, x^{2} - 3 \, x - 4 \right) =f\]</p> has a solution for every \(f \in \mathcal{P}_3\). </p></li>
+      <li>The set of polynomials \( \left\{ 3 \, x^{3} + 4 \, x^{2} + 3 , -3 \, x^{3} + x^{2} + 2 \, x + 2 , x^{3} - 2 \, x^{2} + 4 \, x - 4 , -x^{3} - 3 \, x^{2} - 6 \, x - 1 , -3 \, x^{3} - 3 \, x^{2} + 2 \, x + 1 , -5 \, x^{3} + 3 \, x^{2} - 3 \, x - 4 \right\} \) spans \(\mathcal{P}_3\). </li>
     </ol>
   </div>
 </div>
@@ -977,274 +1082,7 @@
 <hr/>
 <h4 id='ex-16' class='exercise-heading'>Example 16 <small><a href='#ex-16'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Consider the statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
--1 &amp; -4 \\
--4 &amp; 0
-\end{array}\right] , \left[\begin{array}{cc}
--5 &amp; -1 \\
-4 &amp; 0
-\end{array}\right] , \left[\begin{array}{cc}
-2 &amp; -5 \\
-1 &amp; 4
-\end{array}\right] , \left[\begin{array}{cc}
--3 &amp; 0 \\
-22 &amp; 8
-\end{array}\right] \right\} \) spans \(\mathrm{M}_{2,2}\). </p></p>
-    <ol type="a">
-      <li> Write an equivalent statement using a matrix equation.</li>
-      <li> Explain why your statement is true or false.</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <p>
-      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
--1 &amp; -5 &amp; 2 &amp; -3 \\
--4 &amp; -1 &amp; -5 &amp; 0 \\
--4 &amp; 4 &amp; 1 &amp; 22 \\
-0 &amp; 0 &amp; 4 &amp; 8
-\end{array}\right] = \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; -3 \\
-0 &amp; 1 &amp; 0 &amp; 2 \\
-0 &amp; 0 &amp; 1 &amp; 2 \\
-0 &amp; 0 &amp; 0 &amp; 0
-\end{array}\right] \]</p>
-    </p>
-    <ol type="a">
-      <li>The statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
--1 &amp; -4 \\
--4 &amp; 0
-\end{array}\right] , \left[\begin{array}{cc}
--5 &amp; -1 \\
-4 &amp; 0
-\end{array}\right] , \left[\begin{array}{cc}
-2 &amp; -5 \\
-1 &amp; 4
-\end{array}\right] , \left[\begin{array}{cc}
--3 &amp; 0 \\
-22 &amp; 8
-\end{array}\right] \right\} \) spans \(\mathrm{M}_{2,2}\). </p> is equivalent to the statement <p> The matrix equation <p>\[ y_{1} \left[\begin{array}{cc}
--1 &amp; -4 \\
--4 &amp; 0
-\end{array}\right] + y_{2} \left[\begin{array}{cc}
--5 &amp; -1 \\
-4 &amp; 0
-\end{array}\right] + y_{3} \left[\begin{array}{cc}
-2 &amp; -5 \\
-1 &amp; 4
-\end{array}\right] + y_{4} \left[\begin{array}{cc}
--3 &amp; 0 \\
-22 &amp; 8
-\end{array}\right] =B\]</p> has a solution for every \(B \in \mathrm{M}_{2,2}\). </p></li>
-      <li>The set of matrices \( \left\{ \left[\begin{array}{cc}
--1 &amp; -4 \\
--4 &amp; 0
-\end{array}\right] , \left[\begin{array}{cc}
--5 &amp; -1 \\
-4 &amp; 0
-\end{array}\right] , \left[\begin{array}{cc}
-2 &amp; -5 \\
-1 &amp; 4
-\end{array}\right] , \left[\begin{array}{cc}
--3 &amp; 0 \\
-22 &amp; 8
-\end{array}\right] \right\} \) does not span \(\mathrm{M}_{2,2}\). </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-17' class='exercise-heading'>Example 17 <small><a href='#ex-17'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Consider the statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
--4 &amp; 0 \\
--4 &amp; 2
-\end{array}\right] , \left[\begin{array}{cc}
-4 &amp; 4 \\
-4 &amp; 2
-\end{array}\right] , \left[\begin{array}{cc}
-4 &amp; -4 \\
-4 &amp; -1
-\end{array}\right] , \left[\begin{array}{cc}
--2 &amp; -4 \\
--2 &amp; 1
-\end{array}\right] , \left[\begin{array}{cc}
-4 &amp; -4 \\
-2 &amp; 0
-\end{array}\right] , \left[\begin{array}{cc}
--2 &amp; 3 \\
--3 &amp; -5
-\end{array}\right] \right\} \) spans \(\mathrm{M}_{2,2}\). </p></p>
-    <ol type="a">
-      <li> Write an equivalent statement using a matrix equation.</li>
-      <li> Explain why your statement is true or false.</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <p>
-      <p>\[\operatorname{RREF} \left[\begin{array}{cccccc}
--4 &amp; 4 &amp; 4 &amp; -2 &amp; 4 &amp; -2 \\
-0 &amp; 4 &amp; -4 &amp; -4 &amp; -4 &amp; 3 \\
--4 &amp; 4 &amp; 4 &amp; -2 &amp; 2 &amp; -3 \\
-2 &amp; 2 &amp; -1 &amp; 1 &amp; 0 &amp; -5
-\end{array}\right] = \left[\begin{array}{cccccc}
-1 &amp; 0 &amp; 0 &amp; \frac{11}{10} &amp; 0 &amp; -\frac{51}{20} \\
-0 &amp; 1 &amp; 0 &amp; -\frac{1}{5} &amp; 0 &amp; -\frac{23}{20} \\
-0 &amp; 0 &amp; 1 &amp; \frac{4}{5} &amp; 0 &amp; -\frac{12}{5} \\
-0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; \frac{1}{2}
-\end{array}\right] \]</p>
-    </p>
-    <ol type="a">
-      <li>The statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
--4 &amp; 0 \\
--4 &amp; 2
-\end{array}\right] , \left[\begin{array}{cc}
-4 &amp; 4 \\
-4 &amp; 2
-\end{array}\right] , \left[\begin{array}{cc}
-4 &amp; -4 \\
-4 &amp; -1
-\end{array}\right] , \left[\begin{array}{cc}
--2 &amp; -4 \\
--2 &amp; 1
-\end{array}\right] , \left[\begin{array}{cc}
-4 &amp; -4 \\
-2 &amp; 0
-\end{array}\right] , \left[\begin{array}{cc}
--2 &amp; 3 \\
--3 &amp; -5
-\end{array}\right] \right\} \) spans \(\mathrm{M}_{2,2}\). </p> is equivalent to the statement <p> The matrix equation <p>\[ y_{1} \left[\begin{array}{cc}
--4 &amp; 0 \\
--4 &amp; 2
-\end{array}\right] + y_{2} \left[\begin{array}{cc}
-4 &amp; 4 \\
-4 &amp; 2
-\end{array}\right] + y_{3} \left[\begin{array}{cc}
-4 &amp; -4 \\
-4 &amp; -1
-\end{array}\right] + y_{4} \left[\begin{array}{cc}
--2 &amp; -4 \\
--2 &amp; 1
-\end{array}\right] + y_{5} \left[\begin{array}{cc}
-4 &amp; -4 \\
-2 &amp; 0
-\end{array}\right] + y_{6} \left[\begin{array}{cc}
--2 &amp; 3 \\
--3 &amp; -5
-\end{array}\right] =B\]</p> has a solution for every \(B \in \mathrm{M}_{2,2}\). </p></li>
-      <li>The set of matrices \( \left\{ \left[\begin{array}{cc}
--4 &amp; 0 \\
--4 &amp; 2
-\end{array}\right] , \left[\begin{array}{cc}
-4 &amp; 4 \\
-4 &amp; 2
-\end{array}\right] , \left[\begin{array}{cc}
-4 &amp; -4 \\
-4 &amp; -1
-\end{array}\right] , \left[\begin{array}{cc}
--2 &amp; -4 \\
--2 &amp; 1
-\end{array}\right] , \left[\begin{array}{cc}
-4 &amp; -4 \\
-2 &amp; 0
-\end{array}\right] , \left[\begin{array}{cc}
--2 &amp; 3 \\
--3 &amp; -5
-\end{array}\right] \right\} \) spans \(\mathrm{M}_{2,2}\). </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-18' class='exercise-heading'>Example 18 <small><a href='#ex-18'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Consider the statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
-4 &amp; 2 \\
-2 &amp; -1
-\end{array}\right] , \left[\begin{array}{cc}
-1 &amp; -5 \\
--1 &amp; 0
-\end{array}\right] , \left[\begin{array}{cc}
--5 &amp; 2 \\
-4 &amp; -3
-\end{array}\right] , \left[\begin{array}{cc}
-2 &amp; -2 \\
-3 &amp; 2
-\end{array}\right] \right\} \) spans \(\mathrm{M}_{2,2}\). </p></p>
-    <ol type="a">
-      <li> Write an equivalent statement using a matrix equation.</li>
-      <li> Explain why your statement is true or false.</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <p>
-      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
-4 &amp; 1 &amp; -5 &amp; 2 \\
-2 &amp; -5 &amp; 2 &amp; -2 \\
-2 &amp; -1 &amp; 4 &amp; 3 \\
--1 &amp; 0 &amp; -3 &amp; 2
-\end{array}\right] = \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \]</p>
-    </p>
-    <ol type="a">
-      <li>The statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
-4 &amp; 2 \\
-2 &amp; -1
-\end{array}\right] , \left[\begin{array}{cc}
-1 &amp; -5 \\
--1 &amp; 0
-\end{array}\right] , \left[\begin{array}{cc}
--5 &amp; 2 \\
-4 &amp; -3
-\end{array}\right] , \left[\begin{array}{cc}
-2 &amp; -2 \\
-3 &amp; 2
-\end{array}\right] \right\} \) spans \(\mathrm{M}_{2,2}\). </p> is equivalent to the statement <p> The matrix equation <p>\[ y_{1} \left[\begin{array}{cc}
-4 &amp; 2 \\
-2 &amp; -1
-\end{array}\right] + y_{2} \left[\begin{array}{cc}
-1 &amp; -5 \\
--1 &amp; 0
-\end{array}\right] + y_{3} \left[\begin{array}{cc}
--5 &amp; 2 \\
-4 &amp; -3
-\end{array}\right] + y_{4} \left[\begin{array}{cc}
-2 &amp; -2 \\
-3 &amp; 2
-\end{array}\right] =B\]</p> has a solution for every \(B \in \mathrm{M}_{2,2}\). </p></li>
-      <li>The set of matrices \( \left\{ \left[\begin{array}{cc}
-4 &amp; 2 \\
-2 &amp; -1
-\end{array}\right] , \left[\begin{array}{cc}
-1 &amp; -5 \\
--1 &amp; 0
-\end{array}\right] , \left[\begin{array}{cc}
--5 &amp; 2 \\
-4 &amp; -3
-\end{array}\right] , \left[\begin{array}{cc}
-2 &amp; -2 \\
-3 &amp; 2
-\end{array}\right] \right\} \) spans \(\mathrm{M}_{2,2}\). </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-19' class='exercise-heading'>Example 19 <small><a href='#ex-19'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Consider the statement <p> The set of polynomials \( \left\{ -2 \, x^{3} - 4 \, x^{2} - 4 \, x - 4 , -3 \, x^{3} + 2 \, x^{2} - 3 \, x - 1 , -2 \, x^{3} + 2 \, x^{2} - 3 , 2 \, x^{3} + 8 \, x^{2} + 2 \, x + 12 , -3 \, x^{3} - 3 \, x + 3 \right\} \) spans \(\mathcal{P}_3\). </p></p>
+    <p>Consider the statement <p> The set of polynomials \( \left\{ -5 \, x^{3} - 3 \, x^{2} + 3 \, x - 5 , 3 \, x^{3} + 3 \, x^{2} - 3 \, x + 4 , x^{3} - 3 \, x^{2} - 4 \, x - 4 , 4 \, x^{3} - 3 \, x^{2} + 2 \, x - 1 , 3 \, x^{3} + 3 \, x^{2} + x + 2 \right\} \) spans \(\mathcal{P}_3\). </p></p>
     <ol type="a">
       <li> Write an equivalent statement using a polynomial equation.</li>
       <li> Explain why your statement is true or false.</li>
@@ -1256,20 +1094,170 @@
     </p>
     <p>
       <p>\[\operatorname{RREF} \left[\begin{array}{ccccc}
--4 &amp; -1 &amp; -3 &amp; 12 &amp; 3 \\
--4 &amp; -3 &amp; 0 &amp; 2 &amp; -3 \\
--4 &amp; 2 &amp; 2 &amp; 8 &amp; 0 \\
--2 &amp; -3 &amp; -2 &amp; 2 &amp; -3
+-5 &amp; 4 &amp; -4 &amp; -1 &amp; 2 \\
+3 &amp; -3 &amp; -4 &amp; 2 &amp; 1 \\
+-3 &amp; 3 &amp; -3 &amp; -3 &amp; 3 \\
+-5 &amp; 3 &amp; 1 &amp; 4 &amp; 3
 \end{array}\right] = \left[\begin{array}{ccccc}
-1 &amp; 0 &amp; 0 &amp; -2 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 2 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; -2 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 0 &amp; 1
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 46 \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 59 \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; -\frac{8}{3} \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; \frac{44}{3}
 \end{array}\right] \]</p>
     </p>
     <ol type="a">
-      <li>The statement <p> The set of polynomials \( \left\{ -2 \, x^{3} - 4 \, x^{2} - 4 \, x - 4 , -3 \, x^{3} + 2 \, x^{2} - 3 \, x - 1 , -2 \, x^{3} + 2 \, x^{2} - 3 , 2 \, x^{3} + 8 \, x^{2} + 2 \, x + 12 , -3 \, x^{3} - 3 \, x + 3 \right\} \) spans \(\mathcal{P}_3\). </p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( -2 \, x^{3} - 4 \, x^{2} - 4 \, x - 4 \right) + y_{2} \left( -3 \, x^{3} + 2 \, x^{2} - 3 \, x - 1 \right) + y_{3} \left( -2 \, x^{3} + 2 \, x^{2} - 3 \right) + y_{4} \left( 2 \, x^{3} + 8 \, x^{2} + 2 \, x + 12 \right) + y_{5} \left( -3 \, x^{3} - 3 \, x + 3 \right) =f\]</p> has a solution for every \(f \in \mathcal{P}_3\). </p></li>
-      <li>The set of polynomials \( \left\{ -2 \, x^{3} - 4 \, x^{2} - 4 \, x - 4 , -3 \, x^{3} + 2 \, x^{2} - 3 \, x - 1 , -2 \, x^{3} + 2 \, x^{2} - 3 , 2 \, x^{3} + 8 \, x^{2} + 2 \, x + 12 , -3 \, x^{3} - 3 \, x + 3 \right\} \) spans \(\mathcal{P}_3\). </li>
+      <li>The statement <p> The set of polynomials \( \left\{ -5 \, x^{3} - 3 \, x^{2} + 3 \, x - 5 , 3 \, x^{3} + 3 \, x^{2} - 3 \, x + 4 , x^{3} - 3 \, x^{2} - 4 \, x - 4 , 4 \, x^{3} - 3 \, x^{2} + 2 \, x - 1 , 3 \, x^{3} + 3 \, x^{2} + x + 2 \right\} \) spans \(\mathcal{P}_3\). </p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( -5 \, x^{3} - 3 \, x^{2} + 3 \, x - 5 \right) + y_{2} \left( 3 \, x^{3} + 3 \, x^{2} - 3 \, x + 4 \right) + y_{3} \left( x^{3} - 3 \, x^{2} - 4 \, x - 4 \right) + y_{4} \left( 4 \, x^{3} - 3 \, x^{2} + 2 \, x - 1 \right) + y_{5} \left( 3 \, x^{3} + 3 \, x^{2} + x + 2 \right) =f\]</p> has a solution for every \(f \in \mathcal{P}_3\). </p></li>
+      <li>The set of polynomials \( \left\{ -5 \, x^{3} - 3 \, x^{2} + 3 \, x - 5 , 3 \, x^{3} + 3 \, x^{2} - 3 \, x + 4 , x^{3} - 3 \, x^{2} - 4 \, x - 4 , 4 \, x^{3} - 3 \, x^{2} + 2 \, x - 1 , 3 \, x^{3} + 3 \, x^{2} + x + 2 \right\} \) spans \(\mathcal{P}_3\). </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-17' class='exercise-heading'>Example 17 <small><a href='#ex-17'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Consider the statement <p> The set of polynomials \( \left\{ x^{2} + 4 \, x - 3 , 2 \, x^{3} + 2 \, x^{2} - 4 \, x + 4 , -2 \, x^{3} - 5 \, x^{2} + x - 5 , x^{3} + 4 \, x^{2} - 5 , -4 \, x^{3} - x^{2} + 2 \, x - 5 , -5 \, x^{3} - 3 \, x^{2} + 2 \, x - 4 \right\} \) spans \(\mathcal{P}_3\). </p></p>
+    <ol type="a">
+      <li> Write an equivalent statement using a polynomial equation.</li>
+      <li> Explain why your statement is true or false.</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccccc}
+-3 &amp; 4 &amp; -5 &amp; -5 &amp; -5 &amp; -4 \\
+4 &amp; -4 &amp; 1 &amp; 0 &amp; 2 &amp; 2 \\
+1 &amp; 2 &amp; -5 &amp; 4 &amp; -1 &amp; -3 \\
+0 &amp; 2 &amp; -2 &amp; 1 &amp; -4 &amp; -5
+\end{array}\right] = \left[\begin{array}{cccccc}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; -\frac{111}{41} &amp; -\frac{128}{41} \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; -\frac{142}{41} &amp; -\frac{319}{82} \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; -\frac{42}{41} &amp; -\frac{44}{41} \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; \frac{36}{41} &amp; \frac{26}{41}
+\end{array}\right] \]</p>
+    </p>
+    <ol type="a">
+      <li>The statement <p> The set of polynomials \( \left\{ x^{2} + 4 \, x - 3 , 2 \, x^{3} + 2 \, x^{2} - 4 \, x + 4 , -2 \, x^{3} - 5 \, x^{2} + x - 5 , x^{3} + 4 \, x^{2} - 5 , -4 \, x^{3} - x^{2} + 2 \, x - 5 , -5 \, x^{3} - 3 \, x^{2} + 2 \, x - 4 \right\} \) spans \(\mathcal{P}_3\). </p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( x^{2} + 4 \, x - 3 \right) + y_{2} \left( 2 \, x^{3} + 2 \, x^{2} - 4 \, x + 4 \right) + y_{3} \left( -2 \, x^{3} - 5 \, x^{2} + x - 5 \right) + y_{4} \left( x^{3} + 4 \, x^{2} - 5 \right) + y_{5} \left( -4 \, x^{3} - x^{2} + 2 \, x - 5 \right) + y_{6} \left( -5 \, x^{3} - 3 \, x^{2} + 2 \, x - 4 \right) =f\]</p> has a solution for every \(f \in \mathcal{P}_3\). </p></li>
+      <li>The set of polynomials \( \left\{ x^{2} + 4 \, x - 3 , 2 \, x^{3} + 2 \, x^{2} - 4 \, x + 4 , -2 \, x^{3} - 5 \, x^{2} + x - 5 , x^{3} + 4 \, x^{2} - 5 , -4 \, x^{3} - x^{2} + 2 \, x - 5 , -5 \, x^{3} - 3 \, x^{2} + 2 \, x - 4 \right\} \) spans \(\mathcal{P}_3\). </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-18' class='exercise-heading'>Example 18 <small><a href='#ex-18'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Consider the statement <p> The set of polynomials \( \left\{ x^{2} - 5 \, x + 1 , x^{3} - x^{2} + x - 2 , -2 \, x^{3} + 3 \, x^{2} + x + 1 , -3 \, x^{3} + 4 \, x^{2} - 8 \, x + 7 \right\} \) spans \(\mathcal{P}_3\). </p></p>
+    <ol type="a">
+      <li> Write an equivalent statement using a polynomial equation.</li>
+      <li> Explain why your statement is true or false.</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+1 &amp; -2 &amp; 1 &amp; 7 \\
+-5 &amp; 1 &amp; 1 &amp; -8 \\
+1 &amp; -1 &amp; 3 &amp; 4 \\
+0 &amp; 1 &amp; -2 &amp; -3
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 1 &amp; 0 &amp; -3 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
+    <ol type="a">
+      <li>The statement <p> The set of polynomials \( \left\{ x^{2} - 5 \, x + 1 , x^{3} - x^{2} + x - 2 , -2 \, x^{3} + 3 \, x^{2} + x + 1 , -3 \, x^{3} + 4 \, x^{2} - 8 \, x + 7 \right\} \) spans \(\mathcal{P}_3\). </p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( x^{2} - 5 \, x + 1 \right) + y_{2} \left( x^{3} - x^{2} + x - 2 \right) + y_{3} \left( -2 \, x^{3} + 3 \, x^{2} + x + 1 \right) + y_{4} \left( -3 \, x^{3} + 4 \, x^{2} - 8 \, x + 7 \right) =f\]</p> has a solution for every \(f \in \mathcal{P}_3\). </p></li>
+      <li>The set of polynomials \( \left\{ x^{2} - 5 \, x + 1 , x^{3} - x^{2} + x - 2 , -2 \, x^{3} + 3 \, x^{2} + x + 1 , -3 \, x^{3} + 4 \, x^{2} - 8 \, x + 7 \right\} \) does not span \(\mathcal{P}_3\). </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-19' class='exercise-heading'>Example 19 <small><a href='#ex-19'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Consider the statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
+-2 &amp; -2 \\
+-6 &amp; 5
+\end{array}\right] , \left[\begin{array}{cc}
+-6 &amp; 0 \\
+-5 &amp; -2
+\end{array}\right] , \left[\begin{array}{cc}
+5 &amp; -6 \\
+-3 &amp; 3
+\end{array}\right] , \left[\begin{array}{cc}
+-9 &amp; -8 \\
+-19 &amp; 4
+\end{array}\right] \right\} \) is linearly independent.</p></p>
+    <ol type="a">
+      <li> Write an equivalent statement using a matrix equation.</li>
+      <li> Explain why your statement is true or false.</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+-2 &amp; -6 &amp; 5 &amp; -9 \\
+-2 &amp; 0 &amp; -6 &amp; -8 \\
+-6 &amp; -5 &amp; -3 &amp; -19 \\
+5 &amp; -2 &amp; 3 &amp; 4
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 1 &amp; 0 &amp; 2 \\
+0 &amp; 0 &amp; 1 &amp; 1 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
+    <ol type="a">
+      <li>The statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
+-2 &amp; -2 \\
+-6 &amp; 5
+\end{array}\right] , \left[\begin{array}{cc}
+-6 &amp; 0 \\
+-5 &amp; -2
+\end{array}\right] , \left[\begin{array}{cc}
+5 &amp; -6 \\
+-3 &amp; 3
+\end{array}\right] , \left[\begin{array}{cc}
+-9 &amp; -8 \\
+-19 &amp; 4
+\end{array}\right] \right\} \) is linearly independent.</p> is equivalent to the statement <p> The matrix equation <p>\[ y_{1} \left[\begin{array}{cc}
+-2 &amp; -2 \\
+-6 &amp; 5
+\end{array}\right] + y_{2} \left[\begin{array}{cc}
+-6 &amp; 0 \\
+-5 &amp; -2
+\end{array}\right] + y_{3} \left[\begin{array}{cc}
+5 &amp; -6 \\
+-3 &amp; 3
+\end{array}\right] + y_{4} \left[\begin{array}{cc}
+-9 &amp; -8 \\
+-19 &amp; 4
+\end{array}\right] = \left[\begin{array}{cc}
+0 &amp; 0 \\
+0 &amp; 0
+\end{array}\right] \]</p> has no nontrivial solutions. </p></li>
+      <li>The set of matrices \( \left\{ \left[\begin{array}{cc}
+-2 &amp; -2 \\
+-6 &amp; 5
+\end{array}\right] , \left[\begin{array}{cc}
+-6 &amp; 0 \\
+-5 &amp; -2
+\end{array}\right] , \left[\begin{array}{cc}
+5 &amp; -6 \\
+-3 &amp; 3
+\end{array}\right] , \left[\begin{array}{cc}
+-9 &amp; -8 \\
+-19 &amp; 4
+\end{array}\right] \right\} \)is linearly dependent.</li>
     </ol>
   </div>
 </div>
@@ -1277,21 +1265,9 @@
 <hr/>
 <h4 id='ex-20' class='exercise-heading'>Example 20 <small><a href='#ex-20'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Consider the statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
--1 &amp; -6 \\
--1 &amp; 2
-\end{array}\right] , \left[\begin{array}{cc}
--4 &amp; 0 \\
-1 &amp; -6
-\end{array}\right] , \left[\begin{array}{cc}
--2 &amp; 12 \\
-3 &amp; -10
-\end{array}\right] , \left[\begin{array}{cc}
--2 &amp; 15 \\
-10 &amp; -22
-\end{array}\right] \right\} \) is linearly independent.</p></p>
+    <p>Consider the statement <p> The set of polynomials \( \left\{ -5 \, x^{3} + 4 \, x - 2 , -3 \, x^{3} + x^{2} - 5 \, x - 5 , 3 \, x^{3} - x^{2} + 3 \, x + 4 , -3 \, x^{3} + x^{2} - 3 \, x - 4 , -4 \, x^{3} + 3 \, x^{2} + x + 1 \right\} \) spans \(\mathcal{P}_3\). </p></p>
     <ol type="a">
-      <li> Write an equivalent statement using a matrix equation.</li>
+      <li> Write an equivalent statement using a polynomial equation.</li>
       <li> Explain why your statement is true or false.</li>
     </ol>
   </div>
@@ -1300,60 +1276,21 @@
       <b>Answer:</b>
     </p>
     <p>
-      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
--1 &amp; -4 &amp; -2 &amp; -2 \\
--6 &amp; 0 &amp; 12 &amp; 15 \\
--1 &amp; 1 &amp; 3 &amp; 10 \\
-2 &amp; -6 &amp; -10 &amp; -22
-\end{array}\right] = \left[\begin{array}{cccc}
-1 &amp; 0 &amp; -2 &amp; 0 \\
-0 &amp; 1 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1 \\
-0 &amp; 0 &amp; 0 &amp; 0
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccccc}
+-2 &amp; -5 &amp; 4 &amp; -4 &amp; 1 \\
+4 &amp; -5 &amp; 3 &amp; -3 &amp; 1 \\
+0 &amp; 1 &amp; -1 &amp; 1 &amp; 3 \\
+-5 &amp; -3 &amp; 3 &amp; -3 &amp; -4
+\end{array}\right] = \left[\begin{array}{ccccc}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; -1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1
 \end{array}\right] \]</p>
     </p>
     <ol type="a">
-      <li>The statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
--1 &amp; -6 \\
--1 &amp; 2
-\end{array}\right] , \left[\begin{array}{cc}
--4 &amp; 0 \\
-1 &amp; -6
-\end{array}\right] , \left[\begin{array}{cc}
--2 &amp; 12 \\
-3 &amp; -10
-\end{array}\right] , \left[\begin{array}{cc}
--2 &amp; 15 \\
-10 &amp; -22
-\end{array}\right] \right\} \) is linearly independent.</p> is equivalent to the statement <p> The matrix equation <p>\[ y_{1} \left[\begin{array}{cc}
--1 &amp; -6 \\
--1 &amp; 2
-\end{array}\right] + y_{2} \left[\begin{array}{cc}
--4 &amp; 0 \\
-1 &amp; -6
-\end{array}\right] + y_{3} \left[\begin{array}{cc}
--2 &amp; 12 \\
-3 &amp; -10
-\end{array}\right] + y_{4} \left[\begin{array}{cc}
--2 &amp; 15 \\
-10 &amp; -22
-\end{array}\right] = \left[\begin{array}{cc}
-0 &amp; 0 \\
-0 &amp; 0
-\end{array}\right] \]</p> has no nontrivial solutions. </p></li>
-      <li>The set of matrices \( \left\{ \left[\begin{array}{cc}
--1 &amp; -6 \\
--1 &amp; 2
-\end{array}\right] , \left[\begin{array}{cc}
--4 &amp; 0 \\
-1 &amp; -6
-\end{array}\right] , \left[\begin{array}{cc}
--2 &amp; 12 \\
-3 &amp; -10
-\end{array}\right] , \left[\begin{array}{cc}
--2 &amp; 15 \\
-10 &amp; -22
-\end{array}\right] \right\} \)is linearly dependent.</li>
+      <li>The statement <p> The set of polynomials \( \left\{ -5 \, x^{3} + 4 \, x - 2 , -3 \, x^{3} + x^{2} - 5 \, x - 5 , 3 \, x^{3} - x^{2} + 3 \, x + 4 , -3 \, x^{3} + x^{2} - 3 \, x - 4 , -4 \, x^{3} + 3 \, x^{2} + x + 1 \right\} \) spans \(\mathcal{P}_3\). </p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( -5 \, x^{3} + 4 \, x - 2 \right) + y_{2} \left( -3 \, x^{3} + x^{2} - 5 \, x - 5 \right) + y_{3} \left( 3 \, x^{3} - x^{2} + 3 \, x + 4 \right) + y_{4} \left( -3 \, x^{3} + x^{2} - 3 \, x - 4 \right) + y_{5} \left( -4 \, x^{3} + 3 \, x^{2} + x + 1 \right) =f\]</p> has a solution for every \(f \in \mathcal{P}_3\). </p></li>
+      <li>The set of polynomials \( \left\{ -5 \, x^{3} + 4 \, x - 2 , -3 \, x^{3} + x^{2} - 5 \, x - 5 , 3 \, x^{3} - x^{2} + 3 \, x + 4 , -3 \, x^{3} + x^{2} - 3 \, x - 4 , -4 \, x^{3} + 3 \, x^{2} + x + 1 \right\} \) spans \(\mathcal{P}_3\). </li>
     </ol>
   </div>
 </div>
@@ -1361,21 +1298,9 @@
 <hr/>
 <h4 id='ex-21' class='exercise-heading'>Example 21 <small><a href='#ex-21'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Consider the statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
--5 &amp; 4 \\
-0 &amp; 5
-\end{array}\right] , \left[\begin{array}{cc}
--3 &amp; 5 \\
-3 &amp; 4
-\end{array}\right] , \left[\begin{array}{cc}
-5 &amp; -1 \\
-0 &amp; -2
-\end{array}\right] , \left[\begin{array}{cc}
-19 &amp; -23 \\
--9 &amp; -22
-\end{array}\right] \right\} \) is linearly independent.</p></p>
+    <p>Consider the statement <p> The set of polynomials \( \left\{ -3 \, x^{3} + x^{2} - 5 \, x + 4 , 3 \, x^{3} + 4 \, x^{2} - 4 \, x , -4 \, x^{3} + 4 \, x^{2} + 2 \, x - 6 , 5 \, x^{3} - 4 \, x^{2} + 2 \, x - 3 \right\} \) is linearly independent.</p></p>
     <ol type="a">
-      <li> Write an equivalent statement using a matrix equation.</li>
+      <li> Write an equivalent statement using a polynomial equation.</li>
       <li> Explain why your statement is true or false.</li>
     </ol>
   </div>
@@ -1385,59 +1310,20 @@
     </p>
     <p>
       <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
--5 &amp; -3 &amp; 5 &amp; 19 \\
-4 &amp; 5 &amp; -1 &amp; -23 \\
-0 &amp; 3 &amp; 0 &amp; -9 \\
-5 &amp; 4 &amp; -2 &amp; -22
+4 &amp; 0 &amp; -6 &amp; -3 \\
+-5 &amp; -4 &amp; 2 &amp; 2 \\
+1 &amp; 4 &amp; 4 &amp; -4 \\
+-3 &amp; 3 &amp; -4 &amp; 5
 \end{array}\right] = \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; -2 \\
-0 &amp; 1 &amp; 0 &amp; -3 \\
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 0
+0 &amp; 0 &amp; 0 &amp; 1
 \end{array}\right] \]</p>
     </p>
     <ol type="a">
-      <li>The statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
--5 &amp; 4 \\
-0 &amp; 5
-\end{array}\right] , \left[\begin{array}{cc}
--3 &amp; 5 \\
-3 &amp; 4
-\end{array}\right] , \left[\begin{array}{cc}
-5 &amp; -1 \\
-0 &amp; -2
-\end{array}\right] , \left[\begin{array}{cc}
-19 &amp; -23 \\
--9 &amp; -22
-\end{array}\right] \right\} \) is linearly independent.</p> is equivalent to the statement <p> The matrix equation <p>\[ y_{1} \left[\begin{array}{cc}
--5 &amp; 4 \\
-0 &amp; 5
-\end{array}\right] + y_{2} \left[\begin{array}{cc}
--3 &amp; 5 \\
-3 &amp; 4
-\end{array}\right] + y_{3} \left[\begin{array}{cc}
-5 &amp; -1 \\
-0 &amp; -2
-\end{array}\right] + y_{4} \left[\begin{array}{cc}
-19 &amp; -23 \\
--9 &amp; -22
-\end{array}\right] = \left[\begin{array}{cc}
-0 &amp; 0 \\
-0 &amp; 0
-\end{array}\right] \]</p> has no nontrivial solutions. </p></li>
-      <li>The set of matrices \( \left\{ \left[\begin{array}{cc}
--5 &amp; 4 \\
-0 &amp; 5
-\end{array}\right] , \left[\begin{array}{cc}
--3 &amp; 5 \\
-3 &amp; 4
-\end{array}\right] , \left[\begin{array}{cc}
-5 &amp; -1 \\
-0 &amp; -2
-\end{array}\right] , \left[\begin{array}{cc}
-19 &amp; -23 \\
--9 &amp; -22
-\end{array}\right] \right\} \)is linearly dependent.</li>
+      <li>The statement <p> The set of polynomials \( \left\{ -3 \, x^{3} + x^{2} - 5 \, x + 4 , 3 \, x^{3} + 4 \, x^{2} - 4 \, x , -4 \, x^{3} + 4 \, x^{2} + 2 \, x - 6 , 5 \, x^{3} - 4 \, x^{2} + 2 \, x - 3 \right\} \) is linearly independent.</p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( -3 \, x^{3} + x^{2} - 5 \, x + 4 \right) + y_{2} \left( 3 \, x^{3} + 4 \, x^{2} - 4 \, x \right) + y_{3} \left( -4 \, x^{3} + 4 \, x^{2} + 2 \, x - 6 \right) + y_{4} \left( 5 \, x^{3} - 4 \, x^{2} + 2 \, x - 3 \right) = 0 \]</p> has no nontrivial solutions. </p></li>
+      <li>The set of polynomials \( \left\{ -3 \, x^{3} + x^{2} - 5 \, x + 4 , 3 \, x^{3} + 4 \, x^{2} - 4 \, x , -4 \, x^{3} + 4 \, x^{2} + 2 \, x - 6 , 5 \, x^{3} - 4 \, x^{2} + 2 \, x - 3 \right\} \)is linearly independent.</li>
     </ol>
   </div>
 </div>
@@ -1446,17 +1332,17 @@
 <h4 id='ex-22' class='exercise-heading'>Example 22 <small><a href='#ex-22'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
--1 &amp; 1 \\
--6 &amp; 4
+-2 &amp; 0 \\
+-5 &amp; 3
 \end{array}\right] , \left[\begin{array}{cc}
-3 &amp; 5 \\
--2 &amp; 3
+-3 &amp; 5 \\
+-2 &amp; -1
 \end{array}\right] , \left[\begin{array}{cc}
-3 &amp; -4 \\
--3 &amp; -1
+2 &amp; 1 \\
+4 &amp; 1
 \end{array}\right] , \left[\begin{array}{cc}
-4 &amp; -2 \\
--1 &amp; 1
+0 &amp; -13 \\
+-8 &amp; -1
 \end{array}\right] \right\} \) is linearly independent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a matrix equation.</li>
@@ -1469,59 +1355,59 @@
     </p>
     <p>
       <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
--1 &amp; 3 &amp; 3 &amp; 4 \\
-1 &amp; 5 &amp; -4 &amp; -2 \\
--6 &amp; -2 &amp; -3 &amp; -1 \\
-4 &amp; 3 &amp; -1 &amp; 1
+-2 &amp; -3 &amp; 2 &amp; 0 \\
+0 &amp; 5 &amp; 1 &amp; -13 \\
+-5 &amp; -2 &amp; 4 &amp; -8 \\
+3 &amp; -1 &amp; 1 &amp; -1
 \end{array}\right] = \left[\begin{array}{cccc}
 1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
+0 &amp; 1 &amp; 0 &amp; -2 \\
+0 &amp; 0 &amp; 1 &amp; -3 \\
+0 &amp; 0 &amp; 0 &amp; 0
 \end{array}\right] \]</p>
     </p>
     <ol type="a">
       <li>The statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
--1 &amp; 1 \\
--6 &amp; 4
+-2 &amp; 0 \\
+-5 &amp; 3
 \end{array}\right] , \left[\begin{array}{cc}
-3 &amp; 5 \\
--2 &amp; 3
+-3 &amp; 5 \\
+-2 &amp; -1
 \end{array}\right] , \left[\begin{array}{cc}
-3 &amp; -4 \\
--3 &amp; -1
+2 &amp; 1 \\
+4 &amp; 1
 \end{array}\right] , \left[\begin{array}{cc}
-4 &amp; -2 \\
--1 &amp; 1
+0 &amp; -13 \\
+-8 &amp; -1
 \end{array}\right] \right\} \) is linearly independent.</p> is equivalent to the statement <p> The matrix equation <p>\[ y_{1} \left[\begin{array}{cc}
--1 &amp; 1 \\
--6 &amp; 4
+-2 &amp; 0 \\
+-5 &amp; 3
 \end{array}\right] + y_{2} \left[\begin{array}{cc}
-3 &amp; 5 \\
--2 &amp; 3
+-3 &amp; 5 \\
+-2 &amp; -1
 \end{array}\right] + y_{3} \left[\begin{array}{cc}
-3 &amp; -4 \\
--3 &amp; -1
+2 &amp; 1 \\
+4 &amp; 1
 \end{array}\right] + y_{4} \left[\begin{array}{cc}
-4 &amp; -2 \\
--1 &amp; 1
+0 &amp; -13 \\
+-8 &amp; -1
 \end{array}\right] = \left[\begin{array}{cc}
 0 &amp; 0 \\
 0 &amp; 0
 \end{array}\right] \]</p> has no nontrivial solutions. </p></li>
       <li>The set of matrices \( \left\{ \left[\begin{array}{cc}
--1 &amp; 1 \\
--6 &amp; 4
+-2 &amp; 0 \\
+-5 &amp; 3
 \end{array}\right] , \left[\begin{array}{cc}
-3 &amp; 5 \\
--2 &amp; 3
+-3 &amp; 5 \\
+-2 &amp; -1
 \end{array}\right] , \left[\begin{array}{cc}
-3 &amp; -4 \\
--3 &amp; -1
+2 &amp; 1 \\
+4 &amp; 1
 \end{array}\right] , \left[\begin{array}{cc}
-4 &amp; -2 \\
--1 &amp; 1
-\end{array}\right] \right\} \)is linearly independent.</li>
+0 &amp; -13 \\
+-8 &amp; -1
+\end{array}\right] \right\} \)is linearly dependent.</li>
     </ol>
   </div>
 </div>
@@ -1529,7 +1415,7 @@
 <hr/>
 <h4 id='ex-23' class='exercise-heading'>Example 23 <small><a href='#ex-23'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Consider the statement <p> The set of polynomials \( \left\{ x^{3} - 2 \, x^{2} + 2 \, x + 5 , -6 \, x^{2} + 2 \, x - 5 , -x^{3} + x^{2} - 2 \, x + 4 , 2 \, x^{3} + 3 \, x^{2} + 2 \, x + 6 \right\} \) is linearly independent.</p></p>
+    <p>Consider the statement <p> The set of polynomials \( \left\{ 3 \, x^{3} + x^{2} + 3 \, x - 3 , 2 \, x^{3} + x^{2} + x - 3 , -2 \, x^{3} - 5 \, x^{2} + 4 \, x - 5 , 6 \, x^{3} - 2 \, x^{2} + 11 \, x - 14 \right\} \) is linearly independent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a polynomial equation.</li>
       <li> Explain why your statement is true or false.</li>
@@ -1541,20 +1427,20 @@
     </p>
     <p>
       <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
-5 &amp; -5 &amp; 4 &amp; 6 \\
-2 &amp; 2 &amp; -2 &amp; 2 \\
--2 &amp; -6 &amp; 1 &amp; 3 \\
-1 &amp; 0 &amp; -1 &amp; 2
+-3 &amp; -3 &amp; -5 &amp; -14 \\
+3 &amp; 1 &amp; 4 &amp; 11 \\
+1 &amp; 1 &amp; -5 &amp; -2 \\
+3 &amp; 2 &amp; -2 &amp; 6
 \end{array}\right] = \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 1 \\
-0 &amp; 1 &amp; 0 &amp; -1 \\
-0 &amp; 0 &amp; 1 &amp; -1 \\
+1 &amp; 0 &amp; 0 &amp; 2 \\
+0 &amp; 1 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 1 &amp; 1 \\
 0 &amp; 0 &amp; 0 &amp; 0
 \end{array}\right] \]</p>
     </p>
     <ol type="a">
-      <li>The statement <p> The set of polynomials \( \left\{ x^{3} - 2 \, x^{2} + 2 \, x + 5 , -6 \, x^{2} + 2 \, x - 5 , -x^{3} + x^{2} - 2 \, x + 4 , 2 \, x^{3} + 3 \, x^{2} + 2 \, x + 6 \right\} \) is linearly independent.</p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( x^{3} - 2 \, x^{2} + 2 \, x + 5 \right) + y_{2} \left( -6 \, x^{2} + 2 \, x - 5 \right) + y_{3} \left( -x^{3} + x^{2} - 2 \, x + 4 \right) + y_{4} \left( 2 \, x^{3} + 3 \, x^{2} + 2 \, x + 6 \right) = 0 \]</p> has no nontrivial solutions. </p></li>
-      <li>The set of polynomials \( \left\{ x^{3} - 2 \, x^{2} + 2 \, x + 5 , -6 \, x^{2} + 2 \, x - 5 , -x^{3} + x^{2} - 2 \, x + 4 , 2 \, x^{3} + 3 \, x^{2} + 2 \, x + 6 \right\} \)is linearly dependent.</li>
+      <li>The statement <p> The set of polynomials \( \left\{ 3 \, x^{3} + x^{2} + 3 \, x - 3 , 2 \, x^{3} + x^{2} + x - 3 , -2 \, x^{3} - 5 \, x^{2} + 4 \, x - 5 , 6 \, x^{3} - 2 \, x^{2} + 11 \, x - 14 \right\} \) is linearly independent.</p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( 3 \, x^{3} + x^{2} + 3 \, x - 3 \right) + y_{2} \left( 2 \, x^{3} + x^{2} + x - 3 \right) + y_{3} \left( -2 \, x^{3} - 5 \, x^{2} + 4 \, x - 5 \right) + y_{4} \left( 6 \, x^{3} - 2 \, x^{2} + 11 \, x - 14 \right) = 0 \]</p> has no nontrivial solutions. </p></li>
+      <li>The set of polynomials \( \left\{ 3 \, x^{3} + x^{2} + 3 \, x - 3 , 2 \, x^{3} + x^{2} + x - 3 , -2 \, x^{3} - 5 \, x^{2} + 4 \, x - 5 , 6 \, x^{3} - 2 \, x^{2} + 11 \, x - 14 \right\} \)is linearly dependent.</li>
     </ol>
   </div>
 </div>
@@ -1562,52 +1448,19 @@
 <hr/>
 <h4 id='ex-24' class='exercise-heading'>Example 24 <small><a href='#ex-24'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Consider the statement <p> The set of polynomials \( \left\{ 2 \, x^{3} - 2 \, x^{2} + x + 1 , -4 \, x^{3} - 4 \, x^{2} - 2 \, x - 3 , -5 \, x^{3} + x^{2} - 5 \, x - 3 , 4 \, x^{3} - 5 \, x^{2} + 3 \, x + 2 , x^{3} - 5 \, x^{2} + 2 \, x + 2 \right\} \) spans \(\mathcal{P}_3\). </p></p>
-    <ol type="a">
-      <li> Write an equivalent statement using a polynomial equation.</li>
-      <li> Explain why your statement is true or false.</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <p>
-      <p>\[\operatorname{RREF} \left[\begin{array}{ccccc}
-1 &amp; -3 &amp; -3 &amp; 2 &amp; 2 \\
-1 &amp; -2 &amp; -5 &amp; 3 &amp; 2 \\
--2 &amp; -4 &amp; 1 &amp; -5 &amp; -5 \\
-2 &amp; -4 &amp; -5 &amp; 4 &amp; 1
-\end{array}\right] = \left[\begin{array}{ccccc}
-1 &amp; 0 &amp; 0 &amp; 0 &amp; -\frac{129}{5} \\
-0 &amp; 1 &amp; 0 &amp; 0 &amp; -\frac{22}{5} \\
-0 &amp; 0 &amp; 1 &amp; 0 &amp; \frac{29}{5} \\
-0 &amp; 0 &amp; 0 &amp; 1 &amp; 16
-\end{array}\right] \]</p>
-    </p>
-    <ol type="a">
-      <li>The statement <p> The set of polynomials \( \left\{ 2 \, x^{3} - 2 \, x^{2} + x + 1 , -4 \, x^{3} - 4 \, x^{2} - 2 \, x - 3 , -5 \, x^{3} + x^{2} - 5 \, x - 3 , 4 \, x^{3} - 5 \, x^{2} + 3 \, x + 2 , x^{3} - 5 \, x^{2} + 2 \, x + 2 \right\} \) spans \(\mathcal{P}_3\). </p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( 2 \, x^{3} - 2 \, x^{2} + x + 1 \right) + y_{2} \left( -4 \, x^{3} - 4 \, x^{2} - 2 \, x - 3 \right) + y_{3} \left( -5 \, x^{3} + x^{2} - 5 \, x - 3 \right) + y_{4} \left( 4 \, x^{3} - 5 \, x^{2} + 3 \, x + 2 \right) + y_{5} \left( x^{3} - 5 \, x^{2} + 2 \, x + 2 \right) =f\]</p> has a solution for every \(f \in \mathcal{P}_3\). </p></li>
-      <li>The set of polynomials \( \left\{ 2 \, x^{3} - 2 \, x^{2} + x + 1 , -4 \, x^{3} - 4 \, x^{2} - 2 \, x - 3 , -5 \, x^{3} + x^{2} - 5 \, x - 3 , 4 \, x^{3} - 5 \, x^{2} + 3 \, x + 2 , x^{3} - 5 \, x^{2} + 2 \, x + 2 \right\} \) spans \(\mathcal{P}_3\). </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-25' class='exercise-heading'>Example 25 <small><a href='#ex-25'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
     <p>Consider the statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
-1 &amp; -6 \\
--3 &amp; 3
+-3 &amp; 3 \\
+4 &amp; -2
 \end{array}\right] , \left[\begin{array}{cc}
-0 &amp; -2 \\
--3 &amp; 0
+-2 &amp; 3 \\
+-4 &amp; -5
+\end{array}\right] , \left[\begin{array}{cc}
+-4 &amp; 0 \\
+2 &amp; 0
 \end{array}\right] , \left[\begin{array}{cc}
 -3 &amp; -4 \\
--1 &amp; 5
-\end{array}\right] , \left[\begin{array}{cc}
--3 &amp; -2 \\
--1 &amp; -1
-\end{array}\right] \right\} \) is linearly independent.</p></p>
+3 &amp; 3
+\end{array}\right] \right\} \) spans \(\mathrm{M}_{2,2}\). </p></p>
     <ol type="a">
       <li> Write an equivalent statement using a matrix equation.</li>
       <li> Explain why your statement is true or false.</li>
@@ -1619,10 +1472,10 @@
     </p>
     <p>
       <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
-1 &amp; 0 &amp; -3 &amp; -3 \\
--6 &amp; -2 &amp; -4 &amp; -2 \\
--3 &amp; -3 &amp; -1 &amp; -1 \\
-3 &amp; 0 &amp; 5 &amp; -1
+-3 &amp; -2 &amp; -4 &amp; -3 \\
+3 &amp; 3 &amp; 0 &amp; -4 \\
+4 &amp; -4 &amp; 2 &amp; 3 \\
+-2 &amp; -5 &amp; 0 &amp; 3
 \end{array}\right] = \left[\begin{array}{cccc}
 1 &amp; 0 &amp; 0 &amp; 0 \\
 0 &amp; 1 &amp; 0 &amp; 0 \\
@@ -1632,46 +1485,76 @@
     </p>
     <ol type="a">
       <li>The statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
-1 &amp; -6 \\
--3 &amp; 3
+-3 &amp; 3 \\
+4 &amp; -2
 \end{array}\right] , \left[\begin{array}{cc}
-0 &amp; -2 \\
--3 &amp; 0
+-2 &amp; 3 \\
+-4 &amp; -5
+\end{array}\right] , \left[\begin{array}{cc}
+-4 &amp; 0 \\
+2 &amp; 0
 \end{array}\right] , \left[\begin{array}{cc}
 -3 &amp; -4 \\
--1 &amp; 5
-\end{array}\right] , \left[\begin{array}{cc}
--3 &amp; -2 \\
--1 &amp; -1
-\end{array}\right] \right\} \) is linearly independent.</p> is equivalent to the statement <p> The matrix equation <p>\[ y_{1} \left[\begin{array}{cc}
-1 &amp; -6 \\
--3 &amp; 3
+3 &amp; 3
+\end{array}\right] \right\} \) spans \(\mathrm{M}_{2,2}\). </p> is equivalent to the statement <p> The matrix equation <p>\[ y_{1} \left[\begin{array}{cc}
+-3 &amp; 3 \\
+4 &amp; -2
 \end{array}\right] + y_{2} \left[\begin{array}{cc}
-0 &amp; -2 \\
--3 &amp; 0
+-2 &amp; 3 \\
+-4 &amp; -5
 \end{array}\right] + y_{3} \left[\begin{array}{cc}
--3 &amp; -4 \\
--1 &amp; 5
+-4 &amp; 0 \\
+2 &amp; 0
 \end{array}\right] + y_{4} \left[\begin{array}{cc}
--3 &amp; -2 \\
--1 &amp; -1
-\end{array}\right] = \left[\begin{array}{cc}
-0 &amp; 0 \\
-0 &amp; 0
-\end{array}\right] \]</p> has no nontrivial solutions. </p></li>
+-3 &amp; -4 \\
+3 &amp; 3
+\end{array}\right] =B\]</p> has a solution for every \(B \in \mathrm{M}_{2,2}\). </p></li>
       <li>The set of matrices \( \left\{ \left[\begin{array}{cc}
-1 &amp; -6 \\
--3 &amp; 3
+-3 &amp; 3 \\
+4 &amp; -2
 \end{array}\right] , \left[\begin{array}{cc}
-0 &amp; -2 \\
--3 &amp; 0
+-2 &amp; 3 \\
+-4 &amp; -5
+\end{array}\right] , \left[\begin{array}{cc}
+-4 &amp; 0 \\
+2 &amp; 0
 \end{array}\right] , \left[\begin{array}{cc}
 -3 &amp; -4 \\
--1 &amp; 5
-\end{array}\right] , \left[\begin{array}{cc}
--3 &amp; -2 \\
--1 &amp; -1
-\end{array}\right] \right\} \)is linearly independent.</li>
+3 &amp; 3
+\end{array}\right] \right\} \) spans \(\mathrm{M}_{2,2}\). </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-25' class='exercise-heading'>Example 25 <small><a href='#ex-25'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Consider the statement <p> The set of polynomials \( \left\{ 2 \, x^{3} - 5 \, x^{2} - 5 \, x - 2 , 3 \, x^{3} - 5 \, x^{2} - 4 \, x + 3 , 3 \, x^{3} + 2 \, x^{2} + 1 , -4 \, x^{3} + 4 \, x^{2} - 2 \, x + 4 , -4 \, x^{3} - x^{2} + 2 , 4 \, x^{3} - 3 \, x^{2} - 5 \, x + 2 \right\} \) spans \(\mathcal{P}_3\). </p></p>
+    <ol type="a">
+      <li> Write an equivalent statement using a polynomial equation.</li>
+      <li> Explain why your statement is true or false.</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccccc}
+-2 &amp; 3 &amp; 1 &amp; 4 &amp; 2 &amp; 2 \\
+-5 &amp; -4 &amp; 0 &amp; -2 &amp; 0 &amp; -5 \\
+-5 &amp; -5 &amp; 2 &amp; 4 &amp; -1 &amp; -3 \\
+2 &amp; 3 &amp; 3 &amp; -4 &amp; -4 &amp; 4
+\end{array}\right] = \left[\begin{array}{cccccc}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; -\frac{80}{189} &amp; \frac{32}{63} \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; \frac{25}{63} &amp; \frac{11}{21} \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; -\frac{23}{21} &amp; \frac{5}{7} \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; \frac{50}{189} &amp; \frac{23}{126}
+\end{array}\right] \]</p>
+    </p>
+    <ol type="a">
+      <li>The statement <p> The set of polynomials \( \left\{ 2 \, x^{3} - 5 \, x^{2} - 5 \, x - 2 , 3 \, x^{3} - 5 \, x^{2} - 4 \, x + 3 , 3 \, x^{3} + 2 \, x^{2} + 1 , -4 \, x^{3} + 4 \, x^{2} - 2 \, x + 4 , -4 \, x^{3} - x^{2} + 2 , 4 \, x^{3} - 3 \, x^{2} - 5 \, x + 2 \right\} \) spans \(\mathcal{P}_3\). </p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( 2 \, x^{3} - 5 \, x^{2} - 5 \, x - 2 \right) + y_{2} \left( 3 \, x^{3} - 5 \, x^{2} - 4 \, x + 3 \right) + y_{3} \left( 3 \, x^{3} + 2 \, x^{2} + 1 \right) + y_{4} \left( -4 \, x^{3} + 4 \, x^{2} - 2 \, x + 4 \right) + y_{5} \left( -4 \, x^{3} - x^{2} + 2 \right) + y_{6} \left( 4 \, x^{3} - 3 \, x^{2} - 5 \, x + 2 \right) =f\]</p> has a solution for every \(f \in \mathcal{P}_3\). </p></li>
+      <li>The set of polynomials \( \left\{ 2 \, x^{3} - 5 \, x^{2} - 5 \, x - 2 , 3 \, x^{3} - 5 \, x^{2} - 4 \, x + 3 , 3 \, x^{3} + 2 \, x^{2} + 1 , -4 \, x^{3} + 4 \, x^{2} - 2 \, x + 4 , -4 \, x^{3} - x^{2} + 2 , 4 \, x^{3} - 3 \, x^{2} - 5 \, x + 2 \right\} \) spans \(\mathcal{P}_3\). </li>
     </ol>
   </div>
 </div>
@@ -1680,17 +1563,17 @@
 <h4 id='ex-26' class='exercise-heading'>Example 26 <small><a href='#ex-26'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
-2 &amp; 5 \\
--1 &amp; -6
+5 &amp; -3 \\
+5 &amp; -4
 \end{array}\right] , \left[\begin{array}{cc}
--5 &amp; -5 \\
-1 &amp; -6
+-3 &amp; 4 \\
+2 &amp; -3
 \end{array}\right] , \left[\begin{array}{cc}
-2 &amp; -4 \\
-1 &amp; -2
+3 &amp; 1 \\
+-2 &amp; 2
 \end{array}\right] , \left[\begin{array}{cc}
--5 &amp; -5 \\
-3 &amp; 4
+0 &amp; -3 \\
+-2 &amp; -4
 \end{array}\right] \right\} \) is linearly independent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a matrix equation.</li>
@@ -1703,10 +1586,10 @@
     </p>
     <p>
       <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
-2 &amp; -5 &amp; 2 &amp; -5 \\
-5 &amp; -5 &amp; -4 &amp; -5 \\
--1 &amp; 1 &amp; 1 &amp; 3 \\
--6 &amp; -6 &amp; -2 &amp; 4
+5 &amp; -3 &amp; 3 &amp; 0 \\
+-3 &amp; 4 &amp; 1 &amp; -3 \\
+5 &amp; 2 &amp; -2 &amp; -2 \\
+-4 &amp; -3 &amp; 2 &amp; -4
 \end{array}\right] = \left[\begin{array}{cccc}
 1 &amp; 0 &amp; 0 &amp; 0 \\
 0 &amp; 1 &amp; 0 &amp; 0 \\
@@ -1716,45 +1599,45 @@
     </p>
     <ol type="a">
       <li>The statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
-2 &amp; 5 \\
--1 &amp; -6
+5 &amp; -3 \\
+5 &amp; -4
 \end{array}\right] , \left[\begin{array}{cc}
--5 &amp; -5 \\
-1 &amp; -6
+-3 &amp; 4 \\
+2 &amp; -3
 \end{array}\right] , \left[\begin{array}{cc}
-2 &amp; -4 \\
-1 &amp; -2
+3 &amp; 1 \\
+-2 &amp; 2
 \end{array}\right] , \left[\begin{array}{cc}
--5 &amp; -5 \\
-3 &amp; 4
+0 &amp; -3 \\
+-2 &amp; -4
 \end{array}\right] \right\} \) is linearly independent.</p> is equivalent to the statement <p> The matrix equation <p>\[ y_{1} \left[\begin{array}{cc}
-2 &amp; 5 \\
--1 &amp; -6
+5 &amp; -3 \\
+5 &amp; -4
 \end{array}\right] + y_{2} \left[\begin{array}{cc}
--5 &amp; -5 \\
-1 &amp; -6
+-3 &amp; 4 \\
+2 &amp; -3
 \end{array}\right] + y_{3} \left[\begin{array}{cc}
-2 &amp; -4 \\
-1 &amp; -2
+3 &amp; 1 \\
+-2 &amp; 2
 \end{array}\right] + y_{4} \left[\begin{array}{cc}
--5 &amp; -5 \\
-3 &amp; 4
+0 &amp; -3 \\
+-2 &amp; -4
 \end{array}\right] = \left[\begin{array}{cc}
 0 &amp; 0 \\
 0 &amp; 0
 \end{array}\right] \]</p> has no nontrivial solutions. </p></li>
       <li>The set of matrices \( \left\{ \left[\begin{array}{cc}
-2 &amp; 5 \\
--1 &amp; -6
+5 &amp; -3 \\
+5 &amp; -4
 \end{array}\right] , \left[\begin{array}{cc}
--5 &amp; -5 \\
-1 &amp; -6
+-3 &amp; 4 \\
+2 &amp; -3
 \end{array}\right] , \left[\begin{array}{cc}
-2 &amp; -4 \\
-1 &amp; -2
+3 &amp; 1 \\
+-2 &amp; 2
 \end{array}\right] , \left[\begin{array}{cc}
--5 &amp; -5 \\
-3 &amp; 4
+0 &amp; -3 \\
+-2 &amp; -4
 \end{array}\right] \right\} \)is linearly independent.</li>
     </ol>
   </div>
@@ -1763,7 +1646,7 @@
 <hr/>
 <h4 id='ex-27' class='exercise-heading'>Example 27 <small><a href='#ex-27'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Consider the statement <p> The set of polynomials \( \left\{ -x^{3} + 4 \, x^{2} - 3 \, x + 2 , -4 \, x^{3} + 5 \, x^{2} - 4 \, x - 2 , -4 \, x^{3} + 2 \, x^{2} + 5 \, x - 4 , 15 \, x^{3} - 27 \, x^{2} + 21 \, x \right\} \) is linearly independent.</p></p>
+    <p>Consider the statement <p> The set of polynomials \( \left\{ 4 \, x^{3} - x^{2} - 4 \, x + 3 , 4 \, x^{3} - 4 \, x^{2} + 2 \, x + 2 , -16 \, x^{3} + 7 \, x^{2} + 10 \, x - 11 , 4 \, x^{3} - 7 \, x^{2} + 8 \, x + 1 \right\} \) spans \(\mathcal{P}_3\). </p></p>
     <ol type="a">
       <li> Write an equivalent statement using a polynomial equation.</li>
       <li> Explain why your statement is true or false.</li>
@@ -1775,20 +1658,20 @@
     </p>
     <p>
       <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
-2 &amp; -2 &amp; -4 &amp; 0 \\
--3 &amp; -4 &amp; 5 &amp; 21 \\
-4 &amp; 5 &amp; 2 &amp; -27 \\
--1 &amp; -4 &amp; -4 &amp; 15
+3 &amp; 2 &amp; -11 &amp; 1 \\
+-4 &amp; 2 &amp; 10 &amp; 8 \\
+-1 &amp; -4 &amp; 7 &amp; -7 \\
+4 &amp; 4 &amp; -16 &amp; 4
 \end{array}\right] = \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; -3 \\
-0 &amp; 1 &amp; 0 &amp; -3 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
+1 &amp; 0 &amp; -3 &amp; -1 \\
+0 &amp; 1 &amp; -1 &amp; 2 \\
+0 &amp; 0 &amp; 0 &amp; 0 \\
 0 &amp; 0 &amp; 0 &amp; 0
 \end{array}\right] \]</p>
     </p>
     <ol type="a">
-      <li>The statement <p> The set of polynomials \( \left\{ -x^{3} + 4 \, x^{2} - 3 \, x + 2 , -4 \, x^{3} + 5 \, x^{2} - 4 \, x - 2 , -4 \, x^{3} + 2 \, x^{2} + 5 \, x - 4 , 15 \, x^{3} - 27 \, x^{2} + 21 \, x \right\} \) is linearly independent.</p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( -x^{3} + 4 \, x^{2} - 3 \, x + 2 \right) + y_{2} \left( -4 \, x^{3} + 5 \, x^{2} - 4 \, x - 2 \right) + y_{3} \left( -4 \, x^{3} + 2 \, x^{2} + 5 \, x - 4 \right) + y_{4} \left( 15 \, x^{3} - 27 \, x^{2} + 21 \, x \right) = 0 \]</p> has no nontrivial solutions. </p></li>
-      <li>The set of polynomials \( \left\{ -x^{3} + 4 \, x^{2} - 3 \, x + 2 , -4 \, x^{3} + 5 \, x^{2} - 4 \, x - 2 , -4 \, x^{3} + 2 \, x^{2} + 5 \, x - 4 , 15 \, x^{3} - 27 \, x^{2} + 21 \, x \right\} \)is linearly dependent.</li>
+      <li>The statement <p> The set of polynomials \( \left\{ 4 \, x^{3} - x^{2} - 4 \, x + 3 , 4 \, x^{3} - 4 \, x^{2} + 2 \, x + 2 , -16 \, x^{3} + 7 \, x^{2} + 10 \, x - 11 , 4 \, x^{3} - 7 \, x^{2} + 8 \, x + 1 \right\} \) spans \(\mathcal{P}_3\). </p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( 4 \, x^{3} - x^{2} - 4 \, x + 3 \right) + y_{2} \left( 4 \, x^{3} - 4 \, x^{2} + 2 \, x + 2 \right) + y_{3} \left( -16 \, x^{3} + 7 \, x^{2} + 10 \, x - 11 \right) + y_{4} \left( 4 \, x^{3} - 7 \, x^{2} + 8 \, x + 1 \right) =f\]</p> has a solution for every \(f \in \mathcal{P}_3\). </p></li>
+      <li>The set of polynomials \( \left\{ 4 \, x^{3} - x^{2} - 4 \, x + 3 , 4 \, x^{3} - 4 \, x^{2} + 2 \, x + 2 , -16 \, x^{3} + 7 \, x^{2} + 10 \, x - 11 , 4 \, x^{3} - 7 \, x^{2} + 8 \, x + 1 \right\} \) does not span \(\mathcal{P}_3\). </li>
     </ol>
   </div>
 </div>
@@ -1796,7 +1679,7 @@
 <hr/>
 <h4 id='ex-28' class='exercise-heading'>Example 28 <small><a href='#ex-28'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Consider the statement <p> The set of polynomials \( \left\{ 2 \, x^{3} - 5 \, x^{2} - 3 \, x - 1 , -2 \, x^{3} + 2 \, x^{2} + 1 , -2 \, x^{3} - 4 \, x + 2 , -5 \, x^{3} + 4 \, x^{2} - x - 3 \right\} \) spans \(\mathcal{P}_3\). </p></p>
+    <p>Consider the statement <p> The set of polynomials \( \left\{ x^{3} + 2 \, x^{2} - 2 \, x - 1 , -x^{3} + 5 \, x^{2} - 4 \, x , -3 \, x^{3} - 3 \, x^{2} - 5 \, x + 5 , 5 \, x^{3} - 3 \, x^{2} + 2 \, x - 5 \right\} \) is linearly independent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a polynomial equation.</li>
       <li> Explain why your statement is true or false.</li>
@@ -1808,10 +1691,10 @@
     </p>
     <p>
       <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
--1 &amp; 1 &amp; 2 &amp; -3 \\
--3 &amp; 0 &amp; -4 &amp; -1 \\
--5 &amp; 2 &amp; 0 &amp; 4 \\
-2 &amp; -2 &amp; -2 &amp; -5
+-1 &amp; 0 &amp; 5 &amp; -5 \\
+-2 &amp; -4 &amp; -5 &amp; 2 \\
+2 &amp; 5 &amp; -3 &amp; -3 \\
+1 &amp; -1 &amp; -3 &amp; 5
 \end{array}\right] = \left[\begin{array}{cccc}
 1 &amp; 0 &amp; 0 &amp; 0 \\
 0 &amp; 1 &amp; 0 &amp; 0 \\
@@ -1820,8 +1703,8 @@
 \end{array}\right] \]</p>
     </p>
     <ol type="a">
-      <li>The statement <p> The set of polynomials \( \left\{ 2 \, x^{3} - 5 \, x^{2} - 3 \, x - 1 , -2 \, x^{3} + 2 \, x^{2} + 1 , -2 \, x^{3} - 4 \, x + 2 , -5 \, x^{3} + 4 \, x^{2} - x - 3 \right\} \) spans \(\mathcal{P}_3\). </p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( 2 \, x^{3} - 5 \, x^{2} - 3 \, x - 1 \right) + y_{2} \left( -2 \, x^{3} + 2 \, x^{2} + 1 \right) + y_{3} \left( -2 \, x^{3} - 4 \, x + 2 \right) + y_{4} \left( -5 \, x^{3} + 4 \, x^{2} - x - 3 \right) =f\]</p> has a solution for every \(f \in \mathcal{P}_3\). </p></li>
-      <li>The set of polynomials \( \left\{ 2 \, x^{3} - 5 \, x^{2} - 3 \, x - 1 , -2 \, x^{3} + 2 \, x^{2} + 1 , -2 \, x^{3} - 4 \, x + 2 , -5 \, x^{3} + 4 \, x^{2} - x - 3 \right\} \) spans \(\mathcal{P}_3\). </li>
+      <li>The statement <p> The set of polynomials \( \left\{ x^{3} + 2 \, x^{2} - 2 \, x - 1 , -x^{3} + 5 \, x^{2} - 4 \, x , -3 \, x^{3} - 3 \, x^{2} - 5 \, x + 5 , 5 \, x^{3} - 3 \, x^{2} + 2 \, x - 5 \right\} \) is linearly independent.</p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( x^{3} + 2 \, x^{2} - 2 \, x - 1 \right) + y_{2} \left( -x^{3} + 5 \, x^{2} - 4 \, x \right) + y_{3} \left( -3 \, x^{3} - 3 \, x^{2} - 5 \, x + 5 \right) + y_{4} \left( 5 \, x^{3} - 3 \, x^{2} + 2 \, x - 5 \right) = 0 \]</p> has no nontrivial solutions. </p></li>
+      <li>The set of polynomials \( \left\{ x^{3} + 2 \, x^{2} - 2 \, x - 1 , -x^{3} + 5 \, x^{2} - 4 \, x , -3 \, x^{3} - 3 \, x^{2} - 5 \, x + 5 , 5 \, x^{3} - 3 \, x^{2} + 2 \, x - 5 \right\} \)is linearly independent.</li>
     </ol>
   </div>
 </div>
@@ -1829,9 +1712,21 @@
 <hr/>
 <h4 id='ex-29' class='exercise-heading'>Example 29 <small><a href='#ex-29'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Consider the statement <p> The set of polynomials \( \left\{ x^{3} - x^{2} + 4 , 3 \, x^{3} - 3 \, x - 6 , 5 \, x^{3} + 3 \, x^{2} - 3 \, x + 3 , 5 \, x^{3} - 2 \, x^{2} - 4 \, x \right\} \) is linearly independent.</p></p>
+    <p>Consider the statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
+0 &amp; 3 \\
+-2 &amp; -1
+\end{array}\right] , \left[\begin{array}{cc}
+-2 &amp; -6 \\
+3 &amp; 2
+\end{array}\right] , \left[\begin{array}{cc}
+2 &amp; -4 \\
+2 &amp; -2
+\end{array}\right] , \left[\begin{array}{cc}
+4 &amp; -5 \\
+-6 &amp; 1
+\end{array}\right] \right\} \) is linearly independent.</p></p>
     <ol type="a">
-      <li> Write an equivalent statement using a polynomial equation.</li>
+      <li> Write an equivalent statement using a matrix equation.</li>
       <li> Explain why your statement is true or false.</li>
     </ol>
   </div>
@@ -1841,10 +1736,10 @@
     </p>
     <p>
       <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
-4 &amp; -6 &amp; 3 &amp; 0 \\
-0 &amp; -3 &amp; -3 &amp; -4 \\
--1 &amp; 0 &amp; 3 &amp; -2 \\
-1 &amp; 3 &amp; 5 &amp; 5
+0 &amp; -2 &amp; 2 &amp; 4 \\
+3 &amp; -6 &amp; -4 &amp; -5 \\
+-2 &amp; 3 &amp; 2 &amp; -6 \\
+-1 &amp; 2 &amp; -2 &amp; 1
 \end{array}\right] = \left[\begin{array}{cccc}
 1 &amp; 0 &amp; 0 &amp; 0 \\
 0 &amp; 1 &amp; 0 &amp; 0 \\
@@ -1853,8 +1748,47 @@
 \end{array}\right] \]</p>
     </p>
     <ol type="a">
-      <li>The statement <p> The set of polynomials \( \left\{ x^{3} - x^{2} + 4 , 3 \, x^{3} - 3 \, x - 6 , 5 \, x^{3} + 3 \, x^{2} - 3 \, x + 3 , 5 \, x^{3} - 2 \, x^{2} - 4 \, x \right\} \) is linearly independent.</p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( x^{3} - x^{2} + 4 \right) + y_{2} \left( 3 \, x^{3} - 3 \, x - 6 \right) + y_{3} \left( 5 \, x^{3} + 3 \, x^{2} - 3 \, x + 3 \right) + y_{4} \left( 5 \, x^{3} - 2 \, x^{2} - 4 \, x \right) = 0 \]</p> has no nontrivial solutions. </p></li>
-      <li>The set of polynomials \( \left\{ x^{3} - x^{2} + 4 , 3 \, x^{3} - 3 \, x - 6 , 5 \, x^{3} + 3 \, x^{2} - 3 \, x + 3 , 5 \, x^{3} - 2 \, x^{2} - 4 \, x \right\} \)is linearly independent.</li>
+      <li>The statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
+0 &amp; 3 \\
+-2 &amp; -1
+\end{array}\right] , \left[\begin{array}{cc}
+-2 &amp; -6 \\
+3 &amp; 2
+\end{array}\right] , \left[\begin{array}{cc}
+2 &amp; -4 \\
+2 &amp; -2
+\end{array}\right] , \left[\begin{array}{cc}
+4 &amp; -5 \\
+-6 &amp; 1
+\end{array}\right] \right\} \) is linearly independent.</p> is equivalent to the statement <p> The matrix equation <p>\[ y_{1} \left[\begin{array}{cc}
+0 &amp; 3 \\
+-2 &amp; -1
+\end{array}\right] + y_{2} \left[\begin{array}{cc}
+-2 &amp; -6 \\
+3 &amp; 2
+\end{array}\right] + y_{3} \left[\begin{array}{cc}
+2 &amp; -4 \\
+2 &amp; -2
+\end{array}\right] + y_{4} \left[\begin{array}{cc}
+4 &amp; -5 \\
+-6 &amp; 1
+\end{array}\right] = \left[\begin{array}{cc}
+0 &amp; 0 \\
+0 &amp; 0
+\end{array}\right] \]</p> has no nontrivial solutions. </p></li>
+      <li>The set of matrices \( \left\{ \left[\begin{array}{cc}
+0 &amp; 3 \\
+-2 &amp; -1
+\end{array}\right] , \left[\begin{array}{cc}
+-2 &amp; -6 \\
+3 &amp; 2
+\end{array}\right] , \left[\begin{array}{cc}
+2 &amp; -4 \\
+2 &amp; -2
+\end{array}\right] , \left[\begin{array}{cc}
+4 &amp; -5 \\
+-6 &amp; 1
+\end{array}\right] \right\} \)is linearly independent.</li>
     </ol>
   </div>
 </div>
@@ -1863,17 +1797,17 @@
 <h4 id='ex-30' class='exercise-heading'>Example 30 <small><a href='#ex-30'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
--3 &amp; -4 \\
-0 &amp; 2
+4 &amp; -1 \\
+-6 &amp; -5
 \end{array}\right] , \left[\begin{array}{cc}
-2 &amp; -4 \\
-2 &amp; 0
+-5 &amp; 0 \\
+3 &amp; -2
 \end{array}\right] , \left[\begin{array}{cc}
--2 &amp; 2 \\
-5 &amp; -3
+3 &amp; 4 \\
+-4 &amp; 0
 \end{array}\right] , \left[\begin{array}{cc}
-9 &amp; 12 \\
-0 &amp; -6
+6 &amp; -12 \\
+3 &amp; 6
 \end{array}\right] \right\} \) is linearly independent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a matrix equation.</li>
@@ -1886,58 +1820,58 @@
     </p>
     <p>
       <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
--3 &amp; 2 &amp; -2 &amp; 9 \\
--4 &amp; -4 &amp; 2 &amp; 12 \\
-0 &amp; 2 &amp; 5 &amp; 0 \\
-2 &amp; 0 &amp; -3 &amp; -6
+4 &amp; -5 &amp; 3 &amp; 6 \\
+-1 &amp; 0 &amp; 4 &amp; -12 \\
+-6 &amp; 3 &amp; -4 &amp; 3 \\
+-5 &amp; -2 &amp; 0 &amp; 6
 \end{array}\right] = \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; -3 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; -3 \\
+0 &amp; 0 &amp; 1 &amp; -3 \\
 0 &amp; 0 &amp; 0 &amp; 0
 \end{array}\right] \]</p>
     </p>
     <ol type="a">
       <li>The statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
--3 &amp; -4 \\
-0 &amp; 2
+4 &amp; -1 \\
+-6 &amp; -5
 \end{array}\right] , \left[\begin{array}{cc}
-2 &amp; -4 \\
-2 &amp; 0
+-5 &amp; 0 \\
+3 &amp; -2
 \end{array}\right] , \left[\begin{array}{cc}
--2 &amp; 2 \\
-5 &amp; -3
+3 &amp; 4 \\
+-4 &amp; 0
 \end{array}\right] , \left[\begin{array}{cc}
-9 &amp; 12 \\
-0 &amp; -6
+6 &amp; -12 \\
+3 &amp; 6
 \end{array}\right] \right\} \) is linearly independent.</p> is equivalent to the statement <p> The matrix equation <p>\[ y_{1} \left[\begin{array}{cc}
--3 &amp; -4 \\
-0 &amp; 2
+4 &amp; -1 \\
+-6 &amp; -5
 \end{array}\right] + y_{2} \left[\begin{array}{cc}
-2 &amp; -4 \\
-2 &amp; 0
+-5 &amp; 0 \\
+3 &amp; -2
 \end{array}\right] + y_{3} \left[\begin{array}{cc}
--2 &amp; 2 \\
-5 &amp; -3
+3 &amp; 4 \\
+-4 &amp; 0
 \end{array}\right] + y_{4} \left[\begin{array}{cc}
-9 &amp; 12 \\
-0 &amp; -6
+6 &amp; -12 \\
+3 &amp; 6
 \end{array}\right] = \left[\begin{array}{cc}
 0 &amp; 0 \\
 0 &amp; 0
 \end{array}\right] \]</p> has no nontrivial solutions. </p></li>
       <li>The set of matrices \( \left\{ \left[\begin{array}{cc}
--3 &amp; -4 \\
-0 &amp; 2
+4 &amp; -1 \\
+-6 &amp; -5
 \end{array}\right] , \left[\begin{array}{cc}
-2 &amp; -4 \\
-2 &amp; 0
+-5 &amp; 0 \\
+3 &amp; -2
 \end{array}\right] , \left[\begin{array}{cc}
--2 &amp; 2 \\
-5 &amp; -3
+3 &amp; 4 \\
+-4 &amp; 0
 \end{array}\right] , \left[\begin{array}{cc}
-9 &amp; 12 \\
-0 &amp; -6
+6 &amp; -12 \\
+3 &amp; 6
 \end{array}\right] \right\} \)is linearly dependent.</li>
     </ol>
   </div>
@@ -1946,7 +1880,7 @@
 <hr/>
 <h4 id='ex-31' class='exercise-heading'>Example 31 <small><a href='#ex-31'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Consider the statement <p> The set of polynomials \( \left\{ -3 \, x^{3} + 5 \, x^{2} + 3 \, x + 4 , 5 \, x^{2} + 5 \, x , -2 \, x^{3} + 4 \, x^{2} + 2 \, x + 3 , 5 \, x^{3} + 3 \, x^{2} - 4 \, x + 3 \right\} \) is linearly independent.</p></p>
+    <p>Consider the statement <p> The set of polynomials \( \left\{ -5 \, x^{3} + 4 \, x^{2} - 3 , -5 \, x^{3} - 4 \, x^{2} - x + 3 , -5 \, x^{3} - 5 \, x^{2} - x - 4 , 15 \, x^{3} + 5 \, x^{2} + 2 \, x + 4 \right\} \) spans \(\mathcal{P}_3\). </p></p>
     <ol type="a">
       <li> Write an equivalent statement using a polynomial equation.</li>
       <li> Explain why your statement is true or false.</li>
@@ -1958,20 +1892,20 @@
     </p>
     <p>
       <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
-4 &amp; 0 &amp; 3 &amp; 3 \\
-3 &amp; 5 &amp; 2 &amp; -4 \\
-5 &amp; 5 &amp; 4 &amp; 3 \\
--3 &amp; 0 &amp; -2 &amp; 5
+-3 &amp; 3 &amp; -4 &amp; 4 \\
+0 &amp; -1 &amp; -1 &amp; 2 \\
+4 &amp; -4 &amp; -5 &amp; 5 \\
+-5 &amp; -5 &amp; -5 &amp; 15
 \end{array}\right] = \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
+1 &amp; 0 &amp; 0 &amp; -1 \\
+0 &amp; 1 &amp; 0 &amp; -1 \\
+0 &amp; 0 &amp; 1 &amp; -1 \\
+0 &amp; 0 &amp; 0 &amp; 0
 \end{array}\right] \]</p>
     </p>
     <ol type="a">
-      <li>The statement <p> The set of polynomials \( \left\{ -3 \, x^{3} + 5 \, x^{2} + 3 \, x + 4 , 5 \, x^{2} + 5 \, x , -2 \, x^{3} + 4 \, x^{2} + 2 \, x + 3 , 5 \, x^{3} + 3 \, x^{2} - 4 \, x + 3 \right\} \) is linearly independent.</p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( -3 \, x^{3} + 5 \, x^{2} + 3 \, x + 4 \right) + y_{2} \left( 5 \, x^{2} + 5 \, x \right) + y_{3} \left( -2 \, x^{3} + 4 \, x^{2} + 2 \, x + 3 \right) + y_{4} \left( 5 \, x^{3} + 3 \, x^{2} - 4 \, x + 3 \right) = 0 \]</p> has no nontrivial solutions. </p></li>
-      <li>The set of polynomials \( \left\{ -3 \, x^{3} + 5 \, x^{2} + 3 \, x + 4 , 5 \, x^{2} + 5 \, x , -2 \, x^{3} + 4 \, x^{2} + 2 \, x + 3 , 5 \, x^{3} + 3 \, x^{2} - 4 \, x + 3 \right\} \)is linearly independent.</li>
+      <li>The statement <p> The set of polynomials \( \left\{ -5 \, x^{3} + 4 \, x^{2} - 3 , -5 \, x^{3} - 4 \, x^{2} - x + 3 , -5 \, x^{3} - 5 \, x^{2} - x - 4 , 15 \, x^{3} + 5 \, x^{2} + 2 \, x + 4 \right\} \) spans \(\mathcal{P}_3\). </p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( -5 \, x^{3} + 4 \, x^{2} - 3 \right) + y_{2} \left( -5 \, x^{3} - 4 \, x^{2} - x + 3 \right) + y_{3} \left( -5 \, x^{3} - 5 \, x^{2} - x - 4 \right) + y_{4} \left( 15 \, x^{3} + 5 \, x^{2} + 2 \, x + 4 \right) =f\]</p> has a solution for every \(f \in \mathcal{P}_3\). </p></li>
+      <li>The set of polynomials \( \left\{ -5 \, x^{3} + 4 \, x^{2} - 3 , -5 \, x^{3} - 4 \, x^{2} - x + 3 , -5 \, x^{3} - 5 \, x^{2} - x - 4 , 15 \, x^{3} + 5 \, x^{2} + 2 \, x + 4 \right\} \) does not span \(\mathcal{P}_3\). </li>
     </ol>
   </div>
 </div>
@@ -1979,7 +1913,7 @@
 <hr/>
 <h4 id='ex-32' class='exercise-heading'>Example 32 <small><a href='#ex-32'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Consider the statement <p> The set of polynomials \( \left\{ -3 \, x^{3} + x^{2} + 4 \, x - 4 , x^{3} + 4 \, x^{2} + x + 3 , -4 \, x^{3} + 2 \, x^{2} - 4 \, x - 2 , -3 \, x^{3} + 3 \, x^{2} - 3 \, x + 2 \right\} \) spans \(\mathcal{P}_3\). </p></p>
+    <p>Consider the statement <p> The set of polynomials \( \left\{ -2 \, x^{3} + 2 \, x^{2} - 4 \, x , -4 \, x^{2} - x - 5 , 4 \, x^{3} + 4 \, x^{2} + 10 \, x + 10 , 2 \, x^{3} + 11 \, x^{2} - x + 7 \right\} \) is linearly independent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a polynomial equation.</li>
       <li> Explain why your statement is true or false.</li>
@@ -1991,20 +1925,20 @@
     </p>
     <p>
       <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
--4 &amp; 3 &amp; -2 &amp; 2 \\
-4 &amp; 1 &amp; -4 &amp; -3 \\
-1 &amp; 4 &amp; 2 &amp; 3 \\
--3 &amp; 1 &amp; -4 &amp; -3
+0 &amp; -5 &amp; 10 &amp; 7 \\
+-4 &amp; -1 &amp; 10 &amp; -1 \\
+2 &amp; -4 &amp; 4 &amp; 11 \\
+-2 &amp; 0 &amp; 4 &amp; 2
 \end{array}\right] = \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
+1 &amp; 0 &amp; -2 &amp; 0 \\
+0 &amp; 1 &amp; -2 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 0 &amp; 0
 \end{array}\right] \]</p>
     </p>
     <ol type="a">
-      <li>The statement <p> The set of polynomials \( \left\{ -3 \, x^{3} + x^{2} + 4 \, x - 4 , x^{3} + 4 \, x^{2} + x + 3 , -4 \, x^{3} + 2 \, x^{2} - 4 \, x - 2 , -3 \, x^{3} + 3 \, x^{2} - 3 \, x + 2 \right\} \) spans \(\mathcal{P}_3\). </p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( -3 \, x^{3} + x^{2} + 4 \, x - 4 \right) + y_{2} \left( x^{3} + 4 \, x^{2} + x + 3 \right) + y_{3} \left( -4 \, x^{3} + 2 \, x^{2} - 4 \, x - 2 \right) + y_{4} \left( -3 \, x^{3} + 3 \, x^{2} - 3 \, x + 2 \right) =f\]</p> has a solution for every \(f \in \mathcal{P}_3\). </p></li>
-      <li>The set of polynomials \( \left\{ -3 \, x^{3} + x^{2} + 4 \, x - 4 , x^{3} + 4 \, x^{2} + x + 3 , -4 \, x^{3} + 2 \, x^{2} - 4 \, x - 2 , -3 \, x^{3} + 3 \, x^{2} - 3 \, x + 2 \right\} \) spans \(\mathcal{P}_3\). </li>
+      <li>The statement <p> The set of polynomials \( \left\{ -2 \, x^{3} + 2 \, x^{2} - 4 \, x , -4 \, x^{2} - x - 5 , 4 \, x^{3} + 4 \, x^{2} + 10 \, x + 10 , 2 \, x^{3} + 11 \, x^{2} - x + 7 \right\} \) is linearly independent.</p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( -2 \, x^{3} + 2 \, x^{2} - 4 \, x \right) + y_{2} \left( -4 \, x^{2} - x - 5 \right) + y_{3} \left( 4 \, x^{3} + 4 \, x^{2} + 10 \, x + 10 \right) + y_{4} \left( 2 \, x^{3} + 11 \, x^{2} - x + 7 \right) = 0 \]</p> has no nontrivial solutions. </p></li>
+      <li>The set of polynomials \( \left\{ -2 \, x^{3} + 2 \, x^{2} - 4 \, x , -4 \, x^{2} - x - 5 , 4 \, x^{3} + 4 \, x^{2} + 10 \, x + 10 , 2 \, x^{3} + 11 \, x^{2} - x + 7 \right\} \)is linearly dependent.</li>
     </ol>
   </div>
 </div>
@@ -2012,7 +1946,7 @@
 <hr/>
 <h4 id='ex-33' class='exercise-heading'>Example 33 <small><a href='#ex-33'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Consider the statement <p> The set of polynomials \( \left\{ -5 \, x^{2} - 6 \, x + 5 , 2 \, x^{3} + 3 \, x - 3 , -x^{3} - x^{2} + 3 \, x + 5 , 5 \, x^{3} - 5 \, x^{2} - 5 \, x + 5 \right\} \) is linearly independent.</p></p>
+    <p>Consider the statement <p> The set of polynomials \( \left\{ -6 \, x^{3} - 5 \, x^{2} - x - 4 , 4 \, x^{3} - 3 \, x^{2} - 6 \, x + 2 , -2 \, x^{3} - 4 \, x^{2} - 2 \, x , 2 \, x^{3} + 8 \, x^{2} + 7 \, x + 2 \right\} \) is linearly independent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a polynomial equation.</li>
       <li> Explain why your statement is true or false.</li>
@@ -2024,20 +1958,20 @@
     </p>
     <p>
       <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
-5 &amp; -3 &amp; 5 &amp; 5 \\
--6 &amp; 3 &amp; 3 &amp; -5 \\
--5 &amp; 0 &amp; -1 &amp; -5 \\
-0 &amp; 2 &amp; -1 &amp; 5
+-4 &amp; 2 &amp; 0 &amp; 2 \\
+-1 &amp; -6 &amp; -2 &amp; 7 \\
+-5 &amp; -3 &amp; -4 &amp; 8 \\
+-6 &amp; 4 &amp; -2 &amp; 2
 \end{array}\right] = \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
+1 &amp; 0 &amp; 0 &amp; -1 \\
+0 &amp; 1 &amp; 0 &amp; -1 \\
 0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
+0 &amp; 0 &amp; 0 &amp; 0
 \end{array}\right] \]</p>
     </p>
     <ol type="a">
-      <li>The statement <p> The set of polynomials \( \left\{ -5 \, x^{2} - 6 \, x + 5 , 2 \, x^{3} + 3 \, x - 3 , -x^{3} - x^{2} + 3 \, x + 5 , 5 \, x^{3} - 5 \, x^{2} - 5 \, x + 5 \right\} \) is linearly independent.</p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( -5 \, x^{2} - 6 \, x + 5 \right) + y_{2} \left( 2 \, x^{3} + 3 \, x - 3 \right) + y_{3} \left( -x^{3} - x^{2} + 3 \, x + 5 \right) + y_{4} \left( 5 \, x^{3} - 5 \, x^{2} - 5 \, x + 5 \right) = 0 \]</p> has no nontrivial solutions. </p></li>
-      <li>The set of polynomials \( \left\{ -5 \, x^{2} - 6 \, x + 5 , 2 \, x^{3} + 3 \, x - 3 , -x^{3} - x^{2} + 3 \, x + 5 , 5 \, x^{3} - 5 \, x^{2} - 5 \, x + 5 \right\} \)is linearly independent.</li>
+      <li>The statement <p> The set of polynomials \( \left\{ -6 \, x^{3} - 5 \, x^{2} - x - 4 , 4 \, x^{3} - 3 \, x^{2} - 6 \, x + 2 , -2 \, x^{3} - 4 \, x^{2} - 2 \, x , 2 \, x^{3} + 8 \, x^{2} + 7 \, x + 2 \right\} \) is linearly independent.</p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( -6 \, x^{3} - 5 \, x^{2} - x - 4 \right) + y_{2} \left( 4 \, x^{3} - 3 \, x^{2} - 6 \, x + 2 \right) + y_{3} \left( -2 \, x^{3} - 4 \, x^{2} - 2 \, x \right) + y_{4} \left( 2 \, x^{3} + 8 \, x^{2} + 7 \, x + 2 \right) = 0 \]</p> has no nontrivial solutions. </p></li>
+      <li>The set of polynomials \( \left\{ -6 \, x^{3} - 5 \, x^{2} - x - 4 , 4 \, x^{3} - 3 \, x^{2} - 6 \, x + 2 , -2 \, x^{3} - 4 \, x^{2} - 2 \, x , 2 \, x^{3} + 8 \, x^{2} + 7 \, x + 2 \right\} \)is linearly dependent.</li>
     </ol>
   </div>
 </div>
@@ -2045,91 +1979,7 @@
 <hr/>
 <h4 id='ex-34' class='exercise-heading'>Example 34 <small><a href='#ex-34'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Consider the statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
--4 &amp; -5 \\
-5 &amp; -6
-\end{array}\right] , \left[\begin{array}{cc}
--6 &amp; -2 \\
--1 &amp; -2
-\end{array}\right] , \left[\begin{array}{cc}
--1 &amp; -4 \\
--3 &amp; -4
-\end{array}\right] , \left[\begin{array}{cc}
-32 &amp; 29 \\
--6 &amp; 32
-\end{array}\right] \right\} \) is linearly independent.</p></p>
-    <ol type="a">
-      <li> Write an equivalent statement using a matrix equation.</li>
-      <li> Explain why your statement is true or false.</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <p>
-      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
--4 &amp; -6 &amp; -1 &amp; 32 \\
--5 &amp; -2 &amp; -4 &amp; 29 \\
-5 &amp; -1 &amp; -3 &amp; -6 \\
--6 &amp; -2 &amp; -4 &amp; 32
-\end{array}\right] = \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; -3 \\
-0 &amp; 1 &amp; 0 &amp; -3 \\
-0 &amp; 0 &amp; 1 &amp; -2 \\
-0 &amp; 0 &amp; 0 &amp; 0
-\end{array}\right] \]</p>
-    </p>
-    <ol type="a">
-      <li>The statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
--4 &amp; -5 \\
-5 &amp; -6
-\end{array}\right] , \left[\begin{array}{cc}
--6 &amp; -2 \\
--1 &amp; -2
-\end{array}\right] , \left[\begin{array}{cc}
--1 &amp; -4 \\
--3 &amp; -4
-\end{array}\right] , \left[\begin{array}{cc}
-32 &amp; 29 \\
--6 &amp; 32
-\end{array}\right] \right\} \) is linearly independent.</p> is equivalent to the statement <p> The matrix equation <p>\[ y_{1} \left[\begin{array}{cc}
--4 &amp; -5 \\
-5 &amp; -6
-\end{array}\right] + y_{2} \left[\begin{array}{cc}
--6 &amp; -2 \\
--1 &amp; -2
-\end{array}\right] + y_{3} \left[\begin{array}{cc}
--1 &amp; -4 \\
--3 &amp; -4
-\end{array}\right] + y_{4} \left[\begin{array}{cc}
-32 &amp; 29 \\
--6 &amp; 32
-\end{array}\right] = \left[\begin{array}{cc}
-0 &amp; 0 \\
-0 &amp; 0
-\end{array}\right] \]</p> has no nontrivial solutions. </p></li>
-      <li>The set of matrices \( \left\{ \left[\begin{array}{cc}
--4 &amp; -5 \\
-5 &amp; -6
-\end{array}\right] , \left[\begin{array}{cc}
--6 &amp; -2 \\
--1 &amp; -2
-\end{array}\right] , \left[\begin{array}{cc}
--1 &amp; -4 \\
--3 &amp; -4
-\end{array}\right] , \left[\begin{array}{cc}
-32 &amp; 29 \\
--6 &amp; 32
-\end{array}\right] \right\} \)is linearly dependent.</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-35' class='exercise-heading'>Example 35 <small><a href='#ex-35'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Consider the statement <p> The set of polynomials \( \left\{ -6 \, x^{3} + 4 \, x^{2} - x - 2 , 2 \, x^{3} + 5 \, x^{2} - 3 \, x + 4 , 4 \, x^{3} + 3 \, x^{2} + x - 5 , 4 \, x^{3} - 2 \, x^{2} - 3 \, x + 2 \right\} \) is linearly independent.</p></p>
+    <p>Consider the statement <p> The set of polynomials \( \left\{ 3 \, x^{3} - 3 \, x^{2} - 3 \, x + 1 , 4 \, x^{3} - 4 \, x^{2} + x - 2 , -3 \, x^{3} - 5 \, x^{2} - 4 \, x - 2 , -3 \, x^{3} + 27 \, x^{2} + 9 \, x + 12 \right\} \) spans \(\mathcal{P}_3\). </p></p>
     <ol type="a">
       <li> Write an equivalent statement using a polynomial equation.</li>
       <li> Explain why your statement is true or false.</li>
@@ -2141,28 +1991,28 @@
     </p>
     <p>
       <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
--2 &amp; 4 &amp; -5 &amp; 2 \\
--1 &amp; -3 &amp; 1 &amp; -3 \\
-4 &amp; 5 &amp; 3 &amp; -2 \\
--6 &amp; 2 &amp; 4 &amp; 4
+1 &amp; -2 &amp; -2 &amp; 12 \\
+-3 &amp; 1 &amp; -4 &amp; 9 \\
+-3 &amp; -4 &amp; -5 &amp; 27 \\
+3 &amp; 4 &amp; -3 &amp; -3
 \end{array}\right] = \left[\begin{array}{cccc}
 1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
+0 &amp; 1 &amp; 0 &amp; -3 \\
+0 &amp; 0 &amp; 1 &amp; -3 \\
+0 &amp; 0 &amp; 0 &amp; 0
 \end{array}\right] \]</p>
     </p>
     <ol type="a">
-      <li>The statement <p> The set of polynomials \( \left\{ -6 \, x^{3} + 4 \, x^{2} - x - 2 , 2 \, x^{3} + 5 \, x^{2} - 3 \, x + 4 , 4 \, x^{3} + 3 \, x^{2} + x - 5 , 4 \, x^{3} - 2 \, x^{2} - 3 \, x + 2 \right\} \) is linearly independent.</p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( -6 \, x^{3} + 4 \, x^{2} - x - 2 \right) + y_{2} \left( 2 \, x^{3} + 5 \, x^{2} - 3 \, x + 4 \right) + y_{3} \left( 4 \, x^{3} + 3 \, x^{2} + x - 5 \right) + y_{4} \left( 4 \, x^{3} - 2 \, x^{2} - 3 \, x + 2 \right) = 0 \]</p> has no nontrivial solutions. </p></li>
-      <li>The set of polynomials \( \left\{ -6 \, x^{3} + 4 \, x^{2} - x - 2 , 2 \, x^{3} + 5 \, x^{2} - 3 \, x + 4 , 4 \, x^{3} + 3 \, x^{2} + x - 5 , 4 \, x^{3} - 2 \, x^{2} - 3 \, x + 2 \right\} \)is linearly independent.</li>
+      <li>The statement <p> The set of polynomials \( \left\{ 3 \, x^{3} - 3 \, x^{2} - 3 \, x + 1 , 4 \, x^{3} - 4 \, x^{2} + x - 2 , -3 \, x^{3} - 5 \, x^{2} - 4 \, x - 2 , -3 \, x^{3} + 27 \, x^{2} + 9 \, x + 12 \right\} \) spans \(\mathcal{P}_3\). </p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( 3 \, x^{3} - 3 \, x^{2} - 3 \, x + 1 \right) + y_{2} \left( 4 \, x^{3} - 4 \, x^{2} + x - 2 \right) + y_{3} \left( -3 \, x^{3} - 5 \, x^{2} - 4 \, x - 2 \right) + y_{4} \left( -3 \, x^{3} + 27 \, x^{2} + 9 \, x + 12 \right) =f\]</p> has a solution for every \(f \in \mathcal{P}_3\). </p></li>
+      <li>The set of polynomials \( \left\{ 3 \, x^{3} - 3 \, x^{2} - 3 \, x + 1 , 4 \, x^{3} - 4 \, x^{2} + x - 2 , -3 \, x^{3} - 5 \, x^{2} - 4 \, x - 2 , -3 \, x^{3} + 27 \, x^{2} + 9 \, x + 12 \right\} \) does not span \(\mathcal{P}_3\). </li>
     </ol>
   </div>
 </div>
 
 <hr/>
-<h4 id='ex-36' class='exercise-heading'>Example 36 <small><a href='#ex-36'>🔗</a></small></h4><div class="exercise">
+<h4 id='ex-35' class='exercise-heading'>Example 35 <small><a href='#ex-35'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Consider the statement <p> The set of polynomials \( \left\{ -2 \, x^{3} - 2 \, x + 4 , 2 \, x^{3} - 4 \, x - 5 , -5 \, x^{3} - 4 \, x^{2} + 4 \, x - 1 , -4 \, x^{3} + x^{2} - x , 3 \, x^{3} - 2 \, x^{2} - x + 4 , 4 \, x^{3} - 5 \, x^{2} + 3 \, x - 1 \right\} \) spans \(\mathcal{P}_3\). </p></p>
+    <p>Consider the statement <p> The set of polynomials \( \left\{ -x^{3} - 5 \, x^{2} - 3 \, x + 4 , x^{3} + 4 \, x^{2} + x - 5 , 2 \, x^{3} + 4 \, x + 2 , 2 \, x^{3} - 10 \, x^{2} + 2 \, x + 12 , -5 \, x^{2} - 5 \, x , -4 \, x^{2} + x \right\} \) spans \(\mathcal{P}_3\). </p></p>
     <ol type="a">
       <li> Write an equivalent statement using a polynomial equation.</li>
       <li> Explain why your statement is true or false.</li>
@@ -2174,20 +2024,53 @@
     </p>
     <p>
       <p>\[\operatorname{RREF} \left[\begin{array}{cccccc}
-4 &amp; -5 &amp; -1 &amp; 0 &amp; 4 &amp; -1 \\
--2 &amp; -4 &amp; 4 &amp; -1 &amp; -1 &amp; 3 \\
-0 &amp; 0 &amp; -4 &amp; 1 &amp; -2 &amp; -5 \\
--2 &amp; 2 &amp; -5 &amp; -4 &amp; 3 &amp; 4
+4 &amp; -5 &amp; 2 &amp; 12 &amp; 0 &amp; 0 \\
+-3 &amp; 1 &amp; 4 &amp; 2 &amp; -5 &amp; 1 \\
+-5 &amp; 4 &amp; 0 &amp; -10 &amp; -5 &amp; -4 \\
+-1 &amp; 1 &amp; 2 &amp; 2 &amp; 0 &amp; 0
 \end{array}\right] = \left[\begin{array}{cccccc}
-1 &amp; 0 &amp; 0 &amp; 0 &amp; \frac{677}{558} &amp; \frac{97}{279} \\
-0 &amp; 1 &amp; 0 &amp; 0 &amp; \frac{40}{279} &amp; \frac{91}{279} \\
-0 &amp; 0 &amp; 1 &amp; 0 &amp; \frac{38}{279} &amp; \frac{212}{279} \\
-0 &amp; 0 &amp; 0 &amp; 1 &amp; -\frac{406}{279} &amp; -\frac{547}{279}
+1 &amp; 0 &amp; 0 &amp; 2 &amp; 0 &amp; -30 \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; -25 \\
+0 &amp; 0 &amp; 1 &amp; 2 &amp; 0 &amp; -\frac{5}{2} \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; \frac{54}{5}
 \end{array}\right] \]</p>
     </p>
     <ol type="a">
-      <li>The statement <p> The set of polynomials \( \left\{ -2 \, x^{3} - 2 \, x + 4 , 2 \, x^{3} - 4 \, x - 5 , -5 \, x^{3} - 4 \, x^{2} + 4 \, x - 1 , -4 \, x^{3} + x^{2} - x , 3 \, x^{3} - 2 \, x^{2} - x + 4 , 4 \, x^{3} - 5 \, x^{2} + 3 \, x - 1 \right\} \) spans \(\mathcal{P}_3\). </p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( -2 \, x^{3} - 2 \, x + 4 \right) + y_{2} \left( 2 \, x^{3} - 4 \, x - 5 \right) + y_{3} \left( -5 \, x^{3} - 4 \, x^{2} + 4 \, x - 1 \right) + y_{4} \left( -4 \, x^{3} + x^{2} - x \right) + y_{5} \left( 3 \, x^{3} - 2 \, x^{2} - x + 4 \right) + y_{6} \left( 4 \, x^{3} - 5 \, x^{2} + 3 \, x - 1 \right) =f\]</p> has a solution for every \(f \in \mathcal{P}_3\). </p></li>
-      <li>The set of polynomials \( \left\{ -2 \, x^{3} - 2 \, x + 4 , 2 \, x^{3} - 4 \, x - 5 , -5 \, x^{3} - 4 \, x^{2} + 4 \, x - 1 , -4 \, x^{3} + x^{2} - x , 3 \, x^{3} - 2 \, x^{2} - x + 4 , 4 \, x^{3} - 5 \, x^{2} + 3 \, x - 1 \right\} \) spans \(\mathcal{P}_3\). </li>
+      <li>The statement <p> The set of polynomials \( \left\{ -x^{3} - 5 \, x^{2} - 3 \, x + 4 , x^{3} + 4 \, x^{2} + x - 5 , 2 \, x^{3} + 4 \, x + 2 , 2 \, x^{3} - 10 \, x^{2} + 2 \, x + 12 , -5 \, x^{2} - 5 \, x , -4 \, x^{2} + x \right\} \) spans \(\mathcal{P}_3\). </p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( -x^{3} - 5 \, x^{2} - 3 \, x + 4 \right) + y_{2} \left( x^{3} + 4 \, x^{2} + x - 5 \right) + y_{3} \left( 2 \, x^{3} + 4 \, x + 2 \right) + y_{4} \left( 2 \, x^{3} - 10 \, x^{2} + 2 \, x + 12 \right) + y_{5} \left( -5 \, x^{2} - 5 \, x \right) + y_{6} \left( -4 \, x^{2} + x \right) =f\]</p> has a solution for every \(f \in \mathcal{P}_3\). </p></li>
+      <li>The set of polynomials \( \left\{ -x^{3} - 5 \, x^{2} - 3 \, x + 4 , x^{3} + 4 \, x^{2} + x - 5 , 2 \, x^{3} + 4 \, x + 2 , 2 \, x^{3} - 10 \, x^{2} + 2 \, x + 12 , -5 \, x^{2} - 5 \, x , -4 \, x^{2} + x \right\} \) spans \(\mathcal{P}_3\). </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-36' class='exercise-heading'>Example 36 <small><a href='#ex-36'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Consider the statement <p> The set of polynomials \( \left\{ -3 \, x^{3} + 4 \, x^{2} - 5 \, x + 4 , -x^{3} + 2 \, x^{2} - 6 \, x - 2 , -4 \, x^{3} - x^{2} - 4 \, x + 2 , -2 \, x^{3} + 4 \, x^{2} - 2 \, x - 3 \right\} \) is linearly independent.</p></p>
+    <ol type="a">
+      <li> Write an equivalent statement using a polynomial equation.</li>
+      <li> Explain why your statement is true or false.</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+4 &amp; -2 &amp; 2 &amp; -3 \\
+-5 &amp; -6 &amp; -4 &amp; -2 \\
+4 &amp; 2 &amp; -1 &amp; 4 \\
+-3 &amp; -1 &amp; -4 &amp; -2
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \]</p>
+    </p>
+    <ol type="a">
+      <li>The statement <p> The set of polynomials \( \left\{ -3 \, x^{3} + 4 \, x^{2} - 5 \, x + 4 , -x^{3} + 2 \, x^{2} - 6 \, x - 2 , -4 \, x^{3} - x^{2} - 4 \, x + 2 , -2 \, x^{3} + 4 \, x^{2} - 2 \, x - 3 \right\} \) is linearly independent.</p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( -3 \, x^{3} + 4 \, x^{2} - 5 \, x + 4 \right) + y_{2} \left( -x^{3} + 2 \, x^{2} - 6 \, x - 2 \right) + y_{3} \left( -4 \, x^{3} - x^{2} - 4 \, x + 2 \right) + y_{4} \left( -2 \, x^{3} + 4 \, x^{2} - 2 \, x - 3 \right) = 0 \]</p> has no nontrivial solutions. </p></li>
+      <li>The set of polynomials \( \left\{ -3 \, x^{3} + 4 \, x^{2} - 5 \, x + 4 , -x^{3} + 2 \, x^{2} - 6 \, x - 2 , -4 \, x^{3} - x^{2} - 4 \, x + 2 , -2 \, x^{3} + 4 \, x^{2} - 2 \, x - 3 \right\} \)is linearly independent.</li>
     </ol>
   </div>
 </div>
@@ -2195,18 +2078,84 @@
 <hr/>
 <h4 id='ex-37' class='exercise-heading'>Example 37 <small><a href='#ex-37'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
+    <p>Consider the statement <p> The set of polynomials \( \left\{ x^{3} - 5 \, x + 4 , -5 \, x^{3} - 6 \, x^{2} + 5 \, x , -6 \, x^{3} - 4 \, x^{2} + 3 \, x - 3 , 3 \, x^{3} + 3 \, x^{2} + 4 \, x + 4 \right\} \) is linearly independent.</p></p>
+    <ol type="a">
+      <li> Write an equivalent statement using a polynomial equation.</li>
+      <li> Explain why your statement is true or false.</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+4 &amp; 0 &amp; -3 &amp; 4 \\
+-5 &amp; 5 &amp; 3 &amp; 4 \\
+0 &amp; -6 &amp; -4 &amp; 3 \\
+1 &amp; -5 &amp; -6 &amp; 3
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \]</p>
+    </p>
+    <ol type="a">
+      <li>The statement <p> The set of polynomials \( \left\{ x^{3} - 5 \, x + 4 , -5 \, x^{3} - 6 \, x^{2} + 5 \, x , -6 \, x^{3} - 4 \, x^{2} + 3 \, x - 3 , 3 \, x^{3} + 3 \, x^{2} + 4 \, x + 4 \right\} \) is linearly independent.</p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( x^{3} - 5 \, x + 4 \right) + y_{2} \left( -5 \, x^{3} - 6 \, x^{2} + 5 \, x \right) + y_{3} \left( -6 \, x^{3} - 4 \, x^{2} + 3 \, x - 3 \right) + y_{4} \left( 3 \, x^{3} + 3 \, x^{2} + 4 \, x + 4 \right) = 0 \]</p> has no nontrivial solutions. </p></li>
+      <li>The set of polynomials \( \left\{ x^{3} - 5 \, x + 4 , -5 \, x^{3} - 6 \, x^{2} + 5 \, x , -6 \, x^{3} - 4 \, x^{2} + 3 \, x - 3 , 3 \, x^{3} + 3 \, x^{2} + 4 \, x + 4 \right\} \)is linearly independent.</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-38' class='exercise-heading'>Example 38 <small><a href='#ex-38'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Consider the statement <p> The set of polynomials \( \left\{ x^{3} - 3 \, x^{2} - 4 \, x - 2 , 2 \, x^{3} - x^{2} - 3 \, x - 1 , -7 \, x^{3} + 6 \, x^{2} + 13 \, x + 5 , 10 \, x^{3} - 5 \, x^{2} - 15 \, x - 5 , -x^{3} + 3 \, x^{2} - 5 \, x - 2 \right\} \) spans \(\mathcal{P}_3\). </p></p>
+    <ol type="a">
+      <li> Write an equivalent statement using a polynomial equation.</li>
+      <li> Explain why your statement is true or false.</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccccc}
+-2 &amp; -1 &amp; 5 &amp; -5 &amp; -2 \\
+-4 &amp; -3 &amp; 13 &amp; -15 &amp; -5 \\
+-3 &amp; -1 &amp; 6 &amp; -5 &amp; 3 \\
+1 &amp; 2 &amp; -7 &amp; 10 &amp; -1
+\end{array}\right] = \left[\begin{array}{ccccc}
+1 &amp; 0 &amp; -1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; -3 &amp; 5 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
+    <ol type="a">
+      <li>The statement <p> The set of polynomials \( \left\{ x^{3} - 3 \, x^{2} - 4 \, x - 2 , 2 \, x^{3} - x^{2} - 3 \, x - 1 , -7 \, x^{3} + 6 \, x^{2} + 13 \, x + 5 , 10 \, x^{3} - 5 \, x^{2} - 15 \, x - 5 , -x^{3} + 3 \, x^{2} - 5 \, x - 2 \right\} \) spans \(\mathcal{P}_3\). </p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( x^{3} - 3 \, x^{2} - 4 \, x - 2 \right) + y_{2} \left( 2 \, x^{3} - x^{2} - 3 \, x - 1 \right) + y_{3} \left( -7 \, x^{3} + 6 \, x^{2} + 13 \, x + 5 \right) + y_{4} \left( 10 \, x^{3} - 5 \, x^{2} - 15 \, x - 5 \right) + y_{5} \left( -x^{3} + 3 \, x^{2} - 5 \, x - 2 \right) =f\]</p> has a solution for every \(f \in \mathcal{P}_3\). </p></li>
+      <li>The set of polynomials \( \left\{ x^{3} - 3 \, x^{2} - 4 \, x - 2 , 2 \, x^{3} - x^{2} - 3 \, x - 1 , -7 \, x^{3} + 6 \, x^{2} + 13 \, x + 5 , 10 \, x^{3} - 5 \, x^{2} - 15 \, x - 5 , -x^{3} + 3 \, x^{2} - 5 \, x - 2 \right\} \) does not span \(\mathcal{P}_3\). </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-39' class='exercise-heading'>Example 39 <small><a href='#ex-39'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
     <p>Consider the statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
--6 &amp; 5 \\
-0 &amp; -3
-\end{array}\right] , \left[\begin{array}{cc}
--2 &amp; 1 \\
+0 &amp; 2 \\
 -1 &amp; -5
 \end{array}\right] , \left[\begin{array}{cc}
-5 &amp; -3 \\
-5 &amp; 1
+-6 &amp; 2 \\
+-1 &amp; 4
 \end{array}\right] , \left[\begin{array}{cc}
--2 &amp; -2 \\
--1 &amp; 5
+0 &amp; 1 \\
+5 &amp; -1
+\end{array}\right] , \left[\begin{array}{cc}
+0 &amp; 6 \\
+8 &amp; -12
 \end{array}\right] \right\} \) is linearly independent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a matrix equation.</li>
@@ -2219,125 +2168,59 @@
     </p>
     <p>
       <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
--6 &amp; -2 &amp; 5 &amp; -2 \\
-5 &amp; 1 &amp; -3 &amp; -2 \\
-0 &amp; -1 &amp; 5 &amp; -1 \\
--3 &amp; -5 &amp; 1 &amp; 5
+0 &amp; -6 &amp; 0 &amp; 0 \\
+2 &amp; 2 &amp; 1 &amp; 6 \\
+-1 &amp; -1 &amp; 5 &amp; 8 \\
+-5 &amp; 4 &amp; -1 &amp; -12
 \end{array}\right] = \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
+1 &amp; 0 &amp; 0 &amp; 2 \\
 0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
+0 &amp; 0 &amp; 1 &amp; 2 \\
+0 &amp; 0 &amp; 0 &amp; 0
 \end{array}\right] \]</p>
     </p>
     <ol type="a">
       <li>The statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
--6 &amp; 5 \\
-0 &amp; -3
-\end{array}\right] , \left[\begin{array}{cc}
--2 &amp; 1 \\
+0 &amp; 2 \\
 -1 &amp; -5
 \end{array}\right] , \left[\begin{array}{cc}
-5 &amp; -3 \\
-5 &amp; 1
+-6 &amp; 2 \\
+-1 &amp; 4
 \end{array}\right] , \left[\begin{array}{cc}
--2 &amp; -2 \\
--1 &amp; 5
+0 &amp; 1 \\
+5 &amp; -1
+\end{array}\right] , \left[\begin{array}{cc}
+0 &amp; 6 \\
+8 &amp; -12
 \end{array}\right] \right\} \) is linearly independent.</p> is equivalent to the statement <p> The matrix equation <p>\[ y_{1} \left[\begin{array}{cc}
--6 &amp; 5 \\
-0 &amp; -3
-\end{array}\right] + y_{2} \left[\begin{array}{cc}
--2 &amp; 1 \\
+0 &amp; 2 \\
 -1 &amp; -5
+\end{array}\right] + y_{2} \left[\begin{array}{cc}
+-6 &amp; 2 \\
+-1 &amp; 4
 \end{array}\right] + y_{3} \left[\begin{array}{cc}
-5 &amp; -3 \\
-5 &amp; 1
+0 &amp; 1 \\
+5 &amp; -1
 \end{array}\right] + y_{4} \left[\begin{array}{cc}
--2 &amp; -2 \\
--1 &amp; 5
+0 &amp; 6 \\
+8 &amp; -12
 \end{array}\right] = \left[\begin{array}{cc}
 0 &amp; 0 \\
 0 &amp; 0
 \end{array}\right] \]</p> has no nontrivial solutions. </p></li>
       <li>The set of matrices \( \left\{ \left[\begin{array}{cc}
--6 &amp; 5 \\
-0 &amp; -3
-\end{array}\right] , \left[\begin{array}{cc}
--2 &amp; 1 \\
+0 &amp; 2 \\
 -1 &amp; -5
 \end{array}\right] , \left[\begin{array}{cc}
-5 &amp; -3 \\
-5 &amp; 1
+-6 &amp; 2 \\
+-1 &amp; 4
 \end{array}\right] , \left[\begin{array}{cc}
--2 &amp; -2 \\
--1 &amp; 5
-\end{array}\right] \right\} \)is linearly independent.</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-38' class='exercise-heading'>Example 38 <small><a href='#ex-38'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Consider the statement <p> The set of polynomials \( \left\{ -2 \, x^{3} - x^{2} - 5 \, x + 4 , -5 \, x^{3} - 2 \, x^{2} + 3 \, x + 1 , 2 \, x^{3} - 4 \, x^{2} + 2 \, x + 2 , -2 \, x^{3} - 2 \, x^{2} + 3 \, x + 1 , -4 \, x^{3} - 4 \, x^{2} - 5 \, x + 3 \right\} \) spans \(\mathcal{P}_3\). </p></p>
-    <ol type="a">
-      <li> Write an equivalent statement using a polynomial equation.</li>
-      <li> Explain why your statement is true or false.</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <p>
-      <p>\[\operatorname{RREF} \left[\begin{array}{ccccc}
-4 &amp; 1 &amp; 2 &amp; 1 &amp; 3 \\
--5 &amp; 3 &amp; 2 &amp; 3 &amp; -5 \\
--1 &amp; -2 &amp; -4 &amp; -2 &amp; -4 \\
--2 &amp; -5 &amp; 2 &amp; -2 &amp; -4
-\end{array}\right] = \left[\begin{array}{ccccc}
-1 &amp; 0 &amp; 0 &amp; 0 &amp; \frac{2}{7} \\
-0 &amp; 1 &amp; 0 &amp; 0 &amp; \frac{94}{21} \\
-0 &amp; 0 &amp; 1 &amp; 0 &amp; \frac{16}{7} \\
-0 &amp; 0 &amp; 0 &amp; 1 &amp; -\frac{151}{21}
-\end{array}\right] \]</p>
-    </p>
-    <ol type="a">
-      <li>The statement <p> The set of polynomials \( \left\{ -2 \, x^{3} - x^{2} - 5 \, x + 4 , -5 \, x^{3} - 2 \, x^{2} + 3 \, x + 1 , 2 \, x^{3} - 4 \, x^{2} + 2 \, x + 2 , -2 \, x^{3} - 2 \, x^{2} + 3 \, x + 1 , -4 \, x^{3} - 4 \, x^{2} - 5 \, x + 3 \right\} \) spans \(\mathcal{P}_3\). </p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( -2 \, x^{3} - x^{2} - 5 \, x + 4 \right) + y_{2} \left( -5 \, x^{3} - 2 \, x^{2} + 3 \, x + 1 \right) + y_{3} \left( 2 \, x^{3} - 4 \, x^{2} + 2 \, x + 2 \right) + y_{4} \left( -2 \, x^{3} - 2 \, x^{2} + 3 \, x + 1 \right) + y_{5} \left( -4 \, x^{3} - 4 \, x^{2} - 5 \, x + 3 \right) =f\]</p> has a solution for every \(f \in \mathcal{P}_3\). </p></li>
-      <li>The set of polynomials \( \left\{ -2 \, x^{3} - x^{2} - 5 \, x + 4 , -5 \, x^{3} - 2 \, x^{2} + 3 \, x + 1 , 2 \, x^{3} - 4 \, x^{2} + 2 \, x + 2 , -2 \, x^{3} - 2 \, x^{2} + 3 \, x + 1 , -4 \, x^{3} - 4 \, x^{2} - 5 \, x + 3 \right\} \) spans \(\mathcal{P}_3\). </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-39' class='exercise-heading'>Example 39 <small><a href='#ex-39'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Consider the statement <p> The set of polynomials \( \left\{ -4 \, x^{3} - x^{2} - 3 \, x - 2 , 2 \, x^{3} + 4 \, x^{2} + 2 \, x + 2 , x^{3} + 3 \, x^{2} - 4 , 4 \, x^{3} - 4 \, x^{2} - 10 , -2 \, x^{3} - 4 \, x^{2} - 4 \, x + 1 \right\} \) spans \(\mathcal{P}_3\). </p></p>
-    <ol type="a">
-      <li> Write an equivalent statement using a polynomial equation.</li>
-      <li> Explain why your statement is true or false.</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <p>
-      <p>\[\operatorname{RREF} \left[\begin{array}{ccccc}
--2 &amp; 2 &amp; -4 &amp; -10 &amp; 1 \\
--3 &amp; 2 &amp; 0 &amp; 0 &amp; -4 \\
--1 &amp; 4 &amp; 3 &amp; -4 &amp; -4 \\
--4 &amp; 2 &amp; 1 &amp; 4 &amp; -2
-\end{array}\right] = \left[\begin{array}{ccccc}
-1 &amp; 0 &amp; 0 &amp; -2 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; -3 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 2 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \]</p>
-    </p>
-    <ol type="a">
-      <li>The statement <p> The set of polynomials \( \left\{ -4 \, x^{3} - x^{2} - 3 \, x - 2 , 2 \, x^{3} + 4 \, x^{2} + 2 \, x + 2 , x^{3} + 3 \, x^{2} - 4 , 4 \, x^{3} - 4 \, x^{2} - 10 , -2 \, x^{3} - 4 \, x^{2} - 4 \, x + 1 \right\} \) spans \(\mathcal{P}_3\). </p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( -4 \, x^{3} - x^{2} - 3 \, x - 2 \right) + y_{2} \left( 2 \, x^{3} + 4 \, x^{2} + 2 \, x + 2 \right) + y_{3} \left( x^{3} + 3 \, x^{2} - 4 \right) + y_{4} \left( 4 \, x^{3} - 4 \, x^{2} - 10 \right) + y_{5} \left( -2 \, x^{3} - 4 \, x^{2} - 4 \, x + 1 \right) =f\]</p> has a solution for every \(f \in \mathcal{P}_3\). </p></li>
-      <li>The set of polynomials \( \left\{ -4 \, x^{3} - x^{2} - 3 \, x - 2 , 2 \, x^{3} + 4 \, x^{2} + 2 \, x + 2 , x^{3} + 3 \, x^{2} - 4 , 4 \, x^{3} - 4 \, x^{2} - 10 , -2 \, x^{3} - 4 \, x^{2} - 4 \, x + 1 \right\} \) spans \(\mathcal{P}_3\). </li>
+0 &amp; 1 \\
+5 &amp; -1
+\end{array}\right] , \left[\begin{array}{cc}
+0 &amp; 6 \\
+8 &amp; -12
+\end{array}\right] \right\} \)is linearly dependent.</li>
     </ol>
   </div>
 </div>
@@ -2346,473 +2229,23 @@
 <h4 id='ex-40' class='exercise-heading'>Example 40 <small><a href='#ex-40'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
--3 &amp; 4 \\
+-1 &amp; 2 \\
+3 &amp; -2
+\end{array}\right] , \left[\begin{array}{cc}
+-1 &amp; -4 \\
+0 &amp; 4
+\end{array}\right] , \left[\begin{array}{cc}
+3 &amp; 6 \\
+-3 &amp; -6
+\end{array}\right] , \left[\begin{array}{cc}
+11 &amp; 20 \\
+-12 &amp; -20
+\end{array}\right] , \left[\begin{array}{cc}
+-1 &amp; -3 \\
 4 &amp; -5
 \end{array}\right] , \left[\begin{array}{cc}
--5 &amp; -5 \\
--5 &amp; -5
-\end{array}\right] , \left[\begin{array}{cc}
-1 &amp; 1 \\
--3 &amp; 1
-\end{array}\right] , \left[\begin{array}{cc}
--4 &amp; -18 \\
--18 &amp; 0
-\end{array}\right] \right\} \) is linearly independent.</p></p>
-    <ol type="a">
-      <li> Write an equivalent statement using a matrix equation.</li>
-      <li> Explain why your statement is true or false.</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <p>
-      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
--3 &amp; -5 &amp; 1 &amp; -4 \\
-4 &amp; -5 &amp; 1 &amp; -18 \\
-4 &amp; -5 &amp; -3 &amp; -18 \\
--5 &amp; -5 &amp; 1 &amp; 0
-\end{array}\right] = \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; -2 \\
-0 &amp; 1 &amp; 0 &amp; 2 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 0
-\end{array}\right] \]</p>
-    </p>
-    <ol type="a">
-      <li>The statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
--3 &amp; 4 \\
-4 &amp; -5
-\end{array}\right] , \left[\begin{array}{cc}
--5 &amp; -5 \\
--5 &amp; -5
-\end{array}\right] , \left[\begin{array}{cc}
-1 &amp; 1 \\
--3 &amp; 1
-\end{array}\right] , \left[\begin{array}{cc}
--4 &amp; -18 \\
--18 &amp; 0
-\end{array}\right] \right\} \) is linearly independent.</p> is equivalent to the statement <p> The matrix equation <p>\[ y_{1} \left[\begin{array}{cc}
--3 &amp; 4 \\
-4 &amp; -5
-\end{array}\right] + y_{2} \left[\begin{array}{cc}
--5 &amp; -5 \\
--5 &amp; -5
-\end{array}\right] + y_{3} \left[\begin{array}{cc}
-1 &amp; 1 \\
--3 &amp; 1
-\end{array}\right] + y_{4} \left[\begin{array}{cc}
--4 &amp; -18 \\
--18 &amp; 0
-\end{array}\right] = \left[\begin{array}{cc}
-0 &amp; 0 \\
-0 &amp; 0
-\end{array}\right] \]</p> has no nontrivial solutions. </p></li>
-      <li>The set of matrices \( \left\{ \left[\begin{array}{cc}
--3 &amp; 4 \\
-4 &amp; -5
-\end{array}\right] , \left[\begin{array}{cc}
--5 &amp; -5 \\
--5 &amp; -5
-\end{array}\right] , \left[\begin{array}{cc}
-1 &amp; 1 \\
--3 &amp; 1
-\end{array}\right] , \left[\begin{array}{cc}
--4 &amp; -18 \\
--18 &amp; 0
-\end{array}\right] \right\} \)is linearly dependent.</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-41' class='exercise-heading'>Example 41 <small><a href='#ex-41'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Consider the statement <p> The set of polynomials \( \left\{ -5 \, x^{3} - 4 \, x^{2} - 4 \, x - 3 , -3 \, x^{3} - 3 \, x + 3 , -x^{3} + 4 \, x^{2} + x - 2 , -5 \, x^{3} + 4 \, x^{2} - 4 \, x - 1 , -4 \, x^{3} - 2 \, x^{2} - 3 \, x - 5 , 4 \, x^{3} - 4 \, x^{2} - 4 \, x - 3 \right\} \) spans \(\mathcal{P}_3\). </p></p>
-    <ol type="a">
-      <li> Write an equivalent statement using a polynomial equation.</li>
-      <li> Explain why your statement is true or false.</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <p>
-      <p>\[\operatorname{RREF} \left[\begin{array}{cccccc}
--3 &amp; 3 &amp; -2 &amp; -1 &amp; -5 &amp; -3 \\
--4 &amp; -3 &amp; 1 &amp; -4 &amp; -3 &amp; -4 \\
--4 &amp; 0 &amp; 4 &amp; 4 &amp; -2 &amp; -4 \\
--5 &amp; -3 &amp; -1 &amp; -5 &amp; -4 &amp; 4
-\end{array}\right] = \left[\begin{array}{cccccc}
-1 &amp; 0 &amp; 0 &amp; 0 &amp; \frac{33}{40} &amp; -\frac{4}{5} \\
-0 &amp; 1 &amp; 0 &amp; 0 &amp; -\frac{47}{60} &amp; -\frac{21}{5} \\
-0 &amp; 0 &amp; 1 &amp; 0 &amp; -\frac{3}{20} &amp; -\frac{27}{5} \\
-0 &amp; 0 &amp; 0 &amp; 1 &amp; \frac{19}{40} &amp; \frac{18}{5}
-\end{array}\right] \]</p>
-    </p>
-    <ol type="a">
-      <li>The statement <p> The set of polynomials \( \left\{ -5 \, x^{3} - 4 \, x^{2} - 4 \, x - 3 , -3 \, x^{3} - 3 \, x + 3 , -x^{3} + 4 \, x^{2} + x - 2 , -5 \, x^{3} + 4 \, x^{2} - 4 \, x - 1 , -4 \, x^{3} - 2 \, x^{2} - 3 \, x - 5 , 4 \, x^{3} - 4 \, x^{2} - 4 \, x - 3 \right\} \) spans \(\mathcal{P}_3\). </p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( -5 \, x^{3} - 4 \, x^{2} - 4 \, x - 3 \right) + y_{2} \left( -3 \, x^{3} - 3 \, x + 3 \right) + y_{3} \left( -x^{3} + 4 \, x^{2} + x - 2 \right) + y_{4} \left( -5 \, x^{3} + 4 \, x^{2} - 4 \, x - 1 \right) + y_{5} \left( -4 \, x^{3} - 2 \, x^{2} - 3 \, x - 5 \right) + y_{6} \left( 4 \, x^{3} - 4 \, x^{2} - 4 \, x - 3 \right) =f\]</p> has a solution for every \(f \in \mathcal{P}_3\). </p></li>
-      <li>The set of polynomials \( \left\{ -5 \, x^{3} - 4 \, x^{2} - 4 \, x - 3 , -3 \, x^{3} - 3 \, x + 3 , -x^{3} + 4 \, x^{2} + x - 2 , -5 \, x^{3} + 4 \, x^{2} - 4 \, x - 1 , -4 \, x^{3} - 2 \, x^{2} - 3 \, x - 5 , 4 \, x^{3} - 4 \, x^{2} - 4 \, x - 3 \right\} \) spans \(\mathcal{P}_3\). </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-42' class='exercise-heading'>Example 42 <small><a href='#ex-42'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Consider the statement <p> The set of polynomials \( \left\{ -3 \, x^{3} - 4 \, x^{2} - 2 \, x - 5 , 3 \, x^{3} - x^{2} + 3 \, x + 4 , 2 \, x^{3} + x^{2} - 2 \, x , -3 \, x^{3} + x^{2} - 3 \, x - 4 \right\} \) is linearly independent.</p></p>
-    <ol type="a">
-      <li> Write an equivalent statement using a polynomial equation.</li>
-      <li> Explain why your statement is true or false.</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <p>
-      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
--5 &amp; 4 &amp; 0 &amp; -4 \\
--2 &amp; 3 &amp; -2 &amp; -3 \\
--4 &amp; -1 &amp; 1 &amp; 1 \\
--3 &amp; 3 &amp; 2 &amp; -3
-\end{array}\right] = \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; -1 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 0
-\end{array}\right] \]</p>
-    </p>
-    <ol type="a">
-      <li>The statement <p> The set of polynomials \( \left\{ -3 \, x^{3} - 4 \, x^{2} - 2 \, x - 5 , 3 \, x^{3} - x^{2} + 3 \, x + 4 , 2 \, x^{3} + x^{2} - 2 \, x , -3 \, x^{3} + x^{2} - 3 \, x - 4 \right\} \) is linearly independent.</p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( -3 \, x^{3} - 4 \, x^{2} - 2 \, x - 5 \right) + y_{2} \left( 3 \, x^{3} - x^{2} + 3 \, x + 4 \right) + y_{3} \left( 2 \, x^{3} + x^{2} - 2 \, x \right) + y_{4} \left( -3 \, x^{3} + x^{2} - 3 \, x - 4 \right) = 0 \]</p> has no nontrivial solutions. </p></li>
-      <li>The set of polynomials \( \left\{ -3 \, x^{3} - 4 \, x^{2} - 2 \, x - 5 , 3 \, x^{3} - x^{2} + 3 \, x + 4 , 2 \, x^{3} + x^{2} - 2 \, x , -3 \, x^{3} + x^{2} - 3 \, x - 4 \right\} \)is linearly dependent.</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-43' class='exercise-heading'>Example 43 <small><a href='#ex-43'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Consider the statement <p> The set of polynomials \( \left\{ 5 \, x^{3} - 2 \, x^{2} + 5 \, x - 6 , 5 \, x^{3} - 3 \, x^{2} - 2 \, x + 5 , 3 \, x^{3} - 6 \, x^{2} - 5 \, x + 1 , 5 \, x^{3} + x^{2} - 2 \right\} \) is linearly independent.</p></p>
-    <ol type="a">
-      <li> Write an equivalent statement using a polynomial equation.</li>
-      <li> Explain why your statement is true or false.</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <p>
-      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
--6 &amp; 5 &amp; 1 &amp; -2 \\
-5 &amp; -2 &amp; -5 &amp; 0 \\
--2 &amp; -3 &amp; -6 &amp; 1 \\
-5 &amp; 5 &amp; 3 &amp; 5
-\end{array}\right] = \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \]</p>
-    </p>
-    <ol type="a">
-      <li>The statement <p> The set of polynomials \( \left\{ 5 \, x^{3} - 2 \, x^{2} + 5 \, x - 6 , 5 \, x^{3} - 3 \, x^{2} - 2 \, x + 5 , 3 \, x^{3} - 6 \, x^{2} - 5 \, x + 1 , 5 \, x^{3} + x^{2} - 2 \right\} \) is linearly independent.</p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( 5 \, x^{3} - 2 \, x^{2} + 5 \, x - 6 \right) + y_{2} \left( 5 \, x^{3} - 3 \, x^{2} - 2 \, x + 5 \right) + y_{3} \left( 3 \, x^{3} - 6 \, x^{2} - 5 \, x + 1 \right) + y_{4} \left( 5 \, x^{3} + x^{2} - 2 \right) = 0 \]</p> has no nontrivial solutions. </p></li>
-      <li>The set of polynomials \( \left\{ 5 \, x^{3} - 2 \, x^{2} + 5 \, x - 6 , 5 \, x^{3} - 3 \, x^{2} - 2 \, x + 5 , 3 \, x^{3} - 6 \, x^{2} - 5 \, x + 1 , 5 \, x^{3} + x^{2} - 2 \right\} \)is linearly independent.</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-44' class='exercise-heading'>Example 44 <small><a href='#ex-44'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Consider the statement <p> The set of polynomials \( \left\{ 4 \, x^{3} - 4 \, x^{2} - 2 \, x + 4 , -5 \, x^{3} + 4 \, x^{2} - 4 , -5 \, x^{3} + 2 \, x^{2} - 3 \, x + 3 , -32 \, x^{3} + 24 \, x^{2} - 14 , -x^{3} + 2 \, x^{2} + x + 4 \right\} \) spans \(\mathcal{P}_3\). </p></p>
-    <ol type="a">
-      <li> Write an equivalent statement using a polynomial equation.</li>
-      <li> Explain why your statement is true or false.</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <p>
-      <p>\[\operatorname{RREF} \left[\begin{array}{ccccc}
-4 &amp; -4 &amp; 3 &amp; -14 &amp; 4 \\
--2 &amp; 0 &amp; -3 &amp; 0 &amp; 1 \\
--4 &amp; 4 &amp; 2 &amp; 24 &amp; 2 \\
-4 &amp; -5 &amp; -5 &amp; -32 &amp; -1
-\end{array}\right] = \left[\begin{array}{ccccc}
-1 &amp; 0 &amp; 0 &amp; -3 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 2 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 2 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \]</p>
-    </p>
-    <ol type="a">
-      <li>The statement <p> The set of polynomials \( \left\{ 4 \, x^{3} - 4 \, x^{2} - 2 \, x + 4 , -5 \, x^{3} + 4 \, x^{2} - 4 , -5 \, x^{3} + 2 \, x^{2} - 3 \, x + 3 , -32 \, x^{3} + 24 \, x^{2} - 14 , -x^{3} + 2 \, x^{2} + x + 4 \right\} \) spans \(\mathcal{P}_3\). </p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( 4 \, x^{3} - 4 \, x^{2} - 2 \, x + 4 \right) + y_{2} \left( -5 \, x^{3} + 4 \, x^{2} - 4 \right) + y_{3} \left( -5 \, x^{3} + 2 \, x^{2} - 3 \, x + 3 \right) + y_{4} \left( -32 \, x^{3} + 24 \, x^{2} - 14 \right) + y_{5} \left( -x^{3} + 2 \, x^{2} + x + 4 \right) =f\]</p> has a solution for every \(f \in \mathcal{P}_3\). </p></li>
-      <li>The set of polynomials \( \left\{ 4 \, x^{3} - 4 \, x^{2} - 2 \, x + 4 , -5 \, x^{3} + 4 \, x^{2} - 4 , -5 \, x^{3} + 2 \, x^{2} - 3 \, x + 3 , -32 \, x^{3} + 24 \, x^{2} - 14 , -x^{3} + 2 \, x^{2} + x + 4 \right\} \) spans \(\mathcal{P}_3\). </li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-45' class='exercise-heading'>Example 45 <small><a href='#ex-45'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Consider the statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
--3 &amp; -6 \\
-3 &amp; 0
-\end{array}\right] , \left[\begin{array}{cc}
 0 &amp; -1 \\
-1 &amp; 1
-\end{array}\right] , \left[\begin{array}{cc}
-4 &amp; -6 \\
-4 &amp; 5
-\end{array}\right] , \left[\begin{array}{cc}
-1 &amp; 4 \\
-5 &amp; -1
-\end{array}\right] \right\} \) is linearly independent.</p></p>
-    <ol type="a">
-      <li> Write an equivalent statement using a matrix equation.</li>
-      <li> Explain why your statement is true or false.</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <p>
-      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
--3 &amp; 0 &amp; 4 &amp; 1 \\
--6 &amp; -1 &amp; -6 &amp; 4 \\
-3 &amp; 1 &amp; 4 &amp; 5 \\
-0 &amp; 1 &amp; 5 &amp; -1
-\end{array}\right] = \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \]</p>
-    </p>
-    <ol type="a">
-      <li>The statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
--3 &amp; -6 \\
-3 &amp; 0
-\end{array}\right] , \left[\begin{array}{cc}
-0 &amp; -1 \\
-1 &amp; 1
-\end{array}\right] , \left[\begin{array}{cc}
-4 &amp; -6 \\
-4 &amp; 5
-\end{array}\right] , \left[\begin{array}{cc}
-1 &amp; 4 \\
-5 &amp; -1
-\end{array}\right] \right\} \) is linearly independent.</p> is equivalent to the statement <p> The matrix equation <p>\[ y_{1} \left[\begin{array}{cc}
--3 &amp; -6 \\
-3 &amp; 0
-\end{array}\right] + y_{2} \left[\begin{array}{cc}
-0 &amp; -1 \\
-1 &amp; 1
-\end{array}\right] + y_{3} \left[\begin{array}{cc}
-4 &amp; -6 \\
-4 &amp; 5
-\end{array}\right] + y_{4} \left[\begin{array}{cc}
-1 &amp; 4 \\
-5 &amp; -1
-\end{array}\right] = \left[\begin{array}{cc}
-0 &amp; 0 \\
-0 &amp; 0
-\end{array}\right] \]</p> has no nontrivial solutions. </p></li>
-      <li>The set of matrices \( \left\{ \left[\begin{array}{cc}
--3 &amp; -6 \\
-3 &amp; 0
-\end{array}\right] , \left[\begin{array}{cc}
-0 &amp; -1 \\
-1 &amp; 1
-\end{array}\right] , \left[\begin{array}{cc}
-4 &amp; -6 \\
-4 &amp; 5
-\end{array}\right] , \left[\begin{array}{cc}
-1 &amp; 4 \\
-5 &amp; -1
-\end{array}\right] \right\} \)is linearly independent.</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-46' class='exercise-heading'>Example 46 <small><a href='#ex-46'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Consider the statement <p> The set of polynomials \( \left\{ -6 \, x^{3} - 4 \, x^{2} - 3 \, x - 5 , x^{3} - 3 \, x^{2} - 5 \, x - 4 , -x^{3} - 3 \, x^{2} - 3 \, x - 3 , -5 \, x^{3} - 5 \, x^{2} + x + 3 \right\} \) is linearly independent.</p></p>
-    <ol type="a">
-      <li> Write an equivalent statement using a polynomial equation.</li>
-      <li> Explain why your statement is true or false.</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <p>
-      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
--5 &amp; -4 &amp; -3 &amp; 3 \\
--3 &amp; -5 &amp; -3 &amp; 1 \\
--4 &amp; -3 &amp; -3 &amp; -5 \\
--6 &amp; 1 &amp; -1 &amp; -5
-\end{array}\right] = \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \]</p>
-    </p>
-    <ol type="a">
-      <li>The statement <p> The set of polynomials \( \left\{ -6 \, x^{3} - 4 \, x^{2} - 3 \, x - 5 , x^{3} - 3 \, x^{2} - 5 \, x - 4 , -x^{3} - 3 \, x^{2} - 3 \, x - 3 , -5 \, x^{3} - 5 \, x^{2} + x + 3 \right\} \) is linearly independent.</p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( -6 \, x^{3} - 4 \, x^{2} - 3 \, x - 5 \right) + y_{2} \left( x^{3} - 3 \, x^{2} - 5 \, x - 4 \right) + y_{3} \left( -x^{3} - 3 \, x^{2} - 3 \, x - 3 \right) + y_{4} \left( -5 \, x^{3} - 5 \, x^{2} + x + 3 \right) = 0 \]</p> has no nontrivial solutions. </p></li>
-      <li>The set of polynomials \( \left\{ -6 \, x^{3} - 4 \, x^{2} - 3 \, x - 5 , x^{3} - 3 \, x^{2} - 5 \, x - 4 , -x^{3} - 3 \, x^{2} - 3 \, x - 3 , -5 \, x^{3} - 5 \, x^{2} + x + 3 \right\} \)is linearly independent.</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-47' class='exercise-heading'>Example 47 <small><a href='#ex-47'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Consider the statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
--1 &amp; -1 \\
--2 &amp; 2
-\end{array}\right] , \left[\begin{array}{cc}
--5 &amp; -5 \\
-0 &amp; -6
-\end{array}\right] , \left[\begin{array}{cc}
--6 &amp; -1 \\
-0 &amp; 5
-\end{array}\right] , \left[\begin{array}{cc}
-2 &amp; 5 \\
--4 &amp; -2
-\end{array}\right] \right\} \) is linearly independent.</p></p>
-    <ol type="a">
-      <li> Write an equivalent statement using a matrix equation.</li>
-      <li> Explain why your statement is true or false.</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <p>
-      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
--1 &amp; -5 &amp; -6 &amp; 2 \\
--1 &amp; -5 &amp; -1 &amp; 5 \\
--2 &amp; 0 &amp; 0 &amp; -4 \\
-2 &amp; -6 &amp; 5 &amp; -2
-\end{array}\right] = \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \]</p>
-    </p>
-    <ol type="a">
-      <li>The statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
--1 &amp; -1 \\
--2 &amp; 2
-\end{array}\right] , \left[\begin{array}{cc}
--5 &amp; -5 \\
-0 &amp; -6
-\end{array}\right] , \left[\begin{array}{cc}
--6 &amp; -1 \\
-0 &amp; 5
-\end{array}\right] , \left[\begin{array}{cc}
-2 &amp; 5 \\
--4 &amp; -2
-\end{array}\right] \right\} \) is linearly independent.</p> is equivalent to the statement <p> The matrix equation <p>\[ y_{1} \left[\begin{array}{cc}
--1 &amp; -1 \\
--2 &amp; 2
-\end{array}\right] + y_{2} \left[\begin{array}{cc}
--5 &amp; -5 \\
-0 &amp; -6
-\end{array}\right] + y_{3} \left[\begin{array}{cc}
--6 &amp; -1 \\
-0 &amp; 5
-\end{array}\right] + y_{4} \left[\begin{array}{cc}
-2 &amp; 5 \\
--4 &amp; -2
-\end{array}\right] = \left[\begin{array}{cc}
-0 &amp; 0 \\
-0 &amp; 0
-\end{array}\right] \]</p> has no nontrivial solutions. </p></li>
-      <li>The set of matrices \( \left\{ \left[\begin{array}{cc}
--1 &amp; -1 \\
--2 &amp; 2
-\end{array}\right] , \left[\begin{array}{cc}
--5 &amp; -5 \\
-0 &amp; -6
-\end{array}\right] , \left[\begin{array}{cc}
--6 &amp; -1 \\
-0 &amp; 5
-\end{array}\right] , \left[\begin{array}{cc}
-2 &amp; 5 \\
--4 &amp; -2
-\end{array}\right] \right\} \)is linearly independent.</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-48' class='exercise-heading'>Example 48 <small><a href='#ex-48'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Consider the statement <p> The set of polynomials \( \left\{ x^{3} - 3 \, x^{2} - 6 \, x - 4 , -5 \, x^{2} + 3 , x^{2} - 3 \, x + 3 , 3 \, x^{3} - 6 \, x^{2} + 3 \, x + 3 \right\} \) is linearly independent.</p></p>
-    <ol type="a">
-      <li> Write an equivalent statement using a polynomial equation.</li>
-      <li> Explain why your statement is true or false.</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <p>
-      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
--4 &amp; 3 &amp; 3 &amp; 3 \\
--6 &amp; 0 &amp; -3 &amp; 3 \\
--3 &amp; -5 &amp; 1 &amp; -6 \\
-1 &amp; 0 &amp; 0 &amp; 3
-\end{array}\right] = \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 0 \\
-0 &amp; 1 &amp; 0 &amp; 0 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \]</p>
-    </p>
-    <ol type="a">
-      <li>The statement <p> The set of polynomials \( \left\{ x^{3} - 3 \, x^{2} - 6 \, x - 4 , -5 \, x^{2} + 3 , x^{2} - 3 \, x + 3 , 3 \, x^{3} - 6 \, x^{2} + 3 \, x + 3 \right\} \) is linearly independent.</p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( x^{3} - 3 \, x^{2} - 6 \, x - 4 \right) + y_{2} \left( -5 \, x^{2} + 3 \right) + y_{3} \left( x^{2} - 3 \, x + 3 \right) + y_{4} \left( 3 \, x^{3} - 6 \, x^{2} + 3 \, x + 3 \right) = 0 \]</p> has no nontrivial solutions. </p></li>
-      <li>The set of polynomials \( \left\{ x^{3} - 3 \, x^{2} - 6 \, x - 4 , -5 \, x^{2} + 3 , x^{2} - 3 \, x + 3 , 3 \, x^{3} - 6 \, x^{2} + 3 \, x + 3 \right\} \)is linearly independent.</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-49' class='exercise-heading'>Example 49 <small><a href='#ex-49'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Consider the statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
--5 &amp; 3 \\
--2 &amp; 4
-\end{array}\right] , \left[\begin{array}{cc}
--5 &amp; 0 \\
-3 &amp; -3
-\end{array}\right] , \left[\begin{array}{cc}
-0 &amp; -2 \\
-0 &amp; 0
-\end{array}\right] , \left[\begin{array}{cc}
--5 &amp; -1 \\
-4 &amp; 4
-\end{array}\right] , \left[\begin{array}{cc}
-2 &amp; 4 \\
--2 &amp; 3
-\end{array}\right] , \left[\begin{array}{cc}
-4 &amp; -5 \\
-2 &amp; -4
+2 &amp; 1
 \end{array}\right] \right\} \) spans \(\mathrm{M}_{2,2}\). </p></p>
     <ol type="a">
       <li> Write an equivalent statement using a matrix equation.</li>
@@ -2825,93 +2258,159 @@
     </p>
     <p>
       <p>\[\operatorname{RREF} \left[\begin{array}{cccccc}
--5 &amp; -5 &amp; 0 &amp; -5 &amp; 2 &amp; 4 \\
-3 &amp; 0 &amp; -2 &amp; -1 &amp; 4 &amp; -5 \\
--2 &amp; 3 &amp; 0 &amp; 4 &amp; -2 &amp; 2 \\
-4 &amp; -3 &amp; 0 &amp; 4 &amp; 3 &amp; -4
+-1 &amp; -1 &amp; 3 &amp; 11 &amp; -1 &amp; 0 \\
+2 &amp; -4 &amp; 6 &amp; 20 &amp; -3 &amp; -1 \\
+3 &amp; 0 &amp; -3 &amp; -12 &amp; 4 &amp; 2 \\
+-2 &amp; 4 &amp; -6 &amp; -20 &amp; -5 &amp; 1
 \end{array}\right] = \left[\begin{array}{cccccc}
-1 &amp; 0 &amp; 0 &amp; 0 &amp; \frac{37}{210} &amp; -\frac{31}{35} \\
-0 &amp; 1 &amp; 0 &amp; 0 &amp; -\frac{23}{35} &amp; \frac{4}{35} \\
-0 &amp; 0 &amp; 1 &amp; 0 &amp; -\frac{373}{210} &amp; \frac{83}{70} \\
-0 &amp; 0 &amp; 0 &amp; 1 &amp; \frac{17}{210} &amp; -\frac{1}{35}
+1 &amp; 0 &amp; -1 &amp; -4 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; -2 &amp; -7 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1
 \end{array}\right] \]</p>
     </p>
     <ol type="a">
       <li>The statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
--5 &amp; 3 \\
--2 &amp; 4
+-1 &amp; 2 \\
+3 &amp; -2
 \end{array}\right] , \left[\begin{array}{cc}
--5 &amp; 0 \\
-3 &amp; -3
+-1 &amp; -4 \\
+0 &amp; 4
 \end{array}\right] , \left[\begin{array}{cc}
-0 &amp; -2 \\
-0 &amp; 0
+3 &amp; 6 \\
+-3 &amp; -6
 \end{array}\right] , \left[\begin{array}{cc}
--5 &amp; -1 \\
-4 &amp; 4
+11 &amp; 20 \\
+-12 &amp; -20
 \end{array}\right] , \left[\begin{array}{cc}
-2 &amp; 4 \\
--2 &amp; 3
+-1 &amp; -3 \\
+4 &amp; -5
 \end{array}\right] , \left[\begin{array}{cc}
-4 &amp; -5 \\
-2 &amp; -4
+0 &amp; -1 \\
+2 &amp; 1
 \end{array}\right] \right\} \) spans \(\mathrm{M}_{2,2}\). </p> is equivalent to the statement <p> The matrix equation <p>\[ y_{1} \left[\begin{array}{cc}
--5 &amp; 3 \\
--2 &amp; 4
+-1 &amp; 2 \\
+3 &amp; -2
 \end{array}\right] + y_{2} \left[\begin{array}{cc}
--5 &amp; 0 \\
-3 &amp; -3
+-1 &amp; -4 \\
+0 &amp; 4
 \end{array}\right] + y_{3} \left[\begin{array}{cc}
-0 &amp; -2 \\
-0 &amp; 0
+3 &amp; 6 \\
+-3 &amp; -6
 \end{array}\right] + y_{4} \left[\begin{array}{cc}
--5 &amp; -1 \\
-4 &amp; 4
+11 &amp; 20 \\
+-12 &amp; -20
 \end{array}\right] + y_{5} \left[\begin{array}{cc}
-2 &amp; 4 \\
--2 &amp; 3
+-1 &amp; -3 \\
+4 &amp; -5
 \end{array}\right] + y_{6} \left[\begin{array}{cc}
-4 &amp; -5 \\
-2 &amp; -4
+0 &amp; -1 \\
+2 &amp; 1
 \end{array}\right] =B\]</p> has a solution for every \(B \in \mathrm{M}_{2,2}\). </p></li>
       <li>The set of matrices \( \left\{ \left[\begin{array}{cc}
--5 &amp; 3 \\
--2 &amp; 4
+-1 &amp; 2 \\
+3 &amp; -2
 \end{array}\right] , \left[\begin{array}{cc}
--5 &amp; 0 \\
-3 &amp; -3
+-1 &amp; -4 \\
+0 &amp; 4
 \end{array}\right] , \left[\begin{array}{cc}
-0 &amp; -2 \\
-0 &amp; 0
+3 &amp; 6 \\
+-3 &amp; -6
 \end{array}\right] , \left[\begin{array}{cc}
--5 &amp; -1 \\
-4 &amp; 4
+11 &amp; 20 \\
+-12 &amp; -20
 \end{array}\right] , \left[\begin{array}{cc}
-2 &amp; 4 \\
--2 &amp; 3
+-1 &amp; -3 \\
+4 &amp; -5
 \end{array}\right] , \left[\begin{array}{cc}
-4 &amp; -5 \\
-2 &amp; -4
+0 &amp; -1 \\
+2 &amp; 1
 \end{array}\right] \right\} \) spans \(\mathrm{M}_{2,2}\). </li>
     </ol>
   </div>
 </div>
 
 <hr/>
-<h4 id='ex-50' class='exercise-heading'>Example 50 <small><a href='#ex-50'>🔗</a></small></h4><div class="exercise">
+<h4 id='ex-41' class='exercise-heading'>Example 41 <small><a href='#ex-41'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Consider the statement <p> The set of polynomials \( \left\{ -2 \, x^{3} + 3 \, x^{2} - 4 \, x - 2 , -x^{3} - 2 \, x^{2} + x - 1 , -4 \, x^{3} - 5 \, x^{2} + 2 \, x + 4 , -4 \, x^{3} - 3 \, x^{2} + 3 \, x - 4 , -5 \, x^{3} - 2 \, x^{2} - 3 \, x - 5 \right\} \) spans \(\mathcal{P}_3\). </p></p>
+    <ol type="a">
+      <li> Write an equivalent statement using a polynomial equation.</li>
+      <li> Explain why your statement is true or false.</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{ccccc}
+-2 &amp; -1 &amp; 4 &amp; -4 &amp; -5 \\
+-4 &amp; 1 &amp; 2 &amp; 3 &amp; -3 \\
+3 &amp; -2 &amp; -5 &amp; -3 &amp; -2 \\
+-2 &amp; -1 &amp; -4 &amp; -4 &amp; -5
+\end{array}\right] = \left[\begin{array}{ccccc}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; \frac{32}{23} \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; \frac{83}{23} \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; -\frac{8}{23}
+\end{array}\right] \]</p>
+    </p>
+    <ol type="a">
+      <li>The statement <p> The set of polynomials \( \left\{ -2 \, x^{3} + 3 \, x^{2} - 4 \, x - 2 , -x^{3} - 2 \, x^{2} + x - 1 , -4 \, x^{3} - 5 \, x^{2} + 2 \, x + 4 , -4 \, x^{3} - 3 \, x^{2} + 3 \, x - 4 , -5 \, x^{3} - 2 \, x^{2} - 3 \, x - 5 \right\} \) spans \(\mathcal{P}_3\). </p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( -2 \, x^{3} + 3 \, x^{2} - 4 \, x - 2 \right) + y_{2} \left( -x^{3} - 2 \, x^{2} + x - 1 \right) + y_{3} \left( -4 \, x^{3} - 5 \, x^{2} + 2 \, x + 4 \right) + y_{4} \left( -4 \, x^{3} - 3 \, x^{2} + 3 \, x - 4 \right) + y_{5} \left( -5 \, x^{3} - 2 \, x^{2} - 3 \, x - 5 \right) =f\]</p> has a solution for every \(f \in \mathcal{P}_3\). </p></li>
+      <li>The set of polynomials \( \left\{ -2 \, x^{3} + 3 \, x^{2} - 4 \, x - 2 , -x^{3} - 2 \, x^{2} + x - 1 , -4 \, x^{3} - 5 \, x^{2} + 2 \, x + 4 , -4 \, x^{3} - 3 \, x^{2} + 3 \, x - 4 , -5 \, x^{3} - 2 \, x^{2} - 3 \, x - 5 \right\} \) spans \(\mathcal{P}_3\). </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-42' class='exercise-heading'>Example 42 <small><a href='#ex-42'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Consider the statement <p> The set of polynomials \( \left\{ 3 \, x^{3} - x^{2} - x + 2 , -2 \, x^{3} + 2 \, x^{2} + 3 \, x - 5 , -6 \, x^{3} + 2 \, x^{2} - 2 \, x + 5 , 2 \, x^{3} - 5 \, x^{2} + 5 \, x - 4 \right\} \) is linearly independent.</p></p>
+    <ol type="a">
+      <li> Write an equivalent statement using a polynomial equation.</li>
+      <li> Explain why your statement is true or false.</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+2 &amp; -5 &amp; 5 &amp; -4 \\
+-1 &amp; 3 &amp; -2 &amp; 5 \\
+-1 &amp; 2 &amp; 2 &amp; -5 \\
+3 &amp; -2 &amp; -6 &amp; 2
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \]</p>
+    </p>
+    <ol type="a">
+      <li>The statement <p> The set of polynomials \( \left\{ 3 \, x^{3} - x^{2} - x + 2 , -2 \, x^{3} + 2 \, x^{2} + 3 \, x - 5 , -6 \, x^{3} + 2 \, x^{2} - 2 \, x + 5 , 2 \, x^{3} - 5 \, x^{2} + 5 \, x - 4 \right\} \) is linearly independent.</p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( 3 \, x^{3} - x^{2} - x + 2 \right) + y_{2} \left( -2 \, x^{3} + 2 \, x^{2} + 3 \, x - 5 \right) + y_{3} \left( -6 \, x^{3} + 2 \, x^{2} - 2 \, x + 5 \right) + y_{4} \left( 2 \, x^{3} - 5 \, x^{2} + 5 \, x - 4 \right) = 0 \]</p> has no nontrivial solutions. </p></li>
+      <li>The set of polynomials \( \left\{ 3 \, x^{3} - x^{2} - x + 2 , -2 \, x^{3} + 2 \, x^{2} + 3 \, x - 5 , -6 \, x^{3} + 2 \, x^{2} - 2 \, x + 5 , 2 \, x^{3} - 5 \, x^{2} + 5 \, x - 4 \right\} \)is linearly independent.</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-43' class='exercise-heading'>Example 43 <small><a href='#ex-43'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
     <p>Consider the statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
-3 &amp; 0 \\
+-2 &amp; 3 \\
 -2 &amp; -6
 \end{array}\right] , \left[\begin{array}{cc}
-2 &amp; 4 \\
--4 &amp; -5
-\end{array}\right] , \left[\begin{array}{cc}
-5 &amp; -1 \\
-3 &amp; 2
+2 &amp; -4 \\
+3 &amp; 0
 \end{array}\right] , \left[\begin{array}{cc}
 -5 &amp; -3 \\
-0 &amp; -3
+-3 &amp; -3
+\end{array}\right] , \left[\begin{array}{cc}
+-2 &amp; -1 \\
+0 &amp; 5
 \end{array}\right] \right\} \) is linearly independent.</p></p>
     <ol type="a">
       <li> Write an equivalent statement using a matrix equation.</li>
@@ -2924,10 +2423,10 @@
     </p>
     <p>
       <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
-3 &amp; 2 &amp; 5 &amp; -5 \\
-0 &amp; 4 &amp; -1 &amp; -3 \\
--2 &amp; -4 &amp; 3 &amp; 0 \\
--6 &amp; -5 &amp; 2 &amp; -3
+-2 &amp; 2 &amp; -5 &amp; -2 \\
+3 &amp; -4 &amp; -3 &amp; -1 \\
+-2 &amp; 3 &amp; -3 &amp; 0 \\
+-6 &amp; 0 &amp; -3 &amp; 5
 \end{array}\right] = \left[\begin{array}{cccc}
 1 &amp; 0 &amp; 0 &amp; 0 \\
 0 &amp; 1 &amp; 0 &amp; 0 \\
@@ -2937,46 +2436,328 @@
     </p>
     <ol type="a">
       <li>The statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
-3 &amp; 0 \\
+-2 &amp; 3 \\
 -2 &amp; -6
 \end{array}\right] , \left[\begin{array}{cc}
-2 &amp; 4 \\
--4 &amp; -5
-\end{array}\right] , \left[\begin{array}{cc}
-5 &amp; -1 \\
-3 &amp; 2
+2 &amp; -4 \\
+3 &amp; 0
 \end{array}\right] , \left[\begin{array}{cc}
 -5 &amp; -3 \\
-0 &amp; -3
+-3 &amp; -3
+\end{array}\right] , \left[\begin{array}{cc}
+-2 &amp; -1 \\
+0 &amp; 5
 \end{array}\right] \right\} \) is linearly independent.</p> is equivalent to the statement <p> The matrix equation <p>\[ y_{1} \left[\begin{array}{cc}
-3 &amp; 0 \\
+-2 &amp; 3 \\
 -2 &amp; -6
 \end{array}\right] + y_{2} \left[\begin{array}{cc}
-2 &amp; 4 \\
--4 &amp; -5
+2 &amp; -4 \\
+3 &amp; 0
 \end{array}\right] + y_{3} \left[\begin{array}{cc}
-5 &amp; -1 \\
-3 &amp; 2
-\end{array}\right] + y_{4} \left[\begin{array}{cc}
 -5 &amp; -3 \\
-0 &amp; -3
+-3 &amp; -3
+\end{array}\right] + y_{4} \left[\begin{array}{cc}
+-2 &amp; -1 \\
+0 &amp; 5
 \end{array}\right] = \left[\begin{array}{cc}
 0 &amp; 0 \\
 0 &amp; 0
 \end{array}\right] \]</p> has no nontrivial solutions. </p></li>
       <li>The set of matrices \( \left\{ \left[\begin{array}{cc}
-3 &amp; 0 \\
+-2 &amp; 3 \\
 -2 &amp; -6
 \end{array}\right] , \left[\begin{array}{cc}
-2 &amp; 4 \\
--4 &amp; -5
-\end{array}\right] , \left[\begin{array}{cc}
-5 &amp; -1 \\
-3 &amp; 2
+2 &amp; -4 \\
+3 &amp; 0
 \end{array}\right] , \left[\begin{array}{cc}
 -5 &amp; -3 \\
-0 &amp; -3
+-3 &amp; -3
+\end{array}\right] , \left[\begin{array}{cc}
+-2 &amp; -1 \\
+0 &amp; 5
 \end{array}\right] \right\} \)is linearly independent.</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-44' class='exercise-heading'>Example 44 <small><a href='#ex-44'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Consider the statement <p> The set of polynomials \( \left\{ 3 \, x^{3} + x^{2} + 4 \, x - 5 , -3 \, x^{3} - x^{2} + 3 \, x + 2 , 4 \, x^{3} - x^{2} - 2 \, x + 3 , -3 \, x^{3} + x^{2} - x - 4 , 4 \, x^{3} - 3 \, x^{2} - 2 \, x , 2 \, x^{3} + 4 \, x^{2} - 2 \, x - 2 \right\} \) spans \(\mathcal{P}_3\). </p></p>
+    <ol type="a">
+      <li> Write an equivalent statement using a polynomial equation.</li>
+      <li> Explain why your statement is true or false.</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccccc}
+-5 &amp; 2 &amp; 3 &amp; -4 &amp; 0 &amp; -2 \\
+4 &amp; 3 &amp; -2 &amp; -1 &amp; -2 &amp; -2 \\
+1 &amp; -1 &amp; -1 &amp; 1 &amp; -3 &amp; 4 \\
+3 &amp; -3 &amp; 4 &amp; -3 &amp; 4 &amp; 2
+\end{array}\right] = \left[\begin{array}{cccccc}
+1 &amp; 0 &amp; 0 &amp; 0 &amp; \frac{14}{13} &amp; -\frac{12}{13} \\
+0 &amp; 1 &amp; 0 &amp; 0 &amp; \frac{291}{104} &amp; -\frac{53}{13} \\
+0 &amp; 0 &amp; 1 &amp; 0 &amp; \frac{277}{52} &amp; -\frac{64}{13} \\
+0 &amp; 0 &amp; 0 &amp; 1 &amp; \frac{421}{104} &amp; -\frac{53}{13}
+\end{array}\right] \]</p>
+    </p>
+    <ol type="a">
+      <li>The statement <p> The set of polynomials \( \left\{ 3 \, x^{3} + x^{2} + 4 \, x - 5 , -3 \, x^{3} - x^{2} + 3 \, x + 2 , 4 \, x^{3} - x^{2} - 2 \, x + 3 , -3 \, x^{3} + x^{2} - x - 4 , 4 \, x^{3} - 3 \, x^{2} - 2 \, x , 2 \, x^{3} + 4 \, x^{2} - 2 \, x - 2 \right\} \) spans \(\mathcal{P}_3\). </p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( 3 \, x^{3} + x^{2} + 4 \, x - 5 \right) + y_{2} \left( -3 \, x^{3} - x^{2} + 3 \, x + 2 \right) + y_{3} \left( 4 \, x^{3} - x^{2} - 2 \, x + 3 \right) + y_{4} \left( -3 \, x^{3} + x^{2} - x - 4 \right) + y_{5} \left( 4 \, x^{3} - 3 \, x^{2} - 2 \, x \right) + y_{6} \left( 2 \, x^{3} + 4 \, x^{2} - 2 \, x - 2 \right) =f\]</p> has a solution for every \(f \in \mathcal{P}_3\). </p></li>
+      <li>The set of polynomials \( \left\{ 3 \, x^{3} + x^{2} + 4 \, x - 5 , -3 \, x^{3} - x^{2} + 3 \, x + 2 , 4 \, x^{3} - x^{2} - 2 \, x + 3 , -3 \, x^{3} + x^{2} - x - 4 , 4 \, x^{3} - 3 \, x^{2} - 2 \, x , 2 \, x^{3} + 4 \, x^{2} - 2 \, x - 2 \right\} \) spans \(\mathcal{P}_3\). </li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-45' class='exercise-heading'>Example 45 <small><a href='#ex-45'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Consider the statement <p> The set of polynomials \( \left\{ -3 \, x^{3} + 3 , -3 \, x^{3} - 3 \, x^{2} + 5 \, x - 6 , x^{3} - 3 \, x , 6 \, x^{3} + 6 \, x^{2} - 10 \, x + 12 \right\} \) is linearly independent.</p></p>
+    <ol type="a">
+      <li> Write an equivalent statement using a polynomial equation.</li>
+      <li> Explain why your statement is true or false.</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+3 &amp; -6 &amp; 0 &amp; 12 \\
+0 &amp; 5 &amp; -3 &amp; -10 \\
+0 &amp; -3 &amp; 0 &amp; 6 \\
+-3 &amp; -3 &amp; 1 &amp; 6
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; -2 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
+    <ol type="a">
+      <li>The statement <p> The set of polynomials \( \left\{ -3 \, x^{3} + 3 , -3 \, x^{3} - 3 \, x^{2} + 5 \, x - 6 , x^{3} - 3 \, x , 6 \, x^{3} + 6 \, x^{2} - 10 \, x + 12 \right\} \) is linearly independent.</p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( -3 \, x^{3} + 3 \right) + y_{2} \left( -3 \, x^{3} - 3 \, x^{2} + 5 \, x - 6 \right) + y_{3} \left( x^{3} - 3 \, x \right) + y_{4} \left( 6 \, x^{3} + 6 \, x^{2} - 10 \, x + 12 \right) = 0 \]</p> has no nontrivial solutions. </p></li>
+      <li>The set of polynomials \( \left\{ -3 \, x^{3} + 3 , -3 \, x^{3} - 3 \, x^{2} + 5 \, x - 6 , x^{3} - 3 \, x , 6 \, x^{3} + 6 \, x^{2} - 10 \, x + 12 \right\} \)is linearly dependent.</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-46' class='exercise-heading'>Example 46 <small><a href='#ex-46'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Consider the statement <p> The set of polynomials \( \left\{ -3 \, x^{3} + 5 \, x + 1 , 2 \, x^{3} + 3 \, x + 1 , -6 \, x^{2} - 4 \, x - 6 , -7 \, x^{3} + 6 \, x^{2} + 3 \, x + 5 \right\} \) is linearly independent.</p></p>
+    <ol type="a">
+      <li> Write an equivalent statement using a polynomial equation.</li>
+      <li> Explain why your statement is true or false.</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+1 &amp; 1 &amp; -6 &amp; 5 \\
+5 &amp; 3 &amp; -4 &amp; 3 \\
+0 &amp; 0 &amp; -6 &amp; 6 \\
+-3 &amp; 2 &amp; 0 &amp; -7
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 1 &amp; 0 &amp; -2 \\
+0 &amp; 0 &amp; 1 &amp; -1 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
+    <ol type="a">
+      <li>The statement <p> The set of polynomials \( \left\{ -3 \, x^{3} + 5 \, x + 1 , 2 \, x^{3} + 3 \, x + 1 , -6 \, x^{2} - 4 \, x - 6 , -7 \, x^{3} + 6 \, x^{2} + 3 \, x + 5 \right\} \) is linearly independent.</p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( -3 \, x^{3} + 5 \, x + 1 \right) + y_{2} \left( 2 \, x^{3} + 3 \, x + 1 \right) + y_{3} \left( -6 \, x^{2} - 4 \, x - 6 \right) + y_{4} \left( -7 \, x^{3} + 6 \, x^{2} + 3 \, x + 5 \right) = 0 \]</p> has no nontrivial solutions. </p></li>
+      <li>The set of polynomials \( \left\{ -3 \, x^{3} + 5 \, x + 1 , 2 \, x^{3} + 3 \, x + 1 , -6 \, x^{2} - 4 \, x - 6 , -7 \, x^{3} + 6 \, x^{2} + 3 \, x + 5 \right\} \)is linearly dependent.</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-47' class='exercise-heading'>Example 47 <small><a href='#ex-47'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Consider the statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
+5 &amp; 2 \\
+-4 &amp; -2
+\end{array}\right] , \left[\begin{array}{cc}
+0 &amp; -5 \\
+3 &amp; -5
+\end{array}\right] , \left[\begin{array}{cc}
+-4 &amp; 4 \\
+4 &amp; 1
+\end{array}\right] , \left[\begin{array}{cc}
+4 &amp; 1 \\
+3 &amp; 4
+\end{array}\right] \right\} \) is linearly independent.</p></p>
+    <ol type="a">
+      <li> Write an equivalent statement using a matrix equation.</li>
+      <li> Explain why your statement is true or false.</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+5 &amp; 0 &amp; -4 &amp; 4 \\
+2 &amp; -5 &amp; 4 &amp; 1 \\
+-4 &amp; 3 &amp; 4 &amp; 3 \\
+-2 &amp; -5 &amp; 1 &amp; 4
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \]</p>
+    </p>
+    <ol type="a">
+      <li>The statement <p> The set of matrices \( \left\{ \left[\begin{array}{cc}
+5 &amp; 2 \\
+-4 &amp; -2
+\end{array}\right] , \left[\begin{array}{cc}
+0 &amp; -5 \\
+3 &amp; -5
+\end{array}\right] , \left[\begin{array}{cc}
+-4 &amp; 4 \\
+4 &amp; 1
+\end{array}\right] , \left[\begin{array}{cc}
+4 &amp; 1 \\
+3 &amp; 4
+\end{array}\right] \right\} \) is linearly independent.</p> is equivalent to the statement <p> The matrix equation <p>\[ y_{1} \left[\begin{array}{cc}
+5 &amp; 2 \\
+-4 &amp; -2
+\end{array}\right] + y_{2} \left[\begin{array}{cc}
+0 &amp; -5 \\
+3 &amp; -5
+\end{array}\right] + y_{3} \left[\begin{array}{cc}
+-4 &amp; 4 \\
+4 &amp; 1
+\end{array}\right] + y_{4} \left[\begin{array}{cc}
+4 &amp; 1 \\
+3 &amp; 4
+\end{array}\right] = \left[\begin{array}{cc}
+0 &amp; 0 \\
+0 &amp; 0
+\end{array}\right] \]</p> has no nontrivial solutions. </p></li>
+      <li>The set of matrices \( \left\{ \left[\begin{array}{cc}
+5 &amp; 2 \\
+-4 &amp; -2
+\end{array}\right] , \left[\begin{array}{cc}
+0 &amp; -5 \\
+3 &amp; -5
+\end{array}\right] , \left[\begin{array}{cc}
+-4 &amp; 4 \\
+4 &amp; 1
+\end{array}\right] , \left[\begin{array}{cc}
+4 &amp; 1 \\
+3 &amp; 4
+\end{array}\right] \right\} \)is linearly independent.</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-48' class='exercise-heading'>Example 48 <small><a href='#ex-48'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Consider the statement <p> The set of polynomials \( \left\{ -4 \, x^{3} - 5 \, x^{2} - 4 \, x - 3 , -4 \, x^{3} - x^{2} - 2 \, x - 4 , 5 \, x^{3} - 4 , -6 \, x^{3} - 5 \, x^{2} - 6 \, x + 2 \right\} \) is linearly independent.</p></p>
+    <ol type="a">
+      <li> Write an equivalent statement using a polynomial equation.</li>
+      <li> Explain why your statement is true or false.</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+-3 &amp; -4 &amp; -4 &amp; 2 \\
+-4 &amp; -2 &amp; 0 &amp; -6 \\
+-5 &amp; -1 &amp; 0 &amp; -5 \\
+-4 &amp; -4 &amp; 5 &amp; -6
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \]</p>
+    </p>
+    <ol type="a">
+      <li>The statement <p> The set of polynomials \( \left\{ -4 \, x^{3} - 5 \, x^{2} - 4 \, x - 3 , -4 \, x^{3} - x^{2} - 2 \, x - 4 , 5 \, x^{3} - 4 , -6 \, x^{3} - 5 \, x^{2} - 6 \, x + 2 \right\} \) is linearly independent.</p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( -4 \, x^{3} - 5 \, x^{2} - 4 \, x - 3 \right) + y_{2} \left( -4 \, x^{3} - x^{2} - 2 \, x - 4 \right) + y_{3} \left( 5 \, x^{3} - 4 \right) + y_{4} \left( -6 \, x^{3} - 5 \, x^{2} - 6 \, x + 2 \right) = 0 \]</p> has no nontrivial solutions. </p></li>
+      <li>The set of polynomials \( \left\{ -4 \, x^{3} - 5 \, x^{2} - 4 \, x - 3 , -4 \, x^{3} - x^{2} - 2 \, x - 4 , 5 \, x^{3} - 4 , -6 \, x^{3} - 5 \, x^{2} - 6 \, x + 2 \right\} \)is linearly independent.</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-49' class='exercise-heading'>Example 49 <small><a href='#ex-49'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Consider the statement <p> The set of polynomials \( \left\{ -4 \, x^{3} + x^{2} + 3 \, x - 1 , 5 \, x^{2} + 2 \, x + 4 , -4 \, x^{3} - 6 \, x^{2} + 4 , -14 \, x^{2} - 6 \, x + 10 \right\} \) is linearly independent.</p></p>
+    <ol type="a">
+      <li> Write an equivalent statement using a polynomial equation.</li>
+      <li> Explain why your statement is true or false.</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+-1 &amp; 4 &amp; 4 &amp; 10 \\
+3 &amp; 2 &amp; 0 &amp; -6 \\
+1 &amp; 5 &amp; -6 &amp; -14 \\
+-4 &amp; 0 &amp; -4 &amp; 0
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; -2 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 2 \\
+0 &amp; 0 &amp; 0 &amp; 0
+\end{array}\right] \]</p>
+    </p>
+    <ol type="a">
+      <li>The statement <p> The set of polynomials \( \left\{ -4 \, x^{3} + x^{2} + 3 \, x - 1 , 5 \, x^{2} + 2 \, x + 4 , -4 \, x^{3} - 6 \, x^{2} + 4 , -14 \, x^{2} - 6 \, x + 10 \right\} \) is linearly independent.</p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( -4 \, x^{3} + x^{2} + 3 \, x - 1 \right) + y_{2} \left( 5 \, x^{2} + 2 \, x + 4 \right) + y_{3} \left( -4 \, x^{3} - 6 \, x^{2} + 4 \right) + y_{4} \left( -14 \, x^{2} - 6 \, x + 10 \right) = 0 \]</p> has no nontrivial solutions. </p></li>
+      <li>The set of polynomials \( \left\{ -4 \, x^{3} + x^{2} + 3 \, x - 1 , 5 \, x^{2} + 2 \, x + 4 , -4 \, x^{3} - 6 \, x^{2} + 4 , -14 \, x^{2} - 6 \, x + 10 \right\} \)is linearly dependent.</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-50' class='exercise-heading'>Example 50 <small><a href='#ex-50'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Consider the statement <p> The set of polynomials \( \left\{ x^{3} + x^{2} - 5 \, x - 1 , -4 \, x^{3} - 2 \, x^{2} + x + 2 , 4 \, x^{3} - x^{2} - 3 \, x - 5 , 2 \, x^{3} - 5 \, x^{2} - 3 \, x - 1 \right\} \) is linearly independent.</p></p>
+    <ol type="a">
+      <li> Write an equivalent statement using a polynomial equation.</li>
+      <li> Explain why your statement is true or false.</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>
+      <p>\[\operatorname{RREF} \left[\begin{array}{cccc}
+-1 &amp; 2 &amp; -5 &amp; -1 \\
+-5 &amp; 1 &amp; -3 &amp; -3 \\
+1 &amp; -2 &amp; -1 &amp; -5 \\
+1 &amp; -4 &amp; 4 &amp; 2
+\end{array}\right] = \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right] \]</p>
+    </p>
+    <ol type="a">
+      <li>The statement <p> The set of polynomials \( \left\{ x^{3} + x^{2} - 5 \, x - 1 , -4 \, x^{3} - 2 \, x^{2} + x + 2 , 4 \, x^{3} - x^{2} - 3 \, x - 5 , 2 \, x^{3} - 5 \, x^{2} - 3 \, x - 1 \right\} \) is linearly independent.</p> is equivalent to the statement <p> The polynomial equation <p>\[ y_{1} \left( x^{3} + x^{2} - 5 \, x - 1 \right) + y_{2} \left( -4 \, x^{3} - 2 \, x^{2} + x + 2 \right) + y_{3} \left( 4 \, x^{3} - x^{2} - 3 \, x - 5 \right) + y_{4} \left( 2 \, x^{3} - 5 \, x^{2} - 3 \, x - 1 \right) = 0 \]</p> has no nontrivial solutions. </p></li>
+      <li>The set of polynomials \( \left\{ x^{3} + x^{2} - 5 \, x - 1 , -4 \, x^{3} - 2 \, x^{2} + x + 2 , 4 \, x^{3} - x^{2} - 3 \, x - 5 , 2 \, x^{3} - 5 \, x^{2} - 3 \, x - 1 \right\} \)is linearly independent.</li>
     </ol>
   </div>
 </div>

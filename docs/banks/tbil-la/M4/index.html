@@ -9,8 +9,8 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <!-- custom css -->
-  <link rel="stylesheet" href="/stylesheet.css">
-  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/assets/stylesheet.css">
+  <link rel="manifest" href="/assets/manifest.json">
   <title>☑️It - M4 - Finding a matrix inverse | Linear Algebra for Team-Based Inquiry Learning</title>
 </head>
 <body>
@@ -137,22 +137,22 @@
 <hr/>
 <h4 id='ex-1' class='exercise-heading'>Example 1 <small><a href='#ex-1'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Show how to find the inverse of the matrix \(B= \left[\begin{array}{cccc}
--4 &amp; 3 &amp; 5 &amp; -8 \\
-3 &amp; -2 &amp; -4 &amp; 5 \\
-5 &amp; -4 &amp; -7 &amp; 8 \\
--1 &amp; 0 &amp; -1 &amp; -7
+    <p>Show how to find the inverse of the matrix \(M= \left[\begin{array}{cccc}
+-3 &amp; 5 &amp; -3 &amp; 0 \\
+4 &amp; -7 &amp; 4 &amp; 1 \\
+0 &amp; 2 &amp; 1 &amp; -6 \\
+-3 &amp; 5 &amp; 1 &amp; 1
 \end{array}\right] \).</p>
   </div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
-    <p>\[B^{-1}= \left[\begin{array}{cccc}
-18 &amp; 1 &amp; 13 &amp; -5 \\
--3 &amp; 3 &amp; -4 &amp; 1 \\
-10 &amp; -1 &amp; 8 &amp; -3 \\
--4 &amp; 0 &amp; -3 &amp; 1
+    <p>\[M^{-1}= \left[\begin{array}{cccc}
+-180 &amp; -131 &amp; -21 &amp; 5 \\
+-103 &amp; -75 &amp; -12 &amp; 3 \\
+8 &amp; 6 &amp; 1 &amp; 0 \\
+-33 &amp; -24 &amp; -4 &amp; 1
 \end{array}\right] \]</p>
   </div>
 </div>
@@ -160,22 +160,22 @@
 <hr/>
 <h4 id='ex-2' class='exercise-heading'>Example 2 <small><a href='#ex-2'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Show how to find the inverse of the matrix \(B= \left[\begin{array}{cccc}
--5 &amp; 2 &amp; 8 &amp; -4 \\
-0 &amp; 1 &amp; 3 &amp; -5 \\
-2 &amp; -1 &amp; -4 &amp; 3 \\
--2 &amp; 2 &amp; 5 &amp; -3
+    <p>Show how to find the inverse of the matrix \(N= \left[\begin{array}{cccc}
+5 &amp; 8 &amp; 1 &amp; -1 \\
+2 &amp; 5 &amp; 3 &amp; -8 \\
+-2 &amp; -3 &amp; 0 &amp; -1 \\
+4 &amp; 3 &amp; 0 &amp; -6
 \end{array}\right] \).</p>
   </div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
-    <p>\[B^{-1}= \left[\begin{array}{cccc}
--9 &amp; -6 &amp; -20 &amp; 2 \\
-10 &amp; 7 &amp; 24 &amp; -1 \\
--10 &amp; -7 &amp; -23 &amp; 2 \\
--4 &amp; -3 &amp; -9 &amp; 1
+    <p>\[N^{-1}= \left[\begin{array}{cccc}
+-63 &amp; 21 &amp; -129 &amp; 4 \\
+48 &amp; -16 &amp; 98 &amp; -3 \\
+-86 &amp; 29 &amp; -176 &amp; 5 \\
+-18 &amp; 6 &amp; -37 &amp; 1
 \end{array}\right] \]</p>
   </div>
 </div>
@@ -183,22 +183,22 @@
 <hr/>
 <h4 id='ex-3' class='exercise-heading'>Example 3 <small><a href='#ex-3'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Show how to find the inverse of the matrix \(Q= \left[\begin{array}{cccc}
-1 &amp; -4 &amp; 3 &amp; 0 \\
-1 &amp; -3 &amp; 3 &amp; 2 \\
-0 &amp; 1 &amp; 1 &amp; 6 \\
--1 &amp; 0 &amp; -3 &amp; -7
+    <p>Show how to find the inverse of the matrix \(P= \left[\begin{array}{cccc}
+1 &amp; 5 &amp; 7 &amp; 2 \\
+0 &amp; 1 &amp; 1 &amp; 1 \\
+0 &amp; 1 &amp; 2 &amp; -2 \\
+0 &amp; 0 &amp; 1 &amp; -2
 \end{array}\right] \).</p>
   </div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
-    <p>\[Q^{-1}= \left[\begin{array}{cccc}
--18 &amp; 23 &amp; -3 &amp; 4 \\
-5 &amp; -7 &amp; 0 &amp; -2 \\
-13 &amp; -17 &amp; 1 &amp; -4 \\
--3 &amp; 4 &amp; 0 &amp; 1
+    <p>\[P^{-1}= \left[\begin{array}{cccc}
+1 &amp; -6 &amp; 1 &amp; -3 \\
+0 &amp; -2 &amp; 3 &amp; -4 \\
+0 &amp; 2 &amp; -2 &amp; 3 \\
+0 &amp; 1 &amp; -1 &amp; 1
 \end{array}\right] \]</p>
   </div>
 </div>
@@ -206,22 +206,22 @@
 <hr/>
 <h4 id='ex-4' class='exercise-heading'>Example 4 <small><a href='#ex-4'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Show how to find the inverse of the matrix \(P= \left[\begin{array}{cccc}
--1 &amp; -1 &amp; 3 &amp; 2 \\
-0 &amp; 1 &amp; -4 &amp; 8 \\
-0 &amp; 1 &amp; -3 &amp; 5 \\
--1 &amp; -1 &amp; 4 &amp; -2
+    <p>Show how to find the inverse of the matrix \(N= \left[\begin{array}{cccc}
+1 &amp; 1 &amp; 0 &amp; -5 \\
+2 &amp; -1 &amp; 5 &amp; 3 \\
+0 &amp; 1 &amp; -2 &amp; -5 \\
+-1 &amp; 1 &amp; -2 &amp; 0
 \end{array}\right] \).</p>
   </div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
-    <p>\[P^{-1}= \left[\begin{array}{cccc}
-6 &amp; -7 &amp; 6 &amp; -7 \\
-4 &amp; -7 &amp; 8 &amp; -4 \\
-3 &amp; -4 &amp; 4 &amp; -3 \\
-1 &amp; -1 &amp; 1 &amp; -1
+    <p>\[N^{-1}= \left[\begin{array}{cccc}
+-15 &amp; 10 &amp; 21 &amp; 4 \\
+1 &amp; 0 &amp; -1 &amp; 1 \\
+8 &amp; -5 &amp; -11 &amp; -2 \\
+-3 &amp; 2 &amp; 4 &amp; 1
 \end{array}\right] \]</p>
   </div>
 </div>
@@ -229,22 +229,22 @@
 <hr/>
 <h4 id='ex-5' class='exercise-heading'>Example 5 <small><a href='#ex-5'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Show how to find the inverse of the matrix \(P= \left[\begin{array}{cccc}
-0 &amp; -3 &amp; 2 &amp; 3 \\
--1 &amp; 0 &amp; 3 &amp; -7 \\
-1 &amp; 4 &amp; -6 &amp; 4 \\
-0 &amp; 3 &amp; -1 &amp; -5
+    <p>Show how to find the inverse of the matrix \(Q= \left[\begin{array}{cccc}
+-2 &amp; -3 &amp; 2 &amp; 5 \\
+4 &amp; 1 &amp; -1 &amp; 0 \\
+3 &amp; 3 &amp; -2 &amp; -4 \\
+0 &amp; -3 &amp; 2 &amp; 8
 \end{array}\right] \).</p>
   </div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
-    <p>\[P^{-1}= \left[\begin{array}{cccc}
--2 &amp; -4 &amp; -3 &amp; 2 \\
-12 &amp; 7 &amp; 7 &amp; 3 \\
-11 &amp; 6 &amp; 6 &amp; 3 \\
-5 &amp; 3 &amp; 3 &amp; 1
+    <p>\[Q^{-1}= \left[\begin{array}{cccc}
+4 &amp; 0 &amp; 3 &amp; -1 \\
+8 &amp; -2 &amp; 8 &amp; -1 \\
+24 &amp; -3 &amp; 20 &amp; -5 \\
+-3 &amp; 0 &amp; -2 &amp; 1
 \end{array}\right] \]</p>
   </div>
 </div>
@@ -252,22 +252,22 @@
 <hr/>
 <h4 id='ex-6' class='exercise-heading'>Example 6 <small><a href='#ex-6'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Show how to find the inverse of the matrix \(B= \left[\begin{array}{cccc}
-1 &amp; 2 &amp; 5 &amp; -7 \\
--1 &amp; -1 &amp; -2 &amp; 5 \\
--1 &amp; -2 &amp; -4 &amp; 5 \\
--1 &amp; -4 &amp; -8 &amp; 6
+    <p>Show how to find the inverse of the matrix \(A= \left[\begin{array}{cccc}
+1 &amp; -2 &amp; 0 &amp; -6 \\
+1 &amp; -1 &amp; 1 &amp; -6 \\
+-1 &amp; 2 &amp; 1 &amp; 5 \\
+0 &amp; 3 &amp; 0 &amp; 4
 \end{array}\right] \).</p>
   </div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
-    <p>\[B^{-1}= \left[\begin{array}{cccc}
-0 &amp; 8 &amp; -14 &amp; 5 \\
--2 &amp; -7 &amp; 9 &amp; -4 \\
-1 &amp; 4 &amp; -5 &amp; 2 \\
-0 &amp; 2 &amp; -3 &amp; 1
+    <p>\[A^{-1}= \left[\begin{array}{cccc}
+21 &amp; -10 &amp; 10 &amp; 4 \\
+-8 &amp; 4 &amp; -4 &amp; -1 \\
+7 &amp; -3 &amp; 4 &amp; 1 \\
+6 &amp; -3 &amp; 3 &amp; 1
 \end{array}\right] \]</p>
   </div>
 </div>
@@ -276,10 +276,10 @@
 <h4 id='ex-7' class='exercise-heading'>Example 7 <small><a href='#ex-7'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
     <p>Show how to find the inverse of the matrix \(P= \left[\begin{array}{cccc}
--3 &amp; -8 &amp; -8 &amp; 5 \\
-2 &amp; 5 &amp; 5 &amp; -3 \\
--4 &amp; -8 &amp; -7 &amp; 0 \\
-1 &amp; 4 &amp; 5 &amp; -6
+-1 &amp; -1 &amp; 1 &amp; -2 \\
+1 &amp; 0 &amp; 0 &amp; 0 \\
+1 &amp; 0 &amp; 1 &amp; -3 \\
+1 &amp; 1 &amp; 0 &amp; 0
 \end{array}\right] \).</p>
   </div>
   <div class="exercise-answer">
@@ -287,10 +287,10 @@
       <b>Answer:</b>
     </p>
     <p>\[P^{-1}= \left[\begin{array}{cccc}
-6 &amp; 12 &amp; 1 &amp; -1 \\
--3 &amp; 1 &amp; 2 &amp; -3 \\
-0 &amp; -8 &amp; -3 &amp; 4 \\
--1 &amp; -4 &amp; -1 &amp; 1
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; -1 &amp; 0 &amp; 1 \\
+3 &amp; 2 &amp; -2 &amp; 3 \\
+1 &amp; 1 &amp; -1 &amp; 1
 \end{array}\right] \]</p>
   </div>
 </div>
@@ -298,241 +298,11 @@
 <hr/>
 <h4 id='ex-8' class='exercise-heading'>Example 8 <small><a href='#ex-8'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Show how to find the inverse of the matrix \(N= \left[\begin{array}{cccc}
-1 &amp; 2 &amp; -2 &amp; -5 \\
-1 &amp; 3 &amp; -2 &amp; -4 \\
-1 &amp; -1 &amp; -1 &amp; -4 \\
--1 &amp; -6 &amp; 1 &amp; -2
-\end{array}\right] \).</p>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <p>\[N^{-1}= \left[\begin{array}{cccc}
-2 &amp; -3 &amp; 1 &amp; -1 \\
-6 &amp; -6 &amp; -1 &amp; -1 \\
-24 &amp; -25 &amp; -3 &amp; -4 \\
--7 &amp; 7 &amp; 1 &amp; 1
-\end{array}\right] \]</p>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-9' class='exercise-heading'>Example 9 <small><a href='#ex-9'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Show how to find the inverse of the matrix \(A= \left[\begin{array}{cccc}
-1 &amp; 2 &amp; -1 &amp; -1 \\
-0 &amp; 1 &amp; -3 &amp; 7 \\
-0 &amp; 1 &amp; -2 &amp; 3 \\
-0 &amp; 0 &amp; -1 &amp; 5
-\end{array}\right] \).</p>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <p>\[A^{-1}= \left[\begin{array}{cccc}
-1 &amp; 8 &amp; -10 &amp; -5 \\
-0 &amp; -7 &amp; 8 &amp; 5 \\
-0 &amp; -5 &amp; 5 &amp; 4 \\
-0 &amp; -1 &amp; 1 &amp; 1
-\end{array}\right] \]</p>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-10' class='exercise-heading'>Example 10 <small><a href='#ex-10'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Show how to find the inverse of the matrix \(P= \left[\begin{array}{cccc}
--1 &amp; -3 &amp; -1 &amp; 8 \\
--1 &amp; -2 &amp; -2 &amp; -2 \\
--1 &amp; -3 &amp; -2 &amp; 3 \\
-0 &amp; 3 &amp; 3 &amp; 1
-\end{array}\right] \).</p>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <p>\[P^{-1}= \left[\begin{array}{cccc}
-4 &amp; 3 &amp; -8 &amp; -2 \\
--15 &amp; -14 &amp; 29 &amp; 5 \\
-16 &amp; 15 &amp; -31 &amp; -5 \\
--3 &amp; -3 &amp; 6 &amp; 1
-\end{array}\right] \]</p>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-11' class='exercise-heading'>Example 11 <small><a href='#ex-11'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Show how to find the inverse of the matrix \(Q= \left[\begin{array}{cccc}
-1 &amp; 1 &amp; 2 &amp; -7 \\
-0 &amp; 1 &amp; 1 &amp; -5 \\
--1 &amp; -1 &amp; -1 &amp; 3 \\
-1 &amp; 1 &amp; 1 &amp; -2
-\end{array}\right] \).</p>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <p>\[Q^{-1}= \left[\begin{array}{cccc}
-0 &amp; -1 &amp; -3 &amp; -2 \\
--1 &amp; 1 &amp; 0 &amp; 1 \\
-1 &amp; 0 &amp; 5 &amp; 4 \\
-0 &amp; 0 &amp; 1 &amp; 1
-\end{array}\right] \]</p>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-12' class='exercise-heading'>Example 12 <small><a href='#ex-12'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Show how to find the inverse of the matrix \(N= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 2 &amp; -2 \\
--4 &amp; 1 &amp; -6 &amp; 1 \\
--1 &amp; 0 &amp; -1 &amp; 1 \\
--2 &amp; 1 &amp; -6 &amp; 2
-\end{array}\right] \).</p>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <p>\[N^{-1}= \left[\begin{array}{cccc}
--1 &amp; 0 &amp; -2 &amp; 0 \\
-12 &amp; -4 &amp; 18 &amp; 5 \\
-3 &amp; -1 &amp; 5 &amp; 1 \\
-2 &amp; -1 &amp; 4 &amp; 1
-\end{array}\right] \]</p>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-13' class='exercise-heading'>Example 13 <small><a href='#ex-13'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Show how to find the inverse of the matrix \(A= \left[\begin{array}{cccc}
-2 &amp; 2 &amp; -5 &amp; 0 \\
-2 &amp; 1 &amp; -3 &amp; 4 \\
-1 &amp; 2 &amp; -5 &amp; -4 \\
-0 &amp; 1 &amp; 0 &amp; -3
-\end{array}\right] \).</p>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <p>\[A^{-1}= \left[\begin{array}{cccc}
-29 &amp; -20 &amp; -17 &amp; -4 \\
--21 &amp; 15 &amp; 12 &amp; 4 \\
-3 &amp; -2 &amp; -2 &amp; 0 \\
--7 &amp; 5 &amp; 4 &amp; 1
-\end{array}\right] \]</p>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-14' class='exercise-heading'>Example 14 <small><a href='#ex-14'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Show how to find the inverse of the matrix \(M= \left[\begin{array}{cccc}
-1 &amp; -1 &amp; -3 &amp; 7 \\
-0 &amp; 1 &amp; -2 &amp; 0 \\
-0 &amp; 2 &amp; -3 &amp; -2 \\
-0 &amp; 3 &amp; -3 &amp; -5
-\end{array}\right] \).</p>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <p>\[M^{-1}= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; -4 &amp; 3 \\
-0 &amp; 9 &amp; -10 &amp; 4 \\
-0 &amp; 4 &amp; -5 &amp; 2 \\
-0 &amp; 3 &amp; -3 &amp; 1
-\end{array}\right] \]</p>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-15' class='exercise-heading'>Example 15 <small><a href='#ex-15'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Show how to find the inverse of the matrix \(C= \left[\begin{array}{cccc}
-1 &amp; -1 &amp; 3 &amp; -2 \\
-0 &amp; 1 &amp; -3 &amp; -1 \\
--2 &amp; 0 &amp; 1 &amp; 6 \\
-1 &amp; -4 &amp; 7 &amp; 2
-\end{array}\right] \).</p>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <p>\[C^{-1}= \left[\begin{array}{cccc}
-28 &amp; 40 &amp; 15 &amp; 3 \\
-15 &amp; 20 &amp; 8 &amp; 1 \\
-2 &amp; 2 &amp; 1 &amp; 0 \\
-9 &amp; 13 &amp; 5 &amp; 1
-\end{array}\right] \]</p>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-16' class='exercise-heading'>Example 16 <small><a href='#ex-16'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Show how to find the inverse of the matrix \(C= \left[\begin{array}{cccc}
-1 &amp; 1 &amp; 1 &amp; 5 \\
-0 &amp; 1 &amp; -2 &amp; -3 \\
-0 &amp; 0 &amp; 1 &amp; 4 \\
-0 &amp; -4 &amp; 6 &amp; 5
-\end{array}\right] \).</p>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <p>\[C^{-1}= \left[\begin{array}{cccc}
-1 &amp; 15 &amp; 5 &amp; 4 \\
-0 &amp; -19 &amp; -8 &amp; -5 \\
-0 &amp; -16 &amp; -7 &amp; -4 \\
-0 &amp; 4 &amp; 2 &amp; 1
-\end{array}\right] \]</p>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-17' class='exercise-heading'>Example 17 <small><a href='#ex-17'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Show how to find the inverse of the matrix \(M= \left[\begin{array}{cccc}
--2 &amp; 0 &amp; 2 &amp; 3 \\
-0 &amp; 1 &amp; 2 &amp; 5 \\
--2 &amp; 0 &amp; 3 &amp; 7 \\
--3 &amp; 0 &amp; 3 &amp; 4
-\end{array}\right] \).</p>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <p>\[M^{-1}= \left[\begin{array}{cccc}
--9 &amp; 0 &amp; 1 &amp; 5 \\
-11 &amp; 1 &amp; -2 &amp; -6 \\
--13 &amp; 0 &amp; 1 &amp; 8 \\
-3 &amp; 0 &amp; 0 &amp; -2
-\end{array}\right] \]</p>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-18' class='exercise-heading'>Example 18 <small><a href='#ex-18'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
     <p>Show how to find the inverse of the matrix \(B= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; -4 \\
-1 &amp; 1 &amp; 1 &amp; -6 \\
-0 &amp; 0 &amp; 1 &amp; -5 \\
-0 &amp; 0 &amp; 1 &amp; -4
+0 &amp; 2 &amp; -4 &amp; -5 \\
+0 &amp; 1 &amp; -4 &amp; -2 \\
+-2 &amp; 0 &amp; 7 &amp; 8 \\
+1 &amp; -2 &amp; 1 &amp; 1
 \end{array}\right] \).</p>
   </div>
   <div class="exercise-answer">
@@ -540,10 +310,240 @@
       <b>Answer:</b>
     </p>
     <p>\[B^{-1}= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; -4 &amp; 4 \\
--1 &amp; 1 &amp; 2 &amp; -3 \\
-0 &amp; 0 &amp; -4 &amp; 5 \\
-0 &amp; 0 &amp; -1 &amp; 1
+35 &amp; 8 &amp; 19 &amp; 39 \\
+22 &amp; 5 &amp; 12 &amp; 24 \\
+2 &amp; 0 &amp; 1 &amp; 2 \\
+7 &amp; 2 &amp; 4 &amp; 8
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-9' class='exercise-heading'>Example 9 <small><a href='#ex-9'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Show how to find the inverse of the matrix \(B= \left[\begin{array}{cccc}
+1 &amp; 2 &amp; 3 &amp; -8 \\
+-1 &amp; -1 &amp; -1 &amp; 0 \\
+0 &amp; -1 &amp; -1 &amp; 5 \\
+0 &amp; 0 &amp; -2 &amp; 7
+\end{array}\right] \).</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[B^{-1}= \left[\begin{array}{cccc}
+-10 &amp; -11 &amp; -9 &amp; -5 \\
+3 &amp; 3 &amp; 2 &amp; 2 \\
+7 &amp; 7 &amp; 7 &amp; 3 \\
+2 &amp; 2 &amp; 2 &amp; 1
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-10' class='exercise-heading'>Example 10 <small><a href='#ex-10'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Show how to find the inverse of the matrix \(Q= \left[\begin{array}{cccc}
+1 &amp; -5 &amp; -4 &amp; -7 \\
+0 &amp; 1 &amp; 0 &amp; 2 \\
+-1 &amp; 4 &amp; 5 &amp; 3 \\
+0 &amp; -3 &amp; 0 &amp; -5
+\end{array}\right] \).</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[Q^{-1}= \left[\begin{array}{cccc}
+5 &amp; 24 &amp; 4 &amp; 5 \\
+0 &amp; -5 &amp; 0 &amp; -2 \\
+1 &amp; 7 &amp; 1 &amp; 2 \\
+0 &amp; 3 &amp; 0 &amp; 1
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-11' class='exercise-heading'>Example 11 <small><a href='#ex-11'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Show how to find the inverse of the matrix \(B= \left[\begin{array}{cccc}
+1 &amp; -3 &amp; 8 &amp; -2 \\
+0 &amp; 1 &amp; -3 &amp; -1 \\
+0 &amp; 2 &amp; -5 &amp; -1 \\
+2 &amp; 5 &amp; -8 &amp; -5
+\end{array}\right] \).</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[B^{-1}= \left[\begin{array}{cccc}
+-7 &amp; 29 &amp; -35 &amp; 4 \\
+4 &amp; -19 &amp; 21 &amp; -2 \\
+2 &amp; -9 &amp; 10 &amp; -1 \\
+-2 &amp; 7 &amp; -9 &amp; 1
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-12' class='exercise-heading'>Example 12 <small><a href='#ex-12'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Show how to find the inverse of the matrix \(Q= \left[\begin{array}{cccc}
+7 &amp; -4 &amp; 5 &amp; 5 \\
+-1 &amp; 1 &amp; 0 &amp; 3 \\
+3 &amp; -2 &amp; 2 &amp; 1 \\
+-5 &amp; 1 &amp; -4 &amp; -8
+\end{array}\right] \).</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[Q^{-1}= \left[\begin{array}{cccc}
+6 &amp; -3 &amp; -13 &amp; 1 \\
+-6 &amp; 1 &amp; 11 &amp; -2 \\
+-17 &amp; 6 &amp; 35 &amp; -4 \\
+4 &amp; -1 &amp; -8 &amp; 1
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-13' class='exercise-heading'>Example 13 <small><a href='#ex-13'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Show how to find the inverse of the matrix \(B= \left[\begin{array}{cccc}
+1 &amp; 3 &amp; -1 &amp; -7 \\
+-1 &amp; -2 &amp; 0 &amp; 2 \\
+1 &amp; 4 &amp; -1 &amp; -7 \\
+0 &amp; -2 &amp; 1 &amp; 6
+\end{array}\right] \).</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[B^{-1}= \left[\begin{array}{cccc}
+2 &amp; 1 &amp; 0 &amp; 2 \\
+-1 &amp; 0 &amp; 1 &amp; 0 \\
+-2 &amp; -6 &amp; -4 &amp; -5 \\
+0 &amp; 1 &amp; 1 &amp; 1
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-14' class='exercise-heading'>Example 14 <small><a href='#ex-14'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Show how to find the inverse of the matrix \(P= \left[\begin{array}{cccc}
+-1 &amp; 2 &amp; 0 &amp; 4 \\
+2 &amp; -5 &amp; -1 &amp; -6 \\
+-2 &amp; 8 &amp; 5 &amp; -2 \\
+1 &amp; -7 &amp; -4 &amp; 5
+\end{array}\right] \).</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[P^{-1}= \left[\begin{array}{cccc}
+-77 &amp; -46 &amp; -6 &amp; 4 \\
+-8 &amp; -5 &amp; -1 &amp; 0 \\
+-24 &amp; -14 &amp; -1 &amp; 2 \\
+-15 &amp; -9 &amp; -1 &amp; 1
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-15' class='exercise-heading'>Example 15 <small><a href='#ex-15'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Show how to find the inverse of the matrix \(M= \left[\begin{array}{cccc}
+-1 &amp; 2 &amp; -3 &amp; 8 \\
+-1 &amp; 1 &amp; -3 &amp; 3 \\
+1 &amp; -1 &amp; 4 &amp; -2 \\
+0 &amp; -1 &amp; -4 &amp; -8
+\end{array}\right] \).</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[M^{-1}= \left[\begin{array}{cccc}
+2 &amp; -2 &amp; 1 &amp; 1 \\
+-4 &amp; -16 &amp; -20 &amp; -5 \\
+-1 &amp; -2 &amp; -3 &amp; -1 \\
+1 &amp; 3 &amp; 4 &amp; 1
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-16' class='exercise-heading'>Example 16 <small><a href='#ex-16'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Show how to find the inverse of the matrix \(B= \left[\begin{array}{cccc}
+1 &amp; 1 &amp; -1 &amp; -5 \\
+-3 &amp; 4 &amp; -7 &amp; -6 \\
+0 &amp; -2 &amp; 3 &amp; 6 \\
+0 &amp; -2 &amp; 5 &amp; 7
+\end{array}\right] \).</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[B^{-1}= \left[\begin{array}{cccc}
+-26 &amp; -9 &amp; -33 &amp; 2 \\
+-27 &amp; -9 &amp; -35 &amp; 3 \\
+6 &amp; 2 &amp; 7 &amp; 0 \\
+-12 &amp; -4 &amp; -15 &amp; 1
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-17' class='exercise-heading'>Example 17 <small><a href='#ex-17'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Show how to find the inverse of the matrix \(N= \left[\begin{array}{cccc}
+2 &amp; 3 &amp; -2 &amp; 3 \\
+-1 &amp; -1 &amp; 1 &amp; -1 \\
+1 &amp; 4 &amp; 0 &amp; 0 \\
+4 &amp; 7 &amp; -3 &amp; 4
+\end{array}\right] \).</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[N^{-1}= \left[\begin{array}{cccc}
+-4 &amp; 4 &amp; -3 &amp; 4 \\
+1 &amp; -1 &amp; 1 &amp; -1 \\
+-3 &amp; 7 &amp; -3 &amp; 4 \\
+0 &amp; 3 &amp; -1 &amp; 1
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-18' class='exercise-heading'>Example 18 <small><a href='#ex-18'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Show how to find the inverse of the matrix \(C= \left[\begin{array}{cccc}
+0 &amp; -1 &amp; -1 &amp; -7 \\
+0 &amp; 1 &amp; 0 &amp; 2 \\
+1 &amp; -4 &amp; 2 &amp; -1 \\
+-1 &amp; 4 &amp; -2 &amp; 2
+\end{array}\right] \).</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[C^{-1}= \left[\begin{array}{cccc}
+2 &amp; 6 &amp; 4 &amp; 3 \\
+0 &amp; 1 &amp; -2 &amp; -2 \\
+-1 &amp; -1 &amp; -5 &amp; -5 \\
+0 &amp; 0 &amp; 1 &amp; 1
 \end{array}\right] \]</p>
   </div>
 </div>
@@ -551,22 +551,22 @@
 <hr/>
 <h4 id='ex-19' class='exercise-heading'>Example 19 <small><a href='#ex-19'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Show how to find the inverse of the matrix \(Q= \left[\begin{array}{cccc}
-5 &amp; 3 &amp; 8 &amp; -6 \\
--2 &amp; -1 &amp; -3 &amp; 2 \\
--2 &amp; -1 &amp; -2 &amp; -3 \\
-2 &amp; 1 &amp; 3 &amp; -1
+    <p>Show how to find the inverse of the matrix \(B= \left[\begin{array}{cccc}
+-3 &amp; 8 &amp; -1 &amp; -8 \\
+-2 &amp; 5 &amp; -1 &amp; -6 \\
+-2 &amp; 5 &amp; 0 &amp; -5 \\
+1 &amp; -4 &amp; 4 &amp; 6
 \end{array}\right] \).</p>
   </div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
-    <p>\[Q^{-1}= \left[\begin{array}{cccc}
--1 &amp; -7 &amp; -1 &amp; -5 \\
-2 &amp; 3 &amp; -1 &amp; -3 \\
-0 &amp; 4 &amp; 1 &amp; 5 \\
-0 &amp; 1 &amp; 0 &amp; 1
+    <p>\[B^{-1}= \left[\begin{array}{cccc}
+-10 &amp; -10 &amp; 22 &amp; -5 \\
+-1 &amp; -3 &amp; 4 &amp; -1 \\
+-3 &amp; -2 &amp; 6 &amp; -1 \\
+3 &amp; 1 &amp; -5 &amp; 1
 \end{array}\right] \]</p>
   </div>
 </div>
@@ -574,22 +574,22 @@
 <hr/>
 <h4 id='ex-20' class='exercise-heading'>Example 20 <small><a href='#ex-20'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Show how to find the inverse of the matrix \(Q= \left[\begin{array}{cccc}
-1 &amp; -1 &amp; 4 &amp; -8 \\
-0 &amp; 1 &amp; -4 &amp; 3 \\
--1 &amp; 1 &amp; -3 &amp; 6 \\
-0 &amp; 1 &amp; -2 &amp; 0
+    <p>Show how to find the inverse of the matrix \(A= \left[\begin{array}{cccc}
+1 &amp; 8 &amp; 0 &amp; 1 \\
+-1 &amp; -2 &amp; 1 &amp; -5 \\
+1 &amp; 3 &amp; 0 &amp; 0 \\
+0 &amp; 5 &amp; 1 &amp; -4
 \end{array}\right] \).</p>
   </div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
-    <p>\[Q^{-1}= \left[\begin{array}{cccc}
--9 &amp; -4 &amp; -10 &amp; 5 \\
--6 &amp; -4 &amp; -6 &amp; 5 \\
--3 &amp; -2 &amp; -3 &amp; 2 \\
--2 &amp; -1 &amp; -2 &amp; 1
+    <p>\[A^{-1}= \left[\begin{array}{cccc}
+-3 &amp; -3 &amp; 1 &amp; 3 \\
+1 &amp; 1 &amp; 0 &amp; -1 \\
+-21 &amp; -25 &amp; -4 &amp; 26 \\
+-4 &amp; -5 &amp; -1 &amp; 5
 \end{array}\right] \]</p>
   </div>
 </div>
@@ -598,10 +598,10 @@
 <h4 id='ex-21' class='exercise-heading'>Example 21 <small><a href='#ex-21'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
     <p>Show how to find the inverse of the matrix \(Q= \left[\begin{array}{cccc}
-1 &amp; -1 &amp; -3 &amp; -6 \\
-1 &amp; 0 &amp; 5 &amp; 7 \\
-1 &amp; 1 &amp; 8 &amp; 8 \\
-0 &amp; 0 &amp; 3 &amp; 7
+1 &amp; 1 &amp; 2 &amp; -3 \\
+0 &amp; 1 &amp; 5 &amp; -5 \\
+0 &amp; 1 &amp; 6 &amp; -6 \\
+0 &amp; 1 &amp; 4 &amp; -3
 \end{array}\right] \).</p>
   </div>
   <div class="exercise-answer">
@@ -609,10 +609,10 @@
       <b>Answer:</b>
     </p>
     <p>\[Q^{-1}= \left[\begin{array}{cccc}
--14 &amp; 29 &amp; -14 &amp; -25 \\
--18 &amp; 35 &amp; -17 &amp; -31 \\
-7 &amp; -14 &amp; 7 &amp; 12 \\
--3 &amp; 6 &amp; -3 &amp; -5
+1 &amp; -6 &amp; 4 &amp; 1 \\
+0 &amp; 6 &amp; -5 &amp; 0 \\
+0 &amp; -3 &amp; 2 &amp; 1 \\
+0 &amp; -2 &amp; 1 &amp; 1
 \end{array}\right] \]</p>
   </div>
 </div>
@@ -620,22 +620,22 @@
 <hr/>
 <h4 id='ex-22' class='exercise-heading'>Example 22 <small><a href='#ex-22'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Show how to find the inverse of the matrix \(N= \left[\begin{array}{cccc}
-5 &amp; -4 &amp; 2 &amp; 8 \\
-4 &amp; -3 &amp; 1 &amp; 8 \\
-1 &amp; -1 &amp; 2 &amp; -4 \\
--2 &amp; 1 &amp; 0 &amp; -3
+    <p>Show how to find the inverse of the matrix \(P= \left[\begin{array}{cccc}
+-1 &amp; -2 &amp; -3 &amp; 6 \\
+0 &amp; 1 &amp; 2 &amp; -5 \\
+0 &amp; 0 &amp; 1 &amp; -2 \\
+1 &amp; 0 &amp; 0 &amp; 1
 \end{array}\right] \).</p>
   </div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
-    <p>\[N^{-1}= \left[\begin{array}{cccc}
--5 &amp; 6 &amp; 2 &amp; 0 \\
--19 &amp; 24 &amp; 7 &amp; 4 \\
--13 &amp; 17 &amp; 5 &amp; 4 \\
--3 &amp; 4 &amp; 1 &amp; 1
+    <p>\[P^{-1}= \left[\begin{array}{cccc}
+1 &amp; 2 &amp; -1 &amp; 2 \\
+-1 &amp; -1 &amp; -1 &amp; -1 \\
+-2 &amp; -4 &amp; 3 &amp; -2 \\
+-1 &amp; -2 &amp; 1 &amp; -1
 \end{array}\right] \]</p>
   </div>
 </div>
@@ -643,22 +643,22 @@
 <hr/>
 <h4 id='ex-23' class='exercise-heading'>Example 23 <small><a href='#ex-23'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Show how to find the inverse of the matrix \(C= \left[\begin{array}{cccc}
-3 &amp; 1 &amp; 1 &amp; 6 \\
-2 &amp; 1 &amp; 1 &amp; 6 \\
-1 &amp; 0 &amp; 1 &amp; 4 \\
--3 &amp; 0 &amp; -2 &amp; -7
+    <p>Show how to find the inverse of the matrix \(M= \left[\begin{array}{cccc}
+1 &amp; -3 &amp; -7 &amp; 5 \\
+1 &amp; -2 &amp; -4 &amp; 6 \\
+0 &amp; 2 &amp; 7 &amp; 4 \\
+1 &amp; -1 &amp; -2 &amp; 6
 \end{array}\right] \).</p>
   </div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
-    <p>\[C^{-1}= \left[\begin{array}{cccc}
-1 &amp; -1 &amp; 0 &amp; 0 \\
--3 &amp; 4 &amp; -5 &amp; -2 \\
--5 &amp; 5 &amp; -7 &amp; -4 \\
-1 &amp; -1 &amp; 2 &amp; 1
+    <p>\[M^{-1}= \left[\begin{array}{cccc}
+-18 &amp; 23 &amp; -6 &amp; -4 \\
+8 &amp; -13 &amp; 2 &amp; 5 \\
+-4 &amp; 6 &amp; -1 &amp; -2 \\
+3 &amp; -4 &amp; 1 &amp; 1
 \end{array}\right] \]</p>
   </div>
 </div>
@@ -667,10 +667,10 @@
 <h4 id='ex-24' class='exercise-heading'>Example 24 <small><a href='#ex-24'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
     <p>Show how to find the inverse of the matrix \(B= \left[\begin{array}{cccc}
--4 &amp; -1 &amp; 5 &amp; -4 \\
--3 &amp; -2 &amp; 2 &amp; -6 \\
-5 &amp; 2 &amp; -5 &amp; 7 \\
-1 &amp; 0 &amp; -6 &amp; -3
+-2 &amp; -2 &amp; 1 &amp; -5 \\
+-3 &amp; -2 &amp; 6 &amp; 2 \\
+1 &amp; 1 &amp; -1 &amp; 2 \\
+-1 &amp; 0 &amp; 2 &amp; 5
 \end{array}\right] \).</p>
   </div>
   <div class="exercise-answer">
@@ -678,10 +678,10 @@
       <b>Answer:</b>
     </p>
     <p>\[B^{-1}= \left[\begin{array}{cccc}
--30 &amp; -21 &amp; -36 &amp; -2 \\
--23 &amp; -18 &amp; -29 &amp; -1 \\
--14 &amp; -10 &amp; -17 &amp; -1 \\
-18 &amp; 13 &amp; 22 &amp; 1
+-8 &amp; -3 &amp; -22 &amp; 2 \\
+13 &amp; 6 &amp; 39 &amp; -5 \\
+1 &amp; 1 &amp; 4 &amp; -1 \\
+-2 &amp; -1 &amp; -6 &amp; 1
 \end{array}\right] \]</p>
   </div>
 </div>
@@ -689,22 +689,22 @@
 <hr/>
 <h4 id='ex-25' class='exercise-heading'>Example 25 <small><a href='#ex-25'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Show how to find the inverse of the matrix \(P= \left[\begin{array}{cccc}
--1 &amp; -5 &amp; 3 &amp; 1 \\
--3 &amp; -8 &amp; 1 &amp; 5 \\
-0 &amp; 3 &amp; 4 &amp; 7 \\
-2 &amp; 8 &amp; -3 &amp; -2
+    <p>Show how to find the inverse of the matrix \(M= \left[\begin{array}{cccc}
+1 &amp; 0 &amp; 0 &amp; -3 \\
+0 &amp; 1 &amp; 1 &amp; -8 \\
+-4 &amp; 0 &amp; 1 &amp; 8 \\
+-5 &amp; 0 &amp; 2 &amp; 8
 \end{array}\right] \).</p>
   </div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
-    <p>\[P^{-1}= \left[\begin{array}{cccc}
--247 &amp; -80 &amp; 23 &amp; -243 \\
-65 &amp; 21 &amp; -6 &amp; 64 \\
-44 &amp; 14 &amp; -4 &amp; 43 \\
--53 &amp; -17 &amp; 5 &amp; -52
+    <p>\[M^{-1}= \left[\begin{array}{cccc}
+-8 &amp; 0 &amp; -6 &amp; 3 \\
+-16 &amp; 1 &amp; -9 &amp; 4 \\
+-8 &amp; 0 &amp; -7 &amp; 4 \\
+-3 &amp; 0 &amp; -2 &amp; 1
 \end{array}\right] \]</p>
   </div>
 </div>
@@ -712,57 +712,11 @@
 <hr/>
 <h4 id='ex-26' class='exercise-heading'>Example 26 <small><a href='#ex-26'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Show how to find the inverse of the matrix \(P= \left[\begin{array}{cccc}
-0 &amp; 2 &amp; -3 &amp; -7 \\
-0 &amp; 1 &amp; -1 &amp; -4 \\
-1 &amp; 1 &amp; -4 &amp; 2 \\
-0 &amp; 1 &amp; 4 &amp; -8
-\end{array}\right] \).</p>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <p>\[P^{-1}= \left[\begin{array}{cccc}
--18 &amp; 38 &amp; 1 &amp; -3 \\
-24 &amp; -52 &amp; 0 &amp; 5 \\
-4 &amp; -9 &amp; 0 &amp; 1 \\
-5 &amp; -11 &amp; 0 &amp; 1
-\end{array}\right] \]</p>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-27' class='exercise-heading'>Example 27 <small><a href='#ex-27'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Show how to find the inverse of the matrix \(P= \left[\begin{array}{cccc}
-2 &amp; 1 &amp; 0 &amp; 5 \\
--1 &amp; 0 &amp; 1 &amp; 1 \\
-1 &amp; 0 &amp; 0 &amp; 3 \\
-1 &amp; 1 &amp; 1 &amp; 7
-\end{array}\right] \).</p>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <p>\[P^{-1}= \left[\begin{array}{cccc}
-3 &amp; 3 &amp; 1 &amp; -3 \\
-0 &amp; -1 &amp; -2 &amp; 1 \\
-4 &amp; 5 &amp; 1 &amp; -4 \\
--1 &amp; -1 &amp; 0 &amp; 1
-\end{array}\right] \]</p>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-28' class='exercise-heading'>Example 28 <small><a href='#ex-28'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
     <p>Show how to find the inverse of the matrix \(A= \left[\begin{array}{cccc}
-0 &amp; 1 &amp; 2 &amp; 0 \\
-0 &amp; 1 &amp; 4 &amp; 5 \\
--1 &amp; 2 &amp; 6 &amp; 5 \\
-1 &amp; -2 &amp; -3 &amp; 2
+-1 &amp; 3 &amp; -3 &amp; 1 \\
+-2 &amp; 5 &amp; -6 &amp; 4 \\
+-1 &amp; 2 &amp; -2 &amp; -1 \\
+0 &amp; 2 &amp; -1 &amp; 1
 \end{array}\right] \).</p>
   </div>
   <div class="exercise-answer">
@@ -770,22 +724,45 @@
       <b>Answer:</b>
     </p>
     <p>\[A^{-1}= \left[\begin{array}{cccc}
-1 &amp; 1 &amp; -1 &amp; 0 \\
--13 &amp; 14 &amp; -10 &amp; -10 \\
-7 &amp; -7 &amp; 5 &amp; 5 \\
--3 &amp; 3 &amp; -2 &amp; -2
+17 &amp; -5 &amp; -8 &amp; -5 \\
+-4 &amp; 1 &amp; 2 &amp; 2 \\
+-11 &amp; 3 &amp; 5 &amp; 4 \\
+-3 &amp; 1 &amp; 1 &amp; 1
 \end{array}\right] \]</p>
   </div>
 </div>
 
 <hr/>
-<h4 id='ex-29' class='exercise-heading'>Example 29 <small><a href='#ex-29'>🔗</a></small></h4><div class="exercise">
+<h4 id='ex-27' class='exercise-heading'>Example 27 <small><a href='#ex-27'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Show how to find the inverse of the matrix \(C= \left[\begin{array}{cccc}
+1 &amp; -7 &amp; 7 &amp; -4 \\
+-1 &amp; 5 &amp; -5 &amp; 3 \\
+2 &amp; -3 &amp; 4 &amp; 2 \\
+0 &amp; -3 &amp; 3 &amp; -2
+\end{array}\right] \).</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[C^{-1}= \left[\begin{array}{cccc}
+-1 &amp; -2 &amp; 0 &amp; -1 \\
+-12 &amp; -10 &amp; 1 &amp; 10 \\
+-10 &amp; -8 &amp; 1 &amp; 9 \\
+3 &amp; 3 &amp; 0 &amp; -2
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-28' class='exercise-heading'>Example 28 <small><a href='#ex-28'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
     <p>Show how to find the inverse of the matrix \(P= \left[\begin{array}{cccc}
--1 &amp; -2 &amp; -1 &amp; -3 \\
--1 &amp; -3 &amp; -2 &amp; -4 \\
--1 &amp; -3 &amp; -1 &amp; -2 \\
--1 &amp; -3 &amp; 1 &amp; 3
+-1 &amp; 2 &amp; -1 &amp; 6 \\
+-1 &amp; 1 &amp; -1 &amp; 6 \\
+-1 &amp; -2 &amp; 0 &amp; 3 \\
+0 &amp; -3 &amp; 0 &amp; 1
 \end{array}\right] \).</p>
   </div>
   <div class="exercise-answer">
@@ -793,10 +770,33 @@
       <b>Answer:</b>
     </p>
     <p>\[P^{-1}= \left[\begin{array}{cccc}
--3 &amp; -5 &amp; 10 &amp; -3 \\
-1 &amp; 2 &amp; -4 &amp; 1 \\
-0 &amp; -5 &amp; 7 &amp; -2 \\
-0 &amp; 2 &amp; -3 &amp; 1
+7 &amp; -7 &amp; -1 &amp; 3 \\
+1 &amp; -1 &amp; 0 &amp; 0 \\
+12 &amp; -13 &amp; 1 &amp; 3 \\
+3 &amp; -3 &amp; 0 &amp; 1
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-29' class='exercise-heading'>Example 29 <small><a href='#ex-29'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Show how to find the inverse of the matrix \(N= \left[\begin{array}{cccc}
+1 &amp; 3 &amp; 4 &amp; -5 \\
+1 &amp; 4 &amp; 5 &amp; -4 \\
+-1 &amp; -1 &amp; -1 &amp; 4 \\
+1 &amp; 0 &amp; 0 &amp; -4
+\end{array}\right] \).</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[N^{-1}= \left[\begin{array}{cccc}
+-4 &amp; 4 &amp; 4 &amp; 5 \\
+0 &amp; -1 &amp; -5 &amp; -4 \\
+0 &amp; 1 &amp; 4 &amp; 3 \\
+-1 &amp; 1 &amp; 1 &amp; 1
 \end{array}\right] \]</p>
   </div>
 </div>
@@ -805,10 +805,10 @@
 <h4 id='ex-30' class='exercise-heading'>Example 30 <small><a href='#ex-30'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
     <p>Show how to find the inverse of the matrix \(Q= \left[\begin{array}{cccc}
-2 &amp; 8 &amp; -3 &amp; -8 \\
--2 &amp; -5 &amp; 2 &amp; 8 \\
-2 &amp; 1 &amp; -1 &amp; -5 \\
-1 &amp; 5 &amp; -2 &amp; -3
+1 &amp; 0 &amp; 0 &amp; 5 \\
+1 &amp; 1 &amp; -3 &amp; -2 \\
+0 &amp; 1 &amp; -2 &amp; -4 \\
+-2 &amp; -1 &amp; 1 &amp; -8
 \end{array}\right] \).</p>
   </div>
   <div class="exercise-answer">
@@ -816,10 +816,10 @@
       <b>Answer:</b>
     </p>
     <p>\[Q^{-1}= \left[\begin{array}{cccc}
-15 &amp; 14 &amp; 5 &amp; -11 \\
-8 &amp; 7 &amp; 2 &amp; -6 \\
-23 &amp; 20 &amp; 6 &amp; -18 \\
-3 &amp; 3 &amp; 1 &amp; -2
+-14 &amp; 5 &amp; -10 &amp; -5 \\
+-4 &amp; 0 &amp; -1 &amp; -2 \\
+-8 &amp; 2 &amp; -5 &amp; -3 \\
+3 &amp; -1 &amp; 2 &amp; 1
 \end{array}\right] \]</p>
   </div>
 </div>
@@ -827,22 +827,22 @@
 <hr/>
 <h4 id='ex-31' class='exercise-heading'>Example 31 <small><a href='#ex-31'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Show how to find the inverse of the matrix \(M= \left[\begin{array}{cccc}
-1 &amp; -1 &amp; 1 &amp; 5 \\
-0 &amp; 1 &amp; -3 &amp; -8 \\
-0 &amp; 1 &amp; -2 &amp; -4 \\
-0 &amp; -1 &amp; 2 &amp; 5
+    <p>Show how to find the inverse of the matrix \(B= \left[\begin{array}{cccc}
+2 &amp; 7 &amp; 6 &amp; 6 \\
+1 &amp; 6 &amp; 5 &amp; 7 \\
+1 &amp; 4 &amp; 4 &amp; 3 \\
+-1 &amp; -2 &amp; -2 &amp; 0
 \end{array}\right] \).</p>
   </div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
-    <p>\[M^{-1}= \left[\begin{array}{cccc}
-1 &amp; -1 &amp; -3 &amp; -5 \\
-0 &amp; -2 &amp; -1 &amp; -4 \\
-0 &amp; -1 &amp; -3 &amp; -4 \\
-0 &amp; 0 &amp; 1 &amp; 1
+    <p>\[B^{-1}= \left[\begin{array}{cccc}
+6 &amp; -6 &amp; 2 &amp; 7 \\
+-5 &amp; 6 &amp; -4 &amp; -8 \\
+2 &amp; -3 &amp; 3 &amp; 4 \\
+2 &amp; -2 &amp; 1 &amp; 3
 \end{array}\right] \]</p>
   </div>
 </div>
@@ -850,57 +850,11 @@
 <hr/>
 <h4 id='ex-32' class='exercise-heading'>Example 32 <small><a href='#ex-32'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Show how to find the inverse of the matrix \(P= \left[\begin{array}{cccc}
-3 &amp; 7 &amp; 4 &amp; 1 \\
--1 &amp; 2 &amp; -2 &amp; 6 \\
--1 &amp; -4 &amp; -1 &amp; -3 \\
--2 &amp; 6 &amp; -1 &amp; 6
-\end{array}\right] \).</p>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <p>\[P^{-1}= \left[\begin{array}{cccc}
-30 &amp; 29 &amp; 64 &amp; -2 \\
-21 &amp; 20 &amp; 45 &amp; -1 \\
--54 &amp; -52 &amp; -116 &amp; 3 \\
--20 &amp; -19 &amp; -43 &amp; 1
-\end{array}\right] \]</p>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-33' class='exercise-heading'>Example 33 <small><a href='#ex-33'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Show how to find the inverse of the matrix \(C= \left[\begin{array}{cccc}
-1 &amp; -2 &amp; 1 &amp; -8 \\
-1 &amp; -1 &amp; 0 &amp; 1 \\
-0 &amp; 0 &amp; 1 &amp; -5 \\
-1 &amp; -2 &amp; -1 &amp; 3
-\end{array}\right] \).</p>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <p>\[C^{-1}= \left[\begin{array}{cccc}
-4 &amp; 2 &amp; -9 &amp; -5 \\
-3 &amp; 1 &amp; -7 &amp; -4 \\
--5 &amp; 0 &amp; 11 &amp; 5 \\
--1 &amp; 0 &amp; 2 &amp; 1
-\end{array}\right] \]</p>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-34' class='exercise-heading'>Example 34 <small><a href='#ex-34'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
     <p>Show how to find the inverse of the matrix \(M= \left[\begin{array}{cccc}
-2 &amp; -3 &amp; 4 &amp; -6 \\
-1 &amp; -1 &amp; 3 &amp; -4 \\
--1 &amp; 4 &amp; 4 &amp; -4 \\
-2 &amp; -8 &amp; -5 &amp; 3
+-2 &amp; 1 &amp; 4 &amp; -5 \\
+1 &amp; 2 &amp; -6 &amp; 8 \\
+1 &amp; 0 &amp; -3 &amp; 4 \\
+1 &amp; 5 &amp; -7 &amp; 8
 \end{array}\right] \).</p>
   </div>
   <div class="exercise-answer">
@@ -908,10 +862,56 @@
       <b>Answer:</b>
     </p>
     <p>\[M^{-1}= \left[\begin{array}{cccc}
-20 &amp; -32 &amp; -1 &amp; -4 \\
-11 &amp; -18 &amp; 0 &amp; -2 \\
--15 &amp; 25 &amp; -1 &amp; 2 \\
--9 &amp; 15 &amp; -1 &amp; 1
+8 &amp; -9 &amp; 24 &amp; 2 \\
+4 &amp; -4 &amp; 11 &amp; 1 \\
+12 &amp; -11 &amp; 33 &amp; 2 \\
+7 &amp; -6 &amp; 19 &amp; 1
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-33' class='exercise-heading'>Example 33 <small><a href='#ex-33'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Show how to find the inverse of the matrix \(M= \left[\begin{array}{cccc}
+-1 &amp; -2 &amp; 7 &amp; 2 \\
+1 &amp; 1 &amp; 0 &amp; 2 \\
+-1 &amp; -1 &amp; 1 &amp; -1 \\
+1 &amp; -1 &amp; 6 &amp; 3
+\end{array}\right] \).</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[M^{-1}= \left[\begin{array}{cccc}
+-1 &amp; 0 &amp; 1 &amp; 1 \\
+5 &amp; -9 &amp; -17 &amp; -3 \\
+2 &amp; -4 &amp; -7 &amp; -1 \\
+-2 &amp; 5 &amp; 8 &amp; 1
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-34' class='exercise-heading'>Example 34 <small><a href='#ex-34'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Show how to find the inverse of the matrix \(Q= \left[\begin{array}{cccc}
+-1 &amp; 1 &amp; -1 &amp; -4 \\
+-1 &amp; 0 &amp; 1 &amp; 2 \\
+0 &amp; 1 &amp; -1 &amp; -1 \\
+0 &amp; 1 &amp; -1 &amp; 0
+\end{array}\right] \).</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[Q^{-1}= \left[\begin{array}{cccc}
+-1 &amp; 0 &amp; 4 &amp; -3 \\
+-1 &amp; 1 &amp; 6 &amp; -4 \\
+-1 &amp; 1 &amp; 6 &amp; -5 \\
+0 &amp; 0 &amp; -1 &amp; 1
 \end{array}\right] \]</p>
   </div>
 </div>
@@ -920,10 +920,10 @@
 <h4 id='ex-35' class='exercise-heading'>Example 35 <small><a href='#ex-35'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
     <p>Show how to find the inverse of the matrix \(N= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 2 &amp; -8 \\
-1 &amp; 1 &amp; 1 &amp; -2 \\
--1 &amp; 0 &amp; -1 &amp; 6 \\
-0 &amp; -1 &amp; 0 &amp; -3
+0 &amp; 0 &amp; -1 &amp; 5 \\
+-1 &amp; 0 &amp; 0 &amp; 2 \\
+1 &amp; 1 &amp; 0 &amp; 1 \\
+0 &amp; 1 &amp; 0 &amp; 4
 \end{array}\right] \).</p>
   </div>
   <div class="exercise-answer">
@@ -931,146 +931,8 @@
       <b>Answer:</b>
     </p>
     <p>\[N^{-1}= \left[\begin{array}{cccc}
--1 &amp; 4 &amp; 2 &amp; 4 \\
-0 &amp; -3 &amp; -3 &amp; -4 \\
-1 &amp; 2 &amp; 3 &amp; 2 \\
-0 &amp; 1 &amp; 1 &amp; 1
-\end{array}\right] \]</p>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-36' class='exercise-heading'>Example 36 <small><a href='#ex-36'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Show how to find the inverse of the matrix \(Q= \left[\begin{array}{cccc}
-5 &amp; 2 &amp; -4 &amp; 7 \\
-3 &amp; 1 &amp; -3 &amp; 5 \\
-2 &amp; 1 &amp; -2 &amp; 4 \\
--5 &amp; -1 &amp; 0 &amp; 4
-\end{array}\right] \).</p>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <p>\[Q^{-1}= \left[\begin{array}{cccc}
-6 &amp; -2 &amp; -9 &amp; 1 \\
--10 &amp; 2 &amp; 17 &amp; -2 \\
-11 &amp; -5 &amp; -15 &amp; 2 \\
-5 &amp; -2 &amp; -7 &amp; 1
-\end{array}\right] \]</p>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-37' class='exercise-heading'>Example 37 <small><a href='#ex-37'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Show how to find the inverse of the matrix \(B= \left[\begin{array}{cccc}
--3 &amp; 1 &amp; 2 &amp; 8 \\
-2 &amp; -1 &amp; -1 &amp; -8 \\
-0 &amp; 0 &amp; 1 &amp; -4 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \).</p>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <p>\[B^{-1}= \left[\begin{array}{cccc}
--1 &amp; -1 &amp; 1 &amp; 4 \\
--2 &amp; -3 &amp; 1 &amp; -4 \\
-0 &amp; 0 &amp; 1 &amp; 4 \\
-0 &amp; 0 &amp; 0 &amp; 1
-\end{array}\right] \]</p>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-38' class='exercise-heading'>Example 38 <small><a href='#ex-38'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Show how to find the inverse of the matrix \(P= \left[\begin{array}{cccc}
--1 &amp; 0 &amp; 0 &amp; -4 \\
--1 &amp; -1 &amp; 1 &amp; 2 \\
-1 &amp; 2 &amp; -1 &amp; -4 \\
-0 &amp; 0 &amp; -2 &amp; -7
-\end{array}\right] \).</p>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <p>\[P^{-1}= \left[\begin{array}{cccc}
-7 &amp; -16 &amp; -8 &amp; -4 \\
--4 &amp; 9 &amp; 5 &amp; 2 \\
-7 &amp; -14 &amp; -7 &amp; -4 \\
--2 &amp; 4 &amp; 2 &amp; 1
-\end{array}\right] \]</p>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-39' class='exercise-heading'>Example 39 <small><a href='#ex-39'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Show how to find the inverse of the matrix \(Q= \left[\begin{array}{cccc}
-0 &amp; 1 &amp; -7 &amp; -7 \\
--1 &amp; 1 &amp; -3 &amp; -2 \\
-2 &amp; 0 &amp; -3 &amp; -7 \\
--1 &amp; 1 &amp; -5 &amp; -3
-\end{array}\right] \).</p>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <p>\[Q^{-1}= \left[\begin{array}{cccc}
--11 &amp; -2 &amp; 6 &amp; 13 \\
--13 &amp; 0 &amp; 7 &amp; 14 \\
-2 &amp; 1 &amp; -1 &amp; -3 \\
--4 &amp; -1 &amp; 2 &amp; 5
-\end{array}\right] \]</p>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-40' class='exercise-heading'>Example 40 <small><a href='#ex-40'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Show how to find the inverse of the matrix \(C= \left[\begin{array}{cccc}
-1 &amp; 3 &amp; 5 &amp; -5 \\
-1 &amp; 4 &amp; 6 &amp; -5 \\
-0 &amp; -2 &amp; -1 &amp; -4 \\
-2 &amp; 1 &amp; 4 &amp; -5
-\end{array}\right] \).</p>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <p>\[C^{-1}= \left[\begin{array}{cccc}
-35 &amp; -28 &amp; -5 &amp; -3 \\
-37 &amp; -29 &amp; -5 &amp; -4 \\
--38 &amp; 30 &amp; 5 &amp; 4 \\
--9 &amp; 7 &amp; 1 &amp; 1
-\end{array}\right] \]</p>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-41' class='exercise-heading'>Example 41 <small><a href='#ex-41'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Show how to find the inverse of the matrix \(A= \left[\begin{array}{cccc}
-0 &amp; 0 &amp; -1 &amp; 5 \\
--3 &amp; -2 &amp; 0 &amp; 5 \\
-1 &amp; 1 &amp; 1 &amp; -5 \\
--2 &amp; -1 &amp; 1 &amp; 1
-\end{array}\right] \).</p>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <p>\[A^{-1}= \left[\begin{array}{cccc}
--2 &amp; -6 &amp; -7 &amp; 5 \\
-3 &amp; 6 &amp; 8 &amp; -5 \\
+0 &amp; -3 &amp; -2 &amp; 2 \\
+0 &amp; 4 &amp; 4 &amp; -3 \\
 -1 &amp; -5 &amp; -5 &amp; 5 \\
 0 &amp; -1 &amp; -1 &amp; 1
 \end{array}\right] \]</p>
@@ -1078,24 +940,162 @@
 </div>
 
 <hr/>
-<h4 id='ex-42' class='exercise-heading'>Example 42 <small><a href='#ex-42'>🔗</a></small></h4><div class="exercise">
+<h4 id='ex-36' class='exercise-heading'>Example 36 <small><a href='#ex-36'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Show how to find the inverse of the matrix \(A= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 1 &amp; 0 \\
-1 &amp; 1 &amp; 3 &amp; 6 \\
-0 &amp; -1 &amp; -1 &amp; -1 \\
-5 &amp; 1 &amp; 6 &amp; 2
+    <p>Show how to find the inverse of the matrix \(M= \left[\begin{array}{cccc}
+5 &amp; -3 &amp; 1 &amp; -5 \\
+2 &amp; -1 &amp; 0 &amp; -1 \\
+-1 &amp; 0 &amp; 2 &amp; -5 \\
+-2 &amp; 2 &amp; -2 &amp; 7
 \end{array}\right] \).</p>
   </div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
-    <p>\[A^{-1}= \left[\begin{array}{cccc}
--23 &amp; -1 &amp; 4 &amp; 5 \\
--19 &amp; -1 &amp; 2 &amp; 4 \\
-24 &amp; 1 &amp; -4 &amp; -5 \\
--5 &amp; 0 &amp; 1 &amp; 1
+    <p>\[M^{-1}= \left[\begin{array}{cccc}
+0 &amp; 2 &amp; 1 &amp; 1 \\
+-2 &amp; 7 &amp; 2 &amp; 1 \\
+5 &amp; -9 &amp; 1 &amp; 3 \\
+2 &amp; -4 &amp; 0 &amp; 1
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-37' class='exercise-heading'>Example 37 <small><a href='#ex-37'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Show how to find the inverse of the matrix \(Q= \left[\begin{array}{cccc}
+3 &amp; 4 &amp; -6 &amp; 6 \\
+2 &amp; 3 &amp; -5 &amp; 3 \\
+-1 &amp; -3 &amp; 8 &amp; 4 \\
+-2 &amp; -3 &amp; 8 &amp; 1
+\end{array}\right] \).</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[Q^{-1}= \left[\begin{array}{cccc}
+-27 &amp; 42 &amp; 10 &amp; -4 \\
+-11 &amp; 18 &amp; 3 &amp; 0 \\
+-12 &amp; 19 &amp; 4 &amp; -1 \\
+9 &amp; -14 &amp; -3 &amp; 1
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-38' class='exercise-heading'>Example 38 <small><a href='#ex-38'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Show how to find the inverse of the matrix \(C= \left[\begin{array}{cccc}
+0 &amp; 0 &amp; 3 &amp; -8 \\
+1 &amp; 0 &amp; 0 &amp; -3 \\
+-1 &amp; 2 &amp; -1 &amp; 4 \\
+-1 &amp; 1 &amp; 2 &amp; -3
+\end{array}\right] \).</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[C^{-1}= \left[\begin{array}{cccc}
+-15 &amp; 10 &amp; -9 &amp; 18 \\
+-4 &amp; 3 &amp; -2 &amp; 5 \\
+-13 &amp; 8 &amp; -8 &amp; 16 \\
+-5 &amp; 3 &amp; -3 &amp; 6
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-39' class='exercise-heading'>Example 39 <small><a href='#ex-39'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Show how to find the inverse of the matrix \(C= \left[\begin{array}{cccc}
+1 &amp; -2 &amp; 3 &amp; 2 \\
+0 &amp; 1 &amp; -3 &amp; -1 \\
+-1 &amp; 2 &amp; -3 &amp; -1 \\
+0 &amp; 1 &amp; -4 &amp; -2
+\end{array}\right] \).</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[C^{-1}= \left[\begin{array}{cccc}
+-2 &amp; 5 &amp; -3 &amp; -3 \\
+-2 &amp; 4 &amp; -2 &amp; -3 \\
+-1 &amp; 1 &amp; -1 &amp; -1 \\
+1 &amp; 0 &amp; 1 &amp; 0
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-40' class='exercise-heading'>Example 40 <small><a href='#ex-40'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Show how to find the inverse of the matrix \(Q= \left[\begin{array}{cccc}
+1 &amp; 2 &amp; -1 &amp; 6 \\
+-1 &amp; -1 &amp; 1 &amp; -7 \\
+0 &amp; 3 &amp; 1 &amp; -8 \\
+0 &amp; 5 &amp; 0 &amp; -4
+\end{array}\right] \).</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[Q^{-1}= \left[\begin{array}{cccc}
+11 &amp; 10 &amp; 1 &amp; -3 \\
+-4 &amp; -4 &amp; 0 &amp; 1 \\
+-28 &amp; -28 &amp; 1 &amp; 5 \\
+-5 &amp; -5 &amp; 0 &amp; 1
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-41' class='exercise-heading'>Example 41 <small><a href='#ex-41'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Show how to find the inverse of the matrix \(Q= \left[\begin{array}{cccc}
+1 &amp; 2 &amp; -6 &amp; 6 \\
+0 &amp; 1 &amp; -3 &amp; 4 \\
+1 &amp; 1 &amp; -2 &amp; 0 \\
+1 &amp; 2 &amp; -4 &amp; 3
+\end{array}\right] \).</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[Q^{-1}= \left[\begin{array}{cccc}
+3 &amp; -6 &amp; -4 &amp; 2 \\
+-1 &amp; 0 &amp; -1 &amp; 2 \\
+1 &amp; -3 &amp; -3 &amp; 2 \\
+1 &amp; -2 &amp; -2 &amp; 1
+\end{array}\right] \]</p>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-42' class='exercise-heading'>Example 42 <small><a href='#ex-42'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Show how to find the inverse of the matrix \(B= \left[\begin{array}{cccc}
+5 &amp; 5 &amp; -1 &amp; 1 \\
+3 &amp; 4 &amp; -3 &amp; -3 \\
+-4 &amp; -3 &amp; -2 &amp; -7 \\
+-4 &amp; -4 &amp; 1 &amp; 0
+\end{array}\right] \).</p>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <p>\[B^{-1}= \left[\begin{array}{cccc}
+-23 &amp; 4 &amp; -5 &amp; -21 \\
+27 &amp; -5 &amp; 6 &amp; 24 \\
+16 &amp; -4 &amp; 4 &amp; 13 \\
+-3 &amp; 1 &amp; -1 &amp; -2
 \end{array}\right] \]</p>
   </div>
 </div>
@@ -1103,22 +1103,22 @@
 <hr/>
 <h4 id='ex-43' class='exercise-heading'>Example 43 <small><a href='#ex-43'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Show how to find the inverse of the matrix \(C= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; -3 &amp; 2 \\
--1 &amp; 1 &amp; -1 &amp; -7 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
--1 &amp; 0 &amp; -1 &amp; -1
+    <p>Show how to find the inverse of the matrix \(Q= \left[\begin{array}{cccc}
+-1 &amp; 0 &amp; 3 &amp; 6 \\
+1 &amp; -1 &amp; -1 &amp; 1 \\
+-1 &amp; 2 &amp; 0 &amp; -7 \\
+1 &amp; -2 &amp; -3 &amp; 5
 \end{array}\right] \).</p>
   </div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
-    <p>\[C^{-1}= \left[\begin{array}{cccc}
--1 &amp; 0 &amp; -5 &amp; -2 \\
-6 &amp; 1 &amp; 24 &amp; 5 \\
-0 &amp; 0 &amp; 1 &amp; 0 \\
-1 &amp; 0 &amp; 4 &amp; 1
+    <p>\[Q^{-1}= \left[\begin{array}{cccc}
+11 &amp; 24 &amp; 15 &amp; 3 \\
+16 &amp; 33 &amp; 22 &amp; 5 \\
+-2 &amp; -4 &amp; -3 &amp; -1 \\
+3 &amp; 6 &amp; 4 &amp; 1
 \end{array}\right] \]</p>
   </div>
 </div>
@@ -1126,22 +1126,22 @@
 <hr/>
 <h4 id='ex-44' class='exercise-heading'>Example 44 <small><a href='#ex-44'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Show how to find the inverse of the matrix \(A= \left[\begin{array}{cccc}
-0 &amp; 3 &amp; -1 &amp; 3 \\
-0 &amp; 1 &amp; 0 &amp; 2 \\
-1 &amp; 0 &amp; -2 &amp; -3 \\
--2 &amp; -1 &amp; 5 &amp; 8
+    <p>Show how to find the inverse of the matrix \(Q= \left[\begin{array}{cccc}
+0 &amp; -1 &amp; 0 &amp; -1 \\
+-1 &amp; 1 &amp; 0 &amp; -1 \\
+0 &amp; 0 &amp; 1 &amp; 5 \\
+1 &amp; 1 &amp; 1 &amp; 7
 \end{array}\right] \).</p>
   </div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
-    <p>\[A^{-1}= \left[\begin{array}{cccc}
--5 &amp; 12 &amp; -5 &amp; -3 \\
--2 &amp; 5 &amp; -4 &amp; -2 \\
--4 &amp; 9 &amp; -6 &amp; -3 \\
-1 &amp; -2 &amp; 2 &amp; 1
+    <p>\[Q^{-1}= \left[\begin{array}{cccc}
+3 &amp; 1 &amp; -2 &amp; 2 \\
+1 &amp; 1 &amp; -1 &amp; 1 \\
+10 &amp; 5 &amp; -4 &amp; 5 \\
+-2 &amp; -1 &amp; 1 &amp; -1
 \end{array}\right] \]</p>
   </div>
 </div>
@@ -1149,22 +1149,22 @@
 <hr/>
 <h4 id='ex-45' class='exercise-heading'>Example 45 <small><a href='#ex-45'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Show how to find the inverse of the matrix \(C= \left[\begin{array}{cccc}
-1 &amp; -5 &amp; 5 &amp; -5 \\
-1 &amp; -4 &amp; 4 &amp; -3 \\
-0 &amp; 5 &amp; -4 &amp; 7 \\
-0 &amp; 0 &amp; 1 &amp; -2
+    <p>Show how to find the inverse of the matrix \(M= \left[\begin{array}{cccc}
+0 &amp; -1 &amp; 0 &amp; 0 \\
+1 &amp; 5 &amp; -1 &amp; 7 \\
+0 &amp; 2 &amp; 1 &amp; -5 \\
+1 &amp; 8 &amp; -1 &amp; 8
 \end{array}\right] \).</p>
   </div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
-    <p>\[C^{-1}= \left[\begin{array}{cccc}
-21 &amp; -20 &amp; 5 &amp; -5 \\
--1 &amp; 1 &amp; 0 &amp; 1 \\
--10 &amp; 10 &amp; -2 &amp; 3 \\
--5 &amp; 5 &amp; -1 &amp; 1
+    <p>\[M^{-1}= \left[\begin{array}{cccc}
+1 &amp; 3 &amp; 1 &amp; -2 \\
+-1 &amp; 0 &amp; 0 &amp; 0 \\
+17 &amp; -5 &amp; 1 &amp; 5 \\
+3 &amp; -1 &amp; 0 &amp; 1
 \end{array}\right] \]</p>
   </div>
 </div>
@@ -1172,22 +1172,22 @@
 <hr/>
 <h4 id='ex-46' class='exercise-heading'>Example 46 <small><a href='#ex-46'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Show how to find the inverse of the matrix \(A= \left[\begin{array}{cccc}
-1 &amp; 0 &amp; 0 &amp; 4 \\
--3 &amp; 1 &amp; -1 &amp; -6 \\
-4 &amp; -1 &amp; 2 &amp; 8 \\
-0 &amp; 2 &amp; 1 &amp; 7
+    <p>Show how to find the inverse of the matrix \(B= \left[\begin{array}{cccc}
+2 &amp; 5 &amp; 8 &amp; -4 \\
+1 &amp; 3 &amp; 3 &amp; -8 \\
+-1 &amp; 0 &amp; -2 &amp; -3 \\
+-1 &amp; -3 &amp; -5 &amp; 1
 \end{array}\right] \).</p>
   </div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
-    <p>\[A^{-1}= \left[\begin{array}{cccc}
-13 &amp; 20 &amp; 12 &amp; -4 \\
-14 &amp; 22 &amp; 13 &amp; -4 \\
--7 &amp; -9 &amp; -5 &amp; 2 \\
--3 &amp; -5 &amp; -3 &amp; 1
+    <p>\[B^{-1}= \left[\begin{array}{cccc}
+24 &amp; -11 &amp; 7 &amp; 29 \\
+29 &amp; -14 &amp; 10 &amp; 34 \\
+-21 &amp; 10 &amp; -7 &amp; -25 \\
+6 &amp; -3 &amp; 2 &amp; 7
 \end{array}\right] \]</p>
   </div>
 </div>
@@ -1196,10 +1196,10 @@
 <h4 id='ex-47' class='exercise-heading'>Example 47 <small><a href='#ex-47'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
     <p>Show how to find the inverse of the matrix \(A= \left[\begin{array}{cccc}
-1 &amp; -2 &amp; 0 &amp; -1 \\
-1 &amp; -1 &amp; -1 &amp; 2 \\
-0 &amp; 0 &amp; 1 &amp; -3 \\
-3 &amp; -6 &amp; 2 &amp; -8
+1 &amp; 2 &amp; -1 &amp; -2 \\
+-2 &amp; -3 &amp; 1 &amp; 5 \\
+0 &amp; 0 &amp; 1 &amp; -4 \\
+2 &amp; 4 &amp; -1 &amp; -7
 \end{array}\right] \).</p>
   </div>
   <div class="exercise-answer">
@@ -1207,10 +1207,10 @@
       <b>Answer:</b>
     </p>
     <p>\[A^{-1}= \left[\begin{array}{cccc}
--4 &amp; 2 &amp; 0 &amp; 1 \\
--1 &amp; 1 &amp; 1 &amp; 0 \\
--9 &amp; 0 &amp; -5 &amp; 3 \\
--3 &amp; 0 &amp; -2 &amp; 1
+-3 &amp; -2 &amp; -1 &amp; 0 \\
+-4 &amp; 1 &amp; -2 &amp; 3 \\
+-8 &amp; 0 &amp; -3 &amp; 4 \\
+-2 &amp; 0 &amp; -1 &amp; 1
 \end{array}\right] \]</p>
   </div>
 </div>
@@ -1218,22 +1218,22 @@
 <hr/>
 <h4 id='ex-48' class='exercise-heading'>Example 48 <small><a href='#ex-48'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Show how to find the inverse of the matrix \(Q= \left[\begin{array}{cccc}
--2 &amp; -5 &amp; 3 &amp; -6 \\
-1 &amp; 2 &amp; -1 &amp; 1 \\
-2 &amp; 5 &amp; -2 &amp; 2 \\
--4 &amp; -6 &amp; 2 &amp; 5
+    <p>Show how to find the inverse of the matrix \(C= \left[\begin{array}{cccc}
+2 &amp; -2 &amp; -5 &amp; 7 \\
+1 &amp; 0 &amp; -3 &amp; 8 \\
+-1 &amp; 1 &amp; 3 &amp; -5 \\
+3 &amp; -2 &amp; -5 &amp; 7
 \end{array}\right] \).</p>
   </div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
-    <p>\[Q^{-1}= \left[\begin{array}{cccc}
-7 &amp; 29 &amp; -1 &amp; 3 \\
-0 &amp; -2 &amp; 1 &amp; 0 \\
-9 &amp; 32 &amp; 1 &amp; 4 \\
-2 &amp; 8 &amp; 0 &amp; 1
+    <p>\[C^{-1}= \left[\begin{array}{cccc}
+-1 &amp; 0 &amp; 0 &amp; 1 \\
+12 &amp; 4 &amp; 19 &amp; -3 \\
+-11 &amp; -3 &amp; -16 &amp; 3 \\
+-4 &amp; -1 &amp; -6 &amp; 1
 \end{array}\right] \]</p>
   </div>
 </div>
@@ -1241,22 +1241,22 @@
 <hr/>
 <h4 id='ex-49' class='exercise-heading'>Example 49 <small><a href='#ex-49'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Show how to find the inverse of the matrix \(B= \left[\begin{array}{cccc}
--1 &amp; -1 &amp; -6 &amp; 2 \\
-0 &amp; 1 &amp; 0 &amp; -5 \\
-1 &amp; 0 &amp; 5 &amp; 3 \\
-0 &amp; 0 &amp; 1 &amp; 1
+    <p>Show how to find the inverse of the matrix \(N= \left[\begin{array}{cccc}
+1 &amp; -1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; -4 \\
+0 &amp; 0 &amp; 1 &amp; -3 \\
+0 &amp; -1 &amp; 0 &amp; 5
 \end{array}\right] \).</p>
   </div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
-    <p>\[B^{-1}= \left[\begin{array}{cccc}
-2 &amp; 2 &amp; 3 &amp; -3 \\
-5 &amp; 6 &amp; 5 &amp; 5 \\
--1 &amp; -1 &amp; -1 &amp; 0 \\
-1 &amp; 1 &amp; 1 &amp; 1
+    <p>\[N^{-1}= \left[\begin{array}{cccc}
+1 &amp; 5 &amp; 0 &amp; 4 \\
+0 &amp; 5 &amp; 0 &amp; 4 \\
+0 &amp; 3 &amp; 1 &amp; 3 \\
+0 &amp; 1 &amp; 0 &amp; 1
 \end{array}\right] \]</p>
   </div>
 </div>
@@ -1264,22 +1264,22 @@
 <hr/>
 <h4 id='ex-50' class='exercise-heading'>Example 50 <small><a href='#ex-50'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Show how to find the inverse of the matrix \(A= \left[\begin{array}{cccc}
-1 &amp; 2 &amp; 7 &amp; -3 \\
--1 &amp; -1 &amp; -4 &amp; 2 \\
-1 &amp; -1 &amp; -1 &amp; -2 \\
--2 &amp; -2 &amp; -6 &amp; 1
+    <p>Show how to find the inverse of the matrix \(M= \left[\begin{array}{cccc}
+1 &amp; 3 &amp; 0 &amp; 7 \\
+0 &amp; 1 &amp; -1 &amp; 3 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+1 &amp; 0 &amp; 1 &amp; -1
 \end{array}\right] \).</p>
   </div>
   <div class="exercise-answer">
     <p>
       <b>Answer:</b>
     </p>
-    <p>\[A^{-1}= \left[\begin{array}{cccc}
-1 &amp; 3 &amp; 1 &amp; -1 \\
-15 &amp; 32 &amp; 7 &amp; -5 \\
--6 &amp; -13 &amp; -3 &amp; 2 \\
--4 &amp; -8 &amp; -2 &amp; 1
+    <p>\[M^{-1}= \left[\begin{array}{cccc}
+-1 &amp; 3 &amp; 1 &amp; 2 \\
+3 &amp; -8 &amp; -5 &amp; -3 \\
+0 &amp; 0 &amp; 1 &amp; 0 \\
+-1 &amp; 3 &amp; 2 &amp; 1
 \end{array}\right] \]</p>
   </div>
 </div>

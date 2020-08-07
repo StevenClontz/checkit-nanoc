@@ -9,8 +9,8 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <!-- custom css -->
-  <link rel="stylesheet" href="/stylesheet.css">
-  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/assets/stylesheet.css">
+  <link rel="manifest" href="/assets/manifest.json">
   <title>☑️It - G1 - Row operations and determinants | Linear Algebra for Team-Based Inquiry Learning</title>
 </head>
 <body>
@@ -137,11 +137,11 @@
 <hr/>
 <h4 id='ex-1' class='exercise-heading'>Example 1 <small><a href='#ex-1'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( 4 \).</p>
+    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -6 \).</p>
     <ol type="a">
-      <li>Let \(P\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \to R_4 + -5R_2 \). What is \(\operatorname{det}\ P\)?</li>
-      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \leftrightarrow R_4 \). What is \(\operatorname{det}\ M\)?</li>
-      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \to -5R_3 \). What is \(\operatorname{det}\ N\)?</li>
+      <li>Let \(P\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to 4R_1 \). What is \(\operatorname{det}\ P\)?</li>
+      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \leftrightarrow R_4 \). What is \(\operatorname{det}\ Q\)?</li>
+      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \to R_4 + 3R_1 \). What is \(\operatorname{det}\ M\)?</li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -149,9 +149,9 @@
       <b>Answer:</b>
     </p>
     <ol type="a">
-      <li>\(\operatorname{det}\ P= 4 \)</li>
-      <li>\(\operatorname{det}\ M= -4 \)</li>
-      <li>\(\operatorname{det}\ N= -20 \)</li>
+      <li>\(\operatorname{det}\ P= -24 \)</li>
+      <li>\(\operatorname{det}\ Q= 6 \)</li>
+      <li>\(\operatorname{det}\ M= -6 \)</li>
     </ol>
   </div>
 </div>
@@ -159,11 +159,11 @@
 <hr/>
 <h4 id='ex-2' class='exercise-heading'>Example 2 <small><a href='#ex-2'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( 3 \).</p>
+    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( 6 \).</p>
     <ol type="a">
-      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to -4R_2 \). What is \(\operatorname{det}\ N\)?</li>
-      <li>Let \(B\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \leftrightarrow R_4 \). What is \(\operatorname{det}\ B\)?</li>
-      <li>Let \(C\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to R_1 + 5R_2 \). What is \(\operatorname{det}\ C\)?</li>
+      <li>Let \(B\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to 5R_2 \). What is \(\operatorname{det}\ B\)?</li>
+      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \to R_3 + -2R_2 \). What is \(\operatorname{det}\ N\)?</li>
+      <li>Let \(C\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \leftrightarrow R_3 \). What is \(\operatorname{det}\ C\)?</li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -171,9 +171,9 @@
       <b>Answer:</b>
     </p>
     <ol type="a">
-      <li>\(\operatorname{det}\ N= -12 \)</li>
-      <li>\(\operatorname{det}\ B= -3 \)</li>
-      <li>\(\operatorname{det}\ C= 3 \)</li>
+      <li>\(\operatorname{det}\ B= 30 \)</li>
+      <li>\(\operatorname{det}\ N= 6 \)</li>
+      <li>\(\operatorname{det}\ C= -6 \)</li>
     </ol>
   </div>
 </div>
@@ -181,11 +181,11 @@
 <hr/>
 <h4 id='ex-3' class='exercise-heading'>Example 3 <small><a href='#ex-3'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( 2 \).</p>
+    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -5 \).</p>
     <ol type="a">
-      <li>Let \(P\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \leftrightarrow R_4 \). What is \(\operatorname{det}\ P\)?</li>
-      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \to R_4 + 5R_3 \). What is \(\operatorname{det}\ N\)?</li>
-      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \to -4R_3 \). What is \(\operatorname{det}\ M\)?</li>
+      <li>Let \(P\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \to R_3 + 4R_1 \). What is \(\operatorname{det}\ P\)?</li>
+      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \leftrightarrow R_2 \). What is \(\operatorname{det}\ N\)?</li>
+      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \to 3R_3 \). What is \(\operatorname{det}\ Q\)?</li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -193,9 +193,9 @@
       <b>Answer:</b>
     </p>
     <ol type="a">
-      <li>\(\operatorname{det}\ P= -2 \)</li>
-      <li>\(\operatorname{det}\ N= 2 \)</li>
-      <li>\(\operatorname{det}\ M= -8 \)</li>
+      <li>\(\operatorname{det}\ P= -5 \)</li>
+      <li>\(\operatorname{det}\ N= 5 \)</li>
+      <li>\(\operatorname{det}\ Q= -15 \)</li>
     </ol>
   </div>
 </div>
@@ -203,11 +203,11 @@
 <hr/>
 <h4 id='ex-4' class='exercise-heading'>Example 4 <small><a href='#ex-4'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( 7 \).</p>
+    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( 3 \).</p>
     <ol type="a">
-      <li>Let \(P\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \leftrightarrow R_1 \). What is \(\operatorname{det}\ P\)?</li>
-      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to R_2 + 2R_4 \). What is \(\operatorname{det}\ Q\)?</li>
-      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to -2R_1 \). What is \(\operatorname{det}\ N\)?</li>
+      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to 4R_1 \). What is \(\operatorname{det}\ Q\)?</li>
+      <li>Let \(B\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \leftrightarrow R_1 \). What is \(\operatorname{det}\ B\)?</li>
+      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to R_1 + 4R_3 \). What is \(\operatorname{det}\ M\)?</li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -215,9 +215,9 @@
       <b>Answer:</b>
     </p>
     <ol type="a">
-      <li>\(\operatorname{det}\ P= -7 \)</li>
-      <li>\(\operatorname{det}\ Q= 7 \)</li>
-      <li>\(\operatorname{det}\ N= -14 \)</li>
+      <li>\(\operatorname{det}\ Q= 12 \)</li>
+      <li>\(\operatorname{det}\ B= -3 \)</li>
+      <li>\(\operatorname{det}\ M= 3 \)</li>
     </ol>
   </div>
 </div>
@@ -225,11 +225,11 @@
 <hr/>
 <h4 id='ex-5' class='exercise-heading'>Example 5 <small><a href='#ex-5'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -3 \).</p>
+    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -2 \).</p>
     <ol type="a">
-      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \leftrightarrow R_2 \). What is \(\operatorname{det}\ N\)?</li>
-      <li>Let \(B\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \to 4R_3 \). What is \(\operatorname{det}\ B\)?</li>
-      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \to R_4 + -2R_1 \). What is \(\operatorname{det}\ Q\)?</li>
+      <li>Let \(B\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \to -5R_4 \). What is \(\operatorname{det}\ B\)?</li>
+      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to R_2 + 2R_4 \). What is \(\operatorname{det}\ Q\)?</li>
+      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \leftrightarrow R_1 \). What is \(\operatorname{det}\ M\)?</li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -237,9 +237,9 @@
       <b>Answer:</b>
     </p>
     <ol type="a">
-      <li>\(\operatorname{det}\ N= 3 \)</li>
-      <li>\(\operatorname{det}\ B= -12 \)</li>
-      <li>\(\operatorname{det}\ Q= -3 \)</li>
+      <li>\(\operatorname{det}\ B= 10 \)</li>
+      <li>\(\operatorname{det}\ Q= -2 \)</li>
+      <li>\(\operatorname{det}\ M= 2 \)</li>
     </ol>
   </div>
 </div>
@@ -247,11 +247,11 @@
 <hr/>
 <h4 id='ex-6' class='exercise-heading'>Example 6 <small><a href='#ex-6'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -3 \).</p>
+    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -4 \).</p>
     <ol type="a">
-      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \leftrightarrow R_4 \). What is \(\operatorname{det}\ M\)?</li>
-      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to R_2 + -2R_4 \). What is \(\operatorname{det}\ N\)?</li>
-      <li>Let \(B\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to -5R_2 \). What is \(\operatorname{det}\ B\)?</li>
+      <li>Let \(B\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \to R_3 + -2R_4 \). What is \(\operatorname{det}\ B\)?</li>
+      <li>Let \(C\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to 2R_2 \). What is \(\operatorname{det}\ C\)?</li>
+      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \leftrightarrow R_3 \). What is \(\operatorname{det}\ M\)?</li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -259,9 +259,9 @@
       <b>Answer:</b>
     </p>
     <ol type="a">
-      <li>\(\operatorname{det}\ M= 3 \)</li>
-      <li>\(\operatorname{det}\ N= -3 \)</li>
-      <li>\(\operatorname{det}\ B= 15 \)</li>
+      <li>\(\operatorname{det}\ B= -4 \)</li>
+      <li>\(\operatorname{det}\ C= -8 \)</li>
+      <li>\(\operatorname{det}\ M= 4 \)</li>
     </ol>
   </div>
 </div>
@@ -269,11 +269,11 @@
 <hr/>
 <h4 id='ex-7' class='exercise-heading'>Example 7 <small><a href='#ex-7'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( 4 \).</p>
+    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -5 \).</p>
     <ol type="a">
-      <li>Let \(B\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to R_1 + 3R_4 \). What is \(\operatorname{det}\ B\)?</li>
-      <li>Let \(C\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \leftrightarrow R_3 \). What is \(\operatorname{det}\ C\)?</li>
-      <li>Let \(P\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \to 5R_3 \). What is \(\operatorname{det}\ P\)?</li>
+      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \leftrightarrow R_2 \). What is \(\operatorname{det}\ Q\)?</li>
+      <li>Let \(C\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \to 4R_3 \). What is \(\operatorname{det}\ C\)?</li>
+      <li>Let \(B\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to R_1 + -3R_2 \). What is \(\operatorname{det}\ B\)?</li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -281,9 +281,9 @@
       <b>Answer:</b>
     </p>
     <ol type="a">
-      <li>\(\operatorname{det}\ B= 4 \)</li>
-      <li>\(\operatorname{det}\ C= -4 \)</li>
-      <li>\(\operatorname{det}\ P= 20 \)</li>
+      <li>\(\operatorname{det}\ Q= 5 \)</li>
+      <li>\(\operatorname{det}\ C= -20 \)</li>
+      <li>\(\operatorname{det}\ B= -5 \)</li>
     </ol>
   </div>
 </div>
@@ -291,11 +291,11 @@
 <hr/>
 <h4 id='ex-8' class='exercise-heading'>Example 8 <small><a href='#ex-8'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( 2 \).</p>
+    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -4 \).</p>
     <ol type="a">
-      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \leftrightarrow R_4 \). What is \(\operatorname{det}\ M\)?</li>
-      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \to -4R_4 \). What is \(\operatorname{det}\ N\)?</li>
-      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to R_1 + 4R_3 \). What is \(\operatorname{det}\ Q\)?</li>
+      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to R_2 + -5R_3 \). What is \(\operatorname{det}\ M\)?</li>
+      <li>Let \(P\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \leftrightarrow R_2 \). What is \(\operatorname{det}\ P\)?</li>
+      <li>Let \(B\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \to -2R_3 \). What is \(\operatorname{det}\ B\)?</li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -303,9 +303,9 @@
       <b>Answer:</b>
     </p>
     <ol type="a">
-      <li>\(\operatorname{det}\ M= -2 \)</li>
-      <li>\(\operatorname{det}\ N= -8 \)</li>
-      <li>\(\operatorname{det}\ Q= 2 \)</li>
+      <li>\(\operatorname{det}\ M= -4 \)</li>
+      <li>\(\operatorname{det}\ P= 4 \)</li>
+      <li>\(\operatorname{det}\ B= 8 \)</li>
     </ol>
   </div>
 </div>
@@ -315,9 +315,9 @@
   <div class="exercise-statement">
     <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -7 \).</p>
     <ol type="a">
-      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \leftrightarrow R_2 \). What is \(\operatorname{det}\ M\)?</li>
-      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to 5R_1 \). What is \(\operatorname{det}\ Q\)?</li>
-      <li>Let \(P\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to R_2 + 5R_1 \). What is \(\operatorname{det}\ P\)?</li>
+      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \to R_4 + -5R_1 \). What is \(\operatorname{det}\ N\)?</li>
+      <li>Let \(B\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \to 5R_4 \). What is \(\operatorname{det}\ B\)?</li>
+      <li>Let \(P\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \leftrightarrow R_3 \). What is \(\operatorname{det}\ P\)?</li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -325,9 +325,9 @@
       <b>Answer:</b>
     </p>
     <ol type="a">
-      <li>\(\operatorname{det}\ M= 7 \)</li>
-      <li>\(\operatorname{det}\ Q= -35 \)</li>
-      <li>\(\operatorname{det}\ P= -7 \)</li>
+      <li>\(\operatorname{det}\ N= -7 \)</li>
+      <li>\(\operatorname{det}\ B= -35 \)</li>
+      <li>\(\operatorname{det}\ P= 7 \)</li>
     </ol>
   </div>
 </div>
@@ -335,11 +335,11 @@
 <hr/>
 <h4 id='ex-10' class='exercise-heading'>Example 10 <small><a href='#ex-10'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -2 \).</p>
+    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( 2 \).</p>
     <ol type="a">
-      <li>Let \(P\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to R_2 + -2R_4 \). What is \(\operatorname{det}\ P\)?</li>
-      <li>Let \(B\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \leftrightarrow R_1 \). What is \(\operatorname{det}\ B\)?</li>
-      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \to -2R_4 \). What is \(\operatorname{det}\ Q\)?</li>
+      <li>Let \(C\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \leftrightarrow R_2 \). What is \(\operatorname{det}\ C\)?</li>
+      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \to -2R_3 \). What is \(\operatorname{det}\ M\)?</li>
+      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to R_1 + 5R_4 \). What is \(\operatorname{det}\ N\)?</li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -347,9 +347,9 @@
       <b>Answer:</b>
     </p>
     <ol type="a">
-      <li>\(\operatorname{det}\ P= -2 \)</li>
-      <li>\(\operatorname{det}\ B= 2 \)</li>
-      <li>\(\operatorname{det}\ Q= 4 \)</li>
+      <li>\(\operatorname{det}\ C= -2 \)</li>
+      <li>\(\operatorname{det}\ M= -4 \)</li>
+      <li>\(\operatorname{det}\ N= 2 \)</li>
     </ol>
   </div>
 </div>
@@ -357,11 +357,11 @@
 <hr/>
 <h4 id='ex-11' class='exercise-heading'>Example 11 <small><a href='#ex-11'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( 6 \).</p>
+    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -2 \).</p>
     <ol type="a">
-      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \leftrightarrow R_4 \). What is \(\operatorname{det}\ M\)?</li>
-      <li>Let \(C\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to 2R_1 \). What is \(\operatorname{det}\ C\)?</li>
-      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \to R_3 + -2R_2 \). What is \(\operatorname{det}\ Q\)?</li>
+      <li>Let \(P\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \leftrightarrow R_3 \). What is \(\operatorname{det}\ P\)?</li>
+      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to R_1 + 2R_3 \). What is \(\operatorname{det}\ M\)?</li>
+      <li>Let \(B\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to -3R_1 \). What is \(\operatorname{det}\ B\)?</li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -369,9 +369,9 @@
       <b>Answer:</b>
     </p>
     <ol type="a">
-      <li>\(\operatorname{det}\ M= -6 \)</li>
-      <li>\(\operatorname{det}\ C= 12 \)</li>
-      <li>\(\operatorname{det}\ Q= 6 \)</li>
+      <li>\(\operatorname{det}\ P= 2 \)</li>
+      <li>\(\operatorname{det}\ M= -2 \)</li>
+      <li>\(\operatorname{det}\ B= 6 \)</li>
     </ol>
   </div>
 </div>
@@ -379,11 +379,11 @@
 <hr/>
 <h4 id='ex-12' class='exercise-heading'>Example 12 <small><a href='#ex-12'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( 4 \).</p>
+    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( 5 \).</p>
     <ol type="a">
-      <li>Let \(B\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to -3R_1 \). What is \(\operatorname{det}\ B\)?</li>
-      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \leftrightarrow R_2 \). What is \(\operatorname{det}\ Q\)?</li>
-      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to R_2 + -2R_4 \). What is \(\operatorname{det}\ M\)?</li>
+      <li>Let \(B\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \to R_4 + -3R_3 \). What is \(\operatorname{det}\ B\)?</li>
+      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \leftrightarrow R_3 \). What is \(\operatorname{det}\ N\)?</li>
+      <li>Let \(P\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to 4R_2 \). What is \(\operatorname{det}\ P\)?</li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -391,9 +391,9 @@
       <b>Answer:</b>
     </p>
     <ol type="a">
-      <li>\(\operatorname{det}\ B= -12 \)</li>
-      <li>\(\operatorname{det}\ Q= -4 \)</li>
-      <li>\(\operatorname{det}\ M= 4 \)</li>
+      <li>\(\operatorname{det}\ B= 5 \)</li>
+      <li>\(\operatorname{det}\ N= -5 \)</li>
+      <li>\(\operatorname{det}\ P= 20 \)</li>
     </ol>
   </div>
 </div>
@@ -401,11 +401,11 @@
 <hr/>
 <h4 id='ex-13' class='exercise-heading'>Example 13 <small><a href='#ex-13'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( 6 \).</p>
+    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( 7 \).</p>
     <ol type="a">
-      <li>Let \(C\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to 3R_2 \). What is \(\operatorname{det}\ C\)?</li>
-      <li>Let \(B\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to R_2 + -2R_1 \). What is \(\operatorname{det}\ B\)?</li>
-      <li>Let \(P\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \leftrightarrow R_3 \). What is \(\operatorname{det}\ P\)?</li>
+      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \to R_3 + 2R_4 \). What is \(\operatorname{det}\ N\)?</li>
+      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \leftrightarrow R_3 \). What is \(\operatorname{det}\ Q\)?</li>
+      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to -2R_1 \). What is \(\operatorname{det}\ M\)?</li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -413,9 +413,9 @@
       <b>Answer:</b>
     </p>
     <ol type="a">
-      <li>\(\operatorname{det}\ C= 18 \)</li>
-      <li>\(\operatorname{det}\ B= 6 \)</li>
-      <li>\(\operatorname{det}\ P= -6 \)</li>
+      <li>\(\operatorname{det}\ N= 7 \)</li>
+      <li>\(\operatorname{det}\ Q= -7 \)</li>
+      <li>\(\operatorname{det}\ M= -14 \)</li>
     </ol>
   </div>
 </div>
@@ -423,11 +423,11 @@
 <hr/>
 <h4 id='ex-14' class='exercise-heading'>Example 14 <small><a href='#ex-14'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( 7 \).</p>
+    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -5 \).</p>
     <ol type="a">
-      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \leftrightarrow R_3 \). What is \(\operatorname{det}\ Q\)?</li>
-      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \to R_3 + -5R_1 \). What is \(\operatorname{det}\ N\)?</li>
-      <li>Let \(C\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to 4R_1 \). What is \(\operatorname{det}\ C\)?</li>
+      <li>Let \(C\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \to R_3 + -4R_4 \). What is \(\operatorname{det}\ C\)?</li>
+      <li>Let \(B\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \leftrightarrow R_1 \). What is \(\operatorname{det}\ B\)?</li>
+      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to -5R_2 \). What is \(\operatorname{det}\ N\)?</li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -435,9 +435,9 @@
       <b>Answer:</b>
     </p>
     <ol type="a">
-      <li>\(\operatorname{det}\ Q= -7 \)</li>
-      <li>\(\operatorname{det}\ N= 7 \)</li>
-      <li>\(\operatorname{det}\ C= 28 \)</li>
+      <li>\(\operatorname{det}\ C= -5 \)</li>
+      <li>\(\operatorname{det}\ B= 5 \)</li>
+      <li>\(\operatorname{det}\ N= 25 \)</li>
     </ol>
   </div>
 </div>
@@ -445,11 +445,11 @@
 <hr/>
 <h4 id='ex-15' class='exercise-heading'>Example 15 <small><a href='#ex-15'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( 4 \).</p>
+    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( 6 \).</p>
     <ol type="a">
-      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to R_1 + -2R_3 \). What is \(\operatorname{det}\ M\)?</li>
-      <li>Let \(P\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \leftrightarrow R_4 \). What is \(\operatorname{det}\ P\)?</li>
-      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to 3R_1 \). What is \(\operatorname{det}\ N\)?</li>
+      <li>Let \(C\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \leftrightarrow R_4 \). What is \(\operatorname{det}\ C\)?</li>
+      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to R_2 + -4R_4 \). What is \(\operatorname{det}\ N\)?</li>
+      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \to 2R_3 \). What is \(\operatorname{det}\ Q\)?</li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -457,9 +457,9 @@
       <b>Answer:</b>
     </p>
     <ol type="a">
-      <li>\(\operatorname{det}\ M= 4 \)</li>
-      <li>\(\operatorname{det}\ P= -4 \)</li>
-      <li>\(\operatorname{det}\ N= 12 \)</li>
+      <li>\(\operatorname{det}\ C= -6 \)</li>
+      <li>\(\operatorname{det}\ N= 6 \)</li>
+      <li>\(\operatorname{det}\ Q= 12 \)</li>
     </ol>
   </div>
 </div>
@@ -469,9 +469,9 @@
   <div class="exercise-statement">
     <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -6 \).</p>
     <ol type="a">
-      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \to 5R_4 \). What is \(\operatorname{det}\ N\)?</li>
-      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \leftrightarrow R_1 \). What is \(\operatorname{det}\ M\)?</li>
-      <li>Let \(B\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \to R_4 + 4R_1 \). What is \(\operatorname{det}\ B\)?</li>
+      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \leftrightarrow R_1 \). What is \(\operatorname{det}\ N\)?</li>
+      <li>Let \(P\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \to R_4 + -3R_3 \). What is \(\operatorname{det}\ P\)?</li>
+      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \to 5R_4 \). What is \(\operatorname{det}\ M\)?</li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -479,9 +479,9 @@
       <b>Answer:</b>
     </p>
     <ol type="a">
-      <li>\(\operatorname{det}\ N= -30 \)</li>
-      <li>\(\operatorname{det}\ M= 6 \)</li>
-      <li>\(\operatorname{det}\ B= -6 \)</li>
+      <li>\(\operatorname{det}\ N= 6 \)</li>
+      <li>\(\operatorname{det}\ P= -6 \)</li>
+      <li>\(\operatorname{det}\ M= -30 \)</li>
     </ol>
   </div>
 </div>
@@ -489,11 +489,11 @@
 <hr/>
 <h4 id='ex-17' class='exercise-heading'>Example 17 <small><a href='#ex-17'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -4 \).</p>
+    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( 2 \).</p>
     <ol type="a">
-      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \leftrightarrow R_2 \). What is \(\operatorname{det}\ Q\)?</li>
-      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \to R_3 + 5R_1 \). What is \(\operatorname{det}\ M\)?</li>
-      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to -3R_1 \). What is \(\operatorname{det}\ N\)?</li>
+      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \leftrightarrow R_3 \). What is \(\operatorname{det}\ Q\)?</li>
+      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \to R_3 + -5R_4 \). What is \(\operatorname{det}\ M\)?</li>
+      <li>Let \(P\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to -2R_1 \). What is \(\operatorname{det}\ P\)?</li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -501,9 +501,9 @@
       <b>Answer:</b>
     </p>
     <ol type="a">
-      <li>\(\operatorname{det}\ Q= 4 \)</li>
-      <li>\(\operatorname{det}\ M= -4 \)</li>
-      <li>\(\operatorname{det}\ N= 12 \)</li>
+      <li>\(\operatorname{det}\ Q= -2 \)</li>
+      <li>\(\operatorname{det}\ M= 2 \)</li>
+      <li>\(\operatorname{det}\ P= -4 \)</li>
     </ol>
   </div>
 </div>
@@ -511,11 +511,11 @@
 <hr/>
 <h4 id='ex-18' class='exercise-heading'>Example 18 <small><a href='#ex-18'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( 5 \).</p>
+    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -6 \).</p>
     <ol type="a">
-      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \leftrightarrow R_3 \). What is \(\operatorname{det}\ N\)?</li>
-      <li>Let \(P\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \to -4R_3 \). What is \(\operatorname{det}\ P\)?</li>
-      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to R_1 + -4R_3 \). What is \(\operatorname{det}\ Q\)?</li>
+      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \leftrightarrow R_1 \). What is \(\operatorname{det}\ Q\)?</li>
+      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to R_1 + 4R_4 \). What is \(\operatorname{det}\ N\)?</li>
+      <li>Let \(C\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \to 2R_4 \). What is \(\operatorname{det}\ C\)?</li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -523,9 +523,9 @@
       <b>Answer:</b>
     </p>
     <ol type="a">
-      <li>\(\operatorname{det}\ N= -5 \)</li>
-      <li>\(\operatorname{det}\ P= -20 \)</li>
-      <li>\(\operatorname{det}\ Q= 5 \)</li>
+      <li>\(\operatorname{det}\ Q= 6 \)</li>
+      <li>\(\operatorname{det}\ N= -6 \)</li>
+      <li>\(\operatorname{det}\ C= -12 \)</li>
     </ol>
   </div>
 </div>
@@ -533,11 +533,11 @@
 <hr/>
 <h4 id='ex-19' class='exercise-heading'>Example 19 <small><a href='#ex-19'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( 2 \).</p>
+    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( 3 \).</p>
     <ol type="a">
-      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \to -3R_4 \). What is \(\operatorname{det}\ N\)?</li>
-      <li>Let \(B\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \to R_3 + 5R_1 \). What is \(\operatorname{det}\ B\)?</li>
-      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \leftrightarrow R_1 \). What is \(\operatorname{det}\ Q\)?</li>
+      <li>Let \(P\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \to R_3 + -2R_2 \). What is \(\operatorname{det}\ P\)?</li>
+      <li>Let \(C\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to -5R_1 \). What is \(\operatorname{det}\ C\)?</li>
+      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \leftrightarrow R_3 \). What is \(\operatorname{det}\ M\)?</li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -545,9 +545,9 @@
       <b>Answer:</b>
     </p>
     <ol type="a">
-      <li>\(\operatorname{det}\ N= -6 \)</li>
-      <li>\(\operatorname{det}\ B= 2 \)</li>
-      <li>\(\operatorname{det}\ Q= -2 \)</li>
+      <li>\(\operatorname{det}\ P= 3 \)</li>
+      <li>\(\operatorname{det}\ C= -15 \)</li>
+      <li>\(\operatorname{det}\ M= -3 \)</li>
     </ol>
   </div>
 </div>
@@ -555,11 +555,11 @@
 <hr/>
 <h4 id='ex-20' class='exercise-heading'>Example 20 <small><a href='#ex-20'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( 7 \).</p>
+    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -5 \).</p>
     <ol type="a">
-      <li>Let \(P\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \leftrightarrow R_4 \). What is \(\operatorname{det}\ P\)?</li>
-      <li>Let \(C\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to R_2 + -3R_3 \). What is \(\operatorname{det}\ C\)?</li>
-      <li>Let \(B\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \to 3R_4 \). What is \(\operatorname{det}\ B\)?</li>
+      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \leftrightarrow R_3 \). What is \(\operatorname{det}\ Q\)?</li>
+      <li>Let \(B\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to R_2 + -3R_4 \). What is \(\operatorname{det}\ B\)?</li>
+      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \to -2R_3 \). What is \(\operatorname{det}\ N\)?</li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -567,9 +567,9 @@
       <b>Answer:</b>
     </p>
     <ol type="a">
-      <li>\(\operatorname{det}\ P= -7 \)</li>
-      <li>\(\operatorname{det}\ C= 7 \)</li>
-      <li>\(\operatorname{det}\ B= 21 \)</li>
+      <li>\(\operatorname{det}\ Q= 5 \)</li>
+      <li>\(\operatorname{det}\ B= -5 \)</li>
+      <li>\(\operatorname{det}\ N= 10 \)</li>
     </ol>
   </div>
 </div>
@@ -577,32 +577,10 @@
 <hr/>
 <h4 id='ex-21' class='exercise-heading'>Example 21 <small><a href='#ex-21'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( 7 \).</p>
+    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( 3 \).</p>
     <ol type="a">
-      <li>Let \(C\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \to R_3 + -4R_4 \). What is \(\operatorname{det}\ C\)?</li>
-      <li>Let \(B\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \leftrightarrow R_4 \). What is \(\operatorname{det}\ B\)?</li>
-      <li>Let \(P\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \to 5R_3 \). What is \(\operatorname{det}\ P\)?</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(\operatorname{det}\ C= 7 \)</li>
-      <li>\(\operatorname{det}\ B= -7 \)</li>
-      <li>\(\operatorname{det}\ P= 35 \)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-22' class='exercise-heading'>Example 22 <small><a href='#ex-22'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( 6 \).</p>
-    <ol type="a">
-      <li>Let \(P\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to 2R_1 \). What is \(\operatorname{det}\ P\)?</li>
-      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to R_2 + -5R_3 \). What is \(\operatorname{det}\ M\)?</li>
+      <li>Let \(P\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to R_1 + 2R_4 \). What is \(\operatorname{det}\ P\)?</li>
+      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to 2R_2 \). What is \(\operatorname{det}\ M\)?</li>
       <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \leftrightarrow R_2 \). What is \(\operatorname{det}\ Q\)?</li>
     </ol>
   </div>
@@ -611,9 +589,31 @@
       <b>Answer:</b>
     </p>
     <ol type="a">
-      <li>\(\operatorname{det}\ P= 12 \)</li>
+      <li>\(\operatorname{det}\ P= 3 \)</li>
       <li>\(\operatorname{det}\ M= 6 \)</li>
-      <li>\(\operatorname{det}\ Q= -6 \)</li>
+      <li>\(\operatorname{det}\ Q= -3 \)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-22' class='exercise-heading'>Example 22 <small><a href='#ex-22'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -4 \).</p>
+    <ol type="a">
+      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \to R_4 + -3R_3 \). What is \(\operatorname{det}\ N\)?</li>
+      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to -2R_1 \). What is \(\operatorname{det}\ M\)?</li>
+      <li>Let \(B\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \leftrightarrow R_2 \). What is \(\operatorname{det}\ B\)?</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(\operatorname{det}\ N= -4 \)</li>
+      <li>\(\operatorname{det}\ M= 8 \)</li>
+      <li>\(\operatorname{det}\ B= 4 \)</li>
     </ol>
   </div>
 </div>
@@ -621,11 +621,11 @@
 <hr/>
 <h4 id='ex-23' class='exercise-heading'>Example 23 <small><a href='#ex-23'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -3 \).</p>
+    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( 5 \).</p>
     <ol type="a">
-      <li>Let \(C\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \leftrightarrow R_4 \). What is \(\operatorname{det}\ C\)?</li>
-      <li>Let \(P\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to 2R_2 \). What is \(\operatorname{det}\ P\)?</li>
-      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \to R_3 + -3R_4 \). What is \(\operatorname{det}\ Q\)?</li>
+      <li>Let \(P\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to 4R_1 \). What is \(\operatorname{det}\ P\)?</li>
+      <li>Let \(B\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \to R_4 + -3R_2 \). What is \(\operatorname{det}\ B\)?</li>
+      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \leftrightarrow R_4 \). What is \(\operatorname{det}\ N\)?</li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -633,9 +633,9 @@
       <b>Answer:</b>
     </p>
     <ol type="a">
-      <li>\(\operatorname{det}\ C= 3 \)</li>
-      <li>\(\operatorname{det}\ P= -6 \)</li>
-      <li>\(\operatorname{det}\ Q= -3 \)</li>
+      <li>\(\operatorname{det}\ P= 20 \)</li>
+      <li>\(\operatorname{det}\ B= 5 \)</li>
+      <li>\(\operatorname{det}\ N= -5 \)</li>
     </ol>
   </div>
 </div>
@@ -643,11 +643,11 @@
 <hr/>
 <h4 id='ex-24' class='exercise-heading'>Example 24 <small><a href='#ex-24'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -4 \).</p>
+    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -5 \).</p>
     <ol type="a">
-      <li>Let \(B\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to -4R_1 \). What is \(\operatorname{det}\ B\)?</li>
-      <li>Let \(C\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to R_1 + 4R_4 \). What is \(\operatorname{det}\ C\)?</li>
-      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \leftrightarrow R_2 \). What is \(\operatorname{det}\ N\)?</li>
+      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \leftrightarrow R_3 \). What is \(\operatorname{det}\ N\)?</li>
+      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to R_2 + 3R_3 \). What is \(\operatorname{det}\ Q\)?</li>
+      <li>Let \(C\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \to 4R_3 \). What is \(\operatorname{det}\ C\)?</li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -655,9 +655,9 @@
       <b>Answer:</b>
     </p>
     <ol type="a">
-      <li>\(\operatorname{det}\ B= 16 \)</li>
-      <li>\(\operatorname{det}\ C= -4 \)</li>
-      <li>\(\operatorname{det}\ N= 4 \)</li>
+      <li>\(\operatorname{det}\ N= 5 \)</li>
+      <li>\(\operatorname{det}\ Q= -5 \)</li>
+      <li>\(\operatorname{det}\ C= -20 \)</li>
     </ol>
   </div>
 </div>
@@ -665,11 +665,11 @@
 <hr/>
 <h4 id='ex-25' class='exercise-heading'>Example 25 <small><a href='#ex-25'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -6 \).</p>
+    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -4 \).</p>
     <ol type="a">
-      <li>Let \(P\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \to R_3 + 2R_4 \). What is \(\operatorname{det}\ P\)?</li>
-      <li>Let \(C\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \leftrightarrow R_4 \). What is \(\operatorname{det}\ C\)?</li>
-      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to 2R_2 \). What is \(\operatorname{det}\ M\)?</li>
+      <li>Let \(C\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \leftrightarrow R_4 \). What is \(\operatorname{det}\ C\)?</li>
+      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to -3R_1 \). What is \(\operatorname{det}\ M\)?</li>
+      <li>Let \(P\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \to R_3 + -4R_4 \). What is \(\operatorname{det}\ P\)?</li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -677,9 +677,9 @@
       <b>Answer:</b>
     </p>
     <ol type="a">
-      <li>\(\operatorname{det}\ P= -6 \)</li>
-      <li>\(\operatorname{det}\ C= 6 \)</li>
-      <li>\(\operatorname{det}\ M= -12 \)</li>
+      <li>\(\operatorname{det}\ C= 4 \)</li>
+      <li>\(\operatorname{det}\ M= 12 \)</li>
+      <li>\(\operatorname{det}\ P= -4 \)</li>
     </ol>
   </div>
 </div>
@@ -689,9 +689,9 @@
   <div class="exercise-statement">
     <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( 2 \).</p>
     <ol type="a">
-      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \to 5R_4 \). What is \(\operatorname{det}\ Q\)?</li>
-      <li>Let \(B\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \leftrightarrow R_1 \). What is \(\operatorname{det}\ B\)?</li>
-      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \to R_3 + -2R_1 \). What is \(\operatorname{det}\ N\)?</li>
+      <li>Let \(C\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \leftrightarrow R_4 \). What is \(\operatorname{det}\ C\)?</li>
+      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \to R_4 + 5R_3 \). What is \(\operatorname{det}\ Q\)?</li>
+      <li>Let \(P\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to -5R_1 \). What is \(\operatorname{det}\ P\)?</li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -699,9 +699,9 @@
       <b>Answer:</b>
     </p>
     <ol type="a">
-      <li>\(\operatorname{det}\ Q= 10 \)</li>
-      <li>\(\operatorname{det}\ B= -2 \)</li>
-      <li>\(\operatorname{det}\ N= 2 \)</li>
+      <li>\(\operatorname{det}\ C= -2 \)</li>
+      <li>\(\operatorname{det}\ Q= 2 \)</li>
+      <li>\(\operatorname{det}\ P= -10 \)</li>
     </ol>
   </div>
 </div>
@@ -709,11 +709,11 @@
 <hr/>
 <h4 id='ex-27' class='exercise-heading'>Example 27 <small><a href='#ex-27'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -5 \).</p>
+    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -6 \).</p>
     <ol type="a">
-      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to 4R_1 \). What is \(\operatorname{det}\ Q\)?</li>
-      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to R_2 + 4R_4 \). What is \(\operatorname{det}\ N\)?</li>
-      <li>Let \(P\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \leftrightarrow R_2 \). What is \(\operatorname{det}\ P\)?</li>
+      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to 5R_2 \). What is \(\operatorname{det}\ Q\)?</li>
+      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \leftrightarrow R_3 \). What is \(\operatorname{det}\ N\)?</li>
+      <li>Let \(C\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to R_2 + 2R_4 \). What is \(\operatorname{det}\ C\)?</li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -721,9 +721,9 @@
       <b>Answer:</b>
     </p>
     <ol type="a">
-      <li>\(\operatorname{det}\ Q= -20 \)</li>
-      <li>\(\operatorname{det}\ N= -5 \)</li>
-      <li>\(\operatorname{det}\ P= 5 \)</li>
+      <li>\(\operatorname{det}\ Q= -30 \)</li>
+      <li>\(\operatorname{det}\ N= 6 \)</li>
+      <li>\(\operatorname{det}\ C= -6 \)</li>
     </ol>
   </div>
 </div>
@@ -731,11 +731,11 @@
 <hr/>
 <h4 id='ex-28' class='exercise-heading'>Example 28 <small><a href='#ex-28'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -5 \).</p>
+    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -6 \).</p>
     <ol type="a">
-      <li>Let \(C\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \to -2R_4 \). What is \(\operatorname{det}\ C\)?</li>
-      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \to R_4 + 3R_1 \). What is \(\operatorname{det}\ N\)?</li>
-      <li>Let \(B\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \leftrightarrow R_4 \). What is \(\operatorname{det}\ B\)?</li>
+      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \to 4R_3 \). What is \(\operatorname{det}\ N\)?</li>
+      <li>Let \(P\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \leftrightarrow R_3 \). What is \(\operatorname{det}\ P\)?</li>
+      <li>Let \(C\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \to R_3 + -2R_2 \). What is \(\operatorname{det}\ C\)?</li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -743,9 +743,9 @@
       <b>Answer:</b>
     </p>
     <ol type="a">
-      <li>\(\operatorname{det}\ C= 10 \)</li>
-      <li>\(\operatorname{det}\ N= -5 \)</li>
-      <li>\(\operatorname{det}\ B= 5 \)</li>
+      <li>\(\operatorname{det}\ N= -24 \)</li>
+      <li>\(\operatorname{det}\ P= 6 \)</li>
+      <li>\(\operatorname{det}\ C= -6 \)</li>
     </ol>
   </div>
 </div>
@@ -753,11 +753,11 @@
 <hr/>
 <h4 id='ex-29' class='exercise-heading'>Example 29 <small><a href='#ex-29'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -7 \).</p>
+    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -6 \).</p>
     <ol type="a">
-      <li>Let \(P\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \to 3R_3 \). What is \(\operatorname{det}\ P\)?</li>
-      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \leftrightarrow R_4 \). What is \(\operatorname{det}\ Q\)?</li>
-      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to R_1 + 3R_2 \). What is \(\operatorname{det}\ M\)?</li>
+      <li>Let \(C\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \leftrightarrow R_2 \). What is \(\operatorname{det}\ C\)?</li>
+      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to R_2 + 4R_4 \). What is \(\operatorname{det}\ M\)?</li>
+      <li>Let \(P\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \to -5R_3 \). What is \(\operatorname{det}\ P\)?</li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -765,9 +765,9 @@
       <b>Answer:</b>
     </p>
     <ol type="a">
-      <li>\(\operatorname{det}\ P= -21 \)</li>
-      <li>\(\operatorname{det}\ Q= 7 \)</li>
-      <li>\(\operatorname{det}\ M= -7 \)</li>
+      <li>\(\operatorname{det}\ C= 6 \)</li>
+      <li>\(\operatorname{det}\ M= -6 \)</li>
+      <li>\(\operatorname{det}\ P= 30 \)</li>
     </ol>
   </div>
 </div>
@@ -775,11 +775,11 @@
 <hr/>
 <h4 id='ex-30' class='exercise-heading'>Example 30 <small><a href='#ex-30'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( 4 \).</p>
+    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( 5 \).</p>
     <ol type="a">
-      <li>Let \(P\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \to -2R_3 \). What is \(\operatorname{det}\ P\)?</li>
-      <li>Let \(B\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \leftrightarrow R_1 \). What is \(\operatorname{det}\ B\)?</li>
-      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \to R_4 + 2R_1 \). What is \(\operatorname{det}\ M\)?</li>
+      <li>Let \(B\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \leftrightarrow R_1 \). What is \(\operatorname{det}\ B\)?</li>
+      <li>Let \(P\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to R_1 + -5R_4 \). What is \(\operatorname{det}\ P\)?</li>
+      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to -3R_1 \). What is \(\operatorname{det}\ Q\)?</li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -787,9 +787,9 @@
       <b>Answer:</b>
     </p>
     <ol type="a">
-      <li>\(\operatorname{det}\ P= -8 \)</li>
-      <li>\(\operatorname{det}\ B= -4 \)</li>
-      <li>\(\operatorname{det}\ M= 4 \)</li>
+      <li>\(\operatorname{det}\ B= -5 \)</li>
+      <li>\(\operatorname{det}\ P= 5 \)</li>
+      <li>\(\operatorname{det}\ Q= -15 \)</li>
     </ol>
   </div>
 </div>
@@ -797,11 +797,11 @@
 <hr/>
 <h4 id='ex-31' class='exercise-heading'>Example 31 <small><a href='#ex-31'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -2 \).</p>
+    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( 3 \).</p>
     <ol type="a">
-      <li>Let \(P\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to -3R_2 \). What is \(\operatorname{det}\ P\)?</li>
-      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \leftrightarrow R_4 \). What is \(\operatorname{det}\ N\)?</li>
-      <li>Let \(B\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to R_1 + 3R_3 \). What is \(\operatorname{det}\ B\)?</li>
+      <li>Let \(B\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \leftrightarrow R_4 \). What is \(\operatorname{det}\ B\)?</li>
+      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to R_2 + 3R_3 \). What is \(\operatorname{det}\ N\)?</li>
+      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \to -5R_3 \). What is \(\operatorname{det}\ Q\)?</li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -809,9 +809,9 @@
       <b>Answer:</b>
     </p>
     <ol type="a">
-      <li>\(\operatorname{det}\ P= 6 \)</li>
-      <li>\(\operatorname{det}\ N= 2 \)</li>
-      <li>\(\operatorname{det}\ B= -2 \)</li>
+      <li>\(\operatorname{det}\ B= -3 \)</li>
+      <li>\(\operatorname{det}\ N= 3 \)</li>
+      <li>\(\operatorname{det}\ Q= -15 \)</li>
     </ol>
   </div>
 </div>
@@ -819,11 +819,11 @@
 <hr/>
 <h4 id='ex-32' class='exercise-heading'>Example 32 <small><a href='#ex-32'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -7 \).</p>
+    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -2 \).</p>
     <ol type="a">
-      <li>Let \(C\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \to 5R_4 \). What is \(\operatorname{det}\ C\)?</li>
-      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \leftrightarrow R_4 \). What is \(\operatorname{det}\ M\)?</li>
-      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \to R_4 + -5R_1 \). What is \(\operatorname{det}\ N\)?</li>
+      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \leftrightarrow R_3 \). What is \(\operatorname{det}\ Q\)?</li>
+      <li>Let \(B\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to R_1 + -2R_3 \). What is \(\operatorname{det}\ B\)?</li>
+      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \to 4R_3 \). What is \(\operatorname{det}\ N\)?</li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -831,9 +831,9 @@
       <b>Answer:</b>
     </p>
     <ol type="a">
-      <li>\(\operatorname{det}\ C= -35 \)</li>
-      <li>\(\operatorname{det}\ M= 7 \)</li>
-      <li>\(\operatorname{det}\ N= -7 \)</li>
+      <li>\(\operatorname{det}\ Q= 2 \)</li>
+      <li>\(\operatorname{det}\ B= -2 \)</li>
+      <li>\(\operatorname{det}\ N= -8 \)</li>
     </ol>
   </div>
 </div>
@@ -841,363 +841,11 @@
 <hr/>
 <h4 id='ex-33' class='exercise-heading'>Example 33 <small><a href='#ex-33'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -3 \).</p>
+    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( 4 \).</p>
     <ol type="a">
-      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to 2R_1 \). What is \(\operatorname{det}\ M\)?</li>
-      <li>Let \(C\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \to R_3 + -3R_4 \). What is \(\operatorname{det}\ C\)?</li>
-      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \leftrightarrow R_2 \). What is \(\operatorname{det}\ Q\)?</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(\operatorname{det}\ M= -6 \)</li>
-      <li>\(\operatorname{det}\ C= -3 \)</li>
-      <li>\(\operatorname{det}\ Q= 3 \)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-34' class='exercise-heading'>Example 34 <small><a href='#ex-34'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( 7 \).</p>
-    <ol type="a">
-      <li>Let \(B\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \to 4R_3 \). What is \(\operatorname{det}\ B\)?</li>
-      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \leftrightarrow R_3 \). What is \(\operatorname{det}\ M\)?</li>
-      <li>Let \(P\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to R_1 + -5R_2 \). What is \(\operatorname{det}\ P\)?</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(\operatorname{det}\ B= 28 \)</li>
-      <li>\(\operatorname{det}\ M= -7 \)</li>
-      <li>\(\operatorname{det}\ P= 7 \)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-35' class='exercise-heading'>Example 35 <small><a href='#ex-35'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( 6 \).</p>
-    <ol type="a">
-      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to R_2 + -3R_3 \). What is \(\operatorname{det}\ M\)?</li>
-      <li>Let \(P\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \leftrightarrow R_3 \). What is \(\operatorname{det}\ P\)?</li>
-      <li>Let \(C\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to -2R_1 \). What is \(\operatorname{det}\ C\)?</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(\operatorname{det}\ M= 6 \)</li>
-      <li>\(\operatorname{det}\ P= -6 \)</li>
-      <li>\(\operatorname{det}\ C= -12 \)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-36' class='exercise-heading'>Example 36 <small><a href='#ex-36'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -7 \).</p>
-    <ol type="a">
-      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to 4R_1 \). What is \(\operatorname{det}\ M\)?</li>
-      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \leftrightarrow R_2 \). What is \(\operatorname{det}\ N\)?</li>
-      <li>Let \(P\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to R_2 + 4R_3 \). What is \(\operatorname{det}\ P\)?</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(\operatorname{det}\ M= -28 \)</li>
-      <li>\(\operatorname{det}\ N= 7 \)</li>
-      <li>\(\operatorname{det}\ P= -7 \)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-37' class='exercise-heading'>Example 37 <small><a href='#ex-37'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( 6 \).</p>
-    <ol type="a">
-      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \leftrightarrow R_2 \). What is \(\operatorname{det}\ Q\)?</li>
-      <li>Let \(C\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to 3R_1 \). What is \(\operatorname{det}\ C\)?</li>
-      <li>Let \(P\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to R_1 + -3R_4 \). What is \(\operatorname{det}\ P\)?</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(\operatorname{det}\ Q= -6 \)</li>
-      <li>\(\operatorname{det}\ C= 18 \)</li>
-      <li>\(\operatorname{det}\ P= 6 \)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-38' class='exercise-heading'>Example 38 <small><a href='#ex-38'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( 7 \).</p>
-    <ol type="a">
-      <li>Let \(P\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \to -5R_4 \). What is \(\operatorname{det}\ P\)?</li>
-      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to R_1 + -5R_4 \). What is \(\operatorname{det}\ M\)?</li>
-      <li>Let \(C\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \leftrightarrow R_1 \). What is \(\operatorname{det}\ C\)?</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(\operatorname{det}\ P= -35 \)</li>
-      <li>\(\operatorname{det}\ M= 7 \)</li>
-      <li>\(\operatorname{det}\ C= -7 \)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-39' class='exercise-heading'>Example 39 <small><a href='#ex-39'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -3 \).</p>
-    <ol type="a">
-      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to R_1 + -3R_2 \). What is \(\operatorname{det}\ N\)?</li>
-      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \leftrightarrow R_1 \). What is \(\operatorname{det}\ M\)?</li>
-      <li>Let \(C\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to -2R_1 \). What is \(\operatorname{det}\ C\)?</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(\operatorname{det}\ N= -3 \)</li>
-      <li>\(\operatorname{det}\ M= 3 \)</li>
-      <li>\(\operatorname{det}\ C= 6 \)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-40' class='exercise-heading'>Example 40 <small><a href='#ex-40'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( 5 \).</p>
-    <ol type="a">
-      <li>Let \(P\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to 5R_1 \). What is \(\operatorname{det}\ P\)?</li>
+      <li>Let \(P\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to R_1 + 4R_3 \). What is \(\operatorname{det}\ P\)?</li>
+      <li>Let \(B\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to 5R_2 \). What is \(\operatorname{det}\ B\)?</li>
       <li>Let \(C\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \leftrightarrow R_4 \). What is \(\operatorname{det}\ C\)?</li>
-      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \to R_4 + 3R_1 \). What is \(\operatorname{det}\ M\)?</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(\operatorname{det}\ P= 25 \)</li>
-      <li>\(\operatorname{det}\ C= -5 \)</li>
-      <li>\(\operatorname{det}\ M= 5 \)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-41' class='exercise-heading'>Example 41 <small><a href='#ex-41'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( 6 \).</p>
-    <ol type="a">
-      <li>Let \(B\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to R_1 + 3R_3 \). What is \(\operatorname{det}\ B\)?</li>
-      <li>Let \(C\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to -2R_1 \). What is \(\operatorname{det}\ C\)?</li>
-      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \leftrightarrow R_3 \). What is \(\operatorname{det}\ Q\)?</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(\operatorname{det}\ B= 6 \)</li>
-      <li>\(\operatorname{det}\ C= -12 \)</li>
-      <li>\(\operatorname{det}\ Q= -6 \)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-42' class='exercise-heading'>Example 42 <small><a href='#ex-42'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( 6 \).</p>
-    <ol type="a">
-      <li>Let \(C\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \to R_3 + -4R_2 \). What is \(\operatorname{det}\ C\)?</li>
-      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to -3R_2 \). What is \(\operatorname{det}\ N\)?</li>
-      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \leftrightarrow R_1 \). What is \(\operatorname{det}\ M\)?</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(\operatorname{det}\ C= 6 \)</li>
-      <li>\(\operatorname{det}\ N= -18 \)</li>
-      <li>\(\operatorname{det}\ M= -6 \)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-43' class='exercise-heading'>Example 43 <small><a href='#ex-43'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -3 \).</p>
-    <ol type="a">
-      <li>Let \(B\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \to 4R_4 \). What is \(\operatorname{det}\ B\)?</li>
-      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to R_1 + -4R_4 \). What is \(\operatorname{det}\ Q\)?</li>
-      <li>Let \(C\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \leftrightarrow R_1 \). What is \(\operatorname{det}\ C\)?</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(\operatorname{det}\ B= -12 \)</li>
-      <li>\(\operatorname{det}\ Q= -3 \)</li>
-      <li>\(\operatorname{det}\ C= 3 \)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-44' class='exercise-heading'>Example 44 <small><a href='#ex-44'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -2 \).</p>
-    <ol type="a">
-      <li>Let \(P\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \leftrightarrow R_1 \). What is \(\operatorname{det}\ P\)?</li>
-      <li>Let \(C\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \to R_4 + 4R_1 \). What is \(\operatorname{det}\ C\)?</li>
-      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \to 5R_4 \). What is \(\operatorname{det}\ Q\)?</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(\operatorname{det}\ P= 2 \)</li>
-      <li>\(\operatorname{det}\ C= -2 \)</li>
-      <li>\(\operatorname{det}\ Q= -10 \)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-45' class='exercise-heading'>Example 45 <small><a href='#ex-45'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( 3 \).</p>
-    <ol type="a">
-      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to -3R_1 \). What is \(\operatorname{det}\ N\)?</li>
-      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to R_1 + 5R_4 \). What is \(\operatorname{det}\ M\)?</li>
-      <li>Let \(C\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \leftrightarrow R_2 \). What is \(\operatorname{det}\ C\)?</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(\operatorname{det}\ N= -9 \)</li>
-      <li>\(\operatorname{det}\ M= 3 \)</li>
-      <li>\(\operatorname{det}\ C= -3 \)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-46' class='exercise-heading'>Example 46 <small><a href='#ex-46'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -3 \).</p>
-    <ol type="a">
-      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \to 3R_3 \). What is \(\operatorname{det}\ M\)?</li>
-      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to R_1 + 5R_3 \). What is \(\operatorname{det}\ Q\)?</li>
-      <li>Let \(C\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \leftrightarrow R_4 \). What is \(\operatorname{det}\ C\)?</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(\operatorname{det}\ M= -9 \)</li>
-      <li>\(\operatorname{det}\ Q= -3 \)</li>
-      <li>\(\operatorname{det}\ C= 3 \)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-47' class='exercise-heading'>Example 47 <small><a href='#ex-47'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( 7 \).</p>
-    <ol type="a">
-      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \to 3R_3 \). What is \(\operatorname{det}\ M\)?</li>
-      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \leftrightarrow R_2 \). What is \(\operatorname{det}\ N\)?</li>
-      <li>Let \(P\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to R_1 + -4R_3 \). What is \(\operatorname{det}\ P\)?</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(\operatorname{det}\ M= 21 \)</li>
-      <li>\(\operatorname{det}\ N= -7 \)</li>
-      <li>\(\operatorname{det}\ P= 7 \)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-48' class='exercise-heading'>Example 48 <small><a href='#ex-48'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -4 \).</p>
-    <ol type="a">
-      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to R_2 + 5R_4 \). What is \(\operatorname{det}\ M\)?</li>
-      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \leftrightarrow R_2 \). What is \(\operatorname{det}\ Q\)?</li>
-      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to -2R_2 \). What is \(\operatorname{det}\ N\)?</li>
-    </ol>
-  </div>
-  <div class="exercise-answer">
-    <p>
-      <b>Answer:</b>
-    </p>
-    <ol type="a">
-      <li>\(\operatorname{det}\ M= -4 \)</li>
-      <li>\(\operatorname{det}\ Q= 4 \)</li>
-      <li>\(\operatorname{det}\ N= 8 \)</li>
-    </ol>
-  </div>
-</div>
-
-<hr/>
-<h4 id='ex-49' class='exercise-heading'>Example 49 <small><a href='#ex-49'>🔗</a></small></h4><div class="exercise">
-  <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -4 \).</p>
-    <ol type="a">
-      <li>Let \(P\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \leftrightarrow R_4 \). What is \(\operatorname{det}\ P\)?</li>
-      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to 4R_1 \). What is \(\operatorname{det}\ M\)?</li>
-      <li>Let \(C\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \to R_3 + 3R_4 \). What is \(\operatorname{det}\ C\)?</li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -1206,20 +854,20 @@
     </p>
     <ol type="a">
       <li>\(\operatorname{det}\ P= 4 \)</li>
-      <li>\(\operatorname{det}\ M= -16 \)</li>
+      <li>\(\operatorname{det}\ B= 20 \)</li>
       <li>\(\operatorname{det}\ C= -4 \)</li>
     </ol>
   </div>
 </div>
 
 <hr/>
-<h4 id='ex-50' class='exercise-heading'>Example 50 <small><a href='#ex-50'>🔗</a></small></h4><div class="exercise">
+<h4 id='ex-34' class='exercise-heading'>Example 34 <small><a href='#ex-34'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement">
-    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( 6 \).</p>
+    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -6 \).</p>
     <ol type="a">
-      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \to 5R_4 \). What is \(\operatorname{det}\ Q\)?</li>
-      <li>Let \(P\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \leftrightarrow R_3 \). What is \(\operatorname{det}\ P\)?</li>
-      <li>Let \(B\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to R_1 + 4R_2 \). What is \(\operatorname{det}\ B\)?</li>
+      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to -3R_2 \). What is \(\operatorname{det}\ Q\)?</li>
+      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to R_1 + 4R_4 \). What is \(\operatorname{det}\ M\)?</li>
+      <li>Let \(B\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \leftrightarrow R_2 \). What is \(\operatorname{det}\ B\)?</li>
     </ol>
   </div>
   <div class="exercise-answer">
@@ -1227,9 +875,361 @@
       <b>Answer:</b>
     </p>
     <ol type="a">
-      <li>\(\operatorname{det}\ Q= 30 \)</li>
-      <li>\(\operatorname{det}\ P= -6 \)</li>
+      <li>\(\operatorname{det}\ Q= 18 \)</li>
+      <li>\(\operatorname{det}\ M= -6 \)</li>
       <li>\(\operatorname{det}\ B= 6 \)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-35' class='exercise-heading'>Example 35 <small><a href='#ex-35'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -5 \).</p>
+    <ol type="a">
+      <li>Let \(B\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to -2R_2 \). What is \(\operatorname{det}\ B\)?</li>
+      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \leftrightarrow R_3 \). What is \(\operatorname{det}\ N\)?</li>
+      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \to R_3 + -3R_4 \). What is \(\operatorname{det}\ M\)?</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(\operatorname{det}\ B= 10 \)</li>
+      <li>\(\operatorname{det}\ N= 5 \)</li>
+      <li>\(\operatorname{det}\ M= -5 \)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-36' class='exercise-heading'>Example 36 <small><a href='#ex-36'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( 4 \).</p>
+    <ol type="a">
+      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to 3R_1 \). What is \(\operatorname{det}\ Q\)?</li>
+      <li>Let \(C\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \leftrightarrow R_1 \). What is \(\operatorname{det}\ C\)?</li>
+      <li>Let \(B\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to R_1 + -2R_4 \). What is \(\operatorname{det}\ B\)?</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(\operatorname{det}\ Q= 12 \)</li>
+      <li>\(\operatorname{det}\ C= -4 \)</li>
+      <li>\(\operatorname{det}\ B= 4 \)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-37' class='exercise-heading'>Example 37 <small><a href='#ex-37'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -4 \).</p>
+    <ol type="a">
+      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \leftrightarrow R_1 \). What is \(\operatorname{det}\ Q\)?</li>
+      <li>Let \(C\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to 3R_2 \). What is \(\operatorname{det}\ C\)?</li>
+      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to R_1 + -3R_3 \). What is \(\operatorname{det}\ N\)?</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(\operatorname{det}\ Q= 4 \)</li>
+      <li>\(\operatorname{det}\ C= -12 \)</li>
+      <li>\(\operatorname{det}\ N= -4 \)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-38' class='exercise-heading'>Example 38 <small><a href='#ex-38'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -2 \).</p>
+    <ol type="a">
+      <li>Let \(B\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \to R_4 + 4R_2 \). What is \(\operatorname{det}\ B\)?</li>
+      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \leftrightarrow R_4 \). What is \(\operatorname{det}\ Q\)?</li>
+      <li>Let \(C\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \to -4R_3 \). What is \(\operatorname{det}\ C\)?</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(\operatorname{det}\ B= -2 \)</li>
+      <li>\(\operatorname{det}\ Q= 2 \)</li>
+      <li>\(\operatorname{det}\ C= 8 \)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-39' class='exercise-heading'>Example 39 <small><a href='#ex-39'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -5 \).</p>
+    <ol type="a">
+      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to 5R_2 \). What is \(\operatorname{det}\ Q\)?</li>
+      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to R_2 + -4R_4 \). What is \(\operatorname{det}\ M\)?</li>
+      <li>Let \(P\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \leftrightarrow R_2 \). What is \(\operatorname{det}\ P\)?</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(\operatorname{det}\ Q= -25 \)</li>
+      <li>\(\operatorname{det}\ M= -5 \)</li>
+      <li>\(\operatorname{det}\ P= 5 \)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-40' class='exercise-heading'>Example 40 <small><a href='#ex-40'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -4 \).</p>
+    <ol type="a">
+      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to R_2 + 2R_4 \). What is \(\operatorname{det}\ Q\)?</li>
+      <li>Let \(C\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \leftrightarrow R_1 \). What is \(\operatorname{det}\ C\)?</li>
+      <li>Let \(B\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to 3R_2 \). What is \(\operatorname{det}\ B\)?</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(\operatorname{det}\ Q= -4 \)</li>
+      <li>\(\operatorname{det}\ C= 4 \)</li>
+      <li>\(\operatorname{det}\ B= -12 \)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-41' class='exercise-heading'>Example 41 <small><a href='#ex-41'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -6 \).</p>
+    <ol type="a">
+      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \leftrightarrow R_1 \). What is \(\operatorname{det}\ N\)?</li>
+      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to 4R_2 \). What is \(\operatorname{det}\ Q\)?</li>
+      <li>Let \(B\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to R_2 + -4R_3 \). What is \(\operatorname{det}\ B\)?</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(\operatorname{det}\ N= 6 \)</li>
+      <li>\(\operatorname{det}\ Q= -24 \)</li>
+      <li>\(\operatorname{det}\ B= -6 \)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-42' class='exercise-heading'>Example 42 <small><a href='#ex-42'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -7 \).</p>
+    <ol type="a">
+      <li>Let \(B\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to -5R_2 \). What is \(\operatorname{det}\ B\)?</li>
+      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \leftrightarrow R_1 \). What is \(\operatorname{det}\ Q\)?</li>
+      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \to R_3 + -5R_2 \). What is \(\operatorname{det}\ M\)?</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(\operatorname{det}\ B= 35 \)</li>
+      <li>\(\operatorname{det}\ Q= 7 \)</li>
+      <li>\(\operatorname{det}\ M= -7 \)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-43' class='exercise-heading'>Example 43 <small><a href='#ex-43'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -5 \).</p>
+    <ol type="a">
+      <li>Let \(B\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to R_2 + -4R_3 \). What is \(\operatorname{det}\ B\)?</li>
+      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \leftrightarrow R_2 \). What is \(\operatorname{det}\ Q\)?</li>
+      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to 3R_1 \). What is \(\operatorname{det}\ M\)?</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(\operatorname{det}\ B= -5 \)</li>
+      <li>\(\operatorname{det}\ Q= 5 \)</li>
+      <li>\(\operatorname{det}\ M= -15 \)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-44' class='exercise-heading'>Example 44 <small><a href='#ex-44'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -6 \).</p>
+    <ol type="a">
+      <li>Let \(C\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to 4R_1 \). What is \(\operatorname{det}\ C\)?</li>
+      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \leftrightarrow R_2 \). What is \(\operatorname{det}\ M\)?</li>
+      <li>Let \(B\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \to R_3 + 3R_4 \). What is \(\operatorname{det}\ B\)?</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(\operatorname{det}\ C= -24 \)</li>
+      <li>\(\operatorname{det}\ M= 6 \)</li>
+      <li>\(\operatorname{det}\ B= -6 \)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-45' class='exercise-heading'>Example 45 <small><a href='#ex-45'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -2 \).</p>
+    <ol type="a">
+      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to -5R_2 \). What is \(\operatorname{det}\ N\)?</li>
+      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to R_2 + -5R_4 \). What is \(\operatorname{det}\ Q\)?</li>
+      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \leftrightarrow R_2 \). What is \(\operatorname{det}\ M\)?</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(\operatorname{det}\ N= 10 \)</li>
+      <li>\(\operatorname{det}\ Q= -2 \)</li>
+      <li>\(\operatorname{det}\ M= 2 \)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-46' class='exercise-heading'>Example 46 <small><a href='#ex-46'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( 2 \).</p>
+    <ol type="a">
+      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to 5R_1 \). What is \(\operatorname{det}\ N\)?</li>
+      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \to R_4 + -5R_2 \). What is \(\operatorname{det}\ M\)?</li>
+      <li>Let \(C\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \leftrightarrow R_3 \). What is \(\operatorname{det}\ C\)?</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(\operatorname{det}\ N= 10 \)</li>
+      <li>\(\operatorname{det}\ M= 2 \)</li>
+      <li>\(\operatorname{det}\ C= -2 \)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-47' class='exercise-heading'>Example 47 <small><a href='#ex-47'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( -4 \).</p>
+    <ol type="a">
+      <li>Let \(B\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \to R_4 + -4R_3 \). What is \(\operatorname{det}\ B\)?</li>
+      <li>Let \(Q\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \to 5R_3 \). What is \(\operatorname{det}\ Q\)?</li>
+      <li>Let \(C\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \leftrightarrow R_4 \). What is \(\operatorname{det}\ C\)?</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(\operatorname{det}\ B= -4 \)</li>
+      <li>\(\operatorname{det}\ Q= -20 \)</li>
+      <li>\(\operatorname{det}\ C= 4 \)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-48' class='exercise-heading'>Example 48 <small><a href='#ex-48'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( 3 \).</p>
+    <ol type="a">
+      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \to R_2 + -2R_1 \). What is \(\operatorname{det}\ M\)?</li>
+      <li>Let \(P\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \to -2R_4 \). What is \(\operatorname{det}\ P\)?</li>
+      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \leftrightarrow R_3 \). What is \(\operatorname{det}\ N\)?</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(\operatorname{det}\ M= 3 \)</li>
+      <li>\(\operatorname{det}\ P= -6 \)</li>
+      <li>\(\operatorname{det}\ N= -3 \)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-49' class='exercise-heading'>Example 49 <small><a href='#ex-49'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( 4 \).</p>
+    <ol type="a">
+      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \leftrightarrow R_1 \). What is \(\operatorname{det}\ N\)?</li>
+      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \to R_4 + -5R_1 \). What is \(\operatorname{det}\ M\)?</li>
+      <li>Let \(C\) be the matrix obtained from \(A\) by applying the row operation \( R_1 \to 3R_1 \). What is \(\operatorname{det}\ C\)?</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(\operatorname{det}\ N= -4 \)</li>
+      <li>\(\operatorname{det}\ M= 4 \)</li>
+      <li>\(\operatorname{det}\ C= 12 \)</li>
+    </ol>
+  </div>
+</div>
+
+<hr/>
+<h4 id='ex-50' class='exercise-heading'>Example 50 <small><a href='#ex-50'>🔗</a></small></h4><div class="exercise">
+  <div class="exercise-statement">
+    <p>Let \(A\) be a \(4 \times 4\) matrix with determinant \( 7 \).</p>
+    <ol type="a">
+      <li>Let \(M\) be the matrix obtained from \(A\) by applying the row operation \( R_4 \to R_4 + 4R_3 \). What is \(\operatorname{det}\ M\)?</li>
+      <li>Let \(P\) be the matrix obtained from \(A\) by applying the row operation \( R_3 \to 5R_3 \). What is \(\operatorname{det}\ P\)?</li>
+      <li>Let \(N\) be the matrix obtained from \(A\) by applying the row operation \( R_2 \leftrightarrow R_3 \). What is \(\operatorname{det}\ N\)?</li>
+    </ol>
+  </div>
+  <div class="exercise-answer">
+    <p>
+      <b>Answer:</b>
+    </p>
+    <ol type="a">
+      <li>\(\operatorname{det}\ M= 7 \)</li>
+      <li>\(\operatorname{det}\ P= 35 \)</li>
+      <li>\(\operatorname{det}\ N= -7 \)</li>
     </ol>
   </div>
 </div>

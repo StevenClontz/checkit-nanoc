@@ -1,0 +1,15 @@
+.dropdown-menu{
+  max-height:50vh;
+  overflow-y:auto;
+}
+.exercise,.exercise-answer {
+  overflow-x:auto;
+}
+.exercise-heading {
+  padding-top: 50px;
+}
+.jumbotron .bg-cover {
+    background-image:
+        linear-gradient(to bottom, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.9) 100%),
+        url(/assets/jumbotron.svg) /* credit https://pixabay.com/illustrations/expectrum-rainbow-lines-colour-1191724/ */
+}
