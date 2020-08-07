@@ -22,7 +22,7 @@ class ExercisesDataSource < Nanoc::DataSource
                 content << "<hr/>\n"
                 build_path = "#{bank_path}/build/#{slug}"
                 50.times do |seed_int|
-                    content << "<h4>Example #{seed_int+1}</h4>"
+                    content << "<h4 id='ex-#{seed_int+1}' class='exercise-heading'>Example #{seed_int+1} <small><a href='#ex-#{seed_int+1}'>🔗</a></small></h4>"
                     content << File.read("#{build_path}/#{seed_int.to_s.rjust(4, "0")}.html")
                     content << "<hr/>\n"
                 end
