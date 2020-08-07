@@ -9,6 +9,8 @@
   padding-top: 50px;
 }
 .jumbotron.bg-cover {
+    background-position: center;
+    background-size: cover;
     background-image:
         linear-gradient(to bottom, rgba(255,255,255,0.7) 0%,rgba(255,255,255,0.95) 100%),
         url(/assets/jumbotron.svg) /* credit https://pixabay.com/illustrations/expectrum-rainbow-lines-colour-1191724/ */
