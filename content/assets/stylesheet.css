@@ -5,8 +5,8 @@
 .exercise,.exercise-answer {
   overflow-x:auto;
 }
-.exercise-heading {
-  padding-top: 50px;
+.exercise-hr {
+  padding: 20px;
 }
 .jumbotron.bg-cover {
     background-position: center;

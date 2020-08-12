@@ -19,12 +19,11 @@ class ExercisesDataSource < Nanoc::DataSource
                 title = objective.at_xpath("title").content
                 slug = objective.at_xpath("slug").content
                 content = "<h2>#{slug} - #{title}</h2>\n"
-                content << "<hr/>\n"
                 build_path = "#{bank_path}/build/#{slug}"
                 50.times do |seed_int|
-                    content << "<h4 id='ex-#{seed_int+1}' class='exercise-heading'>Example #{seed_int+1} <small><a href='#ex-#{seed_int+1}'>🔗</a></small></h4>"
+                    content << "<hr id='ex-#{seed_int+1}' class='exercise-hr'/>\n"
+                    content << "<h4 class='exercise-heading'>Example #{seed_int+1} <small><a href='#ex-#{seed_int+1}'>🔗</a></small></h4>"
                     content << File.read("#{build_path}/#{seed_int.to_s.rjust(4, "0")}.html")
-                    content << "<hr/>\n"
                 end
                 item = new_item(
                     content,
