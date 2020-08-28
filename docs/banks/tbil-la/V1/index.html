@@ -137,8 +137,8 @@
 <hr id='ex-1' class='exercise-hr'/>
 <h4 class='exercise-heading'>Example 1 <small><a href='#ex-1'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement"><p> Let \(V\) be the set of all pairs \((x,y)\) of real numbers together with the following operations: </p>
-                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} x_{2},\,y_{1} y_{2}\right)  \\c \odot (x,y) &amp;= \left(x^{c},\,y^{c}\right) . \\ \end{align*}
-            <p> (a) Show that there exists an additive identity element, that is: </p><p>\[\text{There exists }(w,z)\in V\text{ such that }(x,y)\oplus(w,z)=(x,y).
+                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} + x_{2} + 3,\,y_{1} + y_{2}\right)  \\c \odot (x,y) &amp;= \left(c x,\,y^{c}\right) . \\ \end{align*}
+            <p> (a) Show that vector addition is associative, that is: </p><p>\[\left((x_1,y_1)\oplus(x_2,y_2)\right)\oplus(x_3,y_3)=(x_1,y_1)\oplus\left((x_2,y_2)\oplus(x_3,y_3)\right).
     \]</p><p> (b) Explain why \(V\) nonetheless is not a vector space. </p></div>
   <div class="exercise-answer">
     <p>
@@ -146,7 +146,8 @@
     </p>
     <p>\(V\) is not a vector space, which may be shown by demonstrating that any one of the following properties do not hold: </p>
     <ul>
-      <li>additive inverses do not always exist</li>
+      <li>scalar multiplication does not distribute over vector addition</li>
+      <li>scalar multiplication does not distribute over scalar addition</li>
     </ul>
   </div>
 </div>
@@ -154,8 +155,8 @@
 <hr id='ex-2' class='exercise-hr'/>
 <h4 class='exercise-heading'>Example 2 <small><a href='#ex-2'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement"><p> Let \(V\) be the set of all pairs \((x,y)\) of real numbers together with the following operations: </p>
-                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} x_{2},\,y_{1} y_{2}\right)  \\c \odot (x,y) &amp;= \left(x^{c},\,y^{c}\right) . \\ \end{align*}
-            <p> (a) Show that there exists an additive identity element, that is: </p><p>\[\text{There exists }(w,z)\in V\text{ such that }(x,y)\oplus(w,z)=(x,y).
+                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} + x_{2},\,y_{1} + y_{2}\right)  \\c \odot (x,y) &amp;= \left(c^{3} x,\,c^{2} y\right) . \\ \end{align*}
+            <p> (a) Show that scalar multiplication distributes over vector addition, that is: </p><p>\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).
     \]</p><p> (b) Explain why \(V\) nonetheless is not a vector space. </p></div>
   <div class="exercise-answer">
     <p>
@@ -163,7 +164,7 @@
     </p>
     <p>\(V\) is not a vector space, which may be shown by demonstrating that any one of the following properties do not hold: </p>
     <ul>
-      <li>additive inverses do not always exist</li>
+      <li>scalar multiplication does not distribute over scalar addition</li>
     </ul>
   </div>
 </div>
@@ -171,7 +172,7 @@
 <hr id='ex-3' class='exercise-hr'/>
 <h4 class='exercise-heading'>Example 3 <small><a href='#ex-3'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement"><p> Let \(V\) be the set of all pairs \((x,y)\) of real numbers together with the following operations: </p>
-                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} x_{2},\,y_{1} y_{2}\right)  \\c \odot (x,y) &amp;= \left(x^{c},\,y^{c}\right) . \\ \end{align*}
+                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(2 \, x_{1} x_{2},\,y_{1} + 3 \, y_{2}\right)  \\c \odot (x,y) &amp;= \left(c x,\,0\right) . \\ \end{align*}
             <p> (a) Show that there exists an additive identity element, that is: </p><p>\[\text{There exists }(w,z)\in V\text{ such that }(x,y)\oplus(w,z)=(x,y).
     \]</p><p> (b) Explain why \(V\) nonetheless is not a vector space. </p></div>
   <div class="exercise-answer">
@@ -180,7 +181,12 @@
     </p>
     <p>\(V\) is not a vector space, which may be shown by demonstrating that any one of the following properties do not hold: </p>
     <ul>
+      <li>vector addition is not associative</li>
+      <li>vector addition is not commutative</li>
       <li>additive inverses do not always exist</li>
+      <li>1 is not a scalar multiplication identity</li>
+      <li>scalar multiplication does not distribute over vector addition</li>
+      <li>scalar multiplication does not distribute over scalar addition</li>
     </ul>
   </div>
 </div>
@@ -188,8 +194,8 @@
 <hr id='ex-4' class='exercise-hr'/>
 <h4 class='exercise-heading'>Example 4 <small><a href='#ex-4'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement"><p> Let \(V\) be the set of all pairs \((x,y)\) of real numbers together with the following operations: </p>
-                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} x_{2},\,y_{1} y_{2}\right)  \\c \odot (x,y) &amp;= \left(x^{c},\,y^{c}\right) . \\ \end{align*}
-            <p> (a) Show that there exists an additive identity element, that is: </p><p>\[\text{There exists }(w,z)\in V\text{ such that }(x,y)\oplus(w,z)=(x,y).
+                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} + x_{2},\,y_{1} + y_{2}\right)  \\c \odot (x,y) &amp;= \left(c^{2} x,\,c^{2} y\right) . \\ \end{align*}
+            <p> (a) Show that scalar multiplication distributes over vector addition, that is: </p><p>\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).
     \]</p><p> (b) Explain why \(V\) nonetheless is not a vector space. </p></div>
   <div class="exercise-answer">
     <p>
@@ -197,7 +203,7 @@
     </p>
     <p>\(V\) is not a vector space, which may be shown by demonstrating that any one of the following properties do not hold: </p>
     <ul>
-      <li>additive inverses do not always exist</li>
+      <li>scalar multiplication does not distribute over scalar addition</li>
     </ul>
   </div>
 </div>
@@ -205,8 +211,8 @@
 <hr id='ex-5' class='exercise-hr'/>
 <h4 class='exercise-heading'>Example 5 <small><a href='#ex-5'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement"><p> Let \(V\) be the set of all pairs \((x,y)\) of real numbers together with the following operations: </p>
-                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} x_{2},\,y_{1} y_{2}\right)  \\c \odot (x,y) &amp;= \left(x^{c},\,y^{c}\right) . \\ \end{align*}
-            <p> (a) Show that there exists an additive identity element, that is: </p><p>\[\text{There exists }(w,z)\in V\text{ such that }(x,y)\oplus(w,z)=(x,y).
+                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(2 \, x_{1} + 2 \, x_{2},\,3 \, y_{1} + 3 \, y_{2}\right)  \\c \odot (x,y) &amp;= \left(c x,\,c y\right) . \\ \end{align*}
+            <p> (a) Show that scalar multiplication distributes over vector addition, that is: </p><p>\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).
     \]</p><p> (b) Explain why \(V\) nonetheless is not a vector space. </p></div>
   <div class="exercise-answer">
     <p>
@@ -214,7 +220,8 @@
     </p>
     <p>\(V\) is not a vector space, which may be shown by demonstrating that any one of the following properties do not hold: </p>
     <ul>
-      <li>additive inverses do not always exist</li>
+      <li>vector addition is not associative</li>
+      <li>scalar multiplication does not distribute over scalar addition</li>
     </ul>
   </div>
 </div>
@@ -222,8 +229,8 @@
 <hr id='ex-6' class='exercise-hr'/>
 <h4 class='exercise-heading'>Example 6 <small><a href='#ex-6'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement"><p> Let \(V\) be the set of all pairs \((x,y)\) of real numbers together with the following operations: </p>
-                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} x_{2},\,y_{1} y_{2}\right)  \\c \odot (x,y) &amp;= \left(x^{c},\,y^{c}\right) . \\ \end{align*}
-            <p> (a) Show that there exists an additive identity element, that is: </p><p>\[\text{There exists }(w,z)\in V\text{ such that }(x,y)\oplus(w,z)=(x,y).
+                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(4 \, x_{1} + x_{2},\,y_{1} + y_{2}\right)  \\c \odot (x,y) &amp;= \left(c x,\,c y\right) . \\ \end{align*}
+            <p> (a) Show that scalar multiplication distributes over vector addition, that is: </p><p>\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).
     \]</p><p> (b) Explain why \(V\) nonetheless is not a vector space. </p></div>
   <div class="exercise-answer">
     <p>
@@ -231,7 +238,9 @@
     </p>
     <p>\(V\) is not a vector space, which may be shown by demonstrating that any one of the following properties do not hold: </p>
     <ul>
-      <li>additive inverses do not always exist</li>
+      <li>vector addition is not associative</li>
+      <li>vector addition is not commutative</li>
+      <li>scalar multiplication does not distribute over scalar addition</li>
     </ul>
   </div>
 </div>
@@ -239,8 +248,8 @@
 <hr id='ex-7' class='exercise-hr'/>
 <h4 class='exercise-heading'>Example 7 <small><a href='#ex-7'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement"><p> Let \(V\) be the set of all pairs \((x,y)\) of real numbers together with the following operations: </p>
-                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} x_{2},\,y_{1} y_{2}\right)  \\c \odot (x,y) &amp;= \left(x^{c},\,y^{c}\right) . \\ \end{align*}
-            <p> (a) Show that there exists an additive identity element, that is: </p><p>\[\text{There exists }(w,z)\in V\text{ such that }(x,y)\oplus(w,z)=(x,y).
+                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} + x_{2} + 3,\,y_{1} + y_{2}\right)  \\c \odot (x,y) &amp;= \left(c x,\,y^{c}\right) . \\ \end{align*}
+            <p> (a) Show that vector addition is associative, that is: </p><p>\[\left((x_1,y_1)\oplus(x_2,y_2)\right)\oplus(x_3,y_3)=(x_1,y_1)\oplus\left((x_2,y_2)\oplus(x_3,y_3)\right).
     \]</p><p> (b) Explain why \(V\) nonetheless is not a vector space. </p></div>
   <div class="exercise-answer">
     <p>
@@ -248,7 +257,8 @@
     </p>
     <p>\(V\) is not a vector space, which may be shown by demonstrating that any one of the following properties do not hold: </p>
     <ul>
-      <li>additive inverses do not always exist</li>
+      <li>scalar multiplication does not distribute over vector addition</li>
+      <li>scalar multiplication does not distribute over scalar addition</li>
     </ul>
   </div>
 </div>
@@ -256,7 +266,7 @@
 <hr id='ex-8' class='exercise-hr'/>
 <h4 class='exercise-heading'>Example 8 <small><a href='#ex-8'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement"><p> Let \(V\) be the set of all pairs \((x,y)\) of real numbers together with the following operations: </p>
-                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} x_{2},\,y_{1} y_{2}\right)  \\c \odot (x,y) &amp;= \left(x^{c},\,y^{c}\right) . \\ \end{align*}
+                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(2 \, x_{1} x_{2},\,y_{1} + 4 \, y_{2}\right)  \\c \odot (x,y) &amp;= \left(c x,\,0\right) . \\ \end{align*}
             <p> (a) Show that there exists an additive identity element, that is: </p><p>\[\text{There exists }(w,z)\in V\text{ such that }(x,y)\oplus(w,z)=(x,y).
     \]</p><p> (b) Explain why \(V\) nonetheless is not a vector space. </p></div>
   <div class="exercise-answer">
@@ -265,7 +275,12 @@
     </p>
     <p>\(V\) is not a vector space, which may be shown by demonstrating that any one of the following properties do not hold: </p>
     <ul>
+      <li>vector addition is not associative</li>
+      <li>vector addition is not commutative</li>
       <li>additive inverses do not always exist</li>
+      <li>1 is not a scalar multiplication identity</li>
+      <li>scalar multiplication does not distribute over vector addition</li>
+      <li>scalar multiplication does not distribute over scalar addition</li>
     </ul>
   </div>
 </div>
@@ -273,8 +288,8 @@
 <hr id='ex-9' class='exercise-hr'/>
 <h4 class='exercise-heading'>Example 9 <small><a href='#ex-9'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement"><p> Let \(V\) be the set of all pairs \((x,y)\) of real numbers together with the following operations: </p>
-                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} x_{2},\,y_{1} y_{2}\right)  \\c \odot (x,y) &amp;= \left(x^{c},\,y^{c}\right) . \\ \end{align*}
-            <p> (a) Show that there exists an additive identity element, that is: </p><p>\[\text{There exists }(w,z)\in V\text{ such that }(x,y)\oplus(w,z)=(x,y).
+                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} + x_{2},\,y_{1} + y_{2} - 2\right)  \\c \odot (x,y) &amp;= \left(c x,\,c y\right) . \\ \end{align*}
+            <p> (a) Show that vector addition is associative, that is: </p><p>\[\left((x_1,y_1)\oplus(x_2,y_2)\right)\oplus(x_3,y_3)=(x_1,y_1)\oplus\left((x_2,y_2)\oplus(x_3,y_3)\right).
     \]</p><p> (b) Explain why \(V\) nonetheless is not a vector space. </p></div>
   <div class="exercise-answer">
     <p>
@@ -282,7 +297,8 @@
     </p>
     <p>\(V\) is not a vector space, which may be shown by demonstrating that any one of the following properties do not hold: </p>
     <ul>
-      <li>additive inverses do not always exist</li>
+      <li>scalar multiplication does not distribute over vector addition</li>
+      <li>scalar multiplication does not distribute over scalar addition</li>
     </ul>
   </div>
 </div>
@@ -290,8 +306,8 @@
 <hr id='ex-10' class='exercise-hr'/>
 <h4 class='exercise-heading'>Example 10 <small><a href='#ex-10'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement"><p> Let \(V\) be the set of all pairs \((x,y)\) of real numbers together with the following operations: </p>
-                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} x_{2},\,y_{1} y_{2}\right)  \\c \odot (x,y) &amp;= \left(x^{c},\,y^{c}\right) . \\ \end{align*}
-            <p> (a) Show that there exists an additive identity element, that is: </p><p>\[\text{There exists }(w,z)\in V\text{ such that }(x,y)\oplus(w,z)=(x,y).
+                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} + x_{2},\,y_{1} + y_{2}\right)  \\c \odot (x,y) &amp;= \left(c x,\,c y - 6 \, c + 6\right) . \\ \end{align*}
+            <p> (a) Show that scalar multiplication is associative, that is: </p><p>\[a\odot(b\odot (x,y))=(ab)\odot(x,y).
     \]</p><p> (b) Explain why \(V\) nonetheless is not a vector space. </p></div>
   <div class="exercise-answer">
     <p>
@@ -299,7 +315,8 @@
     </p>
     <p>\(V\) is not a vector space, which may be shown by demonstrating that any one of the following properties do not hold: </p>
     <ul>
-      <li>additive inverses do not always exist</li>
+      <li>scalar multiplication does not distribute over vector addition</li>
+      <li>scalar multiplication does not distribute over scalar addition</li>
     </ul>
   </div>
 </div>
@@ -307,8 +324,8 @@
 <hr id='ex-11' class='exercise-hr'/>
 <h4 class='exercise-heading'>Example 11 <small><a href='#ex-11'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement"><p> Let \(V\) be the set of all pairs \((x,y)\) of real numbers together with the following operations: </p>
-                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} x_{2},\,y_{1} y_{2}\right)  \\c \odot (x,y) &amp;= \left(x^{c},\,y^{c}\right) . \\ \end{align*}
-            <p> (a) Show that there exists an additive identity element, that is: </p><p>\[\text{There exists }(w,z)\in V\text{ such that }(x,y)\oplus(w,z)=(x,y).
+                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} + x_{2},\,y_{1} + y_{2}\right)  \\c \odot (x,y) &amp;= \left(c x,\,c y - 6 \, c + 6\right) . \\ \end{align*}
+            <p> (a) Show that scalar multiplication is associative, that is: </p><p>\[a\odot(b\odot (x,y))=(ab)\odot(x,y).
     \]</p><p> (b) Explain why \(V\) nonetheless is not a vector space. </p></div>
   <div class="exercise-answer">
     <p>
@@ -316,7 +333,8 @@
     </p>
     <p>\(V\) is not a vector space, which may be shown by demonstrating that any one of the following properties do not hold: </p>
     <ul>
-      <li>additive inverses do not always exist</li>
+      <li>scalar multiplication does not distribute over vector addition</li>
+      <li>scalar multiplication does not distribute over scalar addition</li>
     </ul>
   </div>
 </div>
@@ -324,8 +342,8 @@
 <hr id='ex-12' class='exercise-hr'/>
 <h4 class='exercise-heading'>Example 12 <small><a href='#ex-12'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement"><p> Let \(V\) be the set of all pairs \((x,y)\) of real numbers together with the following operations: </p>
-                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} x_{2},\,y_{1} y_{2}\right)  \\c \odot (x,y) &amp;= \left(x^{c},\,y^{c}\right) . \\ \end{align*}
-            <p> (a) Show that there exists an additive identity element, that is: </p><p>\[\text{There exists }(w,z)\in V\text{ such that }(x,y)\oplus(w,z)=(x,y).
+                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} + x_{2},\,y_{1} + y_{2} - 5\right)  \\c \odot (x,y) &amp;= \left(c x,\,c y\right) . \\ \end{align*}
+            <p> (a) Show that vector addition is associative, that is: </p><p>\[\left((x_1,y_1)\oplus(x_2,y_2)\right)\oplus(x_3,y_3)=(x_1,y_1)\oplus\left((x_2,y_2)\oplus(x_3,y_3)\right).
     \]</p><p> (b) Explain why \(V\) nonetheless is not a vector space. </p></div>
   <div class="exercise-answer">
     <p>
@@ -333,7 +351,8 @@
     </p>
     <p>\(V\) is not a vector space, which may be shown by demonstrating that any one of the following properties do not hold: </p>
     <ul>
-      <li>additive inverses do not always exist</li>
+      <li>scalar multiplication does not distribute over vector addition</li>
+      <li>scalar multiplication does not distribute over scalar addition</li>
     </ul>
   </div>
 </div>
@@ -341,7 +360,7 @@
 <hr id='ex-13' class='exercise-hr'/>
 <h4 class='exercise-heading'>Example 13 <small><a href='#ex-13'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement"><p> Let \(V\) be the set of all pairs \((x,y)\) of real numbers together with the following operations: </p>
-                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} x_{2},\,y_{1} y_{2}\right)  \\c \odot (x,y) &amp;= \left(x^{c},\,y^{c}\right) . \\ \end{align*}
+                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(4 \, x_{1} x_{2},\,y_{1} + 3 \, y_{2}\right)  \\c \odot (x,y) &amp;= \left(c x,\,0\right) . \\ \end{align*}
             <p> (a) Show that there exists an additive identity element, that is: </p><p>\[\text{There exists }(w,z)\in V\text{ such that }(x,y)\oplus(w,z)=(x,y).
     \]</p><p> (b) Explain why \(V\) nonetheless is not a vector space. </p></div>
   <div class="exercise-answer">
@@ -350,7 +369,12 @@
     </p>
     <p>\(V\) is not a vector space, which may be shown by demonstrating that any one of the following properties do not hold: </p>
     <ul>
+      <li>vector addition is not associative</li>
+      <li>vector addition is not commutative</li>
       <li>additive inverses do not always exist</li>
+      <li>1 is not a scalar multiplication identity</li>
+      <li>scalar multiplication does not distribute over vector addition</li>
+      <li>scalar multiplication does not distribute over scalar addition</li>
     </ul>
   </div>
 </div>
@@ -358,8 +382,8 @@
 <hr id='ex-14' class='exercise-hr'/>
 <h4 class='exercise-heading'>Example 14 <small><a href='#ex-14'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement"><p> Let \(V\) be the set of all pairs \((x,y)\) of real numbers together with the following operations: </p>
-                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} x_{2},\,y_{1} y_{2}\right)  \\c \odot (x,y) &amp;= \left(x^{c},\,y^{c}\right) . \\ \end{align*}
-            <p> (a) Show that there exists an additive identity element, that is: </p><p>\[\text{There exists }(w,z)\in V\text{ such that }(x,y)\oplus(w,z)=(x,y).
+                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(4 \, x_{1} + x_{2},\,y_{1} + 3 \, y_{2}\right)  \\c \odot (x,y) &amp;= \left(c x,\,c y\right) . \\ \end{align*}
+            <p> (a) Show that scalar multiplication distributes over vector addition, that is: </p><p>\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).
     \]</p><p> (b) Explain why \(V\) nonetheless is not a vector space. </p></div>
   <div class="exercise-answer">
     <p>
@@ -367,7 +391,9 @@
     </p>
     <p>\(V\) is not a vector space, which may be shown by demonstrating that any one of the following properties do not hold: </p>
     <ul>
-      <li>additive inverses do not always exist</li>
+      <li>vector addition is not associative</li>
+      <li>vector addition is not commutative</li>
+      <li>scalar multiplication does not distribute over scalar addition</li>
     </ul>
   </div>
 </div>
@@ -375,8 +401,8 @@
 <hr id='ex-15' class='exercise-hr'/>
 <h4 class='exercise-heading'>Example 15 <small><a href='#ex-15'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement"><p> Let \(V\) be the set of all pairs \((x,y)\) of real numbers together with the following operations: </p>
-                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} x_{2},\,y_{1} y_{2}\right)  \\c \odot (x,y) &amp;= \left(x^{c},\,y^{c}\right) . \\ \end{align*}
-            <p> (a) Show that there exists an additive identity element, that is: </p><p>\[\text{There exists }(w,z)\in V\text{ such that }(x,y)\oplus(w,z)=(x,y).
+                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(4 \, x_{1} + x_{2},\,y_{1} + 3 \, y_{2}\right)  \\c \odot (x,y) &amp;= \left(c x,\,c y\right) . \\ \end{align*}
+            <p> (a) Show that scalar multiplication distributes over vector addition, that is: </p><p>\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).
     \]</p><p> (b) Explain why \(V\) nonetheless is not a vector space. </p></div>
   <div class="exercise-answer">
     <p>
@@ -384,7 +410,9 @@
     </p>
     <p>\(V\) is not a vector space, which may be shown by demonstrating that any one of the following properties do not hold: </p>
     <ul>
-      <li>additive inverses do not always exist</li>
+      <li>vector addition is not associative</li>
+      <li>vector addition is not commutative</li>
+      <li>scalar multiplication does not distribute over scalar addition</li>
     </ul>
   </div>
 </div>
@@ -392,8 +420,8 @@
 <hr id='ex-16' class='exercise-hr'/>
 <h4 class='exercise-heading'>Example 16 <small><a href='#ex-16'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement"><p> Let \(V\) be the set of all pairs \((x,y)\) of real numbers together with the following operations: </p>
-                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} x_{2},\,y_{1} y_{2}\right)  \\c \odot (x,y) &amp;= \left(x^{c},\,y^{c}\right) . \\ \end{align*}
-            <p> (a) Show that there exists an additive identity element, that is: </p><p>\[\text{There exists }(w,z)\in V\text{ such that }(x,y)\oplus(w,z)=(x,y).
+                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} + x_{2},\,y_{1} + y_{2}\right)  \\c \odot (x,y) &amp;= \left(c x,\,c y - 3 \, c + 3\right) . \\ \end{align*}
+            <p> (a) Show that scalar multiplication is associative, that is: </p><p>\[a\odot(b\odot (x,y))=(ab)\odot(x,y).
     \]</p><p> (b) Explain why \(V\) nonetheless is not a vector space. </p></div>
   <div class="exercise-answer">
     <p>
@@ -401,7 +429,8 @@
     </p>
     <p>\(V\) is not a vector space, which may be shown by demonstrating that any one of the following properties do not hold: </p>
     <ul>
-      <li>additive inverses do not always exist</li>
+      <li>scalar multiplication does not distribute over vector addition</li>
+      <li>scalar multiplication does not distribute over scalar addition</li>
     </ul>
   </div>
 </div>
@@ -409,8 +438,8 @@
 <hr id='ex-17' class='exercise-hr'/>
 <h4 class='exercise-heading'>Example 17 <small><a href='#ex-17'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement"><p> Let \(V\) be the set of all pairs \((x,y)\) of real numbers together with the following operations: </p>
-                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} x_{2},\,y_{1} y_{2}\right)  \\c \odot (x,y) &amp;= \left(x^{c},\,y^{c}\right) . \\ \end{align*}
-            <p> (a) Show that there exists an additive identity element, that is: </p><p>\[\text{There exists }(w,z)\in V\text{ such that }(x,y)\oplus(w,z)=(x,y).
+                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} + x_{2},\,y_{1} + y_{2}\right)  \\c \odot (x,y) &amp;= \left(c x,\,c y - 3 \, c + 3\right) . \\ \end{align*}
+            <p> (a) Show that scalar multiplication is associative, that is: </p><p>\[a\odot(b\odot (x,y))=(ab)\odot(x,y).
     \]</p><p> (b) Explain why \(V\) nonetheless is not a vector space. </p></div>
   <div class="exercise-answer">
     <p>
@@ -418,7 +447,8 @@
     </p>
     <p>\(V\) is not a vector space, which may be shown by demonstrating that any one of the following properties do not hold: </p>
     <ul>
-      <li>additive inverses do not always exist</li>
+      <li>scalar multiplication does not distribute over vector addition</li>
+      <li>scalar multiplication does not distribute over scalar addition</li>
     </ul>
   </div>
 </div>
@@ -426,8 +456,8 @@
 <hr id='ex-18' class='exercise-hr'/>
 <h4 class='exercise-heading'>Example 18 <small><a href='#ex-18'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement"><p> Let \(V\) be the set of all pairs \((x,y)\) of real numbers together with the following operations: </p>
-                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} x_{2},\,y_{1} y_{2}\right)  \\c \odot (x,y) &amp;= \left(x^{c},\,y^{c}\right) . \\ \end{align*}
-            <p> (a) Show that there exists an additive identity element, that is: </p><p>\[\text{There exists }(w,z)\in V\text{ such that }(x,y)\oplus(w,z)=(x,y).
+                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} + x_{2} + 2,\,y_{1} + y_{2}\right)  \\c \odot (x,y) &amp;= \left(c x,\,y^{c}\right) . \\ \end{align*}
+            <p> (a) Show that vector addition is associative, that is: </p><p>\[\left((x_1,y_1)\oplus(x_2,y_2)\right)\oplus(x_3,y_3)=(x_1,y_1)\oplus\left((x_2,y_2)\oplus(x_3,y_3)\right).
     \]</p><p> (b) Explain why \(V\) nonetheless is not a vector space. </p></div>
   <div class="exercise-answer">
     <p>
@@ -435,7 +465,8 @@
     </p>
     <p>\(V\) is not a vector space, which may be shown by demonstrating that any one of the following properties do not hold: </p>
     <ul>
-      <li>additive inverses do not always exist</li>
+      <li>scalar multiplication does not distribute over vector addition</li>
+      <li>scalar multiplication does not distribute over scalar addition</li>
     </ul>
   </div>
 </div>
@@ -443,8 +474,8 @@
 <hr id='ex-19' class='exercise-hr'/>
 <h4 class='exercise-heading'>Example 19 <small><a href='#ex-19'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement"><p> Let \(V\) be the set of all pairs \((x,y)\) of real numbers together with the following operations: </p>
-                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} x_{2},\,y_{1} y_{2}\right)  \\c \odot (x,y) &amp;= \left(x^{c},\,y^{c}\right) . \\ \end{align*}
-            <p> (a) Show that there exists an additive identity element, that is: </p><p>\[\text{There exists }(w,z)\in V\text{ such that }(x,y)\oplus(w,z)=(x,y).
+                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} + x_{2} + 5,\,\sqrt{y_{1}^{2} + y_{2}^{2}}\right)  \\c \odot (x,y) &amp;= \left(c x,\,c y\right) . \\ \end{align*}
+            <p> (a) Show that vector addition is associative, that is: </p><p>\[\left((x_1,y_1)\oplus(x_2,y_2)\right)\oplus(x_3,y_3)=(x_1,y_1)\oplus\left((x_2,y_2)\oplus(x_3,y_3)\right).
     \]</p><p> (b) Explain why \(V\) nonetheless is not a vector space. </p></div>
   <div class="exercise-answer">
     <p>
@@ -452,7 +483,9 @@
     </p>
     <p>\(V\) is not a vector space, which may be shown by demonstrating that any one of the following properties do not hold: </p>
     <ul>
-      <li>additive inverses do not always exist</li>
+      <li>there is no additive identity element</li>
+      <li>scalar multiplication does not distribute over vector addition</li>
+      <li>scalar multiplication does not distribute over scalar addition</li>
     </ul>
   </div>
 </div>
@@ -460,8 +493,8 @@
 <hr id='ex-20' class='exercise-hr'/>
 <h4 class='exercise-heading'>Example 20 <small><a href='#ex-20'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement"><p> Let \(V\) be the set of all pairs \((x,y)\) of real numbers together with the following operations: </p>
-                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} x_{2},\,y_{1} y_{2}\right)  \\c \odot (x,y) &amp;= \left(x^{c},\,y^{c}\right) . \\ \end{align*}
-            <p> (a) Show that there exists an additive identity element, that is: </p><p>\[\text{There exists }(w,z)\in V\text{ such that }(x,y)\oplus(w,z)=(x,y).
+                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} + x_{2},\,y_{1} + y_{2}\right)  \\c \odot (x,y) &amp;= \left(c x,\,c y - 3 \, c + 3\right) . \\ \end{align*}
+            <p> (a) Show that scalar multiplication is associative, that is: </p><p>\[a\odot(b\odot (x,y))=(ab)\odot(x,y).
     \]</p><p> (b) Explain why \(V\) nonetheless is not a vector space. </p></div>
   <div class="exercise-answer">
     <p>
@@ -469,7 +502,8 @@
     </p>
     <p>\(V\) is not a vector space, which may be shown by demonstrating that any one of the following properties do not hold: </p>
     <ul>
-      <li>additive inverses do not always exist</li>
+      <li>scalar multiplication does not distribute over vector addition</li>
+      <li>scalar multiplication does not distribute over scalar addition</li>
     </ul>
   </div>
 </div>
@@ -477,7 +511,7 @@
 <hr id='ex-21' class='exercise-hr'/>
 <h4 class='exercise-heading'>Example 21 <small><a href='#ex-21'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement"><p> Let \(V\) be the set of all pairs \((x,y)\) of real numbers together with the following operations: </p>
-                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} x_{2},\,y_{1} y_{2}\right)  \\c \odot (x,y) &amp;= \left(x^{c},\,y^{c}\right) . \\ \end{align*}
+                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(3 \, x_{1} x_{2},\,y_{1} + 3 \, y_{2}\right)  \\c \odot (x,y) &amp;= \left(c x,\,0\right) . \\ \end{align*}
             <p> (a) Show that there exists an additive identity element, that is: </p><p>\[\text{There exists }(w,z)\in V\text{ such that }(x,y)\oplus(w,z)=(x,y).
     \]</p><p> (b) Explain why \(V\) nonetheless is not a vector space. </p></div>
   <div class="exercise-answer">
@@ -486,7 +520,12 @@
     </p>
     <p>\(V\) is not a vector space, which may be shown by demonstrating that any one of the following properties do not hold: </p>
     <ul>
+      <li>vector addition is not associative</li>
+      <li>vector addition is not commutative</li>
       <li>additive inverses do not always exist</li>
+      <li>1 is not a scalar multiplication identity</li>
+      <li>scalar multiplication does not distribute over vector addition</li>
+      <li>scalar multiplication does not distribute over scalar addition</li>
     </ul>
   </div>
 </div>
@@ -494,8 +533,8 @@
 <hr id='ex-22' class='exercise-hr'/>
 <h4 class='exercise-heading'>Example 22 <small><a href='#ex-22'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement"><p> Let \(V\) be the set of all pairs \((x,y)\) of real numbers together with the following operations: </p>
-                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} x_{2},\,y_{1} y_{2}\right)  \\c \odot (x,y) &amp;= \left(x^{c},\,y^{c}\right) . \\ \end{align*}
-            <p> (a) Show that there exists an additive identity element, that is: </p><p>\[\text{There exists }(w,z)\in V\text{ such that }(x,y)\oplus(w,z)=(x,y).
+                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} + x_{2} + 4,\,\sqrt{y_{1}^{2} + y_{2}^{2}}\right)  \\c \odot (x,y) &amp;= \left(c x,\,c y\right) . \\ \end{align*}
+            <p> (a) Show that vector addition is associative, that is: </p><p>\[\left((x_1,y_1)\oplus(x_2,y_2)\right)\oplus(x_3,y_3)=(x_1,y_1)\oplus\left((x_2,y_2)\oplus(x_3,y_3)\right).
     \]</p><p> (b) Explain why \(V\) nonetheless is not a vector space. </p></div>
   <div class="exercise-answer">
     <p>
@@ -503,7 +542,9 @@
     </p>
     <p>\(V\) is not a vector space, which may be shown by demonstrating that any one of the following properties do not hold: </p>
     <ul>
-      <li>additive inverses do not always exist</li>
+      <li>there is no additive identity element</li>
+      <li>scalar multiplication does not distribute over vector addition</li>
+      <li>scalar multiplication does not distribute over scalar addition</li>
     </ul>
   </div>
 </div>
@@ -511,8 +552,8 @@
 <hr id='ex-23' class='exercise-hr'/>
 <h4 class='exercise-heading'>Example 23 <small><a href='#ex-23'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement"><p> Let \(V\) be the set of all pairs \((x,y)\) of real numbers together with the following operations: </p>
-                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} x_{2},\,y_{1} y_{2}\right)  \\c \odot (x,y) &amp;= \left(x^{c},\,y^{c}\right) . \\ \end{align*}
-            <p> (a) Show that there exists an additive identity element, that is: </p><p>\[\text{There exists }(w,z)\in V\text{ such that }(x,y)\oplus(w,z)=(x,y).
+                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} + x_{2},\,y_{1} + y_{2}\right)  \\c \odot (x,y) &amp;= \left(c^{3} x,\,c^{4} y\right) . \\ \end{align*}
+            <p> (a) Show that scalar multiplication distributes over vector addition, that is: </p><p>\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).
     \]</p><p> (b) Explain why \(V\) nonetheless is not a vector space. </p></div>
   <div class="exercise-answer">
     <p>
@@ -520,7 +561,7 @@
     </p>
     <p>\(V\) is not a vector space, which may be shown by demonstrating that any one of the following properties do not hold: </p>
     <ul>
-      <li>additive inverses do not always exist</li>
+      <li>scalar multiplication does not distribute over scalar addition</li>
     </ul>
   </div>
 </div>
@@ -545,8 +586,8 @@
 <hr id='ex-25' class='exercise-hr'/>
 <h4 class='exercise-heading'>Example 25 <small><a href='#ex-25'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement"><p> Let \(V\) be the set of all pairs \((x,y)\) of real numbers together with the following operations: </p>
-                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} x_{2},\,y_{1} y_{2}\right)  \\c \odot (x,y) &amp;= \left(x^{c},\,y^{c}\right) . \\ \end{align*}
-            <p> (a) Show that there exists an additive identity element, that is: </p><p>\[\text{There exists }(w,z)\in V\text{ such that }(x,y)\oplus(w,z)=(x,y).
+                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(3 \, x_{1} + 3 \, x_{2},\,6 \, y_{1} + 6 \, y_{2}\right)  \\c \odot (x,y) &amp;= \left(c x,\,c y\right) . \\ \end{align*}
+            <p> (a) Show that scalar multiplication distributes over vector addition, that is: </p><p>\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).
     \]</p><p> (b) Explain why \(V\) nonetheless is not a vector space. </p></div>
   <div class="exercise-answer">
     <p>
@@ -554,7 +595,8 @@
     </p>
     <p>\(V\) is not a vector space, which may be shown by demonstrating that any one of the following properties do not hold: </p>
     <ul>
-      <li>additive inverses do not always exist</li>
+      <li>vector addition is not associative</li>
+      <li>scalar multiplication does not distribute over scalar addition</li>
     </ul>
   </div>
 </div>
@@ -562,7 +604,7 @@
 <hr id='ex-26' class='exercise-hr'/>
 <h4 class='exercise-heading'>Example 26 <small><a href='#ex-26'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement"><p> Let \(V\) be the set of all pairs \((x,y)\) of real numbers together with the following operations: </p>
-                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} x_{2},\,y_{1} y_{2}\right)  \\c \odot (x,y) &amp;= \left(x^{c},\,y^{c}\right) . \\ \end{align*}
+                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(3 \, x_{1} x_{2},\,y_{1} + 4 \, y_{2}\right)  \\c \odot (x,y) &amp;= \left(c x,\,0\right) . \\ \end{align*}
             <p> (a) Show that there exists an additive identity element, that is: </p><p>\[\text{There exists }(w,z)\in V\text{ such that }(x,y)\oplus(w,z)=(x,y).
     \]</p><p> (b) Explain why \(V\) nonetheless is not a vector space. </p></div>
   <div class="exercise-answer">
@@ -571,7 +613,12 @@
     </p>
     <p>\(V\) is not a vector space, which may be shown by demonstrating that any one of the following properties do not hold: </p>
     <ul>
+      <li>vector addition is not associative</li>
+      <li>vector addition is not commutative</li>
       <li>additive inverses do not always exist</li>
+      <li>1 is not a scalar multiplication identity</li>
+      <li>scalar multiplication does not distribute over vector addition</li>
+      <li>scalar multiplication does not distribute over scalar addition</li>
     </ul>
   </div>
 </div>
@@ -579,8 +626,8 @@
 <hr id='ex-27' class='exercise-hr'/>
 <h4 class='exercise-heading'>Example 27 <small><a href='#ex-27'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement"><p> Let \(V\) be the set of all pairs \((x,y)\) of real numbers together with the following operations: </p>
-                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} x_{2},\,y_{1} y_{2}\right)  \\c \odot (x,y) &amp;= \left(x^{c},\,y^{c}\right) . \\ \end{align*}
-            <p> (a) Show that there exists an additive identity element, that is: </p><p>\[\text{There exists }(w,z)\in V\text{ such that }(x,y)\oplus(w,z)=(x,y).
+                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} + x_{2},\,y_{1} + y_{2} - 4\right)  \\c \odot (x,y) &amp;= \left(c x,\,c y\right) . \\ \end{align*}
+            <p> (a) Show that vector addition is associative, that is: </p><p>\[\left((x_1,y_1)\oplus(x_2,y_2)\right)\oplus(x_3,y_3)=(x_1,y_1)\oplus\left((x_2,y_2)\oplus(x_3,y_3)\right).
     \]</p><p> (b) Explain why \(V\) nonetheless is not a vector space. </p></div>
   <div class="exercise-answer">
     <p>
@@ -588,7 +635,8 @@
     </p>
     <p>\(V\) is not a vector space, which may be shown by demonstrating that any one of the following properties do not hold: </p>
     <ul>
-      <li>additive inverses do not always exist</li>
+      <li>scalar multiplication does not distribute over vector addition</li>
+      <li>scalar multiplication does not distribute over scalar addition</li>
     </ul>
   </div>
 </div>
@@ -596,8 +644,8 @@
 <hr id='ex-28' class='exercise-hr'/>
 <h4 class='exercise-heading'>Example 28 <small><a href='#ex-28'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement"><p> Let \(V\) be the set of all pairs \((x,y)\) of real numbers together with the following operations: </p>
-                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} x_{2},\,y_{1} y_{2}\right)  \\c \odot (x,y) &amp;= \left(x^{c},\,y^{c}\right) . \\ \end{align*}
-            <p> (a) Show that there exists an additive identity element, that is: </p><p>\[\text{There exists }(w,z)\in V\text{ such that }(x,y)\oplus(w,z)=(x,y).
+                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} + x_{2} + 3,\,y_{1} + y_{2}\right)  \\c \odot (x,y) &amp;= \left(c x,\,y^{c}\right) . \\ \end{align*}
+            <p> (a) Show that vector addition is associative, that is: </p><p>\[\left((x_1,y_1)\oplus(x_2,y_2)\right)\oplus(x_3,y_3)=(x_1,y_1)\oplus\left((x_2,y_2)\oplus(x_3,y_3)\right).
     \]</p><p> (b) Explain why \(V\) nonetheless is not a vector space. </p></div>
   <div class="exercise-answer">
     <p>
@@ -605,7 +653,8 @@
     </p>
     <p>\(V\) is not a vector space, which may be shown by demonstrating that any one of the following properties do not hold: </p>
     <ul>
-      <li>additive inverses do not always exist</li>
+      <li>scalar multiplication does not distribute over vector addition</li>
+      <li>scalar multiplication does not distribute over scalar addition</li>
     </ul>
   </div>
 </div>
@@ -630,8 +679,8 @@
 <hr id='ex-30' class='exercise-hr'/>
 <h4 class='exercise-heading'>Example 30 <small><a href='#ex-30'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement"><p> Let \(V\) be the set of all pairs \((x,y)\) of real numbers together with the following operations: </p>
-                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} x_{2},\,y_{1} y_{2}\right)  \\c \odot (x,y) &amp;= \left(x^{c},\,y^{c}\right) . \\ \end{align*}
-            <p> (a) Show that there exists an additive identity element, that is: </p><p>\[\text{There exists }(w,z)\in V\text{ such that }(x,y)\oplus(w,z)=(x,y).
+                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(4 \, x_{1} + x_{2},\,y_{1} + 2 \, y_{2}\right)  \\c \odot (x,y) &amp;= \left(c x,\,c y\right) . \\ \end{align*}
+            <p> (a) Show that scalar multiplication distributes over vector addition, that is: </p><p>\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).
     \]</p><p> (b) Explain why \(V\) nonetheless is not a vector space. </p></div>
   <div class="exercise-answer">
     <p>
@@ -639,7 +688,9 @@
     </p>
     <p>\(V\) is not a vector space, which may be shown by demonstrating that any one of the following properties do not hold: </p>
     <ul>
-      <li>additive inverses do not always exist</li>
+      <li>vector addition is not associative</li>
+      <li>vector addition is not commutative</li>
+      <li>scalar multiplication does not distribute over scalar addition</li>
     </ul>
   </div>
 </div>
@@ -647,8 +698,8 @@
 <hr id='ex-31' class='exercise-hr'/>
 <h4 class='exercise-heading'>Example 31 <small><a href='#ex-31'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement"><p> Let \(V\) be the set of all pairs \((x,y)\) of real numbers together with the following operations: </p>
-                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} x_{2},\,y_{1} y_{2}\right)  \\c \odot (x,y) &amp;= \left(x^{c},\,y^{c}\right) . \\ \end{align*}
-            <p> (a) Show that there exists an additive identity element, that is: </p><p>\[\text{There exists }(w,z)\in V\text{ such that }(x,y)\oplus(w,z)=(x,y).
+                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(3 \, x_{1} + x_{2},\,y_{1} + y_{2}\right)  \\c \odot (x,y) &amp;= \left(c x,\,c y\right) . \\ \end{align*}
+            <p> (a) Show that scalar multiplication distributes over vector addition, that is: </p><p>\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).
     \]</p><p> (b) Explain why \(V\) nonetheless is not a vector space. </p></div>
   <div class="exercise-answer">
     <p>
@@ -656,7 +707,9 @@
     </p>
     <p>\(V\) is not a vector space, which may be shown by demonstrating that any one of the following properties do not hold: </p>
     <ul>
-      <li>additive inverses do not always exist</li>
+      <li>vector addition is not associative</li>
+      <li>vector addition is not commutative</li>
+      <li>scalar multiplication does not distribute over scalar addition</li>
     </ul>
   </div>
 </div>
@@ -664,8 +717,8 @@
 <hr id='ex-32' class='exercise-hr'/>
 <h4 class='exercise-heading'>Example 32 <small><a href='#ex-32'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement"><p> Let \(V\) be the set of all pairs \((x,y)\) of real numbers together with the following operations: </p>
-                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} x_{2},\,y_{1} y_{2}\right)  \\c \odot (x,y) &amp;= \left(x^{c},\,y^{c}\right) . \\ \end{align*}
-            <p> (a) Show that there exists an additive identity element, that is: </p><p>\[\text{There exists }(w,z)\in V\text{ such that }(x,y)\oplus(w,z)=(x,y).
+                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} + x_{2} + 4,\,y_{1} + y_{2}\right)  \\c \odot (x,y) &amp;= \left(c x,\,y^{c}\right) . \\ \end{align*}
+            <p> (a) Show that vector addition is associative, that is: </p><p>\[\left((x_1,y_1)\oplus(x_2,y_2)\right)\oplus(x_3,y_3)=(x_1,y_1)\oplus\left((x_2,y_2)\oplus(x_3,y_3)\right).
     \]</p><p> (b) Explain why \(V\) nonetheless is not a vector space. </p></div>
   <div class="exercise-answer">
     <p>
@@ -673,7 +726,8 @@
     </p>
     <p>\(V\) is not a vector space, which may be shown by demonstrating that any one of the following properties do not hold: </p>
     <ul>
-      <li>additive inverses do not always exist</li>
+      <li>scalar multiplication does not distribute over vector addition</li>
+      <li>scalar multiplication does not distribute over scalar addition</li>
     </ul>
   </div>
 </div>
@@ -681,8 +735,8 @@
 <hr id='ex-33' class='exercise-hr'/>
 <h4 class='exercise-heading'>Example 33 <small><a href='#ex-33'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement"><p> Let \(V\) be the set of all pairs \((x,y)\) of real numbers together with the following operations: </p>
-                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} x_{2},\,y_{1} y_{2}\right)  \\c \odot (x,y) &amp;= \left(x^{c},\,y^{c}\right) . \\ \end{align*}
-            <p> (a) Show that there exists an additive identity element, that is: </p><p>\[\text{There exists }(w,z)\in V\text{ such that }(x,y)\oplus(w,z)=(x,y).
+                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} + x_{2},\,y_{1} + y_{2}\right)  \\c \odot (x,y) &amp;= \left(c x,\,c y - 7 \, c + 7\right) . \\ \end{align*}
+            <p> (a) Show that scalar multiplication is associative, that is: </p><p>\[a\odot(b\odot (x,y))=(ab)\odot(x,y).
     \]</p><p> (b) Explain why \(V\) nonetheless is not a vector space. </p></div>
   <div class="exercise-answer">
     <p>
@@ -690,7 +744,8 @@
     </p>
     <p>\(V\) is not a vector space, which may be shown by demonstrating that any one of the following properties do not hold: </p>
     <ul>
-      <li>additive inverses do not always exist</li>
+      <li>scalar multiplication does not distribute over vector addition</li>
+      <li>scalar multiplication does not distribute over scalar addition</li>
     </ul>
   </div>
 </div>
@@ -698,8 +753,8 @@
 <hr id='ex-34' class='exercise-hr'/>
 <h4 class='exercise-heading'>Example 34 <small><a href='#ex-34'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement"><p> Let \(V\) be the set of all pairs \((x,y)\) of real numbers together with the following operations: </p>
-                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} x_{2},\,y_{1} y_{2}\right)  \\c \odot (x,y) &amp;= \left(x^{c},\,y^{c}\right) . \\ \end{align*}
-            <p> (a) Show that there exists an additive identity element, that is: </p><p>\[\text{There exists }(w,z)\in V\text{ such that }(x,y)\oplus(w,z)=(x,y).
+                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(2 \, x_{1} + 2 \, x_{2},\,4 \, y_{1} + 4 \, y_{2}\right)  \\c \odot (x,y) &amp;= \left(c x,\,c y\right) . \\ \end{align*}
+            <p> (a) Show that scalar multiplication distributes over vector addition, that is: </p><p>\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).
     \]</p><p> (b) Explain why \(V\) nonetheless is not a vector space. </p></div>
   <div class="exercise-answer">
     <p>
@@ -707,7 +762,8 @@
     </p>
     <p>\(V\) is not a vector space, which may be shown by demonstrating that any one of the following properties do not hold: </p>
     <ul>
-      <li>additive inverses do not always exist</li>
+      <li>vector addition is not associative</li>
+      <li>scalar multiplication does not distribute over scalar addition</li>
     </ul>
   </div>
 </div>
@@ -715,8 +771,8 @@
 <hr id='ex-35' class='exercise-hr'/>
 <h4 class='exercise-heading'>Example 35 <small><a href='#ex-35'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement"><p> Let \(V\) be the set of all pairs \((x,y)\) of real numbers together with the following operations: </p>
-                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} x_{2},\,y_{1} y_{2}\right)  \\c \odot (x,y) &amp;= \left(x^{c},\,y^{c}\right) . \\ \end{align*}
-            <p> (a) Show that there exists an additive identity element, that is: </p><p>\[\text{There exists }(w,z)\in V\text{ such that }(x,y)\oplus(w,z)=(x,y).
+                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} + x_{2} + 2,\,y_{1} + y_{2}\right)  \\c \odot (x,y) &amp;= \left(c x,\,y^{c}\right) . \\ \end{align*}
+            <p> (a) Show that vector addition is associative, that is: </p><p>\[\left((x_1,y_1)\oplus(x_2,y_2)\right)\oplus(x_3,y_3)=(x_1,y_1)\oplus\left((x_2,y_2)\oplus(x_3,y_3)\right).
     \]</p><p> (b) Explain why \(V\) nonetheless is not a vector space. </p></div>
   <div class="exercise-answer">
     <p>
@@ -724,7 +780,8 @@
     </p>
     <p>\(V\) is not a vector space, which may be shown by demonstrating that any one of the following properties do not hold: </p>
     <ul>
-      <li>additive inverses do not always exist</li>
+      <li>scalar multiplication does not distribute over vector addition</li>
+      <li>scalar multiplication does not distribute over scalar addition</li>
     </ul>
   </div>
 </div>
@@ -732,8 +789,8 @@
 <hr id='ex-36' class='exercise-hr'/>
 <h4 class='exercise-heading'>Example 36 <small><a href='#ex-36'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement"><p> Let \(V\) be the set of all pairs \((x,y)\) of real numbers together with the following operations: </p>
-                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} x_{2},\,y_{1} y_{2}\right)  \\c \odot (x,y) &amp;= \left(x^{c},\,y^{c}\right) . \\ \end{align*}
-            <p> (a) Show that there exists an additive identity element, that is: </p><p>\[\text{There exists }(w,z)\in V\text{ such that }(x,y)\oplus(w,z)=(x,y).
+                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(3 \, x_{1} + x_{2},\,y_{1} + y_{2}\right)  \\c \odot (x,y) &amp;= \left(c x,\,c y\right) . \\ \end{align*}
+            <p> (a) Show that scalar multiplication distributes over vector addition, that is: </p><p>\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).
     \]</p><p> (b) Explain why \(V\) nonetheless is not a vector space. </p></div>
   <div class="exercise-answer">
     <p>
@@ -741,7 +798,9 @@
     </p>
     <p>\(V\) is not a vector space, which may be shown by demonstrating that any one of the following properties do not hold: </p>
     <ul>
-      <li>additive inverses do not always exist</li>
+      <li>vector addition is not associative</li>
+      <li>vector addition is not commutative</li>
+      <li>scalar multiplication does not distribute over scalar addition</li>
     </ul>
   </div>
 </div>
@@ -749,8 +808,8 @@
 <hr id='ex-37' class='exercise-hr'/>
 <h4 class='exercise-heading'>Example 37 <small><a href='#ex-37'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement"><p> Let \(V\) be the set of all pairs \((x,y)\) of real numbers together with the following operations: </p>
-                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} x_{2},\,y_{1} y_{2}\right)  \\c \odot (x,y) &amp;= \left(x^{c},\,y^{c}\right) . \\ \end{align*}
-            <p> (a) Show that there exists an additive identity element, that is: </p><p>\[\text{There exists }(w,z)\in V\text{ such that }(x,y)\oplus(w,z)=(x,y).
+                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} + x_{2},\,y_{1} + y_{2}\right)  \\c \odot (x,y) &amp;= \left(4 \, c x,\,3 \, c y\right) . \\ \end{align*}
+            <p> (a) Show that scalar multiplication distributes over scalar addition, that is: </p><p>\[(c+d)\odot(x,y)=c\odot(x,y)\oplus d\odot (x,y).
     \]</p><p> (b) Explain why \(V\) nonetheless is not a vector space. </p></div>
   <div class="exercise-answer">
     <p>
@@ -758,7 +817,9 @@
     </p>
     <p>\(V\) is not a vector space, which may be shown by demonstrating that any one of the following properties do not hold: </p>
     <ul>
-      <li>additive inverses do not always exist</li>
+      <li>scalar multiplication is not associative</li>
+      <li>1 is not a scalar multiplication identity</li>
+      <li>scalar multiplication does not distribute over vector addition</li>
     </ul>
   </div>
 </div>
@@ -766,8 +827,8 @@
 <hr id='ex-38' class='exercise-hr'/>
 <h4 class='exercise-heading'>Example 38 <small><a href='#ex-38'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement"><p> Let \(V\) be the set of all pairs \((x,y)\) of real numbers together with the following operations: </p>
-                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} x_{2},\,y_{1} y_{2}\right)  \\c \odot (x,y) &amp;= \left(x^{c},\,y^{c}\right) . \\ \end{align*}
-            <p> (a) Show that there exists an additive identity element, that is: </p><p>\[\text{There exists }(w,z)\in V\text{ such that }(x,y)\oplus(w,z)=(x,y).
+                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} + x_{2} + 4,\,\sqrt{y_{1}^{2} + y_{2}^{2}}\right)  \\c \odot (x,y) &amp;= \left(c x,\,c y\right) . \\ \end{align*}
+            <p> (a) Show that vector addition is associative, that is: </p><p>\[\left((x_1,y_1)\oplus(x_2,y_2)\right)\oplus(x_3,y_3)=(x_1,y_1)\oplus\left((x_2,y_2)\oplus(x_3,y_3)\right).
     \]</p><p> (b) Explain why \(V\) nonetheless is not a vector space. </p></div>
   <div class="exercise-answer">
     <p>
@@ -775,7 +836,9 @@
     </p>
     <p>\(V\) is not a vector space, which may be shown by demonstrating that any one of the following properties do not hold: </p>
     <ul>
-      <li>additive inverses do not always exist</li>
+      <li>there is no additive identity element</li>
+      <li>scalar multiplication does not distribute over vector addition</li>
+      <li>scalar multiplication does not distribute over scalar addition</li>
     </ul>
   </div>
 </div>
@@ -783,8 +846,8 @@
 <hr id='ex-39' class='exercise-hr'/>
 <h4 class='exercise-heading'>Example 39 <small><a href='#ex-39'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement"><p> Let \(V\) be the set of all pairs \((x,y)\) of real numbers together with the following operations: </p>
-                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} x_{2},\,y_{1} y_{2}\right)  \\c \odot (x,y) &amp;= \left(x^{c},\,y^{c}\right) . \\ \end{align*}
-            <p> (a) Show that there exists an additive identity element, that is: </p><p>\[\text{There exists }(w,z)\in V\text{ such that }(x,y)\oplus(w,z)=(x,y).
+                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} + x_{2},\,y_{1} + y_{2}\right)  \\c \odot (x,y) &amp;= \left(c^{3} x,\,c^{4} y\right) . \\ \end{align*}
+            <p> (a) Show that scalar multiplication distributes over vector addition, that is: </p><p>\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).
     \]</p><p> (b) Explain why \(V\) nonetheless is not a vector space. </p></div>
   <div class="exercise-answer">
     <p>
@@ -792,7 +855,7 @@
     </p>
     <p>\(V\) is not a vector space, which may be shown by demonstrating that any one of the following properties do not hold: </p>
     <ul>
-      <li>additive inverses do not always exist</li>
+      <li>scalar multiplication does not distribute over scalar addition</li>
     </ul>
   </div>
 </div>
@@ -800,8 +863,8 @@
 <hr id='ex-40' class='exercise-hr'/>
 <h4 class='exercise-heading'>Example 40 <small><a href='#ex-40'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement"><p> Let \(V\) be the set of all pairs \((x,y)\) of real numbers together with the following operations: </p>
-                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} x_{2},\,y_{1} y_{2}\right)  \\c \odot (x,y) &amp;= \left(x^{c},\,y^{c}\right) . \\ \end{align*}
-            <p> (a) Show that there exists an additive identity element, that is: </p><p>\[\text{There exists }(w,z)\in V\text{ such that }(x,y)\oplus(w,z)=(x,y).
+                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} + x_{2},\,y_{1} + y_{2} - 5\right)  \\c \odot (x,y) &amp;= \left(c x,\,c y\right) . \\ \end{align*}
+            <p> (a) Show that vector addition is associative, that is: </p><p>\[\left((x_1,y_1)\oplus(x_2,y_2)\right)\oplus(x_3,y_3)=(x_1,y_1)\oplus\left((x_2,y_2)\oplus(x_3,y_3)\right).
     \]</p><p> (b) Explain why \(V\) nonetheless is not a vector space. </p></div>
   <div class="exercise-answer">
     <p>
@@ -809,7 +872,8 @@
     </p>
     <p>\(V\) is not a vector space, which may be shown by demonstrating that any one of the following properties do not hold: </p>
     <ul>
-      <li>additive inverses do not always exist</li>
+      <li>scalar multiplication does not distribute over vector addition</li>
+      <li>scalar multiplication does not distribute over scalar addition</li>
     </ul>
   </div>
 </div>
@@ -817,8 +881,8 @@
 <hr id='ex-41' class='exercise-hr'/>
 <h4 class='exercise-heading'>Example 41 <small><a href='#ex-41'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement"><p> Let \(V\) be the set of all pairs \((x,y)\) of real numbers together with the following operations: </p>
-                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} x_{2},\,y_{1} y_{2}\right)  \\c \odot (x,y) &amp;= \left(x^{c},\,y^{c}\right) . \\ \end{align*}
-            <p> (a) Show that there exists an additive identity element, that is: </p><p>\[\text{There exists }(w,z)\in V\text{ such that }(x,y)\oplus(w,z)=(x,y).
+                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(2 \, x_{1} + x_{2},\,y_{1} + 3 \, y_{2}\right)  \\c \odot (x,y) &amp;= \left(c x,\,c y\right) . \\ \end{align*}
+            <p> (a) Show that scalar multiplication distributes over vector addition, that is: </p><p>\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).
     \]</p><p> (b) Explain why \(V\) nonetheless is not a vector space. </p></div>
   <div class="exercise-answer">
     <p>
@@ -826,7 +890,9 @@
     </p>
     <p>\(V\) is not a vector space, which may be shown by demonstrating that any one of the following properties do not hold: </p>
     <ul>
-      <li>additive inverses do not always exist</li>
+      <li>vector addition is not associative</li>
+      <li>vector addition is not commutative</li>
+      <li>scalar multiplication does not distribute over scalar addition</li>
     </ul>
   </div>
 </div>
@@ -851,7 +917,7 @@
 <hr id='ex-43' class='exercise-hr'/>
 <h4 class='exercise-heading'>Example 43 <small><a href='#ex-43'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement"><p> Let \(V\) be the set of all pairs \((x,y)\) of real numbers together with the following operations: </p>
-                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} x_{2},\,y_{1} y_{2}\right)  \\c \odot (x,y) &amp;= \left(x^{c},\,y^{c}\right) . \\ \end{align*}
+                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(3 \, x_{1} x_{2},\,y_{1} + 2 \, y_{2}\right)  \\c \odot (x,y) &amp;= \left(c x,\,0\right) . \\ \end{align*}
             <p> (a) Show that there exists an additive identity element, that is: </p><p>\[\text{There exists }(w,z)\in V\text{ such that }(x,y)\oplus(w,z)=(x,y).
     \]</p><p> (b) Explain why \(V\) nonetheless is not a vector space. </p></div>
   <div class="exercise-answer">
@@ -860,7 +926,12 @@
     </p>
     <p>\(V\) is not a vector space, which may be shown by demonstrating that any one of the following properties do not hold: </p>
     <ul>
+      <li>vector addition is not associative</li>
+      <li>vector addition is not commutative</li>
       <li>additive inverses do not always exist</li>
+      <li>1 is not a scalar multiplication identity</li>
+      <li>scalar multiplication does not distribute over vector addition</li>
+      <li>scalar multiplication does not distribute over scalar addition</li>
     </ul>
   </div>
 </div>
@@ -885,8 +956,8 @@
 <hr id='ex-45' class='exercise-hr'/>
 <h4 class='exercise-heading'>Example 45 <small><a href='#ex-45'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement"><p> Let \(V\) be the set of all pairs \((x,y)\) of real numbers together with the following operations: </p>
-                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} x_{2},\,y_{1} y_{2}\right)  \\c \odot (x,y) &amp;= \left(x^{c},\,y^{c}\right) . \\ \end{align*}
-            <p> (a) Show that there exists an additive identity element, that is: </p><p>\[\text{There exists }(w,z)\in V\text{ such that }(x,y)\oplus(w,z)=(x,y).
+                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} + x_{2} + 1,\,y_{1} + y_{2}\right)  \\c \odot (x,y) &amp;= \left(c x,\,y^{c}\right) . \\ \end{align*}
+            <p> (a) Show that vector addition is associative, that is: </p><p>\[\left((x_1,y_1)\oplus(x_2,y_2)\right)\oplus(x_3,y_3)=(x_1,y_1)\oplus\left((x_2,y_2)\oplus(x_3,y_3)\right).
     \]</p><p> (b) Explain why \(V\) nonetheless is not a vector space. </p></div>
   <div class="exercise-answer">
     <p>
@@ -894,7 +965,8 @@
     </p>
     <p>\(V\) is not a vector space, which may be shown by demonstrating that any one of the following properties do not hold: </p>
     <ul>
-      <li>additive inverses do not always exist</li>
+      <li>scalar multiplication does not distribute over vector addition</li>
+      <li>scalar multiplication does not distribute over scalar addition</li>
     </ul>
   </div>
 </div>
@@ -902,8 +974,8 @@
 <hr id='ex-46' class='exercise-hr'/>
 <h4 class='exercise-heading'>Example 46 <small><a href='#ex-46'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement"><p> Let \(V\) be the set of all pairs \((x,y)\) of real numbers together with the following operations: </p>
-                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} x_{2},\,y_{1} y_{2}\right)  \\c \odot (x,y) &amp;= \left(x^{c},\,y^{c}\right) . \\ \end{align*}
-            <p> (a) Show that there exists an additive identity element, that is: </p><p>\[\text{There exists }(w,z)\in V\text{ such that }(x,y)\oplus(w,z)=(x,y).
+                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(2 \, x_{1} + 2 \, x_{2},\,4 \, y_{1} + 4 \, y_{2}\right)  \\c \odot (x,y) &amp;= \left(c x,\,c y\right) . \\ \end{align*}
+            <p> (a) Show that scalar multiplication distributes over vector addition, that is: </p><p>\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).
     \]</p><p> (b) Explain why \(V\) nonetheless is not a vector space. </p></div>
   <div class="exercise-answer">
     <p>
@@ -911,7 +983,8 @@
     </p>
     <p>\(V\) is not a vector space, which may be shown by demonstrating that any one of the following properties do not hold: </p>
     <ul>
-      <li>additive inverses do not always exist</li>
+      <li>vector addition is not associative</li>
+      <li>scalar multiplication does not distribute over scalar addition</li>
     </ul>
   </div>
 </div>
@@ -953,8 +1026,8 @@
 <hr id='ex-49' class='exercise-hr'/>
 <h4 class='exercise-heading'>Example 49 <small><a href='#ex-49'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement"><p> Let \(V\) be the set of all pairs \((x,y)\) of real numbers together with the following operations: </p>
-                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} x_{2},\,y_{1} y_{2}\right)  \\c \odot (x,y) &amp;= \left(x^{c},\,y^{c}\right) . \\ \end{align*}
-            <p> (a) Show that there exists an additive identity element, that is: </p><p>\[\text{There exists }(w,z)\in V\text{ such that }(x,y)\oplus(w,z)=(x,y).
+                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} + x_{2},\,y_{1} + y_{2}\right)  \\c \odot (x,y) &amp;= \left(c x,\,c y - 7 \, c + 7\right) . \\ \end{align*}
+            <p> (a) Show that scalar multiplication is associative, that is: </p><p>\[a\odot(b\odot (x,y))=(ab)\odot(x,y).
     \]</p><p> (b) Explain why \(V\) nonetheless is not a vector space. </p></div>
   <div class="exercise-answer">
     <p>
@@ -962,7 +1035,8 @@
     </p>
     <p>\(V\) is not a vector space, which may be shown by demonstrating that any one of the following properties do not hold: </p>
     <ul>
-      <li>additive inverses do not always exist</li>
+      <li>scalar multiplication does not distribute over vector addition</li>
+      <li>scalar multiplication does not distribute over scalar addition</li>
     </ul>
   </div>
 </div>
@@ -970,8 +1044,8 @@
 <hr id='ex-50' class='exercise-hr'/>
 <h4 class='exercise-heading'>Example 50 <small><a href='#ex-50'>🔗</a></small></h4><div class="exercise">
   <div class="exercise-statement"><p> Let \(V\) be the set of all pairs \((x,y)\) of real numbers together with the following operations: </p>
-                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(x_{1} x_{2},\,y_{1} y_{2}\right)  \\c \odot (x,y) &amp;= \left(x^{c},\,y^{c}\right) . \\ \end{align*}
-            <p> (a) Show that there exists an additive identity element, that is: </p><p>\[\text{There exists }(w,z)\in V\text{ such that }(x,y)\oplus(w,z)=(x,y).
+                \begin{align*} (x_1,y_1)\oplus (x_2,y_2)&amp;= \left(3 \, x_{1} + x_{2},\,y_{1} + y_{2}\right)  \\c \odot (x,y) &amp;= \left(c x,\,c y\right) . \\ \end{align*}
+            <p> (a) Show that scalar multiplication distributes over vector addition, that is: </p><p>\[c\odot \left((x_1,y_1)\oplus(x_2,y_2)\right)=c\odot(x_1,y_1)\oplus c\odot(x_2,y_2).
     \]</p><p> (b) Explain why \(V\) nonetheless is not a vector space. </p></div>
   <div class="exercise-answer">
     <p>
@@ -979,7 +1053,9 @@
     </p>
     <p>\(V\) is not a vector space, which may be shown by demonstrating that any one of the following properties do not hold: </p>
     <ul>
-      <li>additive inverses do not always exist</li>
+      <li>vector addition is not associative</li>
+      <li>vector addition is not commutative</li>
+      <li>scalar multiplication does not distribute over scalar addition</li>
     </ul>
   </div>
 </div>
